@@ -504,7 +504,7 @@ rbid,type,date,year,category,name,pdf
 4059,Ändringsbeslut,2003-10-09,2003,Myndighet,Affärsverket Statens järnvägar,False
 4060,Ändringsbeslut,2003-10-09,2003,Myndighet,Konstnärsnämnden,False
 4061,Ändringsbeslut,2003-11-06,2003,Myndighet,Riksarkivet,False
-5071,Regleringsbrev,2003-12-11,2004,Myndighet,Myndighet Avvecklingsmyndigheten för RRV,False
+5071,Regleringsbrev,2003-12-11,2004,Myndighet,Avvecklingsmyndigheten för RRV,False
 5072,Regleringsbrev,2003-12-18,2004,Myndighet,Myndigheten för skolutveckling,False
 5073,Regleringsbrev,2003-12-11,2004,Myndighet,Forum för levande historia,False
 5074,Regleringsbrev,2003-12-18,2004,Myndighet,Krisberedskapsmyndigheten,False
@@ -977,7 +977,7 @@ rbid,type,date,year,category,name,pdf
 6929,Ändringsbeslut,2004-06-17,2004,Anslag,"8:1, 8:2, 8:5 och 9:1 (2003)",False
 6930,Ändringsbeslut,2004-03-18,2004,Anslag,6:11,False
 6931,Ändringsbeslut,2004-05-06,2004,Myndighet,Naturvårdsverket,False
-6932,Ändringsbeslut,2004-04-15,2004,Myndighet,Myndighet Avvecklingsmyndigheten för RRV,False
+6932,Ändringsbeslut,2004-04-15,2004,Myndighet,Avvecklingsmyndigheten för RRV,False
 6933,Ändringsbeslut,2004-03-25,2004,Myndighet,Statens energimyndighet,False
 6934,Regleringsbrev,2004-04-01,2004,Anslag,6:3 (2002) och 6:4 (2002),False
 6935,Ändringsbeslut,2004-04-01,2004,Myndighet,Inspektionen för arbetslöshetsförsäkringen,False
@@ -1207,7 +1207,7 @@ rbid,type,date,year,category,name,pdf
 7208,Ändringsbeslut,2004-01-29,2004,Myndighet,Migrationsverket,False
 7209,Ändringsbeslut,2004-07-01,2004,Myndighet,Migrationsverket,False
 7210,Ändringsbeslut,2004-07-22,2004,Myndighet,Fiskeriverket,False
-7211,Regleringsbrev,2004-12-09,2004,Myndighet,Myndighet Avvecklingsmyndigheten för Centrala försöksdjursnämnden,False
+7211,Regleringsbrev,2004-12-09,2004,Myndighet,Avvecklingsmyndigheten för Centrala försöksdjursnämnden,False
 7213,Ändringsbeslut,2004-07-01,2004,Myndighet,Patentbesvärsrätten,False
 7214,Ändringsbeslut,2004-09-02,2004,Anslag,"5:1, 5:4 (2003) och 5:5 (2003)",False
 7215,Ändringsbeslut,2004-06-24,2004,Myndighet,Arbetsmarknadsverket,False
@@ -2420,27 +2420,6 @@ rbid,type,date,year,category,name,pdf
 8680,Ändringsbeslut,2005-12-08,2005,Myndighet,Konsumentverket,False
 8681,Regleringsbrev,2005-12-15,2006,Myndighet,Kungl. biblioteket,True
 8682,Ändringsbeslut,2005-11-24,2005,Anslag,8:1,False
-8683,Regleringsbrev,,2006,Myndighet,Länsstyrelsen i Blekinge län,False
-8684,Regleringsbrev,,2006,Myndighet,Länsstyrelsen i Dalarnas län,False
-8685,Regleringsbrev,,2006,Myndighet,Länsstyrelsen i Gotlands län,False
-8686,Regleringsbrev,,2006,Myndighet,Länsstyrelsen i Gävleborgs län,False
-8687,Regleringsbrev,,2006,Myndighet,Länsstyrelsen i Hallands län,False
-8688,Regleringsbrev,,2006,Myndighet,Länsstyrelsen i Jämtlands län,False
-8689,Regleringsbrev,,2006,Myndighet,Länsstyrelsen i Jönköpings län,False
-8690,Regleringsbrev,,2006,Myndighet,Länsstyrelsen i Kalmar län,False
-8691,Regleringsbrev,,2006,Myndighet,Länsstyrelsen i Kronobergs län,False
-8692,Regleringsbrev,,2006,Myndighet,Länsstyrelsen i Norrbottens län,False
-8693,Regleringsbrev,,2006,Myndighet,Länsstyrelsen i Skåne län,False
-8694,Regleringsbrev,,2006,Myndighet,Länsstyrelsen i Stockholms län,False
-8695,Regleringsbrev,,2006,Myndighet,Länsstyrelsen i Södermanlands län,False
-8696,Regleringsbrev,,2006,Myndighet,Länsstyrelsen i Uppsala län,False
-8697,Regleringsbrev,,2006,Myndighet,Länsstyrelsen i Värmlands län,False
-8698,Regleringsbrev,,2006,Myndighet,Länsstyrelsen i Västerbottens län,False
-8699,Regleringsbrev,,2006,Myndighet,Länsstyrelsen i Västernorrlands län,False
-8700,Regleringsbrev,,2006,Myndighet,Länsstyrelsen i Västmanlands län,False
-8701,Regleringsbrev,,2006,Myndighet,Länsstyrelsen i Västra Götalands län,False
-8702,Regleringsbrev,,2006,Myndighet,Länsstyrelsen i Örebro län,False
-8703,Regleringsbrev,,2006,Myndighet,Länsstyrelsen i Östergötlands län,False
 8704,Ändringsbeslut,2005-12-08,2005,Anslag,5:1 och 5:4 (2003),False
 8706,Regleringsbrev,2005-12-20,2006,Anslag,14:1,True
 8708,Regleringsbrev,2005-12-20,2006,Myndighet,Verket för förvaltningsutveckling,True
@@ -3020,13 +2999,6 @@ rbid,type,date,year,category,name,pdf
 9469,Regleringsbrev,2006-12-21,2007,Anslag,5:3,True
 9470,Regleringsbrev,2006-12-21,2007,Myndighet,Rikspolisstyrelsen,True
 9471,Regleringsbrev,2006-12-21,2007,Anslag,48:2 (2006),True
-9472,Ändringsbeslut,,2006,Myndighet,Länsstyrelsen i Stockholms län,False
-9473,Ändringsbeslut,,2006,Myndighet,Länsstyrelsen i Uppsala län,False
-9474,Ändringsbeslut,,2006,Myndighet,Länsstyrelsen i Skåne län,False
-9475,Ändringsbeslut,,2006,Myndighet,Länsstyrelsen i Värmlands län,False
-9476,Ändringsbeslut,,2006,Myndighet,Länsstyrelsen i Västra Götalands län,False
-9477,Ändringsbeslut,,2006,Myndighet,Länsstyrelsen i Västmanlands län,False
-9478,Ändringsbeslut,,2006,Myndighet,Länsstyrelsen i Norrbottens län,False
 9480,Ändringsbeslut,2006-11-23,2006,Myndighet,Ungdomsstyrelsen,True
 9481,Regleringsbrev,2006-12-21,2007,Anslag,13:6 (2001),True
 9482,Regleringsbrev,2006-12-21,2007,Anslag,13:9 (2005),True
@@ -3142,27 +3114,6 @@ rbid,type,date,year,category,name,pdf
 9634,Ändringsbeslut,2006-12-14,2006,Myndighet,Regeringskansliet,True
 9635,Ändringsbeslut,2006-12-14,2006,Myndighet,Socialstyrelsen,True
 9636,Ändringsbeslut,2006-12-21,2006,Myndighet,Försvarsmakten,True
-9637,Regleringsbrev,,2007,Myndighet,Länsstyrelsen i Blekinge län,False
-9638,Regleringsbrev,,2007,Myndighet,Länsstyrelsen i Dalarnas län,False
-9639,Regleringsbrev,,2007,Myndighet,Länsstyrelsen i Gotlands län,False
-9640,Regleringsbrev,,2007,Myndighet,Länsstyrelsen i Gävleborgs län,False
-9641,Regleringsbrev,,2007,Myndighet,Länsstyrelsen i Hallands län,False
-9642,Regleringsbrev,,2007,Myndighet,Länsstyrelsen i Jämtlands län,False
-9643,Regleringsbrev,,2007,Myndighet,Länsstyrelsen i Jönköpings län,False
-9644,Regleringsbrev,,2007,Myndighet,Länsstyrelsen i Kalmar län,False
-9645,Regleringsbrev,,2007,Myndighet,Länsstyrelsen i Kronobergs län,False
-9646,Regleringsbrev,,2007,Myndighet,Länsstyrelsen i Norrbottens län,False
-9647,Regleringsbrev,,2007,Myndighet,Länsstyrelsen i Skåne län,False
-9648,Regleringsbrev,,2007,Myndighet,Länsstyrelsen i Stockholms län,False
-9649,Regleringsbrev,,2007,Myndighet,Länsstyrelsen i Södermanlands län,False
-9650,Regleringsbrev,,2007,Myndighet,Länsstyrelsen i Uppsala län,False
-9651,Regleringsbrev,,2007,Myndighet,Länsstyrelsen i Värmlands län,False
-9652,Regleringsbrev,,2007,Myndighet,Länsstyrelsen i Västerbottens län,False
-9653,Regleringsbrev,,2007,Myndighet,Länsstyrelsen i Västernorrlands län,False
-9654,Regleringsbrev,,2007,Myndighet,Länsstyrelsen i Västmanlands län,False
-9655,Regleringsbrev,,2007,Myndighet,Länsstyrelsen i Västra Götalands län,False
-9656,Regleringsbrev,,2007,Myndighet,Länsstyrelsen i Örebro län,False
-9657,Regleringsbrev,,2007,Myndighet,Länsstyrelsen i Östergötlands län,False
 9658,Ändringsbeslut,2006-12-21,2006,Myndighet,Försäkringskassan,True
 9659,Regleringsbrev,2006-12-21,2007,Anslag,92:2,True
 9660,Regleringsbrev,2006-12-21,2007,Anslag,11:1 (2004),True
@@ -3243,7 +3194,7 @@ rbid,type,date,year,category,name,pdf
 9779,Ändringsbeslut,2007-03-29,2007,Myndighet,Arbetslivsinstitutet,True
 9780,Ändringsbeslut,2007-06-14,2007,Myndighet,Högskoleverket,True
 9783,Ändringsbeslut,2007-04-03,2007,Myndighet,Banverket,True
-9784,Regleringsbrev,2007-06-20,2007,Myndighet,Myndighet Avvecklingsmyndigheten för Arbetslivsinstitutet,True
+9784,Regleringsbrev,2007-06-20,2007,Myndighet,Avvecklingsmyndigheten för Arbetslivsinstitutet,True
 9785,Ändringsbeslut,2007-04-12,2007,Anslag,"27:2, 28:5, 28:12, 28:26, 28:28, 28:30, 28:34 och 28:35",True
 9787,Ändringsbeslut,2007-05-16,2007,Anslag,25:80,True
 9788,Ändringsbeslut,2007-04-26,2007,Anslag,33:1 och 33:6 (2006),True
@@ -3314,7 +3265,7 @@ rbid,type,date,year,category,name,pdf
 9869,Ändringsbeslut,2007-06-28,2007,Myndighet,Statens skolverk,True
 9870,Ändringsbeslut,2007-06-28,2007,Anslag,24:3,True
 9871,Ändringsbeslut,2007-06-20,2007,Myndighet,Arbetsmiljöverket,True
-9872,Regleringsbrev,2007-06-20,2007,Myndighet,Myndighet Avvecklingsmyndigheten för Integrationsverket,True
+9872,Regleringsbrev,2007-06-20,2007,Myndighet,Avvecklingsmyndigheten för Integrationsverket,True
 9874,Ändringsbeslut,2007-06-28,2007,Myndighet,Åklagarmyndigheten,True
 9875,Regleringsbrev,2007-06-20,2007,Anslag,2:5,True
 9876,Ändringsbeslut,2007-06-20,2007,Myndighet,Sveriges Domstolar,True
@@ -3426,7 +3377,7 @@ rbid,type,date,year,category,name,pdf
 10019,Ändringsbeslut,2007-10-18,2007,Anslag,33:1 och 33:6 (2006),True
 10022,Ändringsbeslut,2007-10-25,2007,Myndighet,Statens räddningsverk,True
 10023,Regleringsbrev,2007-12-13,2008,Anslag,5:1,True
-10024,Regleringsbrev,2007-12-13,2008,Myndighet,Myndighet Avvecklingsmyndigheten för Integrationsverket,True
+10024,Regleringsbrev,2007-12-13,2008,Myndighet,Avvecklingsmyndigheten för Integrationsverket,True
 10025,Regleringsbrev,2007-12-19,2008,Myndighet,Handikappombudsmannen,True
 10027,Regleringsbrev,2007-12-19,2008,Myndighet,Ombudsmannen mot diskriminering på grund av sexuell läggning,True
 10028,Regleringsbrev,2007-12-19,2008,Myndighet,Ombudsmannen mot etnisk diskriminering,True
@@ -3502,27 +3453,6 @@ rbid,type,date,year,category,name,pdf
 10106,Regleringsbrev,2007-12-19,2008,Myndighet,Revisorsnämnden,True
 10109,Regleringsbrev,2007-12-13,2008,Myndighet,Länsstyrelserna,True
 10110,Regleringsbrev,2007-12-19,2008,Myndighet,Rikspolisstyrelsen,True
-10111,Regleringsbrev,,2008,Myndighet,Länsstyrelsen i Blekinge län,False
-10112,Regleringsbrev,,2008,Myndighet,Länsstyrelsen i Dalarnas län,False
-10113,Regleringsbrev,,2008,Myndighet,Länsstyrelsen i Gotlands län,False
-10114,Regleringsbrev,,2008,Myndighet,Länsstyrelsen i Gävleborgs län,False
-10115,Regleringsbrev,,2008,Myndighet,Länsstyrelsen i Hallands län,False
-10116,Regleringsbrev,,2008,Myndighet,Länsstyrelsen i Jämtlands län,False
-10117,Regleringsbrev,,2008,Myndighet,Länsstyrelsen i Jönköpings län,False
-10118,Regleringsbrev,,2008,Myndighet,Länsstyrelsen i Kalmar län,False
-10119,Regleringsbrev,,2008,Myndighet,Länsstyrelsen i Kronobergs län,False
-10120,Regleringsbrev,,2008,Myndighet,Länsstyrelsen i Norrbottens län,False
-10121,Regleringsbrev,,2008,Myndighet,Länsstyrelsen i Skåne län,False
-10122,Regleringsbrev,,2008,Myndighet,Länsstyrelsen i Stockholms län,False
-10123,Regleringsbrev,,2008,Myndighet,Länsstyrelsen i Södermanlands län,False
-10124,Regleringsbrev,,2008,Myndighet,Länsstyrelsen i Uppsala län,False
-10125,Regleringsbrev,,2008,Myndighet,Länsstyrelsen i Värmlands län,False
-10126,Regleringsbrev,,2008,Myndighet,Länsstyrelsen i Västerbottens län,False
-10127,Regleringsbrev,,2008,Myndighet,Länsstyrelsen i Västernorrlands län,False
-10128,Regleringsbrev,,2008,Myndighet,Länsstyrelsen i Västmanlands län,False
-10129,Regleringsbrev,,2008,Myndighet,Länsstyrelsen i Västra Götalands län,False
-10130,Regleringsbrev,,2008,Myndighet,Länsstyrelsen i Örebro län,False
-10131,Regleringsbrev,,2008,Myndighet,Länsstyrelsen i Östergötlands län,False
 10132,Regleringsbrev,2007-12-13,2008,Anslag,30:1,True
 10133,Ändringsbeslut,2007-10-18,2007,Myndighet,universitet och högskolor m.m.,True
 10134,Ändringsbeslut,2007-10-18,2007,Anslag,26:10,True
@@ -3633,7 +3563,7 @@ rbid,type,date,year,category,name,pdf
 10267,Regleringsbrev,2007-12-19,2008,Myndighet,Alkohol- och läkemedelssortimentsnämnden,True
 10269,Regleringsbrev,2007-12-19,2008,Myndighet,Totalförsvarets forskningsinstitut,True
 10270,Regleringsbrev,2007-12-13,2008,Myndighet,Arbetsmiljöverket,True
-10271,Regleringsbrev,2007-12-13,2008,Myndighet,Myndighet Avvecklingsmyndigheten för Arbetslivsinstitutet,True
+10271,Regleringsbrev,2007-12-13,2008,Myndighet,Avvecklingsmyndigheten för Arbetslivsinstitutet,True
 10272,Regleringsbrev,2007-12-19,2008,Myndighet,Konkurrensverket,True
 10273,Regleringsbrev,2007-12-13,2008,Anslag,23:4,True
 10274,Regleringsbrev,2007-12-19,2008,Anslag,37:4,True
@@ -3703,12 +3633,6 @@ rbid,type,date,year,category,name,pdf
 10392,Regleringsbrev,2007-12-13,2008,Myndighet,Kungliga hov- och slottsstaten,True
 10393,Regleringsbrev,2007-12-20,2008,Myndighet,Arbetsgivarverket,True
 10394,Regleringsbrev,2007-12-19,2008,Anslag,42:5,True
-10395,Ändringsbeslut,,2007,Myndighet,Länsstyrelsen i Västra Götalands län,False
-10396,Ändringsbeslut,,2007,Myndighet,Länsstyrelsen i Skåne län,False
-10397,Ändringsbeslut,,2007,Myndighet,Länsstyrelsen i Stockholms län,False
-10398,Ändringsbeslut,,2007,Myndighet,Länsstyrelsen i Södermanlands län,False
-10399,Ändringsbeslut,,2007,Myndighet,Länsstyrelsen i Uppsala län,False
-10400,Ändringsbeslut,,2007,Myndighet,Länsstyrelsen i Västmanlands län,False
 10401,Regleringsbrev,2007-12-19,2008,Anslag,34:13,True
 10402,Regleringsbrev,2007-12-13,2008,Anslag,7:9,True
 10406,Regleringsbrev,2007-12-19,2008,Myndighet,Marknadsdomstolen,True
@@ -3910,12 +3834,12 @@ rbid,type,date,year,category,name,pdf
 10662,Ändringsbeslut,2008-08-21,2008,Myndighet,Elsäkerhetsverket,True
 10663,Ändringsbeslut,2008-04-29,2008,Myndighet,Kustbevakningen,True
 10664,Ändringsbeslut,2008-05-29,2008,Myndighet,Lantmäteriverket,True
-10665,Regleringsbrev,2008-06-26,2008,Myndighet,Myndighet Avvecklingsmyndigheten för Statens strålskyddsinstitut och kärnkraftsinspektion,True
+10665,Regleringsbrev,2008-06-26,2008,Myndighet,Avvecklingsmyndigheten för Statens strålskyddsinstitut och kärnkraftsinspektion,True
 10667,Ändringsbeslut,2008-06-26,2008,Myndighet,Kronofogdemyndigheten,True
 10668,Regleringsbrev,2008-06-26,2008,Myndighet,Strålsäkerhetsmyndigheten,True
 10669,Ändringsbeslut,2008-04-24,2008,Myndighet,Statens jordbruksverk,True
 10670,Regleringsbrev,2008-06-26,2008,Myndighet,Specialpedagogiska skolmyndigheten,True
-10671,Regleringsbrev,2008-06-26,2008,Myndighet,Myndighet Avvecklingsmyndigheten för skolmyndigheter m.m.,True
+10671,Regleringsbrev,2008-06-26,2008,Myndighet,Avvecklingsmyndigheten för skolmyndigheter m.m.,True
 10672,Ändringsbeslut,2008-04-29,2008,Myndighet,Socialstyrelsen,True
 10673,Ändringsbeslut,2008-04-29,2008,Myndighet,Statens folkhälsoinstitut,True
 10674,Ändringsbeslut,2008-05-22,2008,Myndighet,Fiskeriverket,True
@@ -3926,7 +3850,7 @@ rbid,type,date,year,category,name,pdf
 10679,Ändringsbeslut,2008-05-29,2008,Myndighet,Högskoleverket,True
 10680,Ändringsbeslut,2008-05-08,2008,Myndighet,Riksarkivet,True
 10681,Ändringsbeslut,2008-06-12,2008,Myndighet,Arbetsmiljöverket,True
-10682,Ändringsbeslut,2008-06-26,2008,Myndighet,Myndighet Avvecklingsmyndigheten för Arbetslivsinstitutet,True
+10682,Ändringsbeslut,2008-06-26,2008,Myndighet,Avvecklingsmyndigheten för Arbetslivsinstitutet,True
 10683,Ändringsbeslut,2008-05-08,2008,Myndighet,Statens maritima museer,True
 10684,Ändringsbeslut,2008-05-22,2008,Myndighet,Myndigheten för skolutveckling,True
 10685,Ändringsbeslut,2008-05-29,2008,Myndighet,Statens skolverk,True
@@ -3947,7 +3871,7 @@ rbid,type,date,year,category,name,pdf
 10703,Ändringsbeslut,2008-06-18,2008,Myndighet,Verket för näringslivsutveckling,True
 10704,Ändringsbeslut,2008-06-12,2008,Myndighet,Bolagsverket,True
 10705,Ändringsbeslut,2008-06-18,2008,Myndighet,Institutet för tillväxtpolitiska studier,True
-10706,Ändringsbeslut,2008-06-05,2008,Myndighet,Myndighet Avvecklingsmyndigheten för Integrationsverket,True
+10706,Ändringsbeslut,2008-06-05,2008,Myndighet,Avvecklingsmyndigheten för Integrationsverket,True
 10707,Ändringsbeslut,2008-06-26,2008,Myndighet,Statistiska centralbyrån,True
 10709,Ändringsbeslut,2008-06-18,2008,Myndighet,Glesbygdsverket,True
 10710,Ändringsbeslut,2008-05-29,2008,Myndighet,Regionala etikprövningsnämnder,True
@@ -4050,7 +3974,7 @@ rbid,type,date,year,category,name,pdf
 10850,Ändringsbeslut,2008-11-20,2008,Anslag,"48:1, 48:2 och 48:3",True
 10852,Ändringsbeslut,2008-09-11,2008,Myndighet,Statens folkhälsoinstitut,True
 10853,Ändringsbeslut,2008-08-21,2008,Myndighet,Länsstyrelserna,True
-10854,Ändringsbeslut,2008-08-28,2008,Myndighet,Myndighet Avvecklingsmyndigheten för Integrationsverket,True
+10854,Ändringsbeslut,2008-08-28,2008,Myndighet,Avvecklingsmyndigheten för Integrationsverket,True
 10855,Ändringsbeslut,2008-08-21,2008,Myndighet,Energimarknadsinspektionen,True
 10856,Ändringsbeslut,2008-08-21,2008,Anslag,"35:8, 35:9, 35:10, 35:11 och 35:12",True
 10857,Ändringsbeslut,2008-09-25,2008,Myndighet,Internationella programkontoret för utbildningsområdet,True
@@ -4071,7 +3995,7 @@ rbid,type,date,year,category,name,pdf
 10872,Ändringsbeslut,2008-09-25,2008,Myndighet,Specialpedagogiska skolmyndigheten,True
 10873,Ändringsbeslut,2008-09-11,2008,Myndighet,Rikstrafiken,True
 10874,Ändringsbeslut,2008-09-25,2008,Myndighet,Allmänna reklamationsnämnden,True
-10875,Ändringsbeslut,2008-09-18,2008,Myndighet,Myndighet Avvecklingsmyndigheten för skolmyndigheter m.m.,True
+10875,Ändringsbeslut,2008-09-18,2008,Myndighet,Avvecklingsmyndigheten för skolmyndigheter m.m.,True
 10876,Ändringsbeslut,2008-09-18,2008,Myndighet,Försvarets materielverk,True
 10877,Ändringsbeslut,2008-10-16,2008,Myndighet,Skatteverket,True
 10878,Ändringsbeslut,2008-10-16,2008,Myndighet,Kronofogdemyndigheten,True
@@ -4086,8 +4010,8 @@ rbid,type,date,year,category,name,pdf
 10889,Ändringsbeslut,2008-10-02,2008,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
 10892,Ändringsbeslut,2008-09-25,2008,Myndighet,Statens skolverk,True
 10893,Ändringsbeslut,2008-10-02,2008,Myndighet,Verket för näringslivsutveckling,True
-10894,Ändringsbeslut,2008-09-25,2008,Myndighet,Myndighet Avvecklingsmyndigheten för Statens strålskyddsinstitut och kärnkraftsinspektion,True
-10895,Ändringsbeslut,2008-10-16,2008,Myndighet,Myndighet Avvecklingsmyndigheten för Arbetslivsinstitutet,True
+10894,Ändringsbeslut,2008-09-25,2008,Myndighet,Avvecklingsmyndigheten för Statens strålskyddsinstitut och kärnkraftsinspektion,True
+10895,Ändringsbeslut,2008-10-16,2008,Myndighet,Avvecklingsmyndigheten för Arbetslivsinstitutet,True
 10896,Ändringsbeslut,2008-10-02,2008,Myndighet,Ekobrottsmyndigheten,True
 10897,Ändringsbeslut,2008-09-25,2008,Myndighet,Åklagarmyndigheten,True
 10898,Ändringsbeslut,2008-10-02,2008,Anslag,"5:11, 8:1, 8:2, 8:5 (2006) och 49:1",True
@@ -4184,7 +4108,7 @@ rbid,type,date,year,category,name,pdf
 11007,Regleringsbrev,2008-12-18,2009,Myndighet,Verket för näringslivsutveckling,True
 11008,Regleringsbrev,2008-12-18,2009,Myndighet,Statens skolinspektion,True
 11010,Regleringsbrev,2008-12-18,2009,Myndighet,Migrationsverket,True
-11011,Regleringsbrev,2008-12-18,2009,Myndighet,Myndighet Avvecklingsmyndigheten för skolmyndigheter m.m.,True
+11011,Regleringsbrev,2008-12-18,2009,Myndighet,Avvecklingsmyndigheten för skolmyndigheter m.m.,True
 11012,Ändringsbeslut,2008-10-23,2008,Myndighet,Institutet för tillväxtpolitiska studier,True
 11013,Regleringsbrev,2008-12-11,2009,Myndighet,Skogsstyrelsen,True
 11014,Regleringsbrev,2008-12-11,2009,Anslag,1:3,True
@@ -4284,7 +4208,7 @@ rbid,type,date,year,category,name,pdf
 11125,Regleringsbrev,2008-12-18,2009,Anslag,13:6 (2001),True
 11127,Regleringsbrev,2008-12-18,2009,Myndighet,Vetenskapsrådet,True
 11128,Ändringsbeslut,2008-11-27,2008,Myndighet,Länsstyrelserna,True
-11129,Regleringsbrev,2008-12-18,2009,Myndighet,Myndighet Avvecklingsmyndigheten för Statens strålskyddsinstitut och kärnkraftsinspektion,True
+11129,Regleringsbrev,2008-12-18,2009,Myndighet,Avvecklingsmyndigheten för Statens strålskyddsinstitut och kärnkraftsinspektion,True
 11130,Regleringsbrev,2008-12-18,2009,Myndighet,Statens va-nämnd,True
 11131,Regleringsbrev,2008-12-18,2009,Myndighet,Inspektionen för arbetslöshetsförsäkringen,True
 11132,Regleringsbrev,2008-12-11,2009,Anslag,1:13,True
@@ -4324,7 +4248,7 @@ rbid,type,date,year,category,name,pdf
 11169,Regleringsbrev,2008-12-19,2009,Myndighet,Kompetensrådet för utveckling i staten,True
 11172,Regleringsbrev,2008-12-19,2009,Myndighet,Statskontoret,True
 11173,Regleringsbrev,2008-12-18,2009,Myndighet,Svenska Unescorådet,True
-11175,Regleringsbrev,2008-12-19,2009,Myndighet,Myndighet Avvecklingsmyndigheten för Verva,True
+11175,Regleringsbrev,2008-12-19,2009,Myndighet,Avvecklingsmyndigheten för Verva,True
 11177,Ändringsbeslut,2008-11-27,2008,Myndighet,Riksarkivet,True
 11178,Regleringsbrev,2008-12-18,2009,Myndighet,Boverket,True
 11179,Ändringsbeslut,2008-11-13,2008,Myndighet,Boverket,True
@@ -4335,7 +4259,7 @@ rbid,type,date,year,category,name,pdf
 11184,Regleringsbrev,2008-12-18,2009,Anslag,2:4,True
 11185,Regleringsbrev,2008-12-18,2009,Myndighet,Hälso- och sjukvårdens ansvarsnämnd,True
 11186,Regleringsbrev,2008-12-19,2009,Myndighet,Riksgäldskontoret,True
-11187,Ändringsbeslut,2008-12-04,2008,Myndighet,Myndighet Avvecklingsmyndigheten för Arbetslivsinstitutet,True
+11187,Ändringsbeslut,2008-12-04,2008,Myndighet,Avvecklingsmyndigheten för Arbetslivsinstitutet,True
 11188,Regleringsbrev,2008-12-18,2009,Anslag,2:6,True
 11189,Ändringsbeslut,2008-10-23,2008,Myndighet,Vägverket,True
 11190,Regleringsbrev,2008-12-18,2009,Anslag,"1:4, 31:10 (2007) och 31:11 (2006)",True
@@ -4357,13 +4281,11 @@ rbid,type,date,year,category,name,pdf
 11210,Regleringsbrev,2008-12-18,2009,Anslag,2:3,True
 11211,Regleringsbrev,2008-12-18,2009,Anslag,2:5,True
 11212,Regleringsbrev,2008-12-18,2009,Anslag,2:6,True
-11215,Regleringsbrev,2008-12-18,2009,Myndighet,"Myndighet Avvecklingsmyndigheten för SRV, KBM och SPF",True
+11215,Regleringsbrev,2008-12-18,2009,Myndighet,"Avvecklingsmyndigheten för SRV, KBM och SPF",True
 11216,Ändringsbeslut,2008-11-13,2008,Myndighet,Statens energimyndighet,True
 11217,Ändringsbeslut,2008-11-27,2008,Myndighet,Statens biografbyrå,True
 11218,Ändringsbeslut,2008-12-18,2008,Myndighet,Statens haverikommission,True
 11219,Regleringsbrev,2008-12-18,2009,Myndighet,Statens haverikommission,True
-11220,Ändringsbeslut,,2008,Myndighet,Länsstyrelsen i Östergötlands län,False
-11221,Ändringsbeslut,,2008,Myndighet,Länsstyrelsen i Norrbottens län,False
 11222,Regleringsbrev,2008-12-11,2009,Anslag,1:16,True
 11223,Ändringsbeslut,2008-12-04,2008,Myndighet,Statens pensionsverk,True
 11224,Regleringsbrev,2008-12-19,2009,Myndighet,Statens pensionsverk,True
@@ -4434,7 +4356,7 @@ rbid,type,date,year,category,name,pdf
 11343,Regleringsbrev,2008-12-18,2009,Anslag,1:4 och 1:5,True
 11345,Regleringsbrev,2008-12-18,2009,Myndighet,Folke Bernadotteakademin,True
 11346,Regleringsbrev,2008-12-18,2009,Anslag,1:1,True
-11347,Regleringsbrev,2008-12-18,2009,Myndighet,Myndighet Avvecklingsmyndigheten för ombudsmännen mot diskriminering,True
+11347,Regleringsbrev,2008-12-18,2009,Myndighet,Avvecklingsmyndigheten för ombudsmännen mot diskriminering,True
 11348,Ändringsbeslut,2008-11-27,2008,Anslag,93:1,True
 11350,Regleringsbrev,2008-12-18,2009,Myndighet,Länsstyrelserna,True
 11352,Ändringsbeslut,2008-12-04,2008,Anslag,23:4,True
@@ -4470,29 +4392,8 @@ rbid,type,date,year,category,name,pdf
 11384,Regleringsbrev,2008-12-18,2009,Anslag,1:3,True
 11385,Ändringsbeslut,2008-12-11,2008,Myndighet,Länsstyrelserna,True
 11387,Ändringsbeslut,2008-12-18,2008,Myndighet,Statens skolverk,True
-11389,Regleringsbrev,,2009,Myndighet,Länsstyrelsen i Blekinge län,False
 11391,Regleringsbrev,2008-12-18,2009,Myndighet,Svenska institutet för europapolitiska studier,True
 11394,Ändringsbeslut,2008-12-18,2008,Myndighet,Socialstyrelsen,True
-11395,Regleringsbrev,,2009,Myndighet,Länsstyrelsen i Norrbottens län,False
-11396,Regleringsbrev,,2009,Myndighet,Länsstyrelsen i Västerbottens län,False
-11397,Regleringsbrev,,2009,Myndighet,Länsstyrelsen i Västra Götalands län,False
-11398,Regleringsbrev,,2009,Myndighet,Länsstyrelsen i Dalarnas län,False
-11399,Regleringsbrev,,2009,Myndighet,Länsstyrelsen i Gotlands län,False
-11400,Regleringsbrev,,2009,Myndighet,Länsstyrelsen i Gävleborgs län,False
-11401,Regleringsbrev,,2009,Myndighet,Länsstyrelsen i Hallands län,False
-11402,Regleringsbrev,,2009,Myndighet,Länsstyrelsen i Jämtlands län,False
-11403,Regleringsbrev,,2009,Myndighet,Länsstyrelsen i Jönköpings län,False
-11404,Regleringsbrev,,2009,Myndighet,Länsstyrelsen i Kalmar län,False
-11405,Regleringsbrev,,2009,Myndighet,Länsstyrelsen i Kronobergs län,False
-11406,Regleringsbrev,,2009,Myndighet,Länsstyrelsen i Skåne län,False
-11407,Regleringsbrev,,2009,Myndighet,Länsstyrelsen i Stockholms län,False
-11408,Regleringsbrev,,2009,Myndighet,Länsstyrelsen i Södermanlands län,False
-11409,Regleringsbrev,,2009,Myndighet,Länsstyrelsen i Uppsala län,False
-11410,Regleringsbrev,,2009,Myndighet,Länsstyrelsen i Värmlands län,False
-11411,Regleringsbrev,,2009,Myndighet,Länsstyrelsen i Västernorrlands län,False
-11412,Regleringsbrev,,2009,Myndighet,Länsstyrelsen i Västmanlands län,False
-11413,Regleringsbrev,,2009,Myndighet,Länsstyrelsen i Örebro län,False
-11414,Regleringsbrev,,2009,Myndighet,Länsstyrelsen i Östergötlands län,False
 11415,Ändringsbeslut,2008-12-11,2008,Anslag,24:1,True
 11416,Ändringsbeslut,2008-12-11,2008,Anslag,34:13,True
 11417,Regleringsbrev,2008-12-18,2009,Myndighet,Regeringskansliet,True
@@ -4559,7 +4460,7 @@ rbid,type,date,year,category,name,pdf
 11506,Regleringsbrev,2009-05-20,2009,Anslag,37:7 (2004),True
 11508,Ändringsbeslut,2009-02-12,2009,Myndighet,Statens jordbruksverk,True
 11509,Ändringsbeslut,2009-02-19,2009,Anslag,1:22,True
-11510,Ändringsbeslut,2009-02-26,2009,Myndighet,Myndighet Avvecklingsmyndigheten för Verva,True
+11510,Ändringsbeslut,2009-02-26,2009,Myndighet,Avvecklingsmyndigheten för Verva,True
 11511,Ändringsbeslut,2009-02-26,2009,Myndighet,Statens folkhälsoinstitut,True
 11514,Ändringsbeslut,2009-03-05,2009,Myndighet,Finansinspektionen,True
 11515,Ändringsbeslut,2009-06-11,2009,Anslag,1:1 och 2:1,True
@@ -4803,7 +4704,7 @@ rbid,type,date,year,category,name,pdf
 11819,Ändringsbeslut,2009-06-25,2009,Anslag,1:13,True
 11820,Ändringsbeslut,2009-06-25,2009,Myndighet,Arbetsdomstolen,True
 11823,Ändringsbeslut,2009-06-25,2009,Anslag,1:11,True
-11824,Ändringsbeslut,2009-06-25,2009,Myndighet,Myndighet Avvecklingsmyndigheten för Verva,True
+11824,Ändringsbeslut,2009-06-25,2009,Myndighet,Avvecklingsmyndigheten för Verva,True
 11825,Ändringsbeslut,2009-06-25,2009,Myndighet,Skogsstyrelsen,True
 11826,Ändringsbeslut,2009-06-25,2009,Myndighet,Statens energimyndighet,True
 11827,Ändringsbeslut,2009-06-25,2009,Myndighet,Regeringskansliet,True
@@ -4827,7 +4728,7 @@ rbid,type,date,year,category,name,pdf
 11854,Ändringsbeslut,2009-07-02,2009,Myndighet,Försvarsmakten,True
 11855,Ändringsbeslut,2009-06-25,2009,Myndighet,Försvarets radioanstalt,True
 11856,Ändringsbeslut,2009-06-25,2009,Myndighet,Myndigheten för samhällsskydd och beredskap,True
-11857,Ändringsbeslut,2009-09-03,2009,Myndighet,"Myndighet Avvecklingsmyndigheten för SRV, KBM och SPF",True
+11857,Ändringsbeslut,2009-09-03,2009,Myndighet,"Avvecklingsmyndigheten för SRV, KBM och SPF",True
 11858,Ändringsbeslut,2009-09-03,2009,Anslag,2:6,True
 11859,Ändringsbeslut,2009-06-25,2009,Myndighet,Försäkringskassan,True
 11860,Ändringsbeslut,2009-06-25,2009,Myndighet,Läkemedelsverket,True
@@ -4850,7 +4751,7 @@ rbid,type,date,year,category,name,pdf
 11877,Ändringsbeslut,2009-06-25,2009,Myndighet,Fiskeriverket,True
 11879,Ändringsbeslut,2009-06-25,2009,Myndighet,Smittskyddsinstitutet,True
 11880,Ändringsbeslut,2009-06-25,2009,Myndighet,Sametinget,True
-11882,Ändringsbeslut,2009-07-16,2009,Myndighet,Myndighet Avvecklingsmyndigheten för Statens strålskyddsinstitut och kärnkraftsinspektion,True
+11882,Ändringsbeslut,2009-07-16,2009,Myndighet,Avvecklingsmyndigheten för Statens strålskyddsinstitut och kärnkraftsinspektion,True
 11889,Ändringsbeslut,2009-11-26,2009,Myndighet,Arkitekturmuseet,True
 11891,Ändringsbeslut,2009-07-02,2009,Myndighet,Bolagsverket,True
 11892,Ändringsbeslut,2009-06-25,2009,Myndighet,Kriminalvården,True
@@ -4861,7 +4762,7 @@ rbid,type,date,year,category,name,pdf
 11902,Ändringsbeslut,2009-07-02,2009,Myndighet,Statens skolverk,True
 11903,Ändringsbeslut,2009-07-09,2009,Myndighet,Riksgäldskontoret,True
 11904,Ändringsbeslut,2009-08-19,2009,Myndighet,Arbetsförmedlingen,True
-11905,Ändringsbeslut,2009-08-27,2009,Myndighet,Myndighet Avvecklingsmyndigheten för ombudsmännen mot diskriminering,True
+11905,Ändringsbeslut,2009-08-27,2009,Myndighet,Avvecklingsmyndigheten för ombudsmännen mot diskriminering,True
 11906,Ändringsbeslut,2009-08-06,2009,Anslag,1:6,True
 11907,Ändringsbeslut,2009-08-13,2009,Myndighet,Socialstyrelsen,True
 11908,Ändringsbeslut,2009-08-27,2009,Myndighet,Myndigheten för tillväxtpolitiska utvärderingar och analyser,True
@@ -4892,27 +4793,8 @@ rbid,type,date,year,category,name,pdf
 11936,Ändringsbeslut,2009-09-17,2009,Anslag,1:1,True
 11937,Ändringsbeslut,2009-09-24,2009,Anslag,1:13,True
 11938,Ändringsbeslut,2009-09-17,2009,Myndighet,Försvarets radioanstalt,True
-11939,Ändringsbeslut,,2009,Myndighet,Länsstyrelsen i Blekinge län,False
-11940,Ändringsbeslut,,2009,Myndighet,Länsstyrelsen i Dalarnas län,False
-11941,Ändringsbeslut,,2009,Myndighet,Länsstyrelsen i Gotlands län,False
-11942,Ändringsbeslut,,2009,Myndighet,Länsstyrelsen i Gävleborgs län,False
 11943,Ändringsbeslut,2009-10-01,2009,Myndighet,Banverket,True
 11944,Ändringsbeslut,2009-09-17,2009,Myndighet,Bolagsverket,True
-11945,Ändringsbeslut,,2009,Myndighet,Länsstyrelsen i Hallands län,False
-11946,Ändringsbeslut,,2009,Myndighet,Länsstyrelsen i Jämtlands län,False
-11947,Ändringsbeslut,,2009,Myndighet,Länsstyrelsen i Jönköpings län,False
-11948,Ändringsbeslut,,2009,Myndighet,Länsstyrelsen i Kalmar län,False
-11949,Ändringsbeslut,,2009,Myndighet,Länsstyrelsen i Norrbottens län,False
-11950,Ändringsbeslut,,2009,Myndighet,Länsstyrelsen i Skåne län,False
-11951,Ändringsbeslut,,2009,Myndighet,Länsstyrelsen i Stockholms län,False
-11952,Ändringsbeslut,,2009,Myndighet,Länsstyrelsen i Uppsala län,False
-11953,Ändringsbeslut,,2009,Myndighet,Länsstyrelsen i Värmlands län,False
-11954,Ändringsbeslut,,2009,Myndighet,Länsstyrelsen i Västerbottens län,False
-11955,Ändringsbeslut,,2009,Myndighet,Länsstyrelsen i Västernorrlands län,False
-11956,Ändringsbeslut,,2009,Myndighet,Länsstyrelsen i Västmanlands län,False
-11957,Ändringsbeslut,,2009,Myndighet,Länsstyrelsen i Västra Götalands län,False
-11958,Ändringsbeslut,,2009,Myndighet,Länsstyrelsen i Örebro län,False
-11959,Ändringsbeslut,,2009,Myndighet,Länsstyrelsen i Östergötlands län,False
 11961,Ändringsbeslut,2009-09-24,2009,Myndighet,Finansinspektionen,True
 11962,Ändringsbeslut,2009-10-22,2009,Anslag,1:1,True
 11963,Ändringsbeslut,2009-09-17,2009,Myndighet,Lantmäteriet,True
@@ -4997,7 +4879,7 @@ rbid,type,date,year,category,name,pdf
 12062,Regleringsbrev,2009-12-21,2010,Myndighet,Valmyndigheten,True
 12063,Regleringsbrev,2009-12-21,2010,Myndighet,Åklagarmyndigheten,True
 12064,Ändringsbeslut,2009-12-03,2009,Myndighet,Arbetsgivarverket,True
-12065,Regleringsbrev,2009-12-17,2010,Myndighet,"Myndighet Avvecklingsmyndigheten för SRV, KBM och SPF",True
+12065,Regleringsbrev,2009-12-17,2010,Myndighet,"Avvecklingsmyndigheten för SRV, KBM och SPF",True
 12067,Regleringsbrev,2009-12-21,2010,Myndighet,Finansinspektionen,True
 12069,Regleringsbrev,2009-12-17,2010,Myndighet,Statens folkhälsoinstitut,True
 12070,Ändringsbeslut,2009-11-02,2009,Myndighet,Kriminalvården,True
@@ -5089,8 +4971,8 @@ rbid,type,date,year,category,name,pdf
 12173,Regleringsbrev,2009-12-17,2010,Myndighet,Regionala etikprövningsnämnden i Uppsala,True
 12174,Ändringsbeslut,2009-12-03,2009,Myndighet,Kammarkollegiet,True
 12175,Regleringsbrev,2009-12-17,2010,Myndighet,Vetenskapsrådet,True
-12176,Ändringsbeslut,2009-12-03,2009,Myndighet,Myndighet Avvecklingsmyndigheten för Verva,True
-12177,Regleringsbrev,2009-12-21,2010,Myndighet,Myndighet Avvecklingsmyndigheten för Verket för förvaltningsutveckling,True
+12176,Ändringsbeslut,2009-12-03,2009,Myndighet,Avvecklingsmyndigheten för Verva,True
+12177,Regleringsbrev,2009-12-21,2010,Myndighet,Avvecklingsmyndigheten för Verket för förvaltningsutveckling,True
 12178,Regleringsbrev,2009-12-21,2010,Myndighet,Kammarkollegiet,True
 12180,Regleringsbrev,2009-12-17,2010,Myndighet,Statens haverikommission,True
 12181,Regleringsbrev,2009-12-21,2010,Myndighet,Myndigheten för samhällsskydd och beredskap,True
@@ -5231,7 +5113,7 @@ rbid,type,date,year,category,name,pdf
 12348,Ändringsbeslut,2009-12-10,2009,Myndighet,Statens folkhälsoinstitut,True
 12349,Regleringsbrev,2009-12-21,2010,Anslag,3:6,True
 12354,Regleringsbrev,2009-12-17,2010,Myndighet,Försvarshögskolan,True
-12357,Regleringsbrev,2009-12-17,2010,Myndighet,Myndighet Avvecklingsmyndigheten för nätverk och samarbete inom högre utbildning,True
+12357,Regleringsbrev,2009-12-17,2010,Myndighet,Avvecklingsmyndigheten för nätverk och samarbete inom högre utbildning,True
 12370,Regleringsbrev,2009-12-17,2010,Myndighet,Sveriges geologiska undersökning,True
 12372,Regleringsbrev,2009-12-17,2010,Myndighet,Linnéuniversitetet,True
 12373,Regleringsbrev,2009-12-17,2010,Myndighet,Pensionsmyndigheten,True
@@ -5291,11 +5173,11 @@ rbid,type,date,year,category,name,pdf
 12443,Ändringsbeslut,2009-12-03,2009,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
 12444,Ändringsbeslut,2009-12-17,2009,Anslag,10:1 (2008),True
 12445,Ändringsbeslut,2009-12-03,2009,Myndighet,Fiskeriverket,True
-12446,Regleringsbrev,2009-12-17,2010,Myndighet,Myndighet Avvecklingsmyndigheten för skolmyndigheter m.m.,True
+12446,Regleringsbrev,2009-12-17,2010,Myndighet,Avvecklingsmyndigheten för skolmyndigheter m.m.,True
 12447,Regleringsbrev,2009-12-17,2010,Anslag,1:3 och 1:4,True
 12448,Regleringsbrev,2009-12-21,2010,Myndighet,Regeringskansliet,True
 12449,Regleringsbrev,2009-12-21,2010,Anslag,1:4,True
-12450,Regleringsbrev,2009-12-17,2010,Myndighet,Myndighet Avvecklingsmyndigheten för PPM och delar av FK,True
+12450,Regleringsbrev,2009-12-17,2010,Myndighet,Avvecklingsmyndigheten för PPM och delar av FK,True
 12452,Ändringsbeslut,2009-12-10,2009,Myndighet,Naturvårdsverket,True
 12454,Regleringsbrev,2009-12-21,2010,Anslag,1:10,True
 12457,Ändringsbeslut,2009-12-03,2009,Anslag,1:1,True
@@ -5309,7 +5191,7 @@ rbid,type,date,year,category,name,pdf
 12471,Ändringsbeslut,2009-12-17,2009,Anslag,3:1,True
 12472,Ändringsbeslut,2009-12-10,2009,Myndighet,Rederinämnden,True
 12473,Ändringsbeslut,2009-12-10,2009,Myndighet,Rikstrafiken,True
-12475,Ändringsbeslut,2009-12-17,2009,Myndighet,"Myndighet Avvecklingsmyndigheten för SRV, KBM och SPF",True
+12475,Ändringsbeslut,2009-12-17,2009,Myndighet,"Avvecklingsmyndigheten för SRV, KBM och SPF",True
 12476,Ändringsbeslut,2009-12-10,2009,Myndighet,Lantmäteriet,True
 12478,Ändringsbeslut,2010-01-21,2010,Myndighet,Specialpedagogiska skolmyndigheten,True
 12479,Ändringsbeslut,2009-12-10,2009,Anslag,7:3,True
@@ -5321,7 +5203,7 @@ rbid,type,date,year,category,name,pdf
 12488,Ändringsbeslut,2009-12-10,2009,Myndighet,Fiskeriverket,True
 12489,Ändringsbeslut,2009-12-17,2009,Myndighet,länsstyrelserna,True
 12490,Ändringsbeslut,2009-12-17,2009,Myndighet,Fastighetsmäklarnämnden,True
-12492,Ändringsbeslut,2009-12-17,2009,Myndighet,Myndighet Avvecklingsmyndigheten för skolmyndigheter m.m.,True
+12492,Ändringsbeslut,2009-12-17,2009,Myndighet,Avvecklingsmyndigheten för skolmyndigheter m.m.,True
 12493,Ändringsbeslut,2009-12-17,2009,Anslag,"1:11, 1:1, 1:2 och 2:1",True
 12494,Ändringsbeslut,2009-12-17,2009,Myndighet,Statens nämnd för arbetstagares uppfinningar,True
 12495,Ändringsbeslut,2009-12-17,2009,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
@@ -5329,27 +5211,6 @@ rbid,type,date,year,category,name,pdf
 12498,Ändringsbeslut,2009-12-17,2009,Myndighet,Fortifikationsverket,True
 12500,Ändringsbeslut,2009-12-17,2009,Myndighet,Statens skolverk,True
 12501,Ändringsbeslut,2009-12-21,2009,Myndighet,Nämnden för statligt stöd till trossamfund,True
-12504,Regleringsbrev,,2010,Myndighet,Länsstyrelsen i Blekinge län,False
-12505,Regleringsbrev,,2010,Myndighet,Länsstyrelsen i Dalarnas län,False
-12506,Regleringsbrev,,2010,Myndighet,Länsstyrelsen i Gotlands län,False
-12507,Regleringsbrev,,2010,Myndighet,Länsstyrelsen i Gävleborgs län,False
-12508,Regleringsbrev,,2010,Myndighet,Länsstyrelsen i Hallands län,False
-12509,Regleringsbrev,,2010,Myndighet,Länsstyrelsen i Jämtlands län,False
-12510,Regleringsbrev,,2010,Myndighet,Länsstyrelsen i Jönköpings län,False
-12511,Regleringsbrev,,2010,Myndighet,Länsstyrelsen i Kalmar län,False
-12512,Regleringsbrev,,2010,Myndighet,Länsstyrelsen i Kronobergs län,False
-12513,Regleringsbrev,,2010,Myndighet,Länsstyrelsen i Norrbottens län,False
-12514,Regleringsbrev,,2010,Myndighet,Länsstyrelsen i Skåne län,False
-12515,Regleringsbrev,,2010,Myndighet,Länsstyrelsen i Stockholms län,False
-12516,Regleringsbrev,,2010,Myndighet,Länsstyrelsen i Södermanlands län,False
-12517,Regleringsbrev,,2010,Myndighet,Länsstyrelsen i Uppsala län,False
-12518,Regleringsbrev,,2010,Myndighet,Länsstyrelsen i Värmlands län,False
-12519,Regleringsbrev,,2010,Myndighet,Länsstyrelsen i Västerbottens län,False
-12520,Regleringsbrev,,2010,Myndighet,Länsstyrelsen i Västernorrlands län,False
-12521,Regleringsbrev,,2010,Myndighet,Länsstyrelsen i Västmanlands län,False
-12522,Regleringsbrev,,2010,Myndighet,Länsstyrelsen i Västra Götalands län,False
-12523,Regleringsbrev,,2010,Myndighet,Länsstyrelsen i Örebro län,False
-12524,Regleringsbrev,,2010,Myndighet,Länsstyrelsen i Östergötlands län,False
 12526,Ändringsbeslut,2009-12-21,2009,Myndighet,Myndigheten för yrkeshögskolan,True
 12527,Ändringsbeslut,2009-12-17,2009,Myndighet,universitet och högskolor m.m.,True
 12528,Ändringsbeslut,2009-12-21,2009,Myndighet,Migrationsverket,True
@@ -5359,7 +5220,7 @@ rbid,type,date,year,category,name,pdf
 12535,Ändringsbeslut,2010-01-14,2010,Myndighet,Arbetsgivarverket,True
 12537,Ändringsbeslut,2010-01-21,2010,Myndighet,Luftfartsverket,True
 12538,Ändringsbeslut,2010-01-21,2010,Anslag,13:2,True
-12540,Ändringsbeslut,2010-06-10,2010,Myndighet,Myndighet Avvecklingsmyndigheten för nätverk och samarbete inom högre utbildning,True
+12540,Ändringsbeslut,2010-06-10,2010,Myndighet,Avvecklingsmyndigheten för nätverk och samarbete inom högre utbildning,True
 12541,Ändringsbeslut,2010-01-21,2010,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
 12542,Ändringsbeslut,2010-01-21,2010,Myndighet,Centrala studiestödsnämnden,True
 12543,Ändringsbeslut,2010-01-21,2010,Anslag,1:5,True
@@ -5396,7 +5257,7 @@ rbid,type,date,year,category,name,pdf
 12584,Ändringsbeslut,2010-02-18,2010,Anslag,1:1,True
 12585,Ändringsbeslut,2010-02-11,2010,Myndighet,Internationella programkontoret för utbildningsområdet,True
 12588,Ändringsbeslut,2010-02-11,2010,Myndighet,Kronofogdemyndigheten,True
-12589,Ändringsbeslut,2010-02-18,2010,Myndighet,Myndighet Avvecklingsmyndigheten för skolmyndigheter m.m.,True
+12589,Ändringsbeslut,2010-02-18,2010,Myndighet,Avvecklingsmyndigheten för skolmyndigheter m.m.,True
 12590,Ändringsbeslut,2010-02-11,2010,Myndighet,Justitiekanslern,True
 12591,Ändringsbeslut,2010-02-18,2010,Anslag,1:3 och 1:22,True
 12592,Ändringsbeslut,2010-02-25,2010,Anslag,2:54,True
@@ -5425,7 +5286,7 @@ rbid,type,date,year,category,name,pdf
 12621,Ändringsbeslut,2010-04-08,2010,Myndighet,Centrala studiestödsnämnden,True
 12623,Ändringsbeslut,2010-03-18,2010,Anslag,1:2,True
 12624,Ändringsbeslut,2010-06-17,2010,Myndighet,Försäkringskassan,True
-12625,Ändringsbeslut,2010-04-08,2010,Myndighet,Myndighet Avvecklingsmyndigheten för Verket för förvaltningsutveckling,True
+12625,Ändringsbeslut,2010-04-08,2010,Myndighet,Avvecklingsmyndigheten för Verket för förvaltningsutveckling,True
 12626,Ändringsbeslut,2010-03-25,2010,Anslag,"1:11, 1:1 och 2:1",True
 12627,Ändringsbeslut,2010-03-25,2010,Myndighet,Luftfartsverket,True
 12628,Regleringsbrev,2010-03-25,2010,Myndighet,Trafikanalys,True
@@ -5443,7 +5304,7 @@ rbid,type,date,year,category,name,pdf
 12643,Ändringsbeslut,2010-04-29,2010,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
 12645,Ändringsbeslut,2010-03-31,2010,Anslag,1:1,True
 12649,Ändringsbeslut,2010-04-22,2010,Myndighet,Kungl. biblioteket,True
-12650,Ändringsbeslut,2010-03-31,2010,Myndighet,Myndighet Avvecklingsmyndigheten för skolmyndigheter m.m.,True
+12650,Ändringsbeslut,2010-03-31,2010,Myndighet,Avvecklingsmyndigheten för skolmyndigheter m.m.,True
 12651,Ändringsbeslut,2010-05-06,2010,Myndighet,Finansinspektionen,True
 12652,Ändringsbeslut,2010-05-20,2010,Myndighet,Försvarsmakten,True
 12654,Ändringsbeslut,2010-04-22,2010,Anslag,3:1,True
@@ -5451,7 +5312,7 @@ rbid,type,date,year,category,name,pdf
 12656,Ändringsbeslut,2010-05-27,2010,Anslag,7:3,True
 12657,Ändringsbeslut,2010-04-22,2010,Myndighet,Statens järnvägar,True
 12658,Ändringsbeslut,2010-04-29,2010,Anslag,"1:11, 1:1 och 2:1",True
-12659,Ändringsbeslut,2010-04-08,2010,Myndighet,Myndighet Avvecklingsmyndigheten för skolmyndigheter m.m.,True
+12659,Ändringsbeslut,2010-04-08,2010,Myndighet,Avvecklingsmyndigheten för skolmyndigheter m.m.,True
 12660,Ändringsbeslut,2010-05-20,2010,Myndighet,Sametinget,True
 12662,Ändringsbeslut,2010-04-14,2010,Myndighet,Statens skolverk,True
 12663,Ändringsbeslut,2010-06-23,2010,Myndighet,Naturvårdsverket,True
@@ -5461,7 +5322,7 @@ rbid,type,date,year,category,name,pdf
 12668,Ändringsbeslut,2010-04-29,2010,Myndighet,Skogsstyrelsen,True
 12669,Ändringsbeslut,2010-04-22,2010,Myndighet,Arbetsförmedlingen,True
 12671,Ändringsbeslut,2010-05-20,2010,Myndighet,Statens haverikommission,True
-12676,Ändringsbeslut,2010-04-29,2010,Myndighet,"Myndighet Avvecklingsmyndigheten för SRV, KBM och SPF",True
+12676,Ändringsbeslut,2010-04-29,2010,Myndighet,"Avvecklingsmyndigheten för SRV, KBM och SPF",True
 12679,Ändringsbeslut,2010-05-27,2010,Anslag,1:1,True
 12680,Ändringsbeslut,2010-06-03,2010,Myndighet,Forskningsrådet för arbetsliv och socialvetenskap,True
 12682,Ändringsbeslut,2010-05-21,2010,Myndighet,Försvarshögskolan,True
@@ -5493,7 +5354,7 @@ rbid,type,date,year,category,name,pdf
 12710,Ändringsbeslut,2010-05-27,2010,Anslag,"1:2, 2:1, 3:4, 7:3, 8:2, 8:4, 8:7, 10:1, 11:2, 11:3 och 13:1",True
 12711,Ändringsbeslut,2010-06-10,2010,Anslag,3:1,True
 12712,Ändringsbeslut,2010-06-23,2010,Myndighet,Statens skolverk,True
-12713,Ändringsbeslut,2010-06-03,2010,Myndighet,Myndighet Avvecklingsmyndigheten för Verket för förvaltningsutveckling,True
+12713,Ändringsbeslut,2010-06-03,2010,Myndighet,Avvecklingsmyndigheten för Verket för förvaltningsutveckling,True
 12714,Ändringsbeslut,2010-06-17,2010,Myndighet,Specialpedagogiska skolmyndigheten,True
 12715,Ändringsbeslut,2010-06-23,2010,Myndighet,Riksarkivet,True
 12716,Ändringsbeslut,2010-07-01,2010,Anslag,1:2,True
@@ -5520,7 +5381,7 @@ rbid,type,date,year,category,name,pdf
 12738,Ändringsbeslut,2010-06-17,2010,Myndighet,Verket för innovationssystem,True
 12739,Ändringsbeslut,2010-07-01,2010,Myndighet,Försvarets materielverk,True
 12740,Ändringsbeslut,2010-07-01,2010,Anslag,"1:11, 1:1 och 2:1",True
-12742,Ändringsbeslut,2010-06-23,2010,Myndighet,"Myndighet Avvecklingsmyndigheten för SRV, KBM och SPF",True
+12742,Ändringsbeslut,2010-06-23,2010,Myndighet,"Avvecklingsmyndigheten för SRV, KBM och SPF",True
 12743,Ändringsbeslut,2010-06-17,2010,Myndighet,Sveriges geologiska undersökning,True
 12744,Ändringsbeslut,2010-06-23,2010,Myndighet,Brottsoffermyndigheten,True
 12745,Ändringsbeslut,2010-06-17,2010,Myndighet,Rikspolisstyrelsen,True
@@ -5610,10 +5471,6 @@ rbid,type,date,year,category,name,pdf
 12855,Ändringsbeslut,2010-09-30,2010,Myndighet,Presstödsnämnden,True
 12856,Ändringsbeslut,2010-09-30,2010,Anslag,3:10,True
 12857,Ändringsbeslut,2010-10-07,2010,Myndighet,Statens skolverk,True
-12858,Ändringsbeslut,,2010,Myndighet,Länsstyrelsen i Jönköpings län,False
-12859,Ändringsbeslut,,2010,Myndighet,Länsstyrelsen i Norrbottens län,False
-12860,Ändringsbeslut,,2010,Myndighet,Länsstyrelsen i Stockholms län,False
-12861,Ändringsbeslut,,2010,Myndighet,Länsstyrelsen i Västra Götalands län,False
 12862,Ändringsbeslut,2010-10-21,2010,Myndighet,länsstyrelserna,True
 12864,Ändringsbeslut,2010-10-28,2010,Myndighet,Inspektionen för arbetslöshetsförsäkringen,True
 12865,Ändringsbeslut,2010-10-14,2010,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
@@ -5876,7 +5733,7 @@ rbid,type,date,year,category,name,pdf
 13208,Regleringsbrev,2010-12-22,2011,Myndighet,Fortifikationsverket,True
 13209,Regleringsbrev,2010-12-22,2011,Anslag,1:14 och 1:2,True
 13210,Regleringsbrev,2010-12-22,2011,Myndighet,Exportkreditnämnden,True
-13212,Ändringsbeslut,2010-12-16,2010,Myndighet,Myndighet Avvecklingsmyndigheten för Verket för förvaltningsutveckling,True
+13212,Ändringsbeslut,2010-12-16,2010,Myndighet,Avvecklingsmyndigheten för Verket för förvaltningsutveckling,True
 13213,Ändringsbeslut,2010-11-25,2010,Myndighet,Riksarkivet,True
 13214,Regleringsbrev,2010-12-22,2011,Myndighet,Livsmedelsverket,True
 13215,Regleringsbrev,2010-12-22,2011,Anslag,"1:11, 1:1 och 2:1",True
@@ -5987,13 +5844,13 @@ rbid,type,date,year,category,name,pdf
 13370,Ändringsbeslut,2010-12-16,2010,Myndighet,Statens jordbruksverk,True
 13371,Regleringsbrev,2010-12-22,2011,Anslag,1:4 och 1:5,True
 13375,Ändringsbeslut,2010-12-22,2010,Myndighet,Arbetsgivarverket,True
-13376,Ändringsbeslut,2010-12-22,2010,Myndighet,Myndighet Avvecklingsmyndigheten för skolmyndigheter m.m.,True
+13376,Ändringsbeslut,2010-12-22,2010,Myndighet,Avvecklingsmyndigheten för skolmyndigheter m.m.,True
 13377,Ändringsbeslut,2010-12-16,2010,Myndighet,Försäkringskassan,True
 13379,Ändringsbeslut,2010-12-16,2010,Myndighet,Pensionsmyndigheten,True
 13380,Ändringsbeslut,2010-12-16,2010,Anslag,13:6,True
 13385,Regleringsbrev,2010-12-17,2011,Myndighet,Regeringskansliet,True
 13387,Ändringsbeslut,2010-12-09,2010,Anslag,1:21,True
-13388,Regleringsbrev,2010-12-22,2011,Myndighet,Myndighet Avvecklingsmyndigheten för PPM och delar av FK,True
+13388,Regleringsbrev,2010-12-22,2011,Myndighet,Avvecklingsmyndigheten för PPM och delar av FK,True
 13389,Ändringsbeslut,2010-12-16,2010,Myndighet,Myndigheten för yrkeshögskolan,True
 13390,Regleringsbrev,2010-12-22,2011,Myndighet,Statens musiksamlingar,True
 13391,Ändringsbeslut,2010-12-22,2010,Myndighet,Nämnden för statligt stöd till trossamfund,True
@@ -6005,27 +5862,6 @@ rbid,type,date,year,category,name,pdf
 13401,Ändringsbeslut,2010-12-16,2010,Anslag,1:3 och 1:4,True
 13402,Regleringsbrev,2010-12-22,2011,Anslag,1:7,True
 13404,Ändringsbeslut,2010-12-16,2010,Myndighet,Statens skolverk,True
-13405,Regleringsbrev,,2011,Myndighet,Länsstyrelsen i Stockholms län,False
-13406,Regleringsbrev,,2011,Myndighet,Länsstyrelsen i Uppsala län,False
-13407,Regleringsbrev,,2011,Myndighet,Länsstyrelsen i Södermanlands län,False
-13408,Regleringsbrev,,2011,Myndighet,Länsstyrelsen i Östergötlands län,False
-13409,Regleringsbrev,,2011,Myndighet,Länsstyrelsen i Jönköpings län,False
-13410,Regleringsbrev,,2011,Myndighet,Länsstyrelsen i Kronobergs län,False
-13411,Regleringsbrev,,2011,Myndighet,Länsstyrelsen i Kalmar län,False
-13412,Regleringsbrev,,2011,Myndighet,Länsstyrelsen i Gotlands län,False
-13413,Regleringsbrev,,2011,Myndighet,Länsstyrelsen i Blekinge län,False
-13414,Regleringsbrev,,2011,Myndighet,Länsstyrelsen i Skåne län,False
-13415,Regleringsbrev,,2011,Myndighet,Länsstyrelsen i Hallands län,False
-13416,Regleringsbrev,,2011,Myndighet,Länsstyrelsen i Västra Götalands län,False
-13417,Regleringsbrev,,2011,Myndighet,Länsstyrelsen i Värmlands län,False
-13418,Regleringsbrev,,2011,Myndighet,Länsstyrelsen i Örebro län,False
-13419,Regleringsbrev,,2011,Myndighet,Länsstyrelsen i Västmanlands län,False
-13420,Regleringsbrev,,2011,Myndighet,Länsstyrelsen i Dalarnas län,False
-13421,Regleringsbrev,,2011,Myndighet,Länsstyrelsen i Gävleborgs län,False
-13422,Regleringsbrev,,2011,Myndighet,Länsstyrelsen i Västernorrlands län,False
-13423,Regleringsbrev,,2011,Myndighet,Länsstyrelsen i Jämtlands län,False
-13424,Regleringsbrev,,2011,Myndighet,Länsstyrelsen i Västerbottens län,False
-13425,Regleringsbrev,,2011,Myndighet,Länsstyrelsen i Norrbottens län,False
 13426,Regleringsbrev,2010-12-22,2011,Anslag,11:1 (2004),True
 13427,Ändringsbeslut,2010-12-16,2010,Myndighet,universitet och högskolor m.m.,True
 13428,Regleringsbrev,2010-12-22,2011,Myndighet,Statens kulturråd,True
@@ -6213,7 +6049,7 @@ rbid,type,date,year,category,name,pdf
 13665,Ändringsbeslut,2011-06-30,2011,Myndighet,Statens skolinspektion,True
 13666,Ändringsbeslut,2011-06-30,2011,Myndighet,Livsmedelsverket,True
 13667,Ändringsbeslut,2011-06-30,2011,Anslag,1:5,True
-13668,Regleringsbrev,2011-06-30,2011,Myndighet,Myndighet Avvecklingsmyndigheten för Fiskeriverket,True
+13668,Regleringsbrev,2011-06-30,2011,Myndighet,Avvecklingsmyndigheten för Fiskeriverket,True
 13670,Ändringsbeslut,2011-07-07,2011,Anslag,"1:3, 1:21 och 1:22",True
 13671,Ändringsbeslut,2011-06-30,2011,Anslag,1:13,True
 13672,Ändringsbeslut,2011-08-25,2011,Myndighet,Socialstyrelsen,True
@@ -6507,7 +6343,6 @@ rbid,type,date,year,category,name,pdf
 13996,Ändringsbeslut,2011-11-10,2011,Myndighet,Statens geotekniska institut,True
 13998,Ändringsbeslut,2011-11-10,2011,Anslag,1:10,True
 13999,Regleringsbrev,2011-12-22,2012,Myndighet,Statens skolverk,True
-14000,Ändringsbeslut,,2011,Myndighet,Länsstyrelsen i Gotlands län,False
 14001,Regleringsbrev,2011-12-22,2012,Myndighet,Sveriges lantbruksuniversitet,True
 14002,Regleringsbrev,2011-12-20,2012,Myndighet,Statens skolinspektion,True
 14003,Ändringsbeslut,2011-11-10,2011,Myndighet,Naturhistoriska riksmuseet,True
@@ -6574,7 +6409,7 @@ rbid,type,date,year,category,name,pdf
 14074,Ändringsbeslut,2011-11-17,2011,Myndighet,Statens medieråd,True
 14075,Regleringsbrev,2011-12-15,2012,Myndighet,Affärsverket svenska kraftnät,True
 14076,Regleringsbrev,2011-12-22,2012,Myndighet,Kemikalieinspektionen,True
-14077,Regleringsbrev,2011-12-22,2012,Myndighet,Myndighet Avvecklingsmyndigheten för Fiskeriverket,True
+14077,Regleringsbrev,2011-12-22,2012,Myndighet,Avvecklingsmyndigheten för Fiskeriverket,True
 14078,Regleringsbrev,2011-12-22,2012,Myndighet,Arbetsgivarverket,True
 14079,Regleringsbrev,2011-12-22,2012,Myndighet,Statens tjänstepensionsverk,True
 14080,Regleringsbrev,2011-12-15,2012,Myndighet,Myndigheten för radio och tv,True
@@ -6661,32 +6496,11 @@ rbid,type,date,year,category,name,pdf
 14180,Ändringsbeslut,2011-12-08,2011,Anslag,"1:3, 1:21 och 1:22",True
 14182,Ändringsbeslut,2011-12-01,2011,Anslag,3:1,True
 14184,Ändringsbeslut,2011-12-15,2011,Anslag,1:8,True
-14185,Ändringsbeslut,2011-12-22,2011,Myndighet,Myndighet Avvecklingsmyndigheten för Fiskeriverket,True
+14185,Ändringsbeslut,2011-12-22,2011,Myndighet,Avvecklingsmyndigheten för Fiskeriverket,True
 14186,Ändringsbeslut,2011-12-08,2011,Myndighet,Tandvårds- och läkemedelsförmånsverket,True
 14187,Ändringsbeslut,2011-12-15,2011,Myndighet,Trafikverket,True
 14188,Ändringsbeslut,2011-12-20,2011,Myndighet,Statens skolverk,True
 14190,Ändringsbeslut,2011-12-15,2011,Anslag,1:1 och 33:6 (2006),True
-14191,Regleringsbrev,,2012,Myndighet,Länsstyrelsen i Blekinge län,False
-14192,Regleringsbrev,,2012,Myndighet,Länsstyrelsen i Dalarnas län,False
-14193,Regleringsbrev,,2012,Myndighet,Länsstyrelsen i Gotlands län,False
-14194,Regleringsbrev,,2012,Myndighet,Länsstyrelsen i Gävleborgs län,False
-14195,Regleringsbrev,,2012,Myndighet,Länsstyrelsen i Hallands län,False
-14196,Regleringsbrev,,2012,Myndighet,Länsstyrelsen i Jämtlands län,False
-14197,Regleringsbrev,,2012,Myndighet,Länsstyrelsen i Jönköpings län,False
-14198,Regleringsbrev,,2012,Myndighet,Länsstyrelsen i Kalmar län,False
-14199,Regleringsbrev,,2012,Myndighet,Länsstyrelsen i Kronobergs län,False
-14200,Regleringsbrev,,2012,Myndighet,Länsstyrelsen i Norrbottens län,False
-14201,Regleringsbrev,,2012,Myndighet,Länsstyrelsen i Skåne län,False
-14202,Regleringsbrev,,2012,Myndighet,Länsstyrelsen i Stockholms län,False
-14203,Regleringsbrev,,2012,Myndighet,Länsstyrelsen i Södermanlands län,False
-14204,Regleringsbrev,,2012,Myndighet,Länsstyrelsen i Uppsala län,False
-14205,Regleringsbrev,,2012,Myndighet,Länsstyrelsen i Värmlands län,False
-14206,Regleringsbrev,,2012,Myndighet,Länsstyrelsen i Västerbottens län,False
-14207,Regleringsbrev,,2012,Myndighet,Länsstyrelsen i Västernorrlands län,False
-14208,Regleringsbrev,,2012,Myndighet,Länsstyrelsen i Västmanlands län,False
-14209,Regleringsbrev,,2012,Myndighet,Länsstyrelsen i Västra Götalands län,False
-14210,Regleringsbrev,,2012,Myndighet,Länsstyrelsen i Örebro län,False
-14211,Regleringsbrev,,2012,Myndighet,Länsstyrelsen i Östergötlands län,False
 14212,Ändringsbeslut,2011-12-15,2011,Myndighet,Statens tjänstepensionsverk,True
 14213,Ändringsbeslut,2011-12-15,2011,Anslag,1:6,True
 14214,Ändringsbeslut,2011-12-22,2011,Myndighet,Naturvårdsverket,True
@@ -6825,8 +6639,6 @@ rbid,type,date,year,category,name,pdf
 14384,Ändringsbeslut,2012-12-06,2012,Anslag,1:11 och 1:1,True
 14385,Ändringsbeslut,2012-06-20,2012,Myndighet,Bokföringsnämnden,True
 14387,Ändringsbeslut,2012-06-14,2012,Myndighet,Migrationsverket,True
-14390,Ändringsbeslut,,2012,Myndighet,Länsstyrelsen i Hallands län,False
-14391,Ändringsbeslut,,2012,Myndighet,Länsstyrelsen i Norrbottens län,False
 14392,Ändringsbeslut,2012-06-14,2012,Myndighet,Statens järnvägar,True
 14393,Ändringsbeslut,2012-05-31,2012,Myndighet,Skatteverket,True
 14395,Ändringsbeslut,2012-06-14,2012,Anslag,1:1,True
@@ -6869,7 +6681,7 @@ rbid,type,date,year,category,name,pdf
 14437,Ändringsbeslut,2012-06-28,2012,Myndighet,Naturvårdsverket,True
 14438,Ändringsbeslut,2012-06-20,2012,Myndighet,Kronofogdemyndigheten,True
 14439,Ändringsbeslut,2012-08-02,2012,Anslag,6:1,True
-14440,Ändringsbeslut,2012-06-20,2012,Myndighet,Myndighet Avvecklingsmyndigheten för Fiskeriverket,True
+14440,Ändringsbeslut,2012-06-20,2012,Myndighet,Avvecklingsmyndigheten för Fiskeriverket,True
 14441,Ändringsbeslut,2012-06-28,2012,Myndighet,Ungdomsstyrelsen,True
 14442,Ändringsbeslut,2012-06-20,2012,Myndighet,Post- och telestyrelsen,True
 14443,Ändringsbeslut,2012-06-14,2012,Myndighet,Arbetsförmedlingen,True
@@ -7213,31 +7025,10 @@ rbid,type,date,year,category,name,pdf
 14853,Ändringsbeslut,2013-01-31,2013,Myndighet,Statens skolverk,True
 14854,Regleringsbrev,2012-12-20,2013,Anslag,1:13,True
 14855,Regleringsbrev,2012-12-18,2013,Myndighet,Svenska Unescorådet,True
-14856,Regleringsbrev,,2013,Myndighet,Länsstyrelsen i Blekinge län,False
 14857,Ändringsbeslut,2012-11-29,2012,Myndighet,Myndigheten för samhällsskydd och beredskap,True
 14859,Ändringsbeslut,2012-11-29,2012,Anslag,1:13,True
 14860,Regleringsbrev,2012-12-20,2013,Myndighet,Sveriges meteorologiska och hydrologiska institut,True
 14861,Regleringsbrev,2012-12-20,2013,Anslag,1:3 och 33:5 (2008),True
-14862,Regleringsbrev,,2013,Myndighet,Länsstyrelsen i Dalarnas län,False
-14863,Regleringsbrev,,2013,Myndighet,Länsstyrelsen i Gotlands län,False
-14864,Regleringsbrev,,2013,Myndighet,Länsstyrelsen i Gävleborgs län,False
-14865,Regleringsbrev,,2013,Myndighet,Länsstyrelsen i Hallands län,False
-14866,Regleringsbrev,,2013,Myndighet,Länsstyrelsen i Jämtlands län,False
-14867,Regleringsbrev,,2013,Myndighet,Länsstyrelsen i Jönköpings län,False
-14868,Regleringsbrev,,2013,Myndighet,Länsstyrelsen i Kalmar län,False
-14869,Regleringsbrev,,2013,Myndighet,Länsstyrelsen i Kronobergs län,False
-14870,Regleringsbrev,,2013,Myndighet,Länsstyrelsen i Norrbottens län,False
-14871,Regleringsbrev,,2013,Myndighet,Länsstyrelsen i Skåne län,False
-14872,Regleringsbrev,,2013,Myndighet,Länsstyrelsen i Stockholms län,False
-14873,Regleringsbrev,,2013,Myndighet,Länsstyrelsen i Södermanlands län,False
-14874,Regleringsbrev,,2013,Myndighet,Länsstyrelsen i Uppsala län,False
-14875,Regleringsbrev,,2013,Myndighet,Länsstyrelsen i Värmlands län,False
-14876,Regleringsbrev,,2013,Myndighet,Länsstyrelsen i Västerbottens län,False
-14877,Regleringsbrev,,2013,Myndighet,Länsstyrelsen i Västernorrlands län,False
-14878,Regleringsbrev,,2013,Myndighet,Länsstyrelsen i Västmanlands län,False
-14879,Regleringsbrev,,2013,Myndighet,Länsstyrelsen i Västra Götalands län,False
-14880,Regleringsbrev,,2013,Myndighet,Länsstyrelsen i Örebro län,False
-14881,Regleringsbrev,,2013,Myndighet,Länsstyrelsen i Östergötlands län,False
 14882,Regleringsbrev,2012-12-20,2013,Anslag,1:10,True
 14883,Regleringsbrev,2012-12-20,2013,Anslag,3:1,True
 14885,Ändringsbeslut,2012-11-29,2012,Myndighet,Kompetensrådet för utveckling i staten,True
@@ -7332,7 +7123,7 @@ rbid,type,date,year,category,name,pdf
 14998,Regleringsbrev,2012-12-13,2013,Anslag,6:4,True
 15000,Ändringsbeslut,2012-12-06,2012,Anslag,1:28 och 1:29,True
 15001,Ändringsbeslut,2012-12-06,2012,Myndighet,Statens jordbruksverk,True
-15002,Regleringsbrev,2012-12-18,2013,Myndighet,Myndighet Avvecklingsmyndigheten för utbildningsmyndigheter,True
+15002,Regleringsbrev,2012-12-18,2013,Myndighet,Avvecklingsmyndigheten för utbildningsmyndigheter,True
 15003,Ändringsbeslut,2012-12-13,2012,Myndighet,Högskoleverket,True
 15004,Ändringsbeslut,2012-12-13,2012,Myndighet,Internationella programkontoret för utbildningsområdet,True
 15005,Ändringsbeslut,2012-12-13,2012,Myndighet,Verket för högskoleservice,True
@@ -7567,8 +7358,6 @@ rbid,type,date,year,category,name,pdf
 15302,Ändringsbeslut,2013-10-24,2013,Myndighet,Försvarets materielverk,True
 15304,Ändringsbeslut,2013-11-21,2013,Myndighet,Specialpedagogiska skolmyndigheten,True
 15307,Ändringsbeslut,2013-10-03,2013,Myndighet,Myndigheten för tillväxtpolitiska utvärderingar och analyser,True
-15308,Ändringsbeslut,,2013,Myndighet,Länsstyrelsen i Hallands län,False
-15309,Ändringsbeslut,,2013,Myndighet,Länsstyrelsen i Norrbottens län,False
 15310,Ändringsbeslut,2013-10-10,2013,Anslag,1:11,True
 15311,Ändringsbeslut,2013-10-03,2013,Myndighet,Kammarkollegiet,True
 15312,Ändringsbeslut,2013-11-21,2013,Myndighet,Försäkringskassan,True
@@ -7675,7 +7464,6 @@ rbid,type,date,year,category,name,pdf
 15421,Regleringsbrev,2013-12-12,2014,Myndighet,Myndigheten för tillväxtpolitiska utvärderingar och analyser,True
 15422,Regleringsbrev,2013-12-19,2014,Anslag,2:6,True
 15423,Regleringsbrev,2013-12-12,2014,Myndighet,Högskolan i Skövde,True
-15424,Regleringsbrev,,2014,Myndighet,Länsstyrelsen i Blekinge län,False
 15425,Regleringsbrev,2013-12-12,2014,Myndighet,Högskolan Kristianstad,True
 15426,Regleringsbrev,2013-12-12,2014,Myndighet,Högskolan Väst,True
 15427,Regleringsbrev,2013-12-19,2014,Myndighet,Totalförsvarets rekryteringsmyndighet,True
@@ -7691,30 +7479,10 @@ rbid,type,date,year,category,name,pdf
 15437,Regleringsbrev,2013-12-12,2014,Myndighet,Verket för innovationssystem,True
 15438,Regleringsbrev,2013-12-12,2014,Myndighet,Kungl. Tekniska högskolan,True
 15439,Regleringsbrev,2013-12-12,2014,Myndighet,Karolinska institutet,True
-15440,Regleringsbrev,,2014,Myndighet,Länsstyrelsen i Dalarnas län,False
-15441,Regleringsbrev,,2014,Myndighet,Länsstyrelsen i Östergötlands län,False
-15442,Regleringsbrev,,2014,Myndighet,Länsstyrelsen i Gotlands län,False
-15443,Regleringsbrev,,2014,Myndighet,Länsstyrelsen i Gävleborgs län,False
-15444,Regleringsbrev,,2014,Myndighet,Länsstyrelsen i Jämtlands län,False
-15445,Regleringsbrev,,2014,Myndighet,Länsstyrelsen i Jönköpings län,False
-15446,Regleringsbrev,,2014,Myndighet,Länsstyrelsen i Kalmar län,False
-15447,Regleringsbrev,,2014,Myndighet,Länsstyrelsen i Kronobergs län,False
 15448,Regleringsbrev,2013-12-12,2014,Myndighet,Rymdstyrelsen,True
 15449,Regleringsbrev,2013-12-12,2014,Anslag,1:14,True
 15450,Regleringsbrev,2013-12-19,2014,Myndighet,Totalförsvarets forskningsinstitut,True
-15451,Regleringsbrev,,2014,Myndighet,Länsstyrelsen i Skåne län,False
-15452,Regleringsbrev,,2014,Myndighet,Länsstyrelsen i Stockholms län,False
-15453,Regleringsbrev,,2014,Myndighet,Länsstyrelsen i Södermanlands län,False
-15454,Regleringsbrev,,2014,Myndighet,Länsstyrelsen i Uppsala län,False
-15455,Regleringsbrev,,2014,Myndighet,Länsstyrelsen i Värmlands län,False
 15456,Regleringsbrev,2013-12-19,2014,Myndighet,Försvarets materielverk,True
-15457,Regleringsbrev,,2014,Myndighet,Länsstyrelsen i Västerbottens län,False
-15458,Regleringsbrev,,2014,Myndighet,Länsstyrelsen i Västernorrlands län,False
-15459,Regleringsbrev,,2014,Myndighet,Länsstyrelsen i Västmanlands län,False
-15460,Regleringsbrev,,2014,Myndighet,Länsstyrelsen i Västra Götalands län,False
-15461,Regleringsbrev,,2014,Myndighet,Länsstyrelsen i Örebro län,False
-15462,Regleringsbrev,,2014,Myndighet,Länsstyrelsen i Hallands län,False
-15463,Regleringsbrev,,2014,Myndighet,Länsstyrelsen i Norrbottens län,False
 15464,Regleringsbrev,2013-12-12,2014,Myndighet,Göteborgs universitet,True
 15465,Regleringsbrev,2013-12-12,2014,Myndighet,Södertörns högskola,True
 15466,Regleringsbrev,2013-12-19,2014,Myndighet,Universitets- och högskolerådet,True
@@ -7950,15 +7718,12 @@ rbid,type,date,year,category,name,pdf
 15748,Regleringsbrev,2013-12-19,2014,Anslag,1:1,True
 15749,Regleringsbrev,2013-12-19,2014,Anslag,1:1,True
 15750,Ändringsbeslut,2013-12-05,2013,Myndighet,Statens tjänstepensionsverk,True
-15751,Regleringsbrev,2013-12-12,2014,Myndighet,Myndighet Avvecklingsmyndigheten för utbildningsmyndigheter,True
+15751,Regleringsbrev,2013-12-12,2014,Myndighet,Avvecklingsmyndigheten för utbildningsmyndigheter,True
 15752,Regleringsbrev,2013-12-12,2014,Anslag,1:6,True
 15753,Regleringsbrev,2013-12-12,2014,Anslag,1:8 (2011),True
 15754,Regleringsbrev,2013-12-19,2014,Anslag,1:4,True
 15755,Regleringsbrev,2013-12-19,2014,Anslag,1:1,True
 15756,Ändringsbeslut,2013-12-19,2013,Anslag,2:4,True
-15757,Ändringsbeslut,,2013,Myndighet,Länsstyrelsen i Jämtlands län,False
-15758,Ändringsbeslut,,2013,Myndighet,Länsstyrelsen i Gotlands län,False
-15759,Ändringsbeslut,,2013,Myndighet,Länsstyrelsen i Norrbottens län,False
 15760,Regleringsbrev,2013-12-19,2014,Myndighet,Migrationsverket,True
 15761,Ändringsbeslut,2013-12-12,2013,Myndighet,Statens folkhälsoinstitut,True
 15762,Regleringsbrev,2013-12-19,2014,Anslag,2:3,True
@@ -7968,7 +7733,7 @@ rbid,type,date,year,category,name,pdf
 15770,Ändringsbeslut,2013-12-12,2013,Myndighet,Smittskyddsinstitutet,True
 15771,Regleringsbrev,2013-12-19,2014,Anslag,1:9,True
 15772,Ändringsbeslut,2013-12-19,2013,Anslag,1:13,True
-15773,Regleringsbrev,2013-12-19,2014,Myndighet,Myndighet Avvecklingsmyndigheten för vissa myndigheter inom vård- och omsorgsområdet,True
+15773,Regleringsbrev,2013-12-19,2014,Myndighet,Avvecklingsmyndigheten för vissa myndigheter inom vård- och omsorgsområdet,True
 15774,Ändringsbeslut,2013-12-12,2013,Myndighet,Inspektionen för vård och omsorg,True
 15775,Ändringsbeslut,2013-11-28,2013,Myndighet,Transportstyrelsen,True
 15776,Ändringsbeslut,2013-12-05,2013,Myndighet,Svenska institutet,True
@@ -8116,17 +7881,13 @@ rbid,type,date,year,category,name,pdf
 15954,Ändringsbeslut,2014-06-19,2014,Myndighet,Finansinspektionen,True
 15955,Ändringsbeslut,2014-06-26,2014,Anslag,2:64,True
 15956,Ändringsbeslut,2014-06-12,2014,Myndighet,länsstyrelserna,True
-15957,Ändringsbeslut,2014-05-28,2014,Myndighet,Myndighet Avvecklingsmyndigheten för utbildningsmyndigheter,True
+15957,Ändringsbeslut,2014-05-28,2014,Myndighet,Avvecklingsmyndigheten för utbildningsmyndigheter,True
 15958,Ändringsbeslut,2014-06-12,2014,Myndighet,Socialstyrelsen,True
-15959,Ändringsbeslut,,2014,Myndighet,Länsstyrelsen i Södermanlands län,False
 15960,Ändringsbeslut,2014-06-19,2014,Myndighet,Svenska institutet,True
 15961,Ändringsbeslut,2014-07-10,2014,Myndighet,Sveriges meteorologiska och hydrologiska institut,True
 15962,Ändringsbeslut,2014-06-19,2014,Myndighet,Statens energimyndighet,True
 15963,Ändringsbeslut,2014-09-04,2014,Anslag,1:18,True
 15964,Ändringsbeslut,2014-06-19,2014,Myndighet,Kriminalvården,True
-15965,Ändringsbeslut,,2014,Myndighet,Länsstyrelsen i Stockholms län,False
-15966,Ändringsbeslut,,2014,Myndighet,Länsstyrelsen i Hallands län,False
-15967,Ändringsbeslut,,2014,Myndighet,Länsstyrelsen i Västra Götalands län,False
 15969,Ändringsbeslut,2014-06-12,2014,Myndighet,Inspektionen för socialförsäkringen,True
 15970,Ändringsbeslut,2014-06-26,2014,Anslag,1:1,True
 15971,Ändringsbeslut,2014-06-26,2014,Anslag,1:2,True
@@ -8162,7 +7923,7 @@ rbid,type,date,year,category,name,pdf
 16003,Ändringsbeslut,2014-06-26,2014,Myndighet,Sveriges lantbruksuniversitet,True
 16005,Ändringsbeslut,2014-07-10,2014,Myndighet,Myndigheten för samhällsskydd och beredskap,True
 16006,Ändringsbeslut,2014-06-26,2014,Myndighet,Naturvårdsverket,True
-16008,Ändringsbeslut,2014-09-11,2014,Myndighet,Myndighet Avvecklingsmyndigheten för utbildningsmyndigheter,True
+16008,Ändringsbeslut,2014-09-11,2014,Myndighet,Avvecklingsmyndigheten för utbildningsmyndigheter,True
 16012,Ändringsbeslut,2014-09-04,2014,Myndighet,"Forskningsrådet för miljö, areella näringar och samhällsbyggande",True
 16013,Ändringsbeslut,2014-09-04,2014,Anslag,1:6,True
 16014,Ändringsbeslut,2014-08-14,2014,Anslag,1:1,True
@@ -8356,27 +8117,6 @@ rbid,type,date,year,category,name,pdf
 16256,Regleringsbrev,2014-12-22,2015,Anslag,"1:2, 2:1, 3:3 (2014), 5:2, 7:3, 8:2, 8:3, 8:6, 10:1, 11:1 och 11:3",True
 16257,Regleringsbrev,2014-12-18,2015,Anslag,"1:11, 1:1 och 1:6",True
 16258,Regleringsbrev,2014-12-18,2015,Myndighet,länsstyrelserna,True
-16259,Regleringsbrev,,2015,Myndighet,Länsstyrelsen i Blekinge län,False
-16260,Regleringsbrev,,2015,Myndighet,Länsstyrelsen i Dalarnas län,False
-16261,Regleringsbrev,,2015,Myndighet,Länsstyrelsen i Gotlands län,False
-16262,Regleringsbrev,,2015,Myndighet,Länsstyrelsen i Gävleborgs län,False
-16263,Regleringsbrev,,2015,Myndighet,Länsstyrelsen i Hallands län,False
-16264,Regleringsbrev,,2015,Myndighet,Länsstyrelsen i Jämtlands län,False
-16265,Regleringsbrev,,2015,Myndighet,Länsstyrelsen i Jönköpings län,False
-16266,Regleringsbrev,,2015,Myndighet,Länsstyrelsen i Kalmar län,False
-16267,Regleringsbrev,,2015,Myndighet,Länsstyrelsen i Kronobergs län,False
-16268,Regleringsbrev,,2015,Myndighet,Länsstyrelsen i Norrbottens län,False
-16269,Regleringsbrev,,2015,Myndighet,Länsstyrelsen i Skåne län,False
-16270,Regleringsbrev,,2015,Myndighet,Länsstyrelsen i Stockholms län,False
-16271,Regleringsbrev,,2015,Myndighet,Länsstyrelsen i Södermanlands län,False
-16272,Regleringsbrev,,2015,Myndighet,Länsstyrelsen i Uppsala län,False
-16273,Regleringsbrev,,2015,Myndighet,Länsstyrelsen i Värmlands län,False
-16274,Regleringsbrev,,2015,Myndighet,Länsstyrelsen i Västerbottens län,False
-16275,Regleringsbrev,,2015,Myndighet,Länsstyrelsen i Västernorrlands län,False
-16276,Regleringsbrev,,2015,Myndighet,Länsstyrelsen i Västmanlands län,False
-16277,Regleringsbrev,,2015,Myndighet,Länsstyrelsen i Västra Götalands län,False
-16278,Regleringsbrev,,2015,Myndighet,Länsstyrelsen i Örebro län,False
-16279,Regleringsbrev,,2015,Myndighet,Länsstyrelsen i Östergötlands län,False
 16281,Regleringsbrev,2014-12-22,2015,Myndighet,Statens jordbruksverk,True
 16282,Regleringsbrev,2014-12-19,2015,Myndighet,Fortifikationsverket,True
 16283,Regleringsbrev,2014-12-18,2015,Anslag,1:14,True
@@ -8433,8 +8173,6 @@ rbid,type,date,year,category,name,pdf
 16343,Regleringsbrev,2014-12-18,2015,Myndighet,Fastighetsmäklarinspektionen,True
 16344,Regleringsbrev,2014-12-18,2015,Anslag,2:6,True
 16345,Regleringsbrev,2014-12-22,2015,Anslag,1:16 och 1:17,True
-16346,Ändringsbeslut,,2014,Myndighet,Länsstyrelsen i Västerbottens län,False
-16347,Ändringsbeslut,,2014,Myndighet,Länsstyrelsen i Jönköpings län,False
 16348,Ändringsbeslut,2014-11-27,2014,Myndighet,"Forskningsrådet för miljö, areella näringar och samhällsbyggande",True
 16349,Regleringsbrev,2014-12-22,2015,Myndighet,Svenska Unescorådet,True
 16350,Regleringsbrev,2014-12-19,2015,Myndighet,Försvarsexportmyndigheten,True
@@ -8585,7 +8323,7 @@ rbid,type,date,year,category,name,pdf
 16515,Regleringsbrev,2014-12-18,2015,Anslag,1:1,True
 16516,Regleringsbrev,2014-12-18,2015,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
 16517,Regleringsbrev,2014-12-18,2015,Myndighet,Svenska institutet för europapolitiska studier,True
-16518,Regleringsbrev,2014-12-18,2015,Myndighet,Myndighet Avvecklingsmyndigheten för vissa myndigheter inom vård- och omsorgsområdet,True
+16518,Regleringsbrev,2014-12-18,2015,Myndighet,Avvecklingsmyndigheten för vissa myndigheter inom vård- och omsorgsområdet,True
 16519,Regleringsbrev,2014-12-22,2015,Myndighet,Mittuniversitetet,True
 16520,Regleringsbrev,2014-12-22,2015,Myndighet,Mälardalens högskola,True
 16521,Regleringsbrev,2014-12-22,2015,Myndighet,Stockholms universitet,True
@@ -8695,8 +8433,6 @@ rbid,type,date,year,category,name,pdf
 16650,Ändringsbeslut,2015-03-12,2015,Myndighet,Arbetsförmedlingen,True
 16651,Ändringsbeslut,2015-03-19,2015,Myndighet,Konjunkturinstitutet,True
 16652,Ändringsbeslut,2015-03-19,2015,Myndighet,länsstyrelserna,True
-16653,Ändringsbeslut,,2015,Myndighet,Länsstyrelsen i Jönköpings län,False
-16654,Ändringsbeslut,,2015,Myndighet,Länsstyrelsen i Hallands län,False
 16655,Ändringsbeslut,2015-03-26,2015,Myndighet,Polismyndigheten,True
 16656,Ändringsbeslut,2015-06-25,2015,Anslag,4:7,True
 16657,Ändringsbeslut,2015-09-24,2015,Myndighet,Statens tjänstepensionsverk,True
@@ -8864,7 +8600,7 @@ rbid,type,date,year,category,name,pdf
 16830,Ändringsbeslut,2015-09-03,2015,Myndighet,Försvarets materielverk,True
 16832,Ändringsbeslut,2015-08-20,2015,Myndighet,Transportstyrelsen,True
 16834,Ändringsbeslut,2015-09-03,2015,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
-16835,Ändringsbeslut,2015-08-27,2015,Myndighet,Myndighet Avvecklingsmyndigheten för vissa myndigheter inom vård- och omsorgsområdet,True
+16835,Ändringsbeslut,2015-08-27,2015,Myndighet,Avvecklingsmyndigheten för vissa myndigheter inom vård- och omsorgsområdet,True
 16837,Ändringsbeslut,2015-08-20,2015,Anslag,1:6,True
 16839,Ändringsbeslut,2015-10-01,2015,Myndighet,Statens va-nämnd,True
 16840,Ändringsbeslut,2015-11-26,2015,Myndighet,Polismyndigheten,True
@@ -8889,7 +8625,6 @@ rbid,type,date,year,category,name,pdf
 16864,Ändringsbeslut,2015-11-19,2015,Myndighet,Statens jordbruksverk,True
 16865,Ändringsbeslut,2015-10-15,2015,Anslag,"2:63, 2:65 och 2:66",True
 16866,Ändringsbeslut,2015-10-01,2015,Anslag,3:1,True
-16867,Ändringsbeslut,,2015,Myndighet,Länsstyrelsen i Västerbottens län,False
 16868,Ändringsbeslut,2015-10-01,2015,Myndighet,Kemikalieinspektionen,True
 16869,Ändringsbeslut,2015-10-15,2015,Myndighet,Vetenskapsrådet,True
 16870,Ändringsbeslut,2015-10-01,2015,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
@@ -8911,13 +8646,8 @@ rbid,type,date,year,category,name,pdf
 16888,Regleringsbrev,2015-12-17,2016,Myndighet,Allmänna reklamationsnämnden,True
 16889,Regleringsbrev,2015-12-17,2016,Myndighet,Marknadsdomstolen,True
 16890,Regleringsbrev,2015-12-17,2016,Myndighet,Fastighetsmäklarinspektionen,True
-16891,Ändringsbeslut,,2015,Myndighet,Länsstyrelsen i Västra Götalands län,False
 16892,Regleringsbrev,2015-12-17,2016,Myndighet,Konsumentverket,True
 16893,Regleringsbrev,2015-12-17,2016,Anslag,2:6,True
-16894,Ändringsbeslut,,2015,Myndighet,Länsstyrelsen i Västernorrlands län,False
-16895,Ändringsbeslut,,2015,Myndighet,Länsstyrelsen i Dalarnas län,False
-16896,Ändringsbeslut,,2015,Myndighet,Länsstyrelsen i Uppsala län,False
-16897,Ändringsbeslut,,2015,Myndighet,Länsstyrelsen i Östergötlands län,False
 16899,Regleringsbrev,2015-12-10,2016,Myndighet,Centrala studiestödsnämnden,True
 16900,Ändringsbeslut,2015-10-08,2015,Myndighet,Socialstyrelsen,True
 16901,Regleringsbrev,2015-12-18,2016,Myndighet,Försvarets radioanstalt,True
@@ -9262,27 +8992,6 @@ rbid,type,date,year,category,name,pdf
 17316,Regleringsbrev,2015-12-17,2016,Anslag,1:4,True
 17317,Regleringsbrev,2015-12-10,2016,Anslag,1:3,True
 17318,Regleringsbrev,2015-12-10,2016,Myndighet,länsstyrelserna,True
-17319,Regleringsbrev,,2016,Myndighet,Länsstyrelsen i Blekinge län,False
-17320,Regleringsbrev,,2016,Myndighet,Länsstyrelsen i Dalarnas län,False
-17321,Regleringsbrev,,2016,Myndighet,Länsstyrelsen i Gotlands län,False
-17322,Regleringsbrev,,2016,Myndighet,Länsstyrelsen i Gävleborgs län,False
-17323,Regleringsbrev,,2016,Myndighet,Länsstyrelsen i Hallands län,False
-17324,Regleringsbrev,,2016,Myndighet,Länsstyrelsen i Jämtlands län,False
-17325,Regleringsbrev,,2016,Myndighet,Länsstyrelsen i Jönköpings län,False
-17326,Regleringsbrev,,2016,Myndighet,Länsstyrelsen i Kalmar län,False
-17327,Regleringsbrev,,2016,Myndighet,Länsstyrelsen i Kronobergs län,False
-17328,Regleringsbrev,,2016,Myndighet,Länsstyrelsen i Norrbottens län,False
-17329,Regleringsbrev,,2016,Myndighet,Länsstyrelsen i Skåne län,False
-17330,Regleringsbrev,,2016,Myndighet,Länsstyrelsen i Stockholms län,False
-17331,Regleringsbrev,,2016,Myndighet,Länsstyrelsen i Södermanlands län,False
-17332,Regleringsbrev,,2016,Myndighet,Länsstyrelsen i Uppsala län,False
-17333,Regleringsbrev,,2016,Myndighet,Länsstyrelsen i Värmlands län,False
-17334,Regleringsbrev,,2016,Myndighet,Länsstyrelsen i Västerbottens län,False
-17335,Regleringsbrev,,2016,Myndighet,Länsstyrelsen i Västernorrlands län,False
-17336,Regleringsbrev,,2016,Myndighet,Länsstyrelsen i Västmanlands län,False
-17337,Regleringsbrev,,2016,Myndighet,Länsstyrelsen i Västra Götalands län,False
-17338,Regleringsbrev,,2016,Myndighet,Länsstyrelsen i Örebro län,False
-17339,Regleringsbrev,,2016,Myndighet,Länsstyrelsen i Östergötlands län,False
 17340,Ändringsbeslut,2015-12-03,2015,Anslag,2:3,True
 17341,Ändringsbeslut,2015-12-03,2015,Anslag,2:4,True
 17342,Regleringsbrev,2015-12-17,2016,Myndighet,Institutet för arbetsmarknads- och utbildningspolitisk utvärdering,True
@@ -9294,11 +9003,8 @@ rbid,type,date,year,category,name,pdf
 17348,Regleringsbrev,2015-12-18,2016,Myndighet,Totalförsvarets forskningsinstitut,True
 17350,Ändringsbeslut,2015-11-26,2015,Anslag,1:5,True
 17351,Ändringsbeslut,2015-12-03,2015,Myndighet,länsstyrelserna,True
-17352,Ändringsbeslut,,2015,Myndighet,Länsstyrelsen i Stockholms län,False
-17353,Ändringsbeslut,,2015,Myndighet,Länsstyrelsen i Södermanlands län,False
 17354,Regleringsbrev,2015-12-17,2015,Anslag,1:5,True
 17355,Ändringsbeslut,2015-11-26,2015,Myndighet,Mittuniversitetet,True
-17356,Ändringsbeslut,,2015,Myndighet,Länsstyrelsen i Norrbottens län,False
 17357,Ändringsbeslut,2015-11-26,2015,Anslag,14:1 och 14:2,True
 17358,Ändringsbeslut,2015-12-17,2015,Myndighet,Skatteverket,True
 17359,Ändringsbeslut,2015-11-26,2015,Anslag,1:3,True
@@ -9936,32 +9642,9 @@ rbid,type,date,year,category,name,pdf
 18194,Ändringsbeslut,2016-12-22,2016,Myndighet,Migrationsverket,True
 18195,Ändringsbeslut,2016-12-22,2016,Anslag,1:4 och 1:5,True
 18196,Regleringsbrev,2016-12-20,2017,Myndighet,Arbetsdomstolen,True
-18197,Regleringsbrev,,2017,Myndighet,Länsstyrelsen i Blekinge län,False
-18198,Regleringsbrev,,2017,Myndighet,Länsstyrelsen i Dalarnas län,False
-18199,Regleringsbrev,,2017,Myndighet,Länsstyrelsen i Gotlands län,False
-18200,Regleringsbrev,,2017,Myndighet,Länsstyrelsen i Gävleborgs län,False
-18201,Regleringsbrev,,2017,Myndighet,Länsstyrelsen i Hallands län,False
-18202,Regleringsbrev,,2017,Myndighet,Länsstyrelsen i Jämtlands län,False
-18203,Regleringsbrev,,2017,Myndighet,Länsstyrelsen i Jönköpings län,False
-18204,Regleringsbrev,,2017,Myndighet,Länsstyrelsen i Kalmar län,False
-18205,Regleringsbrev,,2017,Myndighet,Länsstyrelsen i Kronobergs län,False
-18206,Regleringsbrev,,2017,Myndighet,Länsstyrelsen i Norrbottens län,False
-18207,Regleringsbrev,,2017,Myndighet,Länsstyrelsen i Skåne län,False
-18208,Regleringsbrev,,2017,Myndighet,Länsstyrelsen i Stockholms län,False
-18209,Regleringsbrev,,2017,Myndighet,Länsstyrelsen i Södermanlands län,False
-18210,Regleringsbrev,,2017,Myndighet,Länsstyrelsen i Värmlands län,False
-18211,Regleringsbrev,,2017,Myndighet,Länsstyrelsen i Uppsala län,False
-18212,Regleringsbrev,,2017,Myndighet,Länsstyrelsen i Västerbottens län,False
-18213,Regleringsbrev,,2017,Myndighet,Länsstyrelsen i Västernorrlands län,False
-18214,Regleringsbrev,,2017,Myndighet,Länsstyrelsen i Västmanlands län,False
-18215,Regleringsbrev,,2017,Myndighet,Länsstyrelsen i Västra Götalands län,False
-18216,Regleringsbrev,,2017,Myndighet,Länsstyrelsen i Örebro län,False
-18217,Regleringsbrev,,2017,Myndighet,Länsstyrelsen i Östergötlands län,False
 18218,Ändringsbeslut,2016-12-14,2016,Myndighet,Polismyndigheten,True
 18220,Regleringsbrev,2016-12-20,2017,Anslag,1:1,True
 18223,Ändringsbeslut,2016-12-14,2016,Myndighet,länsstyrelserna,True
-18224,Ändringsbeslut,,2016,Myndighet,Länsstyrelsen i Värmlands län,False
-18225,Ändringsbeslut,,2016,Myndighet,Länsstyrelsen i Skåne län,False
 18226,Ändringsbeslut,2016-12-01,2016,Myndighet,Transportstyrelsen,True
 18227,Ändringsbeslut,2016-12-01,2016,Myndighet,Lunds universitet,True
 18228,Regleringsbrev,2016-12-20,2017,Anslag,1:2 och 1:4,True
@@ -9974,7 +9657,6 @@ rbid,type,date,year,category,name,pdf
 18240,Ändringsbeslut,2016-12-08,2016,Anslag,3:13,True
 18241,Ändringsbeslut,2016-12-01,2016,Myndighet,Luleå tekniska universitet,True
 18242,Regleringsbrev,2016-12-22,2017,Anslag,1:4 och 1:5,True
-18246,Ändringsbeslut,,2016,Myndighet,Länsstyrelsen i Stockholms län,False
 18247,Ändringsbeslut,2016-12-08,2016,Myndighet,Statens försvarshistoriska museer,True
 18248,Ändringsbeslut,2016-12-22,2016,Myndighet,Sameskolstyrelsen,True
 18249,Regleringsbrev,2016-12-14,2017,Myndighet,Säkerhetspolisen,True
@@ -10353,32 +10035,11 @@ rbid,type,date,year,category,name,pdf
 18698,Regleringsbrev,2017-12-18,2018,Myndighet,Lunds universitet,True
 18699,Regleringsbrev,2017-12-07,2018,Anslag,1:1,True
 18701,Ändringsbeslut,2017-12-21,2017,Myndighet,Stockholms konstnärliga högskola,True
-18702,Regleringsbrev,,2018,Myndighet,Länsstyrelsen i Blekinge län,False
-18703,Regleringsbrev,,2018,Myndighet,Länsstyrelsen i Dalarnas län,False
 18704,Regleringsbrev,2017-12-18,2018,Myndighet,Universitets- och högskolerådet,True
-18706,Regleringsbrev,,2018,Myndighet,Länsstyrelsen i Gotlands län,False
-18707,Regleringsbrev,,2018,Myndighet,Länsstyrelsen i Gävleborgs län,False
 18708,Regleringsbrev,2017-12-13,2018,Anslag,1:3,True
-18709,Regleringsbrev,,2018,Myndighet,Länsstyrelsen i Hallands län,False
-18710,Regleringsbrev,,2018,Myndighet,Länsstyrelsen i Jämtlands län,False
-18711,Regleringsbrev,,2018,Myndighet,Länsstyrelsen i Jönköpings län,False
-18712,Regleringsbrev,,2018,Myndighet,Länsstyrelsen i Kalmar län,False
-18713,Regleringsbrev,,2018,Myndighet,Länsstyrelsen i Kronobergs län,False
-18714,Regleringsbrev,,2018,Myndighet,Länsstyrelsen i Norrbottens län,False
 18715,Regleringsbrev,2017-12-18,2018,Myndighet,Linköpings universitet,True
-18716,Regleringsbrev,,2018,Myndighet,Länsstyrelsen i Skåne län,False
-18717,Regleringsbrev,,2018,Myndighet,Länsstyrelsen i Stockholms län,False
-18718,Regleringsbrev,,2018,Myndighet,Länsstyrelsen i Södermanlands län,False
-18719,Regleringsbrev,,2018,Myndighet,Länsstyrelsen i Uppsala län,False
-18720,Regleringsbrev,,2018,Myndighet,Länsstyrelsen i Värmlands län,False
-18721,Regleringsbrev,,2018,Myndighet,Länsstyrelsen i Västerbottens län,False
 18722,Regleringsbrev,2017-12-18,2018,Anslag,1:5,True
-18724,Regleringsbrev,,2018,Myndighet,Länsstyrelsen i Västernorrlands län,False
-18725,Regleringsbrev,,2018,Myndighet,Länsstyrelsen i Västmanlands län,False
-18726,Regleringsbrev,,2018,Myndighet,Länsstyrelsen i Västra Götalands län,False
 18727,Regleringsbrev,2017-12-18,2018,Myndighet,Göteborgs universitet,True
-18728,Regleringsbrev,,2018,Myndighet,Länsstyrelsen i Örebro län,False
-18729,Regleringsbrev,,2018,Myndighet,Länsstyrelsen i Östergötlands län,False
 18730,Regleringsbrev,2017-12-18,2018,Myndighet,Statens servicecenter,True
 18731,Ändringsbeslut,2017-11-16,2017,Anslag,3:13,True
 18732,Regleringsbrev,2017-12-21,2018,Myndighet,Trafikanalys,True
@@ -10576,8 +10237,6 @@ rbid,type,date,year,category,name,pdf
 18985,Ändringsbeslut,2017-12-13,2017,Myndighet,Specialpedagogiska skolmyndigheten,True
 18986,Ändringsbeslut,2017-12-13,2017,Myndighet,Sameskolstyrelsen,True
 18987,Ändringsbeslut,2017-12-18,2017,Myndighet,länsstyrelserna,True
-18988,Ändringsbeslut,,2017,Myndighet,Länsstyrelsen i Östergötlands län,False
-18989,Ändringsbeslut,,2017,Myndighet,Länsstyrelsen i Stockholms län,False
 18990,Ändringsbeslut,2017-12-18,2017,Myndighet,Arbetsförmedlingen,True
 18991,Ändringsbeslut,2017-12-07,2017,Anslag,1:11 och 1:14,True
 18995,Regleringsbrev,2017-12-13,2018,Myndighet,Säkerhetspolisen,True
@@ -10687,16 +10346,6 @@ rbid,type,date,year,category,name,pdf
 19133,Ändringsbeslut,2018-04-19,2018,Anslag,3:1,True
 19134,Ändringsbeslut,2018-04-26,2018,Myndighet,Statens skolverk,True
 19135,Ändringsbeslut,2018-06-07,2018,Anslag,2:64,True
-19136,Ändringsbeslut,,2018,Myndighet,Länsstyrelsen i Jönköpings län,False
-19137,Ändringsbeslut,,2018,Myndighet,Länsstyrelsen i Kronobergs län,False
-19138,Ändringsbeslut,,2018,Myndighet,Länsstyrelsen i Gotlands län,False
-19139,Ändringsbeslut,,2018,Myndighet,Länsstyrelsen i Blekinge län,False
-19140,Ändringsbeslut,,2018,Myndighet,Länsstyrelsen i Skåne län,False
-19141,Ändringsbeslut,,2018,Myndighet,Länsstyrelsen i Värmlands län,False
-19142,Ändringsbeslut,,2018,Myndighet,Länsstyrelsen i Örebro län,False
-19143,Ändringsbeslut,,2018,Myndighet,Länsstyrelsen i Västmanlands län,False
-19144,Ändringsbeslut,,2018,Myndighet,Länsstyrelsen i Dalarnas län,False
-19145,Ändringsbeslut,,2018,Myndighet,Länsstyrelsen i Jämtlands län,False
 19146,Ändringsbeslut,2018-04-26,2018,Myndighet,Valmyndigheten,True
 19147,Ändringsbeslut,2018-04-19,2018,Anslag,1:7,True
 19148,Ändringsbeslut,2018-05-09,2018,Myndighet,Trafikverket,True
@@ -11099,27 +10748,6 @@ rbid,type,date,year,category,name,pdf
 19620,Regleringsbrev,2018-12-21,2019,Myndighet,Statskontoret,True
 19621,Regleringsbrev,2018-12-18,2019,Myndighet,länsstyrelserna,True
 19622,Regleringsbrev,2018-12-21,2019,Myndighet,Myndigheten för digital förvaltning,True
-19623,Regleringsbrev,,2019,Myndighet,Länsstyrelsen i Blekinge län,False
-19624,Regleringsbrev,,2019,Myndighet,Länsstyrelsen i Dalarnas län,False
-19625,Regleringsbrev,,2019,Myndighet,Länsstyrelsen i Gotlands län,False
-19626,Regleringsbrev,,2019,Myndighet,Länsstyrelsen i Gävleborgs län,False
-19627,Regleringsbrev,,2019,Myndighet,Länsstyrelsen i Hallands län,False
-19628,Regleringsbrev,,2019,Myndighet,Länsstyrelsen i Jämtlands län,False
-19629,Regleringsbrev,,2019,Myndighet,Länsstyrelsen i Jönköpings län,False
-19630,Regleringsbrev,,2019,Myndighet,Länsstyrelsen i Kalmar län,False
-19631,Regleringsbrev,,2019,Myndighet,Länsstyrelsen i Kronobergs län,False
-19632,Regleringsbrev,,2019,Myndighet,Länsstyrelsen i Norrbottens län,False
-19633,Regleringsbrev,,2019,Myndighet,Länsstyrelsen i Skåne län,False
-19634,Regleringsbrev,,2019,Myndighet,Länsstyrelsen i Stockholms län,False
-19635,Regleringsbrev,,2019,Myndighet,Länsstyrelsen i Södermanlands län,False
-19636,Regleringsbrev,,2019,Myndighet,Länsstyrelsen i Värmlands län,False
-19637,Regleringsbrev,,2019,Myndighet,Länsstyrelsen i Uppsala län,False
-19638,Regleringsbrev,,2019,Myndighet,Länsstyrelsen i Västerbottens län,False
-19639,Regleringsbrev,,2019,Myndighet,Länsstyrelsen i Västernorrlands län,False
-19640,Regleringsbrev,,2019,Myndighet,Länsstyrelsen i Västmanlands län,False
-19641,Regleringsbrev,,2019,Myndighet,Länsstyrelsen i Västra Götalands län,False
-19642,Regleringsbrev,,2019,Myndighet,Länsstyrelsen i Örebro län,False
-19643,Regleringsbrev,,2019,Myndighet,Länsstyrelsen i Östergötlands län,False
 19644,Regleringsbrev,2018-12-21,2019,Anslag,1:1,True
 19645,Regleringsbrev,2018-12-21,2019,Anslag,1:1,True
 19646,Regleringsbrev,2018-12-21,2019,Anslag,"1:1, 1:2, 1:3 och 1:4",True
@@ -11405,15 +11033,6 @@ rbid,type,date,year,category,name,pdf
 19990,Ändringsbeslut,2019-03-28,2019,Anslag,1:6,True
 19991,Ändringsbeslut,2019-03-28,2019,Myndighet,Statens skolinspektion,True
 19992,Ändringsbeslut,2019-03-28,2019,Myndighet,Statistiska centralbyrån,True
-19993,Ändringsbeslut,,2019,Myndighet,Länsstyrelsen i Hallands län,False
-19994,Ändringsbeslut,,2019,Myndighet,Länsstyrelsen i Kronobergs län,False
-19995,Ändringsbeslut,,2019,Myndighet,Länsstyrelsen i Norrbottens län,False
-19996,Ändringsbeslut,,2019,Myndighet,Länsstyrelsen i Skåne län,False
-19997,Ändringsbeslut,,2019,Myndighet,Länsstyrelsen i Stockholms län,False
-19998,Ändringsbeslut,,2019,Myndighet,Länsstyrelsen i Uppsala län,False
-19999,Ändringsbeslut,,2019,Myndighet,Länsstyrelsen i Värmlands län,False
-20000,Ändringsbeslut,,2019,Myndighet,Länsstyrelsen i Västra Götalands län,False
-20001,Ändringsbeslut,,2019,Myndighet,Länsstyrelsen i Östergötlands län,False
 20002,Ändringsbeslut,2019-04-04,2019,Myndighet,Myndigheten för tillväxtpolitiska utvärderingar och analyser,True
 20004,Ändringsbeslut,2019-04-18,2019,Anslag,4:4,True
 20005,Ändringsbeslut,2019-03-28,2019,Myndighet,Nationalmuseum,True
@@ -11984,28 +11603,7 @@ rbid,type,date,year,category,name,pdf
 20660,Ändringsbeslut,2019-12-05,2019,Anslag,1:11 och 1:14,True
 20661,Ändringsbeslut,2019-12-05,2019,Myndighet,Kammarkollegiet,True
 20662,Ändringsbeslut,2019-12-11,2019,Anslag,3:12,True
-20663,Regleringsbrev,,2020,Myndighet,Länsstyrelsen i Blekinge län,False
-20664,Regleringsbrev,,2020,Myndighet,Länsstyrelsen i Dalarnas län,False
-20665,Regleringsbrev,,2020,Myndighet,Länsstyrelsen i Gotlands län,False
-20666,Regleringsbrev,,2020,Myndighet,Länsstyrelsen i Gävleborgs län,False
-20667,Regleringsbrev,,2020,Myndighet,Länsstyrelsen i Hallands län,False
-20668,Regleringsbrev,,2020,Myndighet,Länsstyrelsen i Jämtlands län,False
-20669,Regleringsbrev,,2020,Myndighet,Länsstyrelsen i Jönköpings län,False
-20670,Regleringsbrev,,2020,Myndighet,Länsstyrelsen i Kalmar län,False
-20671,Regleringsbrev,,2020,Myndighet,Länsstyrelsen i Kronobergs län,False
-20672,Regleringsbrev,,2020,Myndighet,Länsstyrelsen i Norrbottens län,False
-20673,Regleringsbrev,,2020,Myndighet,Länsstyrelsen i Skåne län,False
-20674,Regleringsbrev,,2020,Myndighet,Länsstyrelsen i Stockholms län,False
-20675,Regleringsbrev,,2020,Myndighet,Länsstyrelsen i Södermanlands län,False
-20676,Regleringsbrev,,2020,Myndighet,Länsstyrelsen i Uppsala län,False
-20677,Regleringsbrev,,2020,Myndighet,Länsstyrelsen i Värmlands län,False
-20678,Regleringsbrev,,2020,Myndighet,Länsstyrelsen i Västerbottens län,False
-20679,Regleringsbrev,,2020,Myndighet,Länsstyrelsen i Västernorrlands län,False
 20680,Ändringsbeslut,2019-12-11,2019,Myndighet,Vetenskapsrådet,True
-20681,Regleringsbrev,,2020,Myndighet,Länsstyrelsen i Västmanlands län,False
-20682,Regleringsbrev,,2020,Myndighet,Länsstyrelsen i Västra Götalands län,False
-20683,Regleringsbrev,,2020,Myndighet,Länsstyrelsen i Örebro län,False
-20684,Regleringsbrev,,2020,Myndighet,Länsstyrelsen i Östergötlands län,False
 20685,Ändringsbeslut,2019-12-05,2019,Myndighet,Rymdstyrelsen,True
 20686,Ändringsbeslut,2019-12-05,2019,Myndighet,Kungl. Tekniska högskolan,True
 20687,Ändringsbeslut,2019-11-28,2019,Myndighet,Havs- och vattenmyndigheten,True
@@ -12035,9 +11633,7 @@ rbid,type,date,year,category,name,pdf
 20715,Ändringsbeslut,2019-12-19,2019,Myndighet,Rådet för Europeiska socialfonden i Sverige,True
 20716,Ändringsbeslut,2019-12-05,2019,Myndighet,Universitets- och högskolerådet,True
 20717,Ändringsbeslut,2019-12-11,2019,Anslag,1:16,True
-20718,Ändringsbeslut,,2019,Myndighet,Länsstyrelsen i Dalarnas län,False
 20719,Ändringsbeslut,2019-12-11,2019,Myndighet,Statens fastighetsverk,True
-20720,Ändringsbeslut,,2019,Myndighet,Länsstyrelsen i Gotlands län,False
 20721,Ändringsbeslut,2019-12-17,2019,Myndighet,Försvarets materielverk,True
 20722,Ändringsbeslut,2019-12-11,2019,Myndighet,Tandvårds- och läkemedelsförmånsverket,True
 20724,Ändringsbeslut,2019-12-17,2019,Myndighet,Naturvårdsverket,True
@@ -12810,7 +12406,6 @@ rbid,type,date,year,category,name,pdf
 21632,Ändringsbeslut,2020-11-12,2020,Myndighet,Arbetsförmedlingen,True
 21633,Ändringsbeslut,2020-12-10,2020,Myndighet,Skatteverket,True
 21634,Ändringsbeslut,2020-12-10,2020,Myndighet,Tullverket,True
-21635,Regleringsbrev,,2021,Myndighet,Länsstyrelsen i Stockholms län,False
 21636,Ändringsbeslut,2020-12-03,2020,Myndighet,Inspektionen för vård och omsorg,True
 21638,Ändringsbeslut,2020-12-03,2020,Myndighet,Tillväxtverket,True
 21639,Ändringsbeslut,2020-12-03,2020,Myndighet,Arbetsförmedlingen,True
@@ -12826,26 +12421,6 @@ rbid,type,date,year,category,name,pdf
 21650,Ändringsbeslut,2020-12-03,2020,Myndighet,Myndigheten för digital förvaltning,True
 21652,Ändringsbeslut,2020-11-26,2020,Myndighet,Folkhälsomyndigheten,True
 21653,Ändringsbeslut,2020-12-03,2020,Anslag,1:3,True
-21654,Regleringsbrev,,2021,Myndighet,Länsstyrelsen i Blekinge län,False
-21655,Regleringsbrev,,2021,Myndighet,Länsstyrelsen i Dalarnas län,False
-21656,Regleringsbrev,,2021,Myndighet,Länsstyrelsen i Gotlands län,False
-21657,Regleringsbrev,,2021,Myndighet,Länsstyrelsen i Gävleborgs län,False
-21658,Regleringsbrev,,2021,Myndighet,Länsstyrelsen i Hallands län,False
-21659,Regleringsbrev,,2021,Myndighet,Länsstyrelsen i Jämtlands län,False
-21660,Regleringsbrev,,2021,Myndighet,Länsstyrelsen i Jönköpings län,False
-21661,Regleringsbrev,,2021,Myndighet,Länsstyrelsen i Kalmar län,False
-21662,Regleringsbrev,,2021,Myndighet,Länsstyrelsen i Kronobergs län,False
-21663,Regleringsbrev,,2021,Myndighet,Länsstyrelsen i Norrbottens län,False
-21664,Regleringsbrev,,2021,Myndighet,Länsstyrelsen i Skåne län,False
-21665,Regleringsbrev,,2021,Myndighet,Länsstyrelsen i Södermanlands län,False
-21666,Regleringsbrev,,2021,Myndighet,Länsstyrelsen i Uppsala län,False
-21667,Regleringsbrev,,2021,Myndighet,Länsstyrelsen i Värmlands län,False
-21668,Regleringsbrev,,2021,Myndighet,Länsstyrelsen i Västerbottens län,False
-21669,Regleringsbrev,,2021,Myndighet,Länsstyrelsen i Västernorrlands län,False
-21670,Regleringsbrev,,2021,Myndighet,Länsstyrelsen i Västmanlands län,False
-21671,Regleringsbrev,,2021,Myndighet,Länsstyrelsen i Västra Götalands län,False
-21672,Regleringsbrev,,2021,Myndighet,Länsstyrelsen i Örebro län,False
-21673,Regleringsbrev,,2021,Myndighet,Länsstyrelsen i Östergötlands län,False
 21674,Regleringsbrev,2020-12-17,2021,Anslag,1:23 (2020),True
 21675,Ändringsbeslut,2020-12-10,2020,Myndighet,Statens skolverk,True
 21676,Ändringsbeslut,2020-12-10,2020,Myndighet,Trafikverket,True
@@ -13694,28 +13269,7 @@ rbid,type,date,year,category,name,pdf
 22669,Ändringsbeslut,2021-12-09,2021,Anslag,1:19,True
 22671,Ändringsbeslut,2021-12-16,2021,Myndighet,Arbetsförmedlingen,True
 22672,Ändringsbeslut,2021-12-16,2021,Myndighet,Statens skolverk,True
-22673,Regleringsbrev,,2022,Myndighet,Länsstyrelsen i Blekinge län,False
 22674,Regleringsbrev,2021-12-16,2022,Anslag,1:19,True
-22675,Regleringsbrev,,2022,Myndighet,Länsstyrelsen i Dalarnas län,False
-22676,Regleringsbrev,,2022,Myndighet,Länsstyrelsen i Gotlands län,False
-22677,Regleringsbrev,,2022,Myndighet,Länsstyrelsen i Gävleborgs län,False
-22678,Regleringsbrev,,2022,Myndighet,Länsstyrelsen i Hallands län,False
-22679,Regleringsbrev,,2022,Myndighet,Länsstyrelsen i Jämtlands län,False
-22680,Regleringsbrev,,2022,Myndighet,Länsstyrelsen i Jönköpings län,False
-22681,Regleringsbrev,,2022,Myndighet,Länsstyrelsen i Kalmar län,False
-22682,Regleringsbrev,,2022,Myndighet,Länsstyrelsen i Kronobergs län,False
-22683,Regleringsbrev,,2022,Myndighet,Länsstyrelsen i Norrbottens län,False
-22684,Regleringsbrev,,2022,Myndighet,Länsstyrelsen i Skåne län,False
-22685,Regleringsbrev,,2022,Myndighet,Länsstyrelsen i Stockholms län,False
-22686,Regleringsbrev,,2022,Myndighet,Länsstyrelsen i Södermanlands län,False
-22687,Regleringsbrev,,2022,Myndighet,Länsstyrelsen i Uppsala län,False
-22688,Regleringsbrev,,2022,Myndighet,Länsstyrelsen i Värmlands län,False
-22689,Regleringsbrev,,2022,Myndighet,Länsstyrelsen i Västerbottens län,False
-22690,Regleringsbrev,,2022,Myndighet,Länsstyrelsen i Västernorrlands län,False
-22691,Regleringsbrev,,2022,Myndighet,Länsstyrelsen i Västmanlands län,False
-22692,Regleringsbrev,,2022,Myndighet,Länsstyrelsen i Västra Götalands län,False
-22693,Regleringsbrev,,2022,Myndighet,Länsstyrelsen i Örebro län,False
-22694,Regleringsbrev,,2022,Myndighet,Länsstyrelsen i Östergötlands län,False
 22695,Ändringsbeslut,2021-12-16,2021,Myndighet,Statens musikverk,True
 22696,Ändringsbeslut,2021-12-16,2021,Myndighet,Statens kulturråd,True
 22697,Ändringsbeslut,2021-12-16,2021,Myndighet,Statens skolinspektion,True
@@ -14077,17 +13631,6 @@ rbid,type,date,year,category,name,pdf
 23114,Ändringsbeslut,2022-09-29,2022,Myndighet,Mittuniversitetet,True
 23115,Ändringsbeslut,2022-09-29,2022,Anslag,2:63 och 2:65,True
 23116,Ändringsbeslut,2022-11-10,2022,Myndighet,Migrationsverket,True
-23117,Ändringsbeslut,,2022,Myndighet,Länsstyrelsen i Östergötlands län,False
-23118,Ändringsbeslut,,2022,Myndighet,Länsstyrelsen i Stockholms län,False
-23119,Ändringsbeslut,,2022,Myndighet,Länsstyrelsen i Örebro län,False
-23120,Ändringsbeslut,,2022,Myndighet,Länsstyrelsen i Uppsala län,False
-23121,Ändringsbeslut,,2022,Myndighet,Länsstyrelsen i Jönköpings län,False
-23122,Ändringsbeslut,,2022,Myndighet,Länsstyrelsen i Hallands län,False
-23123,Ändringsbeslut,,2022,Myndighet,Länsstyrelsen i Västra Götalands län,False
-23124,Ändringsbeslut,,2022,Myndighet,Länsstyrelsen i Västmanlands län,False
-23125,Ändringsbeslut,,2022,Myndighet,Länsstyrelsen i Västernorrlands län,False
-23126,Ändringsbeslut,,2022,Myndighet,Länsstyrelsen i Västerbottens län,False
-23127,Ändringsbeslut,,2022,Myndighet,Länsstyrelsen i Norrbottens län,False
 23130,Ändringsbeslut,2022-10-27,2022,Myndighet,Försvarsmakten,True
 23131,Ändringsbeslut,2022-12-01,2022,Myndighet,Socialstyrelsen,True
 23132,Ändringsbeslut,2022-11-24,2022,Myndighet,Statens skolinspektion,True
@@ -14408,10 +13951,6 @@ rbid,type,date,year,category,name,pdf
 23497,Regleringsbrev,2022-12-22,2023,Myndighet,Myndigheten för arbetsmiljökunskap,True
 23498,Regleringsbrev,2022-12-22,2023,Anslag,2:3,True
 23499,Regleringsbrev,2022-12-21,2023,Anslag,1:7,True
-23500,Ändringsbeslut,,2022,Myndighet,Länsstyrelsen i Jönköpings län,False
-23501,Ändringsbeslut,,2022,Myndighet,Länsstyrelsen i Stockholms län,False
-23502,Ändringsbeslut,,2022,Myndighet,Länsstyrelsen i Örebro län,False
-23503,Ändringsbeslut,,2022,Myndighet,Länsstyrelsen i Dalarnas län,False
 23505,Regleringsbrev,2022-12-22,2023,Anslag,1:4,True
 23506,Ändringsbeslut,2022-12-22,2022,Anslag,"1:1, 1:2, 1:3 och 1:5",True
 23507,Regleringsbrev,2022-12-22,2023,Myndighet,E-hälsomyndigheten,True
@@ -14478,27 +14017,6 @@ rbid,type,date,year,category,name,pdf
 23582,Ändringsbeslut,2022-12-22,2022,Myndighet,Naturvårdsverket,True
 23583,Regleringsbrev,2022-12-21,2023,Anslag,1:2,True
 23584,Ändringsbeslut,2023-01-12,2023,Myndighet,Sametinget,True
-23585,Regleringsbrev,,2023,Myndighet,Länsstyrelsen i Blekinge län,False
-23586,Regleringsbrev,,2023,Myndighet,Länsstyrelsen i Dalarnas län,False
-23587,Regleringsbrev,,2023,Myndighet,Länsstyrelsen i Gotlands län,False
-23588,Regleringsbrev,,2023,Myndighet,Länsstyrelsen i Gävleborgs län,False
-23589,Regleringsbrev,,2023,Myndighet,Länsstyrelsen i Hallands län,False
-23590,Regleringsbrev,,2023,Myndighet,Länsstyrelsen i Jämtlands län,False
-23591,Regleringsbrev,,2023,Myndighet,Länsstyrelsen i Jönköpings län,False
-23592,Regleringsbrev,,2023,Myndighet,Länsstyrelsen i Kalmar län,False
-23593,Regleringsbrev,,2023,Myndighet,Länsstyrelsen i Kronobergs län,False
-23594,Regleringsbrev,,2023,Myndighet,Länsstyrelsen i Norrbottens län,False
-23595,Regleringsbrev,,2023,Myndighet,Länsstyrelsen i Skåne län,False
-23596,Regleringsbrev,,2023,Myndighet,Länsstyrelsen i Stockholms län,False
-23597,Regleringsbrev,,2023,Myndighet,Länsstyrelsen i Södermanlands län,False
-23598,Regleringsbrev,,2023,Myndighet,Länsstyrelsen i Uppsala län,False
-23599,Regleringsbrev,,2023,Myndighet,Länsstyrelsen i Värmlands län,False
-23600,Regleringsbrev,,2023,Myndighet,Länsstyrelsen i Västerbottens län,False
-23601,Regleringsbrev,,2023,Myndighet,Länsstyrelsen i Västernorrlands län,False
-23602,Regleringsbrev,,2023,Myndighet,Länsstyrelsen i Västmanlands län,False
-23603,Regleringsbrev,,2023,Myndighet,Länsstyrelsen i Västra Götalands län,False
-23604,Regleringsbrev,,2023,Myndighet,Länsstyrelsen i Örebro län,False
-23605,Regleringsbrev,,2023,Myndighet,Länsstyrelsen i Östergötlands län,False
 23606,Ändringsbeslut,2023-01-26,2023,Myndighet,Rättsmedicinalverket,True
 23607,Ändringsbeslut,2023-01-19,2023,Anslag,"1:2, 2:1, 5:2, 7:3, 8:2, 8:3, 8:5, 10:1, 11:1 och 11:3",True
 23608,Ändringsbeslut,2023-02-02,2023,Myndighet,Socialstyrelsen,True
@@ -14709,9 +14227,6 @@ rbid,type,date,year,category,name,pdf
 23842,Ändringsbeslut,2023-06-22,2023,Anslag,1:16,True
 23843,Ändringsbeslut,2023-08-10,2023,Myndighet,Skogsstyrelsen,True
 23844,Ändringsbeslut,2023-06-22,2023,Myndighet,länsstyrelserna,True
-23845,Ändringsbeslut,,2023,Myndighet,Länsstyrelsen i Jönköpings län,False
-23846,Ändringsbeslut,,2023,Myndighet,Länsstyrelsen i Blekinge län,False
-23847,Ändringsbeslut,,2023,Myndighet,Länsstyrelsen i Jämtlands län,False
 23848,Ändringsbeslut,2023-06-22,2023,Myndighet,Totalförsvarets forskningsinstitut,True
 23850,Ändringsbeslut,2023-06-22,2023,Myndighet,Spelinspektionen,True
 23852,Ändringsbeslut,2023-09-21,2023,Myndighet,Finansinspektionen,True
@@ -15160,9 +14675,6 @@ rbid,type,date,year,category,name,pdf
 24372,Ändringsbeslut,2023-12-14,2023,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
 24373,Ändringsbeslut,2023-12-14,2023,Anslag,1:6,True
 24374,Ändringsbeslut,2023-12-07,2023,Myndighet,Arbetsmiljöverket,True
-24375,Ändringsbeslut,,2023,Myndighet,Länsstyrelsen i Västra Götalands län,False
-24376,Ändringsbeslut,,2023,Myndighet,Länsstyrelsen i Värmlands län,False
-24377,Ändringsbeslut,,2023,Myndighet,Länsstyrelsen i Dalarnas län,False
 24378,Ändringsbeslut,2023-12-14,2023,Myndighet,Statens medieråd,True
 24379,Ändringsbeslut,2023-12-07,2023,Myndighet,Lantmäteriet,True
 24380,Ändringsbeslut,2023-12-07,2023,Anslag,1:12,True
@@ -15180,27 +14692,6 @@ rbid,type,date,year,category,name,pdf
 24394,Ändringsbeslut,2023-12-20,2023,Myndighet,Naturvårdsverket,True
 24395,Ändringsbeslut,2023-12-14,2023,Myndighet,Myndigheten för totalförsvarsanalys,True
 24396,Regleringsbrev,2023-12-14,2024,Myndighet,Myndigheten för totalförsvarsanalys,True
-24400,Regleringsbrev,,2024,Myndighet,Länsstyrelsen i Blekinge län,False
-24401,Regleringsbrev,,2024,Myndighet,Länsstyrelsen i Dalarnas län,False
-24402,Regleringsbrev,,2024,Myndighet,Länsstyrelsen i Gotlands län,False
-24403,Regleringsbrev,,2024,Myndighet,Länsstyrelsen i Gävleborgs län,False
-24404,Regleringsbrev,,2024,Myndighet,Länsstyrelsen i Hallands län,False
-24405,Regleringsbrev,,2024,Myndighet,Länsstyrelsen i Jämtlands län,False
-24406,Regleringsbrev,,2024,Myndighet,Länsstyrelsen i Jönköpings län,False
-24407,Regleringsbrev,,2024,Myndighet,Länsstyrelsen i Kalmar län,False
-24408,Regleringsbrev,,2024,Myndighet,Länsstyrelsen i Kronobergs län,False
-24409,Regleringsbrev,,2024,Myndighet,Länsstyrelsen i Norrbottens län,False
-24410,Regleringsbrev,,2024,Myndighet,Länsstyrelsen i Skåne län,False
-24411,Regleringsbrev,,2024,Myndighet,Länsstyrelsen i Stockholms län,False
-24412,Regleringsbrev,,2024,Myndighet,Länsstyrelsen i Södermanlands län,False
-24413,Regleringsbrev,,2024,Myndighet,Länsstyrelsen i Uppsala län,False
-24414,Regleringsbrev,,2024,Myndighet,Länsstyrelsen i Värmlands län,False
-24415,Regleringsbrev,,2024,Myndighet,Länsstyrelsen i Västerbottens län,False
-24416,Regleringsbrev,,2024,Myndighet,Länsstyrelsen i Västernorrlands län,False
-24417,Regleringsbrev,,2024,Myndighet,Länsstyrelsen i Västmanlands län,False
-24418,Regleringsbrev,,2024,Myndighet,Länsstyrelsen i Västra Götalands län,False
-24419,Regleringsbrev,,2024,Myndighet,Länsstyrelsen i Örebro län,False
-24420,Regleringsbrev,,2024,Myndighet,Länsstyrelsen i Östergötlands län,False
 24422,Ändringsbeslut,2024-01-25,2024,Myndighet,Trafikverket,True
 24423,Ändringsbeslut,2024-01-25,2024,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
 24424,Ändringsbeslut,2024-01-18,2024,Myndighet,Säkerhets- och integritetsskyddsnämnden,True
@@ -15308,6 +14799,7 @@ rbid,type,date,year,category,name,pdf
 24544,Ändringsbeslut,2024-06-20,2024,Anslag,1:6,True
 24545,Ändringsbeslut,2024-05-02,2024,Myndighet,Säkerhetspolisen,True
 24546,Ändringsbeslut,2024-05-02,2024,Myndighet,Kriminalvården,True
+24547,Ändringsbeslut,2024-12-12,2024,Anslag,1:1,True
 24548,Ändringsbeslut,2024-05-16,2024,Myndighet,Myndigheten för delaktighet,True
 24549,Ändringsbeslut,2024-05-02,2024,Myndighet,Mediemyndigheten,True
 24550,Ändringsbeslut,2024-05-16,2024,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
@@ -15315,12 +14807,14 @@ rbid,type,date,year,category,name,pdf
 24552,Ändringsbeslut,2024-05-02,2024,Anslag,6:1,True
 24554,Ändringsbeslut,2024-06-13,2024,Myndighet,Jämställdhetsmyndigheten,True
 24555,Ändringsbeslut,2024-05-16,2024,Myndighet,Migrationsverket,True
+24556,Ändringsbeslut,2024-10-10,2024,Anslag,1:17,True
 24557,Ändringsbeslut,2024-06-20,2024,Myndighet,Statens jordbruksverk,True
 24558,Ändringsbeslut,2024-06-20,2024,Myndighet,Allmänna reklamationsnämnden,True
 24559,Ändringsbeslut,2024-06-20,2024,Myndighet,Konsumentverket,True
 24560,Ändringsbeslut,2024-05-08,2024,Anslag,1:1 och 1:3 (2021),True
 24561,Ändringsbeslut,2024-05-30,2024,Anslag,2:64,True
 24562,Ändringsbeslut,2024-05-30,2024,Myndighet,Universitets- och högskolerådet,True
+24563,Ändringsbeslut,2024-11-07,2024,Anslag,4:5,True
 24564,Ändringsbeslut,2024-06-20,2024,Myndighet,Arbetsförmedlingen,True
 24565,Ändringsbeslut,2024-06-27,2024,Myndighet,Transportstyrelsen,True
 24566,Ändringsbeslut,2024-06-20,2024,Anslag,1:14,True
@@ -15328,6 +14822,7 @@ rbid,type,date,year,category,name,pdf
 24568,Ändringsbeslut,2024-05-30,2024,Myndighet,Socialstyrelsen,True
 24569,Ändringsbeslut,2024-06-20,2024,Myndighet,Folkhälsomyndigheten,True
 24570,Ändringsbeslut,2024-05-30,2024,Myndighet,Myndigheten för ungdoms- och civilsamhällesfrågor,True
+24571,Ändringsbeslut,2024-11-14,2024,Anslag,2:6,True
 24572,Ändringsbeslut,2024-06-20,2024,Myndighet,Sveriges Domstolar,True
 24573,Ändringsbeslut,2024-06-27,2024,Myndighet,Trafikverket,True
 24575,Ändringsbeslut,2024-06-13,2024,Myndighet,Tillväxtverket,True
@@ -15373,6 +14868,7 @@ rbid,type,date,year,category,name,pdf
 24625,Ändringsbeslut,2024-06-20,2024,Anslag,1:5,True
 24626,Ändringsbeslut,2024-06-20,2024,Myndighet,Ekonomistyrningsverket,True
 24627,Ändringsbeslut,2024-06-20,2024,Myndighet,Kriminalvården,True
+24629,Ändringsbeslut,2024-09-26,2024,Myndighet,Folke Bernadotteakademin,True
 24631,Ändringsbeslut,2024-06-20,2024,Myndighet,länsstyrelserna,True
 24632,Ändringsbeslut,2024-06-20,2024,Anslag,1:13,True
 24635,Ändringsbeslut,2024-06-27,2024,Anslag,1:14 och 1:2,True
@@ -15414,6 +14910,7 @@ rbid,type,date,year,category,name,pdf
 24687,Ändringsbeslut,2024-06-27,2024,Myndighet,Socialstyrelsen,True
 24688,Ändringsbeslut,2024-06-27,2024,Anslag,1:6,True
 24689,Ändringsbeslut,2024-07-04,2024,Anslag,1:2,True
+24690,Ändringsbeslut,2024-11-21,2024,Anslag,1:2,True
 24691,Ändringsbeslut,2024-09-05,2024,Anslag,1:14,True
 24692,Ändringsbeslut,2024-06-13,2024,Anslag,1:12,True
 24694,Ändringsbeslut,2024-09-05,2024,Myndighet,Pensionsmyndigheten,True
@@ -15421,14 +14918,531 @@ rbid,type,date,year,category,name,pdf
 24696,Ändringsbeslut,2024-09-05,2024,Anslag,3:1,True
 24697,Ändringsbeslut,2024-07-18,2024,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
 24698,Ändringsbeslut,2024-09-05,2024,Myndighet,Statens institutionsstyrelse,True
+24699,Ändringsbeslut,2024-11-14,2024,Anslag,1:6,True
 24700,Ändringsbeslut,2024-08-29,2024,Myndighet,Transportstyrelsen,True
 24701,Ändringsbeslut,2024-08-29,2024,Myndighet,Trafikverket,True
 24703,Ändringsbeslut,2024-08-15,2024,Myndighet,Sveriges meteorologiska och hydrologiska institut,True
 24704,Ändringsbeslut,2024-08-15,2024,Myndighet,Havs- och vattenmyndigheten,True
+24705,Ändringsbeslut,2024-09-19,2024,Anslag,1:5,True
+24706,Ändringsbeslut,2024-11-07,2024,Myndighet,Rådet för Europeiska socialfonden i Sverige,True
 24707,Ändringsbeslut,2024-09-05,2024,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
+24712,Ändringsbeslut,2024-10-24,2024,Myndighet,Statens skolverk,True
 24717,Ändringsbeslut,2024-08-29,2024,Myndighet,Socialstyrelsen,True
+24718,Ändringsbeslut,2024-11-07,2024,Anslag,4:7,True
+24719,Ändringsbeslut,2024-09-26,2024,Anslag,1:1,True
 24720,Ändringsbeslut,2024-08-29,2024,Anslag,1:2,True
 24721,Ändringsbeslut,2024-09-05,2024,Myndighet,Försäkringskassan,True
+24723,Ändringsbeslut,2024-09-12,2024,Myndighet,Exportkreditnämnden,True
 24726,Ändringsbeslut,2024-08-29,2024,Myndighet,Folkhälsomyndigheten,True
 24728,Regleringsbrev,2024-09-19,2024,Anslag,2:1,True
+24731,Ändringsbeslut,2024-12-05,2024,Anslag,2:5,True
+24732,Ändringsbeslut,2024-11-21,2024,Myndighet,Arbetsförmedlingen,True
+24733,Ändringsbeslut,2024-10-31,2024,Anslag,1:12,True
+24734,Ändringsbeslut,2024-10-03,2024,Myndighet,Myndigheten för samhällsskydd och beredskap,True
+24735,Ändringsbeslut,2024-09-26,2024,Myndighet,Brottsförebyggande rådet,True
+24736,Ändringsbeslut,2024-09-26,2024,Myndighet,Försvarsmakten,True
+24738,Ändringsbeslut,2024-09-26,2024,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
+24739,Ändringsbeslut,2024-10-10,2024,Myndighet,Universitetskanslersämbetet,True
+24740,Ändringsbeslut,2024-11-28,2024,Myndighet,Sveriges geologiska undersökning,True
+24741,Ändringsbeslut,2024-09-19,2024,Myndighet,Statens institutionsstyrelse,True
+24743,Ändringsbeslut,2024-10-10,2024,Myndighet,Socialstyrelsen,True
+24744,Ändringsbeslut,2024-10-31,2024,Myndighet,Bolagsverket,True
+24745,Ändringsbeslut,2024-10-17,2024,Anslag,3:1,True
+24747,Ändringsbeslut,2024-09-26,2024,Myndighet,Försvarets materielverk,True
+24748,Ändringsbeslut,2024-09-26,2024,Myndighet,Statens jordbruksverk,True
 24749,Ändringsbeslut,2024-09-26,2024,Myndighet,Naturvårdsverket,True
+24750,Ändringsbeslut,2024-10-03,2024,Myndighet,Barnombudsmannen,True
+24751,Ändringsbeslut,2024-11-28,2024,Anslag,1:8,True
+24752,Ändringsbeslut,2024-10-24,2024,Myndighet,Fastighetsmäklarinspektionen,True
+24753,Ändringsbeslut,2024-10-10,2024,Myndighet,Nämnden för prövning av oredlighet i forskning,True
+24754,Regleringsbrev,2024-12-19,2025,Myndighet,Migrationsverket,True
+24755,Regleringsbrev,2024-12-19,2025,Myndighet,Myndigheten för familjerätt och föräldraskapsstöd,True
+24756,Regleringsbrev,2024-12-19,2025,Myndighet,Barnombudsmannen,True
+24757,Regleringsbrev,2024-12-19,2025,Myndighet,Statens institutionsstyrelse,True
+24758,Regleringsbrev,2024-12-19,2025,Myndighet,Myndigheten för delaktighet,True
+24759,Regleringsbrev,2024-12-19,2025,Anslag,4:2,True
+24760,Regleringsbrev,2024-12-19,2025,Anslag,4:5,True
+24761,Regleringsbrev,2024-12-19,2025,Anslag,4:7,True
+24762,Regleringsbrev,2024-12-19,2025,Anslag,5:2,True
+24763,Regleringsbrev,2024-12-12,2025,Anslag,1:10,True
+24764,Ändringsbeslut,2024-12-05,2024,Myndighet,Riksgäldskontoret,True
+24767,Regleringsbrev,2024-12-19,2025,Myndighet,Trafikverket,True
+24769,Regleringsbrev,2024-12-16,2025,Myndighet,Myndigheten för vård- och omsorgsanalys,True
+24770,Ändringsbeslut,2024-10-24,2024,Anslag,1:5,True
+24771,Regleringsbrev,2024-12-19,2025,Anslag,1:4 och 1:5,True
+24772,Regleringsbrev,2024-12-16,2025,Myndighet,Inspektionen för vård och omsorg,True
+24774,Regleringsbrev,2024-12-16,2025,Myndighet,Läkemedelsverket,True
+24778,Regleringsbrev,2024-12-19,2025,Myndighet,Blekinge tekniska högskola,True
+24779,Regleringsbrev,2024-12-19,2025,Myndighet,Försvarshögskolan,True
+24780,Regleringsbrev,2024-12-19,2025,Anslag,4:4,True
+24782,Regleringsbrev,2024-12-19,2025,Myndighet,Gymnastik- och idrottshögskolan,True
+24783,Ändringsbeslut,2024-10-31,2024,Myndighet,Kungliga hov- och slottsstaten,True
+24785,Regleringsbrev,2024-12-19,2025,Myndighet,Fastighetsmäklarinspektionen,True
+24786,Regleringsbrev,2024-12-19,2025,Myndighet,Allmänna reklamationsnämnden,True
+24787,Regleringsbrev,2024-12-19,2025,Myndighet,Konsumentverket,True
+24792,Ändringsbeslut,2024-10-24,2024,Myndighet,Tandvårds- och läkemedelsförmånsverket,True
+24794,Regleringsbrev,2024-12-19,2025,Anslag,3:13,True
+24796,Regleringsbrev,2024-12-19,2025,Myndighet,Institutet för rymdfysik,True
+24799,Regleringsbrev,2024-12-19,2025,Anslag,1:1,True
+24800,Regleringsbrev,2024-12-19,2025,Anslag,2:5,True
+24801,Regleringsbrev,2024-12-16,2025,Anslag,1:6,True
+24803,Ändringsbeslut,2024-11-07,2024,Myndighet,Högskolan Dalarna,True
+24804,Ändringsbeslut,2024-11-07,2024,Myndighet,Lunds universitet,True
+24806,Regleringsbrev,2024-12-19,2025,Myndighet,Statens jordbruksverk,True
+24808,Regleringsbrev,2024-12-19,2025,Myndighet,Kammarkollegiet,True
+24810,Regleringsbrev,2024-12-19,2025,Myndighet,Post- och telestyrelsen,True
+24811,Regleringsbrev,2024-12-19,2025,Myndighet,Myndigheten för yrkeshögskolan,True
+24812,Regleringsbrev,2024-12-19,2025,Myndighet,Rymdstyrelsen,True
+24814,Regleringsbrev,2024-12-19,2025,Myndighet,Polismyndigheten,True
+24815,Regleringsbrev,2024-12-19,2025,Anslag,2:4,True
+24816,Regleringsbrev,2024-12-16,2025,Anslag,2:5,True
+24817,Regleringsbrev,2024-12-19,2025,Myndighet,Folke Bernadotteakademin,True
+24818,Regleringsbrev,2024-12-19,2025,Myndighet,Göteborgs universitet,True
+24819,Regleringsbrev,2024-12-19,2025,Anslag,2:67,True
+24820,Regleringsbrev,2024-12-19,2025,Anslag,2:63 och 2:65,True
+24821,Ändringsbeslut,2024-10-24,2024,Myndighet,Försvarsmakten,True
+24822,Regleringsbrev,2024-12-19,2025,Myndighet,Högskolan Dalarna,True
+24823,Ändringsbeslut,2024-12-05,2024,Myndighet,Sveriges Domstolar,True
+24825,Regleringsbrev,2024-12-16,2025,Myndighet,Domarnämnden,True
+24826,Regleringsbrev,2024-12-16,2025,Myndighet,Justitiekanslern,True
+24827,Regleringsbrev,2024-12-19,2025,Myndighet,Högskolan i Borås,True
+24828,Regleringsbrev,2024-12-19,2025,Myndighet,Nordiska Afrikainstitutet,True
+24829,Regleringsbrev,2024-12-19,2025,Myndighet,Högskolan i Gävle,True
+24830,Regleringsbrev,2024-12-19,2025,Myndighet,Högskolan i Halmstad,True
+24831,Regleringsbrev,2024-12-19,2025,Myndighet,Högskolan i Skövde,True
+24832,Regleringsbrev,2024-12-19,2025,Myndighet,Högskolan Kristianstad,True
+24833,Regleringsbrev,2024-12-19,2025,Myndighet,Högskolan Väst,True
+24835,Regleringsbrev,2024-12-19,2025,Myndighet,Karlstads universitet,True
+24836,Regleringsbrev,2024-12-19,2025,Myndighet,Karolinska institutet,True
+24838,Regleringsbrev,2024-12-19,2025,Myndighet,Försvarsmakten,True
+24839,Regleringsbrev,2024-12-19,2025,Myndighet,Kustbevakningen,True
+24840,Regleringsbrev,2024-12-19,2025,Myndighet,Konstfack,True
+24841,Regleringsbrev,2024-12-19,2025,Myndighet,Kungl. Konsthögskolan,True
+24842,Regleringsbrev,2024-12-19,2025,Myndighet,Kungl. Musikhögskolan i Stockholm,True
+24843,Regleringsbrev,2024-12-19,2025,Myndighet,Kungl. Tekniska högskolan,True
+24845,Regleringsbrev,2024-12-19,2025,Myndighet,Ekonomistyrningsverket,True
+24846,Regleringsbrev,2024-12-19,2025,Myndighet,Konjunkturinstitutet,True
+24847,Regleringsbrev,2024-12-19,2025,Myndighet,Finanspolitiska rådet,True
+24849,Regleringsbrev,2024-12-19,2025,Anslag,1:14 och 1:2,True
+24850,Ändringsbeslut,2024-12-05,2024,Anslag,1:14 och 1:2,True
+24851,Regleringsbrev,2024-12-19,2025,Myndighet,Skogsstyrelsen,True
+24852,Ändringsbeslut,2024-12-05,2024,Anslag,1:14,True
+24853,Ändringsbeslut,2024-11-07,2024,Anslag,6:1,True
+24854,Regleringsbrev,2024-12-19,2025,Myndighet,Fortifikationsverket,True
+24856,Regleringsbrev,2024-12-16,2025,Myndighet,Statens beredning för medicinsk och social utvärdering,True
+24858,Regleringsbrev,2024-12-19,2025,Myndighet,Trafikanalys,True
+24859,Regleringsbrev,2024-12-19,2025,Anslag,1:18,True
+24860,Regleringsbrev,2024-12-19,2025,Anslag,1:8,True
+24861,Regleringsbrev,2024-12-19,2025,Anslag,1:11 och 1:14,True
+24863,Regleringsbrev,2024-12-19,2025,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
+24865,Regleringsbrev,2024-12-19,2025,Myndighet,Linköpings universitet,True
+24866,Ändringsbeslut,2024-12-12,2024,Myndighet,Lantmäteriet,True
+24868,Regleringsbrev,2024-12-16,2025,Myndighet,E-hälsomyndigheten,True
+24869,Ändringsbeslut,2024-10-04,2024,Anslag,1:4,True
+24870,Regleringsbrev,2024-12-19,2025,Myndighet,Luleå tekniska universitet,True
+24871,Regleringsbrev,2024-12-16,2025,Anslag,1:14,True
+24872,Regleringsbrev,2024-12-19,2025,Myndighet,Lunds universitet,True
+24873,Regleringsbrev,2024-12-19,2025,Myndighet,Försäkringskassan,True
+24874,Ändringsbeslut,2024-12-16,2024,Myndighet,Forum för levande historia,True
+24877,Regleringsbrev,2024-12-16,2025,Myndighet,Brottsoffermyndigheten,True
+24878,Regleringsbrev,2024-12-19,2025,Myndighet,Centrala studiestödsnämnden,True
+24879,Regleringsbrev,2024-12-19,2025,Myndighet,Transportstyrelsen,True
+24880,Regleringsbrev,2024-12-19,2025,Myndighet,Malmö universitet,True
+24881,Regleringsbrev,2024-12-19,2025,Anslag,1:14,True
+24883,Regleringsbrev,2024-12-19,2025,Myndighet,Mittuniversitetet,True
+24884,Regleringsbrev,2024-12-16,2025,Anslag,2:6,True
+24885,Regleringsbrev,2024-12-19,2025,Myndighet,Totalförsvarets plikt- och prövningsverk,True
+24886,Ändringsbeslut,2024-11-07,2024,Myndighet,Försvarshögskolan,True
+24887,Ändringsbeslut,2024-11-07,2024,Myndighet,Uppsala universitet,True
+24888,Regleringsbrev,2024-12-19,2025,Myndighet,Styrelsen för ackreditering och teknisk kontroll,True
+24889,Regleringsbrev,2024-12-19,2025,Myndighet,Myndigheten för samhällsskydd och beredskap,True
+24890,Regleringsbrev,2024-12-19,2025,Myndighet,Mälardalens universitet,True
+24891,Regleringsbrev,2024-12-19,2025,Myndighet,Stockholms konstnärliga högskola,True
+24892,Regleringsbrev,2024-12-19,2025,Myndighet,Stockholms universitet,True
+24893,Regleringsbrev,2024-12-19,2025,Myndighet,Södertörns högskola,True
+24894,Regleringsbrev,2024-12-19,2025,Myndighet,Luftfartsverket,True
+24895,Regleringsbrev,2024-12-12,2025,Anslag,13:1,True
+24896,Regleringsbrev,2024-12-12,2025,Anslag,13:3,True
+24897,Regleringsbrev,2024-12-19,2025,Anslag,"1:1, 2:3 och 2:4",True
+24898,Regleringsbrev,2024-12-16,2025,Myndighet,Myndigheten för psykologiskt försvar,True
+24900,Regleringsbrev,2024-12-12,2025,Myndighet,Kungliga hov- och slottsstaten,True
+24901,Regleringsbrev,2024-12-19,2025,Anslag,1:1,True
+24902,Ändringsbeslut,2024-10-24,2024,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
+24903,Regleringsbrev,2024-12-16,2025,Myndighet,Nämnden för hemslöjdsfrågor,True
+24904,Regleringsbrev,2024-12-19,2025,Myndighet,Arbetsgivarverket,True
+24905,Regleringsbrev,2024-12-19,2025,Anslag,2:5,True
+24906,Regleringsbrev,2024-12-12,2025,Anslag,6:5,True
+24907,Regleringsbrev,2024-12-19,2025,Myndighet,Brottsförebyggande rådet,True
+24908,Regleringsbrev,2024-12-16,2025,Anslag,11:2,True
+24909,Regleringsbrev,2024-12-16,2025,Myndighet,Tandvårds- och läkemedelsförmånsverket,True
+24911,Regleringsbrev,2024-12-19,2025,Myndighet,Statens fastighetsverk,True
+24912,Regleringsbrev,2024-12-19,2025,Anslag,"14:1, 14:2, 14:3 och 14:4",True
+24913,Ändringsbeslut,2024-11-21,2024,Myndighet,Rymdstyrelsen,True
+24914,Regleringsbrev,2024-12-19,2025,Anslag,1:1,True
+24915,Regleringsbrev,2024-12-19,2025,Myndighet,Utbetalningsmyndigheten,True
+24916,Regleringsbrev,2024-12-16,2025,Anslag,2:7,True
+24917,Regleringsbrev,2024-12-19,2025,Anslag,1:1,True
+24918,Regleringsbrev,2024-12-16,2025,Myndighet,Försvarsunderrättelsedomstolen,True
+24919,Regleringsbrev,2024-12-19,2025,Anslag,2:6,True
+24920,Regleringsbrev,2024-12-19,2025,Anslag,1:7,True
+24921,Regleringsbrev,2024-12-16,2025,Myndighet,"Forskningsrådet för hälsa, arbetsliv och välfärd",True
+24922,Regleringsbrev,2024-12-19,2025,Myndighet,Vetenskapsrådet,True
+24923,Regleringsbrev,2024-12-19,2025,Anslag,1:18,True
+24924,Regleringsbrev,2024-12-19,2025,Myndighet,Myndigheten för digital förvaltning,True
+24925,Regleringsbrev,2024-12-19,2025,Myndighet,Folkhälsomyndigheten,True
+24926,Ändringsbeslut,2024-12-05,2024,Myndighet,Försäkringskassan,True
+24927,Regleringsbrev,2024-12-19,2025,Myndighet,Försvarets radioanstalt,True
+24928,Regleringsbrev,2024-12-16,2025,Myndighet,Valmyndigheten,True
+24931,Ändringsbeslut,2024-11-07,2024,Myndighet,Karolinska institutet,True
+24932,Ändringsbeslut,2024-11-07,2024,Myndighet,Stockholms universitet,True
+24933,Regleringsbrev,2024-12-19,2025,Myndighet,Affärsverket svenska kraftnät,True
+24934,Regleringsbrev,2024-12-19,2025,Myndighet,Umeå universitet,True
+24935,Ändringsbeslut,2024-10-31,2024,Anslag,1:20,True
+24937,Ändringsbeslut,2024-11-28,2024,Myndighet,Myndigheten för yrkeshögskolan,True
+24938,Regleringsbrev,2024-12-19,2025,Myndighet,Statens skolinspektion,True
+24939,Regleringsbrev,2024-12-16,2025,Myndighet,Myndigheten för kulturanalys,True
+24940,Regleringsbrev,2024-12-12,2025,Myndighet,Institutet för mänskliga rättigheter,True
+24941,Regleringsbrev,2024-12-19,2025,Myndighet,Arbetsförmedlingen,True
+24942,Regleringsbrev,2024-12-19,2025,Anslag,1:6,True
+24945,Regleringsbrev,2024-12-19,2025,Myndighet,Livsmedelsverket,True
+24947,Regleringsbrev,2024-12-19,2025,Myndighet,Statens kulturråd,True
+24949,Regleringsbrev,2024-12-19,2025,Myndighet,Inspektionen för arbetslöshetsförsäkringen,True
+24951,Regleringsbrev,2024-12-19,2025,Myndighet,Specialpedagogiska skolmyndigheten,True
+24952,Regleringsbrev,2024-12-19,2025,Myndighet,Skolforskningsinstitutet,True
+24953,Regleringsbrev,2024-12-19,2025,Myndighet,Sameskolstyrelsen,True
+24954,Regleringsbrev,2024-12-16,2025,Myndighet,Statens haverikommission,True
+24956,Regleringsbrev,2024-12-19,2025,Myndighet,Statens energimyndighet,True
+24957,Regleringsbrev,2024-12-16,2025,Myndighet,Myndigheten för stöd till trossamfund,True
+24958,Regleringsbrev,2024-12-19,2025,Myndighet,Patent- och registreringsverket,True
+24959,Regleringsbrev,2024-12-19,2025,Myndighet,Uppsala universitet,True
+24960,Regleringsbrev,2024-12-19,2025,Anslag,1:1,True
+24961,Regleringsbrev,2024-12-19,2025,Myndighet,Socialstyrelsen,True
+24962,Regleringsbrev,2024-12-19,2025,Myndighet,Örebro universitet,True
+24963,Regleringsbrev,2024-12-19,2025,Myndighet,Försvarets materielverk,True
+24964,Regleringsbrev,2024-12-19,2025,Anslag,1:1,True
+24965,Regleringsbrev,2024-12-16,2025,Anslag,"1:2, 2:1, 5:2, 7:3, 8:2, 8:3, 8:5, 10:1, 11:1 och 11:3",True
+24966,Regleringsbrev,2024-12-12,2025,Myndighet,Myndigheten för ungdoms- och civilsamhällesfrågor,True
+24967,Regleringsbrev,2024-12-16,2025,Anslag,1:8,True
+24968,Regleringsbrev,2024-12-19,2025,Myndighet,Naturvårdsverket,True
+24969,Regleringsbrev,2024-12-16,2025,Myndighet,Konstnärsnämnden,True
+24970,Regleringsbrev,2024-12-16,2025,Myndighet,Statens konstråd,True
+24971,Regleringsbrev,2024-12-12,2025,Myndighet,Nationalmuseum,True
+24972,Regleringsbrev,2024-12-16,2025,Myndighet,Moderna museet,True
+24973,Regleringsbrev,2024-12-16,2025,Myndighet,Statens musikverk,True
+24974,Regleringsbrev,2024-12-16,2025,Myndighet,Riksantikvarieämbetet,True
+24975,Regleringsbrev,2024-12-12,2025,Myndighet,Statens historiska museer,True
+24976,Regleringsbrev,2024-12-12,2025,Myndighet,Naturhistoriska riksmuseet,True
+24977,Regleringsbrev,2024-12-16,2025,Myndighet,Statens maritima och transporthistoriska museer,True
+24978,Regleringsbrev,2024-12-12,2025,Myndighet,Statens museer för världskultur,True
+24979,Regleringsbrev,2024-12-16,2025,Myndighet,Statens centrum för arkitektur och design,True
+24980,Ändringsbeslut,2024-11-07,2024,Myndighet,Trafikverket,True
+24981,Regleringsbrev,2024-12-19,2025,Myndighet,Ekobrottsmyndigheten,True
+24982,Regleringsbrev,2024-12-16,2025,Myndighet,Rättsmedicinalverket,True
+24983,Regleringsbrev,2024-12-16,2025,Myndighet,Integritetsskyddsmyndigheten,True
+24985,Regleringsbrev,2024-12-19,2025,Myndighet,Bolagsverket,True
+24986,Regleringsbrev,2024-12-19,2025,Myndighet,Sveriges Domstolar,True
+24987,Ändringsbeslut,2024-12-05,2024,Anslag,1:7 och 1:21 (2023),True
+24988,Regleringsbrev,2024-12-16,2025,Myndighet,Myndigheten för tillgängliga medier,True
+24989,Regleringsbrev,2024-12-19,2025,Anslag,1:11,True
+24991,Regleringsbrev,2024-12-19,2025,Anslag,1:14,True
+24992,Regleringsbrev,2024-12-12,2025,Myndighet,Statens inspektion för försvarsunderrättelseverksamheten,True
+24993,Regleringsbrev,2024-12-19,2025,Anslag,1:1,True
+24995,Regleringsbrev,2024-12-19,2025,Myndighet,Rådet för Europeiska socialfonden i Sverige,True
+24999,Regleringsbrev,2024-12-19,2025,Anslag,1:1,True
+25000,Regleringsbrev,2024-12-19,2025,Myndighet,Exportkreditnämnden,True
+25001,Regleringsbrev,2024-12-19,2025,Myndighet,Elsäkerhetsverket,True
+25002,Regleringsbrev,2024-12-19,2025,Anslag,1:7,True
+25003,Regleringsbrev,2024-12-19,2025,Myndighet,Strålsäkerhetsmyndigheten,True
+25004,Regleringsbrev,2024-12-19,2025,Myndighet,Etikprövningsmyndigheten,True
+25005,Regleringsbrev,2024-12-19,2025,Myndighet,Kriminalvården,True
+25007,Regleringsbrev,2024-12-19,2025,Myndighet,Kungl. biblioteket,True
+25008,Regleringsbrev,2024-12-19,2025,Myndighet,Polarforskningssekretariatet,True
+25011,Regleringsbrev,2024-12-19,2025,Myndighet,Nämnden för prövning av oredlighet i forskning,True
+25013,Regleringsbrev,2024-12-19,2025,Myndighet,universitet och högskolor,True
+25015,Regleringsbrev,2024-12-19,2025,Myndighet,Verket för innovationssystem,True
+25016,Ändringsbeslut,2024-11-07,2024,Myndighet,Statens jordbruksverk,True
+25017,Regleringsbrev,2024-12-16,2025,Anslag,2:3,True
+25018,Regleringsbrev,2024-12-19,2025,Myndighet,Institutet för arbetsmarknads- och utbildningspolitisk utvärdering,True
+25020,Regleringsbrev,2024-12-19,2025,Myndighet,Kommerskollegium,True
+25022,Regleringsbrev,2024-12-12,2025,Myndighet,Svenska institutet för europapolitiska studier,True
+25023,Regleringsbrev,2024-12-19,2025,Myndighet,Konkurrensverket,True
+25024,Regleringsbrev,2024-12-19,2025,Myndighet,Havs- och vattenmyndigheten,True
+25028,Regleringsbrev,2024-12-19,2025,Anslag,1:1,True
+25029,Regleringsbrev,2024-12-19,2025,Myndighet,Statens skolverk,True
+25030,Regleringsbrev,2024-12-19,2025,Myndighet,Energimarknadsinspektionen,True
+25031,Ändringsbeslut,2024-10-31,2024,Myndighet,Myndigheten för samhällsskydd och beredskap,True
+25032,Regleringsbrev,2024-12-12,2025,Myndighet,Sametinget,True
+25035,Regleringsbrev,2024-12-19,2025,Myndighet,Arbetsdomstolen,True
+25036,Regleringsbrev,2024-12-12,2025,Anslag,7:1 och 7:2 (2024),True
+25037,Regleringsbrev,2024-12-19,2025,Myndighet,Arbetsmiljöverket,True
+25038,Ändringsbeslut,2024-10-17,2024,Anslag,1:11,True
+25039,Regleringsbrev,2024-12-19,2025,Myndighet,Statistiska centralbyrån,True
+25044,Regleringsbrev,2024-10-31,2024,Anslag,1:27 (2021),True
+25046,Regleringsbrev,2024-12-19,2025,Myndighet,Tillväxtverket,True
+25047,Regleringsbrev,2024-12-19,2025,Anslag,2:64,True
+25048,Ändringsbeslut,2024-12-05,2024,Anslag,1:2,True
+25050,Regleringsbrev,2024-12-16,2025,Myndighet,Statens försvarshistoriska museer,True
+25051,Regleringsbrev,2024-12-19,2025,Myndighet,Åklagarmyndigheten,True
+25052,Regleringsbrev,2024-12-19,2025,Anslag,1:3 (2024) och 1:3,True
+25054,Regleringsbrev,2024-12-19,2025,Myndighet,Universitets- och högskolerådet,True
+25056,Regleringsbrev,2024-12-19,2025,Myndighet,Upphandlingsmyndigheten,True
+25057,Regleringsbrev,2024-12-19,2025,Anslag,1:1,True
+25058,Regleringsbrev,2024-12-19,2025,Myndighet,Forum för levande historia,True
+25059,Regleringsbrev,2024-12-16,2025,Anslag,2:5,True
+25060,Regleringsbrev,2024-12-19,2025,Myndighet,Universitetskanslersämbetet,True
+25061,Regleringsbrev,2024-12-12,2025,Myndighet,Institutet för språk och folkminnen,True
+25062,Regleringsbrev,2024-12-19,2025,Anslag,1:22,True
+25063,Regleringsbrev,2024-12-19,2025,Anslag,1:5,True
+25064,Regleringsbrev,2024-12-19,2025,Myndighet,Överklagandenämnden för studiestöd,True
+25065,Regleringsbrev,2024-12-19,2025,Myndighet,Sveriges geologiska undersökning,True
+25066,Regleringsbrev,2024-12-16,2025,Myndighet,Säkerhets- och integritetsskyddsnämnden,True
+25067,Ändringsbeslut,2024-10-31,2024,Anslag,3:1,True
+25068,Ändringsbeslut,2024-11-14,2024,Myndighet,Skogsstyrelsen,True
+25069,Regleringsbrev,2024-12-19,2025,Anslag,1:6,True
+25070,Regleringsbrev,2024-12-19,2025,Anslag,1:2,True
+25072,Regleringsbrev,2024-12-19,2025,Anslag,1:4,True
+25080,Regleringsbrev,2024-12-19,2025,Myndighet,Myndigheten för totalförsvarsanalys,True
+25081,Regleringsbrev,2024-12-19,2025,Myndighet,Statens veterinärmedicinska anstalt,True
+25082,Regleringsbrev,2024-12-19,2025,Myndighet,Jämställdhetsmyndigheten,True
+25083,Regleringsbrev,2024-12-19,2025,Myndighet,Spelinspektionen,True
+25085,Ändringsbeslut,2024-12-05,2024,Myndighet,Vetenskapsrådet,True
+25086,Regleringsbrev,2024-12-16,2025,Myndighet,Riksarkivet,True
+25087,Regleringsbrev,2024-12-16,2025,Anslag,1:5,True
+25090,Regleringsbrev,2024-12-19,2025,Anslag,2:7,True
+25091,Ändringsbeslut,2024-11-07,2024,Anslag,1:4 och 1:5,True
+25092,Regleringsbrev,2024-12-19,2025,Myndighet,Skatteverket,True
+25093,Regleringsbrev,2024-12-19,2025,Myndighet,Myndigheten för tillväxtpolitiska utvärderingar och analyser,True
+25094,Ändringsbeslut,2024-12-05,2024,Anslag,1:24 (2021) och 1:24 (2022),True
+25095,Regleringsbrev,2024-12-16,2025,Myndighet,Mediemyndigheten,True
+25096,Ändringsbeslut,2024-12-05,2024,Anslag,1:26 (2021) och 1:26 (2022),True
+25097,Regleringsbrev,2024-12-19,2025,Anslag,1:20,True
+25098,Regleringsbrev,2024-12-19,2025,Anslag,1:3,True
+25100,Regleringsbrev,2024-12-19,2025,Anslag,1:20,True
+25101,Ändringsbeslut,2024-11-14,2024,Myndighet,Myndigheten för familjerätt och föräldraskapsstöd,True
+25102,Regleringsbrev,2024-12-19,2025,Myndighet,Diskrimineringsombudsmannen,True
+25103,Regleringsbrev,2024-12-19,2025,Anslag,2:2,True
+25104,Regleringsbrev,2024-12-19,2025,Anslag,4:1,True
+25105,Regleringsbrev,2024-12-19,2025,Anslag,1:2,True
+25106,Ändringsbeslut,2024-12-05,2024,Myndighet,Kriminalvården,True
+25107,Ändringsbeslut,2024-12-05,2024,Anslag,1:23 (2021) och 1:25 (2022),True
+25108,Regleringsbrev,2024-12-19,2025,Anslag,1:17,True
+25109,Regleringsbrev,2024-12-19,2025,Myndighet,Sveriges meteorologiska och hydrologiska institut,True
+25110,Ändringsbeslut,2024-12-05,2024,Anslag,1:11 och 1:14,True
+25111,Regleringsbrev,2024-12-19,2025,Anslag,1:12,True
+25112,Regleringsbrev,2024-12-19,2025,Myndighet,Regeringskansliet,True
+25114,Regleringsbrev,2024-12-19,2025,Myndighet,Linnéuniversitetet,True
+25115,Regleringsbrev,2024-12-19,2025,Anslag,1:8,True
+25116,Ändringsbeslut,2024-12-12,2024,Anslag,1:1,True
+25117,Regleringsbrev,2024-12-12,2025,Anslag,13:5,True
+25118,Regleringsbrev,2024-12-12,2025,Anslag,1:5,True
+25119,Ändringsbeslut,2024-12-05,2024,Anslag,"1:1, 1:2, 1:3 och 1:5",True
+25120,Regleringsbrev,2024-12-19,2025,Anslag,"1:1, 1:2, 1:3 och 1:5 (2024)",True
+25121,Regleringsbrev,2024-12-19,2025,Myndighet,"Forskningsrådet för miljö, areella näringar och samhällsbyggande",True
+25122,Regleringsbrev,2024-12-19,2025,Anslag,"1:4 (2024), 1:4 och 1:5",True
+25123,Regleringsbrev,2024-12-19,2025,Anslag,1:12,True
+25124,Regleringsbrev,2024-12-19,2025,Anslag,1:1,True
+25125,Regleringsbrev,2024-12-19,2025,Myndighet,Statens väg- och transportforskningsinstitut,True
+25126,Ändringsbeslut,2024-11-14,2024,Myndighet,Sveriges meteorologiska och hydrologiska institut,True
+25127,Ändringsbeslut,2024-11-14,2024,Anslag,1:17,True
+25128,Regleringsbrev,2024-12-19,2025,Myndighet,Totalförsvarets forskningsinstitut,True
+25129,Ändringsbeslut,2024-11-28,2024,Myndighet,Statens energimyndighet,True
+25130,Ändringsbeslut,2024-12-12,2024,Myndighet,Inspektionen för strategiska produkter,True
+25131,Ändringsbeslut,2024-12-12,2024,Myndighet,Konsumentverket,True
+25132,Regleringsbrev,2024-12-19,2025,Myndighet,Finansinspektionen,True
+25133,Regleringsbrev,2024-12-19,2025,Myndighet,Kronofogdemyndigheten,True
+25134,Regleringsbrev,2024-12-19,2025,Myndighet,Statens geotekniska institut,True
+25135,Ändringsbeslut,2024-11-14,2024,Myndighet,Barnombudsmannen,True
+25136,Ändringsbeslut,2024-11-14,2024,Anslag,5:2,True
+25137,Regleringsbrev,2024-12-19,2025,Myndighet,Statskontoret,True
+25138,Ändringsbeslut,2024-11-21,2024,Myndighet,Statistiska centralbyrån,True
+25139,Ändringsbeslut,2024-11-14,2024,Anslag,1:16,True
+25140,Regleringsbrev,2024-12-19,2025,Anslag,1:12,True
+25141,Regleringsbrev,2024-12-19,2025,Myndighet,Pensionsmyndigheten,True
+25142,Ändringsbeslut,2024-11-21,2024,Myndighet,Tandvårds- och läkemedelsförmånsverket,True
+25143,Regleringsbrev,2024-12-19,2025,Myndighet,Riksgäldskontoret,True
+25144,Regleringsbrev,2024-12-12,2025,Anslag,13:4,True
+25147,Regleringsbrev,2024-12-12,2025,Anslag,13:2,True
+25148,Regleringsbrev,2024-12-19,2025,Anslag,1:15,True
+25149,Regleringsbrev,2024-12-19,2025,Anslag,1:16,True
+25150,Regleringsbrev,2024-12-19,2025,Anslag,1:17,True
+25151,Ändringsbeslut,2024-11-28,2024,Myndighet,Tillväxtverket,True
+25152,Ändringsbeslut,2024-11-28,2024,Anslag,1:5,True
+25153,Ändringsbeslut,2024-12-05,2024,Myndighet,Polismyndigheten,True
+25155,Regleringsbrev,2024-12-19,2025,Myndighet,Statens servicecenter,True
+25156,Regleringsbrev,2024-12-19,2025,Myndighet,Svenska institutet,True
+25157,Regleringsbrev,2024-12-12,2025,Anslag,1:5,True
+25158,Regleringsbrev,2024-12-12,2025,Anslag,1:5,True
+25159,Regleringsbrev,2024-12-19,2025,Anslag,1:11,True
+25160,Regleringsbrev,2024-12-16,2025,Anslag,1:5,True
+25162,Regleringsbrev,2024-12-19,2025,Myndighet,Kemikalieinspektionen,True
+25163,Regleringsbrev,2024-12-19,2025,Anslag,1:18,True
+25164,Regleringsbrev,2024-12-12,2025,Anslag,1:1,True
+25166,Regleringsbrev,2024-12-19,2025,Anslag,1:16,True
+25167,Ändringsbeslut,2024-12-05,2024,Myndighet,Mediemyndigheten,True
+25168,Regleringsbrev,2024-12-19,2025,Myndighet,Inspektionen för socialförsäkringen,True
+25169,Regleringsbrev,2024-12-19,2025,Anslag,1:7,True
+25170,Ändringsbeslut,2024-12-05,2024,Myndighet,Åklagarmyndigheten,True
+25172,Regleringsbrev,2024-12-19,2025,Myndighet,Boverket,True
+25173,Ändringsbeslut,2024-12-05,2024,Myndighet,Naturvårdsverket,True
+25174,Ändringsbeslut,2024-12-05,2024,Myndighet,Statens tjänstepensionsverk,True
+25175,Regleringsbrev,2024-12-12,2025,Anslag,6:1,True
+25176,Ändringsbeslut,2024-12-12,2024,Myndighet,Statens skolverk,True
+25177,Regleringsbrev,2024-12-19,2025,Myndighet,Sveriges lantbruksuniversitet,True
+25178,Regleringsbrev,2024-12-19,2025,Anslag,1:24 och 1:25,True
+25179,Regleringsbrev,2024-12-19,2025,Anslag,1:23,True
+25180,Regleringsbrev,2024-12-19,2025,Anslag,3:1,True
+25182,Ändringsbeslut,2024-11-21,2024,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
+25183,Regleringsbrev,2024-12-19,2025,Myndighet,Lantmäteriet,True
+25184,Ändringsbeslut,2024-12-05,2024,Anslag,2:3,True
+25186,Regleringsbrev,2024-12-19,2025,Myndighet,Sjöfartsverket,True
+25187,Regleringsbrev,2024-12-19,2025,Myndighet,länsstyrelserna,True
+25188,Regleringsbrev,2024-12-19,2025,Myndighet,Medlingsinstitutet,True
+25190,Ändringsbeslut,2024-12-05,2024,Myndighet,Arbetsmiljöverket,True
+25191,Regleringsbrev,2024-12-19,2025,Anslag,1:16,True
+25192,Ändringsbeslut,2024-11-28,2024,Anslag,"14:1, 14:2, 14:3 och 14:4",True
+25193,Regleringsbrev,2024-12-19,2025,Anslag,2:3,True
+25194,Ändringsbeslut,2024-12-19,2024,Myndighet,Regeringskansliet,True
+25195,Regleringsbrev,2024-12-19,2025,Myndighet,Myndigheten för arbetsmiljökunskap,True
+25196,Ändringsbeslut,2024-11-21,2024,Myndighet,Svenska institutet,True
+25197,Regleringsbrev,2024-12-19,2025,Myndighet,Tullverket,True
+25198,Regleringsbrev,2024-12-19,2025,Myndighet,Bokföringsnämnden,True
+25199,Ändringsbeslut,2024-11-21,2024,Anslag,1:1 och 1:3 (2021),True
+25200,Regleringsbrev,2024-12-19,2025,Myndighet,Revisorsinspektionen,True
+25201,Ändringsbeslut,2024-12-05,2024,Myndighet,Statskontoret,True
+25202,Ändringsbeslut,2024-12-12,2024,Anslag,"1:1, 2:3 och 2:4",True
+25203,Regleringsbrev,2024-12-19,2025,Myndighet,Svenska Unescorådet,True
+25204,Ändringsbeslut,2024-12-05,2024,Myndighet,Kungliga hov- och slottsstaten,True
+25205,Regleringsbrev,2024-12-16,2025,Anslag,1:13,True
+25207,Ändringsbeslut,2024-12-05,2024,Myndighet,Transportstyrelsen,True
+25210,Regleringsbrev,2024-12-12,2025,Myndighet,Inspektionen för strategiska produkter,True
+25211,Ändringsbeslut,2024-12-05,2024,Myndighet,Universitetskanslersämbetet,True
+25212,Regleringsbrev,2024-12-19,2025,Anslag,1:7,True
+25213,Regleringsbrev,2024-12-19,2025,Anslag,1:21,True
+25214,Regleringsbrev,2024-12-19,2025,Anslag,1:22,True
+25215,Ändringsbeslut,2024-11-28,2024,Myndighet,Skatteverket,True
+25217,Regleringsbrev,2024-12-19,2025,Myndighet,Säkerhetspolisen,True
+25218,Regleringsbrev,2024-12-19,2025,Myndighet,Statens tjänstepensionsverk,True
+25220,Ändringsbeslut,2024-12-05,2024,Myndighet,Affärsverket svenska kraftnät,True
+25221,Ändringsbeslut,2024-12-05,2024,Myndighet,Myndigheten för psykologiskt försvar,True
+25222,Ändringsbeslut,2024-12-05,2024,Myndighet,Trafikverket,True
+25223,Ändringsbeslut,2024-12-16,2024,Anslag,13:1,True
+25224,Ändringsbeslut,2024-12-05,2024,Anslag,"1:2, 2:1, 5:2, 7:3, 8:2, 8:3, 8:5, 10:1, 11:1 och 11:3",True
+25225,Ändringsbeslut,2024-12-05,2024,Myndighet,Statens kulturråd,True
+25226,Ändringsbeslut,2024-12-19,2024,Myndighet,Allmänna reklamationsnämnden,True
+25227,Ändringsbeslut,2024-12-19,2024,Myndighet,Fastighetsmäklarinspektionen,True
+25228,Ändringsbeslut,2024-12-12,2024,Anslag,1:6,True
+25229,Ändringsbeslut,2024-12-12,2024,Anslag,1:1,True
+25231,Ändringsbeslut,2024-12-05,2024,Myndighet,Sjöfartsverket,True
+25232,Ändringsbeslut,2024-11-28,2024,Myndighet,Tullverket,True
+25233,Ändringsbeslut,2024-12-05,2024,Anslag,1:2,True
+25234,Ändringsbeslut,2024-12-05,2024,Anslag,2:4,True
+25235,Ändringsbeslut,2024-11-28,2024,Anslag,1:16,True
+25236,Ändringsbeslut,2024-12-05,2024,Myndighet,Statens jordbruksverk,True
+25237,Ändringsbeslut,2024-12-05,2024,Anslag,1:1,True
+25238,Ändringsbeslut,2024-12-05,2024,Myndighet,Livsmedelsverket,True
+25239,Ändringsbeslut,2024-12-05,2024,Anslag,1:12,True
+25240,Ändringsbeslut,2024-12-12,2024,Anslag,3:1,True
+25241,Ändringsbeslut,2024-12-05,2024,Myndighet,Pensionsmyndigheten,True
+25242,Ändringsbeslut,2024-12-12,2024,Anslag,2:6,True
+25243,Ändringsbeslut,2024-12-19,2024,Anslag,1:1,True
+25244,Ändringsbeslut,2024-12-12,2024,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
+25245,Ändringsbeslut,2024-12-05,2024,Anslag,1:22,True
+25247,Regleringsbrev,2024-12-19,2025,Anslag,1:1,True
+25251,Regleringsbrev,2024-12-12,2025,Anslag,1:2,True
+25252,Ändringsbeslut,2024-12-12,2024,Anslag,1:17,True
+25254,Ändringsbeslut,2024-12-16,2024,Myndighet,Statens haverikommission,True
+25255,Ändringsbeslut,2024-12-19,2024,Myndighet,Kammarkollegiet,True
+25257,Ändringsbeslut,2024-12-19,2024,Anslag,2:3,True
+25279,Ändringsbeslut,2025-01-23,2025,Myndighet,Trafikverket,True
+25282,Ändringsbeslut,2025-02-06,2025,Anslag,4:7,True
+25284,Ändringsbeslut,2025-02-20,2025,Myndighet,Statens skolverk,True
+25285,Ändringsbeslut,2025-01-23,2025,Anslag,1:6,True
+25289,Regleringsbrev,2025-02-13,2025,Anslag,1:26 (2022),True
+25290,Regleringsbrev,2025-02-13,2025,Anslag,1:25 (2022),True
+25291,Regleringsbrev,2025-02-13,2025,Anslag,1:24 (2022),True
+25292,Ändringsbeslut,2025-01-23,2025,Myndighet,Affärsverket svenska kraftnät,True
+25293,Ändringsbeslut,2025-01-30,2025,Myndighet,Naturvårdsverket,True
+25295,Ändringsbeslut,2025-01-23,2025,Anslag,2:64,True
+25296,Ändringsbeslut,2025-02-20,2025,Myndighet,Jämställdhetsmyndigheten,True
+25297,Ändringsbeslut,2025-02-06,2025,Myndighet,länsstyrelserna,True
+25299,Ändringsbeslut,2025-02-20,2025,Myndighet,Försvarets materielverk,True
+25301,Ändringsbeslut,2025-01-30,2025,Anslag,2:2,True
+25302,Ändringsbeslut,2025-02-20,2025,Myndighet,Brottsförebyggande rådet,True
+25303,Ändringsbeslut,2025-01-30,2025,Anslag,1:5,True
+25304,Ändringsbeslut,2025-03-27,2025,Myndighet,Statens energimyndighet,True
+25305,Ändringsbeslut,2025-02-20,2025,Myndighet,Försvarsmakten,True
+25306,Ändringsbeslut,2025-01-30,2025,Myndighet,Post- och telestyrelsen,True
+25307,Ändringsbeslut,2025-03-13,2025,Myndighet,"Forskningsrådet för hälsa, arbetsliv och välfärd",True
+25308,Ändringsbeslut,2025-02-27,2025,Myndighet,Universitetskanslersämbetet,True
+25309,Ändringsbeslut,2025-03-06,2025,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
+25310,Ändringsbeslut,2025-01-30,2025,Myndighet,Post- och telestyrelsen,True
+25311,Ändringsbeslut,2025-02-27,2025,Anslag,1:14,True
+25312,Ändringsbeslut,2025-03-06,2025,Anslag,1:24 och 1:25,True
+25313,Ändringsbeslut,2025-01-23,2025,Anslag,1:11,True
+25316,Ändringsbeslut,2025-02-13,2025,Anslag,13:5,True
+25317,Ändringsbeslut,2025-03-13,2025,Myndighet,Svenska institutet,True
+25319,Ändringsbeslut,2025-03-20,2025,Anslag,4:5,True
+25321,Ändringsbeslut,2025-03-13,2025,Anslag,"1:1, 2:3 och 2:4",True
+25325,Ändringsbeslut,2025-01-30,2025,Anslag,1:1,True
+25326,Ändringsbeslut,2025-02-27,2025,Myndighet,Polismyndigheten,True
+25327,Ändringsbeslut,2025-02-20,2025,Myndighet,"Forskningsrådet för miljö, areella näringar och samhällsbyggande",True
+25329,Ändringsbeslut,2025-02-13,2025,Myndighet,Migrationsverket,True
+25330,Ändringsbeslut,2025-03-13,2025,Myndighet,Fortifikationsverket,True
+25331,Ändringsbeslut,2025-04-30,2025,Myndighet,Sveriges Domstolar,True
+25332,Ändringsbeslut,2025-02-20,2025,Anslag,1:6,True
+25334,Ändringsbeslut,2025-03-20,2025,Anslag,2:64,True
+25335,Ändringsbeslut,2025-03-20,2025,Myndighet,Universitets- och högskolerådet,True
+25336,Ändringsbeslut,2025-02-20,2025,Anslag,1:14,True
+25337,Ändringsbeslut,2025-02-13,2025,Anslag,1:1,True
+25338,Ändringsbeslut,2025-02-20,2025,Myndighet,Myndigheten för psykologiskt försvar,True
+25339,Ändringsbeslut,2025-02-20,2025,Anslag,4:1,True
+25341,Ändringsbeslut,2025-02-13,2025,Myndighet,Naturvårdsverket,True
+25342,Ändringsbeslut,2025-02-13,2025,Myndighet,Statens beredning för medicinsk och social utvärdering,True
+25343,Ändringsbeslut,2025-02-20,2025,Anslag,1:5,True
+25344,Ändringsbeslut,2025-02-20,2025,Myndighet,Totalförsvarets forskningsinstitut,True
+25345,Ändringsbeslut,2025-03-20,2025,Myndighet,Livsmedelsverket,True
+25346,Ändringsbeslut,2025-03-27,2025,Myndighet,Socialstyrelsen,True
+25347,Ändringsbeslut,2025-02-20,2025,Myndighet,Kustbevakningen,True
+25348,Ändringsbeslut,2025-02-20,2025,Myndighet,Myndigheten för samhällsskydd och beredskap,True
+25350,Ändringsbeslut,2025-03-27,2025,Myndighet,Statens skolinspektion,True
+25351,Ändringsbeslut,2025-04-10,2025,Myndighet,Rymdstyrelsen,True
+25352,Ändringsbeslut,2025-03-06,2025,Myndighet,Myndigheten för delaktighet,True
+25353,Ändringsbeslut,2025-03-06,2025,Myndighet,universitet och högskolor,True
+25354,Ändringsbeslut,2025-02-13,2025,Myndighet,Inspektionen för vård och omsorg,True
+25355,Ändringsbeslut,2025-03-20,2025,Myndighet,Försäkringskassan,True
+25356,Ändringsbeslut,2025-03-06,2025,Myndighet,Havs- och vattenmyndigheten,True
+25359,Ändringsbeslut,2025-03-06,2025,Myndighet,Naturvårdsverket,True
+25360,Ändringsbeslut,2025-03-20,2025,Myndighet,Energimarknadsinspektionen,True
+25363,Ändringsbeslut,2025-03-20,2025,Anslag,1:5,True
+25365,Ändringsbeslut,2025-04-10,2025,Myndighet,Folkhälsomyndigheten,True
+25366,Ändringsbeslut,2025-02-27,2025,Myndighet,Migrationsverket,True
+25367,Ändringsbeslut,2025-03-06,2025,Myndighet,Arbetsförmedlingen,True
+25368,Ändringsbeslut,2025-04-03,2025,Anslag,1:6,True
+25369,Ändringsbeslut,2025-03-20,2025,Myndighet,länsstyrelserna,True
+25370,Ändringsbeslut,2025-03-06,2025,Anslag,1:12,True
+25371,Ändringsbeslut,2025-04-10,2025,Anslag,4:4,True
+25372,Ändringsbeslut,2025-04-03,2025,Myndighet,Myndigheten för ungdoms- och civilsamhällesfrågor,True
+25373,Ändringsbeslut,2025-04-10,2025,Myndighet,Post- och telestyrelsen,True
+25374,Ändringsbeslut,2025-03-27,2025,Myndighet,Trafikverket,True
+25375,Ändringsbeslut,2025-04-10,2025,Myndighet,Myndigheten för samhällsskydd och beredskap,True
+25376,Ändringsbeslut,2025-04-24,2025,Myndighet,Folke Bernadotteakademin,True
+25380,Ändringsbeslut,2025-03-20,2025,Myndighet,Arbetsförmedlingen,True
+25381,Ändringsbeslut,2025-03-27,2025,Myndighet,Statens tjänstepensionsverk,True
+25384,Ändringsbeslut,2025-03-13,2025,Myndighet,Statens jordbruksverk,True
+25386,Ändringsbeslut,2025-04-03,2025,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
+25388,Ändringsbeslut,2025-03-20,2025,Myndighet,Statens jordbruksverk,True
+25391,Ändringsbeslut,2025-03-21,2025,Myndighet,Tillväxtverket,True
+25392,Ändringsbeslut,2025-04-03,2025,Anslag,1:12,True
+25394,Ändringsbeslut,2025-03-27,2025,Myndighet,Regeringskansliet,True
+25397,Ändringsbeslut,2025-03-21,2025,Anslag,1:5,True
+25398,Ändringsbeslut,2025-04-16,2025,Myndighet,Universitetskanslersämbetet,True
+25399,Ändringsbeslut,2025-04-30,2025,Myndighet,Integritetsskyddsmyndigheten,True
+25402,Ändringsbeslut,2025-03-27,2025,Anslag,1:5,True
+25405,Ändringsbeslut,2025-03-27,2025,Myndighet,Tillväxtverket,True
+25409,Ändringsbeslut,2025-04-10,2025,Myndighet,Naturvårdsverket,True
+25418,Ändringsbeslut,2025-04-30,2025,Myndighet,Försvarets materielverk,True
+25419,Ändringsbeslut,2025-04-30,2025,Myndighet,Myndigheten för psykologiskt försvar,True
+25420,Ändringsbeslut,2025-04-30,2025,Myndighet,Totalförsvarets forskningsinstitut,True
+25421,Ändringsbeslut,2025-04-30,2025,Myndighet,Ekobrottsmyndigheten,True
+25440,Ändringsbeslut,2025-04-30,2025,Myndighet,Vetenskapsrådet,True
+25448,Ändringsbeslut,2025-04-30,2025,Anslag,1:11,True

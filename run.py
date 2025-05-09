@@ -2,7 +2,7 @@ import statsliggaren as sl
 from services.writer import Writer
 from markdownify import markdownify as md
 
-rbids = [i for i in range(24800)]
+rbids = [i for i in range(25500)]
 metadata, attachments, letters = sl.get_metadatas(rbids)
 
 Writer.write_csv(metadata, "letters.csv")
