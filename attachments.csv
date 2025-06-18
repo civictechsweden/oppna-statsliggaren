@@ -6658,6 +6658,7 @@ id,rbid,name
 10120,25297,Bilaga 4 Låneramar och räntekontokrediter.xlsx
 10115,25297,Bilaga 5 Avgifter som disponeras.pdf
 10116,25297,Bilaga 6 Avgifter till inkomsttitel.pdf
+10121,25298,Pågående uppdrag.docx
 10123,25299,Bilaga 2 Investeringsplan.docx
 10125,25299,Bilaga 3 Pescoprojekt.docx
 10124,25299,Bilaga 4 Underlag FPI.docx
@@ -6676,6 +6677,7 @@ id,rbid,name
 10137,25306,Bilaga 1 pågående uppdrag.docx
 10138,25310,Pågående uppdrag PTS RB25.docx
 10145,25313,Bilaga 1.docx
+10140,25318,Bilaga till 0904002 RB25.pdf
 10141,25319,Bilaga 1 Sektorsbidrag.pdf
 10146,25326,Bilaga 2 Pågående uppdrag.docx
 10147,25327,Bilaga 1.docx
@@ -6698,6 +6700,7 @@ id,rbid,name
 10171,25347,Bilaga investeringsbudget Kustbevakningen.xlsx
 10173,25348,Bilaga 1 Pågående uppdrag .docx
 10172,25348,Investeringsplan Myndigheten för samhällsskydd och beredskap.xlsx
+10175,25349,Pågående uppdrag.docx
 10215,25353,Bilaga 2 riktlinjer mm.docx
 10177,25353,Bilaga 3 Redovisning av takbelopp.xlsx
 10178,25356,Uppdragsbilaga till HaVs regleringsbrev 2025.docx
@@ -6725,6 +6728,7 @@ id,rbid,name
 10212,25374,Bilaga 4 Pågående uppdrag 2025.docx
 10214,25375,Bilaga 1 Pågående uppdrag .docx
 10213,25375,Investeringsplan Myndigheten för samhällsskydd och beredskap.xlsx
+10217,25379,Bilaga uppdrag särskilda regeringsbeslut.docx
 10218,25380,Bilaga 2 Prognoser DAC.docx
 10219,25380,Bilaga 3 Beräkning DAC.docx
 10220,25384,Pågående uppdrag .docx
@@ -6732,14 +6736,42 @@ id,rbid,name
 10224,25391,Bilaga 1 Återrapportering av regionalfondsprogram.docx
 10225,25391,Bilaga 2 Pågående uppdrag.docx
 10226,25391,Bilaga 3 Investeringsbudget.docx
+10227,25393,Bilaga - pågående uppdrag.docx
 10232,25405,Bilaga 1 Återrapportering av regionalfondsprogram.docx
 10233,25405,Bilaga 2 Pågående uppdrag.docx
 10234,25405,Bilaga 3 Investeringsbudget.docx
 10237,25409,Bilaga 3 Investeringsplan Naturvårdsverket.pdf
 10238,25409,Bilaga Pågående uppdrag Naturvårdsverket 2025.pdf
+10244,25414,2 Pågående uppdrag.docx
+10241,25414,3Verksamhetsinvesteringar.xlsx
+10242,25414,4 DAC utfall.docx
+10243,25414,DAC prognos.docx
+10245,25416,Bilaga 2 Ekonomisk ram.pdf
+10247,25416,Bilaga 3 Förtroende- och säkerhetsskapande verksam.pdf
+10252,25416,Bilaga 4 Riktlinjer för militär säkerhetstjänst.pdf
+10246,25416,Bilaga 5 Försvarsprisindex.pdf
+10248,25416,Bilaga 6 Investeringsplaner .pdf
+10251,25416,Bilaga 7 Lista över regeringsbeslut.pdf
+10249,25416,Bilaga 8 Deltagande i Pesco-projekt.pdf
+10250,25416,Bilaga 9 Verksamhetsinvesteringsbudget .pdf
 10255,25418,Bilaga 2 Investeringsplan.docx
 10257,25418,Bilaga 3 Pescoprojekt.docx
 10256,25418,Bilaga 4 Underlag FPI.docx
 10254,25418,Bilaga 5 Pågående uppdrag.docx
 10258,25421,Pågående uppdrag.docx
+10259,25422,Bilaga investeringsbudget Kustbevakningen.xlsx
+10265,25431,Bilaga till beslut om bidrag.pdf
+10267,25434,Bilaga 1 Pågående uppdrag .docx
+10266,25434,Investeringsplan Myndigheten för samhällsskydd och beredskap.xlsx
+10269,25438,Bilaga investeringsbudget.docx
+10268,25438,Bilaga Pågående uppdrag.docx
+10270,25441,Investeringsplan Statens fastighetsverk.xlsx
+10271,25442,Bilaga 3 Investeringsplan Naturvårdsverket.pdf
+10272,25442,Bilaga Pågående uppdrag Naturvårdsverket 2025.pdf
 10276,25448,Bilaga 1.docx
+10278,25451,Bilaga pågående uppdrag per den 1 januari 2025.docx
+10280,25455,Bilaga 2 Pågående uppdrag.docx
+10297,25487,Bilaga 1 Pågående uppdrag .docx
+10296,25487,Investeringsplan Myndigheten för samhällsskydd och beredskap.xlsx
+10307,25504,Bilaga 3 Investeringsplan Naturvårdsverket.pdf
+10308,25504,Bilaga Pågående uppdrag Naturvårdsverket 2025.pdf

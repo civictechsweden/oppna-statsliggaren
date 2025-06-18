@@ -15365,6 +15365,7 @@ rbid,type,date,year,category,name,pdf
 25295,Ändringsbeslut,2025-01-23,2025,Anslag,2:64,True
 25296,Ändringsbeslut,2025-02-20,2025,Myndighet,Jämställdhetsmyndigheten,True
 25297,Ändringsbeslut,2025-02-06,2025,Myndighet,länsstyrelserna,True
+25298,Ändringsbeslut,2025-05-15,2025,Myndighet,Statskontoret,True
 25299,Ändringsbeslut,2025-02-20,2025,Myndighet,Försvarets materielverk,True
 25301,Ändringsbeslut,2025-01-30,2025,Anslag,2:2,True
 25302,Ändringsbeslut,2025-02-20,2025,Myndighet,Brottsförebyggande rådet,True
@@ -15381,6 +15382,7 @@ rbid,type,date,year,category,name,pdf
 25313,Ändringsbeslut,2025-01-23,2025,Anslag,1:11,True
 25316,Ändringsbeslut,2025-02-13,2025,Anslag,13:5,True
 25317,Ändringsbeslut,2025-03-13,2025,Myndighet,Svenska institutet,True
+25318,Ändringsbeslut,2025-05-08,2025,Anslag,4:2,True
 25319,Ändringsbeslut,2025-03-20,2025,Anslag,4:5,True
 25321,Ändringsbeslut,2025-03-13,2025,Anslag,"1:1, 2:3 och 2:4",True
 25325,Ändringsbeslut,2025-01-30,2025,Anslag,1:1,True
@@ -15404,6 +15406,7 @@ rbid,type,date,year,category,name,pdf
 25346,Ändringsbeslut,2025-03-27,2025,Myndighet,Socialstyrelsen,True
 25347,Ändringsbeslut,2025-02-20,2025,Myndighet,Kustbevakningen,True
 25348,Ändringsbeslut,2025-02-20,2025,Myndighet,Myndigheten för samhällsskydd och beredskap,True
+25349,Ändringsbeslut,2025-05-28,2025,Myndighet,Verket för innovationssystem,True
 25350,Ändringsbeslut,2025-03-27,2025,Myndighet,Statens skolinspektion,True
 25351,Ändringsbeslut,2025-04-10,2025,Myndighet,Rymdstyrelsen,True
 25352,Ändringsbeslut,2025-03-06,2025,Myndighet,Myndigheten för delaktighet,True
@@ -15426,23 +15429,56 @@ rbid,type,date,year,category,name,pdf
 25374,Ändringsbeslut,2025-03-27,2025,Myndighet,Trafikverket,True
 25375,Ändringsbeslut,2025-04-10,2025,Myndighet,Myndigheten för samhällsskydd och beredskap,True
 25376,Ändringsbeslut,2025-04-24,2025,Myndighet,Folke Bernadotteakademin,True
+25377,Ändringsbeslut,2025-05-15,2025,Myndighet,E-hälsomyndigheten,True
+25379,Ändringsbeslut,2025-05-15,2025,Myndighet,Statens skolverk,True
 25380,Ändringsbeslut,2025-03-20,2025,Myndighet,Arbetsförmedlingen,True
 25381,Ändringsbeslut,2025-03-27,2025,Myndighet,Statens tjänstepensionsverk,True
+25383,Ändringsbeslut,2025-05-22,2025,Myndighet,Myndigheten för stöd till trossamfund,True
 25384,Ändringsbeslut,2025-03-13,2025,Myndighet,Statens jordbruksverk,True
 25386,Ändringsbeslut,2025-04-03,2025,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
 25388,Ändringsbeslut,2025-03-20,2025,Myndighet,Statens jordbruksverk,True
 25391,Ändringsbeslut,2025-03-21,2025,Myndighet,Tillväxtverket,True
 25392,Ändringsbeslut,2025-04-03,2025,Anslag,1:12,True
+25393,Ändringsbeslut,2025-05-15,2025,Myndighet,Boverket,True
 25394,Ändringsbeslut,2025-03-27,2025,Myndighet,Regeringskansliet,True
+25396,Ändringsbeslut,2025-05-28,2025,Myndighet,Nämnden för hemslöjdsfrågor,True
 25397,Ändringsbeslut,2025-03-21,2025,Anslag,1:5,True
 25398,Ändringsbeslut,2025-04-16,2025,Myndighet,Universitetskanslersämbetet,True
 25399,Ändringsbeslut,2025-04-30,2025,Myndighet,Integritetsskyddsmyndigheten,True
+25400,Ändringsbeslut,2025-05-28,2025,Myndighet,Statens kulturråd,True
 25402,Ändringsbeslut,2025-03-27,2025,Anslag,1:5,True
+25403,Ändringsbeslut,2025-05-15,2025,Myndighet,Allmänna reklamationsnämnden,True
 25405,Ändringsbeslut,2025-03-27,2025,Myndighet,Tillväxtverket,True
+25407,Ändringsbeslut,2025-04-30,2025,Myndighet,Strålsäkerhetsmyndigheten,True
 25409,Ändringsbeslut,2025-04-10,2025,Myndighet,Naturvårdsverket,True
+25414,Ändringsbeslut,2025-05-08,2025,Myndighet,Migrationsverket,True
+25416,Ändringsbeslut,2025-04-30,2025,Myndighet,Försvarsmakten,True
+25417,Ändringsbeslut,2025-05-15,2025,Myndighet,Fastighetsmäklarinspektionen,True
 25418,Ändringsbeslut,2025-04-30,2025,Myndighet,Försvarets materielverk,True
 25419,Ändringsbeslut,2025-04-30,2025,Myndighet,Myndigheten för psykologiskt försvar,True
 25420,Ändringsbeslut,2025-04-30,2025,Myndighet,Totalförsvarets forskningsinstitut,True
 25421,Ändringsbeslut,2025-04-30,2025,Myndighet,Ekobrottsmyndigheten,True
+25422,Ändringsbeslut,2025-04-30,2025,Myndighet,Kustbevakningen,True
+25425,Ändringsbeslut,2025-05-22,2025,Anslag,1:1,True
+25426,Ändringsbeslut,2025-05-22,2025,Myndighet,Myndigheten för ungdoms- och civilsamhällesfrågor,True
+25429,Ändringsbeslut,2025-05-08,2025,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
+25430,Ändringsbeslut,2025-05-08,2025,Anslag,1:5,True
+25431,Ändringsbeslut,2025-05-15,2025,Anslag,5:2,True
+25432,Ändringsbeslut,2025-05-08,2025,Myndighet,Myndigheten för delaktighet,True
+25433,Ändringsbeslut,2025-04-30,2025,Anslag,1:14,True
+25434,Ändringsbeslut,2025-04-30,2025,Myndighet,Myndigheten för samhällsskydd och beredskap,True
+25436,Ändringsbeslut,2025-04-30,2025,Myndighet,Kommerskollegium,True
+25438,Ändringsbeslut,2025-05-28,2025,Myndighet,Transportstyrelsen,True
+25439,Ändringsbeslut,2025-05-15,2025,Anslag,1:1,True
 25440,Ändringsbeslut,2025-04-30,2025,Myndighet,Vetenskapsrådet,True
+25441,Ändringsbeslut,2025-05-28,2025,Myndighet,Statens fastighetsverk,True
+25442,Ändringsbeslut,2025-05-15,2025,Myndighet,Naturvårdsverket,True
 25448,Ändringsbeslut,2025-04-30,2025,Anslag,1:11,True
+25451,Ändringsbeslut,2025-05-15,2025,Myndighet,Statens energimyndighet,True
+25453,Ändringsbeslut,2025-05-28,2025,Myndighet,Vetenskapsrådet,True
+25455,Ändringsbeslut,2025-05-22,2025,Myndighet,Polismyndigheten,True
+25469,Ändringsbeslut,2025-05-15,2025,Anslag,1:12,True
+25474,Ändringsbeslut,2025-05-15,2025,Myndighet,Barnombudsmannen,True
+25487,Ändringsbeslut,2025-05-22,2025,Myndighet,Myndigheten för samhällsskydd och beredskap,True
+25503,Ändringsbeslut,2025-06-05,2025,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
+25504,Ändringsbeslut,2025-06-12,2025,Myndighet,Naturvårdsverket,True

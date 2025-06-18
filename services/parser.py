@@ -4,6 +4,13 @@ import re
 
 class Parser(object):
     @staticmethod
+    def parse_latest_remote_rbid(future) -> int:
+        response = future.result()
+        response = html.unescape(response.text)
+
+        return int(sorted(response.split("rbid=")[1:], reverse=True)[0].split("&")[0])
+
+    @staticmethod
     def parse_metadata(future):
         response = future.result()
         response = html.unescape(response.text)
@@ -56,43 +63,44 @@ class Parser(object):
 
         for future in futures:
             metadata, attachments, letter = Parser.parse_metadata(future)
-            if metadata["type"]:
+            if metadata["name"]:
                 items.append(metadata)
                 letters[future.id] = letter
             all_attachments.extend(attachments)
-        
-        all_attachments.sort(key=lambda x: (x['rbid'], x['id']))
-        
+
         return items, all_attachments, letters
 
     @staticmethod
     def _hard_coded_fix(text):
         text = text.replace("Avseende anslaget", "Anslag")
         text = text.replace(
-            "Ändringsbeslut  2003-09-04 Lunds universitet",
-            "Ändringsbeslut  2003-09-04 Myndighet Lunds universitet",
+            "Avvecklingsmyndigheten", "Myndighet Avvecklingsmyndigheten"
         )
         text = text.replace(
-            "Ändringsbeslut  2003-11-27 Polisväsendet",
-            "Ändringsbeslut  2003-11-27 Myndighet Polisväsendet",
+            "Ändringsbeslut 2003-09-04 Lunds universitet",
+            "Ändringsbeslut 2003-09-04 Myndighet Lunds universitet",
         )
         text = text.replace(
-            "Ändringsbeslut  2004-11-30 Regeringskansliet",
-            "Ändringsbeslut  2004-11-30 Myndighet Regeringskansliet",
+            "Ändringsbeslut 2003-11-27 Polisväsendet",
+            "Ändringsbeslut 2003-11-27 Myndighet Polisväsendet",
         )
         text = text.replace(
-            "Ändringsbeslut  2004-01-29 Ändring avseende A:014 samt B:019 FI",
-            "Ändringsbeslut  2004-01-29 Anslag A:014 samt B:019 FI",
+            "Ändringsbeslut 2004-11-30 Regeringskansliet",
+            "Ändringsbeslut 2004-11-30 Myndighet Regeringskansliet",
         )
         text = text.replace(
-            "Ändringsbeslut  2004-01-29 Ändring avseende A:005 M",
-            "Ändringsbeslut  2004-01-29 Anslag A:005 M",
+            "Ändringsbeslut 2004-01-29 Ändring avseende A:014 samt B:019 FI",
+            "Ändringsbeslut 2004-01-29 Anslag A:014 samt B:019 FI",
+        )
+        text = text.replace(
+            "Ändringsbeslut 2004-01-29 Ändring avseende A:005 M",
+            "Ändringsbeslut 2004-01-29 Anslag A:005 M",
         )
 
         return text
 
     @staticmethod
-    def _extract_date(text):
+    def _extract_date(text: str) -> str | None:
         pattern = r"\b\d{4}-\d{2}-\d{2}\b"
         dates = re.findall(pattern, text)
 

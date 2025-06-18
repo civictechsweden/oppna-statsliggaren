@@ -1,12 +1,27 @@
+import sys
 import statsliggaren as sl
 from services.writer import Writer
 from markdownify import markdownify as md
 
-rbids = [i for i in range(25500)]
-metadata, attachments, letters = sl.get_metadatas(rbids)
+SAVE_LETTER_FILES = False
 
-Writer.write_csv(metadata, "letters.csv")
-Writer.write_csv(attachments, "attachments.csv")
+if sl.get_latest_remote_rbid() in sl.get_local_rbids():
+    print("No new regleringsbrev to fetch.")
+    sys.exit()
+
+rbids = sl.get_rbids_to_fetch()
+metadata = sl.get_local_metadata()
+attachments = sl.get_local_attachments()
+
+new_metadata, new_attachments, letters = sl.get_metadatas(rbids)
+metadata.extend(new_metadata)
+attachments.extend(new_attachments)
+
+Writer.write_csv(sorted(metadata, key=lambda d: int(d["rbid"])), "letters.csv")
+Writer.write_csv(sorted(attachments, key=lambda d: int(d["rbid"])), "attachments.csv")
+
+if not SAVE_LETTER_FILES:
+    sys.exit()
 
 for rbid in letters:
     letter = letters[rbid]

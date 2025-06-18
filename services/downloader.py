@@ -2,6 +2,7 @@ from concurrent.futures import as_completed
 from requests_futures.sessions import FuturesSession
 
 URL = "https://www.esv.se/statsliggaren/regleringsbrev/?RBID={}"
+SEARCH_URL = "https://www.esv.se/statsliggaren/sok-regleringsbrev/Search?sortOrder=Publiceringsdatum"
 
 
 class Downloader(object):
@@ -9,15 +10,19 @@ class Downloader(object):
     def __init__(self):
         self.s = FuturesSession(max_workers=30)
 
-    def fetch_page(self, rbid):
+    def fetch_search(self):
+        print(f"Fetching the search page...")
+
+        return self.s.get(SEARCH_URL)
+
+    def fetch_page(self, rbid: int):
         print(f"Fetching info for RBID {rbid}...")
 
         future = self.s.get(URL.format(rbid))
-
         future.id = rbid
         return future
 
-    def fetch_pages(self, rbids):
+    def fetch_pages(self, rbids: list[int]):
         futures = [self.fetch_page(rbid) for rbid in rbids]
 
         i = 0
