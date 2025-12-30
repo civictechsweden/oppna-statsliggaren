@@ -2,7 +2,7 @@
 
 This project aims at making the Swedish agencies mission letters (*regleringsbrev*) more accessible through a simple API and a dataset on HuggingFace.
 
-Today, mission letters are made available on a web application called [*Statsliggaren*](https://www.esv.se/statsliggaren) on the website of the [Swedish National Financial Management Authority](https://www.esv.se/english/)(*Ekonomistyrningsverket*). Discloser: They are my employer as of 2024 but this is an unrelated side-project.
+Today, mission letters are made available on a web application called [*Statsliggaren*](https://www.statskontoret.se/statsliggaren) on the website of the [Agency for Financial and Public Management](https://www.statskontoret.se/english/)(*Statskontoret*, formerly *Ekonomistyrningsverket*). Discloser: They are my employer as of 2024 but this is an unrelated side-project.
 
 It is hard to download the mission letter for a specific agency and a specific year from there as every document is given an obscure ID that gets incremented with each new document.
 
@@ -19,26 +19,26 @@ You can also download the file [attachments.csv](attachments.csv) to get a list 
 You can access a mission letter's page through this URL:
 
 ```text
-https://www.esv.se/statsliggaren/regleringsbrev/Index?rbId={ID}
+https://www.statskontoret.se/statsliggaren/regleringsbrev/Index?rbId={ID}
 ```
 
 If a PDF version is available, you can download it at this URL:
 
 ```text
-https://www.esv.se/Regleringsbrev/Pdf?RbId={ID}
+https://www.statskontoret.se/Regleringsbrev/Pdf?RbId={ID}
 ```
 
 If you just want the changes, you can add the parameter *version=EndastAndringar*:
 
 ```text
-https://www.esv.se/statsliggaren/regleringsbrev/Index?rbId={ID}&version=EndastAndringar
-https://www.esv.se/Regleringsbrev/Pdf?RbId={ID}&version=EndastAndringar
+https://www.statskontoret.se/statsliggaren/regleringsbrev/Index?rbId={ID}&version=EndastAndringar
+https://www.statskontoret.se/Regleringsbrev/Pdf?RbId={ID}&version=EndastAndringar
 ```
 
 Attachments are only available as files and can be downloaded at the following URL:
 
 ```text
-https://www.esv.se/Regleringsbrev/Bilaga?BilageID={ID}
+https://www.statskontoret.se/Regleringsbrev/Bilaga?BilageID={ID}
 ```
 
 ## Future developments

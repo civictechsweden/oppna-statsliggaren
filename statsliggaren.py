@@ -12,7 +12,7 @@ def get_local_attachments() -> list:
 
 
 def get_local_rbids() -> list[int]:
-    return sorted([int(l["rbid"]) for l in get_local_metadata()])
+    return sorted([int(letter["rbid"]) for letter in get_local_metadata()])
 
 
 def get_missing_local_rbids(local_rbids: list[int]) -> list[int]:

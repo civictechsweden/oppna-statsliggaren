@@ -17,7 +17,7 @@ class Parser(object):
 
         text = response[response.index("<title>") + 7 : response.index("</title>")]
 
-        fail = text == "Regleringsbrev - Ekonomistyrningsverket"
+        fail = text == "Regleringsbrev - Statskontoret"
 
         letter = (
             None
@@ -35,14 +35,13 @@ class Parser(object):
         metadata["date"] = None if fail or not letter else Parser._extract_date(letter)
         metadata["year"] = None if fail else words[1].split("-")[0]
         metadata["category"] = None if fail else words[2]
-        metadata["name"] = None if fail else " ".join(words[3:])
+        metadata["name"] = None if fail else " ".join(words[3:-2])
         metadata["pdf"] = "laddaNerPdf" in response
 
         attachments = []
-
         if not fail:
-            while "/RegleringsbrevPage/Bilaga?BilageID=" in response:
-                response = response[response.index("BilageID=") + 9 :]
+            while "/regleringsbrev/bilaga/" in response:
+                response = response[response.index("bilaga/") + 7 :]
                 attachments.append(
                     {
                         "id": int(response[: response.index('"')]),

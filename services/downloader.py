@@ -1,17 +1,16 @@
 from concurrent.futures import as_completed
 from requests_futures.sessions import FuturesSession
 
-URL = "https://www.esv.se/statsliggaren/regleringsbrev/?RBID={}"
-SEARCH_URL = "https://www.esv.se/statsliggaren/sok-regleringsbrev/Search?sortOrder=Publiceringsdatum"
+URL = "https://www.statskontoret.se/statsliggaren/regleringsbrev/?RBID={}"
+SEARCH_URL = "https://www.statskontoret.se/statsliggaren/sok-regleringsbrev/Search?sortOrder=Publiceringsdatum"
 
 
 class Downloader(object):
-
     def __init__(self):
         self.s = FuturesSession(max_workers=30)
 
     def fetch_search(self):
-        print(f"Fetching the search page...")
+        print("Fetching the search page...")
 
         return self.s.get(SEARCH_URL)
 
