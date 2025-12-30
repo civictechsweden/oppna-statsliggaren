@@ -15388,6 +15388,7 @@ rbid,type,date,year,category,name,pdf
 25325,Ändringsbeslut,2025-01-30,2025,Anslag,1:1,True
 25326,Ändringsbeslut,2025-02-27,2025,Myndighet,Polismyndigheten,True
 25327,Ändringsbeslut,2025-02-20,2025,Myndighet,"Forskningsrådet för miljö, areella näringar och samhällsbyggande",True
+25328,Ändringsbeslut,2025-09-25,2025,Myndighet,Myndigheten för arbetsmiljökunskap,True
 25329,Ändringsbeslut,2025-02-13,2025,Myndighet,Migrationsverket,True
 25330,Ändringsbeslut,2025-03-13,2025,Myndighet,Fortifikationsverket,True
 25331,Ändringsbeslut,2025-04-30,2025,Myndighet,Sveriges Domstolar,True
@@ -15430,6 +15431,7 @@ rbid,type,date,year,category,name,pdf
 25375,Ändringsbeslut,2025-04-10,2025,Myndighet,Myndigheten för samhällsskydd och beredskap,True
 25376,Ändringsbeslut,2025-04-24,2025,Myndighet,Folke Bernadotteakademin,True
 25377,Ändringsbeslut,2025-05-15,2025,Myndighet,E-hälsomyndigheten,True
+25378,Ändringsbeslut,2025-06-19,2025,Anslag,1:3,True
 25379,Ändringsbeslut,2025-05-15,2025,Myndighet,Statens skolverk,True
 25380,Ändringsbeslut,2025-03-20,2025,Myndighet,Arbetsförmedlingen,True
 25381,Ändringsbeslut,2025-03-27,2025,Myndighet,Statens tjänstepensionsverk,True
@@ -15437,6 +15439,7 @@ rbid,type,date,year,category,name,pdf
 25384,Ändringsbeslut,2025-03-13,2025,Myndighet,Statens jordbruksverk,True
 25386,Ändringsbeslut,2025-04-03,2025,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
 25388,Ändringsbeslut,2025-03-20,2025,Myndighet,Statens jordbruksverk,True
+25390,Ändringsbeslut,2025-06-19,2025,Anslag,4:7,True
 25391,Ändringsbeslut,2025-03-21,2025,Myndighet,Tillväxtverket,True
 25392,Ändringsbeslut,2025-04-03,2025,Anslag,1:12,True
 25393,Ändringsbeslut,2025-05-15,2025,Myndighet,Boverket,True
@@ -15449,9 +15452,11 @@ rbid,type,date,year,category,name,pdf
 25402,Ändringsbeslut,2025-03-27,2025,Anslag,1:5,True
 25403,Ändringsbeslut,2025-05-15,2025,Myndighet,Allmänna reklamationsnämnden,True
 25405,Ändringsbeslut,2025-03-27,2025,Myndighet,Tillväxtverket,True
+25406,Ändringsbeslut,2025-12-04,2025,Anslag,4:5,True
 25407,Ändringsbeslut,2025-04-30,2025,Myndighet,Strålsäkerhetsmyndigheten,True
 25409,Ändringsbeslut,2025-04-10,2025,Myndighet,Naturvårdsverket,True
 25414,Ändringsbeslut,2025-05-08,2025,Myndighet,Migrationsverket,True
+25415,Ändringsbeslut,2025-07-03,2025,Myndighet,Inspektionen för strategiska produkter,True
 25416,Ändringsbeslut,2025-04-30,2025,Myndighet,Försvarsmakten,True
 25417,Ändringsbeslut,2025-05-15,2025,Myndighet,Fastighetsmäklarinspektionen,True
 25418,Ändringsbeslut,2025-04-30,2025,Myndighet,Försvarets materielverk,True
@@ -15459,6 +15464,8 @@ rbid,type,date,year,category,name,pdf
 25420,Ändringsbeslut,2025-04-30,2025,Myndighet,Totalförsvarets forskningsinstitut,True
 25421,Ändringsbeslut,2025-04-30,2025,Myndighet,Ekobrottsmyndigheten,True
 25422,Ändringsbeslut,2025-04-30,2025,Myndighet,Kustbevakningen,True
+25423,Ändringsbeslut,2025-06-19,2025,Anslag,3:1,True
+25424,Ändringsbeslut,2025-06-19,2025,Anslag,1:6,True
 25425,Ändringsbeslut,2025-05-22,2025,Anslag,1:1,True
 25426,Ändringsbeslut,2025-05-22,2025,Myndighet,Myndigheten för ungdoms- och civilsamhällesfrågor,True
 25429,Ändringsbeslut,2025-05-08,2025,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
@@ -15473,12 +15480,564 @@ rbid,type,date,year,category,name,pdf
 25440,Ändringsbeslut,2025-04-30,2025,Myndighet,Vetenskapsrådet,True
 25441,Ändringsbeslut,2025-05-28,2025,Myndighet,Statens fastighetsverk,True
 25442,Ändringsbeslut,2025-05-15,2025,Myndighet,Naturvårdsverket,True
+25443,Ändringsbeslut,2025-08-21,2025,Myndighet,Ekonomistyrningsverket,True
+25444,Ändringsbeslut,2025-06-19,2025,Myndighet,Sveriges geologiska undersökning,True
+25445,Ändringsbeslut,2025-06-26,2025,Myndighet,Läkemedelsverket,True
+25447,Ändringsbeslut,2025-06-12,2025,Anslag,1:14 och 1:2,True
 25448,Ändringsbeslut,2025-04-30,2025,Anslag,1:11,True
+25449,Ändringsbeslut,2025-06-12,2025,Anslag,1:8,True
+25450,Ändringsbeslut,2025-06-19,2025,Myndighet,Konkurrensverket,True
 25451,Ändringsbeslut,2025-05-15,2025,Myndighet,Statens energimyndighet,True
+25452,Ändringsbeslut,2025-06-12,2025,Anslag,2:5,True
 25453,Ändringsbeslut,2025-05-28,2025,Myndighet,Vetenskapsrådet,True
+25454,Ändringsbeslut,2025-06-19,2025,Anslag,1:11,True
 25455,Ändringsbeslut,2025-05-22,2025,Myndighet,Polismyndigheten,True
+25456,Ändringsbeslut,2025-06-19,2025,Myndighet,Jämställdhetsmyndigheten,True
+25457,Ändringsbeslut,2025-06-26,2025,Anslag,"1:1, 2:3 och 2:4",True
+25458,Ändringsbeslut,2025-06-19,2025,Anslag,1:14,True
+25459,Ändringsbeslut,2025-06-19,2025,Anslag,1:8,True
+25460,Ändringsbeslut,2025-06-19,2025,Anslag,2:3,True
+25462,Ändringsbeslut,2025-06-19,2025,Myndighet,Sveriges Domstolar,True
+25463,Ändringsbeslut,2025-06-19,2025,Myndighet,Domarnämnden,True
+25465,Ändringsbeslut,2025-06-19,2025,Myndighet,Inspektionen för arbetslöshetsförsäkringen,True
+25466,Ändringsbeslut,2025-06-19,2025,Myndighet,Folkhälsomyndigheten,True
+25467,Ändringsbeslut,2025-06-19,2025,Myndighet,Statens institutionsstyrelse,True
+25468,Ändringsbeslut,2025-06-19,2025,Myndighet,Universitetskanslersämbetet,True
 25469,Ändringsbeslut,2025-05-15,2025,Anslag,1:12,True
+25470,Ändringsbeslut,2025-06-19,2025,Myndighet,Statens skolinspektion,True
+25471,Ändringsbeslut,2025-06-19,2025,Myndighet,Myndigheten för yrkeshögskolan,True
+25472,Ändringsbeslut,2025-08-21,2025,Anslag,2:6,True
+25473,Ändringsbeslut,2025-06-19,2025,Myndighet,Livsmedelsverket,True
 25474,Ändringsbeslut,2025-05-15,2025,Myndighet,Barnombudsmannen,True
+25475,Ändringsbeslut,2025-06-19,2025,Myndighet,Centrala studiestödsnämnden,True
+25476,Ändringsbeslut,2025-06-19,2025,Anslag,2:64,True
+25477,Ändringsbeslut,2025-06-19,2025,Myndighet,Trafikverket,True
+25478,Ändringsbeslut,2025-06-26,2025,Myndighet,Exportkreditnämnden,True
+25479,Ändringsbeslut,2025-06-19,2025,Myndighet,Integritetsskyddsmyndigheten,True
+25480,Ändringsbeslut,2025-06-19,2025,Anslag,1:5,True
+25481,Ändringsbeslut,2025-06-19,2025,Myndighet,Tillväxtverket,True
+25482,Ändringsbeslut,2025-06-19,2025,Myndighet,Mediemyndigheten,True
+25483,Ändringsbeslut,2025-06-12,2025,Anslag,1:8,True
+25484,Ändringsbeslut,2025-06-19,2025,Myndighet,Bolagsverket,True
+25485,Ändringsbeslut,2025-09-25,2025,Myndighet,Arbetsmiljöverket,True
+25486,Ändringsbeslut,2025-07-10,2025,Myndighet,Statens jordbruksverk,True
 25487,Ändringsbeslut,2025-05-22,2025,Myndighet,Myndigheten för samhällsskydd och beredskap,True
+25488,Ändringsbeslut,2025-06-19,2025,Myndighet,länsstyrelserna,True
+25489,Ändringsbeslut,2025-06-19,2025,Myndighet,Socialstyrelsen,True
+25490,Ändringsbeslut,2025-06-19,2025,Myndighet,Blekinge tekniska högskola,True
+25491,Ändringsbeslut,2025-06-19,2025,Myndighet,Försvarshögskolan,True
+25492,Ändringsbeslut,2025-06-19,2025,Myndighet,Göteborgs universitet,True
+25493,Ändringsbeslut,2025-06-19,2025,Myndighet,Högskolan Dalarna,True
+25494,Ändringsbeslut,2025-06-19,2025,Myndighet,Högskolan i Borås,True
+25495,Ändringsbeslut,2025-06-19,2025,Anslag,4:4,True
+25496,Ändringsbeslut,2025-06-19,2025,Myndighet,Tandvårds- och läkemedelsförmånsverket,True
+25497,Ändringsbeslut,2025-06-19,2025,Myndighet,Högskolan i Gävle,True
+25498,Ändringsbeslut,2025-06-19,2025,Myndighet,Högskolan i Halmstad,True
+25499,Ändringsbeslut,2025-06-19,2025,Myndighet,Högskolan i Skövde,True
+25500,Ändringsbeslut,2025-06-19,2025,Myndighet,Högskolan Kristianstad,True
+25501,Ändringsbeslut,2025-06-19,2025,Myndighet,Högskolan Väst,True
+25502,Ändringsbeslut,2025-06-19,2025,Myndighet,Post- och telestyrelsen,True
 25503,Ändringsbeslut,2025-06-05,2025,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
 25504,Ändringsbeslut,2025-06-12,2025,Myndighet,Naturvårdsverket,True
+25505,Ändringsbeslut,2025-06-19,2025,Anslag,2:4,True
+25506,Ändringsbeslut,2025-06-12,2025,Anslag,1:18,True
+25507,Ändringsbeslut,2025-06-19,2025,Myndighet,Karlstads universitet,True
+25508,Ändringsbeslut,2025-06-19,2025,Myndighet,Karolinska institutet,True
+25509,Ändringsbeslut,2025-06-19,2025,Myndighet,Kungl. Tekniska högskolan,True
+25510,Ändringsbeslut,2025-06-19,2025,Anslag,1:1,True
+25511,Ändringsbeslut,2025-06-19,2025,Myndighet,Regeringskansliet,True
+25512,Ändringsbeslut,2025-06-19,2025,Myndighet,Linköpings universitet,True
+25513,Ändringsbeslut,2025-06-19,2025,Myndighet,Luleå tekniska universitet,True
+25514,Ändringsbeslut,2025-06-19,2025,Myndighet,E-hälsomyndigheten,True
+25515,Ändringsbeslut,2025-06-19,2025,Myndighet,Linnéuniversitetet,True
+25516,Ändringsbeslut,2025-06-19,2025,Myndighet,Lunds universitet,True
+25517,Ändringsbeslut,2025-06-19,2025,Myndighet,Malmö universitet,True
+25518,Ändringsbeslut,2025-06-19,2025,Myndighet,Mittuniversitetet,True
+25519,Ändringsbeslut,2025-06-19,2025,Myndighet,Mälardalens universitet,True
+25520,Ändringsbeslut,2025-06-19,2025,Myndighet,Arbetsförmedlingen,True
+25521,Ändringsbeslut,2025-06-19,2025,Myndighet,Stockholms universitet,True
+25522,Ändringsbeslut,2025-06-19,2025,Myndighet,Södertörns högskola,True
+25523,Ändringsbeslut,2025-06-19,2025,Myndighet,Umeå universitet,True
+25524,Ändringsbeslut,2025-06-19,2025,Myndighet,Uppsala universitet,True
+25525,Ändringsbeslut,2025-06-19,2025,Myndighet,Örebro universitet,True
+25526,Ändringsbeslut,2025-06-19,2025,Anslag,2:63 och 2:65,True
+25527,Ändringsbeslut,2025-06-19,2025,Myndighet,Kommerskollegium,True
+25528,Ändringsbeslut,2025-06-26,2025,Myndighet,Forum för levande historia,True
+25529,Ändringsbeslut,2025-06-26,2025,Anslag,1:1,True
+25530,Ändringsbeslut,2025-06-26,2025,Myndighet,Statens skolverk,True
+25531,Ändringsbeslut,2025-06-26,2025,Myndighet,Luftfartsverket,True
+25532,Ändringsbeslut,2025-06-19,2025,Myndighet,Sjöfartsverket,True
+25533,Ändringsbeslut,2025-06-19,2025,Myndighet,Riksantikvarieämbetet,True
+25534,Ändringsbeslut,2025-06-19,2025,Anslag,"1:2, 2:1, 5:2, 7:3, 8:2, 8:3, 8:5, 10:1, 11:1 och 11:3",True
+25535,Ändringsbeslut,2025-06-26,2025,Myndighet,Fortifikationsverket,True
+25536,Ändringsbeslut,2025-06-19,2025,Myndighet,Lantmäteriet,True
+25537,Ändringsbeslut,2025-06-19,2025,Myndighet,Boverket,True
+25538,Ändringsbeslut,2025-07-31,2025,Anslag,2:2,True
+25539,Ändringsbeslut,2025-06-12,2025,Anslag,1:1,True
+25540,Ändringsbeslut,2025-06-19,2025,Anslag,2:67,True
+25541,Ändringsbeslut,2025-06-19,2025,Myndighet,Polismyndigheten,True
+25542,Ändringsbeslut,2025-06-19,2025,Myndighet,Sveriges meteorologiska och hydrologiska institut,True
+25543,Ändringsbeslut,2025-06-19,2025,Myndighet,Brottsförebyggande rådet,True
+25544,Ändringsbeslut,2025-06-19,2025,Myndighet,Kriminalvården,True
+25545,Ändringsbeslut,2025-06-19,2025,Myndighet,Sveriges lantbruksuniversitet,True
+25546,Ändringsbeslut,2025-06-19,2025,Myndighet,Moderna museet,True
+25547,Ändringsbeslut,2025-06-19,2025,Anslag,1:7,True
+25548,Ändringsbeslut,2025-06-12,2025,Myndighet,Migrationsverket,True
+25549,Ändringsbeslut,2025-06-19,2025,Myndighet,Statens historiska museer,True
+25550,Ändringsbeslut,2025-06-19,2025,Myndighet,Nationalmuseum,True
+25551,Ändringsbeslut,2025-06-19,2025,Myndighet,Naturhistoriska riksmuseet,True
+25552,Ändringsbeslut,2025-06-19,2025,Myndighet,Statens museer för världskultur,True
+25553,Ändringsbeslut,2025-06-26,2025,Myndighet,Statens maritima och transporthistoriska museer,True
+25554,Ändringsbeslut,2025-06-19,2025,Myndighet,Statens centrum för arkitektur och design,True
+25555,Ändringsbeslut,2025-08-28,2025,Myndighet,Statens försvarshistoriska museer,True
+25556,Ändringsbeslut,2025-06-19,2025,Myndighet,Statens musikverk,True
+25557,Ändringsbeslut,2025-06-19,2025,Myndighet,Statens energimyndighet,True
+25558,Ändringsbeslut,2025-06-19,2025,Myndighet,Kammarkollegiet,True
+25559,Ändringsbeslut,2025-06-19,2025,Myndighet,Diskrimineringsombudsmannen,True
+25561,Ändringsbeslut,2025-06-26,2025,Myndighet,Försvarets materielverk,True
+25562,Ändringsbeslut,2025-06-19,2025,Myndighet,Transportstyrelsen,True
+25563,Ändringsbeslut,2025-06-19,2025,Myndighet,Kronofogdemyndigheten,True
+25564,Ändringsbeslut,2025-06-26,2025,Anslag,1:14,True
+25565,Ändringsbeslut,2025-06-26,2025,Myndighet,Skatteverket,True
+25566,Ändringsbeslut,2025-06-19,2025,Myndighet,Statens kulturråd,True
+25567,Ändringsbeslut,2025-06-19,2025,Myndighet,Statens konstråd,True
+25568,Ändringsbeslut,2025-06-19,2025,Myndighet,Riksarkivet,True
+25570,Ändringsbeslut,2025-06-19,2025,Myndighet,Myndigheten för samhällsskydd och beredskap,True
+25571,Ändringsbeslut,2025-06-26,2025,Myndighet,Statens fastighetsverk,True
+25572,Ändringsbeslut,2025-06-19,2025,Myndighet,Kustbevakningen,True
+25573,Ändringsbeslut,2025-06-26,2025,Myndighet,Försäkringskassan,True
+25574,Ändringsbeslut,2025-06-26,2025,Anslag,6:1,True
+25575,Ändringsbeslut,2025-07-03,2025,Myndighet,Försvarsmakten,True
+25576,Ändringsbeslut,2025-06-26,2025,Myndighet,Konstnärsnämnden,True
+25577,Ändringsbeslut,2025-06-19,2025,Myndighet,Myndigheten för psykologiskt försvar,True
+25580,Ändringsbeslut,2025-06-26,2025,Anslag,1:17,True
+25581,Ändringsbeslut,2025-06-19,2025,Anslag,13:5,True
+25582,Ändringsbeslut,2025-06-26,2025,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
+25583,Ändringsbeslut,2025-08-21,2025,Myndighet,Statens servicecenter,True
+25585,Ändringsbeslut,2025-06-19,2025,Anslag,1:12,True
+25586,Ändringsbeslut,2025-08-28,2025,Anslag,1:1,True
+25588,Ändringsbeslut,2025-06-19,2025,Anslag,"1:4 (2024), 1:4 och 1:5",True
+25589,Ändringsbeslut,2025-09-04,2025,Myndighet,Folke Bernadotteakademin,True
+25591,Ändringsbeslut,2025-06-19,2025,Anslag,1:1,True
+25592,Ändringsbeslut,2025-06-19,2025,Myndighet,Havs- och vattenmyndigheten,True
+25594,Ändringsbeslut,2025-08-21,2025,Anslag,1:7,True
+25595,Ändringsbeslut,2025-06-26,2025,Myndighet,Brottsförebyggande rådet,True
+25596,Ändringsbeslut,2025-08-21,2025,Myndighet,Folkhälsomyndigheten,True
+25598,Ändringsbeslut,2025-06-26,2025,Myndighet,Jämställdhetsmyndigheten,True
+25600,Ändringsbeslut,2025-07-10,2025,Anslag,1:3,True
+25601,Ändringsbeslut,2025-08-28,2025,Myndighet,Spelinspektionen,True
+25602,Ändringsbeslut,2025-08-28,2025,Myndighet,Statens fastighetsverk,True
+25603,Ändringsbeslut,2025-10-02,2025,Myndighet,Statens beredning för medicinsk och social utvärdering,True
+25604,Ändringsbeslut,2025-09-04,2025,Myndighet,länsstyrelserna,True
+25605,Ändringsbeslut,2025-07-31,2025,Myndighet,Läkemedelsverket,True
+25606,Ändringsbeslut,2025-09-25,2025,Anslag,1:8,True
+25607,Ändringsbeslut,2025-08-28,2025,Myndighet,Umeå universitet,True
+25608,Ändringsbeslut,2025-08-28,2025,Myndighet,Karolinska institutet,True
+25609,Ändringsbeslut,2025-08-28,2025,Myndighet,Göteborgs universitet,True
+25610,Ändringsbeslut,2025-08-28,2025,Myndighet,Högskolan i Borås,True
+25611,Ändringsbeslut,2025-08-28,2025,Myndighet,Högskolan i Halmstad,True
+25612,Ändringsbeslut,2025-08-28,2025,Myndighet,Högskolan Kristianstad,True
+25613,Ändringsbeslut,2025-08-28,2025,Myndighet,Karlstads universitet,True
+25614,Ändringsbeslut,2025-08-28,2025,Myndighet,Kungl. Tekniska högskolan,True
+25615,Ändringsbeslut,2025-08-28,2025,Myndighet,Linköpings universitet,True
+25616,Ändringsbeslut,2025-08-28,2025,Myndighet,Linnéuniversitetet,True
+25617,Ändringsbeslut,2025-08-28,2025,Myndighet,Luleå tekniska universitet,True
+25618,Ändringsbeslut,2025-08-28,2025,Myndighet,Lunds universitet,True
+25619,Ändringsbeslut,2025-08-28,2025,Myndighet,Malmö universitet,True
+25620,Ändringsbeslut,2025-08-28,2025,Myndighet,Mittuniversitetet,True
+25621,Ändringsbeslut,2025-08-28,2025,Myndighet,Stockholms universitet,True
+25622,Ändringsbeslut,2025-08-28,2025,Myndighet,Uppsala universitet,True
+25623,Ändringsbeslut,2025-08-28,2025,Myndighet,Örebro universitet,True
+25624,Ändringsbeslut,2025-08-28,2025,Myndighet,Mälardalens universitet,True
+25625,Ändringsbeslut,2025-08-28,2025,Anslag,2:64,True
+25626,Ändringsbeslut,2025-08-28,2025,Anslag,2:63 och 2:65,True
+25627,Ändringsbeslut,2025-08-28,2025,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
+25628,Ändringsbeslut,2025-09-25,2025,Myndighet,Trafikverket,True
+25629,Ändringsbeslut,2025-09-04,2025,Anslag,1:16,True
+25630,Ändringsbeslut,2025-10-02,2025,Anslag,1:6,True
+25631,Ändringsbeslut,2025-11-13,2025,Anslag,1:14,True
+25633,Ändringsbeslut,2025-08-28,2025,Myndighet,Försvarsmakten,True
+25634,Ändringsbeslut,2025-08-28,2025,Myndighet,Försvarets materielverk,True
+25635,Ändringsbeslut,2025-09-18,2025,Myndighet,Naturvårdsverket,True
+25636,Ändringsbeslut,2025-09-04,2025,Anslag,1:1,True
+25637,Ändringsbeslut,2025-08-14,2025,Anslag,1:14,True
+25638,Ändringsbeslut,2025-08-28,2025,Myndighet,Statens maritima och transporthistoriska museer,True
+25640,Ändringsbeslut,2025-11-13,2025,Anslag,1:5,True
+25641,Ändringsbeslut,2025-09-11,2025,Myndighet,Kammarkollegiet,True
+25642,Ändringsbeslut,2025-09-11,2025,Myndighet,Allmänna reklamationsnämnden,True
+25643,Ändringsbeslut,2025-10-09,2025,Anslag,1:1,True
+25645,Ändringsbeslut,2025-09-04,2025,Anslag,5:2,True
+25646,Ändringsbeslut,2025-09-18,2025,Myndighet,Konjunkturinstitutet,True
+25647,Ändringsbeslut,2025-10-02,2025,Myndighet,Exportkreditnämnden,True
+25651,Ändringsbeslut,2025-09-25,2025,Myndighet,Folkhälsomyndigheten,True
+25652,Ändringsbeslut,2025-10-09,2025,Anslag,2:6,True
+25653,Ändringsbeslut,2025-10-02,2025,Myndighet,Försvarsmakten,True
+25654,Ändringsbeslut,2025-10-16,2025,Anslag,1:18 och 1:23 (2024),True
+25655,Ändringsbeslut,2025-10-23,2025,Myndighet,Migrationsverket,True
+25656,Ändringsbeslut,2025-09-25,2025,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
+25658,Ändringsbeslut,2025-09-25,2025,Myndighet,Valmyndigheten,True
+25660,Ändringsbeslut,2025-10-02,2025,Anslag,1:7,True
+25661,Ändringsbeslut,2025-09-25,2025,Myndighet,Strålsäkerhetsmyndigheten,True
+25662,Ändringsbeslut,2025-10-16,2025,Myndighet,Statens skolverk,True
+25663,Ändringsbeslut,2025-09-25,2025,Myndighet,Statens jordbruksverk,True
+25664,Ändringsbeslut,2025-10-30,2025,Anslag,1:8 (2024) och 1:12,True
+25665,Ändringsbeslut,2025-09-25,2025,Myndighet,Livsmedelsverket,True
+25669,Ändringsbeslut,2025-10-30,2025,Anslag,1:17,True
+25670,Ändringsbeslut,2025-10-02,2025,Anslag,1:14,True
+25671,Ändringsbeslut,2025-10-02,2025,Myndighet,Myndigheten för samhällsskydd och beredskap,True
+25672,Ändringsbeslut,2025-11-27,2025,Myndighet,Kemikalieinspektionen,True
+25673,Ändringsbeslut,2025-10-16,2025,Myndighet,Statens tjänstepensionsverk,True
+25674,Ändringsbeslut,2025-10-02,2025,Myndighet,Försvarets materielverk,True
+25675,Ändringsbeslut,2025-10-02,2025,Myndighet,Kustbevakningen,True
+25676,Ändringsbeslut,2025-10-23,2025,Anslag,7:1 och 7:2 (2024),True
+25678,Ändringsbeslut,2025-10-30,2025,Myndighet,Vetenskapsrådet,True
+25679,Ändringsbeslut,2025-10-30,2025,Myndighet,Göteborgs universitet,True
+25680,Ändringsbeslut,2025-10-16,2025,Anslag,1:8,True
+25681,Ändringsbeslut,2025-10-16,2025,Anslag,1:22,True
+25682,Ändringsbeslut,2025-10-30,2025,Myndighet,Livsmedelsverket,True
+25683,Ändringsbeslut,2025-12-11,2025,Myndighet,Regeringskansliet,True
+25686,Regleringsbrev,2025-12-18,2026,Myndighet,Blekinge tekniska högskola,True
+25687,Regleringsbrev,2025-12-18,2026,Myndighet,Försvarshögskolan,True
+25688,Regleringsbrev,2025-12-18,2026,Myndighet,Arbetsförmedlingen,True
+25689,Regleringsbrev,2025-12-18,2026,Myndighet,Barnombudsmannen,True
+25690,Regleringsbrev,2025-12-18,2026,Myndighet,Myndigheten för familjerätt och föräldraskapsstöd,True
+25691,Regleringsbrev,2025-12-18,2026,Myndighet,Myndigheten för delaktighet,True
+25692,Regleringsbrev,2025-12-18,2026,Myndighet,Statens institutionsstyrelse,True
+25693,Regleringsbrev,2025-12-18,2026,Anslag,2:63 och 2:65,True
+25694,Regleringsbrev,2025-12-18,2026,Anslag,4:2,True
+25695,Regleringsbrev,2025-12-18,2026,Anslag,4:5,True
+25696,Regleringsbrev,2025-12-18,2026,Myndighet,Åklagarmyndigheten,True
+25697,Regleringsbrev,2025-12-18,2026,Anslag,4:7,True
+25698,Regleringsbrev,2025-12-18,2026,Anslag,5:2,True
+25699,Regleringsbrev,2025-12-16,2026,Anslag,1:10,True
+25700,Regleringsbrev,2025-12-18,2026,Myndighet,Patent- och registreringsverket,True
+25701,Regleringsbrev,2025-12-18,2026,Myndighet,Folke Bernadotteakademin,True
+25702,Regleringsbrev,2025-12-18,2026,Myndighet,Gymnastik- och idrottshögskolan,True
+25703,Regleringsbrev,2025-12-18,2026,Myndighet,Inspektionen för arbetslöshetsförsäkringen,True
+25704,Regleringsbrev,2025-12-18,2026,Myndighet,Göteborgs universitet,True
+25705,Regleringsbrev,2025-12-11,2026,Myndighet,Institutet för mänskliga rättigheter,True
+25706,Regleringsbrev,2025-12-18,2026,Anslag,1:7,True
+25707,Regleringsbrev,2025-12-18,2026,Myndighet,Universitets- och högskolerådet,True
+25710,Regleringsbrev,2025-12-18,2026,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
+25711,Regleringsbrev,2025-12-18,2026,Anslag,1:18,True
+25712,Regleringsbrev,2025-12-18,2026,Myndighet,Rådet för Europeiska socialfonden i Sverige,True
+25713,Ändringsbeslut,2025-10-30,2025,Myndighet,Statens jordbruksverk,True
+25714,Regleringsbrev,2025-12-18,2026,Myndighet,Brottsförebyggande rådet,True
+25715,Regleringsbrev,2025-12-18,2026,Myndighet,Etikprövningsmyndigheten,True
+25717,Regleringsbrev,2025-12-18,2026,Myndighet,Sveriges Domstolar,True
+25721,Regleringsbrev,2025-12-18,2026,Myndighet,Transportstyrelsen,True
+25724,Regleringsbrev,2025-12-18,2026,Anslag,2:6,True
+25725,Regleringsbrev,2025-12-18,2026,Myndighet,Nämnden för prövning av oredlighet i forskning,True
+25726,Regleringsbrev,2025-12-18,2026,Myndighet,Kungl. biblioteket,True
+25727,Regleringsbrev,2025-12-18,2026,Myndighet,Centrala studiestödsnämnden,True
+25728,Regleringsbrev,2025-12-18,2026,Myndighet,Ekobrottsmyndigheten,True
+25729,Regleringsbrev,2025-12-18,2026,Anslag,3:13,True
+25730,Regleringsbrev,2025-12-18,2026,Myndighet,"Forskningsrådet för hälsa, arbetsliv och välfärd",True
+25733,Regleringsbrev,2025-12-16,2026,Myndighet,Moderna museet,True
+25736,Regleringsbrev,2025-12-18,2026,Myndighet,Sveriges lantbruksuniversitet,True
+25737,Regleringsbrev,2025-12-18,2026,Myndighet,Högskolan Dalarna,True
+25738,Regleringsbrev,2025-12-16,2026,Anslag,1:14,True
+25739,Regleringsbrev,2025-12-18,2026,Anslag,1:15,True
+25740,Regleringsbrev,2025-12-11,2026,Myndighet,Domarnämnden,True
+25742,Regleringsbrev,2025-12-18,2026,Myndighet,Högskolan i Borås,True
+25743,Regleringsbrev,2025-12-18,2026,Myndighet,Högskolan i Gävle,True
+25744,Regleringsbrev,2025-12-18,2026,Myndighet,Högskolan i Halmstad,True
+25745,Regleringsbrev,2025-12-18,2026,Myndighet,Högskolan i Skövde,True
+25746,Regleringsbrev,2025-12-18,2026,Anslag,"1:1, 1:2 och 1:3",True
+25747,Regleringsbrev,2025-12-18,2026,Myndighet,Högskolan Kristianstad,True
+25748,Regleringsbrev,2025-12-18,2026,Myndighet,Högskolan Väst,True
+25749,Regleringsbrev,2025-12-18,2026,Myndighet,Karlstads universitet,True
+25750,Regleringsbrev,2025-12-18,2026,Anslag,2:64,True
+25751,Regleringsbrev,2025-12-18,2026,Anslag,2:67,True
+25752,Regleringsbrev,2025-12-18,2026,Myndighet,Karolinska institutet,True
+25753,Ändringsbeslut,2025-10-23,2025,Anslag,3:13,True
+25755,Regleringsbrev,2025-12-18,2026,Myndighet,Myndigheten för yrkeshögskolan,True
+25756,Regleringsbrev,2025-12-18,2026,Myndighet,Finanspolitiska rådet,True
+25757,Regleringsbrev,2025-12-18,2026,Myndighet,Konjunkturinstitutet,True
+25760,Regleringsbrev,2025-12-18,2026,Anslag,1:13 och 1:2,True
+25761,Regleringsbrev,2025-12-18,2026,Anslag,1:1,True
+25762,Regleringsbrev,2025-12-18,2026,Myndighet,"Forskningsrådet för miljö, areella näringar och samhällsbyggande",True
+25765,Regleringsbrev,2025-12-18,2026,Anslag,2:5,True
+25766,Regleringsbrev,2025-12-18,2026,Anslag,2:7,True
+25767,Regleringsbrev,2025-12-18,2026,Myndighet,Exportkreditnämnden,True
+25770,Ändringsbeslut,2025-11-13,2025,Myndighet,Myndigheten för digital förvaltning,True
+25771,Ändringsbeslut,2025-11-20,2025,Myndighet,Ekonomistyrningsverket,True
+25772,Ändringsbeslut,2025-11-20,2025,Myndighet,Utbetalningsmyndigheten,True
+25774,Regleringsbrev,2025-12-18,2026,Myndighet,Statens jordbruksverk,True
+25775,Regleringsbrev,2025-12-18,2026,Myndighet,Fortifikationsverket,True
+25776,Regleringsbrev,2025-12-18,2026,Myndighet,Styrelsen för ackreditering och teknisk kontroll,True
+25777,Regleringsbrev,2025-12-18,2026,Anslag,1:15,True
+25778,Regleringsbrev,2025-12-18,2026,Myndighet,Luftfartsverket,True
+25780,Regleringsbrev,2025-12-18,2026,Myndighet,Tillväxtverket,True
+25783,Regleringsbrev,2025-12-18,2026,Myndighet,Myndigheten för digital förvaltning,True
+25784,Regleringsbrev,2025-12-18,2026,Anslag,2:4,True
+25785,Regleringsbrev,2025-12-16,2026,Myndighet,Statens kulturråd,True
+25786,Regleringsbrev,2025-12-18,2026,Myndighet,Polarforskningssekretariatet,True
+25787,Regleringsbrev,2025-12-18,2026,Myndighet,Diskrimineringsombudsmannen,True
+25789,Regleringsbrev,2025-12-18,2026,Myndighet,Statens skolinspektion,True
+25790,Regleringsbrev,2025-12-18,2026,Myndighet,Sametinget,True
+25791,Regleringsbrev,2025-12-18,2026,Anslag,2:2,True
+25792,Regleringsbrev,2025-12-18,2026,Myndighet,Utbetalningsmyndigheten,True
+25793,Ändringsbeslut,2025-11-13,2025,Anslag,3:1,True
+25794,Regleringsbrev,2025-12-18,2026,Myndighet,Sjöfartsverket,True
+25796,Regleringsbrev,2025-12-18,2026,Myndighet,Konkurrensverket,True
+25797,Regleringsbrev,2025-12-18,2026,Myndighet,Trafikverket,True
+25800,Regleringsbrev,2025-12-16,2026,Myndighet,Totalförsvarets plikt- och prövningsverk,True
+25801,Ändringsbeslut,2025-12-04,2025,Anslag,1:14,True
+25804,Regleringsbrev,2025-12-18,2026,Anslag,1:16,True
+25805,Regleringsbrev,2025-12-18,2026,Anslag,1:16,True
+25806,Regleringsbrev,2025-12-18,2026,Myndighet,Konstfack,True
+25807,Regleringsbrev,2025-12-18,2026,Myndighet,Skogsstyrelsen,True
+25808,Regleringsbrev,2025-12-18,2026,Myndighet,Kungl. Konsthögskolan,True
+25809,Regleringsbrev,2025-12-18,2026,Myndighet,Kungl. Musikhögskolan i Stockholm,True
+25810,Regleringsbrev,2025-12-18,2026,Anslag,1:6,True
+25811,Regleringsbrev,2025-12-18,2026,Myndighet,Post- och telestyrelsen,True
+25812,Ändringsbeslut,2025-10-30,2025,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
+25813,Regleringsbrev,2025-12-18,2026,Myndighet,Linnéuniversitetet,True
+25815,Regleringsbrev,2025-12-18,2026,Myndighet,Kungl. Tekniska högskolan,True
+25817,Regleringsbrev,2025-12-18,2026,Myndighet,Nordiska Afrikainstitutet,True
+25819,Regleringsbrev,2025-12-18,2026,Anslag,1:8,True
+25820,Ändringsbeslut,2025-12-04,2025,Anslag,"1:1, 1:2, 1:3 och 1:5 (2024)",True
+25821,Regleringsbrev,2025-12-18,2026,Myndighet,Vetenskapsrådet,True
+25822,Regleringsbrev,2025-12-18,2026,Myndighet,Linköpings universitet,True
+25823,Regleringsbrev,2025-12-18,2026,Myndighet,Luleå tekniska universitet,True
+25824,Regleringsbrev,2025-12-18,2026,Myndighet,Lunds universitet,True
+25825,Regleringsbrev,2025-12-18,2026,Anslag,1:1,True
+25826,Regleringsbrev,2025-12-22,2026,Myndighet,Myndigheten för vård- och omsorgsanalys,True
+25827,Regleringsbrev,2025-12-16,2026,Myndighet,Myndigheten för ungdoms- och civilsamhällesfrågor,True
+25828,Regleringsbrev,2025-12-18,2026,Myndighet,Malmö universitet,True
+25829,Regleringsbrev,2025-12-18,2026,Myndighet,Uppsala universitet,True
+25830,Regleringsbrev,2025-12-18,2026,Myndighet,Statskontoret,True
+25831,Regleringsbrev,2025-12-18,2026,Myndighet,Statens väg- och transportforskningsinstitut,True
+25832,Regleringsbrev,2025-12-18,2026,Myndighet,Rymdstyrelsen,True
+25833,Regleringsbrev,2025-12-18,2026,Myndighet,Mittuniversitetet,True
+25834,Regleringsbrev,2025-12-18,2026,Myndighet,Institutet för rymdfysik,True
+25835,Ändringsbeslut,2025-11-13,2025,Myndighet,Rymdstyrelsen,True
+25837,Regleringsbrev,2025-12-18,2026,Myndighet,Myndigheten för civilt försvar,True
+25840,Regleringsbrev,2025-12-11,2026,Anslag,"13:1, 13:2, 13:3 och 13:4",True
+25841,Regleringsbrev,2025-12-04,2025,Anslag,2:1 (2024),True
+25842,Regleringsbrev,2025-12-18,2026,Myndighet,Mälardalens universitet,True
+25843,Regleringsbrev,2025-12-18,2026,Myndighet,Stockholms konstnärliga högskola,True
+25844,Regleringsbrev,2025-12-11,2026,Myndighet,Regeringskansliet,True
+25847,Regleringsbrev,2025-12-18,2026,Myndighet,Allmänna reklamationsnämnden,True
+25848,Regleringsbrev,2025-12-18,2026,Myndighet,Fastighetsmäklarinspektionen,True
+25849,Regleringsbrev,2025-12-18,2026,Myndighet,Konsumentverket,True
+25851,Regleringsbrev,2025-12-18,2026,Anslag,2:4,True
+25852,Regleringsbrev,2025-12-18,2026,Myndighet,Stockholms universitet,True
+25853,Regleringsbrev,2025-12-18,2026,Myndighet,Södertörns högskola,True
+25854,Regleringsbrev,2025-12-18,2026,Anslag,1:17,True
+25855,Regleringsbrev,2025-12-18,2026,Myndighet,Folkhälsomyndigheten,True
+25856,Regleringsbrev,2025-12-18,2026,Myndighet,Statens beredning för medicinsk och social utvärdering,True
+25857,Regleringsbrev,2025-12-18,2026,Anslag,2:3,True
+25858,Regleringsbrev,2025-12-18,2026,Myndighet,Umeå universitet,True
+25859,Regleringsbrev,2025-12-18,2026,Myndighet,Örebro universitet,True
+25860,Regleringsbrev,2025-12-18,2026,Anslag,1:22,True
+25861,Regleringsbrev,2025-12-18,2026,Anslag,1:1,True
+25862,Regleringsbrev,2025-12-18,2026,Myndighet,Universitetskanslersämbetet,True
+25863,Regleringsbrev,2025-12-18,2026,Myndighet,Myndigheten för tillgängliga medier,True
+25864,Regleringsbrev,2025-12-18,2026,Anslag,1:23 och 1:24,True
+25865,Ändringsbeslut,2025-12-04,2025,Anslag,"1:4 (2024), 1:4 och 1:5",True
+25867,Regleringsbrev,2025-12-18,2026,Myndighet,Livsmedelsverket,True
+25868,Regleringsbrev,2025-12-18,2026,Anslag,1:7,True
+25869,Regleringsbrev,2025-12-16,2026,Anslag,"1:2, 2:1, 2:2, 4:2, 6:3, 7:2, 7:3, 7:5, 9:1, 10:1 och 10:3",True
+25870,Regleringsbrev,2025-12-11,2026,Anslag,12:5,True
+25871,Regleringsbrev,2025-12-11,2026,Anslag,12:4,True
+25872,Regleringsbrev,2025-12-11,2026,Anslag,12:2,True
+25873,Regleringsbrev,2025-12-18,2026,Myndighet,Polismyndigheten,True
+25874,Ändringsbeslut,2025-10-23,2025,Myndighet,Försäkringskassan,True
+25875,Regleringsbrev,2025-12-18,2026,Myndighet,Statens geotekniska institut,True
+25876,Regleringsbrev,2025-12-18,2026,Myndighet,Svenska institutet,True
+25877,Ändringsbeslut,2025-12-11,2025,Myndighet,Arbetsförmedlingen,True
+25878,Ändringsbeslut,2025-10-30,2025,Myndighet,Brottsförebyggande rådet,True
+25879,Ändringsbeslut,2025-11-13,2025,Myndighet,Statens energimyndighet,True
+25880,Regleringsbrev,2025-12-18,2026,Myndighet,Justitiekanslern,True
+25881,Regleringsbrev,2025-12-18,2026,Myndighet,Integritetsskyddsmyndigheten,True
+25884,Regleringsbrev,2025-12-18,2026,Myndighet,Brottsoffermyndigheten,True
+25885,Ändringsbeslut,2025-11-06,2025,Anslag,1:2,True
+25886,Regleringsbrev,2025-12-18,2026,Myndighet,Myndigheten för säkerhet och integritetsskydd,True
+25887,Regleringsbrev,2025-12-18,2026,Anslag,1:5,True
+25888,Regleringsbrev,2025-12-18,2026,Myndighet,Riksgäldskontoret,True
+25889,Regleringsbrev,2025-12-18,2026,Anslag,1:22,True
+25891,Ändringsbeslut,2025-12-04,2025,Myndighet,Riksgäldskontoret,True
+25892,Regleringsbrev,2025-12-18,2026,Myndighet,Affärsverket svenska kraftnät,True
+25893,Regleringsbrev,2025-12-18,2026,Anslag,1:20,True
+25895,Regleringsbrev,2025-12-18,2026,Anslag,4:4,True
+25897,Regleringsbrev,2025-12-18,2026,Anslag,1:3,True
+25898,Regleringsbrev,2025-12-18,2026,Anslag,1:6,True
+25901,Regleringsbrev,2025-12-18,2026,Myndighet,Statens fastighetsverk,True
+25902,Regleringsbrev,2025-12-18,2026,Anslag,2:6,True
+25903,Regleringsbrev,2025-12-18,2026,Anslag,1:17,True
+25904,Regleringsbrev,2025-12-11,2026,Anslag,12:6,True
+25905,Regleringsbrev,2025-12-11,2026,Anslag,12:1,True
+25909,Regleringsbrev,2025-12-18,2026,Myndighet,Arbetsmiljöverket,True
+25910,Regleringsbrev,2025-12-18,2026,Myndighet,Kriminalvården,True
+25911,Regleringsbrev,2025-12-18,2026,Myndighet,Arbetsdomstolen,True
+25914,Regleringsbrev,2025-12-18,2026,Myndighet,Statens veterinärmedicinska anstalt,True
+25915,Regleringsbrev,2025-12-18,2026,Myndighet,Läkemedelsverket,True
+25916,Regleringsbrev,2025-12-18,2026,Myndighet,E-hälsomyndigheten,True
+25917,Regleringsbrev,2025-12-18,2026,Myndighet,Inspektionen för vård och omsorg,True
+25918,Regleringsbrev,2025-12-18,2026,Myndighet,Sveriges geologiska undersökning,True
+25919,Regleringsbrev,2025-12-18,2026,Myndighet,Tandvårds- och läkemedelsförmånsverket,True
+25920,Regleringsbrev,2025-12-11,2026,Anslag,1:5,True
+25922,Regleringsbrev,2025-12-11,2026,Anslag,1:1,True
+25923,Regleringsbrev,2025-12-11,2026,Anslag,11:2,True
+25924,Regleringsbrev,2025-12-11,2026,Anslag,11:3,True
+25926,Regleringsbrev,2025-12-18,2026,Myndighet,Statistiska centralbyrån,True
+25927,Regleringsbrev,2025-12-18,2026,Anslag,2:5,True
+25928,Regleringsbrev,2025-12-16,2026,Anslag,1:5,True
+25929,Regleringsbrev,2025-12-11,2026,Anslag,8:1,True
+25930,Regleringsbrev,2025-12-11,2026,Myndighet,Spelinspektionen,True
+25931,Ändringsbeslut,2025-11-13,2025,Myndighet,Rådet för Europeiska socialfonden i Sverige,True
+25932,Regleringsbrev,2025-12-18,2026,Myndighet,Institutet för språk och folkminnen,True
+25935,Regleringsbrev,2025-12-18,2026,Myndighet,Försvarets materielverk,True
+25936,Regleringsbrev,2025-12-18,2026,Anslag,2:5,True
+25939,Regleringsbrev,2025-12-18,2026,Myndighet,Riksarkivet,True
+25940,Regleringsbrev,2025-12-18,2026,Myndighet,Statens skolverk,True
+25941,Regleringsbrev,2025-12-18,2026,Myndighet,Totalförsvarets forskningsinstitut,True
+25942,Regleringsbrev,2025-12-18,2026,Anslag,1:1,True
+25943,Regleringsbrev,2025-12-16,2026,Myndighet,Kustbevakningen,True
+25944,Regleringsbrev,2025-12-18,2026,Anslag,1:8,True
+25946,Regleringsbrev,2025-12-18,2026,Myndighet,Trafikanalys,True
+25947,Regleringsbrev,2025-12-18,2026,Anslag,1:18,True
+25948,Regleringsbrev,2025-12-18,2026,Anslag,1:11 och 1:14,True
+25949,Regleringsbrev,2025-12-18,2026,Myndighet,Socialstyrelsen,True
+25951,Regleringsbrev,2025-12-18,2026,Myndighet,Specialpedagogiska skolmyndigheten,True
+25952,Regleringsbrev,2025-12-18,2026,Myndighet,Skolforskningsinstitutet,True
+25953,Regleringsbrev,2025-12-18,2026,Myndighet,Sameskolstyrelsen,True
+25956,Regleringsbrev,2025-12-18,2026,Myndighet,Lantmäteriet,True
+25958,Regleringsbrev,2025-12-16,2026,Myndighet,Statens haverikommission,True
+25959,Regleringsbrev,2025-12-18,2026,Myndighet,universitet och högskolor,True
+25960,Regleringsbrev,2025-12-18,2026,Myndighet,Rättsmedicinalverket,True
+25961,Regleringsbrev,2025-12-16,2026,Anslag,1:4 och 1:7,True
+25962,Regleringsbrev,2025-12-16,2026,Myndighet,Försvarsunderrättelsedomstolen,True
+25963,Regleringsbrev,2025-12-18,2026,Myndighet,Energimarknadsinspektionen,True
+25964,Regleringsbrev,2025-12-18,2026,Anslag,1:1,True
+25965,Regleringsbrev,2025-12-18,2026,Myndighet,Myndigheten för totalförsvarsanalys,True
+25966,Regleringsbrev,2025-12-18,2026,Myndighet,Verket för innovationssystem,True
+25967,Regleringsbrev,2025-12-16,2026,Myndighet,Försvarets radioanstalt,True
+25968,Regleringsbrev,2025-12-16,2026,Myndighet,Statens inspektion för försvarsunderrättelseverksamheten,True
+25969,Regleringsbrev,2025-12-18,2026,Myndighet,Elsäkerhetsverket,True
+25971,Regleringsbrev,2025-12-18,2026,Myndighet,Bolagsverket,True
+25972,Regleringsbrev,2025-12-18,2026,Myndighet,Statens energimyndighet,True
+25974,Regleringsbrev,2025-12-11,2026,Anslag,12:3,True
+25976,Regleringsbrev,2025-12-18,2026,Anslag,1:4,True
+25980,Regleringsbrev,2025-12-18,2026,Anslag,1:12,True
+25981,Regleringsbrev,2025-12-18,2026,Anslag,1:11,True
+25982,Regleringsbrev,2025-12-18,2026,Anslag,1:13,True
+25983,Regleringsbrev,2025-12-18,2026,Anslag,1:8,True
+25984,Regleringsbrev,2025-12-18,2026,Myndighet,Mediemyndigheten,True
+25985,Regleringsbrev,2025-12-18,2026,Myndighet,Myndigheten för psykologiskt försvar,True
+25986,Regleringsbrev,2025-12-18,2026,Myndighet,Myndigheten för tillväxtpolitiska utvärderingar och analyser,True
+25987,Ändringsbeslut,2025-10-30,2025,Myndighet,Brottsoffermyndigheten,True
+25988,Regleringsbrev,2025-12-18,2026,Anslag,1:18,True
+25989,Regleringsbrev,2025-12-18,2026,Anslag,1:1,True
+25990,Ändringsbeslut,2025-11-20,2025,Myndighet,Myndigheten för ungdoms- och civilsamhällesfrågor,True
+25991,Regleringsbrev,2025-12-18,2026,Myndighet,Havs- och vattenmyndigheten,True
+25993,Regleringsbrev,2025-12-18,2026,Anslag,2:3,True
+25994,Regleringsbrev,2025-12-18,2026,Myndighet,Medlingsinstitutet,True
+25995,Regleringsbrev,2025-12-18,2026,Anslag,1:12,True
+25996,Regleringsbrev,2025-12-18,2026,Myndighet,Sveriges meteorologiska och hydrologiska institut,True
+25997,Ändringsbeslut,2025-10-30,2025,Myndighet,Naturvårdsverket,True
+25998,Regleringsbrev,2025-12-18,2026,Myndighet,Naturvårdsverket,True
+25999,Regleringsbrev,2025-12-18,2026,Anslag,1:2,True
+26001,Regleringsbrev,2025-12-18,2026,Myndighet,Kemikalieinspektionen,True
+26002,Regleringsbrev,2025-12-11,2026,Anslag,1:13,True
+26003,Regleringsbrev,2025-12-18,2026,Anslag,2:7,True
+26004,Regleringsbrev,2025-12-18,2026,Myndighet,Strålsäkerhetsmyndigheten,True
+26005,Regleringsbrev,2025-12-11,2026,Anslag,10:2,True
+26006,Regleringsbrev,2025-12-18,2026,Myndighet,Arbetsgivarverket,True
+26007,Regleringsbrev,2025-12-18,2026,Myndighet,Skatteverket,True
+26008,Regleringsbrev,2025-12-11,2026,Anslag,6:5,True
+26009,Regleringsbrev,2025-12-18,2026,Myndighet,Valmyndigheten,True
+26011,Regleringsbrev,2025-12-18,2026,Myndighet,Kronofogdemyndigheten,True
+26012,Regleringsbrev,2025-12-18,2026,Anslag,1:20,True
+26013,Regleringsbrev,2025-12-18,2026,Myndighet,Forum för levande historia,True
+26014,Regleringsbrev,2025-12-16,2026,Myndighet,Myndigheten för kulturanalys,True
+26016,Ändringsbeslut,2025-10-30,2025,Myndighet,Sveriges meteorologiska och hydrologiska institut,True
+26017,Regleringsbrev,2025-12-18,2026,Myndighet,Jämställdhetsmyndigheten,True
+26018,Regleringsbrev,2025-12-18,2026,Anslag,1:11,True
+26019,Ändringsbeslut,2025-10-30,2025,Myndighet,Statens geotekniska institut,True
+26021,Ändringsbeslut,2025-10-23,2025,Myndighet,Folkhälsomyndigheten,True
+26022,Regleringsbrev,2025-12-16,2026,Myndighet,Statens musikverk,True
+26024,Regleringsbrev,2025-12-16,2026,Myndighet,Riksantikvarieämbetet,True
+26025,Regleringsbrev,2025-12-16,2026,Myndighet,Statens historiska museer,True
+26026,Regleringsbrev,2025-12-16,2026,Myndighet,Nationalmuseum,True
+26027,Regleringsbrev,2025-12-16,2026,Myndighet,Naturhistoriska riksmuseet,True
+26028,Regleringsbrev,2025-12-16,2026,Myndighet,Statens museer för världskultur,True
+26029,Regleringsbrev,2025-12-16,2026,Myndighet,Konstnärsnämnden,True
+26030,Regleringsbrev,2025-12-18,2026,Myndighet,Boverket,True
+26031,Regleringsbrev,2025-12-18,2026,Myndighet,länsstyrelserna,True
+26032,Regleringsbrev,2025-12-18,2026,Anslag,1:14,True
+26034,Ändringsbeslut,2025-11-13,2025,Myndighet,Valmyndigheten,True
+26035,Ändringsbeslut,2025-12-04,2025,Myndighet,"Forskningsrådet för hälsa, arbetsliv och välfärd",True
+26037,Regleringsbrev,2025-12-18,2026,Anslag,1:1,True
+26038,Regleringsbrev,2025-12-18,2026,Myndighet,Svenska Unescorådet,True
+26040,Regleringsbrev,2025-12-11,2026,Anslag,1:4 och 1:5,True
+26041,Regleringsbrev,2025-12-18,2026,Anslag,1:6,True
+26043,Regleringsbrev,2025-12-18,2026,Myndighet,Överklagandenämnden för studiestöd,True
+26044,Ändringsbeslut,2025-12-11,2025,Myndighet,Trafikverket,True
+26047,Ändringsbeslut,2025-11-13,2025,Anslag,1:1,True
+26048,Regleringsbrev,2025-12-18,2026,Anslag,3:1,True
+26049,Ändringsbeslut,2025-11-27,2025,Myndighet,Myndigheten för tillgängliga medier,True
+26050,Regleringsbrev,2025-12-18,2026,Myndighet,Försvarsmakten,True
+26051,Regleringsbrev,2025-12-11,2026,Myndighet,Inspektionen för strategiska produkter,True
+26052,Regleringsbrev,2025-12-18,2026,Myndighet,"Statens museer för maritim-, transport- och försvarshistoria",True
+26053,Ändringsbeslut,2025-12-04,2025,Anslag,1:6,True
+26054,Regleringsbrev,2025-12-18,2026,Anslag,4:1,True
+26057,Regleringsbrev,2025-12-18,2026,Myndighet,Migrationsverket,True
+26058,Regleringsbrev,2025-12-18,2026,Anslag,1:5,True
+26059,Regleringsbrev,2025-12-18,2026,Myndighet,Bokföringsnämnden,True
+26060,Regleringsbrev,2025-12-18,2026,Myndighet,Tullverket,True
+26061,Ändringsbeslut,2025-12-18,2025,Myndighet,Universitets- och högskolerådet,True
+26063,Regleringsbrev,2025-12-18,2026,Myndighet,Pensionsmyndigheten,True
+26064,Regleringsbrev,2025-12-18,2026,Myndighet,Institutet för arbetsmarknads- och utbildningspolitisk utvärdering,True
+26065,Ändringsbeslut,2025-11-13,2025,Myndighet,Försvarsmakten,True
+26066,Regleringsbrev,2025-12-18,2026,Myndighet,Finansinspektionen,True
+26067,Regleringsbrev,2025-12-18,2026,Myndighet,Upphandlingsmyndigheten,True
+26068,Regleringsbrev,2025-12-18,2026,Myndighet,Svenska institutet för europapolitiska studier,True
+26069,Regleringsbrev,2025-12-18,2026,Myndighet,Revisorsinspektionen,True
+26070,Regleringsbrev,2025-12-18,2026,Anslag,1:2,True
+26072,Regleringsbrev,2025-12-18,2026,Anslag,1:1,True
+26073,Regleringsbrev,2025-12-18,2026,Anslag,1:4 och 1:5,True
+26074,Ändringsbeslut,2025-11-20,2025,Anslag,7:1 och 7:2 (2024),True
+26076,Ändringsbeslut,2025-11-20,2025,Myndighet,Statens historiska museer,True
+26077,Regleringsbrev,2025-12-11,2026,Anslag,1:2,True
+26079,Regleringsbrev,2025-12-18,2026,Anslag,1:12,True
+26080,Ändringsbeslut,2025-12-04,2025,Myndighet,Statens skolverk,True
+26081,Regleringsbrev,2025-12-18,2026,Anslag,7:1,True
+26082,Ändringsbeslut,2025-11-13,2025,Myndighet,Försäkringskassan,True
+26083,Ändringsbeslut,2025-11-13,2025,Myndighet,Försvarets materielverk,True
+26084,Regleringsbrev,2025-12-18,2026,Anslag,1:3,True
+26085,Regleringsbrev,2025-12-18,2026,Anslag,6:1,True
+26086,Ändringsbeslut,2025-11-27,2025,Anslag,1:1,True
+26087,Regleringsbrev,2025-12-18,2026,Myndighet,Statens tjänstepensionsverk,True
+26089,Regleringsbrev,2025-12-18,2026,Myndighet,Kammarkollegiet,True
+26090,Regleringsbrev,2025-12-11,2026,Myndighet,Kungliga hov- och slottsstaten,True
+26091,Regleringsbrev,2025-12-18,2026,Anslag,1:1,True
+26092,Ändringsbeslut,2025-11-27,2025,Myndighet,Sveriges Domstolar,True
+26093,Regleringsbrev,2025-12-18,2026,Anslag,1:7,True
+26094,Regleringsbrev,2025-12-18,2026,Anslag,1:20,True
+26095,Regleringsbrev,2025-12-18,2026,Anslag,1:1,True
+26096,Regleringsbrev,2025-12-18,2026,Anslag,1:21,True
+26097,Regleringsbrev,2025-12-18,2026,Anslag,"1:1 (2025), 1:1 och 1:7",True
+26098,Ändringsbeslut,2025-11-27,2025,Myndighet,Universitetskanslersämbetet,True
+26099,Ändringsbeslut,2025-12-04,2025,Anslag,1:12,True
+26100,Regleringsbrev,2025-12-18,2026,Myndighet,Säkerhetspolisen,True
+26101,Ändringsbeslut,2025-12-04,2025,Myndighet,Arbetsmiljöverket,True
+26102,Ändringsbeslut,2025-12-04,2025,Myndighet,Arbetsdomstolen,True
+26103,Ändringsbeslut,2025-12-11,2025,Myndighet,Statens jordbruksverk,True
+26104,Regleringsbrev,2025-12-18,2026,Myndighet,Försäkringskassan,True
+26105,Ändringsbeslut,2025-12-04,2025,Myndighet,Riksantikvarieämbetet,True
+26107,Ändringsbeslut,2025-12-04,2025,Anslag,1:14 och 1:2,True
+26108,Ändringsbeslut,2025-11-27,2025,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
+26109,Regleringsbrev,2025-12-18,2026,Myndighet,Inspektionen för socialförsäkringen,True
+26110,Ändringsbeslut,2025-12-04,2025,Myndighet,Vetenskapsrådet,True
+26111,Ändringsbeslut,2025-12-04,2025,Myndighet,Boverket,True
+26113,Ändringsbeslut,2025-11-27,2025,Myndighet,Statens institutionsstyrelse,True
+26114,Regleringsbrev,2025-12-18,2026,Anslag,"1:1, 2:3 och 2:4",True
+26115,Regleringsbrev,2025-12-18,2026,Myndighet,Statens servicecenter,True
+26116,Ändringsbeslut,2025-11-27,2025,Myndighet,Justitiekanslern,True
+26118,Ändringsbeslut,2025-12-11,2025,Myndighet,Sveriges meteorologiska och hydrologiska institut,True
+26119,Regleringsbrev,2025-12-18,2026,Myndighet,Kommerskollegium,True
+26120,Ändringsbeslut,2025-11-27,2025,Myndighet,Migrationsverket,True
+26122,Regleringsbrev,2025-12-18,2026,Anslag,1:13 och 1:14,True
