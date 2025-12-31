@@ -52,20 +52,6 @@ class Parser(object):
 
         return metadata, attachments, letter
 
-    @staticmethod
-    def parse_metadatas(futures):
-        items = []
-        all_attachments = []
-        letters = {}
-
-        for future in futures:
-            metadata, attachments, letter = Parser.parse_metadata(future)
-            if metadata["name"]:
-                items.append(metadata)
-                letters[future.id] = letter
-            all_attachments.extend(attachments)
-
-        return items, all_attachments, letters
 
     @staticmethod
     def _hard_coded_fix(text):

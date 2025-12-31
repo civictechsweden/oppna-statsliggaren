@@ -1,4 +1,3 @@
-import asyncio
 import httpx
 
 URL = "https://www.statskontoret.se/statsliggaren/regleringsbrev/?RBID={}"
@@ -18,13 +17,3 @@ class Downloader(object):
         response = await self.s.get(URL.format(rbid))
         response.id = rbid
         return response
-
-    async def fetch_pages(self, rbids: list[int]):
-        tasks = [self.fetch_page(rbid) for rbid in rbids]
-        responses = []
-        for f in asyncio.as_completed(tasks):
-            response = await f
-            responses.append(response)
-            print(f"Fetched info for RBID {response.id} ({len(responses)}/{len(rbids)})")
-
-        return responses

@@ -43,13 +43,33 @@ async def get_metadata(page: int, downloader=Downloader()):
     return Parser.parse_metadata(await downloader.fetch_page(page))
 
 
-async def get_metadatas(pages: list[int], downloader=Downloader()):
-    return Parser.parse_metadatas(await downloader.fetch_pages(pages))
+async def get_metadatas(pages: list[int], downloader):
+    print(f"Fetching the first 30 RBIDs from the list: {pages[:30]}", flush=True)
+    items = []
+    all_attachments = []
+    letters = {}
+
+    tasks = [downloader.fetch_page(rbid) for rbid in pages]
+
+    for i, future in enumerate(asyncio.as_completed(tasks), 1):
+        response = await future
+        print(f"Processing RBID {response.id} ({i}/{len(tasks)})", flush=True)
+
+        metadata, attachments, letter = Parser.parse_metadata(response)
+
+        if metadata.get("name"):
+            items.append(metadata)
+            letters[response.id] = letter
+        all_attachments.extend(attachments)
+
+    return items, all_attachments, letters
 
 
 async def init():
     downloader = Downloader()
     rbids = await get_rbids_to_fetch(downloader)
     new_metadata, new_attachments, letters = await get_metadatas(rbids, downloader)
+
+    await downloader.s.aclose()
 
     return new_metadata, new_attachments, letters
