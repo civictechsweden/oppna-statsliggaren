@@ -61,6 +61,10 @@ class Parser(object):
             "Ändringsbeslut 2003-09-04 Myndighet Lunds universitet",
         )
         text = text.replace(
+            "2003 Avvecklingsmyndigheten för RRV",
+            "2003 Myndinghet Avvecklingsmyndigheten för RRV",
+        )
+        text = text.replace(
             "Ändringsbeslut  2003-11-27 Polisväsendet",
             "Ändringsbeslut 2003-11-27 Myndighet Polisväsendet",
         )

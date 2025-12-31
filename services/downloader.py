@@ -6,7 +6,8 @@ SEARCH_URL = "https://www.statskontoret.se/statsliggaren/sok-regleringsbrev/Sear
 
 class Downloader(object):
     def __init__(self):
-        self.s = httpx.AsyncClient(timeout=30)
+        transport = httpx.AsyncHTTPTransport(retries=3)
+        self.s = httpx.AsyncClient(transport=transport, timeout=20)
 
     async def fetch_search(self):
         print("Fetching the search page...")
