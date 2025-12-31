@@ -1,3 +1,4 @@
+import os
 import sys
 import statsliggaren as sl
 from services.writer import Writer
@@ -22,6 +23,9 @@ Writer.write_csv(sorted(attachments, key=lambda d: int(d["rbid"])), "attachments
 
 if not SAVE_LETTER_FILES:
     sys.exit()
+
+os.makedirs("letters/html", exist_ok=True)
+os.makedirs("letters/md", exist_ok=True)
 
 for rbid in letters:
     letter = letters[rbid]

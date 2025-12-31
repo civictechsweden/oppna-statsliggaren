@@ -38,9 +38,9 @@ def get_rbids_to_fetch(downloader=Downloader()) -> list[int]:
         return [i for i in range(0, latest_remote_rbid + 1)]
 
 
-def get_metadata(page, downloader=Downloader()):
+def get_metadata(page: int, downloader=Downloader()):
     return Parser.parse_metadata(downloader.fetch_page(page))
 
 
-def get_metadatas(pages, downloader=Downloader()):
+def get_metadatas(pages: list[int], downloader=Downloader()):
     return Parser.parse_metadatas(downloader.fetch_pages(pages))

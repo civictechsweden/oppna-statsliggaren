@@ -73,14 +73,11 @@ class Parser(object):
     def _hard_coded_fix(text):
         text = text.replace("Avseende anslaget", "Anslag")
         text = text.replace(
-            "Avvecklingsmyndigheten", "Myndighet Avvecklingsmyndigheten"
-        )
-        text = text.replace(
-            "Ändringsbeslut 2003-09-04 Lunds universitet",
+            "Ändringsbeslut  2003-09-04 Lunds universitet",
             "Ändringsbeslut 2003-09-04 Myndighet Lunds universitet",
         )
         text = text.replace(
-            "Ändringsbeslut 2003-11-27 Polisväsendet",
+            "Ändringsbeslut  2003-11-27 Polisväsendet",
             "Ändringsbeslut 2003-11-27 Myndighet Polisväsendet",
         )
         text = text.replace(
@@ -88,11 +85,11 @@ class Parser(object):
             "Ändringsbeslut 2004-11-30 Myndighet Regeringskansliet",
         )
         text = text.replace(
-            "Ändringsbeslut 2004-01-29 Ändring avseende A:014 samt B:019 FI",
+            "Ändringsbeslut  2004-01-29 Ändring avseende A:014 samt B:019 FI",
             "Ändringsbeslut 2004-01-29 Anslag A:014 samt B:019 FI",
         )
         text = text.replace(
-            "Ändringsbeslut 2004-01-29 Ändring avseende A:005 M",
+            "Ändringsbeslut  2004-01-29 Ändring avseende A:005 M",
             "Ändringsbeslut 2004-01-29 Anslag A:005 M",
         )
 
