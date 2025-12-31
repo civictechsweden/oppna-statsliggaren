@@ -1,5 +1,5 @@
-from concurrent.futures import as_completed
-from requests_futures.sessions import FuturesSession
+import asyncio
+import httpx
 
 URL = "https://www.statskontoret.se/statsliggaren/regleringsbrev/?RBID={}"
 SEARCH_URL = "https://www.statskontoret.se/statsliggaren/sok-regleringsbrev/Search?sortOrder=Publiceringsdatum"
@@ -7,26 +7,24 @@ SEARCH_URL = "https://www.statskontoret.se/statsliggaren/sok-regleringsbrev/Sear
 
 class Downloader(object):
     def __init__(self):
-        self.s = FuturesSession(max_workers=30)
+        self.s = httpx.AsyncClient(timeout=30)
 
-    def fetch_search(self):
+    async def fetch_search(self):
         print("Fetching the search page...")
+        return await self.s.get(SEARCH_URL)
 
-        return self.s.get(SEARCH_URL)
-
-    def fetch_page(self, rbid: int):
+    async def fetch_page(self, rbid: int):
         print(f"Fetching info for RBID {rbid}...")
+        response = await self.s.get(URL.format(rbid))
+        response.id = rbid
+        return response
 
-        future = self.s.get(URL.format(rbid))
-        future.id = rbid
-        return future
+    async def fetch_pages(self, rbids: list[int]):
+        tasks = [self.fetch_page(rbid) for rbid in rbids]
+        responses = []
+        for f in asyncio.as_completed(tasks):
+            response = await f
+            responses.append(response)
+            print(f"Fetched info for RBID {response.id} ({len(responses)}/{len(rbids)})")
 
-    def fetch_pages(self, rbids: list[int]):
-        futures = [self.fetch_page(rbid) for rbid in rbids]
-
-        i = 0
-        for future in as_completed(futures):
-            i += 1
-            print(f"Fetched info for RBID {future.id} ({i}/{len(futures)})")
-
-        return [future for future in futures]
+        return responses

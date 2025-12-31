@@ -1,3 +1,4 @@
+import asyncio
 from services.reader import open_csv
 from services.downloader import Downloader
 from services.parser import Parser
@@ -20,13 +21,13 @@ def get_missing_local_rbids(local_rbids: list[int]) -> list[int]:
     return sorted(list(set(all_rbids) - set(local_rbids)))
 
 
-def get_latest_remote_rbid(downloader=Downloader()) -> int:
-    return Parser.parse_latest_remote_rbid(downloader.fetch_search())
+async def get_latest_remote_rbid(downloader=Downloader()) -> int:
+    return Parser.parse_latest_remote_rbid(await downloader.fetch_search())
 
 
-def get_rbids_to_fetch(downloader=Downloader()) -> list[int]:
+async def get_rbids_to_fetch(downloader=Downloader()) -> list[int]:
     local_rbids = get_local_rbids()
-    latest_remote_rbid = get_latest_remote_rbid(downloader)
+    latest_remote_rbid = await get_latest_remote_rbid(downloader)
 
     if local_rbids:
         latest_local_rbid = local_rbids[-1]
@@ -38,9 +39,17 @@ def get_rbids_to_fetch(downloader=Downloader()) -> list[int]:
         return [i for i in range(0, latest_remote_rbid + 1)]
 
 
-def get_metadata(page: int, downloader=Downloader()):
-    return Parser.parse_metadata(downloader.fetch_page(page))
+async def get_metadata(page: int, downloader=Downloader()):
+    return Parser.parse_metadata(await downloader.fetch_page(page))
 
 
-def get_metadatas(pages: list[int], downloader=Downloader()):
-    return Parser.parse_metadatas(downloader.fetch_pages(pages))
+async def get_metadatas(pages: list[int], downloader=Downloader()):
+    return Parser.parse_metadatas(await downloader.fetch_pages(pages))
+
+
+async def init():
+    downloader = Downloader()
+    rbids = await get_rbids_to_fetch(downloader)
+    new_metadata, new_attachments, letters = await get_metadatas(rbids, downloader)
+
+    return new_metadata, new_attachments, letters

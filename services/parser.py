@@ -4,50 +4,48 @@ import re
 
 class Parser(object):
     @staticmethod
-    def parse_latest_remote_rbid(future) -> int:
-        response = future.result()
-        response = html.unescape(response.text)
+    def parse_latest_remote_rbid(response) -> int:
+        html_text = html.unescape(response.text)
 
-        return int(sorted(response.split("rbid=")[1:], reverse=True)[0].split("&")[0])
+        return int(sorted(html_text.split("rbid=")[1:], reverse=True)[0].split("&")[0])
 
     @staticmethod
-    def parse_metadata(future):
-        response = future.result()
-        response = html.unescape(response.text)
+    def parse_metadata(response):
+        html_text = html.unescape(response.text)
 
-        text = response[response.index("<title>") + 7 : response.index("</title>")]
+        text = html_text[html_text.index("<title>") + 7 : html_text.index("</title>")]
 
         fail = text == "Regleringsbrev - Statskontoret"
 
         letter = (
             None
-            if fail or "<section" not in response
-            else response[
-                response.index("<section") : response.index("</section>") + 10
+            if fail or "<section" not in html_text
+            else html_text[
+                html_text.index("<section") : html_text.index("</section>") + 10
             ]
         )
 
         text = Parser._hard_coded_fix(text)
         words = text.split()
 
-        metadata = {"rbid": future.id}
+        metadata = {"rbid": response.id}
         metadata["type"] = None if fail else words[0]
         metadata["date"] = None if fail or not letter else Parser._extract_date(letter)
         metadata["year"] = None if fail else words[1].split("-")[0]
         metadata["category"] = None if fail else words[2]
         metadata["name"] = None if fail else " ".join(words[3:-2])
-        metadata["pdf"] = "laddaNerPdf" in response
+        metadata["pdf"] = "laddaNerPdf" in html_text
 
         attachments = []
         if not fail:
-            while "/regleringsbrev/bilaga/" in response:
-                response = response[response.index("bilaga/") + 7 :]
+            while "/regleringsbrev/bilaga/" in html_text:
+                html_text = html_text[html_text.index("bilaga/") + 7 :]
                 attachments.append(
                     {
-                        "id": int(response[: response.index('"')]),
-                        "rbid": future.id,
-                        "name": response[
-                            response.index("\r\n") : response.index("</a>")
+                        "id": int(html_text[: html_text.index('"')]),
+                        "rbid": response.id,
+                        "name": html_text[
+                            html_text.index("\r\n") : html_text.index("</a>")
                         ].strip(),
                     }
                 )
