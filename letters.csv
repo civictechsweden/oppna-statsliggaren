@@ -52,7 +52,6 @@ rbid,type,date,year,category,name,pdf
 294,Regleringsbrev,2002-12-19,2003,Myndighet,Granskningsnämnden för radio och TV,False
 295,Regleringsbrev,2002-12-19,2003,Myndighet,Institutet för psykosocial medicin,False
 296,Regleringsbrev,2002-12-20,2003,Myndighet,Socialstyrelsen,False
-297,Regleringsbrev,,2003,Myndighet,Länsstyrelsen i Jönköpings län,False
 298,Regleringsbrev,2003-01-07,2003,Myndighet,Styrelsen för internationellt utvecklingssamarbete,False
 299,Regleringsbrev,2003-01-17,2003,Myndighet,Svenska institutet,False
 300,Regleringsbrev,2002-12-20,2003,Myndighet,Ekonomistyrningsverket,False
@@ -151,7 +150,6 @@ rbid,type,date,year,category,name,pdf
 404,Regleringsbrev,2002-12-12,2003,Myndighet,Centrala studiestödsnämnden,False
 405,Regleringsbrev,2002-12-20,2003,Myndighet,Styrelsen för ackreditering och teknisk kontroll,False
 407,Regleringsbrev,2002-12-19,2003,Myndighet,Lantmäteriverket,False
-408,Regleringsbrev,,2003,Myndighet,Länsstyrelsen i Norrbottens län,False
 410,Regleringsbrev,2003-01-17,2003,Myndighet,Statens institut för ekologisk hållbarhet,False
 411,Regleringsbrev,2002-12-19,2003,Myndighet,Boverket,False
 412,Regleringsbrev,2002-12-19,2003,Myndighet,regeringen,False
@@ -228,7 +226,6 @@ rbid,type,date,year,category,name,pdf
 489,Regleringsbrev,2002-12-10,2003,Myndighet,Ekonomiska rådet,False
 1007,Regleringsbrev,2002-12-19,2003,Myndighet,Regeringskansliet,False
 1008,Regleringsbrev,2002-12-19,2003,Myndighet,Överklagandenämnden för totalförsvaret,False
-1014,Regleringsbrev,,2003,Myndighet,Länsstyrelsen i Västra Götalands län,False
 1015,Regleringsbrev,2002-12-19,2003,Myndighet,Riksgäldskontoret,False
 1017,Regleringsbrev,2002-12-20,2003,Myndighet,Statskontoret,False
 1018,Regleringsbrev,2002-12-19,2003,Myndighet,Statens bostadskreditnämnd,False
@@ -547,27 +544,6 @@ rbid,type,date,year,category,name,pdf
 5112,Regleringsbrev,2003-12-11,2004,Myndighet,Skatteverket,False
 5113,Regleringsbrev,2003-12-18,2004,Myndighet,Riksgäldskontoret,False
 5114,Regleringsbrev,2003-12-18,2004,Myndighet,Högskolan på Gotland,False
-5115,Regleringsbrev,,2004,Myndighet,Länsstyrelsen i Norrbottens län,False
-5116,Regleringsbrev,,2004,Myndighet,Länsstyrelsen i Västerbottens län,False
-5117,Regleringsbrev,,2004,Myndighet,Länsstyrelsen i Jämtlands län,False
-5118,Regleringsbrev,,2004,Myndighet,Länsstyrelsen i Västernorrlands län,False
-5119,Regleringsbrev,,2004,Myndighet,Länsstyrelsen i Gävleborgs län,False
-5120,Regleringsbrev,,2004,Myndighet,Länsstyrelsen i Dalarnas län,False
-5121,Regleringsbrev,,2004,Myndighet,Länsstyrelsen i Västmanlands län,False
-5122,Regleringsbrev,,2004,Myndighet,Länsstyrelsen i Örebro län,False
-5123,Regleringsbrev,,2004,Myndighet,Länsstyrelsen i Värmlands län,False
-5124,Regleringsbrev,,2004,Myndighet,Länsstyrelsen i Västra Götalands län,False
-5125,Regleringsbrev,,2004,Myndighet,Länsstyrelsen i Hallands län,False
-5126,Regleringsbrev,,2004,Myndighet,Länsstyrelsen i Skåne län,False
-5127,Regleringsbrev,,2004,Myndighet,Länsstyrelsen i Blekinge län,False
-5128,Regleringsbrev,,2004,Myndighet,Länsstyrelsen i Gotlands län,False
-5129,Regleringsbrev,,2004,Myndighet,Länsstyrelsen i Kalmar län,False
-5130,Regleringsbrev,,2004,Myndighet,Länsstyrelsen i Kronobergs län,False
-5131,Regleringsbrev,,2004,Myndighet,Länsstyrelsen i Jönköpings län,False
-5132,Regleringsbrev,,2004,Myndighet,Länsstyrelsen i Östergötlands län,False
-5133,Regleringsbrev,,2004,Myndighet,Länsstyrelsen i Södermanlands län,False
-5134,Regleringsbrev,,2004,Myndighet,Länsstyrelsen i Uppsala län,False
-5135,Regleringsbrev,,2004,Myndighet,Länsstyrelsen i Stockholms län,False
 5136,Regleringsbrev,2003-12-11,2004,Myndighet,Tullverket,False
 5137,Regleringsbrev,2003-12-18,2004,Myndighet,Statens geotekniska institut,False
 5138,Regleringsbrev,2003-12-11,2004,Myndighet,Statens väg- och transportforskningsinstitut,False
@@ -852,7 +828,6 @@ rbid,type,date,year,category,name,pdf
 6141,Ändringsbeslut,2003-11-27,2003,Myndighet,Arkitekturmuseet,False
 6142,Regleringsbrev,2003-12-18,2004,Myndighet,Centrala etikprövningsnämnden,False
 6143,Regleringsbrev,2003-12-04,2004,Anslag,37:7,False
-6144,Ändringsbeslut,,2003,Myndighet,Länsstyrelsen i Norrbottens län,False
 6145,Regleringsbrev,2003-12-18,2004,Myndighet,Regionala etikprövningsnämnder,False
 6146,Regleringsbrev,2003-12-18,2004,Anslag,93:1,False
 6147,Regleringsbrev,2003-12-11,2004,Myndighet,Inspektionen för arbetslöshetsförsäkringen,False
@@ -876,7 +851,6 @@ rbid,type,date,year,category,name,pdf
 6170,Ändringsbeslut,2003-12-18,2003,Myndighet,Statens VA-nämnd,False
 6171,Regleringsbrev,2003-12-18,2004,Anslag,46:1,False
 6172,Regleringsbrev,2003-12-11,2004,Anslag,11:1 (2003),False
-6175,Regleringsbrev,,2004,Myndighet,Länsstyrelsen i Norrbottens län,False
 6176,Regleringsbrev,2003-12-11,2004,Myndighet,Kungl. Slottsstaten,False
 6180,Ändringsbeslut,2003-12-04,2003,Myndighet,Arbetsmarknadsverket,False
 6181,Regleringsbrev,2003-12-18,2004,Myndighet,Regeringkansliet (RKs disposition),False
@@ -1095,7 +1069,6 @@ rbid,type,date,year,category,name,pdf
 7071,Ändringsbeslut,2004-06-17,2004,Anslag,"5:6, 5:9 (2003), 5:10 (2003) och 5:14 (2003)",False
 7072,Ändringsbeslut,2004-06-23,2004,Myndighet,Arbetsmiljöverket,False
 7074,Ändringsbeslut,2004-06-10,2004,Myndighet,Ombudsmannen mot etnisk diskriminering,False
-7075,Ändringsbeslut,,2004,Myndighet,Länsstyrelsen i Norrbottens län,False
 7077,Ändringsbeslut,2004-06-23,2004,Anslag,"5:1, 5:4 (2003) och 5:5 (2003)",False
 7078,Ändringsbeslut,2004-06-17,2004,Anslag,5:2,False
 7079,Ändringsbeslut,2004-05-27,2004,Myndighet,Hälso- och sjukvårdens ansvarsnämnd,False
@@ -1446,7 +1419,6 @@ rbid,type,date,year,category,name,pdf
 7513,Regleringsbrev,2004-12-16,2005,Anslag,5:3,False
 7514,Regleringsbrev,2004-12-16,2005,Myndighet,Turistdelegationen,False
 7515,Regleringsbrev,2004-12-16,2005,Myndighet,Lotteriinspektionen,False
-7516,Regleringsbrev,,2005,Myndighet,Länsstyrelsen i Blekinge län,False
 7517,Ändringsbeslut,2004-11-11,2004,Myndighet,Rikstrafiken,False
 7518,Ändringsbeslut,2004-12-02,2004,Myndighet,Länsstyrelserna,False
 7519,Regleringsbrev,2004-12-16,2005,Anslag,47:1,False
@@ -1464,27 +1436,7 @@ rbid,type,date,year,category,name,pdf
 7533,Ändringsbeslut,2004-11-04,2004,Myndighet,Krisberedskapsmyndigheten,False
 7534,Regleringsbrev,2004-12-16,2005,Myndighet,Verket för högskoleservice,False
 7535,Ändringsbeslut,2004-10-28,2004,Myndighet,Domstolsverket,False
-7536,Regleringsbrev,,2005,Myndighet,Länsstyrelsen i Dalarnas län,False
-7537,Regleringsbrev,,2005,Myndighet,Länsstyrelsen i Gotlands län,False
 7538,Regleringsbrev,2004-12-16,2005,Anslag,"5:6, 5:9 (2003), 5:10 (2003), 5:12 (2003) och 5:14 (2003)",False
-7539,Regleringsbrev,,2005,Myndighet,Länsstyrelsen i Gävleborgs län,False
-7540,Regleringsbrev,,2005,Myndighet,Länsstyrelsen i Hallands län,False
-7541,Regleringsbrev,,2005,Myndighet,Länsstyrelsen i Jämtlands län,False
-7542,Regleringsbrev,,2005,Myndighet,Länsstyrelsen i Jönköpings län,False
-7543,Regleringsbrev,,2005,Myndighet,Länsstyrelsen i Kalmar län,False
-7544,Regleringsbrev,,2005,Myndighet,Länsstyrelsen i Kronobergs län,False
-7545,Regleringsbrev,,2005,Myndighet,Länsstyrelsen i Norrbottens län,False
-7546,Regleringsbrev,,2005,Myndighet,Länsstyrelsen i Skåne län,False
-7547,Regleringsbrev,,2005,Myndighet,Länsstyrelsen i Stockholms län,False
-7548,Regleringsbrev,,2005,Myndighet,Länsstyrelsen i Södermanlands län,False
-7549,Regleringsbrev,,2005,Myndighet,Länsstyrelsen i Uppsala län,False
-7550,Regleringsbrev,,2005,Myndighet,Länsstyrelsen i Värmlands län,False
-7551,Regleringsbrev,,2005,Myndighet,Länsstyrelsen i Västerbottens län,False
-7552,Regleringsbrev,,2005,Myndighet,Länsstyrelsen i Västernorrlands län,False
-7553,Regleringsbrev,,2005,Myndighet,Länsstyrelsen i Västmanlands län,False
-7554,Regleringsbrev,,2005,Myndighet,Länsstyrelsen i Västra Götalands län,False
-7555,Regleringsbrev,,2005,Myndighet,Länsstyrelsen i Örebro län,False
-7556,Regleringsbrev,,2005,Myndighet,Länsstyrelsen i Östergötlands län,False
 7558,Regleringsbrev,2004-12-22,2005,Anslag,5:2,False
 7559,Regleringsbrev,2004-12-16,2005,Anslag,5:1 och 5:4 (2003),False
 7560,Regleringsbrev,2004-12-16,2005,Myndighet,Styrelsen för ackreditering och teknisk kontroll,False
@@ -1614,9 +1566,6 @@ rbid,type,date,year,category,name,pdf
 7707,Regleringsbrev,2004-12-16,2005,Anslag,93:1,False
 7712,Regleringsbrev,2004-12-16,2005,Anslag,25:85,False
 7713,Regleringsbrev,2004-12-16,2005,Anslag,38:12,False
-7714,Ändringsbeslut,,2004,Myndighet,Länsstyrelsen i Norrbottens län,False
-7715,Ändringsbeslut,,2004,Myndighet,Länsstyrelsen i Gotlands län,False
-7716,Ändringsbeslut,,2004,Myndighet,Länsstyrelsen i Hallands län,False
 7717,Regleringsbrev,2004-12-16,2005,Anslag,26:3,False
 7718,Regleringsbrev,2004-12-22,2005,Anslag,26:11,False
 7719,Ändringsbeslut,2004-12-09,2004,Myndighet,Skatteverket,False
@@ -1642,7 +1591,6 @@ rbid,type,date,year,category,name,pdf
 7744,Ändringsbeslut,2004-12-16,2004,Myndighet,Luftfartsverket,False
 7745,Ändringsbeslut,2004-12-16,2004,Myndighet,Sjöfartsverket,False
 7746,Ändringsbeslut,2004-12-09,2004,Myndighet,Migrationsverket,False
-7747,Ändringsbeslut,2004-11-30,2004,Myndighet,Regeringskansliet,False
 7749,Regleringsbrev,2004-12-16,2005,Myndighet,Expertgruppen för EU-frågor,False
 7750,Ändringsbeslut,2004-12-09,2004,Myndighet,Statens VA-nämnd,False
 7751,Ändringsbeslut,2004-12-09,2004,Myndighet,Statens räddningsverk,False
@@ -2373,8 +2321,6 @@ rbid,type,date,year,category,name,pdf
 8626,Regleringsbrev,2005-12-20,2006,Anslag,26:11,True
 8627,Ändringsbeslut,2005-11-24,2005,Myndighet,Statens institut för särskilt utbildningsstöd,False
 8628,Ändringsbeslut,2005-11-24,2005,Anslag,34:8,False
-8630,Ändringsbeslut,,2005,Myndighet,Länsstyrelsen i Kalmar län,False
-8631,Ändringsbeslut,,2005,Myndighet,Länsstyrelsen i Stockholms län,False
 8632,Ändringsbeslut,2005-11-17,2005,Myndighet,Statens bostadsnämnd,False
 8633,Ändringsbeslut,2005-12-01,2005,Myndighet,Verket för innovationssystem,False
 8635,Regleringsbrev,2005-12-15,2006,Anslag,26:7,True
@@ -15984,6 +15930,8 @@ rbid,type,date,year,category,name,pdf
 26052,Regleringsbrev,2025-12-18,2026,Myndighet,"Statens museer för maritim-, transport- och försvarshistoria",True
 26053,Ändringsbeslut,2025-12-04,2025,Anslag,1:6,True
 26054,Regleringsbrev,2025-12-18,2026,Anslag,4:1,True
+26055,Regleringsbrev,2025-12-11,2026,Anslag,1:5,True
+26056,Regleringsbrev,2025-12-11,2026,Anslag,1:5,True
 26057,Regleringsbrev,2025-12-18,2026,Myndighet,Migrationsverket,True
 26058,Regleringsbrev,2025-12-18,2026,Anslag,1:5,True
 26059,Regleringsbrev,2025-12-18,2026,Myndighet,Bokföringsnämnden,True
