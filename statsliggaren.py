@@ -26,12 +26,16 @@ def get_latest_remote_rbid(downloader=Downloader()) -> int:
 
 def get_rbids_to_fetch(downloader=Downloader()) -> list[int]:
     local_rbids = get_local_rbids()
-    latest_local_rbid = local_rbids[-1]
     latest_remote_rbid = get_latest_remote_rbid(downloader)
-    missing_local_rbids = get_missing_local_rbids(local_rbids)
-    return missing_local_rbids[-300:] + [
-        i for i in range(latest_local_rbid + 1, latest_remote_rbid + 1)
-    ]
+
+    if local_rbids:
+        latest_local_rbid = local_rbids[-1]
+        missing_local_rbids = get_missing_local_rbids(local_rbids)
+        return missing_local_rbids[-300:] + [
+            i for i in range(latest_local_rbid + 1, latest_remote_rbid + 1)
+        ]
+    else:
+        return [i for i in range(0, latest_remote_rbid + 1)]
 
 
 def get_metadata(page, downloader=Downloader()):
