@@ -2,7 +2,13 @@ import asyncio
 import csv
 import json
 import os
+from concurrent.futures import ProcessPoolExecutor
 from markdownify import markdownify as md
+
+
+def save_letter_sync(rbid, content):
+    Writer.write_text(content, f"letters/html/{rbid}.html")
+    Writer.write_text(md(content), f"letters/md/{rbid}.md")
 
 
 class Writer(object):
@@ -36,23 +42,22 @@ class Writer(object):
 
         print(f"Saving {len(letters)} letters...", flush=True)
 
-        semaphore = asyncio.Semaphore(100)
+        loop = asyncio.get_running_loop()
+        # Create a process pool with a reasonable number of workers (defaults to CPU count)
+        with ProcessPoolExecutor() as pool:
+            semaphore = asyncio.Semaphore(100) # Still limit concurrency to avoid too many queued tasks
 
-        def save_letter_sync(rbid, content):
-            Writer.write_text(content, f"letters/html/{rbid}.html")
-            Writer.write_text(md(content), f"letters/md/{rbid}.md")
+            async def save_letter(rbid, content):
+                async with semaphore:
+                    await loop.run_in_executor(pool, save_letter_sync, rbid, content)
 
-        async def save_letter(rbid, content):
-            async with semaphore:
-                await asyncio.to_thread(save_letter_sync, rbid, content)
+            tasks = []
+            for rbid in letters:
+                letter = letters[rbid]
+                if letter:
+                    tasks.append(save_letter(rbid, letter))
 
-        tasks = []
-        for rbid in letters:
-            letter = letters[rbid]
-            if letter:
-                tasks.append(save_letter(rbid, letter))
-
-        if tasks:
-            await asyncio.gather(*tasks)
+            if tasks:
+                await asyncio.gather(*tasks)
 
         print("Done.", flush=True)
