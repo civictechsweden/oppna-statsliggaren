@@ -29,11 +29,28 @@ async def main():
     os.makedirs("letters/html", exist_ok=True)
     os.makedirs("letters/md", exist_ok=True)
 
+    print(f"Saving {len(letters)} letters...", flush=True)
+
+    semaphore = asyncio.Semaphore(100)
+
+    def save_letter_sync(rbid, content):
+        Writer.write_text(content, f"letters/html/{rbid}.html")
+        Writer.write_text(md(content), f"letters/md/{rbid}.md")
+
+    async def save_letter(rbid, content):
+        async with semaphore:
+            await asyncio.to_thread(save_letter_sync, rbid, content)
+
+    tasks = []
     for rbid in letters:
         letter = letters[rbid]
         if letter:
-            Writer.write_text(letters[rbid], f"letters/html/{rbid}.html")
-            Writer.write_text(md(letters[rbid]), f"letters/md/{rbid}.md")
+            tasks.append(save_letter(rbid, letter))
+
+    if tasks:
+        await asyncio.gather(*tasks)
+    
+    print("Done.", flush=True)
 
 if __name__ == "__main__":
     asyncio.run(main())

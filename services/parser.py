@@ -52,7 +52,6 @@ class Parser(object):
 
         return metadata, attachments, letter
 
-
     @staticmethod
     def _hard_coded_fix(text):
         text = text.replace("Avseende anslaget", "Anslag")
@@ -62,7 +61,7 @@ class Parser(object):
         )
         text = text.replace(
             "2003 Avvecklingsmyndigheten för RRV",
-            "2003 Myndinghet Avvecklingsmyndigheten för RRV",
+            "2003 Myndighet Avvecklingsmyndigheten för RRV",
         )
         text = text.replace(
             "Ändringsbeslut  2003-11-27 Polisväsendet",

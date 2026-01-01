@@ -49,17 +49,26 @@ async def get_metadatas(pages: list[int], downloader):
     all_attachments = []
     letters = {}
 
-    tasks = [downloader.fetch_page(rbid) for rbid in pages]
+    # Limit concurrent requests to avoid overwhelming the server or local resources
+    semaphore = asyncio.Semaphore(50)
+    loop = asyncio.get_running_loop()
+
+    async def fetch_and_parse(rbid):
+        async with semaphore:
+            response = await downloader.fetch_page(rbid)
+        
+        # Offload CPU-bound parsing to a separate thread
+        return await loop.run_in_executor(None, Parser.parse_metadata, response)
+
+    tasks = [fetch_and_parse(rbid) for rbid in pages]
 
     for i, future in enumerate(asyncio.as_completed(tasks), 1):
-        response = await future
-        print(f"Processing RBID {response.id} ({i}/{len(tasks)})", flush=True)
-
-        metadata, attachments, letter = Parser.parse_metadata(response)
+        metadata, attachments, letter = await future
+        print(f"Processing RBID {metadata['rbid']} ({i}/{len(tasks)})", flush=True)
 
         if metadata.get("name"):
             items.append(metadata)
-            letters[response.id] = letter
+            letters[metadata['rbid']] = letter
         all_attachments.extend(attachments)
 
     return items, all_attachments, letters
