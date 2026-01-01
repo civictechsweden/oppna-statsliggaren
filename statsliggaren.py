@@ -49,15 +49,12 @@ async def get_metadatas(pages: list[int], downloader):
     all_attachments = []
     letters = {}
 
-    # Limit concurrent requests to avoid overwhelming the server or local resources
     semaphore = asyncio.Semaphore(50)
     loop = asyncio.get_running_loop()
 
     async def fetch_and_parse(rbid):
         async with semaphore:
             response = await downloader.fetch_page(rbid)
-        
-        # Offload CPU-bound parsing to a separate thread
         return await loop.run_in_executor(None, Parser.parse_metadata, response)
 
     tasks = [fetch_and_parse(rbid) for rbid in pages]
