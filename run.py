@@ -19,12 +19,15 @@ async def main():
     attachments.extend(new_attachments)
 
     Writer.write_csv(sorted(metadata, key=lambda d: int(d["rbid"])), "letters.csv")
-    Writer.write_csv(sorted(attachments, key=lambda d: int(d["rbid"])), "attachments.csv")
+    Writer.write_csv(
+        sorted(attachments, key=lambda d: int(d["rbid"])), "attachments.csv"
+    )
 
     if not SAVE_LETTER_FILES:
         sys.exit()
 
     await Writer.save_letters_batch(letters)
+
 
 if __name__ == "__main__":
     asyncio.run(main())
