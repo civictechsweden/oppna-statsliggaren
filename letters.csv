@@ -16077,10 +16077,12 @@ rbid,type,date,year,category,name,pdf
 26254,Ändringsbeslut,2026-02-26,2026,Anslag,11:2,True
 26258,Ändringsbeslut,2026-03-12,2026,Myndighet,Försvarets materielverk,True
 26260,Ändringsbeslut,2026-03-12,2026,Myndighet,Försvarsmakten,True
+26262,Ändringsbeslut,2026-03-19,2026,Myndighet,Folkhälsomyndigheten,True
 26263,Ändringsbeslut,2026-03-05,2026,Myndighet,Myndigheten för civilt försvar,True
 26264,Ändringsbeslut,2026-02-26,2026,Anslag,1:5,True
 26265,Ändringsbeslut,2026-02-26,2026,Anslag,1:14,True
 26266,Ändringsbeslut,2026-03-12,2026,Myndighet,Myndigheten för totalförsvarsanalys,True
+26267,Ändringsbeslut,2026-03-19,2026,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
 26269,Ändringsbeslut,2026-03-12,2026,Myndighet,Totalförsvarets forskningsinstitut,True
 26276,Ändringsbeslut,2026-03-12,2026,Myndighet,Myndigheten för psykologiskt försvar,True
 26280,Ändringsbeslut,2026-03-12,2026,Anslag,1:14,True
@@ -16088,3 +16090,4 @@ rbid,type,date,year,category,name,pdf
 26282,Ändringsbeslut,2026-03-19,2026,Myndighet,länsstyrelserna,True
 26284,Ändringsbeslut,2026-03-12,2026,Myndighet,Migrationsverket,True
 26286,Ändringsbeslut,2026-03-05,2026,Anslag,1:1,True
+26297,Ändringsbeslut,2026-03-12,2026,Myndighet,Myndigheten för civilt försvar,True
