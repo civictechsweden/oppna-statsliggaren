@@ -14,6 +14,18 @@ For now, it's best to download the file [letters.csv](letters.csv) and process i
 
 You can also download the file [attachments.csv](attachments.csv) to get a list of the letters' attachments.
 
+### Optional IP rotation
+
+In order to fetch with a Github Action, we need to use a EU proxy. Right now, the program uses AWS API Gateway which has a large free tier.
+
+You will not have to use it locally but if you want to you will need working AWS credentials in `.env`:
+
+```text
+USE_IP_ROTATOR=true
+AWS_ACCESS_KEY_ID=your-key
+AWS_SECRET_ACCESS_KEY=your-secret
+```
+
 ### Download a file with its ID
 
 You can access a mission letter's page through this URL:

@@ -3,3 +3,4 @@ letters/
 build/
 .venv/
 *.egg-info/
+.env

@@ -21,11 +21,11 @@ def get_missing_local_rbids(local_rbids: list[int]) -> list[int]:
     return sorted(list(set(all_rbids) - set(local_rbids)))
 
 
-async def get_latest_remote_rbid(downloader=Downloader()) -> int:
+async def get_latest_remote_rbid(downloader: Downloader) -> int:
     return Parser.parse_latest_remote_rbid(await downloader.fetch_search())
 
 
-async def get_rbids_to_fetch(downloader=Downloader()) -> list[int]:
+async def get_rbids_to_fetch(downloader: Downloader) -> list[int]:
     local_rbids = get_local_rbids()
     latest_remote_rbid = await get_latest_remote_rbid(downloader)
 
@@ -39,7 +39,7 @@ async def get_rbids_to_fetch(downloader=Downloader()) -> list[int]:
         return [i for i in range(0, latest_remote_rbid + 1)]
 
 
-async def get_metadata(page: int, downloader=Downloader()):
+async def get_metadata(page: int, downloader: Downloader):
     return Parser.parse_metadata(await downloader.fetch_page(page))
 
 
@@ -65,17 +65,14 @@ async def get_metadatas(pages: list[int], downloader):
 
         if metadata.get("name"):
             items.append(metadata)
-            letters[metadata['rbid']] = letter
+            letters[metadata["rbid"]] = letter
         all_attachments.extend(attachments)
 
     return items, all_attachments, letters
 
 
-async def init():
-    downloader = Downloader()
+async def init(downloader: Downloader):
     rbids = await get_rbids_to_fetch(downloader)
     new_metadata, new_attachments, letters = await get_metadatas(rbids, downloader)
-
-    await downloader.s.aclose()
 
     return new_metadata, new_attachments, letters
