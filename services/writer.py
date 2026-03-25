@@ -3,12 +3,21 @@ import csv
 import json
 import os
 from concurrent.futures import ProcessPoolExecutor
+import mdformat
 from markdownify import markdownify as md
+from services.cleaner import Cleaner
 
 
 def save_letter_sync(rbid, content):
     Writer.write_text(content, f"letters/html/{rbid}.html")
-    Writer.write_text(md(content), f"letters/md/{rbid}.md")
+    cleaned_content = Cleaner.clean_letter_html(content)
+    Writer.write_text(
+        mdformat.text(
+            md(cleaned_content, heading_style="ATX"),
+            options={"number": True},
+        ),
+        f"letters/md/{rbid}.md",
+    )
 
 
 class Writer(object):
