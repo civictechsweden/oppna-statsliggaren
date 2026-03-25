@@ -3,6 +3,8 @@ from services.reader import open_csv
 from services.downloader import Downloader
 from services.parser import Parser
 
+RECENT_MISSING_RBID_WINDOW = 100
+
 
 def get_local_metadata() -> list:
     return open_csv("letters.csv")
@@ -32,7 +34,7 @@ async def get_rbids_to_fetch(downloader: Downloader) -> list[int]:
     if local_rbids:
         latest_local_rbid = local_rbids[-1]
         missing_local_rbids = get_missing_local_rbids(local_rbids)
-        return missing_local_rbids[-300:] + [
+        return missing_local_rbids[-RECENT_MISSING_RBID_WINDOW:] + [
             i for i in range(latest_local_rbid + 1, latest_remote_rbid + 1)
         ]
     else:
@@ -44,6 +46,10 @@ async def get_metadata(page: int, downloader: Downloader):
 
 
 async def get_metadatas(pages: list[int], downloader):
+    if not pages:
+        print("No missing or new RBIDs to fetch.", flush=True)
+        return [], [], {}
+
     print(f"Fetching the first 30 RBIDs from the list: {pages[:30]}", flush=True)
     items = []
     all_attachments = []

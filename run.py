@@ -1,5 +1,4 @@
 import asyncio
-import sys
 
 from dotenv import load_dotenv
 
@@ -16,10 +15,6 @@ async def main():
     downloader = Downloader()
 
     try:
-        if await sl.get_latest_remote_rbid(downloader) in sl.get_local_rbids():
-            print("No new regleringsbrev to fetch.")
-            sys.exit()
-
         metadata = sl.get_local_metadata()
         attachments = sl.get_local_attachments()
 
@@ -33,7 +28,7 @@ async def main():
         )
 
         if not SAVE_LETTER_FILES:
-            sys.exit()
+            return
 
         await Writer.save_letters_batch(letters)
     finally:
