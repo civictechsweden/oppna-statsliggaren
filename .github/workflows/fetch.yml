@@ -1,0 +1,34 @@
+name: Fetch the data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 1 * * *" # 1AM UTC every night
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    name: Fetch the data
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+          version: "latest"
+
+      - run: uv sync --frozen
+
+      - name: Fetch the data
+        run: uv run python run.py
+
+      - name: Commit and push
+        run: |
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git config --global user.name 'github-actions[bot]'
+          git add letters.csv attachments.csv
+          git commit -m 'Update the data' || echo "Nothing to commit"
+          git push
