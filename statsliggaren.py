@@ -50,7 +50,7 @@ async def get_metadatas(pages: list[int], downloader):
         print("No missing or new RBIDs to fetch.", flush=True)
         return [], [], {}
 
-    print(f"Fetching the first 30 RBIDs from the list: {pages[:30]}", flush=True)
+    print(f"Fetching {len(pages)} RBIDs. ", flush=True)
     items = []
     all_attachments = []
     letters = {}
