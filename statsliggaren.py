@@ -41,8 +41,8 @@ async def get_rbids_to_fetch(downloader: Downloader) -> list[int]:
         return [i for i in range(0, latest_remote_rbid + 1)]
 
 
-async def get_metadata(page: int, downloader: Downloader):
-    return Parser.parse_metadata(await downloader.fetch_page(page))
+async def get_metadata(rbint: int, downloader: Downloader):
+    return Parser.parse_metadata(await downloader.fetch_page(rbint), rbint)
 
 
 async def get_metadatas(pages: list[int], downloader):
@@ -61,7 +61,7 @@ async def get_metadatas(pages: list[int], downloader):
     async def fetch_and_parse(rbid):
         async with semaphore:
             response = await downloader.fetch_page(rbid)
-        return await loop.run_in_executor(None, Parser.parse_metadata, response)
+        return await loop.run_in_executor(None, Parser.parse_metadata, response, rbid)
 
     tasks = [fetch_and_parse(rbid) for rbid in pages]
 

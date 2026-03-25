@@ -30,7 +30,7 @@ class Downloader(object):
             transport = httpx.AsyncHTTPTransport(retries=3)
             self.s = httpx.AsyncClient(transport=transport, timeout=10)
 
-    async def _get_with_retry(self, url, retries=3):
+    async def _get_with_retry(self, url, retries=3) -> httpx.Response:
         for i in range(retries):
             try:
                 return await self.s.get(url)
@@ -40,15 +40,15 @@ class Downloader(object):
                     raise
                 await asyncio.sleep(1)
 
+        raise RuntimeError(f"Failed to fetch {url} after {retries} retries")
+
     async def fetch_search(self):
         print("Fetching the search page...")
         return await self._get_with_retry(SEARCH_URL)
 
-    async def fetch_page(self, rbid: int):
+    async def fetch_page(self, rbid: int) -> httpx.Response:
         print(f"Fetching info for RBID {rbid}...")
-        response = await self._get_with_retry(URL.format(rbid))
-        response.id = rbid
-        return response
+        return await self._get_with_retry(URL.format(rbid))
 
     async def aclose(self):
         await self.s.aclose()

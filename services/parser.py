@@ -10,7 +10,7 @@ class Parser(object):
         return int(sorted(html_text.split("rbid=")[1:], reverse=True)[0].split("&")[0])
 
     @staticmethod
-    def parse_metadata(response):
+    def parse_metadata(response, rbid: int):
         html_text = html.unescape(response.text)
         title = Parser._extract_title(html_text)
         normalized_title = Parser._normalize_whitespace(
@@ -18,7 +18,8 @@ class Parser(object):
         )
         fail = Parser._is_missing_letter_page(response, html_text, normalized_title)
 
-        metadata = {"rbid": response.id}
+        metadata = {}
+        metadata["rbid"] = rbid
         metadata["type"] = None
         metadata["date"] = None
         metadata["year"] = None
@@ -52,7 +53,7 @@ class Parser(object):
             attachments.append(
                 {
                     "id": int(html_text[: html_text.index('"')]),
-                    "rbid": response.id,
+                    "rbid": rbid,
                     "name": html_text[
                         html_text.index("\r\n") : html_text.index("</a>")
                     ].strip(),
@@ -114,7 +115,9 @@ class Parser(object):
         ]
 
     @staticmethod
-    def _is_missing_letter_page(response, html_text: str, normalized_title: str) -> bool:
+    def _is_missing_letter_page(
+        response, html_text: str, normalized_title: str
+    ) -> bool:
         lowered_title = normalized_title.lower()
 
         return (
