@@ -24,7 +24,8 @@ async def main():
 
         Writer.write_csv(sorted(metadata, key=lambda d: int(d["rbid"])), "letters.csv")
         Writer.write_csv(
-            sorted(attachments, key=lambda d: int(d["rbid"])), "attachments.csv"
+            sorted(attachments, key=lambda d: (int(d["rbid"]), int(d["id"]))),
+            "attachments.csv",
         )
 
         if not SAVE_LETTER_FILES:
