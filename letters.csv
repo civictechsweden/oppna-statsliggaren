@@ -16078,6 +16078,7 @@ rbid,type,date,year,category,name,pdf
 26257,Ändringsbeslut,2026-03-26,2026,Myndighet,Socialstyrelsen,True
 26258,Ändringsbeslut,2026-03-12,2026,Myndighet,Försvarets materielverk,True
 26260,Ändringsbeslut,2026-03-12,2026,Myndighet,Försvarsmakten,True
+26261,Ändringsbeslut,2026-04-01,2026,Myndighet,Livsmedelsverket,True
 26262,Ändringsbeslut,2026-03-19,2026,Myndighet,Folkhälsomyndigheten,True
 26263,Ändringsbeslut,2026-03-05,2026,Myndighet,Myndigheten för civilt försvar,True
 26264,Ändringsbeslut,2026-02-26,2026,Anslag,1:5,True
@@ -16094,4 +16095,5 @@ rbid,type,date,year,category,name,pdf
 26286,Ändringsbeslut,2026-03-05,2026,Anslag,1:1,True
 26288,Ändringsbeslut,2026-03-26,2026,Myndighet,Skatteverket,True
 26290,Ändringsbeslut,2026-03-19,2026,Myndighet,Konjunkturinstitutet,True
+26294,Ändringsbeslut,2026-03-26,2026,Anslag,3:1,True
 26297,Ändringsbeslut,2026-03-12,2026,Myndighet,Myndigheten för civilt försvar,True
