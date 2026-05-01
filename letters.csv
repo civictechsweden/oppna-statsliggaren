@@ -16102,6 +16102,8 @@ rbid,type,date,year,category,name,pdf
 26291,Ändringsbeslut,2026-04-09,2026,Myndighet,Statens energimyndighet,True
 26294,Ändringsbeslut,2026-03-26,2026,Anslag,3:1,True
 26297,Ändringsbeslut,2026-03-12,2026,Myndighet,Myndigheten för civilt försvar,True
+26299,Ändringsbeslut,2026-04-23,2026,Myndighet,Brottsförebyggande rådet,True
+26302,Ändringsbeslut,2026-04-23,2026,Myndighet,Vetenskapsrådet,True
 26304,Ändringsbeslut,2026-04-01,2026,Anslag,1:14,True
 26305,Ändringsbeslut,2026-04-16,2026,Myndighet,Migrationsverket,True
 26307,Ändringsbeslut,2026-03-26,2026,Anslag,2:7,True
@@ -16113,3 +16115,4 @@ rbid,type,date,year,category,name,pdf
 26324,Ändringsbeslut,2026-04-01,2026,Myndighet,Socialstyrelsen,True
 26327,Ändringsbeslut,2026-04-09,2026,Anslag,4:1,True
 26328,Ändringsbeslut,2026-04-23,2026,Anslag,4:5,True
+26334,Ändringsbeslut,2026-04-23,2026,Myndighet,Försvarets materielverk,True
