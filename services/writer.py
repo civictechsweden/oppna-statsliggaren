@@ -6,15 +6,19 @@ from concurrent.futures import ProcessPoolExecutor
 import mdformat
 from markdownify import markdownify as md
 from services.cleaner import Cleaner
+from services.intermediate_parser import IntermediateParser
 
 
 def save_letter_sync(rbid, content):
     Writer.write_text(content, f"letters/html/{rbid}.html")
-    cleaned_content = Cleaner.clean_letter_html(content)
+    xhtml_content = IntermediateParser.parse_letter_html(content)
+    Writer.write_text(xhtml_content, f"letters/xhtml/{rbid}.xhtml")
     Writer.write_text(
-        mdformat.text(
-            md(cleaned_content, heading_style="ATX"),
-            options={"number": True},
+        Cleaner.clean_markdown(
+            mdformat.text(
+                md(xhtml_content, heading_style="ATX"),
+                options={"number": True},
+            )
         ),
         f"letters/md/{rbid}.md",
     )
@@ -47,6 +51,7 @@ class Writer(object):
     @staticmethod
     async def save_letters_batch(letters: dict):
         os.makedirs("letters/html", exist_ok=True)
+        os.makedirs("letters/xhtml", exist_ok=True)
         os.makedirs("letters/md", exist_ok=True)
 
         print(f"Saving {len(letters)} letters...", flush=True)
