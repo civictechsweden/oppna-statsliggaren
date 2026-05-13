@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup, NavigableString, Tag
 
 class XHTMLSerializer(object):
     BLOCK_TAGS = {"html", "body", "table", "thead", "tbody", "tr", "ul", "ol"}
+    INLINE_CHILD_TAGS = {"a", "br", "em", "strong", "sup"}
 
     @staticmethod
     def serialize_document(document: BeautifulSoup, clean_text) -> str:
@@ -46,10 +47,14 @@ class XHTMLSerializer(object):
     def _serialize_attrs(tag: Tag) -> str:
         if tag.name == "a":
             allowed_attr_names = ["href"]
+        elif tag.name == "table":
+            allowed_attr_names = ["class"]
         elif tag.name == "td":
-            allowed_attr_names = ["rowspan", "colspan"]
+            allowed_attr_names = ["class", "rowspan", "colspan"]
         elif tag.name == "th":
             allowed_attr_names = ["rowspan", "colspan", "scope"]
+        elif tag.name in {"h1", "p"}:
+            allowed_attr_names = ["class"]
         else:
             allowed_attr_names = []
 
@@ -69,7 +74,8 @@ class XHTMLSerializer(object):
             return False
 
         return not any(
-            isinstance(child, Tag) and child.name != "br" for child in tag.children
+            isinstance(child, Tag) and child.name not in XHTMLSerializer.INLINE_CHILD_TAGS
+            for child in tag.children
         )
 
     @staticmethod

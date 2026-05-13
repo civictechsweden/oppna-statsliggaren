@@ -34,6 +34,7 @@ class XHTMLOutlineNormalizer(object):
             return
 
         headings[0].name = "h1"
+        headings[0]["class"] = "document-title"
 
         for heading in headings[1:]:
             text = clean_text(heading.get_text(" ", strip=True))
@@ -50,6 +51,12 @@ class XHTMLOutlineNormalizer(object):
             if major_division:
                 heading.name = "h2"
                 heading.string = major_division
+                continue
+
+            if XHTMLOutlineNormalizer._is_local_numbered_label(text):
+                XHTMLOutlineNormalizer._replace_heading_with_strong_paragraph(
+                    heading, clean_text
+                )
                 continue
 
             numbered_level = XHTMLOutlineNormalizer._numbered_outline_level(text)
@@ -101,6 +108,10 @@ class XHTMLOutlineNormalizer(object):
             re.fullmatch(r"mål(?: \d+)?", normalized)
             or normalized.startswith("mål - ")
         )
+
+    @staticmethod
+    def _is_local_numbered_label(text: str) -> bool:
+        return bool(re.match(r"^\d+\.\s+\S", text))
 
     @staticmethod
     def _replace_heading_with_strong_paragraph(heading: Tag, clean_text) -> None:
