@@ -9,8 +9,6 @@ dependencies = [
     "mdformat>=0.7.22",
     "markdownify>=1.2.2",
     "httpx[http2]>=0.28.1",
-    "httpx-ip-rotator>=0.1.4",
-    "python-dotenv>=1.2.2",
 ]
 
 [tool.setuptools]

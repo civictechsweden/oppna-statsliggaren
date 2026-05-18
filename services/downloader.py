@@ -1,8 +1,6 @@
 import asyncio
-import os
 
 import httpx
-from httpx_ip_rotator import AsyncApiGatewayTransport
 
 DOMAIN = "https://www.statskontoret.se"
 URL = DOMAIN + "/statsliggaren/regleringsbrev/?RBID={}"
@@ -13,28 +11,14 @@ SEARCH_URL = (
 
 class Downloader(object):
     def __init__(self):
-        self.gateway_transport = None
-
-        if os.getenv("USE_IP_ROTATOR", False):
-            self.gateway_transport = AsyncApiGatewayTransport(
-                DOMAIN,
-                regions=["eu-north-1"],
-                retries=3,
-            )
-            self.gateway_transport.start()
-            self.s = httpx.AsyncClient(
-                mounts={DOMAIN: self.gateway_transport},
-                timeout=15,
-            )
-        else:
-            transport = httpx.AsyncHTTPTransport(retries=3)
-            self.s = httpx.AsyncClient(transport=transport, timeout=10)
+        transport = httpx.AsyncHTTPTransport(retries=3)
+        self.s = httpx.AsyncClient(transport=transport, timeout=10)
 
     async def _get_with_retry(self, url, retries=3) -> httpx.Response:
         for i in range(retries):
             try:
                 return await self.s.get(url)
-            except httpx.ReadTimeout:
+            except httpx.TimeoutException:
                 print(f"Timeout fetching {url}, retrying ({i + 1}/{retries})...")
                 if i == retries - 1:
                     raise
@@ -52,5 +36,3 @@ class Downloader(object):
 
     async def aclose(self):
         await self.s.aclose()
-        if self.gateway_transport is not None:
-            self.gateway_transport.shutdown()

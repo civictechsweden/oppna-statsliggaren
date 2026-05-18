@@ -1,12 +1,8 @@
 import asyncio
 
-from dotenv import load_dotenv
-
 import statsliggaren as sl
 from services.downloader import Downloader
 from services.writer import Writer
-
-load_dotenv()
 
 SAVE_LETTER_FILES = False
 
