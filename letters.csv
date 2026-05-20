@@ -16076,6 +16076,7 @@ rbid,type,date,year,category,name,pdf
 26250,Ändringsbeslut,2026-03-05,2026,Myndighet,Kriminalvården,True
 26251,Ändringsbeslut,2026-02-12,2026,Myndighet,Statens institutionsstyrelse,True
 26254,Ändringsbeslut,2026-02-26,2026,Anslag,11:2,True
+26255,Ändringsbeslut,2026-05-13,2026,Anslag,1:6,True
 26256,Ändringsbeslut,2026-04-01,2026,Myndighet,Styrelsen för ackreditering och teknisk kontroll,True
 26257,Ändringsbeslut,2026-03-26,2026,Myndighet,Socialstyrelsen,True
 26258,Ändringsbeslut,2026-03-12,2026,Myndighet,Försvarets materielverk,True
@@ -16123,6 +16124,8 @@ rbid,type,date,year,category,name,pdf
 26325,Ändringsbeslut,2026-05-07,2026,Myndighet,Lunds universitet,True
 26327,Ändringsbeslut,2026-04-09,2026,Anslag,4:1,True
 26328,Ändringsbeslut,2026-04-23,2026,Anslag,4:5,True
+26329,Ändringsbeslut,2026-05-13,2026,Myndighet,Post- och telestyrelsen,True
+26330,Ändringsbeslut,2026-05-13,2026,Anslag,1:5,True
 26334,Ändringsbeslut,2026-04-23,2026,Myndighet,Försvarets materielverk,True
 26336,Ändringsbeslut,2026-04-23,2026,Myndighet,Socialstyrelsen,True
 26339,Ändringsbeslut,2026-05-07,2026,Myndighet,Uppsala universitet,True
