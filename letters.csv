@@ -16113,6 +16113,7 @@ rbid,type,date,year,category,name,pdf
 26307,Ändringsbeslut,2026-03-26,2026,Anslag,2:7,True
 26309,Ändringsbeslut,2026-04-01,2026,Myndighet,Medlingsinstitutet,True
 26311,Ändringsbeslut,2026-04-09,2026,Myndighet,Försäkringskassan,True
+26312,Ändringsbeslut,2026-05-13,2026,Myndighet,Boverket,True
 26313,Ändringsbeslut,2026-04-23,2026,Myndighet,Försvarsmakten,True
 26314,Ändringsbeslut,2026-04-23,2026,Myndighet,Statens skolverk,True
 26315,Ändringsbeslut,2026-05-07,2026,Myndighet,Göteborgs universitet,True
@@ -16130,3 +16131,6 @@ rbid,type,date,year,category,name,pdf
 26336,Ändringsbeslut,2026-04-23,2026,Myndighet,Socialstyrelsen,True
 26339,Ändringsbeslut,2026-05-07,2026,Myndighet,Uppsala universitet,True
 26340,Ändringsbeslut,2026-05-07,2026,Myndighet,Umeå universitet,True
+26341,Ändringsbeslut,2026-05-07,2026,Myndighet,Rymdstyrelsen,True
+26365,Ändringsbeslut,2026-05-13,2026,Myndighet,Myndigheten för civilt försvar,True
+26370,Ändringsbeslut,2026-05-13,2026,Myndighet,Strålsäkerhetsmyndigheten,True
