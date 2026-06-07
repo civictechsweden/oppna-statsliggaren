@@ -1,6 +1,6 @@
 # Öppna Statsliggaren
 
-This project aims at making the Swedish agencies mission letters (*regleringsbrev*) more accessible through a simple API and a dataset on HuggingFace.
+This project aims at making the Swedish agencies mission letters (*regleringsbrev*) more accessible through a simple API and a [dataset on HuggingFace](https://huggingface.co/datasets/PierreMesure/oppna-statsliggaren).
 
 Today, mission letters are made available on a web application called [*Statsliggaren*](https://www.statskontoret.se/statsliggaren) on the website of the [Agency for Financial and Public Management](https://www.statskontoret.se/english/) (*Statskontoret*, formerly *Ekonomistyrningsverket*). Discloser: They are my employer as of 2026 but this is an unrelated side-project.
 
@@ -13,6 +13,8 @@ So this project essentially maps the IDs to these metadata, enabling someone to 
 For now, it's best to download the file [letters.csv](letters.csv) and process it yourself to match an agency and a year to a file ID.
 
 You can also download the file [attachments.csv](attachments.csv) to get a list of the letters' attachments.
+
+You can also download the letters in their row HTML format, in a cleaned XHTML format and in a (slightly lossy) Markdown format on [HuggingFace](https://huggingface.co/datasets/PierreMesure/oppna-statsliggaren).
 
 ### Optional IP rotation
 
@@ -55,7 +57,7 @@ https://www.statskontoret.se/regleringsbrev/bilaga/{ID}
 
 ### Parquet export
 
-The repository can also build a Parquet export with four columns: `id`, `html`, `xhtml`, and `md`.
+The repository can also build a Parquet export with document payload columns `id`, `html`, `xhtml`, and `md`, plus metadata columns from `letters.csv`: `type`, `date`, `year`, `category`, `name`, and `pdf`.
 Run it locally with:
 
 ```bash
@@ -65,8 +67,10 @@ uv run python scripts/build_letters_parquet.py --output letters.parquet
 If you want to upload the result to Hugging Face, set `HF_TOKEN` and pass a dataset repo id:
 
 ```bash
-HF_TOKEN=... uv run python scripts/build_letters_parquet.py --output letters.parquet --repo-id your-org/your-dataset --repo-path data/letters.parquet
+HF_TOKEN=... uv run python scripts/build_letters_parquet.py --output letters.parquet --upload --repo-id your-org/your-dataset --repo-path data/letters.parquet
 ```
+
+The builder also loads `.env` automatically if it exists, so local runs can use `HF_TOKEN` and `HF_DATASET_REPO_ID` from there without extra shell exports. Upload is still explicit: it only happens when `--upload` is passed.
 
 If the local Parquet file does not exist but a Hugging Face dataset repo is configured, the script first downloads the existing remote Parquet file and then appends only the locally missing ids before uploading the refreshed file again.
 
@@ -75,12 +79,7 @@ The nightly GitHub Action also updates the Hugging Face dataset after refreshing
 - `HF_DATASET_REPO_ID` as a GitHub Actions variable
 - `HF_TOKEN` as a GitHub Actions secret
 
-## Future developments
-
-Running the code in its current state will also download the HTML letters and attempt a conversion to Markdown. In the future, a more complex processing will be added to convert the letters to a clean reusable format and upload them to HuggingFace.
-
 ## License
 
 License for the data is CC0, as the files are public documents (*offentliga handlingar*).
-
 License for the code is AGPLv3.

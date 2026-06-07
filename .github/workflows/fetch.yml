@@ -34,7 +34,7 @@ jobs:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           HF_DATASET_REPO_ID: ${{ vars.HF_DATASET_REPO_ID }}
         if: ${{ env.HF_DATASET_REPO_ID != '' && env.HF_TOKEN != '' }}
-        run: uv run python scripts/build_letters_parquet.py --output letters.parquet --repo-id "$HF_DATASET_REPO_ID" --repo-path data/letters.parquet
+        run: uv run python scripts/build_letters_parquet.py --output letters.parquet --upload --repo-id "$HF_DATASET_REPO_ID" --repo-path data/letters.parquet
 
       - name: Commit and push
         run: |

@@ -8,7 +8,7 @@ from services.writer import Writer
 
 load_dotenv()
 
-SAVE_LETTER_FILES = False
+SAVE_LETTER_FILES = True
 
 
 async def main():
