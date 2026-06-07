@@ -29,6 +29,13 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run: uv run python run.py
 
+      - name: Build and upload letters parquet
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_DATASET_REPO_ID: ${{ vars.HF_DATASET_REPO_ID }}
+        if: ${{ env.HF_DATASET_REPO_ID != '' && env.HF_TOKEN != '' }}
+        run: uv run python scripts/build_letters_parquet.py --output letters.parquet --repo-id "$HF_DATASET_REPO_ID" --repo-path data/letters.parquet
+
       - name: Commit and push
         run: |
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'

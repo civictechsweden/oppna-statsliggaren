@@ -53,6 +53,28 @@ Attachments are only available as files and can be downloaded at the following U
 https://www.statskontoret.se/regleringsbrev/bilaga/{ID}
 ```
 
+### Parquet export
+
+The repository can also build a Parquet export with four columns: `id`, `html`, `xhtml`, and `md`.
+Run it locally with:
+
+```bash
+uv run python scripts/build_letters_parquet.py --output letters.parquet
+```
+
+If you want to upload the result to Hugging Face, set `HF_TOKEN` and pass a dataset repo id:
+
+```bash
+HF_TOKEN=... uv run python scripts/build_letters_parquet.py --output letters.parquet --repo-id your-org/your-dataset --repo-path data/letters.parquet
+```
+
+If the local Parquet file does not exist but a Hugging Face dataset repo is configured, the script first downloads the existing remote Parquet file and then appends only the locally missing ids before uploading the refreshed file again.
+
+The nightly GitHub Action also updates the Hugging Face dataset after refreshing `letters.csv` and `attachments.csv`. To enable that, set:
+
+- `HF_DATASET_REPO_ID` as a GitHub Actions variable
+- `HF_TOKEN` as a GitHub Actions secret
+
 ## Future developments
 
 Running the code in its current state will also download the HTML letters and attempt a conversion to Markdown. In the future, a more complex processing will be added to convert the letters to a clean reusable format and upload them to HuggingFace.
