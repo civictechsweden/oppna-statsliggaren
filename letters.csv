@@ -16153,12 +16153,15 @@ rbid,type,date,year,category,name,pdf
 27445,Ändringsbeslut,2026-06-11,2026,Myndighet,Affärsverket svenska kraftnät,True
 27446,Ändringsbeslut,2026-06-11,2026,Anslag,1:5,True
 27448,Ändringsbeslut,2026-06-11,2026,Myndighet,Myndigheten för totalförsvarsanalys,True
+27449,Ändringsbeslut,2026-06-18,2026,Myndighet,Försvarets radioanstalt,True
 27450,Ändringsbeslut,2026-06-05,2026,Myndighet,Försvarsmakten,True
 27452,Ändringsbeslut,2026-06-18,2026,Myndighet,Myndigheten för civilt försvar,True
 27453,Ändringsbeslut,2026-06-11,2026,Myndighet,Statens beredning för medicinsk och social utvärdering,True
 27455,Ändringsbeslut,2026-06-18,2026,Myndighet,Statens energimyndighet,True
 27456,Ändringsbeslut,2026-06-04,2026,Myndighet,Tandvårds- och läkemedelsförmånsverket,True
+27457,Ändringsbeslut,2026-06-18,2026,Anslag,1:1,True
 27458,Ändringsbeslut,2026-06-18,2026,Myndighet,Statens skolverk,True
+27459,Ändringsbeslut,2026-06-18,2026,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
 27460,Ändringsbeslut,2026-06-11,2026,Myndighet,Spelinspektionen,True
 27462,Ändringsbeslut,2026-06-11,2026,Myndighet,Fortifikationsverket,True
 27463,Ändringsbeslut,2026-06-18,2026,Myndighet,Luftfartsverket,True
@@ -16174,4 +16177,5 @@ rbid,type,date,year,category,name,pdf
 27486,Ändringsbeslut,2026-06-18,2026,Myndighet,Arbetsförmedlingen,True
 27487,Ändringsbeslut,2026-06-11,2026,Myndighet,Statens kulturråd,True
 27488,Ändringsbeslut,2026-06-18,2026,Myndighet,Försvarsmakten,True
+27492,Ändringsbeslut,2026-06-25,2026,Myndighet,Totalförsvarets plikt- och prövningsverk,True
 27495,Ändringsbeslut,2026-06-11,2026,Anslag,2:3,True
