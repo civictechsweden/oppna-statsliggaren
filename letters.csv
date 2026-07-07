@@ -16176,18 +16176,22 @@ rbid,type,date,year,category,name,pdf
 27470,Ändringsbeslut,2026-06-11,2026,Myndighet,Utbetalningsmyndigheten,True
 27471,Ändringsbeslut,2026-06-18,2026,Anslag,6:1,True
 27472,Ändringsbeslut,2026-06-18,2026,Myndighet,Brottsoffermyndigheten,True
+27474,Ändringsbeslut,2026-06-25,2026,Myndighet,Polismyndigheten,True
 27475,Ändringsbeslut,2026-06-18,2026,Myndighet,Transportstyrelsen,True
 27476,Ändringsbeslut,2026-06-11,2026,Myndighet,Försvarets materielverk,True
 27479,Ändringsbeslut,2026-06-25,2026,Myndighet,länsstyrelserna,True
 27480,Ändringsbeslut,2026-06-25,2026,Myndighet,Kronofogdemyndigheten,True
 27481,Ändringsbeslut,2026-06-25,2026,Myndighet,Havs- och vattenmyndigheten,True
+27482,Ändringsbeslut,2026-06-25,2026,Anslag,1:1,True
 27485,Ändringsbeslut,2026-06-18,2026,Myndighet,Trafikverket,True
 27486,Ändringsbeslut,2026-06-18,2026,Myndighet,Arbetsförmedlingen,True
 27487,Ändringsbeslut,2026-06-11,2026,Myndighet,Statens kulturråd,True
 27488,Ändringsbeslut,2026-06-18,2026,Myndighet,Försvarsmakten,True
 27489,Ändringsbeslut,2026-06-25,2026,Myndighet,Lantmäteriet,True
 27492,Ändringsbeslut,2026-06-25,2026,Myndighet,Totalförsvarets plikt- och prövningsverk,True
+27493,Ändringsbeslut,2026-06-25,2026,Anslag,"1:1, 2:3 och 2:4",True
 27495,Ändringsbeslut,2026-06-11,2026,Anslag,2:3,True
+27496,Ändringsbeslut,2026-06-25,2026,Myndighet,Svenska institutet,True
 27499,Ändringsbeslut,2026-06-18,2026,Myndighet,Försvarets materielverk,True
 27500,Ändringsbeslut,2026-07-02,2026,Myndighet,Konsumentverket,True
 27501,Ändringsbeslut,2026-06-25,2026,Myndighet,E-hälsomyndigheten,True
