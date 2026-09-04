@@ -16154,6 +16154,7 @@ rbid,type,date,year,category,name,pdf
 27444,Ändringsbeslut,2026-06-18,2026,Anslag,1:2,True
 27445,Ändringsbeslut,2026-06-11,2026,Myndighet,Affärsverket svenska kraftnät,True
 27446,Ändringsbeslut,2026-06-11,2026,Anslag,1:5,True
+27447,Ändringsbeslut,2026-08-27,2026,Myndighet,"Statens museer för maritim-, transport- och försvarshistoria",True
 27448,Ändringsbeslut,2026-06-11,2026,Myndighet,Myndigheten för totalförsvarsanalys,True
 27449,Ändringsbeslut,2026-06-18,2026,Myndighet,Försvarets radioanstalt,True
 27450,Ändringsbeslut,2026-06-05,2026,Myndighet,Försvarsmakten,True
@@ -16214,10 +16215,13 @@ rbid,type,date,year,category,name,pdf
 27518,Ändringsbeslut,2026-07-16,2026,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
 27519,Ändringsbeslut,2026-08-27,2026,Myndighet,länsstyrelserna,True
 27520,Ändringsbeslut,2026-07-23,2026,Myndighet,Sveriges geologiska undersökning,True
+27523,Ändringsbeslut,2026-08-27,2026,Myndighet,Statens kulturråd,True
 27524,Ändringsbeslut,2026-07-16,2026,Myndighet,Folkhälsomyndigheten,True
+27525,Ändringsbeslut,2026-09-03,2026,Myndighet,Transportstyrelsen,True
 27526,Ändringsbeslut,2026-08-27,2026,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
 27527,Ändringsbeslut,2026-08-27,2026,Myndighet,Trafikverket,True
 27528,Ändringsbeslut,2026-08-27,2026,Myndighet,Riksgäldskontoret,True
 27531,Ändringsbeslut,2026-08-20,2026,Myndighet,Skogsstyrelsen,True
 27532,Ändringsbeslut,2026-08-27,2026,Myndighet,Havs- och vattenmyndigheten,True
 27533,Ändringsbeslut,2026-08-20,2026,Myndighet,Folkhälsomyndigheten,True
+27536,Ändringsbeslut,2026-08-27,2026,Anslag,3:1,True
