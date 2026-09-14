@@ -16211,6 +16211,7 @@ rbid,type,date,year,category,name,pdf
 27509,Ändringsbeslut,2026-06-25,2026,Anslag,1:6,True
 27512,Ändringsbeslut,2026-07-02,2026,Myndighet,Myndigheten för civilt försvar,True
 27513,Ändringsbeslut,2026-08-27,2026,Myndighet,Tillväxtverket,True
+27514,Ändringsbeslut,2026-09-03,2026,Myndighet,Migrationsverket,True
 27516,Ändringsbeslut,2026-07-02,2026,Anslag,2:6,True
 27517,Ändringsbeslut,2026-07-09,2026,Myndighet,Försvarsmakten,True
 27518,Ändringsbeslut,2026-07-16,2026,Myndighet,Styrelsen för internationellt utvecklingssamarbete,True
@@ -16226,8 +16227,10 @@ rbid,type,date,year,category,name,pdf
 27531,Ändringsbeslut,2026-08-20,2026,Myndighet,Skogsstyrelsen,True
 27532,Ändringsbeslut,2026-08-27,2026,Myndighet,Havs- och vattenmyndigheten,True
 27533,Ändringsbeslut,2026-08-20,2026,Myndighet,Folkhälsomyndigheten,True
+27535,Ändringsbeslut,2026-09-03,2026,Myndighet,Livsmedelsverket,True
 27536,Ändringsbeslut,2026-08-27,2026,Anslag,3:1,True
 27538,Ändringsbeslut,2026-08-27,2026,Myndighet,Statens jordbruksverk,True
+27542,Ändringsbeslut,2026-09-03,2026,Myndighet,Myndigheten för digital förvaltning,True
 27545,Ändringsbeslut,2026-09-03,2026,Myndighet,Exportkreditnämnden,True
 27546,Ändringsbeslut,2026-09-03,2026,Myndighet,Forum för levande historia,True
 27547,Ändringsbeslut,2026-09-03,2026,Myndighet,Statens skolverk,True
