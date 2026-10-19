@@ -1,6 +1,8 @@
 import re
-from bs4 import BeautifulSoup, Comment, NavigableString, Tag
 
+from selectolax.lexbor import LexborNode
+
+from services import html_dom as dom
 from services.template_classifier import TemplateVariant, classify_letter_template
 from services.xhtml_extractor import XHTMLExtractor
 from services.xhtml_outline import XHTMLOutlineNormalizer
@@ -126,9 +128,9 @@ class IntermediateParser(object):
     @staticmethod
     def parse_letter_html(html: str) -> str:
         variant = classify_letter_template(html).variant
-        source = BeautifulSoup(html, "html.parser")
-        document = BeautifulSoup("<html><body></body></html>", "html.parser")
-        body = document.body
+        source = dom.parse_html(html)
+        document = dom.parse_html("<html><body></body></html>")
+        body = dom.find(document, "body")
 
         extracted = XHTMLExtractor.extract(
             source,
@@ -145,46 +147,56 @@ class IntermediateParser(object):
         IntermediateParser._normalize_label_paragraphs(document)
         IntermediateParser._normalize_footer_signature_tables(document)
         IntermediateParser._normalize_anslag_summary_tables(document)
-        return XHTMLSerializer.serialize_document(document, IntermediateParser._clean_text)
+        return XHTMLSerializer.serialize_document(
+            document, IntermediateParser._clean_text
+        )
 
     @staticmethod
-    def _append_extracted_content(body: Tag, extracted, variant: TemplateVariant) -> None:
+    def _append_extracted_content(
+        body: LexborNode, extracted, variant: TemplateVariant
+    ) -> None:
         if extracted.header_lines:
             IntermediateParser._append_text_lines(body, extracted.header_lines)
         if extracted.header_fragment:
-            IntermediateParser._append_fragment(body, extracted.header_fragment, variant)
+            IntermediateParser._append_fragment(
+                body, extracted.header_fragment, variant
+            )
         if extracted.body_fragment:
             IntermediateParser._append_fragment(body, extracted.body_fragment, variant)
         if extracted.footer_fragment:
-            IntermediateParser._append_fragment(body, extracted.footer_fragment, variant)
+            IntermediateParser._append_fragment(
+                body, extracted.footer_fragment, variant
+            )
 
     @staticmethod
-    def _append_fragment(body: Tag, fragment_html: str, variant: TemplateVariant) -> None:
-        fragment = BeautifulSoup(fragment_html, "html.parser")
+    def _append_fragment(
+        body: LexborNode, fragment_html: str, variant: TemplateVariant
+    ) -> None:
+        fragment = dom.parse_fragment(fragment_html)
         IntermediateParser._normalize_fragment(fragment, variant)
 
-        for child in list(fragment.contents):
-            if isinstance(child, NavigableString):
-                text = IntermediateParser._clean_text(str(child))
+        for child in list(dom.children(fragment)):
+            if dom.is_text(child):
+                text = IntermediateParser._clean_text(dom.markup(child))
                 if not text:
                     continue
-                body.append(IntermediateParser._new_paragraph(text))
+                body.insert_child(IntermediateParser._new_paragraph(text))
                 continue
 
-            body.append(child.extract())
+            body.insert_child(dom.detach(child))
 
     @staticmethod
-    def _append_text_lines(body: Tag, lines: list[str]) -> None:
+    def _append_text_lines(body: LexborNode, lines: list[str]) -> None:
         seen = set()
         for line in lines:
             text = IntermediateParser._clean_text(line)
             if not text or text in seen:
                 continue
             seen.add(text)
-            body.append(IntermediateParser._new_paragraph(text))
+            body.insert_child(IntermediateParser._new_paragraph(text))
 
     @staticmethod
-    def _normalize_fragment(fragment: BeautifulSoup, variant: TemplateVariant) -> None:
+    def _normalize_fragment(fragment: LexborNode, variant: TemplateVariant) -> None:
         IntermediateParser._remove_comments(fragment)
         IntermediateParser._remove_noise(fragment)
         IntermediateParser._unwrap_tag_name(fragment, "r:villkor")
@@ -197,7 +209,7 @@ class IntermediateParser(object):
 
     @staticmethod
     def _apply_variant_normalization(
-        fragment: BeautifulSoup, variant: TemplateVariant
+        fragment: LexborNode, variant: TemplateVariant
     ) -> None:
         config = IntermediateParser.VARIANT_NORMALIZATION[variant]
 
@@ -209,9 +221,9 @@ class IntermediateParser(object):
                 fragment, pattern=config["heading_class_pattern"]
             )
         if config["rk_rubrik"]:
-            for tag in fragment.select(".rkrubrik"):
-                tag.name = "h1"
-                tag.attrs = {}
+            for tag in dom.select(fragment, ".rkrubrik"):
+                tag = dom.rename(tag, "h1")
+                dom.set_attrs(tag, {})
         if config["wrapper_classes"]:
             IntermediateParser._unwrap_classed_wrappers(
                 fragment,
@@ -219,11 +231,11 @@ class IntermediateParser(object):
             )
 
     @staticmethod
-    def _promote_known_ids(fragment: BeautifulSoup) -> None:
-        heading = fragment.select_one("#BrevInledandeText_Rubrik")
+    def _promote_known_ids(fragment: LexborNode) -> None:
+        heading = dom.select_one(fragment, "#BrevInledandeText_Rubrik")
         if heading:
-            heading.name = "h1"
-            heading.attrs = {}
+            heading = dom.rename(heading, "h1")
+            dom.set_attrs(heading, {})
 
         for selector in [
             "#BrevInledandeText_Bilagor",
@@ -234,25 +246,25 @@ class IntermediateParser(object):
             "#BrevFot_Handlaeggare",
             "#BrevFot_KopiaTillText",
         ]:
-            tag = fragment.select_one(selector)
+            tag = dom.select_one(fragment, selector)
             if tag:
-                tag.name = "p"
-                tag.attrs = {}
+                tag = dom.rename(tag, "p")
+                dom.set_attrs(tag, {})
 
     @staticmethod
-    def _normalize_heading_tables(fragment: BeautifulSoup) -> None:
-        for table in list(fragment.find_all("table")):
-            if table.find("table"):
+    def _normalize_heading_tables(fragment: LexborNode) -> None:
+        for table in list(dom.find_all(fragment, "table")):
+            if dom.find(table, "table"):
                 continue
 
-            rows = table.find_all("tr", recursive=False)
-            if not rows and table.tbody:
-                rows = table.tbody.find_all("tr", recursive=False)
+            rows = dom.find_all(table, "tr", recursive=False)
+            if not rows and dom.find(table, "tbody"):
+                rows = dom.find_all(dom.find(table, "tbody"), "tr", recursive=False)
 
             if len(rows) != 1:
                 continue
 
-            cells = rows[0].find_all(["td", "th"], recursive=False)
+            cells = dom.find_all(rows[0], ["td", "th"], recursive=False)
             if not 1 <= len(cells) <= 2:
                 continue
 
@@ -261,20 +273,22 @@ class IntermediateParser(object):
             first_text = ""
 
             for index, cell in enumerate(cells):
-                cell_text = IntermediateParser._clean_text(cell.get_text(" ", strip=True))
+                cell_text = IntermediateParser._clean_text(
+                    dom.text(cell, " ", strip=True)
+                )
                 if not cell_text:
                     continue
                 if index == 0:
                     first_text = cell_text
                 texts.append(cell_text)
 
-                for heading in cell.find_all(re.compile(r"^h[1-6]$")):
-                    heading_levels.append(int(heading.name[1]))
+                for heading in dom.find_all(cell, re.compile("^h[1-6]$")):
+                    heading_levels.append(int(heading.tag[1]))
 
-                for descendant in cell.find_all(True):
+                for descendant in dom.find_all(cell, True):
                     heading_levels.extend(
                         IntermediateParser._heading_levels_from_classes(
-                            descendant.get("class", [])
+                            dom.get_attr(descendant, "class", [])
                         )
                     )
 
@@ -285,31 +299,33 @@ class IntermediateParser(object):
                 if not heading_levels:
                     continue
                 level = min(heading_levels)
-                heading = fragment.new_tag(f"h{level}")
-                heading.string = texts[0]
+                heading = fragment.parser.create_node(f"h{level}")
+                dom.set_text(heading, texts[0])
                 table.replace_with(heading)
                 continue
 
             if not heading_levels and not re.fullmatch(r"\d+(?:\.\d+)*", first_text):
                 continue
 
-            level = min(heading_levels) if heading_levels else min(
-                6, first_text.count(".") + 2
+            level = (
+                min(heading_levels)
+                if heading_levels
+                else min(6, first_text.count(".") + 2)
             )
 
-            heading = fragment.new_tag(f"h{level}")
-            heading.string = " ".join(texts)
+            heading = fragment.parser.create_node(f"h{level}")
+            dom.set_text(heading, " ".join(texts))
             table.replace_with(heading)
 
     @staticmethod
-    def _promote_classed_headings(fragment: BeautifulSoup, pattern: str) -> None:
+    def _promote_classed_headings(fragment: LexborNode, pattern: str) -> None:
         regex = re.compile(pattern)
-        for tag in list(fragment.find_all(True)):
-            if tag.name in IntermediateParser.ALLOWED_TAGS:
+        for tag in list(dom.find_all(fragment, True)):
+            if tag.tag in IntermediateParser.ALLOWED_TAGS:
                 continue
 
             levels = []
-            for class_name in tag.get("class", []):
+            for class_name in dom.get_attr(tag, "class", []):
                 match = regex.match(class_name)
                 if match:
                     levels.append(min(6, int(match.group(1))))
@@ -317,11 +333,11 @@ class IntermediateParser(object):
             if not levels:
                 continue
 
-            if tag.parent and tag.parent.name in {"td", "th"}:
+            if tag.parent and tag.parent.tag in {"td", "th"}:
                 continue
 
-            tag.name = f"h{min(levels)}"
-            tag.attrs = {}
+            tag = dom.rename(tag, f"h{min(levels)}")
+            dom.set_attrs(tag, {})
 
     @staticmethod
     def _heading_levels_from_classes(class_names: list[str]) -> list[int]:
@@ -339,27 +355,27 @@ class IntermediateParser(object):
 
     @staticmethod
     def _unwrap_classed_wrappers(
-        fragment: BeautifulSoup, wrapper_classes: set[str]
+        fragment: LexborNode, wrapper_classes: set[str]
     ) -> None:
-        for tag in list(fragment.find_all(True)):
-            if tag.name in IntermediateParser.ALLOWED_TAGS:
+        for tag in list(dom.find_all(fragment, True)):
+            if tag.tag in IntermediateParser.ALLOWED_TAGS:
                 continue
 
-            classes = set(tag.get("class", []))
+            classes = set(dom.get_attr(tag, "class", []))
             if classes & wrapper_classes:
                 tag.unwrap()
 
     @staticmethod
-    def _promote_textual_blocks(fragment: BeautifulSoup) -> None:
-        for tag in list(fragment.find_all(True)):
-            if tag.name in IntermediateParser.ALLOWED_TAGS:
+    def _promote_textual_blocks(fragment: LexborNode) -> None:
+        for tag in list(dom.find_all(fragment, True)):
+            if tag.tag in IntermediateParser.ALLOWED_TAGS:
                 continue
 
-            if tag.name in {"script", "style", "img", "hr"}:
+            if tag.tag in {"script", "style", "img", "hr"}:
                 tag.decompose()
                 continue
 
-            if tag.parent and tag.parent.name in {
+            if tag.parent and tag.parent.tag in {
                 "a",
                 "h1",
                 "h2",
@@ -376,87 +392,87 @@ class IntermediateParser(object):
                 continue
 
             has_block_child = any(
-                isinstance(child, Tag)
-                and child.name in IntermediateParser.BLOCK_TAGS
-                for child in tag.children
+                dom.is_tag(child) and child.tag in IntermediateParser.BLOCK_TAGS
+                for child in dom.children(tag)
             )
 
-            text = IntermediateParser._clean_text(tag.get_text(" ", strip=True))
+            text = IntermediateParser._clean_text(dom.text(tag, " ", strip=True))
             if has_block_child:
                 tag.unwrap()
             elif text:
-                tag.name = "p"
-                tag.attrs = {}
+                tag = dom.rename(tag, "p")
+                dom.set_attrs(tag, {})
             else:
                 tag.decompose()
 
     @staticmethod
-    def _sanitize_document(document: BeautifulSoup) -> None:
+    def _sanitize_document(document: LexborNode) -> None:
         IntermediateParser._remove_comments(document)
         IntermediateParser._remove_noise(document)
         IntermediateParser._unwrap_layout_tables(document)
 
-        for tag in list(document.find_all(True)):
-            if tag.name not in IntermediateParser.ALLOWED_TAGS:
+        for tag in list(dom.find_all(document, True)):
+            if tag.tag not in IntermediateParser.ALLOWED_TAGS:
                 tag.unwrap()
                 continue
 
-            if tag.name == "a":
-                href = tag.get("href")
-                tag.attrs = {"href": href} if href else {}
-            elif tag.name == "table":
+            if tag.tag == "a":
+                href = dom.get_attr(tag, "href")
+                dom.set_attrs(tag, {"href": href} if href else {})
+            elif tag.tag == "table":
                 attrs = {}
-                tag_class = tag.get("class")
+                tag_class = dom.get_attr(tag, "class")
                 normalized_class = IntermediateParser._semantic_class_value(tag_class)
                 if normalized_class:
                     attrs["class"] = normalized_class
-                tag.attrs = attrs
-            elif tag.name == "td":
+                dom.set_attrs(tag, attrs)
+            elif tag.tag == "td":
                 attrs = {}
-                tag_class = tag.get("class")
+                tag_class = dom.get_attr(tag, "class")
                 normalized_class = IntermediateParser._semantic_class_value(tag_class)
                 if normalized_class:
                     attrs["class"] = normalized_class
                 for attr_name in ("rowspan", "colspan"):
-                    attr_value = tag.get(attr_name)
+                    attr_value = dom.get_attr(tag, attr_name)
                     if attr_value:
                         attrs[attr_name] = attr_value
-                tag.attrs = attrs
-            elif tag.name == "th":
+                dom.set_attrs(tag, attrs)
+            elif tag.tag == "th":
                 attrs = {}
                 for attr_name in ("rowspan", "colspan", "scope"):
-                    attr_value = tag.get(attr_name)
+                    attr_value = dom.get_attr(tag, attr_name)
                     if attr_value:
                         attrs[attr_name] = attr_value
-                tag.attrs = attrs
-            elif tag.name in {"h1", "p"}:
+                dom.set_attrs(tag, attrs)
+            elif tag.tag in {"h1", "p"}:
                 attrs = {}
-                tag_class = tag.get("class")
+                tag_class = dom.get_attr(tag, "class")
                 normalized_class = IntermediateParser._semantic_class_value(tag_class)
                 if normalized_class:
                     attrs["class"] = normalized_class
-                tag.attrs = attrs
+                dom.set_attrs(tag, attrs)
             else:
-                tag.attrs = {}
+                dom.set_attrs(tag, {})
 
-        IntermediateParser._wrap_loose_text(document.body)
-        IntermediateParser._wrap_orphan_inline_body_nodes(document)
+        IntermediateParser._wrap_loose_text(dom.find(document, "body"))
         IntermediateParser._normalize_heading_contents(document)
         IntermediateParser._split_invalid_paragraphs(document)
+        # Splitting repaired paragraphs can expose inline siblings at body level.
+        IntermediateParser._wrap_orphan_inline_body_nodes(document)
         IntermediateParser._remove_body_level_breaks(document)
         IntermediateParser._collapse_redundant_breaks(document)
         IntermediateParser._normalize_whitespace_nodes(document)
         IntermediateParser._remove_empty_tags(document)
 
     @staticmethod
-    def _split_invalid_paragraphs(document: BeautifulSoup) -> None:
+    def _split_invalid_paragraphs(document: LexborNode) -> None:
         inline_tags = {"a", "br"}
         paragraph_blockers = IntermediateParser.BLOCK_TAGS
 
-        for paragraph in list(document.find_all("p")):
+        for paragraph in list(dom.find_all(document, "p")):
             if not any(
-                isinstance(child, Tag) and child.name in paragraph_blockers
-                for child in paragraph.children
+                dom.is_tag(child) and child.tag in paragraph_blockers
+                for child in dom.children(paragraph)
             ):
                 continue
 
@@ -465,44 +481,44 @@ class IntermediateParser(object):
                 continue
 
             insert_before = paragraph
-            inline_buffer: list[Tag | NavigableString] = []
+            inline_buffer: list[LexborNode | str] = []
 
             def flush_inline_buffer() -> None:
                 nonlocal insert_before
                 if not inline_buffer:
                     return
 
-                new_paragraph = document.new_tag("p")
+                new_paragraph = document.parser.create_node("p")
                 for node in inline_buffer:
-                    new_paragraph.append(node.extract())
+                    new_paragraph.insert_child(dom.detach(node))
                 insert_before.insert_before(new_paragraph)
                 inline_buffer.clear()
 
-            for child in list(paragraph.contents):
-                if isinstance(child, NavigableString):
-                    if IntermediateParser._clean_text(str(child)):
+            for child in list(dom.children(paragraph)):
+                if dom.is_text(child):
+                    if IntermediateParser._clean_text(dom.markup(child)):
                         inline_buffer.append(child)
                     else:
-                        child.extract()
+                        child = dom.detach(child)
                     continue
 
-                if child.name in inline_tags:
+                if child.tag in inline_tags:
                     inline_buffer.append(child)
                     continue
 
                 flush_inline_buffer()
-                insert_before.insert_before(child.extract())
+                insert_before.insert_before(dom.detach(child))
 
             flush_inline_buffer()
             paragraph.decompose()
 
     @staticmethod
-    def _normalize_whitespace_nodes(fragment: BeautifulSoup | Tag) -> None:
-        for child in list(fragment.children):
-            if isinstance(child, NavigableString):
-                text = str(child)
+    def _normalize_whitespace_nodes(fragment: LexborNode | str) -> None:
+        for child in list(dom.children(fragment)):
+            if dom.is_text(child):
+                text = dom.markup(child)
                 if not text.strip():
-                    child.extract()
+                    child = dom.detach(child)
                     continue
 
                 normalized = IntermediateParser._clean_text(text)
@@ -513,89 +529,89 @@ class IntermediateParser(object):
             IntermediateParser._normalize_whitespace_nodes(child)
 
     @staticmethod
-    def _wrap_loose_text(body: Tag) -> None:
-        for child in list(body.children):
-            if not isinstance(child, NavigableString):
+    def _wrap_loose_text(body: LexborNode) -> None:
+        for child in list(dom.children(body)):
+            if not dom.is_text(child):
                 continue
 
-            text = IntermediateParser._clean_text(str(child))
+            text = IntermediateParser._clean_text(dom.markup(child))
             if not text:
-                child.extract()
+                child = dom.detach(child)
                 continue
 
             child.replace_with(IntermediateParser._new_paragraph(text))
 
     @staticmethod
-    def _remove_empty_tags(document: BeautifulSoup) -> None:
-        for tag in reversed(document.find_all(True)):
-            if tag.name in {"br", "html", "body"}:
+    def _remove_empty_tags(document: LexborNode) -> None:
+        for tag in reversed(dom.find_all(document, True)):
+            if tag.tag in {"br", "html", "body"}:
                 continue
 
-            text = IntermediateParser._clean_text(tag.get_text(" ", strip=True))
+            text = IntermediateParser._clean_text(dom.text(tag, " ", strip=True))
             if text:
                 continue
 
-            if tag.find(True):
+            if dom.find(tag, True):
                 continue
 
             tag.decompose()
 
     @staticmethod
-    def _remove_comments(fragment: BeautifulSoup) -> None:
-        for comment in fragment.find_all(string=lambda text: isinstance(text, Comment)):
-            comment.extract()
+    def _remove_comments(fragment: LexborNode) -> None:
+        for comment in dom.comments(fragment):
+            dom.detach(comment)
 
     @staticmethod
-    def _remove_noise(fragment: BeautifulSoup) -> None:
-        for tag in fragment.find_all(["img", "script", "style"]):
+    def _remove_noise(fragment: LexborNode) -> None:
+        for tag in dom.find_all(fragment, ["img", "script", "style"]):
             tag.decompose()
 
     @staticmethod
-    def _unwrap_layout_tables(fragment: BeautifulSoup | Tag) -> None:
+    def _unwrap_layout_tables(fragment: LexborNode | str) -> None:
         changed = True
         while changed:
             changed = False
-            for table in list(fragment.find_all("table")):
+            for table in list(dom.find_all(fragment, "table")):
                 rows = IntermediateParser._table_rows(table)
                 if len(rows) != 1:
                     continue
 
-                cells = rows[0].find_all(["td", "th"], recursive=False)
+                cells = dom.find_all(rows[0], ["td", "th"], recursive=False)
                 if len(cells) != 1:
                     continue
 
                 cell = cells[0]
-                if cell.get("rowspan") or cell.get("colspan"):
+                if dom.get_attr(cell, "rowspan") or dom.get_attr(cell, "colspan"):
                     continue
 
-                if not any(isinstance(child, Tag) for child in cell.contents):
+                if not any(dom.is_tag(child) for child in dom.children(cell)):
                     continue
 
-                for child in list(cell.contents):
-                    table.insert_before(child.extract())
+                for child in list(dom.children(cell)):
+                    table.insert_before(dom.detach(child))
                 table.decompose()
                 changed = True
                 break
 
     @staticmethod
-    def _unwrap_tag_name(fragment: BeautifulSoup, tag_name: str) -> None:
-        for tag in fragment.find_all(tag_name):
+    def _unwrap_tag_name(fragment: LexborNode, tag_name: str) -> None:
+        for tag in dom.find_all(fragment, tag_name):
             tag.unwrap()
 
     @staticmethod
-    def _strings_from_selector(source: BeautifulSoup, selector: str) -> list[str]:
+    def _strings_from_selector(source: LexborNode, selector: str) -> list[str]:
         items = []
-        for tag in source.select(selector):
+        for tag in dom.select(source, selector):
             items.extend(IntermediateParser._strings_from_tag(tag))
         return items
 
     @staticmethod
-    def _strings_from_tag(tag: Tag | None) -> list[str]:
+    def _strings_from_tag(tag: LexborNode | None) -> list[str]:
         if not tag:
             return []
         return [
             IntermediateParser._clean_text(text)
-            for text in tag.stripped_strings
+            for text in dom.strings(tag)
             if IntermediateParser._clean_text(text)
         ]
 
@@ -604,91 +620,106 @@ class IntermediateParser(object):
         return re.sub(r"\s+", " ", text).strip()
 
     @staticmethod
-    def _new_paragraph(text: str) -> Tag:
-        soup = BeautifulSoup("", "html.parser")
-        paragraph = soup.new_tag("p")
-        paragraph.string = text
+    def _new_paragraph(text: str) -> LexborNode:
+        soup = dom.parse_html("")
+        paragraph = soup.parser.create_node("p")
+        dom.set_text(paragraph, text)
         return paragraph
 
     @staticmethod
     def _semantic_class_value(tag_class) -> str | None:
-        class_names = tag_class if isinstance(tag_class, list) else [tag_class] if tag_class else []
-        semantic = [class_name for class_name in class_names if class_name in IntermediateParser.SEMANTIC_CLASSES]
+        class_names = (
+            tag_class
+            if isinstance(tag_class, list)
+            else [tag_class]
+            if tag_class
+            else []
+        )
+        semantic = [
+            class_name
+            for class_name in class_names
+            if class_name in IntermediateParser.SEMANTIC_CLASSES
+        ]
         if not semantic:
             return None
         return " ".join(semantic)
 
     @staticmethod
-    def _normalize_heading_contents(document: BeautifulSoup) -> None:
-        for heading in document.find_all(re.compile(r"^h[1-6]$")):
-            text = IntermediateParser._clean_text(heading.get_text(" ", strip=True))
+    def _normalize_heading_contents(document: LexborNode) -> None:
+        for heading in dom.find_all(document, re.compile("^h[1-6]$")):
+            text = IntermediateParser._clean_text(dom.text(heading, " ", strip=True))
             if not text:
                 continue
 
             if any(
-                isinstance(child, Tag) and child.name in IntermediateParser.BLOCK_TAGS
-                for child in heading.contents
+                dom.is_tag(child) and child.tag in IntermediateParser.BLOCK_TAGS
+                for child in dom.children(heading)
             ):
-                heading.clear()
-                heading.string = text
+                dom.clear(heading)
+                dom.set_text(heading, text)
 
     @staticmethod
-    def _wrap_orphan_inline_body_nodes(document: BeautifulSoup) -> None:
-        body = document.body
+    def _wrap_orphan_inline_body_nodes(document: LexborNode) -> None:
+        body = dom.find(document, "body")
         if not body:
             return
 
         inline_tags = {"a", "em", "strong", "sup"}
-        for child in list(body.children):
-            if not isinstance(child, Tag) or child.name not in inline_tags:
+        for child in list(dom.children(body)):
+            if not dom.is_tag(child) or child.tag not in inline_tags:
                 continue
 
-            paragraph = document.new_tag("p")
+            paragraph = document.parser.create_node("p")
             child.replace_with(paragraph)
-            paragraph.append(child)
+            paragraph.insert_child(child)
 
     @staticmethod
-    def _remove_body_level_breaks(document: BeautifulSoup) -> None:
-        body = document.body
+    def _remove_body_level_breaks(document: LexborNode) -> None:
+        body = dom.find(document, "body")
         if not body:
             return
 
-        for child in list(body.children):
-            if isinstance(child, Tag) and child.name == "br":
+        for child in list(dom.children(body)):
+            if dom.is_tag(child) and child.tag == "br":
                 child.decompose()
 
     @staticmethod
-    def _collapse_redundant_breaks(fragment: BeautifulSoup | Tag) -> None:
-        for parent in fragment.find_all(True):
+    def _collapse_redundant_breaks(fragment: LexborNode | str) -> None:
+        for parent in dom.find_all(fragment, True):
             previous_was_br = False
-            for child in list(parent.contents):
-                if isinstance(child, Tag) and child.name == "br":
+            for child in list(dom.children(parent)):
+                if dom.is_tag(child) and child.tag == "br":
                     if previous_was_br:
                         child.decompose()
                         continue
                     previous_was_br = True
                     continue
 
-                if isinstance(child, NavigableString) and not IntermediateParser._clean_text(str(child)):
-                    child.extract()
+                if dom.is_text(child) and not IntermediateParser._clean_text(
+                    dom.markup(child)
+                ):
+                    child = dom.detach(child)
                     continue
 
                 previous_was_br = False
 
     @staticmethod
-    def _normalize_label_paragraphs(document: BeautifulSoup) -> None:
-        body = document.body
+    def _normalize_label_paragraphs(document: LexborNode) -> None:
+        body = dom.find(document, "body")
         if not body:
             return
 
-        for paragraph in body.find_all("p", recursive=False):
-            if paragraph.find("strong", recursive=False):
+        for paragraph in dom.find_all(body, "p", recursive=False):
+            if dom.find(paragraph, "strong", recursive=False):
                 continue
 
-            if any(isinstance(child, Tag) and child.name != "br" for child in paragraph.contents):
+            if any(
+                dom.is_tag(child) and child.tag != "br"
+                for child in dom.children(paragraph)
+            ):
                 continue
 
-            text = IntermediateParser._clean_text(paragraph.get_text(" ", strip=True))
+            text = IntermediateParser._clean_text(dom.text(paragraph, " ", strip=True))
             if not text:
                 continue
 
@@ -698,22 +729,22 @@ class IntermediateParser(object):
             ):
                 continue
 
-            strong = document.new_tag("strong")
-            strong.string = text
-            paragraph.clear()
-            paragraph.append(strong)
+            strong = document.parser.create_node("strong")
+            dom.set_text(strong, text)
+            dom.clear(paragraph)
+            paragraph.insert_child(strong)
 
     @staticmethod
-    def _normalize_policy_outline_blocks(document: BeautifulSoup) -> None:
-        body = document.body
+    def _normalize_policy_outline_blocks(document: LexborNode) -> None:
+        body = dom.find(document, "body")
         if not body:
             return
 
-        children = list(body.find_all(recursive=False))
+        children = list(dom.find_all(body, recursive=False))
         index = 0
         while index < len(children):
             child = children[index]
-            if child.name != "p":
+            if child.tag != "p":
                 index += 1
                 continue
 
@@ -738,7 +769,7 @@ class IntermediateParser(object):
                 for new_node in new_nodes:
                     child.insert_before(new_node)
                 child.decompose()
-                children = list(body.find_all(recursive=False))
+                children = list(dom.find_all(body, recursive=False))
                 index += len(new_nodes)
                 continue
 
@@ -746,13 +777,17 @@ class IntermediateParser(object):
             next_index = index + 1
             while next_index < len(children):
                 sibling = children[next_index]
-                if sibling.name == "br":
+                if sibling.tag == "br":
                     sequence.append(sibling)
                     next_index += 1
                     continue
-                if sibling.name == "p":
-                    sibling_fragments = IntermediateParser._policy_outline_fragments_from_tag(sibling)
-                    pending_role = IntermediateParser._policy_outline_pending_role(sequence)
+                if sibling.tag == "p":
+                    sibling_fragments = (
+                        IntermediateParser._policy_outline_fragments_from_tag(sibling)
+                    )
+                    pending_role = IntermediateParser._policy_outline_pending_role(
+                        sequence
+                    )
                     if sibling_fragments and (
                         IntermediateParser._looks_like_policy_outline_fragment_block(
                             sibling_fragments
@@ -788,18 +823,18 @@ class IntermediateParser(object):
                     first.insert_before(new_node)
                 for node in sequence:
                     node.decompose()
-                children = list(body.find_all(recursive=False))
+                children = list(dom.find_all(body, recursive=False))
                 index += len(new_nodes)
                 continue
 
             index = next_index
 
     @staticmethod
-    def _policy_outline_fragments_from_tag(tag: Tag) -> list[str]:
-        if tag.name != "p":
+    def _policy_outline_fragments_from_tag(tag: LexborNode) -> list[str]:
+        if tag.tag != "p":
             return []
 
-        text = tag.get_text("\n", strip=True)
+        text = dom.text(tag, "\n", strip=True)
         return [
             IntermediateParser._clean_text(fragment)
             for fragment in text.split("\n")
@@ -820,12 +855,16 @@ class IntermediateParser(object):
         )
 
     @staticmethod
-    def _parse_policy_outline_lines(sequence: list[Tag]) -> list[tuple[str, str]]:
+    def _parse_policy_outline_lines(
+        sequence: list[LexborNode],
+    ) -> list[tuple[str, str]]:
         fragments = []
         for node in sequence:
-            if node.name != "p":
+            if node.tag != "p":
                 continue
-            fragments.extend(IntermediateParser._policy_outline_fragments_from_tag(node))
+            fragments.extend(
+                IntermediateParser._policy_outline_fragments_from_tag(node)
+            )
 
         values, _ = IntermediateParser._policy_outline_state_from_fragments(fragments)
         lines = []
@@ -836,18 +875,22 @@ class IntermediateParser(object):
         return lines
 
     @staticmethod
-    def _policy_outline_pending_role(sequence: list[Tag]) -> str | None:
+    def _policy_outline_pending_role(sequence: list[LexborNode]) -> str | None:
         fragments = []
         for node in sequence:
-            if node.name != "p":
+            if node.tag != "p":
                 continue
-            fragments.extend(IntermediateParser._policy_outline_fragments_from_tag(node))
+            fragments.extend(
+                IntermediateParser._policy_outline_fragments_from_tag(node)
+            )
 
-        _, pending_role = IntermediateParser._policy_outline_state_from_fragments(fragments)
+        _, pending_role = IntermediateParser._policy_outline_state_from_fragments(
+            fragments
+        )
         return pending_role
 
     @staticmethod
-    def _policy_outline_has_any_role(sequence: list[Tag]) -> bool:
+    def _policy_outline_has_any_role(sequence: list[LexborNode]) -> bool:
         return bool(IntermediateParser._parse_policy_outline_lines(sequence))
 
     @staticmethod
@@ -871,7 +914,9 @@ class IntermediateParser(object):
 
             if current_role:
                 existing = values.get(current_role, "")
-                values[current_role] = f"{existing} {normalized}".strip() if existing else normalized
+                values[current_role] = (
+                    f"{existing} {normalized}".strip() if existing else normalized
+                )
 
         pending_role = (
             current_role
@@ -881,41 +926,43 @@ class IntermediateParser(object):
         return values, pending_role
 
     @staticmethod
-    def _new_policy_outline_paragraph(document: BeautifulSoup, line: tuple[str, str]) -> Tag:
+    def _new_policy_outline_paragraph(
+        document: LexborNode, line: tuple[str, str]
+    ) -> LexborNode:
         role, value = line
-        paragraph = document.new_tag("p")
+        paragraph = document.parser.create_node("p")
 
         if role == "PO":
-            strong = document.new_tag("strong")
-            strong.string = f"{role} {value}"
-            paragraph.append(strong)
+            strong = document.parser.create_node("strong")
+            dom.set_text(strong, f"{role} {value}")
+            paragraph.insert_child(strong)
             return paragraph
 
         if role == "VO":
-            strong = document.new_tag("strong")
-            emphasis = document.new_tag("em")
-            emphasis.string = f"{role} {value}"
-            strong.append(emphasis)
-            paragraph.append(strong)
+            strong = document.parser.create_node("strong")
+            emphasis = document.parser.create_node("em")
+            dom.set_text(emphasis, f"{role} {value}")
+            strong.insert_child(emphasis)
+            paragraph.insert_child(strong)
             return paragraph
 
-        emphasis = document.new_tag("em")
-        emphasis.string = f"{role} {value}"
-        paragraph.append(emphasis)
+        emphasis = document.parser.create_node("em")
+        dom.set_text(emphasis, f"{role} {value}")
+        paragraph.insert_child(emphasis)
         return paragraph
 
     @staticmethod
-    def _normalize_footer_signature_tables(document: BeautifulSoup) -> None:
-        body = document.body
+    def _normalize_footer_signature_tables(document: LexborNode) -> None:
+        body = dom.find(document, "body")
         if not body:
             return
 
-        children = list(body.find_all(recursive=False))
+        children = list(dom.find_all(body, recursive=False))
         for index, child in enumerate(children[:-1]):
-            if child.name != "p":
+            if child.tag != "p":
                 continue
 
-            text = IntermediateParser._clean_text(child.get_text(" ", strip=True))
+            text = IntermediateParser._clean_text(dom.text(child, " ", strip=True))
             if text != "På regeringens vägnar":
                 continue
 
@@ -925,10 +972,12 @@ class IntermediateParser(object):
 
             paragraphs = []
             for row in IntermediateParser._table_rows(table):
-                cell = row.find(["td", "th"], recursive=False)
+                cell = dom.find(row, ["td", "th"], recursive=False)
                 if not cell:
                     continue
-                cell_text = IntermediateParser._clean_text(cell.get_text(" ", strip=True))
+                cell_text = IntermediateParser._clean_text(
+                    dom.text(cell, " ", strip=True)
+                )
                 if not cell_text:
                     continue
                 paragraphs.append(IntermediateParser._new_paragraph(cell_text))
@@ -943,8 +992,8 @@ class IntermediateParser(object):
             table.decompose()
 
     @staticmethod
-    def _is_simple_signature_table(tag: Tag) -> bool:
-        if tag.name != "table":
+    def _is_simple_signature_table(tag: LexborNode) -> bool:
+        if tag.tag != "table":
             return False
 
         rows = IntermediateParser._table_rows(tag)
@@ -952,46 +1001,48 @@ class IntermediateParser(object):
             return False
 
         for row in rows:
-            cells = row.find_all(["td", "th"], recursive=False)
+            cells = dom.find_all(row, ["td", "th"], recursive=False)
             if len(cells) != 1:
                 return False
 
             cell = cells[0]
-            if cell.get("rowspan") or cell.get("colspan"):
+            if dom.get_attr(cell, "rowspan") or dom.get_attr(cell, "colspan"):
                 return False
 
-            if any(isinstance(desc, Tag) and desc.name not in {"br"} for desc in cell.find_all(True)):
+            if any(
+                dom.is_tag(desc) and desc.tag not in {"br"}
+                for desc in dom.find_all(cell, True)
+            ):
                 return False
 
         return True
 
     @staticmethod
-    def _preserve_italic_semantics(fragment: BeautifulSoup) -> None:
-        for tag in fragment.find_all(True):
-            classes = set(tag.get("class", []))
+    def _preserve_italic_semantics(fragment: LexborNode) -> None:
+        for tag in dom.find_all(fragment, True):
+            classes = set(dom.get_attr(tag, "class", []))
             if "italic" not in classes:
                 continue
 
             has_em_child = any(
-                isinstance(child, Tag) and child.name == "em"
-                for child in tag.contents
+                dom.is_tag(child) and child.tag == "em" for child in dom.children(tag)
             )
             if has_em_child:
                 continue
 
-            text = IntermediateParser._clean_text(tag.get_text(" ", strip=True))
+            text = IntermediateParser._clean_text(dom.text(tag, " ", strip=True))
             if not text:
                 continue
 
-            tag.clear()
-            emphasis = fragment.new_tag("em")
-            emphasis.string = text
-            tag.append(emphasis)
+            dom.clear(tag)
+            emphasis = fragment.parser.create_node("em")
+            dom.set_text(emphasis, text)
+            tag.insert_child(emphasis)
 
     @staticmethod
-    def _promote_footnotes(fragment: BeautifulSoup) -> None:
-        for tag in list(fragment.find_all(True)):
-            classes = set(tag.get("class", []))
+    def _promote_footnotes(fragment: LexborNode) -> None:
+        for tag in list(dom.find_all(fragment, True)):
+            classes = set(dom.get_attr(tag, "class", []))
             if "fotnot" not in classes:
                 continue
 
@@ -1002,11 +1053,11 @@ class IntermediateParser(object):
 
             paragraphs = []
             for line in lines:
-                paragraph = fragment.new_tag("p")
-                emphasis = fragment.new_tag("em")
+                paragraph = fragment.parser.create_node("p")
+                emphasis = fragment.parser.create_node("em")
                 for node in line:
-                    emphasis.append(node)
-                paragraph.append(emphasis)
+                    emphasis.insert_child(node)
+                paragraph.insert_child(emphasis)
                 paragraphs.append(paragraph)
 
             replacement = paragraphs[0]
@@ -1017,45 +1068,49 @@ class IntermediateParser(object):
                 current = paragraph
 
     @staticmethod
-    def _extract_footnote_lines(tag: Tag) -> list[list[Tag | NavigableString]]:
-        lines: list[list[Tag | NavigableString]] = [[]]
+    def _extract_footnote_lines(tag: LexborNode) -> list[list[LexborNode | str]]:
+        lines: list[list[LexborNode | str]] = [[]]
 
-        for child in list(tag.contents):
-            if isinstance(child, Tag) and child.name == "br":
+        for child in list(dom.children(tag)):
+            if dom.is_tag(child) and child.tag == "br":
                 if lines[-1]:
                     lines.append([])
-                child.extract()
+                child = dom.detach(child)
                 continue
 
-            if isinstance(child, NavigableString):
-                text = IntermediateParser._clean_text(str(child))
-                child.extract()
+            if dom.is_text(child):
+                text = IntermediateParser._clean_text(dom.markup(child))
+                child = dom.detach(child)
                 if not text:
                     continue
-                node = NavigableString(text)
+                node = str(text)
                 if (
                     lines[-1]
-                    and isinstance(lines[-1][-1], Tag)
-                    and lines[-1][-1].name == "sup"
+                    and dom.is_tag(lines[-1][-1])
+                    and lines[-1][-1].tag == "sup"
                 ):
-                    lines[-1].append(NavigableString(f" {text}"))
+                    lines[-1].append(str(f" {text}"))
                 else:
                     lines[-1].append(node)
                 continue
 
-            child.extract()
-            child.attrs = {}
+            child = dom.detach(child)
+            dom.set_attrs(child, {})
             lines[-1].append(child)
 
-        return [line for line in lines if any(IntermediateParser._clean_text(str(node)) for node in line)]
+        return [
+            line
+            for line in lines
+            if any(IntermediateParser._clean_text(dom.markup(node)) for node in line)
+        ]
 
     @staticmethod
-    def _normalize_anslag_summary_tables(document: BeautifulSoup) -> None:
-        body = document.body
+    def _normalize_anslag_summary_tables(document: LexborNode) -> None:
+        body = dom.find(document, "body")
         if not body:
             return
 
-        children = list(body.find_all(recursive=False))
+        children = list(dom.find_all(body, recursive=False))
         i = 0
 
         while i < len(children):
@@ -1064,32 +1119,36 @@ class IntermediateParser(object):
                 i += 1
                 continue
 
-            current_level = int(tag.name[1])
+            current_level = int(tag.tag[1])
             j = i + 1
             while j < len(children):
                 next_tag = children[j]
                 if IntermediateParser._is_heading(next_tag):
-                    next_level = int(next_tag.name[1])
+                    next_level = int(next_tag.tag[1])
                     if next_level <= current_level:
                         break
                 j += 1
 
             region = children[i + 1 : j]
             IntermediateParser._normalize_anslag_region(document, region)
-            children = list(body.find_all(recursive=False))
+            children = list(dom.find_all(body, recursive=False))
             i = j
 
     @staticmethod
-    def _normalize_anslag_region(document: BeautifulSoup, region: list[Tag]) -> None:
+    def _normalize_anslag_region(
+        document: LexborNode, region: list[LexborNode]
+    ) -> None:
         i = 0
         while i < len(region):
             tag = region[i]
             if IntermediateParser._is_anslag_title_paragraph(tag):
-                title_paragraph, normalized_table, consumed = IntermediateParser._build_anslag_table_from_sequence(
-                    document,
-                    tag,
-                    region,
-                    i,
+                title_paragraph, normalized_table, consumed = (
+                    IntermediateParser._build_anslag_table_from_sequence(
+                        document,
+                        tag,
+                        region,
+                        i,
+                    )
                 )
                 if normalized_table:
                     tag.replace_with(title_paragraph)
@@ -1100,11 +1159,13 @@ class IntermediateParser(object):
                     continue
 
             if IntermediateParser._is_anslag_title_table(tag):
-                title_paragraph, normalized_table, consumed = IntermediateParser._build_anslag_table_from_sequence(
-                    document,
-                    tag,
-                    region,
-                    i,
+                title_paragraph, normalized_table, consumed = (
+                    IntermediateParser._build_anslag_table_from_sequence(
+                        document,
+                        tag,
+                        region,
+                        i,
+                    )
                 )
                 if normalized_table:
                     tag.replace_with(title_paragraph)
@@ -1115,9 +1176,11 @@ class IntermediateParser(object):
                     continue
 
             if IntermediateParser._is_combined_anslag_table(tag):
-                title_paragraph, normalized_table = IntermediateParser._build_anslag_table_from_combined_table(
-                    document,
-                    tag,
+                title_paragraph, normalized_table = (
+                    IntermediateParser._build_anslag_table_from_combined_table(
+                        document,
+                        tag,
+                    )
                 )
                 if normalized_table and title_paragraph:
                     tag.replace_with(title_paragraph)
@@ -1127,11 +1190,11 @@ class IntermediateParser(object):
 
     @staticmethod
     def _build_anslag_table_from_sequence(
-        document: BeautifulSoup,
-        title_tag: Tag,
-        region: list[Tag],
+        document: LexborNode,
+        title_tag: LexborNode,
+        region: list[LexborNode],
         start_index: int,
-    ) -> tuple[Tag | None, Tag | None, int]:
+    ) -> tuple[LexborNode | None, LexborNode | None, int]:
         anslag_code, anslag_name = IntermediateParser._parse_anslag_title(title_tag)
         if not anslag_code or not anslag_name:
             return None, None, 0
@@ -1186,14 +1249,16 @@ class IntermediateParser(object):
             IntermediateParser._build_anslag_title_paragraph(
                 document, f"{anslag_code} {anslag_name}"
             ),
-            IntermediateParser._build_merged_anslag_table(document, ap_header, table_rows),
+            IntermediateParser._build_merged_anslag_table(
+                document, ap_header, table_rows
+            ),
             consumed,
         )
 
     @staticmethod
     def _build_anslag_table_from_combined_table(
-        document: BeautifulSoup, table: Tag
-    ) -> tuple[Tag | None, Tag | None]:
+        document: LexborNode, table: LexborNode
+    ) -> tuple[LexborNode | None, LexborNode | None]:
         anslag_code = ""
         anslag_name = ""
         first_title = IntermediateParser._parse_anslag_title(table)
@@ -1219,105 +1284,109 @@ class IntermediateParser(object):
 
     @staticmethod
     def _build_merged_anslag_table(
-        document: BeautifulSoup, ap_header: list[str] | None, rows: list[tuple]
-    ) -> Tag:
-        table = document.new_tag("table")
-        tbody = document.new_tag("tbody")
-        table.append(tbody)
+        document: LexborNode, ap_header: list[str] | None, rows: list[tuple]
+    ) -> LexborNode:
+        table = document.parser.create_node("table")
+        tbody = document.parser.create_node("tbody")
+        table.insert_child(tbody)
 
         if ap_header:
-            header_row = document.new_tag("tr")
+            header_row = document.parser.create_node("tr")
             for label in ap_header:
-                th = document.new_tag("th")
-                th.string = label
-                header_row.append(th)
-            tbody.append(header_row)
+                th = document.parser.create_node("th")
+                dom.set_text(th, label)
+                header_row.insert_child(th)
+            tbody.insert_child(header_row)
 
         for row_data in rows:
             kind = row_data[0]
-            tr = document.new_tag("tr")
+            tr = document.parser.create_node("tr")
             if kind == "disposition":
-                left = document.new_tag("td")
-                left["colspan"] = "2"
-                left.string = row_data[1]
-                amount = document.new_tag("td")
-                amount.string = row_data[2]
-                tr.append(left)
-                tr.append(amount)
+                left = document.parser.create_node("td")
+                dom.set_attr(left, "colspan", "2")
+                dom.set_text(left, row_data[1])
+                amount = document.parser.create_node("td")
+                dom.set_text(amount, row_data[2])
+                tr.insert_child(left)
+                tr.insert_child(amount)
             elif kind == "ap":
                 for value in row_data[1:]:
-                    td = document.new_tag("td")
-                    td.string = value
-                    tr.append(td)
-            tbody.append(tr)
+                    td = document.parser.create_node("td")
+                    dom.set_text(td, value)
+                    tr.insert_child(td)
+            tbody.insert_child(tr)
 
         return table
 
     @staticmethod
-    def _is_tilldelade_anslag_heading(tag: Tag) -> bool:
+    def _is_tilldelade_anslag_heading(tag: LexborNode) -> bool:
         return IntermediateParser._is_heading(tag) and "tilldelade anslag" in (
-            IntermediateParser._clean_text(tag.get_text(" ", strip=True)).lower()
+            IntermediateParser._clean_text(dom.text(tag, " ", strip=True)).lower()
         )
 
     @staticmethod
-    def _is_heading(tag: Tag) -> bool:
-        return tag.name in {"h1", "h2", "h3", "h4", "h5", "h6"}
+    def _is_heading(tag: LexborNode) -> bool:
+        return tag.tag in {"h1", "h2", "h3", "h4", "h5", "h6"}
 
     @staticmethod
-    def _is_anslag_title_paragraph(tag: Tag) -> bool:
-        if tag.name != "p":
+    def _is_anslag_title_paragraph(tag: LexborNode) -> bool:
+        if tag.tag != "p":
             return False
-        strong = tag.find("strong", recursive=False)
+        strong = dom.find(tag, "strong", recursive=False)
         if not strong:
             return False
-        text = IntermediateParser._clean_text(strong.get_text(" ", strip=True))
+        text = IntermediateParser._clean_text(dom.text(strong, " ", strip=True))
         return bool(re.match(r"^\d+:\d+\s", text))
 
     @staticmethod
-    def _is_anslag_title_table(tag: Tag) -> bool:
-        if tag.name != "table":
+    def _is_anslag_title_table(tag: LexborNode) -> bool:
+        if tag.tag != "table":
             return False
         rows = IntermediateParser._table_rows(tag)
         if len(rows) != 1:
             return False
-        cells = rows[0].find_all(["td", "th"], recursive=False)
+        cells = dom.find_all(rows[0], ["td", "th"], recursive=False)
         if len(cells) != 2:
             return False
-        first = IntermediateParser._clean_text(cells[0].get_text(" ", strip=True))
-        second = IntermediateParser._clean_text(cells[1].get_text(" ", strip=True))
-        return bool(re.fullmatch(r"\d+:\d+", first) and second and not second.startswith("Disponeras av"))
+        first = IntermediateParser._clean_text(dom.text(cells[0], " ", strip=True))
+        second = IntermediateParser._clean_text(dom.text(cells[1], " ", strip=True))
+        return bool(
+            re.fullmatch(r"\d+:\d+", first)
+            and second
+            and not second.startswith("Disponeras av")
+        )
 
     @staticmethod
-    def _is_combined_anslag_table(tag: Tag) -> bool:
-        if tag.name != "table":
+    def _is_combined_anslag_table(tag: LexborNode) -> bool:
+        if tag.tag != "table":
             return False
-        text = IntermediateParser._clean_text(tag.get_text(" ", strip=True))
+        text = IntermediateParser._clean_text(dom.text(tag, " ", strip=True))
         return "Disponeras av" in text and bool(re.search(r"\bap\.\d+", text))
 
     @staticmethod
-    def _is_anslag_disposition_table(tag: Tag) -> bool:
-        if tag.name != "table":
+    def _is_anslag_disposition_table(tag: LexborNode) -> bool:
+        if tag.tag != "table":
             return False
         rows = IntermediateParser._table_rows(tag)
         if not rows:
             return False
         first_row = rows[0]
-        first_cell = first_row.find(["td", "th"], recursive=False)
+        first_cell = dom.find(first_row, ["td", "th"], recursive=False)
         if not first_cell:
             return False
-        text = IntermediateParser._clean_text(first_cell.get_text(" ", strip=True))
+        text = IntermediateParser._clean_text(dom.text(first_cell, " ", strip=True))
         return text.startswith("Disponeras av")
 
     @staticmethod
-    def _is_anslag_ap_table(tag: Tag) -> bool:
-        if tag.name != "table":
+    def _is_anslag_ap_table(tag: LexborNode) -> bool:
+        if tag.tag != "table":
             return False
         return bool(IntermediateParser._parse_ap_rows(tag))
 
     @staticmethod
-    def _parse_anslag_title(tag: Tag) -> tuple[str, str]:
-        if tag.name == "p":
-            text = IntermediateParser._clean_text(tag.get_text(" ", strip=True))
+    def _parse_anslag_title(tag: LexborNode) -> tuple[str, str]:
+        if tag.tag == "p":
+            text = IntermediateParser._clean_text(dom.text(tag, " ", strip=True))
             match = re.match(r"^(\d+:\d+)\s+(.+)$", text)
             if match:
                 return match.group(1), match.group(2)
@@ -1327,23 +1396,23 @@ class IntermediateParser(object):
         if not rows:
             return "", ""
         row = rows[0]
-        cells = row.find_all(["td", "th"], recursive=False)
+        cells = dom.find_all(row, ["td", "th"], recursive=False)
         if len(cells) != 2:
             return "", ""
         return (
-            IntermediateParser._clean_text(cells[0].get_text(" ", strip=True)),
-            IntermediateParser._clean_text(cells[1].get_text(" ", strip=True)),
+            IntermediateParser._clean_text(dom.text(cells[0], " ", strip=True)),
+            IntermediateParser._clean_text(dom.text(cells[1], " ", strip=True)),
         )
 
     @staticmethod
-    def _parse_disposition_row(tag: Tag) -> tuple[str, str] | None:
+    def _parse_disposition_row(tag: LexborNode) -> tuple[str, str] | None:
         rows = IntermediateParser._table_rows(tag)
         if not rows:
             return None
         row = rows[0]
         cells = [
-            IntermediateParser._clean_text(cell.get_text(" ", strip=True))
-            for cell in row.find_all(["td", "th"], recursive=False)
+            IntermediateParser._clean_text(dom.text(cell, " ", strip=True))
+            for cell in dom.find_all(row, ["td", "th"], recursive=False)
         ]
         cells = [cell for cell in cells if cell]
         if not cells or not cells[0].startswith("Disponeras av"):
@@ -1351,18 +1420,22 @@ class IntermediateParser(object):
         return cells[0], cells[-1] if len(cells) > 1 else ""
 
     @staticmethod
-    def _parse_ap_rows(tag: Tag) -> tuple[list[str] | None, list[tuple[str, str, str, str]]]:
+    def _parse_ap_rows(
+        tag: LexborNode,
+    ) -> tuple[list[str] | None, list[tuple[str, str, str, str]]]:
         header = None
         rows = []
         for index, row in enumerate(IntermediateParser._table_rows(tag)):
             cells = [
-                IntermediateParser._clean_text(cell.get_text(" ", strip=True))
-                for cell in row.find_all(["td", "th"], recursive=False)
+                IntermediateParser._clean_text(dom.text(cell, " ", strip=True))
+                for cell in dom.find_all(row, ["td", "th"], recursive=False)
             ]
             cells = [cell for cell in cells if cell]
             if not cells:
                 continue
-            if index == 0 and not re.fullmatch(r"(?:\d+:\d+\s+)?ap\.\d+(?:\.\d+)?", cells[0]):
+            if index == 0 and not re.fullmatch(
+                r"(?:\d+:\d+\s+)?ap\.\d+(?:\.\d+)?", cells[0]
+            ):
                 if len(cells) >= 3:
                     header = cells[:3]
                 continue
@@ -1380,7 +1453,7 @@ class IntermediateParser(object):
 
     @staticmethod
     def _parse_combined_ap_rows(
-        tag: Tag,
+        tag: LexborNode,
         initial_disposition: str,
         initial_disposition_amount: str,
     ) -> tuple[list[str] | None, list[tuple]]:
@@ -1391,14 +1464,18 @@ class IntermediateParser(object):
 
         for index, row in enumerate(IntermediateParser._table_rows(tag)):
             cells = [
-                IntermediateParser._clean_text(cell.get_text(" ", strip=True))
-                for cell in row.find_all(["td", "th"], recursive=False)
+                IntermediateParser._clean_text(dom.text(cell, " ", strip=True))
+                for cell in dom.find_all(row, ["td", "th"], recursive=False)
             ]
             cells = [cell for cell in cells if cell]
             if not cells:
                 continue
 
-            if index == 0 and len(cells) >= 3 and cells[0].lower() in {"nomenklatur", "anslag/ap", "anslag/ap/dp"}:
+            if (
+                index == 0
+                and len(cells) >= 3
+                and cells[0].lower() in {"nomenklatur", "anslag/ap", "anslag/ap/dp"}
+            ):
                 header = cells[:3]
                 continue
 
@@ -1426,26 +1503,28 @@ class IntermediateParser(object):
         return header, rows
 
     @staticmethod
-    def _build_disposition_table_row(disposition: str, amount: str) -> tuple[str, str, str]:
+    def _build_disposition_table_row(
+        disposition: str, amount: str
+    ) -> tuple[str, str, str]:
         return ("disposition", disposition, amount)
 
     @staticmethod
-    def _build_anslag_title_paragraph(document: BeautifulSoup, text: str) -> Tag:
-        paragraph = document.new_tag("p")
-        strong = document.new_tag("strong")
-        strong.string = text
-        paragraph.append(strong)
+    def _build_anslag_title_paragraph(document: LexborNode, text: str) -> LexborNode:
+        paragraph = document.parser.create_node("p")
+        strong = document.parser.create_node("strong")
+        dom.set_text(strong, text)
+        paragraph.insert_child(strong)
         return paragraph
 
     @staticmethod
-    def _table_rows(table: Tag) -> list[Tag]:
-        rows = table.find_all("tr", recursive=False)
+    def _table_rows(table: LexborNode) -> list[LexborNode]:
+        rows = dom.find_all(table, "tr", recursive=False)
         if rows:
             return rows
 
         for section_name in ("thead", "tbody"):
-            section = table.find(section_name, recursive=False)
+            section = dom.find(table, section_name, recursive=False)
             if section:
-                rows.extend(section.find_all("tr", recursive=False))
+                rows.extend(dom.find_all(section, "tr", recursive=False))
 
         return rows

@@ -1,6 +1,8 @@
 import re
 
-from bs4 import BeautifulSoup, Tag
+from selectolax.lexbor import LexborNode
+
+from services import html_dom as dom
 
 
 class XHTMLOutlineNormalizer(object):
@@ -22,22 +24,22 @@ class XHTMLOutlineNormalizer(object):
     }
 
     @staticmethod
-    def normalize(document: BeautifulSoup, clean_text) -> None:
-        body = document.body
+    def normalize(document: LexborNode, clean_text) -> None:
+        body = dom.find(document, "body")
         if not body:
             return
 
         XHTMLOutlineNormalizer._merge_split_sibling_headings(body, clean_text)
 
-        headings = list(body.find_all(re.compile(r"^h[1-6]$"), recursive=False))
+        headings = list(dom.find_all(body, re.compile("^h[1-6]$"), recursive=False))
         if not headings:
             return
 
-        headings[0].name = "h1"
-        headings[0]["class"] = "document-title"
+        headings[0] = dom.rename(headings[0], "h1")
+        dom.set_attr(headings[0], "class", "document-title")
 
         for heading in headings[1:]:
-            text = clean_text(heading.get_text(" ", strip=True))
+            text = clean_text(dom.text(heading, " ", strip=True))
             if not text:
                 continue
 
@@ -47,10 +49,12 @@ class XHTMLOutlineNormalizer(object):
                 )
                 continue
 
-            major_division = XHTMLOutlineNormalizer._normalize_major_division_title(text)
+            major_division = XHTMLOutlineNormalizer._normalize_major_division_title(
+                text
+            )
             if major_division:
-                heading.name = "h2"
-                heading.string = major_division
+                heading = dom.rename(heading, "h2")
+                dom.set_text(heading, major_division)
                 continue
 
             if XHTMLOutlineNormalizer._is_local_numbered_label(text):
@@ -61,7 +65,7 @@ class XHTMLOutlineNormalizer(object):
 
             numbered_level = XHTMLOutlineNormalizer._numbered_outline_level(text)
             if numbered_level is not None:
-                heading.name = f"h{numbered_level}"
+                heading = dom.rename(heading, f"h{numbered_level}")
                 continue
 
             XHTMLOutlineNormalizer._replace_heading_with_strong_paragraph(
@@ -69,24 +73,24 @@ class XHTMLOutlineNormalizer(object):
             )
 
     @staticmethod
-    def _merge_split_sibling_headings(body: Tag, clean_text) -> None:
+    def _merge_split_sibling_headings(body: LexborNode, clean_text) -> None:
         changed = True
         while changed:
             changed = False
-            headings = list(body.find_all(re.compile(r"^h[1-6]$"), recursive=False))
+            headings = list(dom.find_all(body, re.compile("^h[1-6]$"), recursive=False))
             for first, second in zip(headings, headings[1:]):
-                if first.find_next_sibling() is not second:
+                if dom.next_sibling(first) != second:
                     continue
 
-                first_text = clean_text(first.get_text(" ", strip=True))
-                second_text = clean_text(second.get_text(" ", strip=True))
+                first_text = clean_text(dom.text(first, " ", strip=True))
+                second_text = clean_text(dom.text(second, " ", strip=True))
                 if not (
                     XHTMLOutlineNormalizer._is_split_heading_prefix(first_text)
                     and second_text
                 ):
                     continue
 
-                first.string = f"{first_text} {second_text}"
+                dom.set_text(first, f"{first_text} {second_text}")
                 second.decompose()
                 changed = True
                 break
@@ -94,8 +98,7 @@ class XHTMLOutlineNormalizer(object):
     @staticmethod
     def _is_split_heading_prefix(text: str) -> bool:
         return bool(
-            re.fullmatch(r"\d+(?:\.\d+)*", text)
-            or re.fullmatch(r"\d+:\d+", text)
+            re.fullmatch(r"\d+(?:\.\d+)*", text) or re.fullmatch(r"\d+:\d+", text)
         )
 
     @staticmethod
@@ -105,8 +108,7 @@ class XHTMLOutlineNormalizer(object):
             return True
 
         return bool(
-            re.fullmatch(r"mål(?: \d+)?", normalized)
-            or normalized.startswith("mål - ")
+            re.fullmatch(r"mål(?: \d+)?", normalized) or normalized.startswith("mål - ")
         )
 
     @staticmethod
@@ -114,18 +116,20 @@ class XHTMLOutlineNormalizer(object):
         return bool(re.match(r"^\d+\.\s+\S", text))
 
     @staticmethod
-    def _replace_heading_with_strong_paragraph(heading: Tag, clean_text) -> None:
-        soup = BeautifulSoup("", "html.parser")
-        paragraph = soup.new_tag("p")
-        strong = soup.new_tag("strong")
+    def _replace_heading_with_strong_paragraph(heading: LexborNode, clean_text) -> None:
+        soup = dom.parse_html("")
+        paragraph = soup.parser.create_node("p")
+        strong = soup.parser.create_node("strong")
 
-        if any(isinstance(child, Tag) and child.name == "em" for child in heading.contents):
-            for child in list(heading.contents):
-                strong.append(child.extract())
+        if any(
+            dom.is_tag(child) and child.tag == "em" for child in dom.children(heading)
+        ):
+            for child in list(dom.children(heading)):
+                strong.insert_child(dom.detach(child))
         else:
-            strong.string = clean_text(heading.get_text(" ", strip=True))
+            dom.set_text(strong, clean_text(dom.text(heading, " ", strip=True)))
 
-        paragraph.append(strong)
+        paragraph.insert_child(strong)
         heading.replace_with(paragraph)
 
     @staticmethod
