@@ -1,11 +1,10 @@
 import re
 import unittest
 from pathlib import Path
+from xml.etree import ElementTree
 
-from bs4 import BeautifulSoup, Tag
-
+from services import html_dom as dom
 from services.intermediate_parser import IntermediateParser
-
 
 ROOT = Path(__file__).resolve().parents[1]
 SAMPLE_RBIDS = [240, 5071, 8103, 8817, 8844, 8899, 21762, 26297]
@@ -21,70 +20,83 @@ class IntermediateParserTests(unittest.TestCase):
         for rbid in SAMPLE_RBIDS:
             with self.subTest(rbid=rbid):
                 xhtml = IntermediateParser.parse_letter_html(load_letter_html(rbid))
-                soup = BeautifulSoup(xhtml, "html.parser")
+                soup = dom.parse_html(xhtml)
 
-                self.assertIsNotNone(soup.find("body"))
-                self.assertIsNone(soup.find("img"))
+                self.assertIsNotNone(dom.find(soup, "body"))
+                self.assertIsNone(dom.find(soup, "img"))
 
-                for tag in soup.find_all(True):
-                    self.assertIn(tag.name, ALLOWED_TAGS)
-                    if tag.name == "a":
-                        self.assertLessEqual(set(tag.attrs.keys()), {"href"})
-                    elif tag.name == "table":
-                        self.assertLessEqual(set(tag.attrs.keys()), {"class"})
-                    elif tag.name == "td":
+                # Inspect the emitted XML directly: an HTML parser would insert
+                # a head element even though it is absent from the XHTML.
+                for tag in ElementTree.fromstring(xhtml).iter():
+                    self.assertIn(tag.tag, ALLOWED_TAGS)
+                    if tag.tag == "a":
+                        self.assertLessEqual(set(tag.attrib.keys()), {"href"})
+                    elif tag.tag == "table":
+                        self.assertLessEqual(set(tag.attrib.keys()), {"class"})
+                    elif tag.tag == "td":
                         self.assertLessEqual(
-                            set(tag.attrs.keys()),
+                            set(tag.attrib.keys()),
                             {"class", "rowspan", "colspan"},
                         )
-                    elif tag.name == "th":
+                    elif tag.tag == "th":
                         self.assertLessEqual(
-                            set(tag.attrs.keys()),
+                            set(tag.attrib.keys()),
                             {"rowspan", "colspan", "scope"},
                         )
-                    elif tag.name in {"h1", "p"}:
-                        self.assertLessEqual(set(tag.attrs.keys()), {"class"})
-                    elif tag.name == "sup":
-                        self.assertEqual(tag.attrs, {})
+                    elif tag.tag in {"h1", "p"}:
+                        self.assertLessEqual(set(tag.attrib.keys()), {"class"})
+                    elif tag.tag == "sup":
+                        self.assertEqual(tag.attrib, {})
                     else:
-                        self.assertEqual(tag.attrs, {})
+                        self.assertEqual(tag.attrib, {})
 
     def test_sample_variants_preserve_basic_structure(self) -> None:
         for rbid in SAMPLE_RBIDS:
             with self.subTest(rbid=rbid):
                 xhtml = IntermediateParser.parse_letter_html(load_letter_html(rbid))
-                soup = BeautifulSoup(xhtml, "html.parser")
+                soup = dom.parse_html(xhtml)
 
-                self.assertIsNotNone(soup.find(re.compile(r"^h[1-6]$")))
-                self.assertIsNotNone(soup.find("p"))
+                self.assertIsNotNone(dom.find(soup, re.compile("^h[1-6]$")))
+                self.assertIsNotNone(dom.find(soup, "p"))
 
     def test_sample_variants_do_not_nest_block_tags_inside_paragraphs(self) -> None:
-        blocked_children = {"h1", "h2", "h3", "h4", "h5", "h6", "p", "table", "ul", "ol"}
+        blocked_children = {
+            "h1",
+            "h2",
+            "h3",
+            "h4",
+            "h5",
+            "h6",
+            "p",
+            "table",
+            "ul",
+            "ol",
+        }
 
         for rbid in SAMPLE_RBIDS:
             with self.subTest(rbid=rbid):
                 xhtml = IntermediateParser.parse_letter_html(load_letter_html(rbid))
-                soup = BeautifulSoup(xhtml, "html.parser")
+                soup = dom.parse_html(xhtml)
 
-                for paragraph in soup.find_all("p"):
+                for paragraph in dom.find_all(soup, "p"):
                     self.assertFalse(
                         any(
-                            child.name in blocked_children
-                            for child in paragraph.children
-                            if getattr(child, "name", None)
+                            child.tag in blocked_children
+                            for child in dom.children(paragraph)
+                            if dom.is_tag(child)
                         )
                     )
 
     def test_modern_sectioned_sample_keeps_title(self) -> None:
         xhtml = IntermediateParser.parse_letter_html(load_letter_html(26297))
-        soup = BeautifulSoup(xhtml, "html.parser")
+        soup = dom.parse_html(xhtml)
 
-        heading = soup.find("h1")
+        heading = dom.find(soup, "h1")
         self.assertIsNotNone(heading)
-        self.assertEqual(heading.get("class"), ["document-title"])
+        self.assertEqual(dom.get_attr(heading, "class"), ["document-title"])
         self.assertIn(
             "Regleringsbrev för budgetåret 2026 avseende Myndigheten för civilt försvar",
-            heading.get_text(" ", strip=True),
+            dom.text(heading, " ", strip=True),
         )
 
     def test_sample_with_merged_cells_preserves_table_span_attributes(self) -> None:
@@ -93,109 +105,124 @@ class IntermediateParserTests(unittest.TestCase):
         self.assertIn('rowspan="6"', xhtml)
         self.assertIn('colspan="5"', xhtml)
 
-    def test_classic_sample_uses_single_document_title_and_demoted_outline(self) -> None:
+    def test_classic_sample_uses_single_document_title_and_demoted_outline(
+        self,
+    ) -> None:
         xhtml = IntermediateParser.parse_letter_html(load_letter_html(8103))
-        soup = BeautifulSoup(xhtml, "html.parser")
+        soup = dom.parse_html(xhtml)
 
-        headings = soup.body.find_all(re.compile(r"^h[1-6]$"), recursive=False)
+        headings = dom.find_all(
+            dom.find(soup, "body"), re.compile(r"^h[1-6]$"), recursive=False
+        )
         self.assertGreaterEqual(len(headings), 4)
         self.assertEqual(
-            headings[0].get_text(" ", strip=True),
+            dom.text(headings[0], " ", strip=True),
             "Regleringsbrev för budgetåret 2006 avseende Smittskyddsinstitutet",
         )
-        self.assertEqual(headings[0].name, "h1")
-        self.assertEqual(headings[1].get_text(" ", strip=True), "VERKSAMHET")
-        self.assertEqual(headings[1].name, "h2")
+        self.assertEqual(headings[0].tag, "h1")
+        self.assertEqual(dom.text(headings[1], " ", strip=True), "VERKSAMHET")
+        self.assertEqual(headings[1].tag, "h2")
 
-        self.assertIsNotNone(soup.find("h3", string="1 Verksamhetsstyrning"))
-        self.assertIsNotNone(
-            soup.find("h4", string="1.1 Politikområde Folkhälsa")
-        )
+        self.assertIsNotNone(dom.find(soup, "h3", string="1 Verksamhetsstyrning"))
+        self.assertIsNotNone(dom.find(soup, "h4", string="1.1 Politikområde Folkhälsa"))
 
         labels = [
-            p.get_text(" ", strip=True)
-            for p in soup.find_all("p")
-            if p.find("strong")
+            dom.text(p, " ", strip=True)
+            for p in dom.find_all(soup, "p")
+            if dom.find(p, "strong")
         ]
         self.assertIn("Mål", labels)
         self.assertIn("Återrapportering", labels)
         self.assertIn("Övrig återrapportering", labels)
         self.assertIn("Jämställdhetsintegrering", labels)
-        self.assertIsNone(soup.find("h5", string="Jämställdhetsintegrering"))
+        self.assertIsNone(dom.find(soup, "h5", string="Jämställdhetsintegrering"))
 
     def test_modern_sample_merges_split_numbered_headings(self) -> None:
         xhtml = IntermediateParser.parse_letter_html(load_letter_html(26297))
-        soup = BeautifulSoup(xhtml, "html.parser")
+        soup = dom.parse_html(xhtml)
 
-        self.assertIsNotNone(soup.find("h3", string="1 Mål och återrapporteringskrav"))
-        self.assertIsNotNone(soup.find("h3", string="2 Organisationsstyrning"))
-        self.assertIsNotNone(soup.find("h3", string="3 Uppdrag"))
-        self.assertIsNone(soup.find(re.compile(r"^h[1-6]$"), string="1"))
+        self.assertIsNotNone(
+            dom.find(soup, "h3", string="1 Mål och återrapporteringskrav")
+        )
+        self.assertIsNotNone(dom.find(soup, "h3", string="2 Organisationsstyrning"))
+        self.assertIsNotNone(dom.find(soup, "h3", string="3 Uppdrag"))
+        self.assertIsNone(dom.find(soup, re.compile("^h[1-6]$"), string="1"))
         self.assertIsNone(
-            soup.find(
-                re.compile(r"^h[1-6]$"),
+            dom.find(
+                soup,
+                re.compile("^h[1-6]$"),
                 string="Arbetet med civil beredskap i Nato",
             )
         )
         strong_labels = [
-            p.get_text(" ", strip=True)
-            for p in soup.find_all("p")
-            if p.find("strong")
+            dom.text(p, " ", strip=True)
+            for p in dom.find_all(soup, "p")
+            if dom.find(p, "strong")
         ]
         self.assertIn("Arbetet med civil beredskap i Nato", strong_labels)
 
     def test_italic_strong_labels_preserve_emphasis(self) -> None:
         xhtml = IntermediateParser.parse_letter_html(load_letter_html(8103))
-        soup = BeautifulSoup(xhtml, "html.parser")
+        soup = dom.parse_html(xhtml)
 
         label = next(
             (
                 strong
-                for strong in soup.find_all("strong")
-                if strong.get_text(" ", strip=True) == "Övrig återrapportering"
+                for strong in dom.find_all(soup, "strong")
+                if dom.text(strong, " ", strip=True) == "Övrig återrapportering"
             ),
             None,
         )
         self.assertIsNotNone(label)
-        self.assertIsNotNone(label.find("em"))
+        self.assertIsNotNone(dom.find(label, "em"))
 
     def test_word_documenthead_sample_promotes_document_title(self) -> None:
         xhtml = IntermediateParser.parse_letter_html(load_letter_html(8899))
-        soup = BeautifulSoup(xhtml, "html.parser")
+        soup = dom.parse_html(xhtml)
 
-        first_heading = soup.find("h1")
+        first_heading = dom.find(soup, "h1")
         self.assertIsNotNone(first_heading)
         self.assertEqual(
-            first_heading.get_text(" ", strip=True),
+            dom.text(first_heading, " ", strip=True),
             "Regleringsbrev för budgetåret 2005 avseende Skogsstyrelsen inom utgiftsområde 23 Jord- och skogsbruk, fiske med anslutande näringar",
         )
         self.assertIsNone(
-            soup.find(
+            dom.find(
+                soup,
                 "table",
-                string=lambda text: text
-                and "Regleringsbrev för budgetåret 2005 avseende Skogsstyrelsen"
-                in text,
+                string=lambda text: (
+                    text
+                    and "Regleringsbrev för budgetåret 2005 avseende Skogsstyrelsen"
+                    in text
+                ),
             )
         )
 
-    def test_word_documenthead_sample_turns_local_numbered_items_into_strong_labels(self) -> None:
+    def test_word_documenthead_sample_turns_local_numbered_items_into_strong_labels(
+        self,
+    ) -> None:
         xhtml = IntermediateParser.parse_letter_html(load_letter_html(8899))
-        soup = BeautifulSoup(xhtml, "html.parser")
+        soup = dom.parse_html(xhtml)
 
-        self.assertIsNotNone(soup.find("h4", string="1.4 Uppdrag"))
-        self.assertIsNone(soup.find(re.compile(r"^h[1-6]$"), string="1. Internationellt arbete"))
-        self.assertIsNone(soup.find(re.compile(r"^h[1-6]$"), string="2. Skogsbilvägar"))
+        self.assertIsNotNone(dom.find(soup, "h4", string="1.4 Uppdrag"))
         self.assertIsNone(
-            soup.find(
-                re.compile(r"^h[1-6]$"),
+            dom.find(soup, re.compile("^h[1-6]$"), string="1. Internationellt arbete")
+        )
+        self.assertIsNone(
+            dom.find(soup, re.compile("^h[1-6]$"), string="2. Skogsbilvägar")
+        )
+        self.assertIsNone(
+            dom.find(
+                soup,
+                re.compile("^h[1-6]$"),
                 string="3. Bidrag till miljöorganisationer",
             )
         )
 
         strong_labels = [
-            p.get_text(" ", strip=True)
-            for p in soup.find_all("p")
-            if p.find("strong")
+            dom.text(p, " ", strip=True)
+            for p in dom.find_all(soup, "p")
+            if dom.find(p, "strong")
         ]
         self.assertIn("1. Internationellt arbete", strong_labels)
         self.assertIn("2. Skogsbilvägar", strong_labels)
@@ -205,12 +232,12 @@ class IntermediateParserTests(unittest.TestCase):
 
     def test_finance_table_footnotes_are_separate_italic_paragraphs(self) -> None:
         xhtml = IntermediateParser.parse_letter_html(load_letter_html(21762))
-        soup = BeautifulSoup(xhtml, "html.parser")
+        soup = dom.parse_html(xhtml)
 
         notes = [
-            p.get_text(" ", strip=True)
-            for p in soup.find_all("p")
-            if p.find("em")
+            dom.text(p, " ", strip=True)
+            for p in dom.find_all(soup, "p")
+            if dom.find(p, "em")
         ]
         self.assertIn("Belopp angivna i tkr", notes)
         self.assertIn(
@@ -226,30 +253,32 @@ class IntermediateParserTests(unittest.TestCase):
             notes,
         )
 
-    def test_numbered_finance_footnotes_preserve_superscripts_and_split_lines(self) -> None:
+    def test_numbered_finance_footnotes_preserve_superscripts_and_split_lines(
+        self,
+    ) -> None:
         xhtml = IntermediateParser.parse_letter_html(load_letter_html(21762))
-        soup = BeautifulSoup(xhtml, "html.parser")
+        soup = dom.parse_html(xhtml)
 
         target_table = None
-        for table in soup.find_all("table"):
-            if "Omfördelning från anslag/ap" in table.get_text(" ", strip=True):
+        for table in dom.find_all(soup, "table"):
+            if "Omfördelning från anslag/ap" in dom.text(table, " ", strip=True):
                 target_table = table
                 break
 
         self.assertIsNotNone(target_table)
-        self.assertIsNotNone(target_table.find("sup", string="1"))
-        self.assertIsNotNone(target_table.find("sup", string="2"))
+        self.assertIsNotNone(dom.find(target_table, "sup", string="1"))
+        self.assertIsNotNone(dom.find(target_table, "sup", string="2"))
 
         notes = [
-            p for p in soup.find_all("p")
-            if p.find("em")
-            and "nomenklatur" in p.get_text(" ", strip=True)
+            p
+            for p in dom.find_all(soup, "p")
+            if dom.find(p, "em") and "nomenklatur" in dom.text(p, " ", strip=True)
         ]
         self.assertEqual(len(notes), 2)
-        self.assertEqual(notes[0].find("sup").get_text(strip=True), "1")
-        self.assertEqual(notes[1].find("sup").get_text(strip=True), "2")
-        self.assertIn("2019 års nomenklatur", notes[0].get_text(" ", strip=True))
-        self.assertIn("2020 års nomenklatur", notes[1].get_text(" ", strip=True))
+        self.assertEqual(dom.text(dom.find(notes[0], "sup"), strip=True), "1")
+        self.assertEqual(dom.text(dom.find(notes[1], "sup"), strip=True), "2")
+        self.assertIn("2019 års nomenklatur", dom.text(notes[0], " ", strip=True))
+        self.assertIn("2020 års nomenklatur", dom.text(notes[1], " ", strip=True))
         self.assertIn(
             "<td>Omfördelning från anslag/ap<sup>1</sup></td>",
             xhtml,
@@ -278,11 +307,13 @@ class IntermediateParserTests(unittest.TestCase):
         for rbid in [5140, 8899, 21762]:
             with self.subTest(rbid=rbid):
                 xhtml = IntermediateParser.parse_letter_html(load_letter_html(rbid))
-                soup = BeautifulSoup(xhtml, "html.parser")
+                soup = dom.parse_html(xhtml)
                 self.assertFalse(
                     any(
-                        isinstance(child, Tag) and child.name == "br"
-                        for child in soup.body.find_all(recursive=False)
+                        dom.is_tag(child) and child.tag == "br"
+                        for child in dom.find_all(
+                            dom.find(soup, "body"), recursive=False
+                        )
                     )
                 )
 
@@ -292,7 +323,12 @@ class IntermediateParserTests(unittest.TestCase):
         self.assertIn("<p>Bosse Ringholm</p>", xhtml)
         self.assertIn("<p>Anne Dahl</p>", xhtml)
         self.assertIn("<p>Kopia till:</p>", xhtml)
-        self.assertNotIn("<table>", xhtml.split("<p>På regeringens vägnar</p>", 1)[1].split("<p>Kopia till:</p>", 1)[0])
+        self.assertNotIn(
+            "<table>",
+            xhtml.split("<p>På regeringens vägnar</p>", 1)[1].split(
+                "<p>Kopia till:</p>", 1
+            )[0],
+        )
 
     def test_legacy_table_orphan_labels_are_wrapped_in_paragraphs(self) -> None:
         xhtml = IntermediateParser.parse_letter_html(load_letter_html(6890))
@@ -302,7 +338,9 @@ class IntermediateParserTests(unittest.TestCase):
     def test_legacy_table_header_keeps_grouped_blocks(self) -> None:
         xhtml = IntermediateParser.parse_letter_html(load_letter_html(6890))
         self.assertIn('<table class="letterhead">', xhtml)
-        self.assertIn('<td class="letterhead-department">Näringsdepartementet</td>', xhtml)
+        self.assertIn(
+            '<td class="letterhead-department">Näringsdepartementet</td>', xhtml
+        )
         self.assertIn('<td class="letterhead-decision">Regeringsbeslut</td>', xhtml)
         self.assertIn('<td class="letterhead-decision-number">II 7</td>', xhtml)
         self.assertIn('<td class="letterhead-date">2003-12-18</td>', xhtml)
@@ -336,7 +374,9 @@ class IntermediateParserTests(unittest.TestCase):
 
     def test_word_documenthead_policy_outline_block_is_split_cleanly(self) -> None:
         xhtml = IntermediateParser.parse_letter_html(load_letter_html(5140))
-        self.assertIn("<p><strong>PO Internationellt utvecklingssamarbete</strong></p>", xhtml)
+        self.assertIn(
+            "<p><strong>PO Internationellt utvecklingssamarbete</strong></p>", xhtml
+        )
         self.assertIn(
             "<p><strong><em>VO Internationellt utvecklingssamarbete</em></strong></p>",
             xhtml,
@@ -350,41 +390,48 @@ class IntermediateParserTests(unittest.TestCase):
 
     def test_anslag_summary_table_is_merged_for_classic_sample(self) -> None:
         xhtml = IntermediateParser.parse_letter_html(load_letter_html(8103))
-        soup = BeautifulSoup(xhtml, "html.parser")
+        soup = dom.parse_html(xhtml)
 
         title = next(
             (
                 p
-                for p in soup.find_all("p")
-                if p.find("strong")
-                and p.get_text(" ", strip=True) == "14:5 Smittskyddsinstitutet (Ramanslag)"
+                for p in dom.find_all(soup, "p")
+                if dom.find(p, "strong")
+                and dom.text(p, " ", strip=True)
+                == "14:5 Smittskyddsinstitutet (Ramanslag)"
             ),
             None,
         )
         self.assertIsNotNone(title)
 
         target = None
-        for table in soup.find_all("table"):
-            if "Disponeras av Smittskyddsinstitutet" in table.get_text(" ", strip=True):
+        for table in dom.find_all(soup, "table"):
+            if "Disponeras av Smittskyddsinstitutet" in dom.text(
+                table, " ", strip=True
+            ):
                 target = table
                 break
 
         self.assertIsNotNone(target)
-        rows = target.find_all("tr", recursive=False) or target.tbody.find_all("tr", recursive=False)
+        rows = dom.find_all(target, "tr", recursive=False) or dom.find_all(
+            dom.find(target, "tbody"), "tr", recursive=False
+        )
         self.assertEqual(len(rows), 2)
-        self.assertIn("Disponeras av Smittskyddsinstitutet", rows[0].get_text(" ", strip=True))
-        self.assertIn("ap.1", target.get_text(" ", strip=True))
+        self.assertIn(
+            "Disponeras av Smittskyddsinstitutet", dom.text(rows[0], " ", strip=True)
+        )
+        self.assertIn("ap.1", dom.text(target, " ", strip=True))
 
     def test_anslag_summary_table_is_merged_for_modern_sample(self) -> None:
         xhtml = IntermediateParser.parse_letter_html(load_letter_html(26297))
-        soup = BeautifulSoup(xhtml, "html.parser")
+        soup = dom.parse_html(xhtml)
 
         title = next(
             (
                 p
-                for p in soup.find_all("p")
-                if p.find("strong")
-                and p.get_text(" ", strip=True)
+                for p in dom.find_all(soup, "p")
+                if dom.find(p, "strong")
+                and dom.text(p, " ", strip=True)
                 == "2:2 Förebyggande åtgärder mot jordskred och andra naturolyckor (Ramanslag)"
             ),
             None,
@@ -392,14 +439,19 @@ class IntermediateParserTests(unittest.TestCase):
         self.assertIsNotNone(title)
 
         target = None
-        for table in soup.find_all("table"):
-            if "Disponeras av Myndigheten för civilt försvar" in table.get_text(" ", strip=True):
+        for table in dom.find_all(soup, "table"):
+            if "Disponeras av Myndigheten för civilt försvar" in dom.text(
+                table, " ", strip=True
+            ):
                 target = table
                 break
 
         self.assertIsNotNone(target)
-        self.assertIn("Disponeras av Myndigheten för civilt försvar", target.get_text(" ", strip=True))
-        self.assertIn("ap.2", target.get_text(" ", strip=True))
+        self.assertIn(
+            "Disponeras av Myndigheten för civilt försvar",
+            dom.text(target, " ", strip=True),
+        )
+        self.assertIn("ap.2", dom.text(target, " ", strip=True))
 
 
 if __name__ == "__main__":

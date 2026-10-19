@@ -16,6 +16,22 @@ You can also download the file [attachments.csv](attachments.csv) to get a list 
 
 You can also download the letters in their row HTML format, in a cleaned XHTML format and in a (slightly lossy) Markdown format on [HuggingFace](https://huggingface.co/datasets/PierreMesure/oppna-statsliggaren).
 
+The HTML normalization pipeline uses selectolax's Lexbor parser. Lexbor applies
+HTML5 repairs, including implicit `tbody` elements and repaired paragraph
+boundaries. The XHTML keeps the letter text, links, and table-span attributes.
+Markdown conversion uses Markdownify, which still depends on Beautiful Soup
+internally.
+
+Run the self-contained parser regressions with:
+
+```bash
+uv run --with pytest python -m pytest tests/test_selectolax_pipeline.py
+```
+
+The complete suite (`uv run --with pytest python -m pytest tests`) also expects
+cached sample letters in `letters/html/`: 240, 5071, 5140, 6890, 8102, 8103,
+8817, 8844, 8899, 11373, 21762, and 26297.
+
 ### Optional IP rotation
 
 In order to fetch with a Github Action, we need to use a EU proxy. Right now, the program uses AWS API Gateway which has a large free tier.
