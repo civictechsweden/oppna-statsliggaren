@@ -14,6 +14,19 @@ For now, it's best to download the file [letters.csv](letters.csv) and process i
 
 You can also download the file [attachments.csv](attachments.csv) to get a list of the letters' attachments.
 
+`letters.csv` includes `department`, the issuing department as written in the
+letterhead, for both agency (`Myndighet`) and appropriation (`Anslag`) letters.
+Historical names are preserved. Appropriation labels such as `1:1` are not unique
+across departments; neither the name nor the department is a revision identifier.
+The Parquet export includes the same column.
+
+To backfill the column from an existing Parquet export (fetching letters absent
+from the export or without a recognized department), run:
+
+```bash
+uv run -m scripts.backfill_departments --parquet letters.parquet
+```
+
 You can also download the letters in their row HTML format, in a cleaned XHTML format and in a (slightly lossy) Markdown format on [HuggingFace](https://huggingface.co/datasets/PierreMesure/oppna-statsliggaren).
 
 ### Optional IP rotation
