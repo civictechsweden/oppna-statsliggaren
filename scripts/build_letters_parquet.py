@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import asyncio
 import csv
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -9,7 +10,12 @@ from typing import Iterable
 import pyarrow as pa
 import pyarrow.parquet as pq
 from dotenv import load_dotenv
-from huggingface_hub import HfApi, hf_hub_download
+from huggingface_hub import CommitOperationAdd, HfApi, get_token, hf_hub_download
+
+from services.artifacts import convert_attachments, converted_path, download_files, file_specs, upload_files
+from services.downloader import Downloader
+from services.writer import Writer, save_letter_sync
+from statsliggaren import get_metadatas
 from huggingface_hub.errors import EntryNotFoundError, RepositoryNotFoundError
 
 
@@ -56,10 +62,8 @@ def _load_row(
     xhtml_path = XHTML_DIR / f"{letter_id}.xhtml"
     md_path = MD_DIR / f"{letter_id}.md"
 
-    if not xhtml_path.exists():
-        raise FileNotFoundError(f"missing XHTML for {letter_id}: {xhtml_path}")
-    if not md_path.exists():
-        raise FileNotFoundError(f"missing Markdown for {letter_id}: {md_path}")
+    if not xhtml_path.exists() or not md_path.exists():
+        save_letter_sync(letter_id, _read_text(html_path))
     if letter_id not in metadata_by_id:
         raise KeyError(f"missing metadata row for {letter_id} in {METADATA_CSV}")
 
@@ -134,14 +138,6 @@ def _normalize_existing_rows(
     return normalized_rows, rows_need_rewrite
 
 
-def _existing_ids(parquet_path: Path) -> set[int]:
-    if not parquet_path.exists():
-        return set()
-
-    table = pq.read_table(parquet_path, columns=["id"])
-    return {int(value) for value in table.column("id").to_pylist()}
-
-
 def _load_existing_table(parquet_path: Path) -> pa.Table | None:
     if not parquet_path.exists():
         return None
@@ -166,12 +162,30 @@ def _upload_to_hf(
 ) -> None:
     api = HfApi(token=token)
     api.create_repo(repo_id=repo_id, repo_type="dataset", exist_ok=True)
-    api.upload_file(
-        path_or_fileobj=str(parquet_path),
-        path_in_repo=repo_path,
+    with (ROOT / "attachments.csv").open(encoding="utf-8", newline="") as handle:
+        attachments = list(csv.DictReader(handle))
+    _, metadata = _load_metadata()
+    existing_paths = set(api.list_repo_files(repo_id=repo_id, repo_type="dataset"))
+    specs = file_specs(metadata, attachments, set(_letter_ids()))
+    # A published original may still need a newly introduced OOXML derivative.
+    reusable_paths = {path for path in existing_paths
+                      if not converted_path(path) or converted_path(path) in existing_paths}
+    paths = asyncio.run(download_files(
+        specs, LETTERS_DIR, reusable_paths
+    ))
+    paths.extend(convert_attachments(LETTERS_DIR, paths))
+    upload_files(api, repo_id, LETTERS_DIR, paths)
+    api.create_commit(
         repo_id=repo_id,
         repo_type="dataset",
-        commit_message="Update letters parquet",
+        operations=[
+            CommitOperationAdd(path_in_repo=repo_path, path_or_fileobj=parquet_path),
+            CommitOperationAdd(path_in_repo="letters.csv", path_or_fileobj=METADATA_CSV),
+            CommitOperationAdd(path_in_repo="attachments.csv", path_or_fileobj=ROOT / "attachments.csv"),
+            CommitOperationAdd(path_in_repo="README.md", path_or_fileobj=ROOT / "dataset_card.md"),
+            CommitOperationAdd(path_in_repo="unavailable_files.json", path_or_fileobj=LETTERS_DIR / "unavailable_files.json"),
+        ],
+        commit_message="Refresh letters and attachment metadata",
     )
 
 
@@ -190,7 +204,6 @@ def _download_existing_from_hf(
             repo_type="dataset",
             token=token,
             local_dir=str(parquet_path.parent),
-            local_dir_use_symlinks=False,
         )
     except (EntryNotFoundError, RepositoryNotFoundError):
         return False
@@ -236,7 +249,7 @@ def main() -> None:
 
     import os
 
-    token = args.hf_token if args.hf_token is not None else os.getenv("HF_TOKEN")
+    token = args.hf_token if args.hf_token is not None else (os.getenv("HF_TOKEN") or get_token())
     repo_id = args.repo_id or None
     if args.upload and repo_id is None:
         repo_id = os.getenv("HF_DATASET_REPO_ID") or None
@@ -251,37 +264,38 @@ def main() -> None:
         if downloaded:
             print(f"downloaded existing parquet from {repo_id}/{args.repo_path}")
 
-    source_ids = _letter_ids()
-    existing_ids = _existing_ids(parquet_path)
-    missing_ids = [letter_id for letter_id in source_ids if letter_id not in existing_ids]
-
     existing_table = _load_existing_table(parquet_path)
     existing_rows, rows_need_rewrite = _normalize_existing_rows(
-        existing_table,
-        metadata_fields,
-        metadata_by_id,
+        existing_table, metadata_fields, metadata_by_id,
     )
-
+    existing_by_id = {int(row["id"]): row for row in existing_rows}
+    missing_ids = sorted(set(metadata_by_id) - set(existing_by_id) - set(_letter_ids()))
     if missing_ids:
-        new_rows = _build_rows(missing_ids, metadata_fields, metadata_by_id)
-        final_rows = existing_rows + new_rows
-        final_table = pa.Table.from_pylist(final_rows)
-        final_table = final_table.sort_by([("id", "ascending")])
-        _write_table(final_table, parquet_path)
-        print(f"updated {parquet_path} with {len(missing_ids)} new rows")
-    elif not parquet_path.exists():
-        rows = _build_rows(source_ids, metadata_fields, metadata_by_id)
-        final_table = pa.Table.from_pylist(rows).sort_by([("id", "ascending")])
-        _write_table(final_table, parquet_path)
-        print(f"created {parquet_path} with {len(source_ids)} rows")
-    elif rows_need_rewrite:
-        final_table = pa.Table.from_pylist(existing_rows).sort_by([("id", "ascending")])
-        _write_table(final_table, parquet_path)
-        print(f"rewrote {parquet_path} to refresh metadata columns")
+        async def fetch_missing():
+            downloader = Downloader()
+            try:
+                _, _, letters = await get_metadatas(missing_ids, downloader)
+                if set(letters) != set(missing_ids):
+                    raise RuntimeError(f"Missing letter payloads: {sorted(set(missing_ids) - set(letters))}")
+                await Writer.save_letters_batch(letters)
+            finally:
+                await downloader.aclose()
+        asyncio.run(fetch_missing())
+
+    source_ids = _letter_ids()
+    refreshed_rows = _build_rows(source_ids, metadata_fields, metadata_by_id)
+    changed = any(existing_by_id.get(int(row["id"])) != row for row in refreshed_rows)
+    existing_by_id.update({int(row["id"]): row for row in refreshed_rows})
+    if set(existing_by_id) != set(metadata_by_id):
+        raise RuntimeError("Parquet IDs do not match the complete letter catalogue")
+    if changed or rows_need_rewrite or not parquet_path.exists():
+        table = pa.Table.from_pylist([existing_by_id[key] for key in sorted(existing_by_id)])
+        temporary = parquet_path.with_suffix(".parquet.tmp")
+        _write_table(table, temporary)
+        temporary.replace(parquet_path)
+        print(f"updated {parquet_path}: {len(existing_by_id)} letters, {len(source_ids)} local payloads refreshed")
     else:
-        print(
-            f"{parquet_path} already contains all {len(source_ids)} locally available rows"
-        )
+        print(f"{parquet_path} already contains the current content for {len(existing_by_id)} letters")
 
     if args.upload:
         if not repo_id:

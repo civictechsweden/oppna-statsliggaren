@@ -9,7 +9,7 @@ class Parser(object):
     def parse_latest_remote_rbid(response) -> int:
         html_text = html.unescape(response.text)
 
-        return int(sorted(html_text.split("rbid=")[1:], reverse=True)[0].split("&")[0])
+        return max(int(value) for value in re.findall(r"rbid=(\d+)", html_text, re.IGNORECASE))
 
     @staticmethod
     def parse_metadata(response, rbid: int):

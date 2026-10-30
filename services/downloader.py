@@ -15,7 +15,7 @@ class Downloader(object):
     def __init__(self):
         self.gateway_transport = None
 
-        if os.getenv("USE_IP_ROTATOR", False):
+        if os.getenv("USE_IP_ROTATOR", "").lower() == "true":
             self.gateway_transport = AsyncApiGatewayTransport(
                 DOMAIN,
                 regions=["eu-north-1"],
@@ -33,9 +33,12 @@ class Downloader(object):
     async def _get_with_retry(self, url, retries=3) -> httpx.Response:
         for i in range(retries):
             try:
-                return await self.s.get(url)
-            except httpx.ReadTimeout:
-                print(f"Timeout fetching {url}, retrying ({i + 1}/{retries})...")
+                response = await self.s.get(url, follow_redirects=True)
+                if response.status_code != 404:
+                    response.raise_for_status()
+                return response
+            except (httpx.TransportError, httpx.HTTPStatusError) as error:
+                print(f"Error fetching {url}: {error}; attempt {i + 1}/{retries}")
                 if i == retries - 1:
                     raise
                 await asyncio.sleep(1)

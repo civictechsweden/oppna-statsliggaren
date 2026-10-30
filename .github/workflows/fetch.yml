@@ -8,10 +8,20 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: publish-statsliggaren
+  cancel-in-progress: false
+
 jobs:
   scrape:
     name: Fetch the data
     runs-on: ubuntu-latest
+    env:
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      HF_DATASET_REPO_ID: ${{ vars.HF_DATASET_REPO_ID || secrets.HF_DATASET_REPO_ID }}
+      USE_IP_ROTATOR: ${{ vars.USE_IP_ROTATOR }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     steps:
       - uses: actions/checkout@v6
 
@@ -22,24 +32,26 @@ jobs:
 
       - run: uv sync --frozen
 
-      - name: Fetch the data
-        env:
-          USE_IP_ROTATOR: ${{ vars.USE_IP_ROTATOR }}
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        run: uv run python run.py
+      - name: Install Office conversion tools
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends libreoffice-writer libreoffice-calc
 
-      - name: Build and upload letters parquet
-        env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
-          HF_DATASET_REPO_ID: ${{ vars.HF_DATASET_REPO_ID }}
-        if: ${{ env.HF_DATASET_REPO_ID != '' && env.HF_TOKEN != '' }}
-        run: uv run python scripts/build_letters_parquet.py --output letters.parquet --upload --repo-id "$HF_DATASET_REPO_ID" --repo-path data/letters.parquet
+      - name: Validate publication configuration
+        run: |
+          test -n "$HF_TOKEN" || { echo "HF_TOKEN secret is required"; exit 1; }
+          test -n "$HF_DATASET_REPO_ID" || { echo "HF_DATASET_REPO_ID variable or secret is required"; exit 1; }
+
+      - name: Fetch the data
+        run: uv run -m run --refresh-since "$(($(date -u +%Y) - 1))-01-01"
+
+      - name: Publish letters, PDFs and attachments
+        run: uv run -m scripts.build_letters_parquet --output letters.parquet --upload --repo-id "$HF_DATASET_REPO_ID" --repo-path letters.parquet
 
       - name: Commit and push
         run: |
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git config --global user.name 'github-actions[bot]'
           git add letters.csv attachments.csv
-          git commit -m 'Update the data' || echo "Nothing to commit"
-          git push
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update the data'
+            git push
+          fi
