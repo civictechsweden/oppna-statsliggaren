@@ -98,10 +98,18 @@ def _expected_columns(metadata_fields: list[str]) -> list[str]:
     return ["id", *metadata_fields, "html", "xhtml", "md"]
 
 
+def _metadata_value(field: str, value: object) -> str | list[int]:
+    if field == "expenditure_areas":
+        if isinstance(value, list):
+            return value
+        return [int(code) for code in str(value or "").split(";") if code]
+    return str(value or "")
+
+
 def _ordered_row(row: dict[str, object], metadata_fields: list[str]) -> dict[str, object]:
     ordered = {"id": int(row["id"])}
     for field in metadata_fields:
-        ordered[field] = str(row.get(field, "") or "")
+        ordered[field] = _metadata_value(field, row.get(field, ""))
     ordered["html"] = str(row["html"])
     ordered["xhtml"] = str(row["xhtml"])
     ordered["md"] = str(row["md"])
@@ -128,7 +136,7 @@ def _normalize_existing_rows(
 
         normalized = dict(row)
         for field in metadata_fields:
-            value = metadata[field]
+            value = _metadata_value(field, metadata[field])
             if normalized.get(field, "") != value:
                 rows_need_rewrite = True
             normalized[field] = value
@@ -290,6 +298,11 @@ def main() -> None:
         raise RuntimeError("Parquet IDs do not match the complete letter catalogue")
     if changed or rows_need_rewrite or not parquet_path.exists():
         table = pa.Table.from_pylist([existing_by_id[key] for key in sorted(existing_by_id)])
+        if "expenditure_areas" in metadata_fields:
+            index = table.schema.get_field_index("expenditure_areas")
+            table = table.set_column(index, "expenditure_areas", pa.array(
+                table.column(index).to_pylist(), type=pa.list_(pa.int16())
+            ))
         temporary = parquet_path.with_suffix(".parquet.tmp")
         _write_table(table, temporary)
         temporary.replace(parquet_path)
