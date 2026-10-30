@@ -12,6 +12,7 @@ size_categories:
 - 10K<n<100K
 configs:
 - config_name: default
+  default: true
   data_files:
   - split: train
     path: letters.parquet
