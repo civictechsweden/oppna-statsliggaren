@@ -95,7 +95,8 @@ def _build_rows(
 
 
 def _expected_columns(metadata_fields: list[str]) -> list[str]:
-    return ["id", *metadata_fields, "html", "xhtml", "md"]
+    return ["id", *(field for field in metadata_fields if field != "pdf"),
+            "html", "xhtml", "md", *(["pdf"] if "pdf" in metadata_fields else [])]
 
 
 def _metadata_value(field: str, value: object) -> str | list[int]:
@@ -113,6 +114,8 @@ def _ordered_row(row: dict[str, object], metadata_fields: list[str]) -> dict[str
     ordered["html"] = str(row["html"])
     ordered["xhtml"] = str(row["xhtml"])
     ordered["md"] = str(row["md"])
+    if "pdf" in ordered:
+        ordered["pdf"] = ordered.pop("pdf")
     return ordered
 
 
