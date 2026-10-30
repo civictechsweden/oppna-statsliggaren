@@ -12,7 +12,7 @@ import pyarrow.parquet as pq
 from dotenv import load_dotenv
 from huggingface_hub import CommitOperationAdd, HfApi, get_token, hf_hub_download
 
-from services.artifacts import download_files, file_specs, upload_files
+from services.artifacts import convert_attachments, converted_path, download_files, file_specs, upload_files
 from services.downloader import Downloader
 from services.writer import Writer, save_letter_sync
 from statsliggaren import get_metadatas
@@ -166,9 +166,14 @@ def _upload_to_hf(
         attachments = list(csv.DictReader(handle))
     _, metadata = _load_metadata()
     existing_paths = set(api.list_repo_files(repo_id=repo_id, repo_type="dataset"))
+    specs = file_specs(metadata, attachments, set(_letter_ids()))
+    # A published original may still need a newly introduced OOXML derivative.
+    reusable_paths = {path for path in existing_paths
+                      if not converted_path(path) or converted_path(path) in existing_paths}
     paths = asyncio.run(download_files(
-        file_specs(metadata, attachments, set(_letter_ids())), LETTERS_DIR, existing_paths
+        specs, LETTERS_DIR, reusable_paths
     ))
+    paths.extend(convert_attachments(LETTERS_DIR, paths))
     upload_files(api, repo_id, LETTERS_DIR, paths)
     api.create_commit(
         repo_id=repo_id,
@@ -178,6 +183,7 @@ def _upload_to_hf(
             CommitOperationAdd(path_in_repo="letters.csv", path_or_fileobj=METADATA_CSV),
             CommitOperationAdd(path_in_repo="attachments.csv", path_or_fileobj=ROOT / "attachments.csv"),
             CommitOperationAdd(path_in_repo="README.md", path_or_fileobj=ROOT / "dataset_card.md"),
+            CommitOperationAdd(path_in_repo="unavailable_files.json", path_or_fileobj=LETTERS_DIR / "unavailable_files.json"),
         ],
         commit_message="Refresh letters and attachment metadata",
     )

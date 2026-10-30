@@ -37,8 +37,8 @@ class Downloader(object):
                 if response.status_code != 404:
                     response.raise_for_status()
                 return response
-            except (httpx.TransportError, httpx.HTTPStatusError):
-                print(f"Timeout fetching {url}, retrying ({i + 1}/{retries})...")
+            except (httpx.TransportError, httpx.HTTPStatusError) as error:
+                print(f"Error fetching {url}: {error}; attempt {i + 1}/{retries}")
                 if i == retries - 1:
                     raise
                 await asyncio.sleep(1)

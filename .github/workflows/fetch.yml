@@ -32,6 +32,9 @@ jobs:
 
       - run: uv sync --frozen
 
+      - name: Install Office conversion tools
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends libreoffice-writer libreoffice-calc
+
       - name: Validate publication configuration
         run: |
           test -n "$HF_TOKEN" || { echo "HF_TOKEN secret is required"; exit 1; }

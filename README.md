@@ -88,11 +88,19 @@ The builder also loads `.env` automatically if it exists, so local runs can use 
 If the local Parquet file does not exist but a Hugging Face dataset repo is configured, the script first downloads the existing remote Parquet file and then replaces locally refreshed letter payloads, fills missing payloads, and updates the CSV metadata before uploading. The export must contain every ID from `letters.csv`.
 
 Every upload also publishes the catalogues, the dataset card, original letter PDFs
-under `pdf/{rbid}.pdf`, and attachments under `attachments/{id}.{extension}`.
+under `letters/{year}/{rbid}.pdf`, and attachments under `attachments/{year}/{id}.{extension}`.
 Already published files are reused except for letters refreshed in the current
-run. Source 404s are reported; other download failures stop publication. Large
+run. Source 404s and empty responses are recorded in `unavailable_files.json`;
+other download failures stop publication. Large
 initial file uploads use small commits so the next run can resume them. The CSV
 and Parquet snapshot is committed after the files.
+
+Legacy DOC and XLS attachments are also converted with LibreOffice to
+`attachments/{year}/{id}.docx` and `attachments/{year}/{id}.xlsx`. Both the original and the
+converted file are published. Downstream importers can use the OOXML version
+without running their own conversion. Install `libreoffice-writer` and
+`libreoffice-calc` before publishing locally; the workflow installs them itself.
+Published conversions are reused unless the source letter is refreshed.
 
 The nightly GitHub Action refreshes new/missing IDs and existing letters decided
 since the start of the previous calendar year, then publishes to Hugging Face.

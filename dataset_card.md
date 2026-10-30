@@ -34,10 +34,15 @@ outside that window require an explicit backfill.
   `id`, `type`, `date`, `year`, `category`, `name`, `department` and `pdf`.
 - `letters.csv`: letter catalogue using `rbid` for the same source ID.
 - `attachments.csv`: attachment catalogue with `id`, `rbid` and source filename.
-- `pdf/{rbid}.pdf`: available original letter PDFs, using the full-letter version.
-- `attachments/{id}.{extension}`: original attachment files, including PDF,
+- `letters/{year}/{rbid}.pdf`: available original letter PDFs, using the full-letter version.
+- `attachments/{year}/{id}.{extension}`: original attachment files, including PDF,
   DOC, DOCX, XLS and XLSX. Formats and source filenames are preserved in the
   attachment catalogue; stored filenames use the numeric attachment ID.
+- `attachments/{year}/{id}.docx` and `attachments/{year}/{id}.xlsx`: LibreOffice conversions
+  of legacy DOC and XLS attachments, alongside the unchanged originals. The
+  source filename in `attachments.csv` distinguishes originals from derivatives.
+- `unavailable_files.json`: source URLs returning 404 or empty files during the
+  latest publication. These cannot be archived or converted.
 
 The department is read from the letterhead for both agency and appropriation
 letters. Historical names are preserved. A department and appropriation number
