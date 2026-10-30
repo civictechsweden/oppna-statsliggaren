@@ -95,11 +95,14 @@ other download failures stop publication. Large
 initial file uploads use small commits so the next run can resume them. The CSV
 and Parquet snapshot is committed after the files.
 
-Legacy DOC and XLS attachments are also converted with LibreOffice to
+Legacy DOC and XLS attachments are also converted with office-oxide to
 `attachments/{year}/{id}.docx` and `attachments/{year}/{id}.xlsx`. Both the original and the
 converted file are published. Downstream importers can use the OOXML version
-without running their own conversion. Install `libreoffice-writer` and
-`libreoffice-calc` before publishing locally; the workflow installs them itself.
+without running their own conversion. `uv sync` installs the pinned office-oxide
+Python wheel; no system Office installation is needed locally or in the workflow.
+These are content derivatives: XLS formulas become cached values, and formatting
+and date types may change. Use the originals when those features matter. See the
+[sample conversion comparison](docs/office-conversion-comparison.md) for measured differences.
 Published conversions are reused unless the source letter is refreshed.
 
 The nightly GitHub Action refreshes new/missing IDs and existing letters decided

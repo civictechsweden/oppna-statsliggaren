@@ -2,7 +2,7 @@ import tempfile
 import os
 import unittest
 from pathlib import Path
-from unittest.mock import AsyncMock, Mock, patch
+from unittest.mock import AsyncMock, MagicMock, Mock, patch
 from zipfile import ZipFile
 
 import httpx
@@ -17,18 +17,20 @@ from scripts import build_letters_parquet as builder
 
 class PublicationTests(unittest.TestCase):
     def test_office_conversion_preserves_originals_and_validates_derivatives(self):
-        def convert(command, **kwargs):
-            out = Path(command[command.index('--outdir') + 1])
-            extension = command[command.index('--convert-to') + 1]
-            for source in command[command.index('--outdir') + 2:]:
-                with ZipFile(out / Path(source).with_suffix('.' + extension).name, 'w') as archive:
-                    archive.writestr('word/document.xml' if extension == 'docx' else 'xl/workbook.xml', '<xml/>')
+        def open_document(source):
+            document = MagicMock()
+            document.__enter__.return_value = document
+            def save_as(output):
+                with ZipFile(output, 'w') as archive:
+                    archive.writestr('word/document.xml' if source.suffix == '.doc' else 'xl/workbook.xml', '<xml/>')
+            document.save_as.side_effect = save_as
+            return document
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory); (root/'attachments/2026').mkdir(parents=True)
             paths = ['attachments/2026/1.doc', 'attachments/2026/2.xls']
             for path in paths:
                 (root/path).write_bytes(b'original')
-            with patch('services.artifacts.subprocess.run', side_effect=convert):
+            with patch('services.artifacts.Document.open', side_effect=open_document):
                 result = convert_attachments(root, paths)
             self.assertEqual(result, ['attachments/2026/1.docx', 'attachments/2026/2.xlsx'])
             for path in paths:
@@ -41,9 +43,36 @@ class PublicationTests(unittest.TestCase):
             (root/'attachments/2026/1.doc').write_bytes(b'original')
             (root/'attachments/2026/1.docx').write_bytes(b'previous')
             os.utime(root/'attachments/2026/1.docx', (1, 1))
-            with patch('services.artifacts.subprocess.run'), self.assertRaisesRegex(RuntimeError, 'did not convert'):
+            with patch('services.artifacts.Document.open'), self.assertRaisesRegex(RuntimeError, 'did not convert'):
                 convert_attachments(root, ['attachments/2026/1.doc'])
             self.assertEqual((root/'attachments/2026/1.docx').read_bytes(), b'previous')
+
+    def test_invalid_conversion_does_not_replace_existing_derivative(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory); (root/'attachments/2026').mkdir(parents=True)
+            (root/'attachments/2026/1.xls').write_bytes(b'original')
+            (root/'attachments/2026/1.xlsx').write_bytes(b'previous')
+            os.utime(root/'attachments/2026/1.xlsx', (1, 1))
+            def save_as(output):
+                with ZipFile(output, 'w') as archive:
+                    archive.writestr('word/document.xml', '<xml/>')
+            with patch('services.artifacts.Document.open') as open_document:
+                open_document.return_value.__enter__.return_value.save_as.side_effect = save_as
+                with self.assertRaisesRegex(ValueError, 'Invalid converted Office document'):
+                    convert_attachments(root, ['attachments/2026/1.xls'])
+            self.assertEqual((root/'attachments/2026/1.xlsx').read_bytes(), b'previous')
+            self.assertEqual(sorted(p.name for p in (root/'attachments/2026').iterdir()), ['1.xls', '1.xlsx'])
+
+    def test_current_derivatives_and_modern_attachments_need_no_conversion(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory); (root/'attachments/2026').mkdir(parents=True)
+            (root/'attachments/2026/1.doc').write_bytes(b'original')
+            (root/'attachments/2026/1.docx').write_bytes(b'previous')
+            os.utime(root/'attachments/2026/1.doc', (1, 1))
+            with patch('services.artifacts.Document.open') as open_document:
+                result = convert_attachments(root, ['attachments/2026/1.doc', 'attachments/2026/2.xlsx', 'letters/2026/1.pdf'])
+            self.assertEqual(result, ['attachments/2026/1.docx'])
+            open_document.assert_not_called()
 
     def test_original_files_use_ids_and_extensions_and_share_attachment_ids(self):
         specs = file_specs(

@@ -2,13 +2,13 @@
 
 import asyncio
 import json
-import subprocess
 import tempfile
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 from zipfile import ZipFile
 
 from huggingface_hub import CommitOperationAdd
+from office_oxide import Document
 
 from services.downloader import DOMAIN, Downloader
 
@@ -95,38 +95,31 @@ def convert_attachments(directory: Path, paths: list[str]) -> list[str]:
         else:
             pending.append(source)
 
-    def convert_batch(batch):
-        extension = Path(batch[0]).suffix
+    def convert(source):
+        extension = Path(source).suffix
         member = "word/document.xml" if extension == ".doc" else "xl/workbook.xml"
-        with tempfile.TemporaryDirectory(prefix="statsliggaren-office-") as temporary:
-            root = Path(temporary)
-            subprocess.run(
-                ["libreoffice", f"-env:UserInstallation={(root / 'profile').as_uri()}",
-                 "--headless", "--convert-to", extension[1:] + "x", "--outdir", str(root),
-                 *(str((directory / path).resolve()) for path in batch)],
-                check=True, capture_output=True, text=True, timeout=600,
-            )
-            outputs = []
-            for source in batch:
-                target = converted_path(source)
-                output = root / Path(target).name
-                if not output.exists():
-                    raise RuntimeError(f"LibreOffice did not convert {source}")
-                with ZipFile(output) as archive:
-                    if member not in archive.namelist():
-                        raise ValueError(f"Invalid converted Office document: {source}")
-                output.replace(directory / target)
-                outputs.append(target)
-            return outputs
+        target = converted_path(source)
+        destination = directory / target
+        # Keep the temporary file on the destination filesystem for atomic replacement.
+        with tempfile.TemporaryDirectory(prefix="statsliggaren-office-", dir=destination.parent) as temporary:
+            output = Path(temporary) / destination.name
+            with Document.open(directory / source) as document:
+                document.save_as(output)
+            if not output.exists():
+                raise RuntimeError(f"office-oxide did not convert {source}")
+            with ZipFile(output) as archive:
+                if member not in archive.namelist():
+                    raise ValueError(f"Invalid converted Office document: {source}")
+            output.replace(destination)
+        return target
 
-    batches = []
-    for extension in (".doc", ".xls"):
-        sources = [path for path in pending if Path(path).suffix == extension]
-        batches.extend(sources[offset:offset + 50] for offset in range(0, len(sources), 50))
     with ThreadPoolExecutor(max_workers=4) as pool:
-        for outputs in pool.map(convert_batch, batches):
-            converted.extend(outputs)
-            print(f"Converted {len(converted)} legacy Office attachments", flush=True)
+        for target in pool.map(convert, pending):
+            converted.append(target)
+            if len(converted) % 50 == 0:
+                print(f"Converted {len(converted)} legacy Office attachments", flush=True)
+    if pending:
+        print(f"Converted {len(converted)} legacy Office attachments", flush=True)
     return converted
 
 
