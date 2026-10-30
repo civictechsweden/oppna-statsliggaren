@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 
 import statsliggaren as sl
 from services.downloader import Downloader
+from services.expenditure_areas import fetch_areas
 from services.writer import Writer
 
 load_dotenv()
@@ -24,6 +25,16 @@ async def main(refresh_since: str | None = None):
         refreshed = {row["rbid"] for row in new_metadata}
         metadata = [row for row in metadata if int(row["rbid"]) not in refreshed] + new_metadata
         attachments = [row for row in attachments if int(row["rbid"]) not in refreshed] + new_attachments
+
+        years = {
+            int(row["year"]) for row in metadata
+            if not refresh_since or row["year"] >= refresh_since[:4] or int(row["rbid"]) in refreshed
+        }
+        if years:
+            areas = await fetch_areas(downloader, years)
+            for row in metadata:
+                if int(row["year"]) in years:
+                    row["expenditure_areas"] = ";".join(str(code) for code in sorted(areas.get(int(row["rbid"]), set())))
 
         Writer.write_csv(sorted(metadata, key=lambda d: int(d["rbid"])), "letters.csv")
         Writer.write_csv(
