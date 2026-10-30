@@ -4,11 +4,13 @@ import asyncio
 import json
 import subprocess
 import tempfile
+import time
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 from zipfile import ZipFile
 
 from huggingface_hub import CommitOperationAdd
+from huggingface_hub.errors import HfHubHTTPError
 
 from services.downloader import DOMAIN, Downloader
 
@@ -133,14 +135,25 @@ def convert_attachments(directory: Path, paths: list[str]) -> list[str]:
 def upload_files(api, repo_id: str, directory: Path, paths: list[str]):
     # Small commits allow an interrupted initial archive upload to resume on the
     # next run, without exceeding Hub commit operation limits.
-    for offset in range(0, len(paths), 100):
-        api.create_commit(
-            repo_id=repo_id,
-            repo_type="dataset",
-            operations=[
-                CommitOperationAdd(path_in_repo=path, path_or_fileobj=directory / path)
-                for path in paths[offset:offset + 100]
-            ],
-            commit_message="Refresh letter PDFs and attachments",
-        )
-        print(f"Published {min(offset + 100, len(paths))}/{len(paths)} source files", flush=True)
+    batch_size = 250
+    for offset in range(0, len(paths), batch_size):
+        operations = [
+            CommitOperationAdd(path_in_repo=path, path_or_fileobj=directory / path)
+            for path in paths[offset:offset + batch_size]
+        ]
+        for attempt in range(3):
+            try:
+                api.create_commit(
+                    repo_id=repo_id,
+                    repo_type="dataset",
+                    operations=operations,
+                    commit_message="Refresh letter PDFs and attachments",
+                )
+                break
+            except HfHubHTTPError as error:
+                if error.response.status_code != 429 or attempt == 2:
+                    raise
+                delay = int(error.response.headers.get("Retry-After", "300")) + 1
+                print(f"Hub commit limit reached; retrying in {delay} seconds", flush=True)
+                time.sleep(delay)
+        print(f"Published {min(offset + batch_size, len(paths))}/{len(paths)} source files", flush=True)
