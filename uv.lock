@@ -1,5 +1,5 @@
 version = 1
-revision = 3
+revision = 5
 requires-python = ">=3.14"
 
 [[package]]
@@ -309,6 +309,21 @@ wheels = [
 ]
 
 [[package]]
+name = "office-oxide"
+version = "0.1.16"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/65/24/7bad12b67d564a3c003e5dc55723008b52fb88d34bd92e3fba1b11527e59/office_oxide-0.1.16.tar.gz", hash = "sha256:3589dfca5f0cac833180321946fe20add6519cad60cf59f716fd16e8d983503c", size = 1225414, upload-time = "2026-10-30T00:04:15.125Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/dc/d8/927a607671f0d87f1844d232858840bc485bf54f29fcd6a443bf20b404a1/office_oxide-0.1.16-cp310-abi3-macosx_10_12_x86_64.whl", hash = "sha256:8335d343322d02be9d14b3253e53b09efdee8a61abfd275778bc33ef288bb3a9", size = 2383774, upload-time = "2026-10-30T00:04:05.611Z" },
+    { url = "https://files.pythonhosted.org/packages/44/2a/82ad24dd22e9d8d79285c8f2b4af171549ffc4216140f05fb13eab9b48e2/office_oxide-0.1.16-cp310-abi3-macosx_11_0_arm64.whl", hash = "sha256:ac96a5e946a7d538c6aadde390ac1f3ab5b3febc36ed1407280819254b00dbd9", size = 2235592, upload-time = "2026-10-30T00:04:07.169Z" },
+    { url = "https://files.pythonhosted.org/packages/15/63/bd04e9393b0458d6d267e9d397e6bff9b1342d726798783548f672263a63/office_oxide-0.1.16-cp310-abi3-manylinux_2_28_aarch64.whl", hash = "sha256:16ddd47416a4c1669db77345b8a1028da9cf52be78d481263add6b0a454ad698", size = 2282409, upload-time = "2026-10-30T00:04:08.572Z" },
+    { url = "https://files.pythonhosted.org/packages/0b/f6/515075a93a38a2e9fd11c40e0c82c2b0c1aca38950c65d27005897692be0/office_oxide-0.1.16-cp310-abi3-manylinux_2_34_x86_64.whl", hash = "sha256:7d2c2ac7dc17710df1e902b3c0a01c9c061b1dc4c4da433356450653123eb957", size = 2453123, upload-time = "2026-10-30T00:04:09.93Z" },
+    { url = "https://files.pythonhosted.org/packages/57/ac/5eb72ad06927c1234d2b2cea536b14427dba6d83b00c7c4fc2d7fd69ffba/office_oxide-0.1.16-cp310-abi3-musllinux_1_2_aarch64.whl", hash = "sha256:b5467be76fcfb1bb6b692759b9b12ba6f5a44e86aea67ba7efb6438f75b5821c", size = 2460926, upload-time = "2026-10-30T00:04:11.302Z" },
+    { url = "https://files.pythonhosted.org/packages/63/14/aa738238b8ced97da0542e7b907e7f5167e7724c0c7bd356498353f65607/office_oxide-0.1.16-cp310-abi3-musllinux_1_2_x86_64.whl", hash = "sha256:be84fcdf86e9591df5feb4457a1f6b93ab0c777551d6bc3bad7d0c21def73c6b", size = 2670031, upload-time = "2026-10-30T00:04:12.536Z" },
+    { url = "https://files.pythonhosted.org/packages/cf/ff/216c9a3221fc8cbebbbc0a09a83b306a4210f70f3df0901ab76240bfa47d/office_oxide-0.1.16-cp310-abi3-win_amd64.whl", hash = "sha256:29e2d815cd830727fb2031ae5f665b8896b0a0592365fb875bc147795ddfceee", size = 2537669, upload-time = "2026-10-30T00:04:13.704Z" },
+]
+
+[[package]]
 name = "oppna-statsliggaren"
 version = "0.1.0"
 source = { virtual = "." }
@@ -319,6 +334,7 @@ dependencies = [
     { name = "huggingface-hub" },
     { name = "markdownify" },
     { name = "mdformat" },
+    { name = "office-oxide" },
     { name = "pyarrow" },
     { name = "python-dotenv" },
 ]
@@ -331,6 +347,7 @@ requires-dist = [
     { name = "huggingface-hub", specifier = ">=0.34.0" },
     { name = "markdownify", specifier = ">=1.2.2" },
     { name = "mdformat", specifier = ">=0.7.22" },
+    { name = "office-oxide", specifier = "==0.1.16" },
     { name = "pyarrow", specifier = ">=20.0.0" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
 ]
