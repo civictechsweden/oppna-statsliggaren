@@ -7165,6 +7165,7 @@ id,rbid,name
 10845,26264,Bilaga 1.xlsx
 10855,26264,Bilaga 4.xlsx
 10849,26270,Bilaga till 0904002 RB26.docx
+10850,26271,Bilaga 1 regleringsbrev 0905002 villkor bidrag.docx
 10854,26276,Bilaga 1 Pågående uppdrag.docx
 10856,26282,Bilaga 4 Låneramar och räntekontokrediter.xlsx
 10857,26282,Bilaga 1 Förteckning diarienummer.docx
@@ -7172,14 +7173,23 @@ id,rbid,name
 10859,26282,Bilaga 5 Avgifter som disponeras.pdf
 10860,26282,Bilaga 6 Avgifter till inkomsttitel.pdf
 10862,26282,Bilaga 3 Fördelning av medel 2026_rev.xlsx
+10863,26283,Bilaga 1 ap 1 statsbidrag för att utveckla socialt.docx
+10864,26283,Bilaga 2 ap 15 statsbidrag till kommuner omställni.docx
+10865,26283,Bilaga 3 ap 15 statsbidrag till RSS.docx
+10866,26283,Bilaga 5 fördelning föräldraskapsstöd 2 regionerna.docx
+10867,26283,Bilaga 4  fördelning föräldraskapsstöd 1 0904007.docx
+10868,26283,Bilaga 7 regleringsbrev 0904007 villkor bidrag.docx
+10869,26283,Bilaga 6 fördelning föräldraskapsstöd 3 brottsföre.docx
 10870,26284,Bilaga 4 DAC prognos 2026.docx
 10871,26284,Bilaga 3 DAC utfall 2026.docx
 10872,26284,Bilaga 2 Pågående uppdrag.docx
 10873,26288,Bilaga 2 Skatteverkets investeringsbudget.pdf
 10874,26288,Bilaga 1 Skatteverkets pågående uppdrag.pdf
 10875,26291,Bilaga pågående uppdrag per 1 januari 2026.docx
+10877,26296,Bilaga 1 Pågående uppdrag.docx
 10879,26297,Investeringsplan Myndigheten för civilt försvar.xlsx
 10880,26297,Bilaga 1 pågående uppdrag MCF.docx
+10883,26303,Investeringsplan Statens fastighetsverk.xlsx
 10884,26305,Bilaga 4 DAC prognos 2026.docx
 10885,26305,Bilaga 3 DAC utfall 2026.docx
 10886,26305,Bilaga 2 Pågående uppdrag.docx
@@ -7195,6 +7205,11 @@ id,rbid,name
 10896,26314,Bilaga uppdrag särskilda regeringsbeslut.docx
 10897,26316,Bilaga 2 Prognoser DAC.docx
 10898,26316,Bilaga 3 Beräkning DAC.docx
+10902,26321,Tillväxtanalys pågående uppdrag.docx
+10903,26322,Bilaga 1 Återrapportering av regionalfondsprogram.docx
+10904,26322,Bilaga 2 Pågående uppdrag.docx
+10905,26322,Bilaga 3 Investeringsbudget.docx
+11025,26322,Bilaga 3 Reviderad investeringsbudget.docx
 10906,26324,Bilaga 3.docx
 10907,26324,Bilaga 2.docx
 10908,26324,Bilaga 1.docx
@@ -7202,11 +7217,16 @@ id,rbid,name
 10910,26328,Bilaga 2 regleringsbrev 0904005 RSS.docx
 10911,26328,Bilaga 3 regleringsbrev 0904005 villkor bidrag.docx
 10912,26329,Pågående uppdrag RB26 PTS.docx
+10913,26332,Bilaga 3_Naturvårdsverket_Investeringsplan.pdf
+10914,26332,Bilaga 2_Naturvårdsverket_Pågående uppdrag.pdf
+10915,26333,Bilaga 1 Pågående uppdrag Digg 2026.docx
+10916,26333,Bilaga 2 Investeringsbudget 2026.xlsx
 10917,26334,Bilaga 2 Investeringsplan.docx
 10918,26334,Bilaga 3 Pescoprojekt.docx
 10919,26334,Bilaga 4 Underlag FPI.docx
 10920,26334,Bilaga 5 Pågående uppdrag.docx
 10921,26334,Bilaga 6 Ekonomisk ram.docx
+10922,26335,Bilaga pågående updrag.pdf
 10923,26336,Bilaga 3.docx
 10924,26336,Bilaga 2.docx
 10925,26336,Bilaga 1.docx
@@ -7216,13 +7236,30 @@ id,rbid,name
 10932,26358,Bilaga 6 Avgifter till inkomsttitel.pdf
 10933,26358,Bilaga 3 Fördelning av medel 2026_rev.xlsx
 10934,26358,Bilaga 4 Låneramar och räntekontokrediter_rev.xlsx
+10935,26360,Bilaga 2 till beslut I11 vid regeringssammanträde.docx
 10975,26363,Pågående uppdrag Energimyndigheten inkl ändring.docx
+10937,26364,Bilaga 1 Pågående uppdrag.docx
+10938,26364,Bilaga 2 Investeringsbudget.docx
 10939,26365,Bilaga 1 pågående uppdrag MCF.docx
 10940,26365,Investeringsplan Myndigheten för civilt försvar.xlsx
 10941,26369,Bilaga 1.docx
 10942,26371,Bilaga uppdrag särskilda regeringsbeslut.docx
 10944,26374,Bilaga 2 Skatteverkets investeringsbudget.pdf
 10945,26374,Bilaga 1 Skatteverkets pågående uppdrag.pdf
+10946,26375,Bilaga 3.docx
+10947,26375,Bilaga 2.docx
+10948,26375,Bilaga 1.docx
+10950,26390,Bilaga 2.docx
+10952,26413,Bilaga 2.docx
+10953,26413,Bilaga 1.pdf
+11026,26413,Bilaga 3.docx
+10958,26428,Bilaga 2 Verksamhetsinvesteringar och låneram.pdf
+10959,26430,Pågående uppdrag RB26 PTS.docx
+10960,26432,Bilaga 4 DAC prognos 2026.docx
+10961,26432,Bilaga 3 DAC utfall 2026.docx
+10962,26432,Bilaga 2 Pågående uppdrag.docx
+10963,26433,Investeringsbudget.docx
+10964,26438,Pågående uppdrag.docx
 10965,27445,Bilaga Investeringsplan.xlsx
 10967,27450,Riktlinjer för militär säkerhetstjänst.docx
 10968,27450,Investeringsplaner.docx

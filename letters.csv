@@ -16062,6 +16062,7 @@ rbid,type,date,year,category,name,department,pdf
 26231,Ändringsbeslut,2026-03-05,2026,Myndighet,Statens skolverk,Utbildningsdepartementet,True
 26232,Ändringsbeslut,2026-02-03,2026,Myndighet,Naturvårdsverket,Klimat- och näringslivsdepartementet,True
 26233,Ändringsbeslut,2026-03-05,2026,Myndighet,Utbetalningsmyndigheten,Finansdepartementet,True
+26234,Ändringsbeslut,2026-06-18,2026,Anslag,2:2,Arbetsmarknadsdepartementet,True
 26235,Ändringsbeslut,2026-01-29,2026,Myndighet,Statens geotekniska institut,Klimat- och näringslivsdepartementet,True
 26236,Ändringsbeslut,2026-02-05,2026,Myndighet,Försäkringskassan,Socialdepartementet,True
 26237,Ändringsbeslut,2026-02-19,2026,Anslag,4:5,Socialdepartementet,True
@@ -16091,28 +16092,38 @@ rbid,type,date,year,category,name,department,pdf
 26267,Ändringsbeslut,2026-03-19,2026,Myndighet,Styrelsen för internationellt utvecklingssamarbete,Utrikesdepartementet,True
 26269,Ändringsbeslut,2026-03-12,2026,Myndighet,Totalförsvarets forskningsinstitut,Försvarsdepartementet,True
 26270,Ändringsbeslut,2026-04-23,2026,Anslag,4:2,Socialdepartementet,True
+26271,Ändringsbeslut,2026-06-11,2026,Anslag,5:2,Socialdepartementet,True
+26274,Ändringsbeslut,2026-06-18,2026,Myndighet,Arbetsmiljöverket,Arbetsmarknadsdepartementet,True
 26276,Ändringsbeslut,2026-03-12,2026,Myndighet,Myndigheten för psykologiskt försvar,Försvarsdepartementet,True
 26278,Ändringsbeslut,2026-03-26,2026,Myndighet,Valmyndigheten,Kulturdepartementet,True
 26279,Ändringsbeslut,2026-04-30,2026,Myndighet,E-hälsomyndigheten,Socialdepartementet,True
 26280,Ändringsbeslut,2026-03-12,2026,Anslag,1:14,Försvarsdepartementet,True
 26281,Ändringsbeslut,2026-03-12,2026,Anslag,6:1,Kulturdepartementet,True
 26282,Ändringsbeslut,2026-03-19,2026,Myndighet,länsstyrelserna,Finansdepartementet,True
+26283,Ändringsbeslut,2026-06-11,2026,Anslag,4:7,Socialdepartementet,True
 26284,Ändringsbeslut,2026-03-12,2026,Myndighet,Migrationsverket,Justitiedepartementet,True
+26285,Ändringsbeslut,2026-06-11,2026,Anslag,2:5,Utrikesdepartementet,True
 26286,Ändringsbeslut,2026-03-05,2026,Anslag,1:1,Utrikesdepartementet,True
 26287,Ändringsbeslut,2026-04-01,2026,Anslag,12:1,Socialdepartementet,True
 26288,Ändringsbeslut,2026-03-26,2026,Myndighet,Skatteverket,Finansdepartementet,True
 26290,Ändringsbeslut,2026-03-19,2026,Myndighet,Konjunkturinstitutet,Finansdepartementet,True
 26291,Ändringsbeslut,2026-04-09,2026,Myndighet,Statens energimyndighet,Klimat- och näringslivsdepartementet,True
 26294,Ändringsbeslut,2026-03-26,2026,Anslag,3:1,Arbetsmarknadsdepartementet,True
+26295,Ändringsbeslut,2026-06-11,2026,Myndighet,Inspektionen för vård och omsorg,Socialdepartementet,True
+26296,Ändringsbeslut,2026-06-11,2026,Myndighet,Skogsstyrelsen,Landsbygds- och infrastrukturdepartementet,True
 26297,Ändringsbeslut,2026-03-12,2026,Myndighet,Myndigheten för civilt försvar,Försvarsdepartementet,True
+26298,Ändringsbeslut,2026-06-18,2026,Myndighet,Kemikalieinspektionen,Klimat- och näringslivsdepartementet,True
 26299,Ändringsbeslut,2026-04-23,2026,Myndighet,Brottsförebyggande rådet,Justitiedepartementet,True
 26300,Ändringsbeslut,2026-05-07,2026,Myndighet,Stockholms universitet,Utbildningsdepartementet,True
 26301,Ändringsbeslut,2026-05-07,2026,Anslag,2:63 och 2:65,Utbildningsdepartementet,True
 26302,Ändringsbeslut,2026-04-23,2026,Myndighet,Vetenskapsrådet,Utbildningsdepartementet,True
+26303,Ändringsbeslut,2026-06-18,2026,Myndighet,Statens fastighetsverk,Finansdepartementet,True
 26304,Ändringsbeslut,2026-04-01,2026,Anslag,1:14,Socialdepartementet,True
 26305,Ändringsbeslut,2026-04-16,2026,Myndighet,Migrationsverket,Justitiedepartementet,True
+26306,Ändringsbeslut,2026-06-25,2026,Anslag,1:5,Utrikesdepartementet,True
 26307,Ändringsbeslut,2026-03-26,2026,Anslag,2:7,Utrikesdepartementet,True
 26309,Ändringsbeslut,2026-04-01,2026,Myndighet,Medlingsinstitutet,Arbetsmarknadsdepartementet,True
+26310,Ändringsbeslut,2026-06-25,2026,Myndighet,Folke Bernadotteakademin,Utrikesdepartementet,True
 26311,Ändringsbeslut,2026-04-09,2026,Myndighet,Försäkringskassan,Socialdepartementet,True
 26312,Ändringsbeslut,2026-05-13,2026,Myndighet,Boverket,Landsbygds- och infrastrukturdepartementet,True
 26313,Ändringsbeslut,2026-04-23,2026,Myndighet,Försvarsmakten,Försvarsdepartementet,True
@@ -16122,33 +16133,104 @@ rbid,type,date,year,category,name,department,pdf
 26317,Ändringsbeslut,2026-05-07,2026,Myndighet,Myndigheten för ungdoms- och civilsamhällesfrågor,Socialdepartementet,True
 26318,Ändringsbeslut,2026-04-30,2026,Myndighet,Myndigheten för yrkeshögskolan,Utbildningsdepartementet,True
 26319,Ändringsbeslut,2026-04-16,2026,Myndighet,Styrelsen för internationellt utvecklingssamarbete,Utrikesdepartementet,True
+26321,Ändringsbeslut,2026-06-11,2026,Myndighet,Myndigheten för tillväxtpolitiska utvärderingar och analyser,Klimat- och näringslivsdepartementet,True
+26322,Ändringsbeslut,2026-06-11,2026,Myndighet,Tillväxtverket,Klimat- och näringslivsdepartementet,True
 26324,Ändringsbeslut,2026-04-01,2026,Myndighet,Socialstyrelsen,Socialdepartementet,True
 26325,Ändringsbeslut,2026-05-07,2026,Myndighet,Lunds universitet,Utbildningsdepartementet,True
+26326,Ändringsbeslut,2026-06-11,2026,Myndighet,Statens institutionsstyrelse,Socialdepartementet,True
 26327,Ändringsbeslut,2026-04-09,2026,Anslag,4:1,Arbetsmarknadsdepartementet,True
 26328,Ändringsbeslut,2026-04-23,2026,Anslag,4:5,Socialdepartementet,True
 26329,Ändringsbeslut,2026-05-13,2026,Myndighet,Post- och telestyrelsen,Finansdepartementet,True
 26330,Ändringsbeslut,2026-05-13,2026,Anslag,1:5,Klimat- och näringslivsdepartementet,True
+26331,Ändringsbeslut,2026-05-28,2026,Anslag,"1:1, 2:3 och 2:4",Utrikesdepartementet,True
+26332,Ändringsbeslut,2026-06-18,2026,Myndighet,Naturvårdsverket,Klimat- och näringslivsdepartementet,True
+26333,Ändringsbeslut,2026-06-18,2026,Myndighet,Myndigheten för digital förvaltning,Finansdepartementet,True
 26334,Ändringsbeslut,2026-04-23,2026,Myndighet,Försvarets materielverk,Försvarsdepartementet,True
+26335,Ändringsbeslut,2026-06-25,2026,Myndighet,Sveriges geologiska undersökning,Klimat- och näringslivsdepartementet,True
 26336,Ändringsbeslut,2026-04-23,2026,Myndighet,Socialstyrelsen,Socialdepartementet,True
+26337,Ändringsbeslut,2026-06-25,2026,Anslag,2:3,Arbetsmarknadsdepartementet,True
+26338,Ändringsbeslut,2026-06-18,2026,Myndighet,Arbetsdomstolen,Arbetsmarknadsdepartementet,True
 26339,Ändringsbeslut,2026-05-07,2026,Myndighet,Uppsala universitet,Utbildningsdepartementet,True
 26340,Ändringsbeslut,2026-05-07,2026,Myndighet,Umeå universitet,Utbildningsdepartementet,True
 26341,Ändringsbeslut,2026-05-07,2026,Myndighet,Rymdstyrelsen,Utbildningsdepartementet,True
 26342,Ändringsbeslut,2026-05-21,2026,Anslag,1:14,Socialdepartementet,True
 26345,Ändringsbeslut,2026-05-28,2026,Anslag,7:1,Kulturdepartementet,True
+26346,Ändringsbeslut,2026-06-04,2026,Myndighet,Statens kulturråd,Kulturdepartementet,True
+26347,Ändringsbeslut,2026-06-11,2026,Myndighet,Polarforskningssekretariatet,Utbildningsdepartementet,True
 26348,Ändringsbeslut,2026-05-21,2026,Myndighet,Upphandlingsmyndigheten,Finansdepartementet,True
+26349,Ändringsbeslut,2026-06-11,2026,Anslag,2:64,Utbildningsdepartementet,True
 26350,Ändringsbeslut,2026-05-21,2026,Myndighet,Försäkringskassan,Socialdepartementet,True
+26351,Ändringsbeslut,2026-06-11,2026,Myndighet,Försvarshögskolan,Utbildningsdepartementet,True
 26352,Ändringsbeslut,2026-05-21,2026,Myndighet,Styrelsen för internationellt utvecklingssamarbete,Utrikesdepartementet,True
+26354,Ändringsbeslut,2026-06-11,2026,Myndighet,Kungl. Tekniska högskolan,Utbildningsdepartementet,True
+26355,Ändringsbeslut,2026-06-11,2026,Myndighet,Universitetskanslersämbetet,Utbildningsdepartementet,True
+26357,Ändringsbeslut,2026-06-11,2026,Anslag,4:1,Arbetsmarknadsdepartementet,True
 26358,Ändringsbeslut,2026-05-13,2026,Myndighet,länsstyrelserna,Finansdepartementet,True
+26359,Ändringsbeslut,2026-06-11,2026,Myndighet,Kungl. Konsthögskolan,Utbildningsdepartementet,True
+26360,Ändringsbeslut,2026-06-18,2026,Myndighet,Statens jordbruksverk,Landsbygds- och infrastrukturdepartementet,True
+26361,Ändringsbeslut,2026-06-11,2026,Myndighet,Finansinspektionen,Finansdepartementet,True
+26362,Ändringsbeslut,2026-06-11,2026,Myndighet,Revisorsinspektionen,Finansdepartementet,True
 26363,Ändringsbeslut,2026-05-21,2026,Myndighet,Statens energimyndighet,Klimat- och näringslivsdepartementet,True
+26364,Ändringsbeslut,2026-06-11,2026,Myndighet,Bolagsverket,Klimat- och näringslivsdepartementet,True
 26365,Ändringsbeslut,2026-05-13,2026,Myndighet,Myndigheten för civilt försvar,Försvarsdepartementet,True
+26366,Ändringsbeslut,2026-06-18,2026,Myndighet,Integritetsskyddsmyndigheten,Justitiedepartementet,True
+26367,Ändringsbeslut,2026-06-18,2026,Myndighet,Sveriges Domstolar,Justitiedepartementet,True
+26368,Ändringsbeslut,2026-06-18,2026,Myndighet,Justitiekanslern,Justitiedepartementet,True
 26369,Ändringsbeslut,2026-05-28,2026,Anslag,2:6,Socialdepartementet,True
 26370,Ändringsbeslut,2026-05-13,2026,Myndighet,Strålsäkerhetsmyndigheten,Klimat- och näringslivsdepartementet,True
 26371,Ändringsbeslut,2026-05-21,2026,Myndighet,Statens skolverk,Utbildningsdepartementet,True
+26372,Ändringsbeslut,2026-06-11,2026,Myndighet,Etikprövningsmyndigheten,Utbildningsdepartementet,True
+26373,Ändringsbeslut,2026-06-11,2026,Myndighet,Statskontoret,Finansdepartementet,True
 26374,Ändringsbeslut,2026-05-21,2026,Myndighet,Skatteverket,Finansdepartementet,True
+26375,Ändringsbeslut,2026-06-11,2026,Myndighet,Socialstyrelsen,Socialdepartementet,True
+26376,Ändringsbeslut,2026-06-18,2026,Myndighet,Läkemedelsverket,Socialdepartementet,True
+26377,Ändringsbeslut,2026-06-11,2026,Myndighet,E-hälsomyndigheten,Socialdepartementet,True
+26378,Ändringsbeslut,2026-06-11,2026,Myndighet,Högskolan Kristianstad,Utbildningsdepartementet,True
+26379,Ändringsbeslut,2026-06-11,2026,Myndighet,Karlstads universitet,Utbildningsdepartementet,True
+26380,Ändringsbeslut,2026-06-11,2026,Myndighet,Malmö universitet,Utbildningsdepartementet,True
 26381,Ändringsbeslut,2026-05-28,2026,Myndighet,Myndigheten för familjerätt och föräldraskapsstöd,Socialdepartementet,True
+26382,Ändringsbeslut,2026-06-11,2026,Myndighet,Universitets- och högskolerådet,Utbildningsdepartementet,True
+26383,Ändringsbeslut,2026-06-11,2026,Myndighet,Blekinge tekniska högskola,Utbildningsdepartementet,True
+26384,Ändringsbeslut,2026-06-11,2026,Myndighet,Linköpings universitet,Utbildningsdepartementet,True
+26385,Ändringsbeslut,2026-06-11,2026,Myndighet,Riksgäldskontoret,Finansdepartementet,True
+26386,Ändringsbeslut,2026-06-11,2026,Myndighet,Örebro universitet,Utbildningsdepartementet,True
+26387,Ändringsbeslut,2026-06-11,2026,Myndighet,Karolinska institutet,Utbildningsdepartementet,True
+26390,Ändringsbeslut,2026-06-18,2026,Myndighet,Livsmedelsverket,Landsbygds- och infrastrukturdepartementet,True
 26391,Ändringsbeslut,2026-05-28,2026,Myndighet,Allmänna reklamationsnämnden,Finansdepartementet,True
+26392,Ändringsbeslut,2026-06-18,2026,Myndighet,Brottsförebyggande rådet,Justitiedepartementet,True
+26393,Ändringsbeslut,2026-06-11,2026,Myndighet,Statens servicecenter,Finansdepartementet,True
+26394,Ändringsbeslut,2026-06-11,2026,Anslag,1:1,Arbetsmarknadsdepartementet,True
+26395,Ändringsbeslut,2026-06-11,2026,Anslag,1:1,Landsbygds- och infrastrukturdepartementet,True
 26397,Ändringsbeslut,2026-05-21,2026,Anslag,6:1,Kulturdepartementet,True
+26398,Ändringsbeslut,2026-06-18,2026,Anslag,4:4,Utbildningsdepartementet,True
+26399,Ändringsbeslut,2026-06-18,2026,Myndighet,Sametinget,Kulturdepartementet,True
+26400,Ändringsbeslut,2026-06-18,2026,Myndighet,Statens skolinspektion,Utbildningsdepartementet,True
+26402,Ändringsbeslut,2026-06-11,2026,Myndighet,Uppsala universitet,Utbildningsdepartementet,True
+26403,Ändringsbeslut,2026-06-11,2026,Myndighet,Lunds universitet,Utbildningsdepartementet,True
+26404,Ändringsbeslut,2026-06-11,2026,Anslag,"13:1, 13:2, 13:3 och 13:4",Utbildningsdepartementet,True
+26405,Ändringsbeslut,2026-06-11,2026,Myndighet,Umeå universitet,Utbildningsdepartementet,True
+26406,Ändringsbeslut,2026-06-11,2026,Myndighet,Rymdstyrelsen,Utbildningsdepartementet,True
+26407,Ändringsbeslut,2026-06-11,2026,Myndighet,Vetenskapsrådet,Utbildningsdepartementet,True
+26408,Ändringsbeslut,2026-06-11,2026,Anslag,2:63 och 2:65,Utbildningsdepartementet,True
+26409,Ändringsbeslut,2026-06-11,2026,Myndighet,Göteborgs universitet,Utbildningsdepartementet,True
+26411,Ändringsbeslut,2026-06-11,2026,Anslag,12:2,Socialdepartementet,True
+26412,Ändringsbeslut,2026-06-11,2026,Myndighet,Exportkreditnämnden,Utrikesdepartementet,True
+26413,Ändringsbeslut,2026-06-11,2026,Anslag,1:6,Socialdepartementet,True
+26414,Ändringsbeslut,2026-06-18,2026,Anslag,2:4,Finansdepartementet,True
 26416,Ändringsbeslut,2026-05-28,2026,Anslag,"1:2, 2:1, 2:2, 4:2, 6:3, 7:2, 7:3, 7:5, 9:1, 10:1 och 10:3",Kulturdepartementet,True
+26425,Ändringsbeslut,2026-06-04,2026,Myndighet,Konsumentverket,Finansdepartementet,True
+26428,Ändringsbeslut,2026-07-02,2026,Myndighet,Kriminalvården,Justitiedepartementet,True
+26429,Ändringsbeslut,2026-06-18,2026,Anslag,1:17,Finansdepartementet,True
+26430,Ändringsbeslut,2026-06-18,2026,Myndighet,Post- och telestyrelsen,Finansdepartementet,True
+26431,Ändringsbeslut,2026-06-18,2026,Myndighet,Riksantikvarieämbetet,Kulturdepartementet,True
+26432,Ändringsbeslut,2026-06-04,2026,Myndighet,Migrationsverket,Justitiedepartementet,True
+26433,Ändringsbeslut,2026-06-11,2026,Myndighet,Centrala studiestödsnämnden,Utbildningsdepartementet,True
+26434,Ändringsbeslut,2026-06-18,2026,Anslag,1:14,Försvarsdepartementet,True
+26436,Ändringsbeslut,2026-06-11,2026,Anslag,3:1,Arbetsmarknadsdepartementet,True
+26437,Ändringsbeslut,2026-06-18,2026,Myndighet,Nationalmuseum,Kulturdepartementet,True
+26438,Ändringsbeslut,2026-06-11,2026,Myndighet,Verket för innovationssystem,Klimat- och näringslivsdepartementet,True
+26440,Ändringsbeslut,2026-06-18,2026,Myndighet,Naturhistoriska riksmuseet,Kulturdepartementet,True
+26441,Ändringsbeslut,2026-06-18,2026,Myndighet,Statens historiska museer,Kulturdepartementet,True
 27441,Regleringsbrev,2026-07-02,2026,Anslag,1:22,Klimat- och näringslivsdepartementet,True
 27443,Ändringsbeslut,2026-06-11,2026,Myndighet,Jämställdhetsmyndigheten,Arbetsmarknadsdepartementet,True
 27444,Ändringsbeslut,2026-06-18,2026,Anslag,1:2,Utrikesdepartementet,True
