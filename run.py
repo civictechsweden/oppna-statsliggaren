@@ -18,6 +18,7 @@ async def main(refresh_since: str | None = None):
 
     try:
         metadata = sl.get_local_metadata()
+        has_area_column = bool(metadata) and "expenditure_areas" in metadata[0]
         attachments = sl.get_local_attachments()
 
         ids = await sl.get_rbids_to_fetch(downloader, refresh_since)
@@ -26,9 +27,10 @@ async def main(refresh_since: str | None = None):
         metadata = [row for row in metadata if int(row["rbid"]) not in refreshed] + new_metadata
         attachments = [row for row in attachments if int(row["rbid"]) not in refreshed] + new_attachments
 
-        years = {int(row["year"]) for row in metadata} if any(
-            "expenditure_areas" not in row for row in metadata
-        ) else {int(row["year"]) for row in metadata if not refresh_since or row["year"] >= refresh_since[:4]}
+        years = {int(row["year"]) for row in metadata} if not has_area_column else {
+            int(row["year"]) for row in metadata
+            if not refresh_since or row["year"] >= refresh_since[:4] or int(row["rbid"]) in refreshed
+        }
         if years:
             areas = await fetch_areas(downloader, years)
             for row in metadata:
