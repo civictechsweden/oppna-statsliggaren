@@ -57,8 +57,7 @@ class Writer(object):
         print(f"Saving {len(letters)} letters...", flush=True)
 
         loop = asyncio.get_running_loop()
-        # Create a process pool with a reasonable number of workers (defaults to CPU count)
-        with ProcessPoolExecutor() as pool:
+        with ProcessPoolExecutor(max_workers=4) as pool:
             semaphore = asyncio.Semaphore(100) # Still limit concurrency to avoid too many queued tasks
 
             async def save_letter(rbid, content):

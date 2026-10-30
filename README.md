@@ -74,23 +74,39 @@ The repository can also build a Parquet export with document payload columns `id
 Run it locally with:
 
 ```bash
-uv run python scripts/build_letters_parquet.py --output letters.parquet
+uv run -m scripts.build_letters_parquet --output letters.parquet
 ```
 
 If you want to upload the result to Hugging Face, set `HF_TOKEN` and pass a dataset repo id:
 
 ```bash
-HF_TOKEN=... uv run python scripts/build_letters_parquet.py --output letters.parquet --upload --repo-id your-org/your-dataset --repo-path data/letters.parquet
+HF_TOKEN=... uv run -m scripts.build_letters_parquet --output letters.parquet --upload --repo-id your-org/your-dataset --repo-path letters.parquet
 ```
 
 The builder also loads `.env` automatically if it exists, so local runs can use `HF_TOKEN` and `HF_DATASET_REPO_ID` from there without extra shell exports. Upload is still explicit: it only happens when `--upload` is passed.
 
-If the local Parquet file does not exist but a Hugging Face dataset repo is configured, the script first downloads the existing remote Parquet file and then appends only the locally missing ids before uploading the refreshed file again.
+If the local Parquet file does not exist but a Hugging Face dataset repo is configured, the script first downloads the existing remote Parquet file and then replaces locally refreshed letter payloads, fills missing payloads, and updates the CSV metadata before uploading. The export must contain every ID from `letters.csv`.
 
-The nightly GitHub Action also updates the Hugging Face dataset after refreshing `letters.csv` and `attachments.csv`. To enable that, set:
+Every upload also publishes the catalogues, the dataset card, original letter PDFs
+under `pdf/{rbid}.pdf`, and attachments under `attachments/{id}.{extension}`.
+Already published files are reused except for letters refreshed in the current
+run. Source 404s are reported; other download failures stop publication. Large
+initial file uploads use small commits so the next run can resume them. The CSV
+and Parquet snapshot is committed after the files.
 
-- `HF_DATASET_REPO_ID` as a GitHub Actions variable
+The nightly GitHub Action refreshes new/missing IDs and existing letters decided
+since the start of the previous calendar year, then publishes to Hugging Face.
+To refresh an older period manually, run `uv run -m run --refresh-since 2020-01-01`
+before building/uploading the export. Refreshing a letter replaces its metadata,
+attachment listing and local HTML/XHTML/Markdown instead of appending duplicate rows.
+
+Configure:
+
+- `HF_DATASET_REPO_ID` as a GitHub Actions variable (the existing secret is also supported)
 - `HF_TOKEN` as a GitHub Actions secret
+
+Missing publication configuration fails the job instead of silently skipping uploads.
+The Parquet path is `letters.parquet` at the dataset root.
 
 ## License
 

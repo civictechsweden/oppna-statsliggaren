@@ -27,16 +27,22 @@ async def get_latest_remote_rbid(downloader: Downloader) -> int:
     return Parser.parse_latest_remote_rbid(await downloader.fetch_search())
 
 
-async def get_rbids_to_fetch(downloader: Downloader) -> list[int]:
+async def get_rbids_to_fetch(downloader: Downloader, refresh_since: str | None = None) -> list[int]:
     local_rbids = get_local_rbids()
     latest_remote_rbid = await get_latest_remote_rbid(downloader)
 
     if local_rbids:
         latest_local_rbid = local_rbids[-1]
         missing_local_rbids = get_missing_local_rbids(local_rbids)
-        return missing_local_rbids[-RECENT_MISSING_RBID_WINDOW:] + [
+        missing = missing_local_rbids[-RECENT_MISSING_RBID_WINDOW:]
+        refresh = []
+        if refresh_since:
+            refresh = [int(row["rbid"]) for row in get_local_metadata() if row["date"] >= refresh_since]
+            if refresh:
+                missing = [rbid for rbid in missing_local_rbids if rbid >= min(refresh)]
+        return sorted(set(missing + refresh + [
             i for i in range(latest_local_rbid + 1, latest_remote_rbid + 1)
-        ]
+        ]))
     else:
         return [i for i in range(0, latest_remote_rbid + 1)]
 
@@ -55,7 +61,7 @@ async def get_metadatas(pages: list[int], downloader):
     all_attachments = []
     letters = {}
 
-    semaphore = asyncio.Semaphore(50)
+    semaphore = asyncio.Semaphore(6)
     loop = asyncio.get_running_loop()
 
     async def fetch_and_parse(rbid):
