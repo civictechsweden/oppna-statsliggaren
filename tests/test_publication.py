@@ -10,7 +10,7 @@ import httpx
 import pyarrow as pa
 import pyarrow.parquet as pq
 
-from services.artifacts import convert_attachments, converted_path, download_files, file_specs, upload_files
+from services.artifacts import convert_attachments, converted_path, download_files, file_specs
 from services.parser import Parser
 import statsliggaren
 from scripts import build_letters_parquet as builder
@@ -61,15 +61,44 @@ class PublicationTests(unittest.TestCase):
         response = Mock(text='?rbid=9999&amp;x=y ?RBID=10000&amp;x=y')
         self.assertEqual(Parser.parse_latest_remote_rbid(response), 10000)
 
-    def test_file_uploads_are_batched(self):
+    def test_upload_includes_only_source_files_and_catalogues(self):
         api = Mock()
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            paths = [f"{i}.pdf" for i in range(101)]
-            for name in paths:
-                (root / name).write_bytes(b"%PDF")
-            upload_files(api, "owner/data", root, paths)
-        self.assertEqual([len(c.kwargs["operations"]) for c in api.create_commit.call_args_list], [100, 1])
+            archive = root / 'letters'
+            for path in ('letters/2026/1.pdf', 'attachments/2026/2.docx', 'html/1.html'):
+                target = archive / path
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_bytes(path.encode())
+            (archive / 'unavailable_files.json').write_text('[]')
+            (root / 'letters.csv').write_text('rbid,pdf,year\n1,True,2026\n')
+            (root / 'attachments.csv').write_text('id,rbid,name\n2,1,file.docx\n')
+            (root / 'dataset_card.md').write_text('card')
+            (root / 'letters.parquet').write_bytes(b'parquet')
+            uploaded = {}
+
+            def capture(**kwargs):
+                folder = kwargs['folder_path']
+                uploaded.update({path.relative_to(folder).as_posix(): path.read_bytes()
+                                 for path in folder.rglob('*') if path.is_file()})
+
+            api.list_repo_files.return_value = []
+            api.upload_folder.side_effect = capture
+            with patch.object(builder, 'ROOT', root), \
+                 patch.object(builder, 'LETTERS_DIR', archive), \
+                 patch.object(builder, 'METADATA_CSV', root / 'letters.csv'), \
+                 patch.object(builder, '_load_metadata', return_value=([], {1: {'pdf': 'True', 'year': '2026'}})), \
+                 patch.object(builder, '_letter_ids', return_value=[1]), \
+                 patch.object(builder, 'download_files', new=AsyncMock(return_value=[
+                     'letters/2026/1.pdf', 'attachments/2026/2.docx'])), \
+                 patch.object(builder, 'HfApi', return_value=api):
+                builder._upload_to_hf(root / 'letters.parquet', 'owner/data', 'letters.parquet', 'token')
+            self.assertEqual(set(uploaded), {
+                'letters/2026/1.pdf', 'attachments/2026/2.docx', 'unavailable_files.json',
+                'letters.csv', 'attachments.csv', 'letters.parquet', 'README.md',
+            })
+            api.upload_folder.assert_called_once()
+            self.assertFalse(api.upload_folder.call_args.kwargs['folder_path'].exists())
 
     def test_refreshed_payload_replaces_existing_parquet_row(self):
         with tempfile.TemporaryDirectory() as directory:

@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
     "beautifulsoup4>=4.14.3",
-    "huggingface_hub>=0.34.0",
+    "huggingface_hub>=2.3.0",
     "mdformat>=0.7.22",
     "markdownify>=1.2.2",
     "pyarrow>=20.0.0",

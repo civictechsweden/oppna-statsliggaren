@@ -91,9 +91,9 @@ Every upload also publishes the catalogues, the dataset card, original letter PD
 under `letters/{year}/{rbid}.pdf`, and attachments under `attachments/{year}/{id}.{extension}`.
 Already published files are reused except for letters refreshed in the current
 run. Source 404s and empty responses are recorded in `unavailable_files.json`;
-other download failures stop publication. Large
-initial file uploads use small commits so the next run can resume them. The CSV
-and Parquet snapshot is committed after the files.
+other download failures stop publication. The Hugging Face upload helper
+publishes the source files and catalogues in one call, skipping unchanged files.
+It may split large uploads into multiple commits.
 
 Legacy DOC and XLS attachments are also converted with LibreOffice to
 `attachments/{year}/{id}.docx` and `attachments/{year}/{id}.xlsx`. Both the original and the
