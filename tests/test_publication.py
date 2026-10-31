@@ -1,3 +1,4 @@
+import json
 import tempfile
 import os
 import unittest
@@ -98,6 +99,18 @@ class PublicationTests(unittest.TestCase):
 
 
 class DownloadTests(unittest.IsolatedAsyncioTestCase):
+    async def test_unavailable_files_are_sorted_by_path(self):
+        downloader = Mock(_get_with_retry=AsyncMock(return_value=httpx.Response(404)), aclose=AsyncMock())
+        specs = {
+            'attachments/2026/9.xls': ('https://example/9', False),
+            'attachments/2026/2.xls': ('https://example/2', False),
+        }
+        with tempfile.TemporaryDirectory() as directory, patch('services.artifacts.Downloader', return_value=downloader):
+            root = Path(directory)
+            await download_files(specs, root, set())
+            records = json.loads((root / 'unavailable_files.json').read_text())
+            self.assertEqual([record['path'] for record in records], sorted(specs))
+
     async def test_empty_source_file_is_reported_and_not_created(self):
         downloader = Mock(_get_with_retry=AsyncMock(return_value=httpx.Response(200)), aclose=AsyncMock())
         with tempfile.TemporaryDirectory() as directory, patch('services.artifacts.Downloader', return_value=downloader):

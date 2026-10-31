@@ -69,6 +69,7 @@ async def download_files(specs, directory: Path, existing_paths: set[str]):
         await asyncio.gather(*(download(path, *spec) for path, spec in specs.items()))
     finally:
         await downloader.aclose()
+    unavailable.sort(key=lambda item: item["path"])
     if unavailable:
         print(f"Source files unavailable: {unavailable}", flush=True)
     (directory / "unavailable_files.json").write_text(json.dumps(unavailable, ensure_ascii=False, indent=2))
