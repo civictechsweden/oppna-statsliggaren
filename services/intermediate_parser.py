@@ -567,6 +567,14 @@ class IntermediateParser(object):
             if tag.tag in {"br", "html", "body"}:
                 continue
 
+            # Blank cells keep the letterhead's two-column Markdown table aligned.
+            if tag.tag == "td":
+                table = tag.parent
+                while table and table.tag != "table":
+                    table = table.parent
+                if table and "letterhead" in dom.get_attr(table, "class", []):
+                    continue
+
             text = IntermediateParser._clean_text(dom.text(tag, " ", strip=True))
             if text:
                 continue

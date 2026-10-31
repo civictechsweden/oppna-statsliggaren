@@ -1,4 +1,5 @@
 import html
+import re
 
 from selectolax.lexbor import LexborNode
 
@@ -16,7 +17,10 @@ class XHTMLSerializer(object):
             return "<html>\n  <body></body>\n</html>\n"
 
         lines = XHTMLSerializer._serialize_tag(html_tag, level=0, clean_text=clean_text)
-        return "\n".join(lines) + "\n"
+        xhtml = "\n".join(lines) + "\n"
+        return re.sub(
+            r"[\x00-\x08\x0b\x0c\x0e-\x1f\ud800-\udfff\ufffe\uffff]", "", xhtml
+        )
 
     @staticmethod
     def _serialize_tag(tag: LexborNode, level: int, clean_text) -> list[str]:
