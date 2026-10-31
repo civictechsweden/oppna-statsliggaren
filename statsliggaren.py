@@ -27,7 +27,9 @@ async def get_latest_remote_rbid(downloader: Downloader) -> int:
     return Parser.parse_latest_remote_rbid(await downloader.fetch_search())
 
 
-async def get_rbids_to_fetch(downloader: Downloader, refresh_since: str | None = None) -> list[int]:
+async def get_rbids_to_fetch(
+    downloader: Downloader, refresh_since: str | None = None, scan_all_gaps: bool = False
+) -> list[int]:
     local_rbids = get_local_rbids()
     latest_remote_rbid = await get_latest_remote_rbid(downloader)
 
@@ -38,8 +40,8 @@ async def get_rbids_to_fetch(downloader: Downloader, refresh_since: str | None =
         refresh = []
         if refresh_since:
             refresh = [int(row["rbid"]) for row in get_local_metadata() if row["date"] >= refresh_since]
-            if refresh:
-                missing = [rbid for rbid in missing_local_rbids if rbid >= min(refresh)]
+        if scan_all_gaps:
+            missing = [rbid for rbid in missing_local_rbids if not refresh or rbid >= min(refresh)]
         return sorted(set(missing + refresh + [
             i for i in range(latest_local_rbid + 1, latest_remote_rbid + 1)
         ]))

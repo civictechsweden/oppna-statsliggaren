@@ -136,8 +136,18 @@ class DiscoveryTests(unittest.IsolatedAsyncioTestCase):
         rows = [{"rbid": "100", "date": "2025-12-18"}, {"rbid": "1500", "date": "2026-10-22"}]
         with patch.object(statsliggaren, "get_local_metadata", return_value=rows), \
              patch.object(statsliggaren, "get_latest_remote_rbid", new=AsyncMock(return_value=1500)):
-            ids = await statsliggaren.get_rbids_to_fetch(Mock(), "2025-01-01")
+            ids = await statsliggaren.get_rbids_to_fetch(Mock(), "2025-01-01", scan_all_gaps=True)
         self.assertIn(101, ids)
         self.assertIn(100, ids)
         self.assertIn(1500, ids)
         self.assertEqual(len(ids), len(set(ids)))
+
+    async def test_daily_refresh_only_checks_recent_missing_ids(self):
+        rows = [{"rbid": "100", "date": "2025-12-18"}, {"rbid": "1500", "date": "2026-10-22"}]
+        with patch.object(statsliggaren, "get_local_metadata", return_value=rows), \
+             patch.object(statsliggaren, "get_latest_remote_rbid", new=AsyncMock(return_value=1500)):
+            ids = await statsliggaren.get_rbids_to_fetch(Mock(), "2025-01-01")
+        self.assertNotIn(101, ids)
+        self.assertIn(1400, ids)
+        self.assertIn(100, ids)
+        self.assertIn(1500, ids)

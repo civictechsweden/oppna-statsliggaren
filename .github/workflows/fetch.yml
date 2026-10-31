@@ -41,7 +41,13 @@ jobs:
           test -n "$HF_DATASET_REPO_ID" || { echo "HF_DATASET_REPO_ID variable or secret is required"; exit 1; }
 
       - name: Fetch the data
-        run: uv run -m run --refresh-since "$(($(date -u +%Y) - 1))-01-01"
+        run: |
+          refresh_start="$(($(date -u +%Y) - 1))-01-01"
+          if [ "$(date -u +%u)" = "7" ]; then
+            uv run -m run --refresh-since "$refresh_start" --scan-all-gaps
+          else
+            uv run -m run --refresh-since "$refresh_start"
+          fi
 
       - name: Publish letters, PDFs and attachments
         run: uv run -m scripts.build_letters_parquet --output letters.parquet --upload --repo-id "$HF_DATASET_REPO_ID" --repo-path letters.parquet
