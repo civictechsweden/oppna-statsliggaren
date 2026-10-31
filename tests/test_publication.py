@@ -126,9 +126,11 @@ class DownloadTests(unittest.IsolatedAsyncioTestCase):
     async def test_unavailable_file_is_reported_and_not_created(self):
         downloader = Mock(_get_with_retry=AsyncMock(return_value=httpx.Response(404)), aclose=AsyncMock())
         with tempfile.TemporaryDirectory() as directory, patch('services.artifacts.Downloader', return_value=downloader):
-            paths = await download_files({'letters/2026/1.pdf': ('https://example/1', False)}, Path(directory), set())
+            archive = Path(directory) / 'archive'
+            paths = await download_files({'letters/2026/1.pdf': ('https://example/1', False)}, archive, set())
             self.assertEqual(paths, [])
-            self.assertFalse((Path(directory)/'letters/2026/1.pdf').exists())
+            self.assertFalse((archive/'letters/2026/1.pdf').exists())
+            self.assertTrue((archive/'unavailable_files.json').exists())
 
 
 class DiscoveryTests(unittest.IsolatedAsyncioTestCase):

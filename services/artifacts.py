@@ -30,6 +30,7 @@ def file_specs(metadata, attachments, refreshed_ids):
 
 
 async def download_files(specs, directory: Path, existing_paths: set[str]):
+    directory.mkdir(parents=True, exist_ok=True)
     downloader = Downloader()
     semaphore = asyncio.Semaphore(6)
     paths = []
