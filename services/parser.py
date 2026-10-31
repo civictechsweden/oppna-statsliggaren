@@ -1,13 +1,15 @@
 import html
 import re
 
+from bs4 import BeautifulSoup, SoupStrainer
+
 
 class Parser(object):
     @staticmethod
     def parse_latest_remote_rbid(response) -> int:
         html_text = html.unescape(response.text)
 
-        return int(sorted(html_text.split("rbid=")[1:], reverse=True)[0].split("&")[0])
+        return max(int(value) for value in re.findall(r"rbid=(\d+)", html_text, re.IGNORECASE))
 
     @staticmethod
     def parse_metadata(response, rbid: int):
@@ -25,6 +27,7 @@ class Parser(object):
         metadata["year"] = None
         metadata["category"] = None
         metadata["name"] = None
+        metadata["department"] = None
         metadata["pdf"] = False
 
         if fail:
@@ -45,6 +48,7 @@ class Parser(object):
         metadata["year"] = words[1].split("-")[0]
         metadata["category"] = words[2]
         metadata["name"] = " ".join(words[3:])
+        metadata["department"] = Parser.extract_department(letter)
         metadata["pdf"] = "laddaNerPdf" in html_text
 
         attachments = []
@@ -61,6 +65,19 @@ class Parser(object):
             )
 
         return metadata, attachments, letter
+
+    @staticmethod
+    def extract_department(letter: str) -> str | None:
+        """Read the issuing department from the original letterhead."""
+        header = BeautifulSoup(
+            letter,
+            "html.parser",
+            parse_only=SoupStrainer(class_=["avs", "depNamn", "departement"]),
+        )
+        department = header.find(class_=["avs", "depNamn", "departement"])
+        if department is None:
+            return None
+        return Parser._normalize_whitespace(department.get_text(" ", strip=True)) or None
 
     @staticmethod
     def _hard_coded_fix(text):
