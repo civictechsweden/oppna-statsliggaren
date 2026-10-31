@@ -1,3 +1,4 @@
+import asyncio
 import json
 import hashlib
 import tempfile
@@ -12,11 +13,13 @@ import pyarrow as pa
 import pyarrow.parquet as pq
 from huggingface_hub import RepoFile
 
-from services.artifacts import convert_attachments, converted_path, download_files, file_specs, files_to_publish
+from services.artifacts import (
+    convert_attachments, convert_pending_attachments, converted_path, download_files,
+    fetch_source_files, file_specs, files_to_publish,
+)
 from services.parser import Parser
 import statsliggaren
 from scripts import build_letters_parquet as builder
-from scripts import convert_legacy_attachments, fetch_source_files
 
 
 class PublicationTests(unittest.TestCase):
@@ -143,15 +146,12 @@ class PublicationTests(unittest.TestCase):
             target = archive / path
             target.parent.mkdir(parents=True)
             target.write_bytes(content)
-            (root / 'attachments.csv').write_text('id,rbid,name\n1,7,legacy.doc\n')
-            with patch('sys.argv', ['fetch_source_files', '--repo-id', 'owner/data']), \
-                 patch.object(fetch_source_files, 'ROOT', root), \
-                 patch.object(fetch_source_files, 'LETTERS_DIR', archive), \
-                 patch.object(fetch_source_files, '_load_metadata', return_value=([], {7: {'pdf': 'False', 'year': '2026'}})), \
-                 patch.object(fetch_source_files, '_letter_ids', return_value=[7]), \
-                 patch.object(fetch_source_files, 'download_files', new=AsyncMock(return_value=[path])), \
-                 patch.object(fetch_source_files, 'HfApi', return_value=api):
-                fetch_source_files.main()
+            with patch('services.artifacts.download_files', new=AsyncMock(return_value=[path])):
+                asyncio.run(fetch_source_files(
+                    {7: {'pdf': 'False', 'year': '2026'}},
+                    [{'id': '1', 'rbid': '7', 'name': 'legacy.doc'}],
+                    {7}, api, 'owner/data', archive,
+                ))
             self.assertEqual(json.loads((archive / 'source_files.json').read_text()),
                              {'paths': [], 'conversions': []})
 
@@ -160,10 +160,9 @@ class PublicationTests(unittest.TestCase):
             archive = Path(directory)
             manifest = archive / 'source_files.json'
             manifest.write_text(json.dumps({'paths': [], 'conversions': ['attachments/2026/1.doc']}))
-            with patch.object(convert_legacy_attachments, 'LETTERS_DIR', archive), \
-                 patch.object(convert_legacy_attachments, 'convert_attachments',
-                              return_value=['attachments/2026/1.docx']):
-                convert_legacy_attachments.main()
+            with patch('services.artifacts.convert_attachments',
+                       return_value=['attachments/2026/1.docx']):
+                convert_pending_attachments(archive)
             self.assertEqual(json.loads(manifest.read_text()),
                              {'paths': ['attachments/2026/1.docx'], 'conversions': []})
 

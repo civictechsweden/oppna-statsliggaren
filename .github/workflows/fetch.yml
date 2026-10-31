@@ -42,11 +42,10 @@ jobs:
         run: |
           refresh_start="$(($(date -u +%Y) - 1))-01-01"
           if [ "$(date -u +%u)" = "7" ]; then
-            uv run -m run --refresh-since "$refresh_start" --scan-all-gaps
+            uv run -m run --refresh-since "$refresh_start" --scan-all-gaps --repo-id "$HF_DATASET_REPO_ID"
           else
-            uv run -m run --refresh-since "$refresh_start"
+            uv run -m run --refresh-since "$refresh_start" --repo-id "$HF_DATASET_REPO_ID"
           fi
-          uv run -m scripts.fetch_source_files --repo-id "$HF_DATASET_REPO_ID"
           if jq -e '.conversions | length > 0' letters/source_files.json >/dev/null; then
             echo 'office_needed=true' >> "$GITHUB_OUTPUT"
           fi
@@ -57,7 +56,7 @@ jobs:
 
       - name: Convert legacy attachments
         if: steps.fetch.outputs.office_needed == 'true'
-        run: uv run -m scripts.convert_legacy_attachments
+        run: uv run -m run --convert-attachments
 
       - name: Publish dataset
         run: uv run -m scripts.build_letters_parquet --output letters.parquet --upload --repo-id "$HF_DATASET_REPO_ID" --repo-path letters.parquet

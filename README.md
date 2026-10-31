@@ -80,8 +80,8 @@ uv run -m scripts.build_letters_parquet --output letters.parquet
 If you want to upload the result to Hugging Face, set `HF_TOKEN` and pass a dataset repo id:
 
 ```bash
-HF_TOKEN=... uv run -m scripts.fetch_source_files --repo-id your-org/your-dataset
-uv run -m scripts.convert_legacy_attachments
+HF_TOKEN=... uv run -m run --refresh-since 2025-01-01 --repo-id your-org/your-dataset
+uv run -m run --convert-attachments
 HF_TOKEN=... uv run -m scripts.build_letters_parquet --output letters.parquet --upload --repo-id your-org/your-dataset --repo-path letters.parquet
 ```
 
