@@ -1,4 +1,5 @@
 import json
+import hashlib
 import tempfile
 import os
 import unittest
@@ -9,11 +10,13 @@ from zipfile import ZipFile
 import httpx
 import pyarrow as pa
 import pyarrow.parquet as pq
+from huggingface_hub import RepoFile
 
-from services.artifacts import convert_attachments, converted_path, download_files, file_specs
+from services.artifacts import convert_attachments, converted_path, download_files, file_specs, files_to_publish
 from services.parser import Parser
 import statsliggaren
 from scripts import build_letters_parquet as builder
+from scripts import convert_legacy_attachments, fetch_source_files
 
 
 class PublicationTests(unittest.TestCase):
@@ -71,6 +74,8 @@ class PublicationTests(unittest.TestCase):
                 target.parent.mkdir(parents=True, exist_ok=True)
                 target.write_bytes(path.encode())
             (archive / 'unavailable_files.json').write_text('[]')
+            (archive / 'source_files.json').write_text(json.dumps({
+                'paths': ['letters/2026/1.pdf', 'attachments/2026/2.docx'], 'conversions': []}))
             (root / 'letters.csv').write_text('rbid,pdf,year\n1,True,2026\n')
             (root / 'attachments.csv').write_text('id,rbid,name\n2,1,file.docx\n')
             (root / 'dataset_card.md').write_text('card')
@@ -82,15 +87,10 @@ class PublicationTests(unittest.TestCase):
                 uploaded.update({path.relative_to(folder).as_posix(): path.read_bytes()
                                  for path in folder.rglob('*') if path.is_file()})
 
-            api.list_repo_files.return_value = []
             api.upload_folder.side_effect = capture
             with patch.object(builder, 'ROOT', root), \
                  patch.object(builder, 'LETTERS_DIR', archive), \
                  patch.object(builder, 'METADATA_CSV', root / 'letters.csv'), \
-                 patch.object(builder, '_load_metadata', return_value=([], {1: {'pdf': 'True', 'year': '2026'}})), \
-                 patch.object(builder, '_letter_ids', return_value=[1]), \
-                 patch.object(builder, 'download_files', new=AsyncMock(return_value=[
-                     'letters/2026/1.pdf', 'attachments/2026/2.docx'])), \
                  patch.object(builder, 'HfApi', return_value=api):
                 builder._upload_to_hf(root / 'letters.parquet', 'owner/data', 'letters.parquet', 'token')
             self.assertEqual(set(uploaded), {
@@ -99,6 +99,73 @@ class PublicationTests(unittest.TestCase):
             })
             api.upload_folder.assert_called_once()
             self.assertFalse(api.upload_folder.call_args.kwargs['folder_path'].exists())
+
+    def test_unchanged_legacy_source_reuses_published_conversion(self):
+        content = b'original'
+        blob_id = hashlib.sha1(f'blob {len(content)}\0'.encode() + content).hexdigest()
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            path = 'attachments/2026/1.doc'
+            target = root / path
+            target.parent.mkdir(parents=True)
+            target.write_bytes(content)
+            remote = {path: Mock(size=len(content), blob_id=blob_id, lfs=None),
+                      'attachments/2026/1.docx': Mock()}
+            self.assertEqual(files_to_publish([path], root, remote), ([], []))
+            self.assertEqual(files_to_publish([path], root, {path: remote[path]}),
+                             ([], [path]))
+            target.write_bytes(b'changed!')
+            self.assertEqual(files_to_publish([path], root, remote), ([path], [path]))
+
+    def test_unchanged_lfs_file_is_not_staged(self):
+        content = b'%PDF-example'
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            path = 'letters/2026/1.pdf'
+            target = root / path
+            target.parent.mkdir(parents=True)
+            target.write_bytes(content)
+            remote = {path: Mock(size=len(content), lfs=Mock(sha256=hashlib.sha256(content).hexdigest()))}
+            self.assertEqual(files_to_publish([path], root, remote), ([], []))
+
+    def test_source_fetch_reuses_published_legacy_conversion(self):
+        content = b'original'
+        path = 'attachments/2026/1.doc'
+        blob_id = hashlib.sha1(f'blob {len(content)}\0'.encode() + content).hexdigest()
+        api = Mock()
+        api.list_repo_tree.return_value = [
+            RepoFile(path=path, size=len(content), oid=blob_id),
+            RepoFile(path='attachments/2026/1.docx', size=5, oid='previous'),
+        ]
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            archive = root / 'letters'
+            target = archive / path
+            target.parent.mkdir(parents=True)
+            target.write_bytes(content)
+            (root / 'attachments.csv').write_text('id,rbid,name\n1,7,legacy.doc\n')
+            with patch('sys.argv', ['fetch_source_files', '--repo-id', 'owner/data']), \
+                 patch.object(fetch_source_files, 'ROOT', root), \
+                 patch.object(fetch_source_files, 'LETTERS_DIR', archive), \
+                 patch.object(fetch_source_files, '_load_metadata', return_value=([], {7: {'pdf': 'False', 'year': '2026'}})), \
+                 patch.object(fetch_source_files, '_letter_ids', return_value=[7]), \
+                 patch.object(fetch_source_files, 'download_files', new=AsyncMock(return_value=[path])), \
+                 patch.object(fetch_source_files, 'HfApi', return_value=api):
+                fetch_source_files.main()
+            self.assertEqual(json.loads((archive / 'source_files.json').read_text()),
+                             {'paths': [], 'conversions': []})
+
+    def test_conversion_adds_derivative_to_publication_manifest(self):
+        with tempfile.TemporaryDirectory() as directory:
+            archive = Path(directory)
+            manifest = archive / 'source_files.json'
+            manifest.write_text(json.dumps({'paths': [], 'conversions': ['attachments/2026/1.doc']}))
+            with patch.object(convert_legacy_attachments, 'LETTERS_DIR', archive), \
+                 patch.object(convert_legacy_attachments, 'convert_attachments',
+                              return_value=['attachments/2026/1.docx']):
+                convert_legacy_attachments.main()
+            self.assertEqual(json.loads(manifest.read_text()),
+                             {'paths': ['attachments/2026/1.docx'], 'conversions': []})
 
     def test_refreshed_payload_replaces_existing_parquet_row(self):
         with tempfile.TemporaryDirectory() as directory:

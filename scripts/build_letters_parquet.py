@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import asyncio
 import csv
+import json
 import tempfile
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -13,7 +14,6 @@ import pyarrow.parquet as pq
 from dotenv import load_dotenv
 from huggingface_hub import HfApi, get_token, hf_hub_download
 
-from services.artifacts import convert_attachments, converted_path, download_files, file_specs
 from services.downloader import Downloader
 from services.writer import Writer, save_letter_sync
 from statsliggaren import get_metadatas
@@ -173,20 +173,10 @@ def _upload_to_hf(
     token: str | None,
 ) -> None:
     api = HfApi(token=token)
-    api.create_repo(repo_id=repo_id, repo_type="dataset", exist_ok=True)
-    with (ROOT / "attachments.csv").open(encoding="utf-8", newline="") as handle:
-        attachments = list(csv.DictReader(handle))
-    _, metadata = _load_metadata()
-    existing_paths = set(api.list_repo_files(repo_id=repo_id, repo_type="dataset"))
-    specs = file_specs(metadata, attachments, set(_letter_ids()))
-    # A published original may still need a newly introduced OOXML derivative.
-    reusable_paths = {path for path in existing_paths
-                      if not converted_path(path) or converted_path(path) in existing_paths}
-    paths = asyncio.run(download_files(
-        specs, LETTERS_DIR, reusable_paths
-    ))
-    paths.extend(convert_attachments(LETTERS_DIR, paths))
-    files = {path: LETTERS_DIR / path for path in paths}
+    manifest = json.loads((LETTERS_DIR / "source_files.json").read_text())
+    if manifest["conversions"]:
+        raise RuntimeError("Convert legacy attachments before publishing")
+    files = {path: LETTERS_DIR / path for path in manifest["paths"]}
     files.update({
         repo_path: parquet_path,
         "letters.csv": METADATA_CSV,

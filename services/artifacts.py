@@ -1,6 +1,7 @@
 """Download and publish the original letter PDFs and attachment files."""
 
 import asyncio
+import hashlib
 import json
 import subprocess
 import tempfile
@@ -79,6 +80,32 @@ def converted_path(path: str) -> str | None:
     if path.startswith("attachments/") and extension in (".doc", ".xls"):
         return str(Path(path).with_suffix(extension + "x"))
     return None
+
+
+def files_to_publish(paths, directory: Path, remote_files):
+    changed = []
+    conversions = []
+    for path in paths:
+        source = directory / path
+        remote = remote_files.get(path)
+        same = False
+        if remote and source.stat().st_size == remote.size:
+            if remote.lfs:
+                digest = hashlib.sha256()
+                expected = remote.lfs.sha256
+            else:
+                digest = hashlib.sha1(f"blob {remote.size}\0".encode())
+                expected = remote.blob_id
+            with source.open("rb") as handle:
+                for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+                    digest.update(chunk)
+            same = digest.hexdigest() == expected
+        if not same:
+            changed.append(path)
+        derivative = converted_path(path)
+        if derivative and (not same or derivative not in remote_files):
+            conversions.append(path)
+    return changed, conversions
 
 
 def convert_attachments(directory: Path, paths: list[str]) -> list[str]:
