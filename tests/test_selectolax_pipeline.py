@@ -104,6 +104,22 @@ class SelectolaxPipelineTests(unittest.TestCase):
         self.assertIn("**Andra uppdraget**", markdown)
         self.assertNotIn("****Andra uppdraget****", markdown)
 
+    def test_empty_xhtml_emphasis_does_not_format_following_text(self):
+        xhtml, document = self.parse(
+            "<p>Före <em>titel</em><em /> efter.</p><p>Ordinarie<strong /> text.</p>"
+        )
+        self.assertEqual(
+            ["".join(tag.itertext()) for tag in document.iter("em")], ["titel"]
+        )
+        self.assertEqual(list(document.iter("strong")), [])
+        markdown = Cleaner.clean_markdown(
+            mdformat.text(
+                markdownify(xhtml, heading_style="ATX"), options={"number": True}
+            )
+        )
+        self.assertIn("*titel*efter.", markdown)
+        self.assertIn("Ordinarietext.", markdown)
+
     def test_inline_source_markup_does_not_wrap_block_headings(self):
         _, document = self.parse(
             "<p>Inledning.<em /></p>"

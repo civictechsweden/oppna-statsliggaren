@@ -31,7 +31,9 @@ You can also download the letters in their row HTML format, in a cleaned XHTML f
 
 The HTML normalization pipeline uses selectolax's Lexbor parser. Lexbor applies
 HTML5 repairs, including implicit `tbody` elements and repaired paragraph
-boundaries. The XHTML keeps the letter text, links, and table-span attributes.
+boundaries. Statsliggaren's empty XHTML-style `<em />` and `<strong />` tags are
+closed before HTML parsing so they do not format the following text. The XHTML
+keeps the letter text, links, and table-span attributes.
 Beautiful Soup remains a direct dependency for letter metadata parsing and is
 also used by Markdownify for Markdown conversion.
 
