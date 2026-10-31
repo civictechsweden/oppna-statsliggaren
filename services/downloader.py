@@ -11,12 +11,26 @@ SEARCH_URL = (
 )
 
 
+class ApiGatewayTransport(AsyncApiGatewayTransport):
+    async def handle_async_request(self, request: httpx.Request) -> httpx.Response:
+        # The upstream transport rewrites the URL and Host header in place.
+        # Keep HTTPX's request intact so redirects and cookies use the source origin.
+        gateway_request = httpx.Request(
+            request.method,
+            request.url,
+            headers=request.headers,
+            stream=request.stream,
+            extensions=request.extensions,
+        )
+        return await super().handle_async_request(gateway_request)
+
+
 class Downloader(object):
     def __init__(self):
         self.gateway_transport = None
 
         if os.getenv("USE_IP_ROTATOR", "").lower() == "true":
-            self.gateway_transport = AsyncApiGatewayTransport(
+            self.gateway_transport = ApiGatewayTransport(
                 DOMAIN,
                 regions=["eu-north-1"],
                 retries=3,
