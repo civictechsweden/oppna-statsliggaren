@@ -17,7 +17,7 @@ async def fetch_areas(downloader, years: set[int]) -> dict[int, set[int]]:
         if link.get_text(strip=True).isdigit():
             year = int(link.get_text(strip=True))
             if year in years:
-                year_urls[year] = urljoin(DOMAIN, link["href"])
+                year_urls[year] = f"{DOMAIN}/statsliggaren/?PeriodId={year}"
     if years - year_urls.keys():
         raise ValueError(f"Missing Statsliggaren years: {sorted(years - year_urls.keys())}")
 

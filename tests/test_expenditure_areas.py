@@ -28,7 +28,7 @@ class ExpenditureAreaTests(unittest.IsolatedAsyncioTestCase):
         def response(url):
             if url.endswith('/statsliggaren/'):
                 content = '<a href="/archive?PeriodId=2003">2003</a>'
-            elif '/archive?' in url:
+            elif '/statsliggaren/?PeriodId=2003' in url:
                 content = ('<a href="/statsliggaren/regleringsbrev---Listsida-UO/?PeriodId=2003&UOId=5">5</a>'
                            '<a href="/statsliggaren/regleringsbrev---Listsida-UO/?PeriodId=2003&UOId=7">7</a>')
             else:
@@ -40,3 +40,4 @@ class ExpenditureAreaTests(unittest.IsolatedAsyncioTestCase):
 
         downloader = Mock(_get_with_retry=AsyncMock(side_effect=response))
         self.assertEqual(await fetch_areas(downloader, {2003}), {1: {5, 7}, 2: {5, 7}})
+        self.assertFalse(any('/link/' in call.args[0] for call in downloader._get_with_retry.await_args_list))
