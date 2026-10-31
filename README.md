@@ -107,9 +107,10 @@ the previous calendar year, new IDs, and the last 100 missing IDs. On Sundays it
 rechecks every missing ID in that period, then publishes to Hugging Face.
 `letters.csv` includes `expenditure_areas` as semicolon-separated numeric UO codes;
 the Parquet column stores a list of integers. Both come from Statsliggaren's annual
-expenditure-area lists. A letter
-may belong to several areas; an empty field means that no numbered area list
-contains it. The lists include amendment decisions directly by their RBID.
+expenditure-area lists. A letter may belong to several areas. Amendment decisions
+may be dated one year after the budget period in which they are listed, so the
+refresh also reads the preceding year's area lists and retains existing area
+values when a refreshed list does not contain the letter.
 To refresh an older period manually, run `uv run -m run --refresh-since 2020-01-01`
 before building/uploading the export. Refreshing a letter replaces its metadata,
 attachment listing and local HTML/XHTML/Markdown instead of appending duplicate rows.

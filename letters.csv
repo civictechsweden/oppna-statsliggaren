@@ -15300,7 +15300,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,pdf
 25254,Ändringsbeslut,2024-12-16,2024,Myndighet,Statens haverikommission,Försvarsdepartementet,6,True
 25255,Ändringsbeslut,2024-12-19,2024,Myndighet,Kammarkollegiet,Finansdepartementet,2,True
 25257,Ändringsbeslut,2024-12-19,2024,Anslag,2:3,Arbetsmarknadsdepartementet,14,True
-25279,Ändringsbeslut,2025-01-23,2025,Myndighet,Trafikverket,Landsbygds- och infrastrukturdepartementet,,True
+25279,Ändringsbeslut,2025-01-23,2025,Myndighet,Trafikverket,Landsbygds- och infrastrukturdepartementet,22,True
 25282,Ändringsbeslut,2025-02-06,2025,Anslag,4:7,Socialdepartementet,9,True
 25284,Ändringsbeslut,2025-02-20,2025,Myndighet,Statens skolverk,Utbildningsdepartementet,16,True
 25285,Ändringsbeslut,2025-01-23,2025,Anslag,1:6,Socialdepartementet,9,True
@@ -15319,7 +15319,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,pdf
 25303,Ändringsbeslut,2025-01-30,2025,Anslag,1:5,Socialdepartementet,9,True
 25304,Ändringsbeslut,2025-03-27,2025,Myndighet,Statens energimyndighet,Klimat- och näringslivsdepartementet,21,True
 25305,Ändringsbeslut,2025-02-20,2025,Myndighet,Försvarsmakten,Försvarsdepartementet,6,True
-25306,Ändringsbeslut,2025-01-30,2025,Myndighet,Post- och telestyrelsen,Finansdepartementet,,True
+25306,Ändringsbeslut,2025-01-30,2025,Myndighet,Post- och telestyrelsen,Finansdepartementet,22,True
 25307,Ändringsbeslut,2025-03-13,2025,Myndighet,"Forskningsrådet för hälsa, arbetsliv och välfärd",Socialdepartementet,9,True
 25308,Ändringsbeslut,2025-02-27,2025,Myndighet,Universitetskanslersämbetet,Utbildningsdepartementet,16,True
 25309,Ändringsbeslut,2025-03-06,2025,Myndighet,Styrelsen för internationellt utvecklingssamarbete,Utrikesdepartementet,5;7,True
@@ -15332,7 +15332,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,pdf
 25318,Ändringsbeslut,2025-05-08,2025,Anslag,4:2,Socialdepartementet,9,True
 25319,Ändringsbeslut,2025-03-20,2025,Anslag,4:5,Socialdepartementet,9,True
 25321,Ändringsbeslut,2025-03-13,2025,Anslag,"1:1, 2:3 och 2:4",Utrikesdepartementet,7;24,True
-25325,Ändringsbeslut,2025-01-30,2025,Anslag,1:1,Utrikesdepartementet,,True
+25325,Ändringsbeslut,2025-01-30,2025,Anslag,1:1,Utrikesdepartementet,5,True
 25326,Ändringsbeslut,2025-02-27,2025,Myndighet,Polismyndigheten,Justitiedepartementet,4,True
 25327,Ändringsbeslut,2025-02-20,2025,Myndighet,"Forskningsrådet för miljö, areella näringar och samhällsbyggande",Klimat- och näringslivsdepartementet,20,True
 25328,Ändringsbeslut,2025-09-25,2025,Myndighet,Myndigheten för arbetsmiljökunskap,Arbetsmarknadsdepartementet,14,True
@@ -15346,7 +15346,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,pdf
 25337,Ändringsbeslut,2025-02-13,2025,Anslag,1:1,Arbetsmarknadsdepartementet,13,True
 25338,Ändringsbeslut,2025-02-20,2025,Myndighet,Myndigheten för psykologiskt försvar,Försvarsdepartementet,6,True
 25339,Ändringsbeslut,2025-02-20,2025,Anslag,4:1,Arbetsmarknadsdepartementet,13,True
-25341,Ändringsbeslut,2025-02-13,2025,Myndighet,Naturvårdsverket,Klimat- och näringslivsdepartementet,,True
+25341,Ändringsbeslut,2025-02-13,2025,Myndighet,Naturvårdsverket,Klimat- och näringslivsdepartementet,20,True
 25342,Ändringsbeslut,2025-02-13,2025,Myndighet,Statens beredning för medicinsk och social utvärdering,Socialdepartementet,9,True
 25343,Ändringsbeslut,2025-02-20,2025,Anslag,1:5,Socialdepartementet,9,True
 25344,Ändringsbeslut,2025-02-20,2025,Myndighet,Totalförsvarets forskningsinstitut,Försvarsdepartementet,6,True
