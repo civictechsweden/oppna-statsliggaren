@@ -64,11 +64,11 @@ class PublicationTests(unittest.TestCase):
         api = Mock()
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            paths = [f"{i}.pdf" for i in range(251)]
+            paths = [f"{i}.pdf" for i in range(1001)]
             for name in paths:
                 (root / name).write_bytes(b"%PDF")
             upload_files(api, "owner/data", root, paths)
-        self.assertEqual([len(c.kwargs["operations"]) for c in api.create_commit.call_args_list], [250, 1])
+        self.assertEqual([len(c.kwargs["operations"]) for c in api.create_commit.call_args_list], [1000, 1])
 
     def test_refreshed_payload_replaces_existing_parquet_row(self):
         with tempfile.TemporaryDirectory() as directory:

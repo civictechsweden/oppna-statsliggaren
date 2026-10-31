@@ -92,7 +92,7 @@ under `letters/{year}/{rbid}.pdf`, and attachments under `attachments/{year}/{id
 Already published files are reused except for letters refreshed in the current
 run. Source 404s and empty responses are recorded in `unavailable_files.json`;
 other download failures stop publication. Large
-initial file uploads use small commits so the next run can resume them. The CSV
+initial file uploads use resumable commits so the next run can resume them. The CSV
 and Parquet snapshot is committed after the files.
 
 Legacy DOC and XLS attachments are also converted with LibreOffice to

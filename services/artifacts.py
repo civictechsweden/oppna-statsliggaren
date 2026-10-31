@@ -133,9 +133,8 @@ def convert_attachments(directory: Path, paths: list[str]) -> list[str]:
 
 
 def upload_files(api, repo_id: str, directory: Path, paths: list[str]):
-    # Small commits allow an interrupted initial archive upload to resume on the
-    # next run, without exceeding Hub commit operation limits.
-    batch_size = 250
+    # Each committed batch remains available if an initial upload is interrupted.
+    batch_size = 1000
     for offset in range(0, len(paths), batch_size):
         operations = [
             CommitOperationAdd(path_in_repo=path, path_or_fileobj=directory / path)
