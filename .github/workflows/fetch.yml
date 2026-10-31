@@ -32,24 +32,33 @@ jobs:
 
       - run: uv sync --frozen
 
-      - name: Install Office conversion tools
-        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends libreoffice-writer libreoffice-calc
-
       - name: Validate publication configuration
         run: |
           test -n "$HF_TOKEN" || { echo "HF_TOKEN secret is required"; exit 1; }
           test -n "$HF_DATASET_REPO_ID" || { echo "HF_DATASET_REPO_ID variable or secret is required"; exit 1; }
 
       - name: Fetch the data
+        id: fetch
         run: |
           refresh_start="$(($(date -u +%Y) - 1))-01-01"
           if [ "$(date -u +%u)" = "7" ]; then
-            uv run -m run --refresh-since "$refresh_start" --scan-all-gaps
+            uv run -m run --refresh-since "$refresh_start" --scan-all-gaps --repo-id "$HF_DATASET_REPO_ID"
           else
-            uv run -m run --refresh-since "$refresh_start"
+            uv run -m run --refresh-since "$refresh_start" --repo-id "$HF_DATASET_REPO_ID"
+          fi
+          if jq -e '.conversions | length > 0' letters/source_files.json >/dev/null; then
+            echo 'office_needed=true' >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Publish letters, PDFs and attachments
+      - name: Install Office conversion tools
+        if: steps.fetch.outputs.office_needed == 'true'
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends libreoffice-writer libreoffice-calc
+
+      - name: Convert legacy attachments
+        if: steps.fetch.outputs.office_needed == 'true'
+        run: uv run -m run --convert-attachments
+
+      - name: Publish dataset
         run: uv run -m scripts.build_letters_parquet --output letters.parquet --upload --repo-id "$HF_DATASET_REPO_ID" --repo-path letters.parquet
 
       - name: Commit and push

@@ -1,12 +1,15 @@
 """Download and publish the original letter PDFs and attachment files."""
 
 import asyncio
+import hashlib
 import json
 import subprocess
 import tempfile
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 from zipfile import ZipFile
+
+from huggingface_hub import RepoFile
 
 from services.downloader import DOMAIN, Downloader
 
@@ -81,6 +84,53 @@ def converted_path(path: str) -> str | None:
     return None
 
 
+def files_to_publish(paths, directory: Path, remote_files):
+    changed = []
+    conversions = []
+    for path in paths:
+        source = directory / path
+        remote = remote_files.get(path)
+        same = False
+        if remote and source.stat().st_size == remote.size:
+            if remote.lfs:
+                digest = hashlib.sha256()
+                expected = remote.lfs.sha256
+            else:
+                digest = hashlib.sha1(f"blob {remote.size}\0".encode())
+                expected = remote.blob_id
+            with source.open("rb") as handle:
+                for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+                    digest.update(chunk)
+            same = digest.hexdigest() == expected
+        if not same:
+            changed.append(path)
+        derivative = converted_path(path)
+        if derivative and (not same or derivative not in remote_files):
+            conversions.append(path)
+    return changed, conversions
+
+
+async def fetch_source_files(metadata, attachments, refreshed_ids, api, repo_id: str, directory: Path):
+    api.create_repo(repo_id=repo_id, repo_type="dataset", exist_ok=True)
+    remote_files = {
+        item.path: item for item in api.list_repo_tree(
+            repo_id=repo_id, repo_type="dataset", recursive=True
+        ) if isinstance(item, RepoFile)
+    }
+    specs = file_specs(metadata, attachments, refreshed_ids)
+    reusable_paths = {
+        path for path in remote_files
+        if not converted_path(path) or converted_path(path) in remote_files
+    }
+    downloaded = await download_files(specs, directory, reusable_paths)
+    changed, conversions = files_to_publish(downloaded, directory, remote_files)
+    (directory / "source_files.json").write_text(json.dumps({
+        "paths": changed,
+        "conversions": conversions,
+    }, indent=2))
+    print(f"Fetched {len(downloaded)} files; {len(changed)} changed, {len(conversions)} need conversion")
+
+
 def convert_attachments(directory: Path, paths: list[str]) -> list[str]:
     """Create OOXML derivatives without changing the original attachments."""
     converted = []
@@ -128,3 +178,12 @@ def convert_attachments(directory: Path, paths: list[str]) -> list[str]:
             converted.extend(outputs)
             print(f"Converted {len(converted)} legacy Office attachments", flush=True)
     return converted
+
+
+def convert_pending_attachments(directory: Path) -> None:
+    manifest = directory / "source_files.json"
+    data = json.loads(manifest.read_text())
+    converted = convert_attachments(directory, data["conversions"])
+    data["paths"] = sorted(set(data["paths"] + converted))
+    data["conversions"] = []
+    manifest.write_text(json.dumps(data, indent=2))

@@ -80,6 +80,8 @@ uv run -m scripts.build_letters_parquet --output letters.parquet
 If you want to upload the result to Hugging Face, set `HF_TOKEN` and pass a dataset repo id:
 
 ```bash
+HF_TOKEN=... uv run -m run --refresh-since 2025-01-01 --repo-id your-org/your-dataset
+uv run -m run --convert-attachments
 HF_TOKEN=... uv run -m scripts.build_letters_parquet --output letters.parquet --upload --repo-id your-org/your-dataset --repo-path letters.parquet
 ```
 
@@ -87,20 +89,22 @@ The builder also loads `.env` automatically if it exists, so local runs can use 
 
 If the local Parquet file does not exist but a Hugging Face dataset repo is configured, the script first downloads the existing remote Parquet file and then replaces locally refreshed letter payloads, fills missing payloads, and updates the CSV metadata before uploading. The export must contain every ID from `letters.csv`.
 
-Every upload also publishes the catalogues, the dataset card, original letter PDFs
+The source fetch downloads new and refreshed PDFs and attachments, compares them with
+published files, and records which files need upload or conversion. Publication
+then uploads the changed files, catalogues, and dataset card. Original letter PDFs live
 under `letters/{year}/{rbid}.pdf`, and attachments under `attachments/{year}/{id}.{extension}`.
-Already published files are reused except for letters refreshed in the current
-run. Source 404s and empty responses are recorded in `unavailable_files.json`;
+Source 404s and empty responses are recorded in `unavailable_files.json`;
 other download failures stop publication. The Hugging Face upload helper
-publishes the source files and catalogues in one call, skipping unchanged files.
+publishes the selected files in one call.
 It may split large uploads into multiple commits.
 
 Legacy DOC and XLS attachments are also converted with LibreOffice to
 `attachments/{year}/{id}.docx` and `attachments/{year}/{id}.xlsx`. Both the original and the
 converted file are published. Downstream importers can use the OOXML version
 without running their own conversion. Install `libreoffice-writer` and
-`libreoffice-calc` before publishing locally; the workflow installs them itself.
-Published conversions are reused unless the source letter is refreshed.
+`libreoffice-calc` before converting locally if the source fetch identifies files
+that need conversion. The workflow installs them only when needed. Published
+conversions are reused when the original attachment is unchanged.
 
 The nightly GitHub Action refreshes existing letters decided since the start of
 the previous calendar year, new IDs, and the last 100 missing IDs. On Sundays it
