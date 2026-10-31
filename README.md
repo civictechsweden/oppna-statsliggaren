@@ -32,16 +32,16 @@ You can also download the letters in their row HTML format, in a cleaned XHTML f
 The HTML normalization pipeline uses selectolax's Lexbor parser. Lexbor applies
 HTML5 repairs, including implicit `tbody` elements and repaired paragraph
 boundaries. The XHTML keeps the letter text, links, and table-span attributes.
-Markdown conversion uses Markdownify, which still depends on Beautiful Soup
-internally.
+Beautiful Soup remains a direct dependency for letter metadata parsing and is
+also used by Markdownify for Markdown conversion.
 
 Run the self-contained parser regressions with:
 
 ```bash
-uv run --with pytest python -m pytest tests/test_selectolax_pipeline.py
+uv run -m unittest tests.test_selectolax_pipeline
 ```
 
-The complete suite (`uv run --with pytest python -m pytest tests`) also expects
+The complete suite (`uv run -m unittest discover -s tests`) also expects
 cached sample letters in `letters/html/`: 240, 5071, 5140, 6890, 8102, 8103,
 8817, 8844, 8899, 11373, 21762, and 26297.
 

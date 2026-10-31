@@ -132,13 +132,33 @@ def set_text(node: LexborNode, value: str) -> None:
     node.insert_child(value)
 
 
+def append(parent: LexborNode, child: LexborNode) -> LexborNode:
+    parent.insert_child(child)
+    return children(parent)[-1]
+
+
+def insert_before(node: LexborNode, sibling: LexborNode) -> LexborNode:
+    node.insert_before(sibling)
+    return node.prev
+
+
+def insert_after(node: LexborNode, sibling: LexborNode) -> LexborNode:
+    node.insert_after(sibling)
+    return node.next
+
+
+def replace(node: LexborNode, replacement: LexborNode) -> LexborNode:
+    replacement = insert_before(node, replacement)
+    node.decompose()
+    return replacement
+
+
 def rename(node: LexborNode, name: str) -> LexborNode:
     replacement = node.parser.create_node(name)
     set_attrs(replacement, node.attributes)
     for child in children(node):
         replacement.insert_child(child)
-    node.replace_with(replacement)
-    return replacement
+    return replace(node, replacement)
 
 
 def detach(node: LexborNode) -> LexborNode:

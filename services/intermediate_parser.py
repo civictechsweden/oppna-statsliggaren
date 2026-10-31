@@ -377,6 +377,7 @@ class IntermediateParser(object):
 
             if tag.parent and tag.parent.tag in {
                 "a",
+                "em",
                 "h1",
                 "h2",
                 "h3",
@@ -385,6 +386,8 @@ class IntermediateParser(object):
                 "h6",
                 "li",
                 "p",
+                "strong",
+                "sup",
                 "td",
                 "th",
             }:
@@ -456,6 +459,8 @@ class IntermediateParser(object):
 
         IntermediateParser._wrap_loose_text(dom.find(document, "body"))
         IntermediateParser._normalize_heading_contents(document)
+        IntermediateParser._unwrap_inline_block_containers(document)
+        IntermediateParser._collapse_nested_emphasis(document)
         IntermediateParser._split_invalid_paragraphs(document)
         # Splitting repaired paragraphs can expose inline siblings at body level.
         IntermediateParser._wrap_orphan_inline_body_nodes(document)
@@ -465,11 +470,26 @@ class IntermediateParser(object):
         IntermediateParser._remove_empty_tags(document)
 
     @staticmethod
+    def _unwrap_inline_block_containers(document: LexborNode) -> None:
+        for tag in reversed(dom.find_all(document, ["a", "em", "strong", "sup"])):
+            if any(
+                descendant.tag in IntermediateParser.BLOCK_TAGS
+                for descendant in dom.find_all(tag, True)
+            ):
+                tag.unwrap()
+
+    @staticmethod
+    def _collapse_nested_emphasis(document: LexborNode) -> None:
+        for tag in reversed(dom.find_all(document, ["em", "strong"])):
+            if tag.parent and tag.parent.tag == tag.tag:
+                tag.unwrap()
+
+    @staticmethod
     def _split_invalid_paragraphs(document: LexborNode) -> None:
         inline_tags = {"a", "br"}
         paragraph_blockers = IntermediateParser.BLOCK_TAGS
 
-        for paragraph in list(dom.find_all(document, "p")):
+        for paragraph in reversed(list(dom.find_all(document, "p"))):
             if not any(
                 dom.is_tag(child) and child.tag in paragraph_blockers
                 for child in dom.children(paragraph)
@@ -669,9 +689,16 @@ class IntermediateParser(object):
             if not dom.is_tag(child) or child.tag not in inline_tags:
                 continue
 
+            if any(
+                descendant.tag in IntermediateParser.BLOCK_TAGS
+                for descendant in dom.find_all(child, True)
+            ):
+                child.unwrap()
+                continue
+
             paragraph = document.parser.create_node("p")
-            child.replace_with(paragraph)
-            paragraph.insert_child(child)
+            paragraph = dom.insert_before(child, paragraph)
+            paragraph.insert_child(dom.detach(child))
 
     @staticmethod
     def _remove_body_level_breaks(document: LexborNode) -> None:
@@ -1061,11 +1088,9 @@ class IntermediateParser(object):
                 paragraphs.append(paragraph)
 
             replacement = paragraphs[0]
-            tag.replace_with(replacement)
-            current = replacement
+            current = dom.replace(tag, replacement)
             for paragraph in paragraphs[1:]:
-                current.insert_after(paragraph)
-                current = paragraph
+                current = dom.insert_after(current, paragraph)
 
     @staticmethod
     def _extract_footnote_lines(tag: LexborNode) -> list[list[LexborNode | str]]:
@@ -1151,8 +1176,8 @@ class IntermediateParser(object):
                     )
                 )
                 if normalized_table:
-                    tag.replace_with(title_paragraph)
-                    title_paragraph.insert_after(normalized_table)
+                    title_paragraph = dom.replace(tag, title_paragraph)
+                    dom.insert_after(title_paragraph, normalized_table)
                     for sibling in region[i + 1 : i + consumed]:
                         sibling.decompose()
                     i += consumed
@@ -1168,8 +1193,8 @@ class IntermediateParser(object):
                     )
                 )
                 if normalized_table:
-                    tag.replace_with(title_paragraph)
-                    title_paragraph.insert_after(normalized_table)
+                    title_paragraph = dom.replace(tag, title_paragraph)
+                    dom.insert_after(title_paragraph, normalized_table)
                     for sibling in region[i + 1 : i + consumed]:
                         sibling.decompose()
                     i += consumed
@@ -1183,8 +1208,8 @@ class IntermediateParser(object):
                     )
                 )
                 if normalized_table and title_paragraph:
-                    tag.replace_with(title_paragraph)
-                    title_paragraph.insert_after(normalized_table)
+                    title_paragraph = dom.replace(tag, title_paragraph)
+                    dom.insert_after(title_paragraph, normalized_table)
 
             i += 1
 
@@ -1288,7 +1313,7 @@ class IntermediateParser(object):
     ) -> LexborNode:
         table = document.parser.create_node("table")
         tbody = document.parser.create_node("tbody")
-        table.insert_child(tbody)
+        tbody = dom.append(table, tbody)
 
         if ap_header:
             header_row = document.parser.create_node("tr")

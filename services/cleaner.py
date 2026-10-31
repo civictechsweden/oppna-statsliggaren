@@ -275,7 +275,7 @@ class Cleaner(object):
 
         table = soup.parser.create_node("table")
         tbody = soup.parser.create_node("tbody")
-        table.insert_child(tbody)
+        tbody = dom.append(table, tbody)
 
         tbody.insert_child(
             Cleaner._build_row(
@@ -390,7 +390,7 @@ class Cleaner(object):
 
         table = soup.parser.create_node("table")
         tbody = soup.parser.create_node("tbody")
-        table.insert_child(tbody)
+        tbody = dom.append(table, tbody)
         tbody.insert_child(Cleaner._build_row(soup, header_cells))
 
         for row in rows:
