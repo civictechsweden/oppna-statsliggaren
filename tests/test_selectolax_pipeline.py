@@ -107,6 +107,7 @@ class SelectolaxPipelineTests(unittest.TestCase):
     def test_empty_xhtml_emphasis_does_not_format_following_text(self):
         xhtml, document = self.parse(
             "<p>Före <em>titel</em><em /> efter.</p><p>Ordinarie<strong /> text.</p>"
+            '<p>Annat<strong xmlns="" /> stycke.</p>'
         )
         self.assertEqual(
             ["".join(tag.itertext()) for tag in document.iter("em")], ["titel"]
@@ -119,6 +120,7 @@ class SelectolaxPipelineTests(unittest.TestCase):
         )
         self.assertIn("*titel*efter.", markdown)
         self.assertIn("Ordinarietext.", markdown)
+        self.assertIn("Annatstycke.", markdown)
 
     def test_inline_source_markup_does_not_wrap_block_headings(self):
         _, document = self.parse(
