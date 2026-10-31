@@ -2,6 +2,7 @@ import unittest
 from xml.etree import ElementTree
 
 import mdformat
+from markdown_it import MarkdownIt
 from markdownify import markdownify
 
 from services.cleaner import Cleaner
@@ -43,6 +44,38 @@ class SelectolaxPipelineTests(unittest.TestCase):
         self.assertIn("Slutet.", "".join(document.itertext()))
         self.assertNotIn("noise", xhtml)
         self.assertNotIn("discard this comment", xhtml)
+
+    def test_letterhead_second_column_survives_markdown_rendering(self):
+        source = (
+            '<div id="BrevHuvud"><div class="avs">Finansdepartementet</div>'
+            '<div id="BeslutTyp">Regeringsbeslut</div>'
+            '<div id="BeslutNr">II 4</div>'
+            '<div id="BeslutDatum">2026-10-31</div>'
+            '<div id="DiarieNr">Fi2026/01234</div>'
+            '<div id="AdressSektion">Övningsmyndigheten</div></div>'
+            '<div id="RegleringsbrevBody"><h1>Regleringsbrev</h1></div>'
+        )
+        xhtml = IntermediateParser.parse_letter_html(source)
+        document = ElementTree.fromstring(xhtml)
+        letterhead = document.find('.//table[@class="letterhead"]')
+        self.assertIsNotNone(letterhead)
+        self.assertTrue(all(len(row) == 2 for row in letterhead.findall("tr")))
+
+        markdown = Cleaner.clean_markdown(
+            mdformat.text(
+                markdownify(xhtml, heading_style="ATX"), options={"number": True}
+            )
+        )
+        rendered = MarkdownIt("commonmark").enable("table").render(markdown)
+        self.assertIn("II 4", rendered)
+        self.assertIn("Fi2026/01234", rendered)
+        self.assertIn("Övningsmyndigheten", rendered)
+
+    def test_invalid_xml_control_characters_are_removed(self):
+        xhtml, document = self.parse("<p>D!A\x08\x10</p>")
+        self.assertNotIn("\x08", xhtml)
+        self.assertNotIn("\x10", xhtml)
+        self.assertIn("D!A", "".join(document.itertext()))
 
     def test_preserves_footnote_markers_and_splits_lines(self):
         _, document = self.parse(

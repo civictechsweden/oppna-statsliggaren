@@ -250,22 +250,16 @@ class XHTMLExtractor(object):
 
             has_content = True
             tr = document.parser.create_node("tr")
-            if left_lines:
-                tr.insert_child(
-                    XHTMLExtractor._build_letterhead_cell(
-                        document,
-                        left_role,
-                        left_lines,
-                    )
+            tr.insert_child(
+                XHTMLExtractor._build_letterhead_cell(
+                    document, left_role if left_lines else None, left_lines
                 )
-            if right_lines:
-                tr.insert_child(
-                    XHTMLExtractor._build_letterhead_cell(
-                        document,
-                        right_role,
-                        right_lines,
-                    )
+            )
+            tr.insert_child(
+                XHTMLExtractor._build_letterhead_cell(
+                    document, right_role if right_lines else None, right_lines
                 )
+            )
             table.insert_child(tr)
 
         return dom.markup(table) if has_content else None
