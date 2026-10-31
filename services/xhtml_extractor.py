@@ -1,8 +1,9 @@
-from dataclasses import dataclass, field
 import re
+from dataclasses import dataclass, field
 
-from bs4 import BeautifulSoup, Tag
+from selectolax.lexbor import LexborNode
 
+from services import html_dom as dom
 from services.template_classifier import TemplateVariant
 
 
@@ -69,7 +70,7 @@ class XHTMLExtractor(object):
 
     @staticmethod
     def extract(
-        source: BeautifulSoup,
+        source: LexborNode,
         variant: TemplateVariant,
         clean_text,
         strings_from_tag,
@@ -91,8 +92,8 @@ class XHTMLExtractor(object):
 
         if variant in XHTMLExtractor.WORD_VARIANTS:
             body_selector = XHTMLExtractor.FRAGMENT_SELECTORS[variant]["body"]
-            header_root = source.select_one(".documentHead") or source.select_one(
-                ".section1"
+            header_root = dom.select_one(source, ".documentHead") or dom.select_one(
+                source, ".section1"
             )
             return ExtractedLetter(
                 header_fragment=XHTMLExtractor._word_header_fragment(
@@ -114,31 +115,33 @@ class XHTMLExtractor(object):
         return ExtractedLetter()
 
     @staticmethod
-    def _legacy_table_header_fragment(source: BeautifulSoup, clean_text) -> str | None:
-        department = source.select_one(".departement")
-        department_text = clean_text(department.get_text(" ", strip=True)) if department else ""
-        decision_cells = source.select("td.info")
+    def _legacy_table_header_fragment(source: LexborNode, clean_text) -> str | None:
+        department = dom.select_one(source, ".departement")
+        department_text = (
+            clean_text(dom.text(department, " ", strip=True)) if department else ""
+        )
+        decision_cells = dom.select(source, "td.info")
         left_decision = ""
         right_decision = ""
         if decision_cells:
-            left_decision = clean_text(decision_cells[0].get_text(" ", strip=True))
+            left_decision = clean_text(dom.text(decision_cells[0], " ", strip=True))
         if len(decision_cells) > 1:
-            right_decision = clean_text(decision_cells[1].get_text(" ", strip=True))
+            right_decision = clean_text(dom.text(decision_cells[1], " ", strip=True))
 
-        date_tag = source.select_one(".datum")
-        date_text = clean_text(date_tag.get_text(" ", strip=True)) if date_tag else ""
+        date_tag = dom.select_one(source, ".datum")
+        date_text = clean_text(dom.text(date_tag, " ", strip=True)) if date_tag else ""
 
-        diary = source.select_one(".diarie")
+        diary = dom.select_one(source, ".diarie")
         diary_lines = []
         if diary:
-            for item in diary.stripped_strings:
+            for item in dom.strings(diary):
                 text = clean_text(item)
                 if text:
                     diary_lines.append(text)
 
         address_lines = []
-        for tag in source.select("table.invisible td.adress"):
-            text = clean_text(tag.get_text(" ", strip=True))
+        for tag in dom.select(source, "table.invisible td.adress"):
+            text = clean_text(dom.text(tag, " ", strip=True))
             if text:
                 address_lines.append(text)
 
@@ -152,13 +155,13 @@ class XHTMLExtractor(object):
         )
 
     @staticmethod
-    def _classic_header_fragment(source: BeautifulSoup, clean_text) -> str | None:
-        department = source.select_one("#RubrikSektion .avs, #BrevHuvud .avs")
-        decision = source.select_one("#BeslutTyp")
-        decision_number = source.select_one("#BeslutNr")
-        date = source.select_one("#BeslutDatum")
-        diary = source.select_one("#DiarieNr")
-        recipient = source.select_one("#AdressSektion")
+    def _classic_header_fragment(source: LexborNode, clean_text) -> str | None:
+        department = dom.select_one(source, "#RubrikSektion .avs, #BrevHuvud .avs")
+        decision = dom.select_one(source, "#BeslutTyp")
+        decision_number = dom.select_one(source, "#BeslutNr")
+        date = dom.select_one(source, "#BeslutDatum")
+        diary = dom.select_one(source, "#DiarieNr")
+        recipient = dom.select_one(source, "#AdressSektion")
 
         return XHTMLExtractor._build_letterhead_table(
             [
@@ -190,11 +193,17 @@ class XHTMLExtractor(object):
         )
 
     @staticmethod
-    def _word_header_fragment(header_root: Tag | None, clean_text, strings_from_tag) -> str | None:
+    def _word_header_fragment(
+        header_root: LexborNode | None, clean_text, strings_from_tag
+    ) -> str | None:
         if not header_root:
             return None
 
-        lines = [clean_text(text) for text in strings_from_tag(header_root) if clean_text(text)]
+        lines = [
+            clean_text(text)
+            for text in strings_from_tag(header_root)
+            if clean_text(text)
+        ]
         if not lines:
             return None
 
@@ -226,11 +235,11 @@ class XHTMLExtractor(object):
 
     @staticmethod
     def _build_letterhead_table(
-        rows: list[tuple[str | None, list[str], str | None, list[str]]]
+        rows: list[tuple[str | None, list[str], str | None, list[str]]],
     ) -> str | None:
-        document = BeautifulSoup("", "html.parser")
-        table = document.new_tag("table")
-        table["class"] = [XHTMLExtractor.LETTERHEAD_TABLE_CLASS]
+        document = dom.parse_html("")
+        table = document.parser.create_node("table")
+        dom.set_attr(table, "class", [XHTMLExtractor.LETTERHEAD_TABLE_CLASS])
 
         has_content = False
         for left_role, left_lines, right_role, right_lines in rows:
@@ -240,9 +249,9 @@ class XHTMLExtractor(object):
                 continue
 
             has_content = True
-            tr = document.new_tag("tr")
+            tr = document.parser.create_node("tr")
             if left_lines:
-                tr.append(
+                tr.insert_child(
                     XHTMLExtractor._build_letterhead_cell(
                         document,
                         left_role,
@@ -250,88 +259,90 @@ class XHTMLExtractor(object):
                     )
                 )
             if right_lines:
-                tr.append(
+                tr.insert_child(
                     XHTMLExtractor._build_letterhead_cell(
                         document,
                         right_role,
                         right_lines,
                     )
                 )
-            table.append(tr)
+            table.insert_child(tr)
 
-        return str(table) if has_content else None
+        return dom.markup(table) if has_content else None
 
     @staticmethod
     def _build_letterhead_cell(
-        document: BeautifulSoup, role: str | None, lines: list[str]
-    ) -> Tag:
-        td = document.new_tag("td")
+        document: LexborNode, role: str | None, lines: list[str]
+    ) -> LexborNode:
+        td = document.parser.create_node("td")
         if role:
-            td["class"] = [XHTMLExtractor.LETTERHEAD_CELL_CLASSES[role]]
+            dom.set_attr(td, "class", [XHTMLExtractor.LETTERHEAD_CELL_CLASSES[role]])
         for index, line in enumerate(lines):
             if index:
-                td.append(document.new_tag("br"))
-            td.append(line)
+                td.insert_child(document.parser.create_node("br"))
+            td.insert_child(line)
         return td
 
     @staticmethod
-    def _cleaned_lines_from_tag(tag: Tag | None, clean_text) -> list[str]:
+    def _cleaned_lines_from_tag(tag: LexborNode | None, clean_text) -> list[str]:
         if not tag:
             return []
-        return [clean_text(text) for text in tag.stripped_strings if clean_text(text)]
+        return [clean_text(text) for text in dom.strings(tag) if clean_text(text)]
 
     @staticmethod
     def _looks_like_diary_line(text: str) -> bool:
         return bool(re.match(r"^[A-Za-zÅÄÖåäö]{1,4}\d{4}/\d+", text))
 
     @staticmethod
-    def _legacy_table_body_fragment(source: BeautifulSoup) -> str | None:
-        start = source.select_one("div[sektion='inledning']")
+    def _legacy_table_body_fragment(source: LexborNode) -> str | None:
+        start = dom.select_one(source, "div[sektion='inledning']")
         if not start or not start.parent:
             return None
 
         fragments = []
         collecting = False
-        for child in start.parent.children:
-            if child is start:
+        for child in dom.children(start.parent):
+            if child == start:
                 collecting = True
 
-            if not collecting or not isinstance(child, Tag):
+            if not collecting or not dom.is_tag(child):
                 continue
 
-            if child.name == "div":
-                fragments.append(str(child))
+            if child.tag == "div":
+                fragments.append(dom.markup(child))
 
         return "".join(fragments) or None
 
     @staticmethod
-    def _tag_html(tag: Tag | None) -> str | None:
-        return str(tag) if tag else None
+    def _tag_html(tag: LexborNode | None) -> str | None:
+        return dom.markup(tag) if tag else None
 
     @staticmethod
-    def _body_without_footer(body_tag: Tag | None, footer_selector: str) -> Tag | None:
+    def _body_without_footer(
+        body_tag: LexborNode | None, footer_selector: str
+    ) -> LexborNode | None:
         if not body_tag:
             return None
 
-        body_copy = BeautifulSoup(str(body_tag), "html.parser").find(True)
+        body_copy = dom.find(dom.parse_fragment(dom.markup(body_tag)), True)
         if not body_copy:
             return None
 
         for selector in (item.strip() for item in footer_selector.split(",")):
             if not selector:
                 continue
-            footer = body_copy.select_one(selector)
+            footer = dom.select_one(body_copy, selector)
             if footer:
                 footer.decompose()
 
         return body_copy
 
     @staticmethod
-    def _select_first(source: BeautifulSoup, selector_list: str) -> Tag | None:
+    def _select_first(source: LexborNode, selector_list: str) -> LexborNode | None:
         for selector in (item.strip() for item in selector_list.split(",")):
             if not selector:
                 continue
-            tag = source.select_one(selector)
+            tag = dom.select_one(source, selector)
             if tag:
                 return tag
         return None
