@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import asyncio
 import csv
+import tempfile
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from typing import Iterable
@@ -10,9 +11,9 @@ from typing import Iterable
 import pyarrow as pa
 import pyarrow.parquet as pq
 from dotenv import load_dotenv
-from huggingface_hub import CommitOperationAdd, HfApi, get_token, hf_hub_download
+from huggingface_hub import HfApi, get_token, hf_hub_download
 
-from services.artifacts import convert_attachments, converted_path, download_files, file_specs, upload_files
+from services.artifacts import convert_attachments, converted_path, download_files, file_specs
 from services.downloader import Downloader
 from services.writer import Writer, save_letter_sync
 from statsliggaren import get_metadatas
@@ -185,19 +186,26 @@ def _upload_to_hf(
         specs, LETTERS_DIR, reusable_paths
     ))
     paths.extend(convert_attachments(LETTERS_DIR, paths))
-    upload_files(api, repo_id, LETTERS_DIR, paths)
-    api.create_commit(
-        repo_id=repo_id,
-        repo_type="dataset",
-        operations=[
-            CommitOperationAdd(path_in_repo=repo_path, path_or_fileobj=parquet_path),
-            CommitOperationAdd(path_in_repo="letters.csv", path_or_fileobj=METADATA_CSV),
-            CommitOperationAdd(path_in_repo="attachments.csv", path_or_fileobj=ROOT / "attachments.csv"),
-            CommitOperationAdd(path_in_repo="README.md", path_or_fileobj=ROOT / "dataset_card.md"),
-            CommitOperationAdd(path_in_repo="unavailable_files.json", path_or_fileobj=LETTERS_DIR / "unavailable_files.json"),
-        ],
-        commit_message="Refresh letters and attachment metadata",
-    )
+    files = {path: LETTERS_DIR / path for path in paths}
+    files.update({
+        repo_path: parquet_path,
+        "letters.csv": METADATA_CSV,
+        "attachments.csv": ROOT / "attachments.csv",
+        "README.md": ROOT / "dataset_card.md",
+        "unavailable_files.json": LETTERS_DIR / "unavailable_files.json",
+    })
+    with tempfile.TemporaryDirectory(prefix="hf-publication-", dir=LETTERS_DIR) as temporary:
+        staging = Path(temporary)
+        for path, source in files.items():
+            target = staging / path
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.hardlink_to(source)
+        api.upload_folder(
+            repo_id=repo_id,
+            repo_type="dataset",
+            folder_path=staging,
+            commit_message="Refresh letters and attachments",
+        )
 
 
 def _download_existing_from_hf(

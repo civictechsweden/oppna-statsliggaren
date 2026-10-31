@@ -8,8 +8,6 @@ from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 from zipfile import ZipFile
 
-from huggingface_hub import CommitOperationAdd
-
 from services.downloader import DOMAIN, Downloader
 
 
@@ -130,19 +128,3 @@ def convert_attachments(directory: Path, paths: list[str]) -> list[str]:
             converted.extend(outputs)
             print(f"Converted {len(converted)} legacy Office attachments", flush=True)
     return converted
-
-
-def upload_files(api, repo_id: str, directory: Path, paths: list[str]):
-    # Small commits allow an interrupted initial archive upload to resume on the
-    # next run, without exceeding Hub commit operation limits.
-    for offset in range(0, len(paths), 100):
-        api.create_commit(
-            repo_id=repo_id,
-            repo_type="dataset",
-            operations=[
-                CommitOperationAdd(path_in_repo=path, path_or_fileobj=directory / path)
-                for path in paths[offset:offset + 100]
-            ],
-            commit_message="Refresh letter PDFs and attachments",
-        )
-        print(f"Published {min(offset + 100, len(paths))}/{len(paths)} source files", flush=True)
