@@ -88,7 +88,7 @@ https://www.statskontoret.se/regleringsbrev/bilaga/{ID}
 
 ### Parquet export
 
-The repository can also build a Parquet export with document payload columns `id`, `html`, `xhtml`, and `md`, plus metadata columns from `letters.csv`: `type`, `date`, `year`, `category`, `name`, and `pdf`.
+The repository can also build a Parquet export with document payload columns `id`, `html`, `xhtml`, and `md`, plus metadata columns from `letters.csv`: `type`, `date`, `year`, `category`, `name`, `department`, `expenditure_areas`, `registry_numbers`, and `pdf`. `registry_numbers` contains a list of letterhead entries as printed; the CSV separates those entries with semicolons.
 Run it locally with:
 
 ```bash

@@ -2,6 +2,7 @@ import html
 import re
 
 from bs4 import BeautifulSoup, SoupStrainer
+from selectolax.lexbor import LexborHTMLParser
 
 
 class Parser(object):
@@ -28,6 +29,7 @@ class Parser(object):
         metadata["category"] = None
         metadata["name"] = None
         metadata["department"] = None
+        metadata["registry_numbers"] = ""
         metadata["pdf"] = False
 
         if fail:
@@ -49,6 +51,7 @@ class Parser(object):
         metadata["category"] = words[2]
         metadata["name"] = " ".join(words[3:])
         metadata["department"] = Parser.extract_department(letter)
+        metadata["registry_numbers"] = ";".join(Parser.extract_registry_numbers(letter))
         metadata["pdf"] = "laddaNerPdf" in html_text
 
         attachments = []
@@ -78,6 +81,46 @@ class Parser(object):
         if department is None:
             return None
         return Parser._normalize_whitespace(department.get_text(" ", strip=True)) or None
+
+    @staticmethod
+    def extract_registry_numbers(letter: str) -> list[str]:
+        """Read registry-number entries from the original letterhead, as printed."""
+        tree = LexborHTMLParser(letter)
+        diary = tree.css_first("#BrevHuvud #DiarieNr, .universe_tbl .diarie")
+        if diary is None:
+            header = tree.css_first(".documentHead, .section1")
+            right_column = (
+                header.css_first('td[style*="width:3.0cm"]') if header else None
+            )
+            cells = right_column.css("td") if right_column else []
+            diary = cells[-1] if cells else None
+        if diary is None:
+            return []
+
+        markup = re.sub(r"<br\b[^>]*>", "\n", diary.html, flags=re.IGNORECASE)
+        text = LexborHTMLParser(markup).text(separator=" ", strip=False)
+        lines = []
+        for raw_line in text.splitlines():
+            line = Parser._normalize_whitespace(raw_line)
+            if line and lines and lines[-1].endswith("/"):
+                lines[-1] += line
+            elif line:
+                lines.append(line)
+        numbers = []
+        for line in lines:
+            if re.fullmatch(r"\((?:delvis|slutligt|slutlig)\)", line, re.I):
+                if numbers:
+                    numbers[-1] += f" {line}"
+                continue
+            if line.lower().startswith(("se bilaga", "bilaga", "m.fl.", "m. fl.")):
+                continue
+            if "/" not in line and not re.search(
+                r"[A-Za-zÅÄÖåäö]{1,4}\d{4}:\d", line
+            ):
+                continue
+            line = re.sub(r"\s*,?\s*m\.?\s*fl\.?\s*$", "", line, flags=re.I)
+            numbers.append(line.rstrip(",; "))
+        return numbers
 
     @staticmethod
     def _hard_coded_fix(text):
