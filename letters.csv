@@ -1,13 +1,13 @@
 rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,pdf
 240,Regleringsbrev,2002-12-20,2003,Myndighet,Konjunkturinstitutet,Finansdepartementet,2,Fi2002/4796 (delvis),False
-241,Regleringsbrev,2002-12-20,2003,Myndighet,Statens jordbruksverk,Jordbruksdepartementet,23,"Jo1997/934;Jo2002/673, 3076 (delvis)",False
+241,Regleringsbrev,2002-12-20,2003,Myndighet,Statens jordbruksverk,Jordbruksdepartementet,23,Jo1997/934;Jo2002/673;Jo2002/3076 (delvis),False
 242,Regleringsbrev,2002-12-20,2003,Myndighet,Statens utsädeskontroll,Jordbruksdepartementet,23,Jo2002/3076 (delvis),False
 243,Regleringsbrev,2002-12-19,2003,Myndighet,Regeringskansliet,Justitiedepartementet,1;4,Ju2002/8899/KRIM;Ju2002/9142/KRIM (delvis);Ju2002/8930/DOM (delvis),False
 245,Regleringsbrev,2002-12-12,2003,Myndighet,Skatteverket,Finansdepartementet,3;25,Fi2002/4500;Fi2002/4797 (delvis),False
 246,Regleringsbrev,2003-01-14,2003,Myndighet,Gentekniknämnden,Justitiedepartementet,4,Ju2002/9142/DOM (delvis),False
 247,Regleringsbrev,2003-01-10,2003,Myndighet,Justitiekanslern,Justitiedepartementet,1;4,Ju2002/8930/DOM (delvis);Ju2002/9142/DOM (delvis),False
 248,Regleringsbrev,2002-12-19,2003,Myndighet,Allmänna reklamationsnämnden,Justitiedepartementet,24,Ju2002/9062/KO,False
-249,Regleringsbrev,2002-12-20,2003,Myndighet,Sametinget,Jordbruksdepartementet,1;23,"Jo2002/625, 2995, 3076",False
+249,Regleringsbrev,2002-12-20,2003,Myndighet,Sametinget,Jordbruksdepartementet,1;23,Jo2002/625;Jo2002/2995;Jo2002/3076,False
 250,Regleringsbrev,2002-12-19,2003,Myndighet,Arkitekturmuseet,Kulturdepartementet,17,Ku2002/2701/Sam (delvis),False
 251,Regleringsbrev,2002-12-19,2003,Myndighet,Statens historiska museer,Kulturdepartementet,,Ku2002/2702/Sam (delvis),False
 252,Regleringsbrev,2002-12-20,2003,Myndighet,Expertgruppen för EU frågor,Statsrådsberedningen,1,SB2002/13537 (delvis),False
@@ -19,7 +19,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 258,Regleringsbrev,2002-12-20,2003,Myndighet,Riksrevisionsverket,Finansdepartementet,2,Fi2002/4796 (delvis)Fi2002/2917;Fi2002/3082,False
 259,Regleringsbrev,2002-12-19,2003,Myndighet,Statens energimyndighet,Näringsdepartementet,21,N2002/12130/ESB;N2002/12300/ESB (delvis),False
 260,Regleringsbrev,2002-12-12,2003,Myndighet,Integrationsverket,Näringsdepartementet,8,N2002/2745/IM;N2002/6288/IM;N2002/7900/IM;N2002/9043/IM;N2002/10265/IM;N2002/11958/IM(delvis);N2002/11985/IM,False
-263,Regleringsbrev,2002-12-20,2003,Myndighet,Kammarkollegiet,Justitiedepartementet,1;2;24,"Ju2002/8930 (delvis), 9205 (delvis), 9243 (delvis)",False
+263,Regleringsbrev,2002-12-20,2003,Myndighet,Kammarkollegiet,Justitiedepartementet,1;2;24,Ju2002/8930 (delvis);Ju2002/9205 (delvis);Ju2002/9243 (delvis),False
 264,Regleringsbrev,2003-12-20,2003,Myndighet,Skogsstyrelsen,Näringsdepartementet,23,N2002/11793/ESB;N2002/12342/ESB (delvis),False
 265,Regleringsbrev,2003-01-17,2003,Myndighet,Valmyndigheten,Justitiedepartementet,1,,False
 266,Regleringsbrev,2002-12-19,2003,Myndighet,Sameskolstyrelsen,Utbildningsdepartementet,16,U2002/4735/DK (delvis),False
@@ -29,7 +29,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 270,Regleringsbrev,2002-12-19,2003,Myndighet,Myndigheten för kvalificerad yrkesutbildning,Utbildningsdepartementet,16,U2002/4735/DK (delvis),False
 271,Regleringsbrev,2003-01-09,2003,Myndighet,Nordiska Afrikainstitutet,Utrikesdepartementet,7,UD2002/2037/GU (delvis);UD2002/2054/GU,False
 272,Regleringsbrev,2002-12-20,2003,Myndighet,Naturvårdsverket,Miljödepartementet,18;20,M2002/3711/A;M2002/3488/A;M2002/4189/A (delvis),False
-273,Regleringsbrev,2002-12-19,2003,Myndighet,Sveriges geologiska undersökning,Näringsdepartementet,24,"N2001/11305/ESB, N2002/12301/BS (delvis)",False
+273,Regleringsbrev,2002-12-19,2003,Myndighet,Sveriges geologiska undersökning,Näringsdepartementet,24,N2001/11305/ESB;N2002/12301/BS (delvis),False
 274,Regleringsbrev,2002-12-12,2003,Myndighet,Försvarets radioanstalt,Försvarsdepartementet,6,Fö 2002/628/EPS (slutligt);Fö 2002/419/EPS (slutligt);Fö 2002/527/EPS (slutligt);Fö 2002/601/EPS (slutligt);Fö 2002/1876/EPS (slutligt),False
 275,Regleringsbrev,2003-01-17,2003,Myndighet,Post- och Telestyrelsen,Näringsdepartementet,22,N2002/5848/ITFoU (delvis);N2002/8456/ITFoU;2002/9622/ITFoU;N2002/10835/ITFoU;N2002/12030/ESB (slutligt);N2002/12208/ITFoU;N2002/12259/BS (delvis),False
 276,Regleringsbrev,2002-12-19,2003,Myndighet,Totalförsvarets forskningsinstitut,Försvarsdepartementet,6,Fö 2002/512/EPS (slutligt);Fö 2002/541/EPS (slutligt);Fö 2002/559/EPS (slutligt);Fö 2002/1879/EPS (slutligt);Fö 2002/1003/MIL (slutligt);Fö 2002/2499/MIL (slutligt),False
@@ -38,16 +38,16 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 279,Regleringsbrev,2002-12-19,2003,Myndighet,Forskningsrådet för arbetsliv och socialvetenskap,Socialdepartementet,9,S2001/10375/SK;S2002/1590/SK;S2002/6152/SK;S2002/6811/SK;S2002/7187/SK;S2002/9927/SK (delvis),False
 280,Regleringsbrev,2002-12-09,2003,Myndighet,Kustbevakningen,Försvarsdepartementet,6,Fö2001/539/CIV (delvis);Fö2001/1197/CIV (delvis);Fö2002/478/EPS;Fö2002/505/EPS;Fö2002/506/EPS;Fö2002/1881/EPS,False
 281,Regleringsbrev,2002-12-20,2003,Myndighet,Fiskeriverket,Jordbruksdepartementet,23,Jo2002/3076 (delvis),False
-282,Regleringsbrev,2002-12-20,2003,Myndighet,Livsmedelsekonomiska institutet,Jordbruksdepartementet,23,"Jo2002/2647, 3076 (delvis)",False
+282,Regleringsbrev,2002-12-20,2003,Myndighet,Livsmedelsekonomiska institutet,Jordbruksdepartementet,23,Jo2002/2647;Jo2002/3076 (delvis),False
 283,Regleringsbrev,2002-12-19,2003,Myndighet,Konsumentverket,Justitiedepartementet,24,Ju2002/9061/KO;Ju2002/4649/KO (delvis);Ju2002/5455/KO,False
-284,Regleringsbrev,2002-12-20,2003,Myndighet,"Forskningsrådet för miljö, areella näringar och samhällsbyggande",Jordbruksdepartementet,23,"Jo2002/2102, 3076 (delvis)",False
+284,Regleringsbrev,2002-12-20,2003,Myndighet,"Forskningsrådet för miljö, areella näringar och samhällsbyggande",Jordbruksdepartementet,23,Jo2002/2102;Jo2002/3076 (delvis),False
 285,Regleringsbrev,2002-12-19,2003,Myndighet,Försvarsmakten,Försvarsdepartementet,6,Fö2002/94/MIL;Fö2002/133/EPS (slutligt);Fö2002/244/EPS (slutligt);Fö2002/473/MIL;Fö2002/500/EPS (slutligt);Fö2002/501/EPS (slutligt);Fö2002/519/EPS (slutligt);Fö2002/573/EPS (slutligt);Fö2002/578/MIL;Fö2002/595/EPS (slutligt);Fö2002/1052/EPS (slutligt);Fö2002/1190/MIL (slutligt);Fö2002/1264/EPS (slutligt);Fö2002/1423/MIL;Fö2002/1574/MIL;Fö2002/1635/MIL;Fö2002/1659/MIL;Fö2002/1884/EPS (slutligt);Fö2002/2115/MIL;Fö2002/2323/MIL;Fö2002/2357/MIL;Fö2002/2455/MIL;Fö2002/2876/EPS (slutligt),False
 286,Regleringsbrev,2002-12-19,2003,Myndighet,Moderna Museet,Kulturdepartementet,,Ku2002/2702/Sam (delvis),False
 287,Regleringsbrev,2002-12-19,2003,Myndighet,Arbetsdomstolen,Näringsdepartementet,14,N2002/11465/ARM;N2002/10870/ARM;N2002/2674/ARM;N2002/12317/BS (delvis) (delvis),False
 288,Regleringsbrev,2002-12-19,2003,Myndighet,Nationalmuseum med prins Eugens Waldemarsudde,Kulturdepartementet,,Ku2002/2702/Sam (delvis),False
 289,Regleringsbrev,2002-12-19,2003,Myndighet,Konstnärsnämnden,Kulturdepartementet,17,Ku2002/2702/Sam (delvis),False
 290,Regleringsbrev,2002-12-20,2003,Myndighet,Sveriges lantbruksuniversitet,Jordbruksdepartementet,23,Jo2002/3076 (delvis),False
-291,Regleringsbrev,2002-12-20,2003,Myndighet,Statens veterinärmedicinska anstalt,Jordbruksdepartementet,23,"Jo2002/2803, 3076 (delvis)",False
+291,Regleringsbrev,2002-12-20,2003,Myndighet,Statens veterinärmedicinska anstalt,Jordbruksdepartementet,23,Jo2002/2803;Jo2002/3076 (delvis),False
 293,Regleringsbrev,2002-12-19,2003,Myndighet,Talboks- och punktskriftsbiblioteket,Kulturdepartementet,17,Ku2002/2702/Sam (delvis),False
 294,Regleringsbrev,2002-12-19,2003,Myndighet,Granskningsnämnden för radio och TV,Kulturdepartementet,1,Ku2002/2703/Me (slutligt),False
 295,Regleringsbrev,2002-12-19,2003,Myndighet,Institutet för psykosocial medicin,Socialdepartementet,9,S2002/8275/FH;S2002/9927/SK (delvis),False
@@ -112,7 +112,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 358,Regleringsbrev,2002-12-19,2003,Myndighet,Kammarkollegiet,Utbildningsdepartementet,16;17,U2002/4735/DK (delvis),False
 362,Regleringsbrev,2003-01-17,2003,Myndighet,Regeringskansliet,Utrikesdepartementet,5;7;24,,False
 363,Regleringsbrev,2002-12-20,2003,Myndighet,"Forskningsrådet för miljö, areella näringar och samhällsbyggande",Miljödepartementet,20,M2002/4189/A (slutligt),False
-365,Regleringsbrev,2002-12-19,2003,Myndighet,Centrala studiestödsnämnden,Utbildningsdepartementet,15;16,"U2002/4735/DK (delvis), U2002/4754/ST",False
+365,Regleringsbrev,2002-12-19,2003,Myndighet,Centrala studiestödsnämnden,Utbildningsdepartementet,15;16,U2002/4735/DK (delvis);U2002/4754/ST,False
 366,Regleringsbrev,2002-12-19,2003,Myndighet,Presstödsnämnden,Kulturdepartementet,1,Ku2002/2703/Me (delvis),False
 367,Regleringsbrev,2002-12-19,2003,Myndighet,Överklagandenämnden för studiestöd,Utbildningsdepartementet,16,U2002/4735/DK (delvis),False
 368,Regleringsbrev,2002-12-19,2003,Myndighet,Statens folkhälsoinstitut,Socialdepartementet,9,S2002/8587/FH;S2002/6768/FH;S2002/9927/SK (delvis),False
@@ -186,7 +186,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 446,Regleringsbrev,2002-12-20,2003,Myndighet,Polarforskningssekretariatet,Utbildningsdepartementet,16,U2002/4735/DK (delvis),False
 447,Regleringsbrev,2002-12-19,2003,Myndighet,Statens museer för världskultur,Kulturdepartementet,,Ku2002/2702/Sam (delvis),False
 448,Regleringsbrev,2002-12-19,2003,Myndighet,Statens försvarshistoriska museer,Kulturdepartementet,,Ku2002/2702/Sam (delvis),False
-449,Regleringsbrev,2002-12-19,2003,Myndighet,Statens ljud -och bildarkiv,Utbildningsdepartementet,17,"U2002/4719/V,F",False
+449,Regleringsbrev,2002-12-19,2003,Myndighet,Statens ljud -och bildarkiv,Utbildningsdepartementet,17,U2002/4719/V;U2002/4719/F,False
 450,Regleringsbrev,2002-12-19,2003,Myndighet,Regeringskansliet,Kulturdepartementet,17,Ku2002/2702/Sam (delvis),False
 452,Regleringsbrev,2002-12-12,2003,Myndighet,Tullverket,Finansdepartementet,3,Fi2002/4500 (delvis),False
 453,Regleringsbrev,2002-12-19,2003,Myndighet,Specialpedagogiska institutet,Utbildningsdepartementet,16,U2002/4735 (delvis),False
@@ -252,7 +252,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 1045,Regleringsbrev,2002-12-20,2003,Myndighet,regeringen,Finansdepartementet,26,Fi2002/4798,False
 1046,Regleringsbrev,2003-01-10,2003,Myndighet,Delegationen för IT i skolan,Utbildningsdepartementet,16,U2003/2392/S,False
 1047,Regleringsbrev,2002-12-19,2003,Myndighet,Affärsverket svenska kraftnät,Näringsdepartementet,,N2002/8239/ESB;N2002/12030/ESB (delvis);N2002/12195/ESB;N2002/12300/ESB (delvis),False
-1048,Regleringsbrev,2002-12-19,2003,Myndighet,Säkerhetspolisen,Justitiedepartementet,4,"Ju2002/8133/PÅ, Ju2002/9142/PÅ (delvis)",False
+1048,Regleringsbrev,2002-12-19,2003,Myndighet,Säkerhetspolisen,Justitiedepartementet,4,Ju2002/8133/PÅ;Ju2002/9142/PÅ (delvis),False
 2907,Ändringsbeslut,2003-02-27,2003,Myndighet,Statens skolverk,Utbildningsdepartementet,16,U2002/4735/DK (slutligt),False
 2908,Ändringsbeslut,2003-02-27,2003,Myndighet,Myndigheten för skolutveckling,Utbildningsdepartementet,16,U2002/4735/Dk,False
 2910,Ändringsbeslut,2003-02-18,2003,Myndighet,Statens räddningsverk,Försvarsdepartementet,6,,False
@@ -260,7 +260,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 2912,Ändringsbeslut,2003-02-20,2003,Myndighet,Verket för näringslivsutveckling,Näringsdepartementet,19;24,N2003/1108/NL,False
 2913,Ändringsbeslut,2003-04-03,2003,Myndighet,Arbetsmiljöverket,Näringsdepartementet,14,N2003/1395/ARM,False
 2914,Ändringsbeslut,2003-04-03,2003,Myndighet,Arbetsdomstolen,Näringsdepartementet,14,N2003/1394/ARM;N2003/1206/ARM,False
-2915,Ändringsbeslut,2003-04-10,2003,Myndighet,Gemensamma bestämmelser för universitet och högskolor m.m.,Utbildningsdepartementet,16,"U2002/2142, 4030, 4125/UH",False
+2915,Ändringsbeslut,2003-04-10,2003,Myndighet,Gemensamma bestämmelser för universitet och högskolor m.m.,Utbildningsdepartementet,16,U2002/2142;U2002/4030;U2002/4125/UH,False
 2917,Ändringsbeslut,2003-03-27,2003,Myndighet,Statistiska centralbyrån,Justitiedepartementet,2,Fi2003/2252,False
 2918,Ändringsbeslut,2003-03-13,2003,Myndighet,Valmyndigheten,Justitiedepartementet,1,Ju2003/2571/D;Ju2003/2592/D,False
 2919,Ändringsbeslut,2003-05-23,2003,Myndighet,Forskningsrådet för arbetsliv och socialvetenskap,Socialdepartementet,9,S2003/4708/SK,False
@@ -351,7 +351,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 3066,Ändringsbeslut,2003-06-18,2003,Myndighet,Naturvårdsverket,Miljödepartementet,18;20,M/2003/1332/A;M/2003/1907/A (delvis),False
 3071,Ändringsbeslut,2003-06-12,2003,Myndighet,Svenska unescorådet,Utbildningsdepartementet,16,U2003/2434/IS,False
 3085,Ändringsbeslut,2003-05-28,2003,Myndighet,Socialstyrelsen,Socialdepartementet,9;25,S2003/5091/HS,False
-3087,Ändringsbeslut,2003-06-27,2003,Myndighet,Gemensamma bestämmelser för universitet och högskolor m.m.,Utbildningsdepartementet,16,"U2003/1639, 1813,1847, 1887, 2051, 2150/UH",False
+3087,Ändringsbeslut,2003-06-27,2003,Myndighet,Gemensamma bestämmelser för universitet och högskolor m.m.,Utbildningsdepartementet,16,U2003/1639;U2003/1813;U2003/1847;U2003/1887;U2003/2051;U2003/2150/UH,False
 3089,Ändringsbeslut,2003-05-28,2003,Myndighet,Migrationsverket,Utrikesdepartementet,8,UD2003/319/MAP (delvis),False
 3090,Ändringsbeslut,2003-05-23,2003,Myndighet,Handikappombudsmannen,Socialdepartementet,9,S2003/4514/ST,False
 3093,Ändringsbeslut,2003-05-28,2003,Myndighet,Riksförsäkringsverket,Socialdepartementet,9;10;11;12;18;31,S2003/5092/SF,False
@@ -388,7 +388,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 3130,Ändringsbeslut,2003-06-12,2003,Myndighet,Kriminalvårdsstyrelsen,Justitiedepartementet,4,Ju2003/5203/KRIM (delvis),False
 3135,Ändringsbeslut,2003-06-18,2003,Myndighet,Arbetslivsinstitutet,Näringsdepartementet,14,N2003/4581/ARM;N2003/378/ARM;N2003/4691/BS (delvis),False
 3136,Ändringsbeslut,2003-06-19,2003,Myndighet,Arbetsdomstolen,Näringsdepartementet,14,N2003/4582/ARM;N2003/1205/ARM;N2003/4691/BS (delvis),False
-3139,Ändringsbeslut,2003-06-12,2003,Myndighet,Säkerhetspolisen,Justitiedepartementet,4,"Ju2003/4978/PO, Ju2003/5203/KRIM (delvis)",False
+3139,Ändringsbeslut,2003-06-12,2003,Myndighet,Säkerhetspolisen,Justitiedepartementet,4,Ju2003/4978/PO;Ju2003/5203/KRIM (delvis),False
 3140,Ändringsbeslut,2003-06-26,2003,Myndighet,Överklagandenämnden för studiestöd,Utbildningsdepartementet,16,2003/2302/SV,False
 3141,Ändringsbeslut,2003-06-12,2003,Myndighet,Statens institut för särskilt utbildningsstöd,Socialdepartementet,9,S2003/5534/SK (delvis),False
 3142,Ändringsbeslut,2003-06-26,2003,Myndighet,Arbetsmiljöverket,Näringsdepartementet,14,N2003/4579 /ARM (delvis),False
@@ -656,7 +656,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 5250,Regleringsbrev,2003-12-18,2004,Myndighet,Säkerhetspolisen,Justitiedepartementet,4,Ju2003/9600/PO;Ju2003/10189/PO (delvis),False
 5254,Regleringsbrev,2003-12-18,2004,Myndighet,Myndigheten för utländska investeringar i Sverige (ISA),Utrikesdepartementet,24,UD2003/64323/EIM,False
 5255,Regleringsbrev,2003-12-18,2004,Myndighet,Nämnden för offentlig upphandling,Finansdepartementet,2,Fi 2003/6567 (delvis),False
-5257,Regleringsbrev,2003-12-18,2004,Myndighet,Statistiska centralbyrån,Finansdepartementet,2,"Fi 2003/3755, 6567 (delvis)",False
+5257,Regleringsbrev,2003-12-18,2004,Myndighet,Statistiska centralbyrån,Finansdepartementet,2,Fi2003/3755;Fi2003/6567 (delvis),False
 5258,Regleringsbrev,2003-12-11,2004,Myndighet,Internationella programkontoret för utbildningsområdet,Utbildningsdepartementet,16,U2003/4154/IS;U2003/4789/DK (delvis),False
 5259,Regleringsbrev,2003-12-11,2004,Myndighet,Statens institut för kommunikationsanalys,Näringsdepartementet,22,N2003/8826/IR;N2003/8885/BS (delvis),False
 5260,Regleringsbrev,2003-12-18,2004,Myndighet,Gentekniknämnden,Justitiedepartementet,4,Ju2003/10189/DOM (delvis),False
@@ -711,7 +711,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 5587,Regleringsbrev,2003-12-18,2004,Anslag,38:10,Näringsdepartementet,24,N2003/9067/ITFoU;N2003/9328/BS (delvis),False
 5588,Ändringsbeslut,2003-12-11,2003,Myndighet,Statens pensionsverk,Justitiedepartementet,2,Fi2003/6020/PP(delvis),False
 5591,Regleringsbrev,2003-12-18,2004,Myndighet,Fonden för fukt- och mögelskador,Miljödepartementet,,M2003/3794/A (delvis),False
-5592,Regleringsbrev,2003-12-11,2004,Myndighet,Svenska unescorådet,Utbildningsdepartementet,16,"U2003/421,4605/IS;U2003/4789/DK (delvis)",False
+5592,Regleringsbrev,2003-12-11,2004,Myndighet,Svenska unescorådet,Utbildningsdepartementet,16,U2003/421;U2003/4605/IS;U2003/4789/DK (delvis),False
 5603,Ändringsbeslut,2003-11-20,2003,Myndighet,Regeringskansliet,Utrikesdepartementet,5;7;24,UD2003/59623/PLAN-BUD;UD2003/60602/GS,False
 5621,Ändringsbeslut,2003-10-02,2003,Myndighet,Forum för levande historia,Kulturdepartementet,17,,False
 5622,Regleringsbrev,2003-12-18,2004,Myndighet,Ekonomiska rådet,Finansdepartementet,2,Fi2003/6567 (delvis),False
@@ -825,7 +825,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 6132,Regleringsbrev,2003-12-18,2004,Anslag,5:4,Utrikesdepartementet,5,UD2003/62318/PLAN-BUD,False
 6137,Ändringsbeslut,2003-11-27,2003,Myndighet,Statens musiksamlingar,Kulturdepartementet,,Ku2003/2197/Kr,False
 6139,Ändringsbeslut,2003-11-27,2003,Myndighet,Samarbetsnämnden för statsbidrag till trossamfund,Kulturdepartementet,17,Ku2003/1361/Kr,False
-6141,Ändringsbeslut,2003-11-27,2003,Myndighet,Arkitekturmuseet,Kulturdepartementet,17,"Ku2003/2473/Kr, Ku2003/2197/Kr",False
+6141,Ändringsbeslut,2003-11-27,2003,Myndighet,Arkitekturmuseet,Kulturdepartementet,17,Ku2003/2473/Kr;Ku2003/2197/Kr,False
 6142,Regleringsbrev,2003-12-18,2004,Myndighet,Centrala etikprövningsnämnden,Utbildningsdepartementet,16,U2003/4789/ DK (slutligt),False
 6143,Regleringsbrev,2003-12-04,2004,Anslag,37:7,Näringsdepartementet,22,N2003/8593/ITFOU;N2003/8885/BS (delvis),False
 6145,Regleringsbrev,2003-12-18,2004,Myndighet,Regionala etikprövningsnämnder,Utbildningsdepartementet,16,U2003/4789/ DK (slutligt),False
@@ -1030,7 +1030,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 7024,Ändringsbeslut,2004-05-19,2004,Myndighet,Statens räddningsverk,Försvarsdepartementet,6,Fö2003/2343/CIV;Fö2004/992/CIV,False
 7025,Ändringsbeslut,2004-05-13,2004,Myndighet,Socialstyrelsen,Socialdepartementet,9;10;25,S2004/3934/HS,False
 7026,Ändringsbeslut,2004-07-01,2004,Myndighet,Institutet för tillväxtpolitiska studier,Näringsdepartementet,24,N2004/5135/AU;N2004/4982/BS (delvis),False
-7027,Ändringsbeslut,2004-05-27,2004,Myndighet,Statens jordbruksverk,Jordbruksdepartementet,23,"Jo2004/347(delvis),850",False
+7027,Ändringsbeslut,2004-05-27,2004,Myndighet,Statens jordbruksverk,Jordbruksdepartementet,23,Jo2004/347 (delvis);Jo2004/850,False
 7028,Ändringsbeslut,2004-05-13,2004,Myndighet,Styrelsen för internationellt utvecklingssamarbete,Utrikesdepartementet,7,UD2004/24680/GU,False
 7029,Regleringsbrev,2004-05-05,2004,Anslag,"A:011 (2000), A:012 (2000) och A:008 (2000)",Näringsdepartementet,19;24,,False
 7031,Ändringsbeslut,2004-05-27,2004,Myndighet,Ungdomsstyrelsen,Utbildningsdepartementet,17,U2004/2547/UNG,False
@@ -1141,7 +1141,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 7157,Ändringsbeslut,2004-06-17,2004,Myndighet,Migrationsverket,Utrikesdepartementet,8,UD2004/30164/MAP (delvis),False
 7158,Ändringsbeslut,2004-06-17,2004,Myndighet,Utlänningsnämnden,Utrikesdepartementet,8,UD2004/24644/MAP,False
 7159,Ändringsbeslut,2004-06-23,2004,Myndighet,Banverket,Näringsdepartementet,22,N2004/4961/IR;N2004/4982/BS (delvis),False
-7160,Ändringsbeslut,2004-06-23,2004,Myndighet,Polisväsendet,Justitiedepartementet,4,"Ju2004/5170/PO, Ju2004/5350/PO",False
+7160,Ändringsbeslut,2004-06-23,2004,Myndighet,Polisväsendet,Justitiedepartementet,4,Ju2004/5170/PO;Ju2004/5350/PO,False
 7162,Ändringsbeslut,2004-06-23,2004,Myndighet,Verket för näringslivsutveckling,Näringsdepartementet,19;24,N2004/4760/NL;N2004/4982/BS (delvis),False
 7163,Ändringsbeslut,2004-06-23,2004,Anslag,25:12,Utbildningsdepartementet,16,U2004/2557/S,False
 7164,Ändringsbeslut,2004-06-24,2004,Myndighet,Konkurrensverket,Näringsdepartementet,24,N2004/4761,False
@@ -1245,7 +1245,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 7328,Regleringsbrev,2004-12-16,2005,Myndighet,Specialskolemyndigheten,Utbildningsdepartementet,16,U2004/5173/DK (delvis),False
 7330,Regleringsbrev,2004-12-16,2005,Myndighet,Integrationsverket,Justitiedepartementet,8,Ju2004/11063/IM (delvis);Ju2004/9760/IM,False
 7331,Regleringsbrev,2004-12-16,2005,Anslag,10:4,Justitiedepartementet,8,Ju2004/11063/IM (delvis),False
-7333,Ändringsbeslut,2004-10-21,2004,Myndighet,Gemensamma bestämmelser för universitet och högskolor m.m.,Utbildningsdepartementet,16,"U2004/3899,4011/UH",False
+7333,Ändringsbeslut,2004-10-21,2004,Myndighet,Gemensamma bestämmelser för universitet och högskolor m.m.,Utbildningsdepartementet,16,U2004/3899;U2004/4011/UH,False
 7335,Ändringsbeslut,2004-02-12,2004,Myndighet,Smittskyddsinstitutet,Socialdepartementet,9,S2003/8580/FH;S2003/9983/SK (delvis);S2004/1199/FH,False
 7336,Regleringsbrev,2004-12-16,2005,Myndighet,Handikappombudsmannen,Socialdepartementet,9,S2004/7951/ST;S2004/8145/ST;S2004/9056/ST;S2004/9263/SK (delvis),False
 7338,Regleringsbrev,2004-12-16,2005,Myndighet,Smittskyddsinstitutet,Socialdepartementet,9,S2004/5807/FH;S2004/5968/FH;S2004/7655/FH;S2004/7935/FH;S2004/9263/SK (delvis),False
@@ -1331,7 +1331,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 7418,Ändringsbeslut,2004-10-28,2004,Myndighet,Skogsstyrelsen,Näringsdepartementet,23,N2004/4465/ESB (delvis),False
 7419,Regleringsbrev,2004-12-16,2005,Myndighet,Statens beredning för medicinsk utvärdering,Socialdepartementet,9,S2004/1523/HS;S2004/1614/HS;S2004/2565/HS;S2004/3943/HS;S2004/9263/SK (delvis),False
 7420,Regleringsbrev,2004-12-16,2005,Myndighet,Länsstyrelserna,Finansdepartementet,18,Fi2004/960;Fi2004/2630;Fi2004/2754;Fi2004/3128;Fi2004/4036;Fi2004/4334;Fi2004/4866;Fi2004/5021;Fi2004/5055;Fi2004/5095;Fi2004/5097;Fi2004/5414;Fi2004/6146;Fi2004/6306;Fi2004/6229 (delvis),False
-7421,Regleringsbrev,2004-12-22,2005,Myndighet,Sametinget,Jordbruksdepartementet,1;23,"Jo2004/1810, 2607, 2737",False
+7421,Regleringsbrev,2004-12-22,2005,Myndighet,Sametinget,Jordbruksdepartementet,1;23,Jo2004/1810;Jo2004/2607;Jo2004/2737,False
 7422,Regleringsbrev,2004-12-09,2005,Myndighet,Skatteverket,Finansdepartementet,3,Fi2004/5597 (delvis),False
 7423,Ändringsbeslut,2004-10-21,2004,Myndighet,Kustbevakningen,Försvarsdepartementet,6,Fö2004/2462/CIV,False
 7424,Regleringsbrev,2004-12-16,2005,Myndighet,Lantmäteriverket,Miljödepartementet,18,M2004/4162/A (delvis),False
@@ -1339,9 +1339,9 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 7426,Regleringsbrev,2004-12-09,2005,Myndighet,Tullverket,Finansdepartementet,3,Fi2004/5597 (slutligt),False
 7427,Regleringsbrev,2004-12-16,2005,Myndighet,Läkemedelsförmånsnämnden,Socialdepartementet,9,S2004/7904/HS;S2004/9263/SK (delvis),False
 7428,Regleringsbrev,2004-12-16,2005,Myndighet,Bokföringsnämnden,Finansdepartementet,2,Fi2004/6410 (delvis),False
-7429,Ändringsbeslut,2004-10-21,2004,Myndighet,Göteborgs universitet,Utbildningsdepartementet,16,"U2004/3899,4011/UH",False
-7430,Ändringsbeslut,2004-10-21,2004,Myndighet,Kungl. Tekniska högskolan,Utbildningsdepartementet,16,"U2004/3899,4011/UH",False
-7431,Ändringsbeslut,2004-10-21,2004,Myndighet,Konstfack,Utbildningsdepartementet,16,"U2004/3899,4011/UH",False
+7429,Ändringsbeslut,2004-10-21,2004,Myndighet,Göteborgs universitet,Utbildningsdepartementet,16,U2004/3899;U2004/4011/UH,False
+7430,Ändringsbeslut,2004-10-21,2004,Myndighet,Kungl. Tekniska högskolan,Utbildningsdepartementet,16,U2004/3899;U2004/4011/UH,False
+7431,Ändringsbeslut,2004-10-21,2004,Myndighet,Konstfack,Utbildningsdepartementet,16,U2004/3899;U2004/4011/UH,False
 7432,Regleringsbrev,2004-12-16,2005,Myndighet,Statens bostadskreditnämnd,Finansdepartementet,18,Fi2004/6229 (delvis),False
 7433,Regleringsbrev,2004-12-16,2005,Myndighet,Statens bostadsnämnd,Finansdepartementet,18,Fi2004/6229 (delvis),False
 7434,Regleringsbrev,2004-12-16,2005,Anslag,"31:2, 31:7 (2003), 31:10, 31:11 och 31:14",Finansdepartementet,18,Fi2004/6229 (delvis),False
@@ -1355,8 +1355,8 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 7445,Regleringsbrev,2004-12-22,2005,Anslag,46:1,Justitiedepartementet,1,Ju2004/11130/D,False
 7446,Regleringsbrev,2004-12-16,2005,Myndighet,Krisberedskapsmyndigheten,Försvarsdepartementet,6;22,Fö2004/81/EPS (delvis);Fö2004/224/CIV;Fö2004/514/CIV;Fö2004/816/CIV;Fö2004/1053/CIV;Fö2004/1820/CIV;Fö2004/1908/CIV,False
 7447,Regleringsbrev,2004-12-16,2005,Myndighet,Åklagarmyndigheten,Justitiedepartementet,4,Ju2004/11351/Å;Ju2004/5913/Å;Ju2004/11341/DOM (delvis),False
-7448,Regleringsbrev,2004-12-16,2005,Myndighet,Statistiska centralbyrån,Finansdepartementet,2,"Fi2003/304, Fi2004/5138, Fi2004/6410 (delvis)",False
-7449,Regleringsbrev,2004-12-16,2005,Myndighet,Ekonomistyrningsverket,Finansdepartementet,2,"Fi2004/308, Fi2004/6410 (delvis)",False
+7448,Regleringsbrev,2004-12-16,2005,Myndighet,Statistiska centralbyrån,Finansdepartementet,2,Fi2003/304;Fi2004/5138;Fi2004/6410 (delvis),False
+7449,Regleringsbrev,2004-12-16,2005,Myndighet,Ekonomistyrningsverket,Finansdepartementet,2,Fi2004/308;Fi2004/6410 (delvis),False
 7450,Regleringsbrev,2004-12-22,2005,Myndighet,Granskningsnämnden för radio och TV,Kulturdepartementet,1,Ku2004/2642/Me,False
 7451,Regleringsbrev,2004-12-22,2005,Myndighet,Radio- och TV- verket,Kulturdepartementet,1,Ku2004/2641/Me,False
 7452,Regleringsbrev,2004-12-22,2005,Myndighet,Statens biografbyrå,Kulturdepartementet,17,Ku2004/2637/Me,False
@@ -1376,7 +1376,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 7470,Regleringsbrev,2004-12-16,2005,Myndighet,Finansinspektionen,Finansdepartementet,2,Fi2003/5433;Fi2004/284;Fi2004/6410(delvis),False
 7471,Regleringsbrev,2004-12-22,2005,Myndighet,Premiepensionsmyndigheten,Finansdepartementet,,Fi2004/259;Fi2004/2472;Fi2004/2473;Fi2004/3748;Fi2004/4889;Fi2004/4890;Fi2004/6410(delvis);Fi2004/6499;Fi2004/6500,False
 7472,Regleringsbrev,2004-12-16,2005,Myndighet,Statens haverikommission,Försvarsdepartementet,,Fö2004/3233/CIV,False
-7473,Regleringsbrev,2004-12-16,2005,Myndighet,Verket för näringslivsutveckling,Näringsdepartementet,19;24,"N2002/2768/NL;N2002/10582/NL(slutlig);N2003/7698/NL;N2004/865/NL;N2004/1055/NL;N2004/4632/NL, N2004/5381/NL;N2004/9619/RUT (delvis);N2004/9735/NL;N2004/9908/BS (delvis)",False
+7473,Regleringsbrev,2004-12-16,2005,Myndighet,Verket för näringslivsutveckling,Näringsdepartementet,19;24,N2002/2768/NL;N2002/10582/NL (slutlig);N2003/7698/NL;N2004/865/NL;N2004/1055/NL;N2004/4632/NL;N2004/5381/NL;N2004/9619/RUT (delvis);N2004/9735/NL;N2004/9908/BS (delvis),False
 7474,Regleringsbrev,2004-12-16,2005,Myndighet,Gentekniknämnden,Justitiedepartementet,4,Ju2004/11341/DOM/(delvis),False
 7475,Regleringsbrev,2004-12-22,2005,Anslag,"27:2, 28:5, 28:12, 28:13, 28:27, 28:29, 28:31, 28:35 och 28:36",Kulturdepartementet,17,Ku2004/2634/Sam,False
 7476,Regleringsbrev,2004-12-16,2005,Myndighet,Blekinge tekniska högskola,Utbildningsdepartementet,16,U2004/5173/DK (delvis),False
@@ -1440,7 +1440,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 7558,Regleringsbrev,2004-12-22,2005,Anslag,5:2,Utrikesdepartementet,5,UD2004/64734/PLAN (delvis),False
 7559,Regleringsbrev,2004-12-16,2005,Anslag,5:1 och 5:4 (2003),Utrikesdepartementet,5,UD2004/64734/PLAN (delvis),False
 7560,Regleringsbrev,2004-12-16,2005,Myndighet,Styrelsen för ackreditering och teknisk kontroll,Utrikesdepartementet,24,UD2004/67538/EIM (delvis),False
-7561,Regleringsbrev,2004-12-22,2005,Myndighet,Sveriges lantbruksuniversitet,Jordbruksdepartementet,23,"Jo2004/579, 2737",False
+7561,Regleringsbrev,2004-12-22,2005,Myndighet,Sveriges lantbruksuniversitet,Jordbruksdepartementet,23,Jo2004/579;Jo2004/2737,False
 7562,Regleringsbrev,2004-12-22,2005,Myndighet,Styrelsen för internationellt utvecklingssamarbete,Utrikesdepartementet,5;7,UD2004/64734/PLAN (delvis);UD2004/64735/GU (delvis);UD2004/10305/GU,False
 7564,Regleringsbrev,2004-12-16,2005,Myndighet,Institutet för psykosocial medicin,Socialdepartementet,9,S2003/4283/FH;S2003/4285/FH;S2003/4287/FH;S2004/2076/FH;S2004/3931/FH;S2004/4514/FH;S2004/4767/FH;S2004/9263/SK (delvis),False
 7565,Regleringsbrev,2004-12-16,2005,Myndighet,Affärsverket Statens järnvägar,Näringsdepartementet,22,N2004/9517/TP;N2004/9449/BS (delvis),False
@@ -1600,7 +1600,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 7754,Ändringsbeslut,2004-12-09,2004,Anslag,31:5,Miljödepartementet,18,M2004/3885/A (delvis),False
 7755,Ändringsbeslut,2004-12-16,2004,Myndighet,Kriminalvårdsstyrelsen,Justitiedepartementet,4,Ju2004/9884/KRIM;Ju2004/10873 (delvis),False
 7760,Ändringsbeslut,2004-12-16,2004,Myndighet,Banverket,Näringsdepartementet,22,N2004/9572/IR;N2004/9120/BS (delvis),False
-7763,Ändringsbeslut,2004-12-16,2004,Myndighet,Gemensamma bestämmelser för universitet och högskolor m.m.,Utbildningsdepartementet,16,"U2004/2401,2525, 3723,4595/UH",False
+7763,Ändringsbeslut,2004-12-16,2004,Myndighet,Gemensamma bestämmelser för universitet och högskolor m.m.,Utbildningsdepartementet,16,U2004/2401;U2004/2525;U2004/3723;U2004/4595/UH,False
 7765,Ändringsbeslut,2004-12-16,2004,Myndighet,Rederinämnden,Näringsdepartementet,22,N2004/9521/TP;N2004/9120/BS (delvis),False
 7766,Regleringsbrev,2004-12-16,2005,Myndighet,Medlingsinstitutet,Näringsdepartementet,14,N2004/9379/ARM;N2004/533/ARM;N2004/1296/ARM;N2004/1297/ARM;N2004/9907/BS (delvis),False
 7767,Ändringsbeslut,2004-12-16,2004,Anslag,"31:2, 31:7 (2003), 31:10, 31:11, 31:14 och A:013 (2000)",Finansdepartementet,18,Fi2004/2938 (delvis),False
@@ -1617,7 +1617,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 7786,Ändringsbeslut,2004-12-16,2004,Anslag,"8:1, 8:2, 8:5 och 9:1 (2003)",Utrikesdepartementet,7,UD2004/63821/PLAN (slutligt),False
 7787,Ändringsbeslut,2004-12-16,2004,Myndighet,Domstolsverket,Justitiedepartementet,4,Ju/2004/10435/DOM(delvis),False
 7790,Ändringsbeslut,2004-12-22,2004,Myndighet,Statens institut för ekologisk hållbarhet,Miljödepartementet,18,M2004/4369/Hm,False
-7791,Ändringsbeslut,2004-12-22,2004,Myndighet,Rikspolisstyrelsen (RPS),Justitiedepartementet,4,"Ju2004/11714/PO, Ju2004/10873/PO",False
+7791,Ändringsbeslut,2004-12-22,2004,Myndighet,Rikspolisstyrelsen (RPS),Justitiedepartementet,4,Ju2004/11714/PO;Ju2004/10873/PO,False
 7792,Ändringsbeslut,2004-12-22,2004,Myndighet,Riksarkivet,Kulturdepartementet,17,Ku2004/2514/Kr,False
 7795,Regleringsbrev,2005-01-20,2005,Anslag,92:2,Finansdepartementet,26,Fi2004/6412 (delvis),False
 7796,Regleringsbrev,2004-12-16,2005,Anslag,22:10,Näringsdepartementet,13,N2004/9932/A;N2004/9907/BS (delvis),False
@@ -1726,11 +1726,11 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 7937,Ändringsbeslut,2005-04-28,2005,Myndighet,Statens räddningsverk,Försvarsdepartementet,6,Fö2005/455/CIV,False
 7939,Ändringsbeslut,2005-05-04,2005,Myndighet,Statens energimyndighet,Miljö- och samhällsbyggnadsdepartementet,21,M2005/2292/E (slutligt);M2005/2569/E,False
 7941,Ändringsbeslut,2005-05-04,2005,Myndighet,Styrelsen för internationellt utvecklingssamarbete,Utrikesdepartementet,5;7,UD2005/25380/GU,False
-7942,Ändringsbeslut,2005-05-26,2005,Myndighet,Gemensamma bestämmelser för universitet och högskolor m.m.,Utbildnings- och kulturdepartementet,16,"U2005/2372/UH (delvis);U2005/2716,4351/UH",False
+7942,Ändringsbeslut,2005-05-26,2005,Myndighet,Gemensamma bestämmelser för universitet och högskolor m.m.,Utbildnings- och kulturdepartementet,16,U2005/2372/UH (delvis);U2005/2716;U2005/4351/UH,False
 7943,Ändringsbeslut,2005-06-22,2005,Myndighet,Skogsstyrelsen,Näringsdepartementet,23,N2005/1856/HUB;N2005/5671/BS (delvis),False
-7944,Ändringsbeslut,2005-05-26,2005,Myndighet,Karolinska institutet,Utbildnings- och kulturdepartementet,16,"U2005/2372/UH (delvis);U2005/2716,4351/UH",False
-7945,Ändringsbeslut,2005-05-26,2005,Myndighet,Lunds universitet,Utbildnings- och kulturdepartementet,16,"U2005/2372/UH (delvis);U2005/2716,4351/UH",False
-7946,Ändringsbeslut,2005-05-26,2005,Myndighet,Högskolan i Halmstad,Utbildnings- och kulturdepartementet,16,"U2005/2372/UH (delvis);U2005/2716,4351/UH",False
+7944,Ändringsbeslut,2005-05-26,2005,Myndighet,Karolinska institutet,Utbildnings- och kulturdepartementet,16,U2005/2372/UH (delvis);U2005/2716;U2005/4351/UH,False
+7945,Ändringsbeslut,2005-05-26,2005,Myndighet,Lunds universitet,Utbildnings- och kulturdepartementet,16,U2005/2372/UH (delvis);U2005/2716;U2005/4351/UH,False
+7946,Ändringsbeslut,2005-05-26,2005,Myndighet,Högskolan i Halmstad,Utbildnings- och kulturdepartementet,16,U2005/2372/UH (delvis);U2005/2716;U2005/4351/UH,False
 7947,Ändringsbeslut,2005-05-12,2005,Myndighet,Myndigheten för skolutveckling,Utbildnings- och kulturdepartementet,16,U2005/2671/SV (slutligt),False
 7948,Ändringsbeslut,2005-06-22,2005,Anslag,25:15 och 25:17,Utbildnings- och kulturdepartementet,16,U2005/5601/SV,False
 7949,Ändringsbeslut,2005-05-12,2005,Myndighet,Totalförsvarets forskningsinstitut,Försvarsdepartementet,6,Fö2005/1400/MIL,False
@@ -1924,7 +1924,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 8180,Ändringsbeslut,2005-10-27,2005,Anslag,"5:11, 8:1, 8:2, 8:5 och 9:1 (2003)",Utrikesdepartementet,5;7,UD2005/58047/GU,False
 8182,Regleringsbrev,2005-12-20,2006,Myndighet,Statens energimyndighet,Miljö- och samhällsbyggnadsdepartementet,21,M2005/6372/A(delvis);M2005/6183/E,True
 8183,Regleringsbrev,2005-12-15,2006,Myndighet,Kustbevakningen,Försvarsdepartementet,6,Fö2004/3355/CIV (delvis);Fö2005/228/EPS (delvis);Fö2005/689/CIV,True
-8184,Ändringsbeslut,2005-12-01,2005,Myndighet,Sametinget,Jordbruksdepartementet,1;23,"Jo2005/2188,2274",False
+8184,Ändringsbeslut,2005-12-01,2005,Myndighet,Sametinget,Jordbruksdepartementet,1;23,Jo2005/2188;Jo2005/2274,False
 8185,Regleringsbrev,2005-12-15,2006,Myndighet,Institutet för tillväxtpolitiska studier,Näringsdepartementet,24,N2005/9344/AU;N2005/10138/BS (delvis),True
 8186,Regleringsbrev,2005-12-15,2006,Myndighet,Lantmäteriverket,Miljö- och samhällsbyggnadsdepartementet,18,M2005/6373/A (delvis),True
 8187,Regleringsbrev,2005-12-20,2006,Myndighet,Domstolsverket,Justitiedepartementet,4,Ju2005/9961/DOM;Ju2005/10806/DOM Ju2005/11595/DOM (delvis),True
@@ -1973,10 +1973,10 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 8235,Regleringsbrev,2005-12-15,2006,Myndighet,Patent- och registreringsverket,Näringsdepartementet,,N2005/9884/NL;N2005/1480/NL;N2005/4226/NL,True
 8236,Regleringsbrev,2005-12-15,2006,Myndighet,Patentbesvärsrätten,Näringsdepartementet,24,N2005/9885/NL;N2005/424/NL;N2005/641/NL,True
 8237,Regleringsbrev,2005-12-20,2006,Myndighet,Statens veterinärmedicinska anstalt,Jordbruksdepartementet,23,Jo2005/2903 (delvis),True
-8238,Ändringsbeslut,2005-12-15,2005,Myndighet,Gemensamma bestämmelser för universitet och högskolor m.m.,Utbildnings- och kulturdepartementet,16,"U2005/7344,8061,8334,8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig)",False
-8239,Ändringsbeslut,2005-12-15,2005,Myndighet,Karlstads universitet,Utbildnings- och kulturdepartementet,16,"U2005/7344,8061,8334,8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig)",False
-8242,Ändringsbeslut,2005-12-15,2005,Myndighet,Luleå tekniska universitet,Utbildnings- och kulturdepartementet,16,"U2005/7344,8061,8334,8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig)",False
-8244,Ändringsbeslut,2005-12-15,2005,Myndighet,Mittuniversitetet,Utbildnings- och kulturdepartementet,16,"U2005/7344,8061,8334,8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig)",False
+8238,Ändringsbeslut,2005-12-15,2005,Myndighet,Gemensamma bestämmelser för universitet och högskolor m.m.,Utbildnings- och kulturdepartementet,16,U2005/7344;U2005/8061;U2005/8334;U2005/8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig),False
+8239,Ändringsbeslut,2005-12-15,2005,Myndighet,Karlstads universitet,Utbildnings- och kulturdepartementet,16,U2005/7344;U2005/8061;U2005/8334;U2005/8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig),False
+8242,Ändringsbeslut,2005-12-15,2005,Myndighet,Luleå tekniska universitet,Utbildnings- och kulturdepartementet,16,U2005/7344;U2005/8061;U2005/8334;U2005/8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig),False
+8244,Ändringsbeslut,2005-12-15,2005,Myndighet,Mittuniversitetet,Utbildnings- och kulturdepartementet,16,U2005/7344;U2005/8061;U2005/8334;U2005/8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig),False
 8245,Regleringsbrev,2005-12-15,2006,Myndighet,Statens va-nämnd,Miljö- och samhällsbyggnadsdepartementet,18,M2005/6373/A (delvis),True
 8246,Regleringsbrev,2005-12-20,2006,Myndighet,Läkemedelsverket,Socialdepartementet,,S2005/8399/HS;S2005/10221/SK (delvis),True
 8247,Regleringsbrev,2005-12-20,2006,Myndighet,Naturvårdsverket,Miljö- och samhällsbyggnadsdepartementet,17;18;20,M2005/6430/A (delvis);M2005/6342/A,True
@@ -2003,8 +2003,8 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 8270,Regleringsbrev,2005-12-20,2006,Myndighet,Institutet för psykosocial medicin,Socialdepartementet,9,S2005/8521/FH;S2005/10221/SK (delvis),True
 8271,Regleringsbrev,2005-12-15,2006,Myndighet,Konkurrensverket,Näringsdepartementet,24,N2005/640/NL;N2005/2652/NL;N2005/8852/NL,True
 8272,Regleringsbrev,2005-12-15,2006,Anslag,10:4,Justitiedepartementet,8,Ju2005/10886/IM (delvis);Ju2005/6936/IM;Ju2005/9720/IM,True
-8273,Ändringsbeslut,2005-12-15,2005,Myndighet,Lunds universitet,Utbildnings- och kulturdepartementet,16,"U2005/7344,8061,8334,8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig)",False
-8274,Ändringsbeslut,2005-12-15,2005,Myndighet,Kungl. Tekniska högskolan,Utbildnings- och kulturdepartementet,16,"U2005/7344,8061,8334,8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig)",False
+8273,Ändringsbeslut,2005-12-15,2005,Myndighet,Lunds universitet,Utbildnings- och kulturdepartementet,16,U2005/7344;U2005/8061;U2005/8334;U2005/8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig),False
+8274,Ändringsbeslut,2005-12-15,2005,Myndighet,Kungl. Tekniska högskolan,Utbildnings- och kulturdepartementet,16,U2005/7344;U2005/8061;U2005/8334;U2005/8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig),False
 8275,Regleringsbrev,2005-12-15,2006,Myndighet,Boverket,Miljö- och samhällsbyggnadsdepartementet,18,M2005/6373/A (delvis);M2005/3709/Kk;M2005/6274/Bo,True
 8276,Regleringsbrev,2005-12-15,2006,Myndighet,Fonden för fukt- och mögelskador,Miljö- och samhällsbyggnadsdepartementet,,M2005/6373/A (delvis),True
 8277,Regleringsbrev,2005-12-15,2006,Anslag,31:5,Miljö- och samhällsbyggnadsdepartementet,18,M2005/6373/A (slutligt),True
@@ -2018,7 +2018,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 8285,Regleringsbrev,2005-12-15,2006,Anslag,31:13 och A:011 (2000),Miljö- och samhällsbyggnadsdepartementet,18,M2005/6373/A (delvis),True
 8286,Regleringsbrev,2005-12-20,2006,Myndighet,Livsmedelsekonomiska institutet,Jordbruksdepartementet,23,Jo2005/2903 (delvis),True
 8287,Regleringsbrev,2005-12-20,2006,Myndighet,Sveriges meteorologiska och hydrologiska institut,Miljö- och samhällsbyggnadsdepartementet,20,M2005/6430/A (delvis),True
-8288,Regleringsbrev,2005-12-15,2006,Myndighet,Valmyndigheten,Justitiedepartementet,1,"Ju2005/10837/D(delvis), Ju2005/9588/D, Ju2005/9538/D(delvis), Ju2005/5192/D",True
+8288,Regleringsbrev,2005-12-15,2006,Myndighet,Valmyndigheten,Justitiedepartementet,1,Ju2005/10837/D (delvis);Ju2005/9588/D;Ju2005/9538/D (delvis);Ju2005/5192/D,True
 8289,Regleringsbrev,2005-12-20,2006,Myndighet,Statskontoret,Finansdepartementet,2,Fi2005/6390 (delvis),True
 8290,Regleringsbrev,2005-12-20,2006,Myndighet,Vetenskapsrådet,Utbildnings- och kulturdepartementet,16,U2005/9498/BIA (slutligt),True
 8291,Regleringsbrev,2005-12-15,2006,Myndighet,Handelsflottans kultur- och fritidsråd,Näringsdepartementet,,N2005/9806/TP;N2005/9907/BS(delvis),True
@@ -2031,7 +2031,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 8299,Ändringsbeslut,2005-11-10,2005,Myndighet,Statens institut för särskilt utbildningsstöd,Socialdepartementet,9,S2005/8805/ST,False
 8300,Regleringsbrev,2005-12-20,2006,Myndighet,Statens kärnkraftinspektion,Miljö- och samhällsbyggnadsdepartementet,20,M2005/6430/A (delvis),True
 8301,Regleringsbrev,2005-12-15,2006,Anslag,46:1,Justitiedepartementet,1,Ju2005/10837/D(delvis) Ju2005/9729/D Ju2005/9538/D;Ju2005/6935/D,True
-8302,Ändringsbeslut,2005-11-10,2005,Myndighet,Rikspolisstyrelsen,Justitiedepartementet,4,"Ju2005/9820/PO, Ju2005/5912/PO",False
+8302,Ändringsbeslut,2005-11-10,2005,Myndighet,Rikspolisstyrelsen,Justitiedepartementet,4,Ju2005/9820/PO;Ju2005/5912/PO,False
 8303,Regleringsbrev,2005-12-15,2006,Anslag,90:6,Justitiedepartementet,1,Ju2005/10837/D(delvis) Ju2005/9583/D,True
 8305,Ändringsbeslut,2005-11-10,2005,Myndighet,Jämställdhetsombudsmannen,Näringsdepartementet,14,N2005/7751/JÄM,False
 8306,Ändringsbeslut,2005-11-24,2005,Anslag,24:2,Näringsdepartementet,14,N2005/8844/JÄM,False
@@ -2040,7 +2040,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 8309,Regleringsbrev,2005-12-15,2006,Anslag,24:3,Näringsdepartementet,14,N2005/8513/JÄM;N2005/10090/BS (delvis),True
 8310,Regleringsbrev,2005-12-20,2006,Anslag,90:2,Finansdepartementet,2,Fi2005/6390 (delvis),True
 8311,Regleringsbrev,2005-12-20,2006,Anslag,"33:1, 33:7 (2002) och 33:9 (2001)",Näringsdepartementet,19,N2005/9606/RUT;N2005/10139/RUT(slutlig);N2004/8536/RUT(slutlig),True
-8312,Regleringsbrev,2005-12-08,2006,Anslag,30:3,Justitiedepartementet,17,"Ju2005/11166/D(delvis), Ju2005/9683/D(delvis)",True
+8312,Regleringsbrev,2005-12-08,2006,Anslag,30:3,Justitiedepartementet,17,Ju2005/11166/D (delvis);Ju2005/9683/D (delvis),True
 8313,Regleringsbrev,2005-12-20,2006,Myndighet,Brottsförebyggande rådet,Justitiedepartementet,4,Ju2005/11640/KRIM;Ju2005/11595/DOM (delvis);Ju2005/9830/KRIM (delvis),True
 8314,Regleringsbrev,2005-12-20,2006,Anslag,5:4,Utrikesdepartementet,5,UD2005/67875/PLAN (slutligt),True
 8315,Regleringsbrev,2005-12-15,2006,Myndighet,Post- och telestyrelsen,Näringsdepartementet,22,N2005/9148/ITFoU;N2005/4389/ITFoU;N2005/1896/ITFoU (delvis),True
@@ -2059,7 +2059,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 8328,Regleringsbrev,2005-12-15,2006,Myndighet,Statens musiksamlingar,Utbildnings- och kulturdepartementet,17,U2005/9537/Kr,True
 8329,Regleringsbrev,2005-12-15,2006,Myndighet,Statens väg- och transportforskningsinstitut,Näringsdepartementet,22,N2005/9805/TP;N2005/9907/BS (delvis),True
 8330,Ändringsbeslut,2005-11-24,2005,Anslag,46:4,Justitiedepartementet,1,Ju2005/9946/DOM,False
-8331,Regleringsbrev,2005-12-15,2006,Myndighet,Nationalmuseum med Prins Eugens Waldemarsudde,Utbildnings- och kulturdepartementet,17,"U2005/2739, 9531/Kr",True
+8331,Regleringsbrev,2005-12-15,2006,Myndighet,Nationalmuseum med Prins Eugens Waldemarsudde,Utbildnings- och kulturdepartementet,17,U2005/2739;U2005/9531/Kr,True
 8332,Ändringsbeslut,2005-11-24,2005,Myndighet,Gentekniknämnden,Justitiedepartementet,4,Ju2005/9947/DOM,False
 8333,Regleringsbrev,2005-12-15,2006,Myndighet,Högskoleverket,Utbildnings- och kulturdepartementet,16,U2005/9498/BIA (delvis),True
 8334,Regleringsbrev,2005-12-20,2006,Myndighet,Affärsverket svenska kraftnät,Miljö- och samhällsbyggnadsdepartementet,,M2005/6372/A (slutligt),True
@@ -2121,7 +2121,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 8404,Ändringsbeslut,2005-11-10,2005,Myndighet,Vetenskapsrådet,Utbildnings- och kulturdepartementet,16,U2005/5631/BIA (delvis),False
 8405,Ändringsbeslut,2005-11-24,2005,Anslag,"27:2, 28:5, 28:12, 28:13, 28:27, 28:29, 28:31, 28:35 och 28:36",Utbildnings- och kulturdepartementet,17,U2005/8719/BIA,False
 8409,Ändringsbeslut,2005-11-24,2005,Myndighet,Ungdomsstyrelsen,Utbildnings- och kulturdepartementet,17,U2005/8717/BIA,False
-8410,Regleringsbrev,2005-12-20,2006,Myndighet,Statens institut för kommunikationsanalys,Näringsdepartementet,22,"N2005/9766/IR;N2005/9907/BS, (delvis)",True
+8410,Regleringsbrev,2005-12-20,2006,Myndighet,Statens institut för kommunikationsanalys,Näringsdepartementet,22,N2005/9766/IR;N2005/9907/BS (delvis),True
 8411,Regleringsbrev,2005-12-15,2006,Myndighet,Specialskolemyndigheten,Utbildnings- och kulturdepartementet,16,U2005/9498/BIA (delvis),True
 8412,Ändringsbeslut,2005-11-24,2005,Myndighet,Statens beredning för medicinsk utvärdering,Socialdepartementet,9,S2005/9480/HS,False
 8413,Ändringsbeslut,2005-11-24,2005,Myndighet,Läkemedelsförmånsnämnden,Socialdepartementet,9,S2005/9481/HS,False
@@ -2211,7 +2211,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 8507,Regleringsbrev,2005-12-15,2006,Myndighet,Regionala etikprövningsnämnder,Utbildnings- och kulturdepartementet,16,U2005/9498/BIA (delvis),True
 8508,Ändringsbeslut,2005-11-24,2005,Myndighet,Myndigheten för internationella adoptionsfrågor,Socialdepartementet,9,S2005/9475/SK,False
 8509,Regleringsbrev,2005-12-15,2006,Anslag,"27:2, 28:5, 28:12, 28:13, 28:27, 28:29, 28:31, 28:35 och 28:36",Utbildnings- och kulturdepartementet,17,U2005/9302/BIA,True
-8510,Regleringsbrev,2005-12-20,2006,Myndighet,Ekonomistyrningsverket,Finansdepartementet,2,"Fi2005/4706, Fi2005/6390 (delvis)",True
+8510,Regleringsbrev,2005-12-20,2006,Myndighet,Ekonomistyrningsverket,Finansdepartementet,2,Fi2005/4706;Fi2005/6390 (delvis),True
 8511,Ändringsbeslut,2005-12-15,2005,Myndighet,Lotteriinspektionen,Finansdepartementet,17,Fi2005/5927,False
 8512,Ändringsbeslut,2005-12-08,2005,Anslag,26:1 och 26:2,Jordbruksdepartementet,23,Jo2005/2859,False
 8513,Ändringsbeslut,2005-12-08,2005,Myndighet,Sveriges lantbruksuniversitet,Jordbruksdepartementet,23,Jo2005/2845,False
@@ -2318,7 +2318,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 8622,Ändringsbeslut,2005-11-24,2005,Myndighet,Kungl. biblioteket,Utbildnings- och kulturdepartementet,16,U2005/8719/BIA,False
 8623,Ändringsbeslut,2005-11-24,2005,Myndighet,Statens ljud- och bildarkiv,Utbildnings- och kulturdepartementet,17,U2005/8719/BIA,False
 8624,Ändringsbeslut,2005-11-24,2005,Myndighet,Turistdelegationen,Näringsdepartementet,24,N2005/9170/RUT,False
-8625,Regleringsbrev,2005-12-15,2006,Anslag,30:1,Justitiedepartementet,17,"Ju2005/11166/(delvis), Ju2005/9822/D, Ju2005/3148/D(delvis), Ju2005/3142/D",True
+8625,Regleringsbrev,2005-12-15,2006,Anslag,30:1,Justitiedepartementet,17,Ju2005/11166 (delvis);Ju2005/9822/D;Ju2005/3148/D (delvis);Ju2005/3142/D,True
 8626,Regleringsbrev,2005-12-20,2006,Anslag,26:11,Utbildnings- och kulturdepartementet,16,U2005/9498/BIA (slutligt),True
 8627,Ändringsbeslut,2005-11-24,2005,Myndighet,Statens institut för särskilt utbildningsstöd,Socialdepartementet,9,S2005/9474/ST,False
 8628,Ändringsbeslut,2005-11-24,2005,Anslag,34:8,Miljö- och samhällsbyggnadsdepartementet,20,M2004/6131/A (delvis),False
@@ -2332,17 +2332,17 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 8640,Ändringsbeslut,2005-12-08,2005,Anslag,38:10,Näringsdepartementet,24,N2005/9506/ITFoU;N2005/9420/BS (delvis),False
 8641,Ändringsbeslut,2005-12-15,2005,Myndighet,Rymdstyrelsen,Näringsdepartementet,24,N2005/9421/ITFoU;N2005/9420/BS,False
 8644,Ändringsbeslut,2005-11-24,2005,Myndighet,Myndigheten för Sveriges nätuniversitet,Utbildnings- och kulturdepartementet,16,U2005/8719/BIA,False
-8645,Ändringsbeslut,2005-12-15,2005,Myndighet,Göteborgs universitet,Utbildnings- och kulturdepartementet,16,"U2005/7344,8061,8334,8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig)",False
-8646,Ändringsbeslut,2005-12-15,2005,Myndighet,Stockholms universitet,Utbildnings- och kulturdepartementet,16,"U2005/7344,8061,8334,8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig)",False
-8647,Ändringsbeslut,2005-12-15,2005,Myndighet,Linköpings universitet,Utbildnings- och kulturdepartementet,16,"U2005/7344,8061,8334,8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig)",False
-8648,Ändringsbeslut,2005-12-15,2005,Myndighet,Karolinska institutet,Utbildnings- och kulturdepartementet,16,"U2005/7344,8061,8334,8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig)",False
-8649,Ändringsbeslut,2005-12-15,2005,Myndighet,Växjö universitet,Utbildnings- och kulturdepartementet,16,"U2005/7344,8061,8334,8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig)",False
-8650,Ändringsbeslut,2005-12-15,2005,Myndighet,Örebro universitet,Utbildnings- och kulturdepartementet,16,"U2005/7344,8061,8334,8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig)",False
-8651,Ändringsbeslut,2005-12-15,2005,Myndighet,Malmö Högskola,Utbildnings- och kulturdepartementet,16,"U2005/7344,8061,8334,8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig)",False
-8652,Ändringsbeslut,2005-12-15,2005,Myndighet,Högskolan i Kalmar,Utbildnings- och kulturdepartementet,16,"U2005/7344,8061,8334,8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig)",False
-8653,Ändringsbeslut,2005-12-15,2005,Myndighet,Högskolan i Borås,Utbildnings- och kulturdepartementet,16,"U2005/7344,8061,8334,8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig)",False
-8654,Ändringsbeslut,2005-12-15,2005,Myndighet,Högskolan i Skövde,Utbildnings- och kulturdepartementet,16,"U2005/7344,8061,8334,8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig)",False
-8655,Ändringsbeslut,2005-12-15,2005,Myndighet,Lärarhögskolan i Stockholm,Utbildnings- och kulturdepartementet,16,"U2005/7344,8061,8334,8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig)",False
+8645,Ändringsbeslut,2005-12-15,2005,Myndighet,Göteborgs universitet,Utbildnings- och kulturdepartementet,16,U2005/7344;U2005/8061;U2005/8334;U2005/8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig),False
+8646,Ändringsbeslut,2005-12-15,2005,Myndighet,Stockholms universitet,Utbildnings- och kulturdepartementet,16,U2005/7344;U2005/8061;U2005/8334;U2005/8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig),False
+8647,Ändringsbeslut,2005-12-15,2005,Myndighet,Linköpings universitet,Utbildnings- och kulturdepartementet,16,U2005/7344;U2005/8061;U2005/8334;U2005/8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig),False
+8648,Ändringsbeslut,2005-12-15,2005,Myndighet,Karolinska institutet,Utbildnings- och kulturdepartementet,16,U2005/7344;U2005/8061;U2005/8334;U2005/8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig),False
+8649,Ändringsbeslut,2005-12-15,2005,Myndighet,Växjö universitet,Utbildnings- och kulturdepartementet,16,U2005/7344;U2005/8061;U2005/8334;U2005/8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig),False
+8650,Ändringsbeslut,2005-12-15,2005,Myndighet,Örebro universitet,Utbildnings- och kulturdepartementet,16,U2005/7344;U2005/8061;U2005/8334;U2005/8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig),False
+8651,Ändringsbeslut,2005-12-15,2005,Myndighet,Malmö Högskola,Utbildnings- och kulturdepartementet,16,U2005/7344;U2005/8061;U2005/8334;U2005/8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig),False
+8652,Ändringsbeslut,2005-12-15,2005,Myndighet,Högskolan i Kalmar,Utbildnings- och kulturdepartementet,16,U2005/7344;U2005/8061;U2005/8334;U2005/8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig),False
+8653,Ändringsbeslut,2005-12-15,2005,Myndighet,Högskolan i Borås,Utbildnings- och kulturdepartementet,16,U2005/7344;U2005/8061;U2005/8334;U2005/8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig),False
+8654,Ändringsbeslut,2005-12-15,2005,Myndighet,Högskolan i Skövde,Utbildnings- och kulturdepartementet,16,U2005/7344;U2005/8061;U2005/8334;U2005/8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig),False
+8655,Ändringsbeslut,2005-12-15,2005,Myndighet,Lärarhögskolan i Stockholm,Utbildnings- och kulturdepartementet,16,U2005/7344;U2005/8061;U2005/8334;U2005/8863/UH;U2005/6237/UH (delvis);U2005/8962/BIA (slutlig),False
 8658,Regleringsbrev,2005-12-15,2006,Myndighet,Migrationsverket,Utrikesdepartementet,8,UD2005/19134/MAP;UD2005/66957/MAP (delvis),True
 8659,Regleringsbrev,2005-12-15,2006,Anslag,39:6,Utrikesdepartementet,24,UD2005/69388/EIM (delvis),True
 8660,Regleringsbrev,2005-12-15,2006,Myndighet,Luftfartsstyrelsen,Näringsdepartementet,22,N2005/9809/TP;N2005/9907/BS (delvis),True
@@ -2420,13 +2420,13 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 8772,Ändringsbeslut,2006-01-26,2006,Myndighet,Domstolsverket,Justitiedepartementet,4,Ju2005/5677/DOM,False
 8773,Ändringsbeslut,2005-12-15,2005,Myndighet,Utlänningsnämnden,Utrikesdepartementet,8,UD2005/3200/MAP;UD2005/61090/MAP;UD2005/66027/PLAN(slutlig),False
 8774,Regleringsbrev,2005-12-20,2006,Myndighet,Regeringskansliet,Statsrådsberedningen,1,SB/2005/11258,True
-8776,Regleringsbrev,2005-12-15,2006,Myndighet,Konstnärsnämnden,Utbildnings- och kulturdepartementet,17,"U2005/7477, 9525/Kr",True
+8776,Regleringsbrev,2005-12-15,2006,Myndighet,Konstnärsnämnden,Utbildnings- och kulturdepartementet,17,U2005/7477;U2005/9525/Kr,True
 8777,Ändringsbeslut,2005-12-20,2005,Anslag,11:1 (2002),Utbildnings- och kulturdepartementet,16,U2004/9419/S,False
 8778,Ändringsbeslut,2005-12-15,2005,Myndighet,Justitiekanslern,Justitiedepartementet,1;4,Ju2005/11305/Å;Ju2005/10516/DOM,False
 8779,Ändringsbeslut,2005-12-15,2005,Myndighet,Försvarsmakten,Försvarsdepartementet,6,Fö2005/2747/MIL (delvis),False
 8780,Ändringsbeslut,2005-12-15,2005,Myndighet,Djurskyddsmyndigheten,Jordbruksdepartementet,23,Jo2005/2918,False
 8781,Ändringsbeslut,2005-12-20,2005,Myndighet,Statens växtsortnämnd,Jordbruksdepartementet,23,Jo2005/1927,False
-8782,Ändringsbeslut,2005-12-20,2005,Myndighet,Statens utsädeskontroll,Jordbruksdepartementet,23,"Jo2001/2908 Jo2110/3930, Jo2004/1367 Jo2005/611;Jo2005/1927 (delvis)",False
+8782,Ändringsbeslut,2005-12-20,2005,Myndighet,Statens utsädeskontroll,Jordbruksdepartementet,23,Jo2001/2908;Jo2110/3930;Jo2004/1367;Jo2005/611;Jo2005/1927 (delvis),False
 8783,Ändringsbeslut,2005-12-15,2005,Myndighet,Turistdelegationen,Näringsdepartementet,24,N2005/7795/RUT(delvis),False
 8784,Ändringsbeslut,2005-12-20,2005,Myndighet,Sveriges geologiska undersökning,Näringsdepartementet,24,N2005/10026/HUB,False
 8785,Ändringsbeslut,2005-12-20,2005,Myndighet,Rederinämnden,Näringsdepartementet,22,N2005/10070/TP,False
@@ -2544,7 +2544,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 8968,Ändringsbeslut,2006-05-11,2006,Myndighet,Ombudsmannen mot etnisk diskriminering,Justitiedepartementet,8,Ju2006/3058/IM,True
 8969,Ändringsbeslut,2006-06-21,2006,Myndighet,Fiskeriverket,Jordbruksdepartementet,23,Jo2006/1200,True
 8970,Ändringsbeslut,2006-05-11,2006,Myndighet,Statens kulturråd,Utbildnings- och kulturdepartementet,17,U2006/3849/Kr,True
-8971,Ändringsbeslut,2006-05-11,2006,Myndighet,Verket för högskoleservice,Utbildnings- och kulturdepartementet,16,"U2006/1303,3754/UH",True
+8971,Ändringsbeslut,2006-05-11,2006,Myndighet,Verket för högskoleservice,Utbildnings- och kulturdepartementet,16,U2006/1303;U2006/3754/UH,True
 8972,Ändringsbeslut,2006-05-11,2006,Myndighet,Statens jordbruksverk,Jordbruksdepartementet,23,Jo2005/1378;Jo2006/1352;Jo2006/786 (delvis),True
 8973,Ändringsbeslut,2006-05-18,2006,Myndighet,Socialstyrelsen,Socialdepartementet,9,S2006/4438/HS,True
 8974,Ändringsbeslut,2006-06-21,2006,Myndighet,Sametinget,Jordbruksdepartementet,1;23,Jo2006/1779,True
@@ -2582,7 +2582,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 9008,Ändringsbeslut,2006-06-08,2006,Myndighet,Statens kulturråd,Utbildnings- och kulturdepartementet,17,U2006/4492/Kr,True
 9009,Ändringsbeslut,2006-06-21,2006,Myndighet,Myndigheten för handikappolitisk samordning,Socialdepartementet,9,S2006/5236/ST;S2006/4840/ST,True
 9010,Ändringsbeslut,2006-06-14,2006,Anslag,37:4,Näringsdepartementet,22,N2006/4481/ITFoU;N2006/4838/BS (delvis),True
-9014,Ändringsbeslut,2006-06-14,2006,Myndighet,universitet och högskolor m.m.,Utbildnings- och kulturdepartementet,,"U2005/5742/UH;U2006/1188, 1769, 2397, 3147/UH",True
+9014,Ändringsbeslut,2006-06-14,2006,Myndighet,universitet och högskolor m.m.,Utbildnings- och kulturdepartementet,,U2005/5742/UH;U2006/1188;U2006/1769;U2006/2397;U2006/3147/UH,True
 9016,Ändringsbeslut,2006-06-29,2006,Myndighet,Verket för förvaltningsutveckling,Finansdepartementet,2,Fi2006/3207 (delvis),True
 9017,Ändringsbeslut,2006-06-29,2006,Myndighet,Verket för näringslivsutveckling,Näringsdepartementet,19;24,N2006/1619/NL;N2006/4209/RUT;N2006/4838/BS (delvis),True
 9018,Ändringsbeslut,2006-06-21,2006,Myndighet,Länsstyrelserna,Finansdepartementet,18,Fi2005/4795;Fi2006/2504;Fi2006/2559,True
@@ -2695,7 +2695,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 9182,Ändringsbeslut,2006-10-19,2006,Anslag,"27:2, 28:5, 28:12, 28:13, 28:27, 28:29, 28:31, 28:35 och 28:36",Utbildnings- och kulturdepartementet,17,U2006/592/Kr (slutligt);U2006/1782/Kr (slutligt);U2006/6936/Kr,True
 9183,Ändringsbeslut,2006-11-23,2006,Myndighet,Internationella programkontoret för utbildningsområdet,Utbildnings- och kulturdepartementet,16,U2006/8435/IS,True
 9184,Ändringsbeslut,2006-11-02,2006,Myndighet,Statens jordbruksverk,Jordbruksdepartementet,23,Jo2006/2089 (delvis),True
-9185,Ändringsbeslut,2006-11-23,2006,Myndighet,universitet och högskolor m.m.,Utbildnings- och kulturdepartementet,,"U2006/4667/BIA (delvis);U2006/4377,7078,8226;8280/UH",True
+9185,Ändringsbeslut,2006-11-23,2006,Myndighet,universitet och högskolor m.m.,Utbildnings- och kulturdepartementet,,U2006/4667/BIA (delvis);U2006/4377;U2006/7078;U2006/8226;U2006/8280/UH,True
 9186,Regleringsbrev,2006-12-21,2007,Myndighet,Elsäkerhetsverket,Miljö- och samhällsbyggnadsdepartementet,6,M2006/5741/A (slutligt),True
 9187,Ändringsbeslut,2006-11-30,2006,Anslag,"42:4 (2003), 42:6, 43:5, 43:14 och 43:15",Jordbruksdepartementet,23,Jo2006/3130,True
 9192,Regleringsbrev,2006-12-21,2007,Myndighet,Svenska institutet,Utrikesdepartementet,5;7,UD2006/61718/PLAN (delvis),True
@@ -2759,7 +2759,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 9259,Regleringsbrev,2006-12-21,2007,Myndighet,Statens väg- och transportforskningsinstitut,Näringsdepartementet,22,N2006/10280/TP;N2006/11614/BS (delvis),True
 9260,Regleringsbrev,2006-12-21,2007,Myndighet,Sjöfartsverket,Näringsdepartementet,22,N2006/10279/TP;N2006/11614/BS (delvis),True
 9261,Regleringsbrev,2006-12-21,2007,Myndighet,Säkerhetspolisen,Justitiedepartementet,4,Ju2006/10118/PO;Ju2003/1154/PO;Ju2005/3090/PO,True
-9262,Ändringsbeslut,2006-12-07,2006,Myndighet,Säkerhetspolisen,Justitiedepartementet,4,"Ju2006/9851/PO, Ju2006/8625/PO",True
+9262,Ändringsbeslut,2006-12-07,2006,Myndighet,Säkerhetspolisen,Justitiedepartementet,4,Ju2006/9851/PO;Ju2006/8625/PO,True
 9263,Ändringsbeslut,2006-12-21,2006,Anslag,90:2,Finansdepartementet,2,Fi2006/7360,True
 9264,Regleringsbrev,2006-12-21,2007,Myndighet,Statens institutionsstyrelse,Socialdepartementet,9,S2005/9885/ST;S2006/700/ST;S2006/1588/ST,True
 9265,Ändringsbeslut,2006-12-07,2006,Myndighet,Försvarsmakten,Försvarsdepartementet,6,Fö2006/2797/MIL,True
@@ -2792,7 +2792,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 9298,Regleringsbrev,2006-12-21,2007,Anslag,15:3,Socialdepartementet,9,S2006/10212/SK (delvis),True
 9299,Regleringsbrev,2006-12-14,2007,Myndighet,Statens skolverk,Utbildnings- och kulturdepartementet,16,U2006/9555/BIA/G (delvis),True
 9300,Regleringsbrev,2006-12-21,2007,Myndighet,Verket för näringslivsutveckling,Näringsdepartementet,19;24,N2006/11667/NL;N2006/11945/BS (delvis);N2006/11946/RUT (delvis),True
-9301,Regleringsbrev,2006-12-21,2007,Myndighet,Statens kulturråd,Utbildnings- och kulturdepartementet,17,"U2006/4216, 8120/Kr;U2006/9499/BIA (delvis)",True
+9301,Regleringsbrev,2006-12-21,2007,Myndighet,Statens kulturråd,Utbildnings- och kulturdepartementet,17,U2006/4216;U2006/8120/Kr;U2006/9499/BIA (delvis),True
 9302,Regleringsbrev,2006-12-14,2007,Myndighet,Talboks- och punktskriftsbiblioteket,Utbildnings- och kulturdepartementet,17,U2006/9499/BIA (delvis),True
 9303,Regleringsbrev,2006-12-21,2007,Myndighet,Bokföringsnämnden,Finansdepartementet,2,Fi2006/7384 (delvis),True
 9304,Regleringsbrev,2006-12-21,2007,Myndighet,Statens konstråd,Utbildnings- och kulturdepartementet,17,U2006/9499/BIA (delvis),True
@@ -2926,7 +2926,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 9443,Ändringsbeslut,2006-11-30,2006,Myndighet,Skogsstyrelsen,Näringsdepartementet,23,N2006/10642/HUB,True
 9444,Regleringsbrev,2006-12-21,2007,Myndighet,Skogsstyrelsen,Näringsdepartementet,23,N2006/9916/HUB;N2006/11943/HUB (slutligt),True
 9445,Regleringsbrev,2006-12-21,2007,Myndighet,Länsstyrelserna,Finansdepartementet,1,Fi2006/474;Fi2006/2745;Fi2006/5857,True
-9447,Regleringsbrev,2006-12-21,2007,Myndighet,Sametinget,Jordbruksdepartementet,1;23,"Jo2006/3351, (delvis);Jo2006/3315;Jo2006/2658",True
+9447,Regleringsbrev,2006-12-21,2007,Myndighet,Sametinget,Jordbruksdepartementet,1;23,Jo2006/3351 (delvis);Jo2006/3315;Jo2006/2658,True
 9448,Regleringsbrev,2006-12-21,2007,Myndighet,Jämställdhetsombudsmannen,Näringsdepartementet,14,N2006/9807/JÄM;N2006/12094/BS (delvis),True
 9449,Ändringsbeslut,2006-12-21,2006,Anslag,10:4,Justitiedepartementet,8,Ju2006/10085/IM,True
 9450,Regleringsbrev,2006-12-21,2007,Myndighet,Skatteverket,Finansdepartementet,3,Fi2006/4366;Fi2006/6999(delvis),True
@@ -2941,7 +2941,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 9464,Regleringsbrev,2006-12-21,2007,Myndighet,Smittskyddsinstitutet,Socialdepartementet,9,S2006/10212/SK (delvis),True
 9465,Regleringsbrev,2006-12-21,2007,Anslag,5:8,Utrikesdepartementet,5,UD2006/61718/PLAN (delvis),True
 9466,Regleringsbrev,2006-12-21,2007,Myndighet,Tullverket,Finansdepartementet,3,Fi2006/6999,True
-9467,Regleringsbrev,2006-12-21,2007,Myndighet,Konsumentverket,Jordbruksdepartementet,18,"Jo2006/3374 (delvis), Jo2006/3115",True
+9467,Regleringsbrev,2006-12-21,2007,Myndighet,Konsumentverket,Jordbruksdepartementet,18,Jo2006/3374 (delvis);Jo2006/3115,True
 9468,Regleringsbrev,2006-12-21,2007,Myndighet,Allmänna reklamationsnämnden,Jordbruksdepartementet,18,Jo2006/3374(delvis),True
 9469,Regleringsbrev,2006-12-21,2007,Anslag,5:3,Utrikesdepartementet,5,UD2006/61718/PLAN (slutligt),True
 9470,Regleringsbrev,2006-12-21,2007,Myndighet,Rikspolisstyrelsen,Justitiedepartementet,4,Ju2006/10117/PO;Ju2005/5660/PO;Ju2005/9535/PO,True
@@ -3046,14 +3046,14 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 9617,Ändringsbeslut,2006-12-14,2006,Myndighet,Statens historiska museer,Utbildnings- och kulturdepartementet,17,U2006/8095/Kr,True
 9619,Ändringsbeslut,2006-12-14,2006,Anslag,28:32,Utbildnings- och kulturdepartementet,17,U2006/9270/BIA (slutligt),True
 9620,Ändringsbeslut,2006-12-14,2006,Myndighet,Fiskeriverket,Jordbruksdepartementet,23,Jo2006/3292,True
-9622,Ändringsbeslut,2006-12-21,2006,Myndighet,Justitiekanslern,Justitiedepartementet,1;4,"Ju2006/10138/Å, Ju2006/10085/DOM (delvis)",True
+9622,Ändringsbeslut,2006-12-21,2006,Myndighet,Justitiekanslern,Justitiedepartementet,1;4,Ju2006/10138/Å;Ju2006/10085/DOM (delvis),True
 9623,Regleringsbrev,2006-12-21,2007,Anslag,39:5,Utrikesdepartementet,24,UD2006/60770/EIM;UD2006/61721/EIM (delvis),True
 9624,Ändringsbeslut,2006-12-21,2006,Myndighet,Integrationsverket,Justitiedepartementet,8,Ju2006/10244/IM,True
 9625,Ändringsbeslut,2006-12-14,2006,Myndighet,Statens veterinärmedicinska anstalt,Jordbruksdepartementet,23,JO2006/3293,True
 9626,Ändringsbeslut,2006-12-14,2006,Myndighet,Domstolsverket,Justitiedepartementet,4,Ju2006/436/DOM (delvis);Ju2006/5567/DOM;Ju2006/10215/DOM,True
 9627,Regleringsbrev,2006-12-21,2007,Myndighet,Glesbygdsverket,Näringsdepartementet,19,N2006/11561/RUT;N2006/11946/RUT(delvis),True
 9628,Ändringsbeslut,2006-12-21,2006,Myndighet,Konjunkturinstitutet,Finansdepartementet,2,Fi2006/7356,True
-9629,Ändringsbeslut,2006-12-21,2006,Myndighet,Rikspolisstyrelsen,Justitiedepartementet,4,"Ju2006/10119/PO, Ju2006/10085/PO (delvis)",True
+9629,Ändringsbeslut,2006-12-21,2006,Myndighet,Rikspolisstyrelsen,Justitiedepartementet,4,Ju2006/10119/PO;Ju2006/10085/PO (delvis),True
 9630,Regleringsbrev,2006-12-21,2007,Anslag,30:1,Justitiedepartementet,17,Ju2006/3271/D (delvis);Ju2006/3527/D (delvis);Ju2006/7838/D,True
 9631,Ändringsbeslut,2006-12-21,2006,Anslag,93:1,Finansdepartementet,27,Fi2005/6388,True
 9632,Ändringsbeslut,2006-12-21,2006,Myndighet,Säkerhetspolisen,Justitiedepartementet,4,Ju2006/10120/PO;Ju2006/10085/PO (delvis),True
@@ -3139,7 +3139,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 9777,Ändringsbeslut,2007-04-19,2007,Anslag,47:1,Integrations- och jämställdhetsdepartementet,1,IJ2007/1466/D,True
 9778,Ändringsbeslut,2007-04-12,2007,Myndighet,Statens kulturråd,Kulturdepartementet,17,Ku2007/1732/Kr,True
 9779,Ändringsbeslut,2007-03-29,2007,Myndighet,Arbetslivsinstitutet,Arbetsmarknadsdepartementet,14,A2007/2528/ARM (delvis),True
-9780,Ändringsbeslut,2007-06-14,2007,Myndighet,Högskoleverket,Utbildningsdepartementet,16,"U2007/92,2667/UH",True
+9780,Ändringsbeslut,2007-06-14,2007,Myndighet,Högskoleverket,Utbildningsdepartementet,16,U2007/92;U2007/2667/UH,True
 9783,Ändringsbeslut,2007-04-03,2007,Myndighet,Banverket,Näringsdepartementet,22,N2007/12145/IR,True
 9784,Regleringsbrev,2007-06-20,2007,Myndighet,Avvecklingsmyndigheten för Arbetslivsinstitutet,Arbetsmarknadsdepartementet,14,A2007/3651/ARM;A2007/4842/RS(delvis),True
 9785,Ändringsbeslut,2007-04-12,2007,Anslag,"27:2, 28:5, 28:12, 28:26, 28:28, 28:30, 28:34 och 28:35",Kulturdepartementet,17,Ku2007/1733/Kr,True
@@ -3185,7 +3185,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 9830,Ändringsbeslut,2007-05-10,2007,Myndighet,Verket för näringslivsutveckling,Näringsdepartementet,19;24,N2007/4672/ENT,True
 9832,Ändringsbeslut,2007-05-16,2007,Myndighet,Finansinspektionen,Finansdepartementet,2,Fi2003/4992 (delvis),True
 9833,Ändringsbeslut,2007-06-20,2007,Myndighet,Integrationsverket,Integrations- och jämställdhetsdepartementet,13,IJ2007/2029/IM;IJ2007/2022/JÄM (delvis),True
-9836,Ändringsbeslut,2007-05-16,2007,Myndighet,universitet och högskolor m.m.,Utbildningsdepartementet,,"U2006/1187/UH,U2007/859, 2573, 3136, 1568 (delvis),3271/UH (delvis)",True
+9836,Ändringsbeslut,2007-05-16,2007,Myndighet,universitet och högskolor m.m.,Utbildningsdepartementet,,U2006/1187/UH;U2007/859;U2007/2573;U2007/3136;U2007/1568 (delvis);U2007/3271/UH (delvis),True
 9837,Ändringsbeslut,2007-05-24,2007,Myndighet,Institutet för tillväxtpolitiska studier,Näringsdepartementet,24,N2007/5049/SAM;N2007/4758/SAM;N2007/4759/SAM,True
 9838,Ändringsbeslut,2007-05-31,2007,Myndighet,Banverket,Näringsdepartementet,22,N2007/5184/IR,True
 9840,Ändringsbeslut,2007-06-07,2007,Anslag,33:6,Näringsdepartementet,19,N2007/4997/RT,True
@@ -3202,7 +3202,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 9856,Ändringsbeslut,2007-06-28,2007,Myndighet,Statens energimyndighet,Näringsdepartementet,21,N2007/5778/E;N2007/5892/SAM(delvis),True
 9857,Ändringsbeslut,2007-06-28,2007,Myndighet,Statens jordbruksverk,Jordbruksdepartementet,23,Jo2007/2159,True
 9858,Ändringsbeslut,2007-06-14,2007,Myndighet,Arbetslivsinstitutet,Arbetsmarknadsdepartementet,14,A2007/2528/ARM (delvis),True
-9860,Ändringsbeslut,2007-06-07,2007,Myndighet,Statens kulturråd,Kulturdepartementet,17,"Ku2007/1650, 1809/Kr",True
+9860,Ändringsbeslut,2007-06-07,2007,Myndighet,Statens kulturråd,Kulturdepartementet,17,Ku2007/1650;Ku2007/1809/Kr,True
 9861,Ändringsbeslut,2007-06-14,2007,Myndighet,Ungdomsstyrelsen,Integrations- och jämställdhetsdepartementet,17,IJ2007/1978/UNG,True
 9862,Ändringsbeslut,2007-06-20,2007,Myndighet,Statistiska centralbyrån,Finansdepartementet,2,Fi2007/5028 (delvis) Fi2007/4204,True
 9863,Ändringsbeslut,2007-06-28,2007,Myndighet,Djurskyddsmyndigheten,Jordbruksdepartementet,23,Jo2007/2158,True
@@ -3254,7 +3254,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 9915,Ändringsbeslut,2007-06-20,2007,Myndighet,Ekonomistyrningsverket,Finansdepartementet,2,Fi2007/4992,True
 9916,Ändringsbeslut,2007-06-28,2007,Anslag,33:1 och 33:6 (2006),Näringsdepartementet,19,N2007/5878/ENT;N2007/5892/SAM (delvis),True
 9917,Ändringsbeslut,2007-06-20,2007,Myndighet,Ombudsmannen mot etnisk diskriminering,Integrations- och jämställdhetsdepartementet,13,Ju2007/1934/IM,True
-9919,Ändringsbeslut,2007-06-20,2007,Myndighet,universitet och högskolor m.m.,Utbildningsdepartementet,,"U2007/2262/UH (delvis), U2007/4636/SAM(delvis)",True
+9919,Ändringsbeslut,2007-06-20,2007,Myndighet,universitet och högskolor m.m.,Utbildningsdepartementet,,U2007/2262/UH (delvis);U2007/4636/SAM (delvis),True
 9920,Ändringsbeslut,2007-06-28,2007,Myndighet,Boverket,Miljödepartementet,18,M2007/3085/H,True
 9923,Ändringsbeslut,2007-06-20,2007,Myndighet,Internationella programkontoret för utbildningsområdet,Utbildningsdepartementet,16,U2007/4636/SAM (delvis),True
 9924,Ändringsbeslut,2007-06-28,2007,Anslag,30:3,Integrations- och jämställdhetsdepartementet,17,IJ2007/2005/D;IJ2007/2022/JÄM,True
@@ -3281,7 +3281,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 9962,Ändringsbeslut,2007-09-19,2007,Myndighet,Statens skolverk,Utbildningsdepartementet,16,U2007/4636/SAM/G (delvis);U2007/6066/G,True
 9965,Ändringsbeslut,2007-11-29,2007,Myndighet,Myndigheten för skolutveckling,Utbildningsdepartementet,16,U2007/7457/S (slutligt),True
 9966,Ändringsbeslut,2007-08-02,2007,Myndighet,Migrationsverket,Justitiedepartementet,8,Ju2007/6828/SIM,True
-9967,Ändringsbeslut,2007-08-16,2007,Myndighet,Statens jordbruksverk,Jordbruksdepartementet,23,"Jo2007/2502, delvis",True
+9967,Ändringsbeslut,2007-08-16,2007,Myndighet,Statens jordbruksverk,Jordbruksdepartementet,23,Jo2007/2502 (delvis),True
 9968,Ändringsbeslut,2007-08-16,2007,Myndighet,Migrationsverket,Justitiedepartementet,8,Ju2007/7006/SIM,True
 9969,Ändringsbeslut,2007-08-30,2007,Myndighet,Nämnden för offentlig upphandling,Finansdepartementet,2,Fi2007/5028 (delvis),True
 9971,Ändringsbeslut,2007-08-30,2007,Myndighet,Försvarsmakten,Försvarsdepartementet,6,Fö2007/1679/MIL,True
@@ -3293,7 +3293,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 9978,Ändringsbeslut,2007-08-30,2007,Myndighet,Smittskyddsinstitutet,Socialdepartementet,9,S2007/5470/FH(slutligt);S2007/7277/FH,True
 9979,Ändringsbeslut,2007-08-30,2007,Myndighet,Skogsstyrelsen,Jordbruksdepartementet,23,Jo2007/2610,True
 9980,Ändringsbeslut,2007-08-30,2007,Myndighet,Integrationsverket,Integrations- och jämställdhetsdepartementet,13,IJ2007/2470/IM,True
-9981,Ändringsbeslut,2007-09-06,2007,Myndighet,Statens jordbruksverk,Jordbruksdepartementet,23,"Jo2007/2502, delvis;Jo2007/2581",True
+9981,Ändringsbeslut,2007-09-06,2007,Myndighet,Statens jordbruksverk,Jordbruksdepartementet,23,Jo2007/2502 (delvis);Jo2007/2581,True
 9982,Ändringsbeslut,2007-09-27,2007,Myndighet,Försäkringskassan,Socialdepartementet,9;10;11;12;18,S2007/8282/SF,True
 9983,Ändringsbeslut,2007-09-06,2007,Myndighet,Verket för näringslivsutveckling,Näringsdepartementet,19;24,N2007/7207/ENT,True
 9984,Ändringsbeslut,2007-10-11,2007,Myndighet,Institutet för tillväxtpolitiska studier,Näringsdepartementet,24,N2007/8204/SAM;N2007/5892/SAM (delvis),True
@@ -3342,7 +3342,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 10042,Regleringsbrev,2007-12-19,2008,Myndighet,Konsumentverket,Integrations- och jämställdhetsdepartementet,18,IJ2007/3510/KO;IJ2007/3529/KO(delvis),True
 10044,Regleringsbrev,2007-12-19,2008,Myndighet,Sjöfartsverket,Näringsdepartementet,22,N2007/8991/TR;N2007/10256/SAM(delvis),True
 10045,Regleringsbrev,2007-12-19,2008,Myndighet,Statens väg- och transportforskningsinstitut,Näringsdepartementet,22,N2007/8992/TR;N2007/10256/SAM (delvis),True
-10046,Regleringsbrev,2007-12-13,2008,Myndighet,Specialpedagogiska institutet,Utbildningsdepartementet,16,"U2007/6958, 7049/S;7921, 7949/SAM/S",True
+10046,Regleringsbrev,2007-12-13,2008,Myndighet,Specialpedagogiska institutet,Utbildningsdepartementet,16,U2007/6958;U2007/7049/S;U2007/7921;U2007/7949/SAM/S,True
 10047,Regleringsbrev,2007-12-13,2008,Myndighet,Myndigheten för skolutveckling,Utbildningsdepartementet,16,U2007/7921/SAM/S,True
 10048,Regleringsbrev,2007-12-13,2008,Myndighet,Specialskolemyndigheten,Utbildningsdepartementet,16,U2007/7921/SAM/S,True
 10049,Regleringsbrev,2007-12-13,2008,Myndighet,Sameskolstyrelsen,Utbildningsdepartementet,16,U2007/7921/SAM,True
@@ -3408,14 +3408,14 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 10139,Regleringsbrev,2007-12-19,2008,Myndighet,Post- och telestyrelsen,Näringsdepartementet,22,N2007/9473/ITP;N2007/10256/SAM (delvis);N2007/9916/SAM (slutligt),True
 10140,Regleringsbrev,2007-12-13,2008,Myndighet,Statens skolverk,Utbildningsdepartementet,16,U2007/7921/SAM/G (delvis),True
 10141,Ändringsbeslut,2007-10-25,2007,Myndighet,Statens jordbruksverk,Jordbruksdepartementet,23,Jo 2007/3062,True
-10142,Regleringsbrev,2007-12-20,2008,Myndighet,Statens jordbruksverk,Jordbruksdepartementet,23,"Jo2007/851, Jo2007/2008, Jo2007/3544 (delvis)",True
+10142,Regleringsbrev,2007-12-20,2008,Myndighet,Statens jordbruksverk,Jordbruksdepartementet,23,Jo2007/851;Jo2007/2008;Jo2007/3544 (delvis),True
 10143,Regleringsbrev,2007-12-19,2008,Myndighet,Verket för näringslivsutveckling,Näringsdepartementet,19;24,N2007/9940/ENT;N2007/10294/SAM (delvis);N2007/10295/SAM (slutligt),True
 10145,Regleringsbrev,2007-12-13,2008,Anslag,5:6,Utrikesdepartementet,5,UD2007/47062/PLAN (delvis),True
 10146,Regleringsbrev,2007-12-20,2008,Myndighet,Bokföringsnämnden,Finansdepartementet,2,Fi2007/10043(delvis);Fi2007/1260,True
 10147,Regleringsbrev,2007-12-13,2008,Myndighet,Internationella programkontoret för utbildningsområdet,Utbildningsdepartementet,16,U2007/7921/SAM (delvis),True
-10148,Regleringsbrev,2007-12-13,2008,Myndighet,Svenska Unescorådet,Utbildningsdepartementet,16,"U2007/7921/SAM/IS (delvis);U2007/6517, 7673/IS",True
+10148,Regleringsbrev,2007-12-13,2008,Myndighet,Svenska Unescorådet,Utbildningsdepartementet,16,U2007/7921/SAM/IS (delvis);U2007/6517;U2007/7673/IS,True
 10150,Regleringsbrev,2007-12-20,2008,Myndighet,Premiepensionsmyndigheten,Finansdepartementet,,Fi2007/1593;Fi2007/4142;Fi2007/10043(delvis),True
-10151,Regleringsbrev,2007-12-13,2008,Myndighet,Myndigheten för kvalificerad yrkesutbildning,Utbildningsdepartementet,16,"U2007/7921/SAM/SV (delvis);U2007/5027,6955/SV",True
+10151,Regleringsbrev,2007-12-13,2008,Myndighet,Myndigheten för kvalificerad yrkesutbildning,Utbildningsdepartementet,16,U2007/7921/SAM/SV (delvis);U2007/5027;U2007/6955/SV,True
 10152,Regleringsbrev,2007-12-13,2008,Myndighet,Nationellt centrum för flexibelt lärande,Utbildningsdepartementet,16,U2007/7921/SAM/SV,True
 10153,Regleringsbrev,2007-12-13,2008,Anslag,25:13 och 25:16,Utbildningsdepartementet,16,U2007/7921/SAM/SV (delvis);U2007/7948/SV,True
 10154,Regleringsbrev,2007-12-13,2008,Anslag,"25:1, 25:2 och 25:3",Utbildningsdepartementet,17,U2007/7804/SAM/SV;U2007/4338/SV;U2007/5903/SV,True
@@ -3451,7 +3451,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 10187,Ändringsbeslut,2007-12-19,2007,Myndighet,Statens skolverk,Utbildningsdepartementet,16,U2007/3731/G (delvis),True
 10188,Regleringsbrev,2007-12-13,2008,Myndighet,Institutet för rymdfysik,Utbildningsdepartementet,16,U2007/7921/SAM/F (delvis),True
 10189,Regleringsbrev,2007-12-20,2008,Myndighet,Finanspolitiska rådet,Finansdepartementet,2,Fi2007/10043 (delvis),True
-10190,Regleringsbrev,2007-12-20,2008,Myndighet,Konjunkturinstitutet,Finansdepartementet,2,"Fi2007/6246, Fi2007/6849, Fi2007/10043 (delvis)",True
+10190,Regleringsbrev,2007-12-20,2008,Myndighet,Konjunkturinstitutet,Finansdepartementet,2,Fi2007/6246;Fi2007/6849;Fi2007/10043 (delvis),True
 10191,Ändringsbeslut,2007-11-15,2007,Myndighet,Vägverket,Näringsdepartementet,22,N2007/8620/IR;N2007/9318/SAM (delvis),True
 10193,Regleringsbrev,2007-12-19,2008,Anslag,"33:1, 33:2 och 33:6 (2006)",Näringsdepartementet,19,N2007/10145/ENT;N2007/10295/SAM (delvis);N2007/9661/ENT,True
 10194,Regleringsbrev,2007-12-19,2008,Myndighet,Sveriges Domstolar,Justitiedepartementet,4,Ju2007/10100/DOM;Ju2007/10442/DOM;Ju2007/10603/DOM (delvis),True
@@ -3462,7 +3462,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 10199,Regleringsbrev,2007-12-19,2008,Myndighet,Statens energimyndighet,Näringsdepartementet,21,N2007/10084/E;N2007/10296/E (delvis),True
 10200,Regleringsbrev,2007-12-19,2008,Anslag,35:7,Näringsdepartementet,21,N2007/10080/E;N2007/10296/E (delvis),True
 10201,Regleringsbrev,2007-12-19,2008,Anslag,"35:8, 35:9, 35:10, 35:11 och 35:12",Näringsdepartementet,21,N2007/10081/E;N2007/10296/E (delvis),True
-10206,Regleringsbrev,2007-12-13,2008,Myndighet,Högskoleverket,Utbildningsdepartementet,16,"U2007/7921/SAM (delvis), U2007/3507/UH",True
+10206,Regleringsbrev,2007-12-13,2008,Myndighet,Högskoleverket,Utbildningsdepartementet,16,U2007/7921/SAM (delvis);U2007/3507/UH,True
 10207,Regleringsbrev,2007-12-19,2008,Myndighet,Institutet för tillväxtpolitiska studier,Näringsdepartementet,24,N2007/10115/SAM;N2007/10294/SAM (delvis),True
 10208,Regleringsbrev,2007-12-13,2008,Anslag,25:10,Utbildningsdepartementet,16,U2007/7921/SAM/S,True
 10209,Regleringsbrev,2007-12-19,2008,Myndighet,Livsmedelsverket,Jordbruksdepartementet,23,Jo2007/3544 (delvis);Jo2007/673,True
@@ -3555,7 +3555,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 10355,Regleringsbrev,2007-12-19,2008,Anslag,33:6,Näringsdepartementet,19,N2007/9994/RT;N2007/10295/SAM(delvis);N2007/9087/RT,True
 10356,Regleringsbrev,2007-12-20,2008,Myndighet,Riksgäldskontoret,Finansdepartementet,2;26,Fi2002/2930;Fi2007/578;Fi2007/4851 (delvis),True
 10357,Regleringsbrev,2007-12-13,2008,Anslag,22:11,Arbetsmarknadsdepartementet,13,A2007/6208/ARM;A2007/6723/ADM (delvis),True
-10358,Regleringsbrev,2007-12-19,2008,Myndighet,Granskningsnämnden för radio och TV,Kulturdepartementet,1,"Ku2007/3519/ME, Ku2007/863/ME (slutligt)",True
+10358,Regleringsbrev,2007-12-19,2008,Myndighet,Granskningsnämnden för radio och TV,Kulturdepartementet,1,Ku2007/3519/ME;Ku2007/863/ME (slutligt),True
 10360,Ändringsbeslut,2007-11-15,2007,Myndighet,Hälso- och sjukvårdens ansvarsnämnd,Socialdepartementet,9,S2007/9784/HS,True
 10361,Ändringsbeslut,2007-11-22,2007,Myndighet,Banverket,Näringsdepartementet,22,N2007/8942/IR;N2007/9318/SAM (delvis),True
 10362,Regleringsbrev,2007-12-19,2008,Myndighet,Radio- och TV- verket,Kulturdepartementet,1,Ku2007/3519/ME,True
@@ -3617,7 +3617,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 10440,Regleringsbrev,2007-12-19,2008,Anslag,38:4,Näringsdepartementet,24,N2007/10049/FIN;N2007/10294/SAM (delvis),True
 10441,Regleringsbrev,2007-12-19,2008,Anslag,36:13,Näringsdepartementet,22,N2007/9625/TR;N2007/10256/SAM (delvis),True
 10442,Ändringsbeslut,2007-11-29,2007,Myndighet,Ekonomistyrningsverket,Finansdepartementet,2,Fi2007/9014 (delvis),True
-10443,Ändringsbeslut,2007-11-22,2007,Myndighet,Skatteverket,Finansdepartementet,3,"Fi2007/440, Fi2007/9014(delvis)",True
+10443,Ändringsbeslut,2007-11-22,2007,Myndighet,Skatteverket,Finansdepartementet,3,Fi2007/440;Fi2007/9014 (delvis),True
 10444,Ändringsbeslut,2007-11-29,2007,Myndighet,Statistiska centralbyrån,Finansdepartementet,2,Fi2007/9014 (delvis),True
 10445,Ändringsbeslut,2007-11-22,2007,Myndighet,Institutet för psykosocial medicin,Socialdepartementet,9,S2007/10029/FH,True
 10447,Regleringsbrev,2007-12-19,2008,Anslag,34:14,Miljödepartementet,20,M2007/5457/A (delvis),True
@@ -3639,7 +3639,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 10468,Regleringsbrev,2007-12-19,2008,Myndighet,Myndigheten för utländska investeringar i Sverige (ISA),Utrikesdepartementet,24,UD2007/48258/FIM (delvis),True
 10469,Ändringsbeslut,2007-11-29,2007,Myndighet,Migrationsverket,Justitiedepartementet,8,Ju2007/9888/DOM (delvis);Ju2007/10107/SIM,True
 10470,Ändringsbeslut,2007-11-29,2007,Anslag,12:4 och 12:5,Justitiedepartementet,8,Ju2007/9888/DOM (delvis);Ju2007/10108/SIM,True
-10471,Ändringsbeslut,2007-12-06,2007,Myndighet,Rikspolisstyrelsen,Justitiedepartementet,4,"Ju2007/10346/PO, Ju2007/9888/PO (delvis)",True
+10471,Ändringsbeslut,2007-12-06,2007,Myndighet,Rikspolisstyrelsen,Justitiedepartementet,4,Ju2007/10346/PO;Ju2007/9888/PO (delvis),True
 10472,Regleringsbrev,2007-12-19,2008,Anslag,"31:2, 31:7 (2003), 31:10 (2007), 31:11 (2006), 31:12 (2007) och 31:14 (2005)",Finansdepartementet,18,Fi2007/10009(delvis),True
 10473,Regleringsbrev,2007-12-13,2008,Anslag,26:7 (2006),Utbildningsdepartementet,16,U2007/7921/SAM/F (delvis),True
 10474,Ändringsbeslut,2007-12-06,2007,Anslag,36:13,Näringsdepartementet,22,N2007/9602/TR;N2007/9318/SAM (delvis),True
@@ -3671,13 +3671,13 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 10507,Ändringsbeslut,2007-12-06,2007,Myndighet,Finansinspektionen,Finansdepartementet,2,Fi2007/9587,True
 10508,Regleringsbrev,2007-12-19,2008,Anslag,4:14,Justitiedepartementet,4,Ju2007/10834/Å;Ju2007/10603/Å(delvis),True
 10509,Ändringsbeslut,2007-12-13,2007,Myndighet,Brottsförebyggande rådet,Justitiedepartementet,4,Ju2007/10466/KRIM;Ju2007/9888/DOM,True
-10510,Regleringsbrev,2007-12-19,2008,Myndighet,Försvarshögskolan,Utbildningsdepartementet,16,"U2007/7921/SAM (delvis), U2007/4956/UH",True
+10510,Regleringsbrev,2007-12-19,2008,Myndighet,Försvarshögskolan,Utbildningsdepartementet,16,U2007/7921/SAM (delvis);U2007/4956/UH,True
 10511,Regleringsbrev,2007-12-19,2008,Myndighet,Myndigheten för nätverk och samarbete inom högre utbildning,Utbildningsdepartementet,16,U2007/7921/SAM (delvis)/UH,True
 10512,Regleringsbrev,2007-12-19,2008,Myndighet,Migrationsverket,Justitiedepartementet,8,Ju2007/121/SIM;Ju2007/2865/SIM (slutlig);Ju2007/10851/SIM,True
 10513,Ändringsbeslut,2007-12-06,2007,Myndighet,Bokföringsnämnden,Finansdepartementet,2,Fi2007/9128,True
 10514,Ändringsbeslut,2007-12-06,2007,Myndighet,Åklagarmyndigheten,Justitiedepartementet,4,Ju2007/10242/Å,True
 10515,Ändringsbeslut,2007-12-13,2007,Myndighet,Socialstyrelsen,Socialdepartementet,9,S2007/10733/HS,True
-10517,Ändringsbeslut,2007-12-06,2007,Myndighet,Säkerhetspolisen,Justitiedepartementet,4,"Ju2007/10347/PO, Ju2007/9888/PO (delvis)",True
+10517,Ändringsbeslut,2007-12-06,2007,Myndighet,Säkerhetspolisen,Justitiedepartementet,4,Ju2007/10347/PO;Ju2007/9888/PO (delvis),True
 10518,Ändringsbeslut,2007-12-13,2007,Myndighet,Rådet för Europeiska socialfonden i Sverige,Arbetsmarknadsdepartementet,13,A2007/6507/A;A2007/6616/A (slutligt),True
 10520,Regleringsbrev,2007-12-19,2008,Anslag,12:4 och 12:5,Justitiedepartementet,8,Ju2007/1915/SIM;Ju2007/2954/SIM;Ju2007/4722/SIM,True
 10521,Ändringsbeslut,2007-12-19,2007,Myndighet,Statens fastighetsverk,Finansdepartementet,2,Fi2007/9014 (delvis),True
@@ -3689,13 +3689,13 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 10531,Ändringsbeslut,2008-01-10,2008,Myndighet,Vägverket,Näringsdepartementet,22,N2007/10330/IR;N2007/6223/TR (slutligt),True
 10534,Ändringsbeslut,2007-12-19,2007,Myndighet,Nationalmuseum med Prins Eugens Waldemarsudde,Kulturdepartementet,17,Ku2007/3184/KR,True
 10535,Ändringsbeslut,2007-12-19,2007,Myndighet,Skogsstyrelsen,Jordbruksdepartementet,23,Jo2007/3556,True
-10536,Ändringsbeslut,2007-12-13,2007,Myndighet,universitet och högskolor m.m.,Utbildningsdepartementet,,"U2003/3260/UH;U2007/2692,6451,6665,7556,7676/UH;U2007/3271/UH (slutligt)",True
+10536,Ändringsbeslut,2007-12-13,2007,Myndighet,universitet och högskolor m.m.,Utbildningsdepartementet,,U2003/3260/UH;U2007/2692;U2007/6451;U2007/6665;U2007/7556;U2007/7676/UH;U2007/3271/UH (slutligt),True
 10540,Ändringsbeslut,2007-12-13,2007,Myndighet,Verket för näringslivsutveckling,Näringsdepartementet,19;24,N2007/9925/ENT;N2007/9318/SAM (delvis),True
 10541,Ändringsbeslut,2007-12-06,2007,Myndighet,Myndigheten för skolutveckling,Utbildningsdepartementet,16,U2007/7735/S,True
 10544,Ändringsbeslut,2007-12-19,2007,Myndighet,Arbetsmarknadsstyrelsen,Arbetsmarknadsdepartementet,13,A2007/6711/A,True
 10545,Regleringsbrev,2007-12-19,2008,Anslag,11:1 (2004),Integrations- och jämställdhetsdepartementet,13,IJ2007/3552/STO,True
 10546,Ändringsbeslut,2008-01-10,2008,Myndighet,Banverket,Näringsdepartementet,22,N2007/10331/IR;N2007/6223/TR (delvis),True
-10547,Regleringsbrev,2007-12-19,2008,Myndighet,universitet och högskolor m.m.,Utbildningsdepartementet,,"U2007/7921/SAM (delvis), U2002/3529/UH",True
+10547,Regleringsbrev,2007-12-19,2008,Myndighet,universitet och högskolor m.m.,Utbildningsdepartementet,,U2007/7921/SAM (delvis);U2002/3529/UH,True
 10549,Ändringsbeslut,2007-12-19,2007,Myndighet,Samarbetsnämnden för statsbidrag till trossamfund,Kulturdepartementet,17,Ku2007/3533/KR,True
 10550,Ändringsbeslut,2008-01-10,2008,Myndighet,Luftfartsstyrelsen,Näringsdepartementet,22,N2007/10363/TR;N2007/6223/TR (delvis),True
 10551,Ändringsbeslut,2007-12-19,2007,Myndighet,Konstnärsnämnden,Kulturdepartementet,17,Ku2007/3583/KR,True
@@ -3800,7 +3800,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 10682,Ändringsbeslut,2008-06-26,2008,Myndighet,Avvecklingsmyndigheten för Arbetslivsinstitutet,Arbetsmarknadsdepartementet,14,A2008/1666/ARM,True
 10683,Ändringsbeslut,2008-05-08,2008,Myndighet,Statens maritima museer,Kulturdepartementet,17,Ku2008/315/KT,True
 10684,Ändringsbeslut,2008-05-22,2008,Myndighet,Myndigheten för skolutveckling,Utbildningsdepartementet,16,U2008/3786/S,True
-10685,Ändringsbeslut,2008-05-29,2008,Myndighet,Statens skolverk,Utbildningsdepartementet,16,"U2008/3252, 3935/G",True
+10685,Ändringsbeslut,2008-05-29,2008,Myndighet,Statens skolverk,Utbildningsdepartementet,16,U2008/3252;U2008/3935/G,True
 10686,Ändringsbeslut,2008-05-15,2008,Anslag,5:2,Utrikesdepartementet,5,UD2008/16377/SP,True
 10687,Ändringsbeslut,2008-06-26,2008,Anslag,34:14,Miljödepartementet,20,M2008/2699/A (delvis),True
 10688,Ändringsbeslut,2008-05-15,2008,Myndighet,Nationellt centrum för flexibelt lärande,Utbildningsdepartementet,16,U2008/3588/SV,True
@@ -3955,7 +3955,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 10887,Ändringsbeslut,2008-09-18,2008,Myndighet,Försvarsmakten,Försvarsdepartementet,6,Fö2007/2616/MIL (delvis),True
 10888,Ändringsbeslut,2008-09-18,2008,Myndighet,Nationellt centrum för flexibelt lärande,Utbildningsdepartementet,16,U2008/5935/SV,True
 10889,Ändringsbeslut,2008-10-02,2008,Myndighet,Styrelsen för internationellt utvecklingssamarbete,Utrikesdepartementet,5;7,UD2008/28975/USTYR,True
-10892,Ändringsbeslut,2008-09-25,2008,Myndighet,Statens skolverk,Utbildningsdepartementet,16,"U2008/4522/SAM (delvis), U2008/6141/S",True
+10892,Ändringsbeslut,2008-09-25,2008,Myndighet,Statens skolverk,Utbildningsdepartementet,16,U2008/4522/SAM (delvis);U2008/6141/S,True
 10893,Ändringsbeslut,2008-10-02,2008,Myndighet,Verket för näringslivsutveckling,Näringsdepartementet,19;24,N2008/6165/ENT,True
 10894,Ändringsbeslut,2008-09-25,2008,Myndighet,Avvecklingsmyndigheten för Statens strålskyddsinstitut och kärnkraftsinspektion,Miljödepartementet,6,M2008/3591/Mk,True
 10895,Ändringsbeslut,2008-10-16,2008,Myndighet,Avvecklingsmyndigheten för Arbetslivsinstitutet,Arbetsmarknadsdepartementet,14,A2008/2455/ARM,True
@@ -3976,12 +3976,12 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 10913,Ändringsbeslut,2008-10-02,2008,Anslag,38:21,Näringsdepartementet,24,N2008/6230/FIN;N2008/4658/SAM (delvis),True
 10914,Ändringsbeslut,2008-10-09,2008,Myndighet,Myndigheten för kvalificerad yrkesutbildning,Utbildningsdepartementet,16,U2008/6498/SV,True
 10915,Ändringsbeslut,2008-10-09,2008,Myndighet,Kammarkollegiet,Finansdepartementet,2,Fi 2008/4003 (delvis),True
-10916,Ändringsbeslut,2008-10-09,2008,Myndighet,Statens jordbruksverk,Jordbruksdepartementet,23,"Jo2008/2257 (delvis);Jo2008/1967, Jo2008/1210",True
+10916,Ändringsbeslut,2008-10-09,2008,Myndighet,Statens jordbruksverk,Jordbruksdepartementet,23,Jo2008/2257 (delvis);Jo2008/1967;Jo2008/1210,True
 10917,Ändringsbeslut,2008-10-23,2008,Myndighet,Naturvårdsverket,Miljödepartementet,17;18;20,M2008/3398/R;M2008/3819/A,True
 10919,Ändringsbeslut,2008-11-20,2008,Anslag,"31:2, 31:7 (2003), 31:10 (2007), 31:11 (2006), 31:12 (2007) och 31:14 (2005)",Finansdepartementet,18,Fi2008/6939,True
 10920,Ändringsbeslut,2008-10-23,2008,Anslag,25:5,Utbildningsdepartementet,15,U2008/6887/SV,True
 10921,Regleringsbrev,2008-12-18,2009,Myndighet,Statens energimyndighet,Näringsdepartementet,21,N2008/8496/E;N2008/8494/E (delvis),True
-10922,Regleringsbrev,2008-12-18,2009,Myndighet,Specialpedagogiska skolmyndigheten,Utbildningsdepartementet,16;17,"U2008/5483,6189, 6322/S;U2008/8481/SAM/S (delvis)",True
+10922,Regleringsbrev,2008-12-18,2009,Myndighet,Specialpedagogiska skolmyndigheten,Utbildningsdepartementet,16;17,U2008/5483;U2008/6189;U2008/6322/S;U2008/8481/SAM/S (delvis),True
 10923,Regleringsbrev,2008-12-18,2009,Myndighet,Statens skolverk,Utbildningsdepartementet,16,U2008/8481/SAM/S (delvis),True
 10924,Regleringsbrev,2008-12-18,2009,Myndighet,Centrala studiestödsnämnden,Utbildningsdepartementet,15;16,U2008/8229/SAM/SV;U2008/8481/SAM/SV (delvis),True
 10925,Regleringsbrev,2008-12-18,2009,Myndighet,Elsäkerhetsverket,Näringsdepartementet,6,N2008/8224/E;N2008/8271/SAM (delvis);N2008/8709/SAM (delvis),True
@@ -4194,7 +4194,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 11168,Regleringsbrev,2008-12-18,2009,Myndighet,Styrelsen för ackreditering och teknisk kontroll,Utrikesdepartementet,24,UF2008/11521/FIM (delvis),True
 11169,Regleringsbrev,2008-12-19,2009,Myndighet,Kompetensrådet för utveckling i staten,Finansdepartementet,2,Fi2008/8249(delvis),True
 11172,Regleringsbrev,2008-12-19,2009,Myndighet,Statskontoret,Finansdepartementet,2,Fi2008/8249(delvis),True
-11173,Regleringsbrev,2008-12-18,2009,Myndighet,Svenska Unescorådet,Utbildningsdepartementet,16,"U2008/1056, 7349/IS;U2008/8481/SAM/IS (delvis)",True
+11173,Regleringsbrev,2008-12-18,2009,Myndighet,Svenska Unescorådet,Utbildningsdepartementet,16,U2008/1056;U2008/7349/IS;U2008/8481/SAM/IS (delvis),True
 11175,Regleringsbrev,2008-12-19,2009,Myndighet,Avvecklingsmyndigheten för Verva,Finansdepartementet,2,Fi2008/5787;Fi2008/8249 (delvis),True
 11177,Ändringsbeslut,2008-11-27,2008,Myndighet,Riksarkivet,Kulturdepartementet,17,Ku2008/2084/KV (delvis),True
 11178,Regleringsbrev,2008-12-18,2009,Myndighet,Boverket,Miljödepartementet,18;20,M2008/4791/A (delvis),True
@@ -4240,7 +4240,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 11226,Ändringsbeslut,2008-11-20,2008,Myndighet,Myndigheten för kvalificerad yrkesutbildning,Utbildningsdepartementet,16,U2008/7183/SV,True
 11228,Regleringsbrev,2008-12-18,2009,Anslag,1:9,Utbildningsdepartementet,16,U2008/8481/SAM/S (delvis),True
 11230,Regleringsbrev,2009-06-17,2009,Myndighet,Inspektionen för socialförsäkringen,Socialdepartementet,10,S2009/4936/SF,True
-11232,Regleringsbrev,2008-12-19,2009,Myndighet,Tullverket,Finansdepartementet,3,"Fi2008/1189, Fi2008/4957, Fi2008/5512, Fi2008/6871;Fi2008/7329(delvis)",True
+11232,Regleringsbrev,2008-12-19,2009,Myndighet,Tullverket,Finansdepartementet,3,Fi2008/1189;Fi2008/4957;Fi2008/5512;Fi2008/6871;Fi2008/7329 (delvis),True
 11234,Regleringsbrev,2008-12-18,2009,Myndighet,Nordiska Afrikainstitutet,Utrikesdepartementet,7,UF2008/14589/USTYR (delvis),True
 11236,Regleringsbrev,2008-12-18,2009,Anslag,1:3,Näringsdepartementet,24,N2008/7761/FIN;N2008/8271/SAM (delvis),True
 11238,Regleringsbrev,2008-12-19,2009,Myndighet,Kronofogdemyndigheten,Finansdepartementet,3,Fi2008/7329;Fi2008/6293;Fi2008/6689,True
@@ -4271,7 +4271,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 11285,Regleringsbrev,2008-12-18,2009,Myndighet,Statens järnvägar,Näringsdepartementet,22,N2008/7607/TR;N2008/8750/SAM (delvis),True
 11286,Regleringsbrev,2008-12-19,2009,Myndighet,Kammarkollegiet,Finansdepartementet,2,Fi2008/8249 (delvis),True
 11288,Regleringsbrev,2008-12-18,2009,Myndighet,Statens beredning för medicinsk utvärdering,Socialdepartementet,9,S2007/4968/HS;S2008/10663/SK (delvis),True
-11290,Ändringsbeslut,2008-11-06,2008,Myndighet,universitet och högskolor m.m.,Utbildningsdepartementet,,"U2007/3767/UH;U2008/4522/SAM (delvis),U2008/3708,4012,5198,6047,6602,6652,6791,6813,7299/UH",True
+11290,Ändringsbeslut,2008-11-06,2008,Myndighet,universitet och högskolor m.m.,Utbildningsdepartementet,,U2007/3767/UH;U2008/4522/SAM (delvis);U2008/3708;U2008/4012;U2008/5198;U2008/6047;U2008/6602;U2008/6652;U2008/6791;U2008/6813;U2008/7299/UH,True
 11298,Ändringsbeslut,2008-12-04,2008,Myndighet,Sveriges lantbruksuniversitet,Jordbruksdepartementet,23,Jo2008/3725(delvis),True
 11302,Ändringsbeslut,2008-11-20,2008,Anslag,24:1,Integrations- och jämställdhetsdepartementet,14,IJ2008/2299/JÄM,True
 11311,Ändringsbeslut,2008-12-04,2008,Myndighet,Kommerskollegium,Utrikesdepartementet,24,UD2008/36527/FIM (delvis),True
@@ -4354,7 +4354,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 11426,Ändringsbeslut,2008-12-18,2008,Myndighet,Statens försvarshistoriska museer,Kulturdepartementet,17,Ku2008/2300/KT,True
 11427,Regleringsbrev,2008-12-18,2009,Anslag,1:4,Arbetsmarknadsdepartementet,14,A2008/3627/A;A2008/3634/ADM (delvis),True
 11428,Ändringsbeslut,2008-12-18,2008,Myndighet,Jämställdhetsombudsmannen,Integrations- och jämställdhetsdepartementet,13,IJ2008/2415/DISK;IJ2008/2492/DISK,True
-11434,Ändringsbeslut,2008-11-27,2008,Myndighet,universitet och högskolor m.m.,Utbildningsdepartementet,,"2008/4489,5656,6758,7290/UH",True
+11434,Ändringsbeslut,2008-11-27,2008,Myndighet,universitet och högskolor m.m.,Utbildningsdepartementet,,U2008/4489;U2008/5656;U2008/6758;U2008/7290/UH,True
 11435,Ändringsbeslut,2008-12-18,2008,Myndighet,Statens jordbruksverk,Jordbruksdepartementet,23,Jo2008/3725 (delvis);Jo2008/2257,True
 11436,Ändringsbeslut,2009-01-22,2009,Myndighet,Säkerhets- och integritetsskyddsnämnden,Justitiedepartementet,4,Ju2009/407/Å,True
 11437,Regleringsbrev,2008-12-18,2009,Anslag,18:3 (2008),Socialdepartementet,9,S2008/10725/ST,True
@@ -4481,7 +4481,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 11627,Ändringsbeslut,2009-04-23,2009,Myndighet,Styrelsen för internationellt utvecklingssamarbete,Utrikesdepartementet,5;7,UF2009/27843/USTYR,True
 11628,Ändringsbeslut,2009-04-29,2009,Myndighet,Vetenskapsrådet,Utbildningsdepartementet,16,U2009/2604/F;U2009/204/SAM (slutlig),True
 11631,Ändringsbeslut,2009-04-23,2009,Anslag,"1:11, 1:1, 1:2 och 2:1",Utrikesdepartementet,5;7,UF2009/28096/USTYR,True
-11633,Ändringsbeslut,2009-04-02,2009,Myndighet,universitet och högskolor m.m.,Utbildningsdepartementet,,"U2009/2227,2314/UH U2009/1682/SAM (delvis)",True
+11633,Ändringsbeslut,2009-04-02,2009,Myndighet,universitet och högskolor m.m.,Utbildningsdepartementet,,U2009/2227;U2009/2314/UH;U2009/1682/SAM (delvis),True
 11634,Ändringsbeslut,2009-04-29,2009,Myndighet,Myndigheten för kvalificerad yrkesutbildning,Utbildningsdepartementet,16,U2009/2883/SV;U2009/1682/SAM (delvis),True
 11635,Ändringsbeslut,2009-06-25,2009,Anslag,2:3,Utrikesdepartementet,24,UF2009/35985/FIM;UF2009/44284/PLAN (delvis),True
 11636,Ändringsbeslut,2009-05-07,2009,Myndighet,Statens folkhälsoinstitut,Socialdepartementet,9,S2009/3841/FH;S2008/5748/FH (delvis);S2008/10748/FH,True
@@ -4561,7 +4561,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 11725,Ändringsbeslut,2009-05-28,2009,Myndighet,Kronofogdemyndigheten,Finansdepartementet,3,Fi2008/7329;Fi2008/6293;Fi2008/6689,True
 11726,Ändringsbeslut,2009-05-28,2009,Myndighet,Arbetsmiljöverket,Arbetsmarknadsdepartementet,14,A2009/922/ARM,True
 11727,Ändringsbeslut,2009-05-28,2009,Myndighet,Barnombudsmannen,Socialdepartementet,9,S2008/10663/SK (delvis),True
-11728,Ändringsbeslut,2009-05-28,2009,Myndighet,Tullverket,Finansdepartementet,3,"Fi2008/1189, Fi2008/4957, Fi2008/5512, Fi2008/6871;Fi2008/7329(delvis)",True
+11728,Ändringsbeslut,2009-05-28,2009,Myndighet,Tullverket,Finansdepartementet,3,Fi2008/1189;Fi2008/4957;Fi2008/5512;Fi2008/6871;Fi2008/7329 (delvis),True
 11729,Ändringsbeslut,2009-05-28,2009,Myndighet,Statens historiska museer,Kulturdepartementet,17,Ku2008/2172/SAM (delvis),True
 11730,Ändringsbeslut,2009-05-28,2009,Myndighet,Arbetsdomstolen,Arbetsmarknadsdepartementet,14,A2008/2886/ARM;A2008/3634/ADM (delvis),True
 11731,Ändringsbeslut,2009-05-28,2009,Myndighet,Statens institutionsstyrelse,Socialdepartementet,9,S2008/10663/SK (slutligt);S2008/8506/ST;S2008/7268/ST,True
@@ -4596,7 +4596,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 11761,Ändringsbeslut,2009-05-28,2009,Anslag,1:5,Utbildningsdepartementet,15,U2008/8229/SAM/SV (slutligt),True
 11762,Ändringsbeslut,2009-05-28,2009,Myndighet,Lantmäteriet,Miljödepartementet,18,M2008/4791/A (delvis);M2008/3439/H,True
 11763,Ändringsbeslut,2009-05-28,2009,Myndighet,Statens biografbyrå,Kulturdepartementet,17,Ku/2009/555/MFI,True
-11764,Ändringsbeslut,2009-05-28,2009,Myndighet,Specialpedagogiska skolmyndigheten,Utbildningsdepartementet,16;17,"U2008/5483,6189, 6322/S;U2008/8481/SAM/S (delvis)",True
+11764,Ändringsbeslut,2009-05-28,2009,Myndighet,Specialpedagogiska skolmyndigheten,Utbildningsdepartementet,16;17,U2008/5483;U2008/6189;U2008/6322/S;U2008/8481/SAM/S (delvis),True
 11765,Ändringsbeslut,2009-05-28,2009,Myndighet,Migrationsverket,Justitiedepartementet,8,Ju2008/942/SIM (slutligt);Ju2008/5764/SIM,True
 11766,Ändringsbeslut,2009-05-28,2009,Myndighet,Sameskolstyrelsen,Utbildningsdepartementet,16,U2008/8481/SAM/S (delvis),True
 11767,Ändringsbeslut,2009-05-28,2009,Myndighet,Inspektionen för strategiska produkter,Utrikesdepartementet,5,UD2008/14588/PLAN (delvis),True
@@ -4705,7 +4705,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 11897,Ändringsbeslut,2009-07-02,2009,Myndighet,Diskrimineringsombudsmannen,Integrations- och jämställdhetsdepartementet,13,IJ2009/1235/DISK;IJ2009/1321/DISK,True
 11898,Regleringsbrev,2009-07-09,2009,Anslag,43:11 (2008),Jordbruksdepartementet,23,Jo2009/2149,True
 11899,Ändringsbeslut,2009-11-26,2009,Myndighet,Centrala studiestödsnämnden,Utbildningsdepartementet,15;16,U2009/6446/SV;U2009/4261/SAM (slutligt),True
-11900,Ändringsbeslut,2009-06-25,2009,Myndighet,universitet och högskolor m.m.,Utbildningsdepartementet,,"U2007/8204/UH;U2008/8513/ UH;U2009/2999, 3368/UH",True
+11900,Ändringsbeslut,2009-06-25,2009,Myndighet,universitet och högskolor m.m.,Utbildningsdepartementet,,U2007/8204/UH;U2008/8513/UH;U2009/2999;U2009/3368/UH,True
 11902,Ändringsbeslut,2009-07-02,2009,Myndighet,Statens skolverk,Utbildningsdepartementet,16,U2009/4322/S,True
 11903,Ändringsbeslut,2009-07-09,2009,Myndighet,Riksgäldskontoret,Finansdepartementet,2;26,Fi2009/4592 (delvis),True
 11904,Ändringsbeslut,2009-08-19,2009,Myndighet,Arbetsförmedlingen,Arbetsmarknadsdepartementet,14,A2009/2483/A;A2009/2123/ADM (slutligt),True
@@ -4813,7 +4813,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 12047,Regleringsbrev,2009-12-21,2010,Anslag,1:10,Utrikesdepartementet,5,UF2009/83256/PLAN (slutligt),True
 12048,Regleringsbrev,2009-12-21,2010,Anslag,2:5,Utrikesdepartementet,24,UF2009/89023/FIM (delvis),True
 12049,Regleringsbrev,2009-12-21,2010,Myndighet,Strålsäkerhetsmyndigheten,Miljödepartementet,6;20,M2009/4480/A;M2009/4750/A (delvis),True
-12051,Regleringsbrev,2009-12-17,2010,Myndighet,universitet och högskolor m.m.,Utbildningsdepartementet,,"U2009/7241/SAM;U2008/1131, 1217, 1392, 1897, 3127/UH, U2009/849, 1161, 1920, 2106, 2107, 2998/UH",True
+12051,Regleringsbrev,2009-12-17,2010,Myndighet,universitet och högskolor m.m.,Utbildningsdepartementet,,U2009/7241/SAM;U2008/1131;U2008/1217;U2008/1392;U2008/1897;U2008/3127/UH;U2009/849;U2009/1161;U2009/1920;U2009/2106;U2009/2107;U2009/2998/UH,True
 12052,Ändringsbeslut,2009-11-05,2009,Myndighet,Lotteriinspektionen,Finansdepartementet,17,Fi2009/4063,True
 12053,Regleringsbrev,2009-12-21,2010,Myndighet,Styrelsen för internationellt utvecklingssamarbete,Utrikesdepartementet,5;7,UF2009/83257/USTYR (delvis);UF2009/83256/PLAN(delvis),True
 12054,Regleringsbrev,2009-12-17,2010,Anslag,3:3,Utbildningsdepartementet,16,U2009/7241/SAM (delvis),True
@@ -5367,7 +5367,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 12790,Ändringsbeslut,2010-06-23,2010,Anslag,2:54,Utbildningsdepartementet,16,,True
 12791,Ändringsbeslut,2010-09-09,2010,Myndighet,Arbetsdomstolen,Arbetsmarknadsdepartementet,14,A2010/1789/ARM,True
 12792,Ändringsbeslut,2010-06-23,2010,Myndighet,Verket för högskoleservice,Utbildningsdepartementet,16,U2010/1349/UH (delvis);U2010/3890/UH,True
-12793,Ändringsbeslut,2010-06-23,2010,Myndighet,universitet och högskolor m.m.,Utbildningsdepartementet,,"U2010/185, 1349, 2148, 2481, 3889/UH;U2010/3795/SAM;U2009/3197, 3198, 3221,3233, 3240, 3242, 3250, 3264, 5925/UH",True
+12793,Ändringsbeslut,2010-06-23,2010,Myndighet,universitet och högskolor m.m.,Utbildningsdepartementet,,U2010/185;U2010/1349;U2010/2148;U2010/2481;U2010/3889/UH;U2010/3795/SAM;U2009/3197;U2009/3198;U2009/3221;U2009/3233;U2009/3240;U2009/3242;U2009/3250;U2009/3264;U2009/5925/UH,True
 12794,Ändringsbeslut,2010-06-23,2010,Myndighet,Skogsstyrelsen,Jordbruksdepartementet,23,Jo2010/1960,True
 12797,Ändringsbeslut,2010-11-04,2010,Myndighet,Fastighetsmäklarnämnden,Integrations- och jämställdhetsdepartementet,18,IJ2010/1872/KO,True
 12800,Ändringsbeslut,2010-06-23,2010,Myndighet,Rederinämnden,Näringsdepartementet,22,N2010/4390/TE,True
@@ -5535,7 +5535,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 13028,Ändringsbeslut,2010-11-25,2010,Myndighet,Styrelsen för internationellt utvecklingssamarbete,Utrikesdepartementet,5;7,UF2010/68532/USTYR,True
 13029,Regleringsbrev,2010-12-16,2011,Myndighet,Diskrimineringsombudsmannen,Integrations- och jämställdhetsdepartementet,13,IJ2010/2190/IU (delvis);IJ2010/2219/DISK,True
 13030,Regleringsbrev,2010-12-16,2011,Anslag,2:2,Integrations- och jämställdhetsdepartementet,13,IJ2010/932/DISK;IJ2010/2190/IU (delvis);IJ2010/2220/DISK,True
-13031,Regleringsbrev,2010-12-22,2011,Myndighet,Tullverket,Finansdepartementet,3,"Fi2010/4075, Fi2010/4119;Fi2010/5666 (delvis)",True
+13031,Regleringsbrev,2010-12-22,2011,Myndighet,Tullverket,Finansdepartementet,3,Fi2010/4075;Fi2010/4119;Fi2010/5666 (delvis),True
 13032,Regleringsbrev,2010-12-22,2011,Myndighet,Skatteverket,Finansdepartementet,3,Fi2010/1594;Fi2010/5666 (delvis),True
 13033,Regleringsbrev,2010-12-22,2011,Myndighet,Kronofogdemyndigheten,Finansdepartementet,3,Fi2010/5666,True
 13034,Regleringsbrev,2010-12-22,2011,Myndighet,Strålsäkerhetsmyndigheten,Miljödepartementet,6;20,M2010/4903/A;M2010/4913/A (delvis),True
@@ -5667,7 +5667,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 13191,Regleringsbrev,2010-12-22,2011,Myndighet,Myndigheten för utländska investeringar i Sverige,Utrikesdepartementet,24,UF2010/77132/UD;/FIM(delvis),True
 13193,Regleringsbrev,2010-12-22,2011,Myndighet,Trafikverket,Näringsdepartementet,22,N2010/8200/KLS (delvis);N2010/7885/TE;N2010/1132/TE (slutligt),True
 13194,Regleringsbrev,2010-12-22,2011,Anslag,1:30 och 1:31,Jordbruksdepartementet,23,Jo2010/3690,True
-13195,Ändringsbeslut,2010-12-02,2010,Anslag,3:10,Utbildningsdepartementet,16,"U2010/4744,6669,7346/F",True
+13195,Ändringsbeslut,2010-12-02,2010,Anslag,3:10,Utbildningsdepartementet,16,U2010/4744;U2010/6669;U2010/7346/F,True
 13197,Regleringsbrev,2010-12-22,2011,Anslag,2:5,Utrikesdepartementet,24,UF2010/77132/UD;/FIM (delvis),True
 13198,Regleringsbrev,2010-12-22,2011,Anslag,"14:1, 14:2 och 14:3",Utbildningsdepartementet,17,U2010/7658/SAM/SV;U2010/7773/SV,True
 13199,Regleringsbrev,2010-12-22,2011,Myndighet,Patent- och registreringsverket,Näringsdepartementet,,N2010/7775/MK;N2010/8185/KLS (delvis),True
@@ -5810,7 +5810,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 13402,Regleringsbrev,2010-12-22,2011,Anslag,1:7,Kulturdepartementet,17,Ku2010/2028/SAM (delvis),True
 13404,Ändringsbeslut,2010-12-16,2010,Myndighet,Statens skolverk,Utbildningsdepartementet,16,U2010/7660/S,True
 13426,Regleringsbrev,2010-12-22,2011,Anslag,11:1 (2004),Integrations- och jämställdhetsdepartementet,13,IJ2010/2266/IU,True
-13427,Ändringsbeslut,2010-12-16,2010,Myndighet,universitet och högskolor m.m.,Utbildningsdepartementet,,"U2010/7427/UH, U2010/7420/UH, U2010/6833/UH, U2010/6672/UH",True
+13427,Ändringsbeslut,2010-12-16,2010,Myndighet,universitet och högskolor m.m.,Utbildningsdepartementet,,U2010/7427/UH;U2010/7420/UH;U2010/6833/UH;U2010/6672/UH,True
 13428,Regleringsbrev,2010-12-22,2011,Myndighet,Statens kulturråd,Kulturdepartementet,17,Ku2010/1135/KV;Ku2010/2028/SAM (delvis),True
 13430,Ändringsbeslut,2010-12-22,2010,Myndighet,Socialstyrelsen,Socialdepartementet,9,S2010/9178/SK,True
 13431,Ändringsbeslut,2010-12-22,2010,Myndighet,Justitiekanslern,Justitiedepartementet,1;4,Ju2010/9339/Å;Ju2010/9533/Å,True
@@ -5821,7 +5821,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 13436,Ändringsbeslut,2011-01-20,2011,Myndighet,Trafikverket,Näringsdepartementet,22,N2011/125/TE;N2010/7753/KLS (delvis),True
 13437,Ändringsbeslut,2011-03-24,2011,Myndighet,Naturvårdsverket,Miljödepartementet,17;20,M2011/1381/S,True
 13438,Ändringsbeslut,2011-01-20,2011,Myndighet,Totalförsvarets pliktverk,Försvarsdepartementet,6,Fö2011/80/MFU,True
-13439,Ändringsbeslut,2011-01-13,2011,Anslag,"1:2, 2:1, 2:3, 3:3, 7:3, 8:2, 8:3, 8:6, 10:1, 11:1, 11:3 och 13:1",Kulturdepartementet,17,"Ku2011/46/KV;Ku2010/1055,1056,1057,1058,1094,1168,1169, 1309,1643,1644,1647;1658,1688,1787,1947/KV",True
+13439,Ändringsbeslut,2011-01-13,2011,Anslag,"1:2, 2:1, 2:3, 3:3, 7:3, 8:2, 8:3, 8:6, 10:1, 11:1, 11:3 och 13:1",Kulturdepartementet,17,Ku2011/46/KV;Ku2010/1055;Ku2010/1056;Ku2010/1057;Ku2010/1058;Ku2010/1094;Ku2010/1168;Ku2010/1169;Ku2010/1309;Ku2010/1643;Ku2010/1644;Ku2010/1647;Ku2010/1658;Ku2010/1688;Ku2010/1787;Ku2010/1947/KV,True
 13440,Ändringsbeslut,2011-01-20,2011,Myndighet,Patent- och registreringsverket,Näringsdepartementet,,N2011/186/FIN,True
 13442,Ändringsbeslut,2011-01-27,2011,Anslag,3:1,Utbildningsdepartementet,13,U2011/523/JÄM,True
 13444,Ändringsbeslut,2011-03-10,2011,Myndighet,Strålsäkerhetsmyndigheten,Miljödepartementet,6;20,M2011/1196/Ke,True
@@ -5934,7 +5934,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 13591,Ändringsbeslut,2011-05-31,2011,Myndighet,länsstyrelserna,Socialdepartementet,1,S2011/5512/SFÖ,True
 13592,Ändringsbeslut,2011-06-09,2011,Myndighet,Försvarets radioanstalt,Försvarsdepartementet,6,Fö2011/948/SUND,True
 13593,Ändringsbeslut,2011-06-30,2011,Myndighet,Inspektionen för strategiska produkter,Utrikesdepartementet,5,UF2011/38292/UD/USTYR (delvis),True
-13594,Ändringsbeslut,2011-06-30,2011,Myndighet,Vetenskapsrådet,Utbildningsdepartementet,16,"U2011/3980/SAM/F (delvis);U2011/3453, 4045/F",True
+13594,Ändringsbeslut,2011-06-30,2011,Myndighet,Vetenskapsrådet,Utbildningsdepartementet,16,U2011/3980/SAM/F (delvis);U2011/3453;U2011/4045/F,True
 13595,Ändringsbeslut,2011-06-30,2011,Anslag,1:6,Utrikesdepartementet,5,UF2011/38292/UD/USTYR (delvis),True
 13596,Ändringsbeslut,2011-06-09,2011,Myndighet,Kustbevakningen,Försvarsdepartementet,6,Fö2011/949/SSK,True
 13598,Ändringsbeslut,2011-06-30,2011,Anslag,3:4 och 3:5,Utbildningsdepartementet,16,U2011/3980/SAM/F (delvis);U2011/4046/F,True
@@ -5970,7 +5970,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 13636,Ändringsbeslut,2011-06-16,2011,Anslag,1:6,Socialdepartementet,9,S2011/5878/FS,True
 13637,Ändringsbeslut,2011-06-30,2011,Myndighet,Statens bostadskreditnämnd,Socialdepartementet,18,S2011/6161/VS(delvis),True
 13638,Ändringsbeslut,2011-06-22,2011,Anslag,3:1,Utbildningsdepartementet,13,U2011/3939/JÄM,True
-13639,Ändringsbeslut,2011-06-16,2011,Myndighet,Konstnärsnämnden,Kulturdepartementet,17,"Ku2011/270, 1065/KV",True
+13639,Ändringsbeslut,2011-06-16,2011,Myndighet,Konstnärsnämnden,Kulturdepartementet,17,Ku2011/270;Ku2011/1065/KV,True
 13640,Ändringsbeslut,2011-06-30,2011,Anslag,2:5,Utrikesdepartementet,24,UF2011/38292/UD;/USTYR (delvis),True
 13641,Ändringsbeslut,2011-06-30,2011,Anslag,1:7,Miljödepartementet,20,M2011/2410/S (slutligt),True
 13643,Ändringsbeslut,2011-06-22,2011,Myndighet,Nämnden för hemslöjdsfrågor,Kulturdepartementet,17,Ku2011/1168/KV,True
@@ -5995,7 +5995,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 13664,Ändringsbeslut,2011-06-30,2011,Anslag,6:6,Justitiedepartementet,1,Ju2011/5012/D,True
 13665,Ändringsbeslut,2011-06-30,2011,Myndighet,Statens skolinspektion,Utbildningsdepartementet,16,U2011/4048/G,True
 13666,Ändringsbeslut,2011-06-30,2011,Myndighet,Livsmedelsverket,Landsbygdsdepartementet,23,L2011/1959,True
-13667,Ändringsbeslut,2011-06-30,2011,Anslag,1:5,Kulturdepartementet,17,"Ku2011/113/KA, Ku2011/279/KA, Ku2011/1189/RS (delvis)",True
+13667,Ändringsbeslut,2011-06-30,2011,Anslag,1:5,Kulturdepartementet,17,Ku2011/113/KA;Ku2011/279/KA;Ku2011/1189/RS (delvis),True
 13668,Regleringsbrev,2011-06-30,2011,Myndighet,Avvecklingsmyndigheten för Fiskeriverket,Landsbygdsdepartementet,,L2011/1960,True
 13670,Ändringsbeslut,2011-07-07,2011,Anslag,"1:3, 1:21 och 1:22",Landsbygdsdepartementet,23,L2011/2010,True
 13671,Ändringsbeslut,2011-06-30,2011,Anslag,1:13,Miljödepartementet,20,M2011/2410/S (delvis),True
@@ -6100,7 +6100,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 13790,Regleringsbrev,2011-12-20,2012,Myndighet,Göteborgs universitet,Utbildningsdepartementet,16,U2011/5963/UH;U2011/7258/SAM (delvis);U2011/7209/UH,True
 13792,Regleringsbrev,2011-12-20,2012,Myndighet,Blekinge tekniska högskola,Utbildningsdepartementet,16,U2011/6029/UH;U2011/5872/SAM (delvis);U2011/7220/UH,True
 13793,Regleringsbrev,2011-12-20,2012,Myndighet,Malmö högskola,Utbildningsdepartementet,16,U2011/6042/UH;U2011/7258/SAM (delvis);U2011/7235/UH,True
-13794,Regleringsbrev,2011-12-20,2012,Myndighet,Stockholms universitet,Utbildningsdepartementet,16,"U2009/1421, 6399/UH;U2011/1331, 2953, 2955, 3158, 5990, 6319/UH;U2011/7258/SAM (delvis)",True
+13794,Regleringsbrev,2011-12-20,2012,Myndighet,Stockholms universitet,Utbildningsdepartementet,16,U2009/1421;U2009/6399/UH;U2011/1331;U2011/2953;U2011/2955;U2011/3158;U2011/5990;U2011/6319/UH;U2011/7258/SAM (delvis),True
 13795,Regleringsbrev,2011-12-20,2012,Anslag,1:6,Socialdepartementet,9,S2011/11229/VS (delvis),True
 13796,Regleringsbrev,2011-12-22,2012,Myndighet,Brottsförebyggande rådet,Justitiedepartementet,4,Ju2011/8842/KRIM Ju2011/9119/KRIM (delvis);Ju2011/1427/KRIM;Ju2011/1692/KRIM,True
 13797,Regleringsbrev,2011-11-24,2012,Anslag,13:6 (2001) och 13:9 (2005),Socialdepartementet,9,S2011/10431/FS,True
@@ -6108,7 +6108,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 13799,Regleringsbrev,2011-12-20,2012,Myndighet,Högskolan Dalarna,Utbildningsdepartementet,16,U2011/5983/UH;U2011/7258/SAM (delvis);U2011/7225/UH,True
 13800,Regleringsbrev,2011-12-20,2012,Myndighet,Umeå universitet,Utbildningsdepartementet,16,U2011/6007/UH;U2011/7258/SAM (delvis);U2011/7211/UH,True
 13801,Regleringsbrev,2011-12-20,2012,Myndighet,Högskolan i Borås,Utbildningsdepartementet,16,U2011/6065/UH;U2011/7258/SAM (delvis);U2011/7224/UH,True
-13802,Regleringsbrev,2011-12-20,2012,Myndighet,Högskolan i Gävle,Utbildningsdepartementet,16,"U2011/1243, 6033/UH;U2011/7258/SAM (delvis);U2011/7227/UH",True
+13802,Regleringsbrev,2011-12-20,2012,Myndighet,Högskolan i Gävle,Utbildningsdepartementet,16,U2011/1243;U2011/6033/UH;U2011/7258/SAM (delvis);U2011/7227/UH,True
 13803,Regleringsbrev,2011-12-20,2012,Myndighet,Linköpings universitet,Utbildningsdepartementet,16,U2011/5910/UH;U2011/7258/SAM (delvis);U2011/7112/UH,True
 13804,Regleringsbrev,2011-12-20,2012,Myndighet,Karolinska institutet,Utbildningsdepartementet,16,U2011/6037/UH;U2011/7258/SAM (delvis);U2011/7213/UH,True
 13805,Regleringsbrev,2011-12-22,2012,Myndighet,Kommerskollegium,Utrikesdepartementet,24,UF2011/75897/UD/FIM (delvis);UF2011/76103/UD/FIM,True
@@ -6116,20 +6116,20 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 13807,Regleringsbrev,2011-12-20,2012,Myndighet,Dans- och cirkushögskolan,Utbildningsdepartementet,16,U2011/5927/UH;U2011/7258/SAM (delvis);U2011/7221/UH,True
 13808,Regleringsbrev,2011-12-20,2012,Myndighet,Högskolan i Halmstad,Utbildningsdepartementet,16,U2011/6005/UH;U2011/7258/SAM (delvis);U2011/7228/UH,True
 13809,Regleringsbrev,2011-12-20,2012,Myndighet,Högskolan i Skövde,Utbildningsdepartementet,16,U2011/6036/UH;U2011/7258/SAM (delvis);U2011/7230/UH,True
-13810,Regleringsbrev,2011-12-20,2012,Myndighet,Högskolan Kristianstad,Utbildningsdepartementet,16,"U2011/3562,4034,6147/UH;U2011/7358/SAM (delvis);U2011/7229/UH",True
+13810,Regleringsbrev,2011-12-20,2012,Myndighet,Högskolan Kristianstad,Utbildningsdepartementet,16,U2011/3562;U2011/4034;U2011/6147/UH;U2011/7358/SAM (delvis);U2011/7229/UH,True
 13811,Regleringsbrev,2011-12-20,2012,Myndighet,Högskolan på Gotland,Utbildningsdepartementet,16,U2011/5978/UH;U2011/7258/SAM (delvis);U2011/7226/UH,True
 13812,Regleringsbrev,2011-12-20,2012,Myndighet,Högskolan Väst,Utbildningsdepartementet,16,U2011/6034/UH;U2011/7258/SAM (delvis);U2011/7231/UH,True
 13813,Regleringsbrev,2011-12-20,2012,Myndighet,Södertörns högskola,Utbildningsdepartementet,16,U2011/5994/UH;U2011/7258/SAM (delvis);U2011/7239/UH,True
 13814,Regleringsbrev,2011-12-20,2012,Myndighet,universitet och högskolor,Utbildningsdepartementet,,U2011/7258/SAM (delvis);U2011/7206/UH,True
 13815,Regleringsbrev,2011-12-20,2012,Myndighet,Mittuniversitetet,Utbildningsdepartementet,16,U2011/5928/UH;U2011/7258/SAM (delvis);U2011/7219/UH,True
-13816,Regleringsbrev,2011-12-20,2012,Myndighet,Försvarshögskolan,Utbildningsdepartementet,16,"U2011/1618,6145/UH;U2011/7258/SAM (delvis);U2011/7222/UH",True
+13816,Regleringsbrev,2011-12-20,2012,Myndighet,Försvarshögskolan,Utbildningsdepartementet,16,U2011/1618;U2011/6145/UH;U2011/7258/SAM (delvis);U2011/7222/UH,True
 13817,Regleringsbrev,2011-12-20,2012,Myndighet,Karlstads universitet,Utbildningsdepartementet,16,U2011/6004/UH;U2011/7258/SAM (delvis);U2011/7216/UH,True
-13819,Regleringsbrev,2011-12-20,2012,Myndighet,Stockholms dramatiska högskola,Utbildningsdepartementet,16,"U2011/6311, 6400/UH;U2011/7258/SAM (delvis);U2011/7238/UH",True
+13819,Regleringsbrev,2011-12-20,2012,Myndighet,Stockholms dramatiska högskola,Utbildningsdepartementet,16,U2011/6311;U2011/6400/UH;U2011/7258/SAM (delvis);U2011/7238/UH,True
 13820,Regleringsbrev,2011-12-20,2012,Myndighet,Kungl. Konsthögskolan,Utbildningsdepartementet,16,U2011/6027/UH;U2011/7258/SAM (delvis);U2011/7233/UH,True
 13821,Regleringsbrev,2011-12-20,2012,Myndighet,Konstfack,Utbildningsdepartementet,16,U2011/5953/UH;U2011/7258/SAM (delvis);U2011/7232/UH,True
 13822,Regleringsbrev,2011-12-20,2012,Myndighet,Mälardalens högskola,Utbildningsdepartementet,16,U2011/5995/UH;U2011/7258/SAM (delvis);U2011/7236/UH,True
 13823,Regleringsbrev,2011-12-20,2012,Myndighet,Operahögskolan i Stockholm,Utbildningsdepartementet,16,U2011/6026/UH;U2011/7258/SAM (delvis);U2011/7237/UH,True
-13824,Regleringsbrev,2011-12-20,2012,Myndighet,Kungl. Musikhögskolan i Stockholm,Utbildningsdepartementet,16,"U2011/1322,6038/UH;U2011/7258/SAM (delvis);U2011/7234/UH",True
+13824,Regleringsbrev,2011-12-20,2012,Myndighet,Kungl. Musikhögskolan i Stockholm,Utbildningsdepartementet,16,U2011/1322;U2011/6038/UH;U2011/7258/SAM (delvis);U2011/7234/UH,True
 13825,Regleringsbrev,2011-12-20,2012,Myndighet,Centrala etikprövningsnämnden,Utbildningsdepartementet,16,U2011/7258/SAM (delvis);U2011/7248/F,True
 13826,Regleringsbrev,2011-12-20,2012,Myndighet,Luleå tekniska universitet,Utbildningsdepartementet,16,U2011/6035/UH;U2011/7258/SAM (delvis);U2011/7215/UH,True
 13827,Regleringsbrev,2011-12-20,2012,Myndighet,Linnéuniversitetet,Utbildningsdepartementet,16,U2011/6040/UH;U2011/7258/SAM (delvis);U2011/7217/UH,True
@@ -6161,13 +6161,13 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 13856,Regleringsbrev,2011-12-20,2012,Myndighet,Myndigheten för samhällsskydd och beredskap,Försvarsdepartementet,6,Fö2011/90/ESL (delvis);Fö2011/241/SSK,True
 13857,Regleringsbrev,2011-12-15,2012,Myndighet,Trafikanalys,Näringsdepartementet,22,N2011/7179/TE;N2011/7294/KLS(delvis);N2011/1671/TE (slutligt),True
 13858,Regleringsbrev,2011-12-20,2012,Anslag,1:10,Försvarsdepartementet,6,Fö2011/1883/ESL (delvis);Fö2011/271/SSK,True
-13859,Regleringsbrev,2011-12-22,2012,Anslag,2:70,Utbildningsdepartementet,16,"U2011/4578,5207,6482/UH;U2011/7258/SAM (slutligt);U2011/7298/UH",True
+13859,Regleringsbrev,2011-12-22,2012,Anslag,2:70,Utbildningsdepartementet,16,U2011/4578;U2011/5207;U2011/6482/UH;U2011/7258/SAM (slutligt);U2011/7298/UH,True
 13860,Regleringsbrev,2011-12-20,2012,Myndighet,Högskoleverket,Utbildningsdepartementet,16,U2011/7258/SAM (delvis);U2011/7204/UH,True
 13861,Ändringsbeslut,2011-11-03,2011,Myndighet,Statens skolverk,Utbildningsdepartementet,16,U2011/6110/S,True
 13862,Regleringsbrev,2011-12-20,2012,Myndighet,Specialpedagogiska skolmyndigheten,Utbildningsdepartementet,16,U2011/7258/SAM (delvis);U2011/7201/S;U2011/3984/GV,True
 13866,Regleringsbrev,2011-12-15,2012,Anslag,3:1,Utbildningsdepartementet,13,U2011/7064/JÄM;U2011/6952/JÄM,True
 13867,Regleringsbrev,2011-12-15,2012,Myndighet,Institutet för språk och folkminnen,Kulturdepartementet,17,Ku2011/1960/RFS (delvis),True
-13868,Regleringsbrev,2011-12-15,2012,Myndighet,Riksarkivet,Kulturdepartementet,17,"Ku2011/1544, 1592, 1744/KA, 1960/RFS (delvis)",True
+13868,Regleringsbrev,2011-12-15,2012,Myndighet,Riksarkivet,Kulturdepartementet,17,Ku2011/1544;Ku2011/1592;Ku2011/1744/KA;Ku2011/1960/RFS (delvis),True
 13869,Regleringsbrev,2011-12-15,2012,Myndighet,Riksantikvarieämbetet,Kulturdepartementet,17,Ku2011/1960/RFS (delvis),True
 13870,Regleringsbrev,2011-12-15,2012,Myndighet,Riksutställningar,Kulturdepartementet,17,Ku2011/1960/RFS (delvis),True
 13871,Regleringsbrev,2011-12-15,2012,Myndighet,Sjöfartsverket,Näringsdepartementet,22,N2011/7183/TE;N2011/7294/KLS (delvis),True
@@ -6185,12 +6185,12 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 13886,Regleringsbrev,2011-12-22,2012,Anslag,1:3 och 33:5 (2008),Näringsdepartementet,19,N2011/7276/RT;N2011/7417/KLS (delvis),True
 13887,Regleringsbrev,2011-12-15,2012,Myndighet,Arkitekturmuseet,Kulturdepartementet,17,Ku2011/1960/RFS (delvis),True
 13888,Regleringsbrev,2011-12-15,2012,Myndighet,Livrustkammaren och Skoklosters slott med Stiftelsen Hallwylska museet,Kulturdepartementet,17,Ku2011/1960/RFS (delvis),True
-13889,Regleringsbrev,2011-12-15,2012,Myndighet,Myndigheten för kulturanalys,Kulturdepartementet,17,"Ku2011/1801/KA, 1960/RFS (delvis)",True
+13889,Regleringsbrev,2011-12-15,2012,Myndighet,Myndigheten för kulturanalys,Kulturdepartementet,17,Ku2011/1801/KA;Ku2011/1960/RFS (delvis),True
 13890,Regleringsbrev,2011-12-15,2012,Myndighet,Nationalmuseum med Prins Eugens Waldemarsudde,Kulturdepartementet,17,Ku2011/1960/RFS (delvis),True
 13891,Regleringsbrev,2011-12-15,2012,Myndighet,Naturhistoriska riksmuseet,Kulturdepartementet,17,Ku2011/1960/RFS (delvis),True
 13892,Regleringsbrev,2011-12-15,2012,Myndighet,Statens försvarshistoriska museer,Kulturdepartementet,17,Ku2011/1960/RFS (delvis),True
 13893,Regleringsbrev,2011-12-15,2012,Myndighet,Statens historiska museer,Kulturdepartementet,17,Ku2011/1960/RFS (delvis),True
-13894,Regleringsbrev,2011-12-15,2012,Myndighet,Statens maritima museer,Kulturdepartementet,17,"Ku2011/1508/KA, 1960/RFS (delvis)",True
+13894,Regleringsbrev,2011-12-15,2012,Myndighet,Statens maritima museer,Kulturdepartementet,17,Ku2011/1508/KA;Ku2011/1960/RFS (delvis),True
 13895,Regleringsbrev,2011-12-15,2012,Myndighet,Statens museer för världskultur,Kulturdepartementet,17,Ku2011/1960/RFS (delvis),True
 13896,Regleringsbrev,2011-12-20,2012,Myndighet,Rymdstyrelsen,Utbildningsdepartementet,16,U2011/7258/SAM (delvis);U2011/7247/F,True
 13897,Regleringsbrev,2011-12-22,2012,Myndighet,Kriminalvården,Justitiedepartementet,4,Ju2011/8841/KRIM Ju2011/9119/KRIM (delvis);Ju2011/6692/KRIM;Ju2011/7748/KRIM,True
@@ -6238,7 +6238,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 13941,Regleringsbrev,2011-12-22,2012,Myndighet,Bokföringsnämnden,Finansdepartementet,2,Fi2011/5283 (delvis),True
 13942,Regleringsbrev,2011-12-15,2012,Myndighet,Kronofogdemyndigheten,Finansdepartementet,3,Fi2011/1615;Fi2011/5146,True
 13943,Regleringsbrev,2011-12-22,2012,Myndighet,Riksgäldskontoret,Finansdepartementet,2;26,Fi2010/5025;Fi2011/4960;Fi2011/5283 (delvis),True
-13944,Regleringsbrev,2011-12-15,2012,Myndighet,Tullverket,Finansdepartementet,3,"Fi2011/1058, Fi2011/3607;Fi2011/4899;Fi2011/5146(delvis)",True
+13944,Regleringsbrev,2011-12-15,2012,Myndighet,Tullverket,Finansdepartementet,3,Fi2011/1058;Fi2011/3607;Fi2011/4899;Fi2011/5146 (delvis),True
 13945,Regleringsbrev,2011-12-15,2012,Myndighet,Skatteverket,Finansdepartementet,3,Fi2010/1570;Fi2011/2740;Fi2011/4900,True
 13946,Regleringsbrev,2011-12-22,2012,Anslag,1:5,Utbildningsdepartementet,15,U2011/7259/SAM;U2011/7305/SF,True
 13947,Regleringsbrev,2011-12-22,2012,Myndighet,Statens energimyndighet,Näringsdepartementet,21,N2011/1665/E (slutlig);N2011/7166/E (slutlig),True
@@ -6252,7 +6252,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 13955,Regleringsbrev,2011-12-15,2012,Myndighet,Statens kulturråd,Kulturdepartementet,17,Ku2011/1960/RFS (delvis),True
 13956,Regleringsbrev,2011-12-15,2012,Myndighet,Statens konstråd,Kulturdepartementet,17,Ku2011/1960/RFS (delvis),True
 13957,Regleringsbrev,2011-12-15,2012,Myndighet,Nämnden för hemslöjdsfrågor,Kulturdepartementet,17,Ku2011/1960/RFS (delvis),True
-13958,Regleringsbrev,2011-12-15,2012,Myndighet,Konstnärsnämnden,Kulturdepartementet,17,"Ku2010/1203, 2011/14, 437/KV, 1960/RFS (delvis)",True
+13958,Regleringsbrev,2011-12-15,2012,Myndighet,Konstnärsnämnden,Kulturdepartementet,17,Ku2010/1203;Ku2011/14;Ku2011/437/KV;Ku2011/1960/RFS (delvis),True
 13959,Regleringsbrev,2011-12-15,2012,Myndighet,Moderna museet,Kulturdepartementet,17,Ku2011/1960/RFS(delvis),True
 13960,Regleringsbrev,2011-12-15,2012,Myndighet,Statens musikverk,Kulturdepartementet,17,Ku2011/1960/RFS (delvis),True
 13961,Regleringsbrev,2011-12-15,2012,Anslag,1:6,Näringsdepartementet,21,N2011/7166/E (delvis),True
@@ -6264,7 +6264,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 13968,Regleringsbrev,2011-12-15,2012,Anslag,13:5,Utbildningsdepartementet,17,U/2011/7072/UC;U/2011/7057/SAM(delvis),True
 13969,Regleringsbrev,2011-12-22,2012,Anslag,1:14,Justitiedepartementet,4,Ju2011/8840/KRIM Ju2011/9119/KRIM;Ju2009/7330/KRIM,True
 13970,Ändringsbeslut,2011-11-24,2011,Anslag,3:12,Utbildningsdepartementet,16,U2011/6542,True
-13971,Regleringsbrev,2011-12-22,2012,Myndighet,Myndigheten för yrkeshögskolan,Utbildningsdepartementet,16,"U2011/7258/SAM (slutligt);U2011/7303/GV;U2011/2308, 3627, 4645/GV",True
+13971,Regleringsbrev,2011-12-22,2012,Myndighet,Myndigheten för yrkeshögskolan,Utbildningsdepartementet,16,U2011/7258/SAM (slutligt);U2011/7303/GV;U2011/2308;U2011/3627;U2011/4645/GV,True
 13972,Regleringsbrev,2011-12-22,2012,Myndighet,Brottsoffermyndigheten,Justitiedepartementet,4,Ju2011/8843/KRIM Ju2011/9119/KRIM (delvis);Ju2011/7741/KRIM;Ju2011/8247/KRIM,True
 13973,Regleringsbrev,2011-12-22,2012,Myndighet,"Forskningsrådet för miljö, areella näringar och samhällsbyggande",Miljödepartementet,20,M2011/3932/S (delvis),True
 13974,Ändringsbeslut,2011-12-08,2011,Myndighet,Naturvårdsverket,Miljödepartementet,17;20,M2011/3239/S (delvis),True
@@ -6303,7 +6303,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 14011,Regleringsbrev,2011-12-15,2012,Anslag,6:6,Justitiedepartementet,1,Ju2011/8861/D;Ju2011/8750/L6 (delvis),True
 14013,Regleringsbrev,2011-12-22,2012,Anslag,1:1,Finansdepartementet,27,Fi2011/5286 (delvis),True
 14014,Regleringsbrev,2011-12-22,2012,Anslag,6:1,Justitiedepartementet,1,Ju2011/8862/D;Ju2011/8750/L6,True
-14015,Regleringsbrev,2011-12-20,2012,Anslag,2:69,Utbildningsdepartementet,16,"U2011/6006, 6039/UH;U2011/7258/SAM (delvis);U2011/7240/UH",True
+14015,Regleringsbrev,2011-12-20,2012,Anslag,2:69,Utbildningsdepartementet,16,U2011/6006;U2011/6039/UH;U2011/7258/SAM (delvis);U2011/7240/UH,True
 14016,Regleringsbrev,2011-12-22,2012,Myndighet,Patentbesvärsrätten,Näringsdepartementet,24,N2011/7013/FIN;N2011/7416/KLS,True
 14021,Regleringsbrev,2011-12-15,2012,Anslag,1:11,Arbetsmarknadsdepartementet,14,A2011/3930/ARM;A2011/4507/EXPCH (delvis),True
 14022,Regleringsbrev,2011-12-15,2012,Anslag,2:4,Arbetsmarknadsdepartementet,14,A2011/3929/ARM;A2011/4507/EXPCH (delvis),True
@@ -6339,7 +6339,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 14055,Ändringsbeslut,2011-11-17,2011,Anslag,1:1 och 1:14,Socialdepartementet,2,S2011/10190/SFÖ,True
 14057,Ändringsbeslut,2011-11-24,2011,Myndighet,Arbetsförmedlingen,Arbetsmarknadsdepartementet,14,A2011/4002/A,True
 14058,Ändringsbeslut,2011-11-17,2011,Anslag,3:1,Utbildningsdepartementet,13,U2011/6374/JÄM,True
-14059,Regleringsbrev,2011-12-15,2012,Anslag,"1:2, 2:1, 3:3, 7:3, 8:1, 8:2, 8:3, 8:6, 10:1, 11:1, 11:3 och 13:1",Kulturdepartementet,17,"Ku2011/1533/MFI, 1960/RFS (delvis)",True
+14059,Regleringsbrev,2011-12-15,2012,Anslag,"1:2, 2:1, 3:3, 7:3, 8:1, 8:2, 8:3, 8:6, 10:1, 11:1, 11:3 och 13:1",Kulturdepartementet,17,Ku2011/1533/MFI;Ku2011/1960/RFS (delvis),True
 14060,Regleringsbrev,2011-12-22,2012,Anslag,1:20,Näringsdepartementet,24,N2011/7234/KLS;N2011/7416/KLS (delvis),True
 14061,Regleringsbrev,2011-12-22,2012,Anslag,1:7,Näringsdepartementet,24,N2011/7156/ENT;N2011/7416/KLS (delvis),True
 14062,Regleringsbrev,2011-12-22,2012,Anslag,1:8,Landsbygdsdepartementet,23,L2011/3356(delvis),True
@@ -6361,7 +6361,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 14079,Regleringsbrev,2011-12-22,2012,Myndighet,Statens tjänstepensionsverk,Socialdepartementet,2,S2011/62/ESA;S2011/66/ESA;S2011/1466/ESA,True
 14080,Regleringsbrev,2011-12-15,2012,Myndighet,Myndigheten för radio och tv,Kulturdepartementet,1,Ku2011/1933/MFI,True
 14081,Regleringsbrev,2011-12-15,2012,Myndighet,Presstödsnämnden,Kulturdepartementet,1,Ku2011/1933/MFI (delvis),True
-14082,Regleringsbrev,2011-12-15,2012,Myndighet,Statens medieråd,Kulturdepartementet,17,"Ku2010/1532, 1617;2011/1486/MFI, 1960/RFS (delvis)",True
+14082,Regleringsbrev,2011-12-15,2012,Myndighet,Statens medieråd,Kulturdepartementet,17,Ku2010/1532;Ku2010/1617;Ku2011/1486/MFI;Ku2011/1960/RFS (delvis),True
 14083,Regleringsbrev,2011-12-15,2012,Myndighet,Talboks- och punktskriftsbiblioteket,Kulturdepartementet,1;17,Ku2011/1960/RFS (delvis),True
 14084,Regleringsbrev,2011-12-15,2012,Anslag,11:2,Kulturdepartementet,17,Ku2011/1960/RFS (delvis),True
 14085,Ändringsbeslut,2011-11-24,2011,Myndighet,Socialstyrelsen,Socialdepartementet,9,S2011/10430/VS,True
@@ -6388,7 +6388,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 14112,Regleringsbrev,2011-12-15,2012,Myndighet,Svenska institutet för europapolitiska studier,Statsrådsberedningen,1,SB2011/8911,True
 14113,Ändringsbeslut,2011-12-01,2011,Anslag,1:1 och 33:6 (2006),Näringsdepartementet,19,N2011/5856/RT (delvis),True
 14114,Ändringsbeslut,2011-11-24,2011,Myndighet,Kustbevakningen,Försvarsdepartementet,6,Fö2011/1752/SSK,True
-14115,Ändringsbeslut,2011-12-08,2011,Anslag,2:53,Utbildningsdepartementet,16,"U2011/5982, 6060, 6151, 6445/UH;U2011/6859/UH",True
+14115,Ändringsbeslut,2011-12-08,2011,Anslag,2:53,Utbildningsdepartementet,16,U2011/5982;U2011/6060;U2011/6151;U2011/6445/UH;U2011/6859/UH,True
 14116,Regleringsbrev,2011-12-22,2012,Myndighet,Sveriges geologiska undersökning,Näringsdepartementet,24,N2011/6890/FIN;N2011/7416/KLS,True
 14119,Regleringsbrev,2011-12-22,2012,Anslag,1:14 (2011) och 1:17 (2011),Landsbygdsdepartementet,23,L2011/3356,True
 14121,Regleringsbrev,2011-12-15,2012,Anslag,6:4,Statsrådsberedningen,1,SB2011/8911(delvis),True
@@ -6569,7 +6569,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 14365,Ändringsbeslut,2012-04-26,2012,Myndighet,Arkitekturmuseet,Kulturdepartementet,17,Ku2012/495/KA (delvis),True
 14366,Ändringsbeslut,2012-05-03,2012,Anslag,1:6,Socialdepartementet,9,S2012/3356/FS,True
 14367,Ändringsbeslut,2012-05-03,2012,Anslag,1:1 och 33:6 (2006),Näringsdepartementet,19,N2012/2411/RT,True
-14368,Ändringsbeslut,2012-06-20,2012,Anslag,2:70,Utbildningsdepartementet,16,"U2012/264, 1448, 1456, 1461, 2189, 2943/UH;U2012/3591/UH",True
+14368,Ändringsbeslut,2012-06-20,2012,Anslag,2:70,Utbildningsdepartementet,16,U2012/264;U2012/1448;U2012/1456;U2012/1461;U2012/2189;U2012/2943/UH;U2012/3591/UH,True
 14370,Ändringsbeslut,2012-05-31,2012,Myndighet,Lantmäteriet,Socialdepartementet,18,S2012/4072/PBB,True
 14371,Ändringsbeslut,2012-05-10,2012,Myndighet,Myndigheten för yrkeshögskolan,Utbildningsdepartementet,16,U2012/2889/GV,True
 14372,Ändringsbeslut,2012-05-24,2012,Myndighet,Statens institutionsstyrelse,Socialdepartementet,9,S2012/3861/FST,True
@@ -6769,14 +6769,14 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 14607,Regleringsbrev,2012-12-13,2013,Myndighet,Statens inspektion för försvarsunderrättelseverksamheten,Försvarsdepartementet,6,Fö2012/113/ESL(delvis);Fö2012/463/SUND;Fö2012/2188/ESL(delvis),True
 14608,Regleringsbrev,2012-12-20,2013,Myndighet,Uppsala universitet,Utbildningsdepartementet,16,U2012/5609/UH;U2012/6996/SAM (delvis);U2012/7269/UH,True
 14609,Regleringsbrev,2012-12-20,2013,Myndighet,Försvarsunderrättelsedomstolen,Försvarsdepartementet,6,Fö2012/113/ESL;Fö2012/384/SUND;Fö2012/2188/ESL(delvis),True
-14610,Regleringsbrev,2012-12-13,2013,Myndighet,Tullverket,Finansdepartementet,3,"Fi2012/885,Fi2012/930;Fi2012/997,Fi2012/1405;Fi2012/3095,Fi2012/3110, Fi2012/3985,Fi2012/4593",True
+14610,Regleringsbrev,2012-12-13,2013,Myndighet,Tullverket,Finansdepartementet,3,Fi2012/885;Fi2012/930;Fi2012/997;Fi2012/1405;Fi2012/3095;Fi2012/3110;Fi2012/3985;Fi2012/4593,True
 14611,Regleringsbrev,2012-12-13,2013,Myndighet,Regionala etikprövningsnämnden i Lund,Utbildningsdepartementet,,U2012/7084/F;U2012/6996/SAM(delvis),True
-14612,Regleringsbrev,2012-12-13,2013,Myndighet,Kronofogdemyndigheten,Finansdepartementet,3,"Fi2012/890, Fi2012/4593 (delvis)",True
+14612,Regleringsbrev,2012-12-13,2013,Myndighet,Kronofogdemyndigheten,Finansdepartementet,3,Fi2012/890;Fi2012/4593 (delvis),True
 14613,Regleringsbrev,2012-12-13,2013,Myndighet,Regionala etikprövningsnämnden i Stockholm,Utbildningsdepartementet,,U2012/7085/F;U2012/6996/SAM(delvis),True
 14614,Regleringsbrev,2012-12-13,2013,Myndighet,Regionala etikprövningsnämnden i Umeå,Utbildningsdepartementet,,U2012/7087/F;U2012/6996/SAM(delvis),True
 14615,Regleringsbrev,2012-12-13,2013,Myndighet,Regionala etikprövningsnämnden i Uppsala,Utbildningsdepartementet,,U2012/7086/F;U2012/6996/SAM(delvis),True
 14616,Regleringsbrev,2012-12-13,2013,Myndighet,regionala etikprövningsnämnder,Utbildningsdepartementet,16,U2012/7081/F;U2012/6996/SAM(delvis),True
-14617,Regleringsbrev,2012-12-13,2013,Myndighet,Skatteverket,Finansdepartementet,3,"Fi2012/889, Fi2012/4593 (delvis)",True
+14617,Regleringsbrev,2012-12-13,2013,Myndighet,Skatteverket,Finansdepartementet,3,Fi2012/889;Fi2012/4593 (delvis),True
 14618,Regleringsbrev,2012-12-13,2013,Myndighet,Vetenskapsrådet,Utbildningsdepartementet,16,U2012/7074/F;U2012/6996/SAM(delvis),True
 14619,Regleringsbrev,2012-12-13,2013,Anslag,3:13,Utbildningsdepartementet,16,U2012/6996/SAM(delvis);U2012/7079/F;U2011/6588/F,True
 14620,Regleringsbrev,2012-12-20,2013,Myndighet,Statistiska centralbyrån,Finansdepartementet,2,Fi2012/4766 (delvis),True
@@ -6796,7 +6796,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 14635,Regleringsbrev,2012-12-20,2013,Anslag,1:1,Finansdepartementet,27,Fi2012/4770 (delvis),True
 14636,Regleringsbrev,2012-12-13,2013,Myndighet,Göteborgs universitet,Utbildningsdepartementet,16,U2012/5615/UH;U2012/6996/SAM (delvis);U2012/7043/UH,True
 14637,Regleringsbrev,2012-12-20,2013,Myndighet,Diskrimineringsombudsmannen,Arbetsmarknadsdepartementet,13,A2012/4145/DISK;A2012/4268/ADM (delvis),True
-14638,Regleringsbrev,2012-12-20,2013,Myndighet,Stockholms universitet,Utbildningsdepartementet,16,"U2012/1178,5591/UH;U2012/6996/SAM (delvis);U2012/7270/UH",True
+14638,Regleringsbrev,2012-12-20,2013,Myndighet,Stockholms universitet,Utbildningsdepartementet,16,U2012/1178;U2012/5591/UH;U2012/6996/SAM (delvis);U2012/7270/UH,True
 14639,Regleringsbrev,2012-12-18,2013,Anslag,4:5,Socialdepartementet,9,S2012/8855/SAM (delvis),True
 14640,Regleringsbrev,2012-12-13,2013,Myndighet,Umeå universitet,Utbildningsdepartementet,16,U2012/5658/UH;U2012/6996/SAM (delvis);U2012/7044/UH,True
 14641,Regleringsbrev,2012-12-18,2013,Anslag,5:2,Socialdepartementet,9,S2012/8855/SAM (delvis),True
@@ -6804,13 +6804,13 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 14643,Regleringsbrev,2012-12-20,2013,Anslag,4:7,Socialdepartementet,9,S2012/8855/SAM (delvis),True
 14644,Regleringsbrev,2012-12-20,2013,Anslag,1:1 och 33:6 (2006),Näringsdepartementet,19,N2012/6433/KLS (delvis);N2012/6276/RT;N2012/4724/RT,True
 14646,Regleringsbrev,2012-12-18,2013,Anslag,6:2,Socialdepartementet,9,S2012/8855/SAM (delvis),True
-14647,Regleringsbrev,2012-12-13,2013,Myndighet,Linköpings universitet,Utbildningsdepartementet,16,"U2012/982,5593,6476/UH;U2012/6996/SAM (delvis);U2012/7045/UH",True
+14647,Regleringsbrev,2012-12-13,2013,Myndighet,Linköpings universitet,Utbildningsdepartementet,16,U2012/982;U2012/5593;U2012/6476/UH;U2012/6996/SAM (delvis);U2012/7045/UH,True
 14650,Regleringsbrev,2012-12-13,2013,Myndighet,Kungl. Tekniska högskolan,Utbildningsdepartementet,16,U2012/5594/UH;U2012/6996/SAM (delvis);U2012/7047/UH,True
 14651,Regleringsbrev,2012-12-13,2013,Myndighet,Luleå tekniska universitet,Utbildningsdepartementet,16,U2012/5628/UH;U2012/6996/SAM (delvis);U2012/7048/UH,True
 14652,Regleringsbrev,2012-12-13,2013,Myndighet,Karlstads universitet,Utbildningsdepartementet,16,U2012/5659/UH;U2012/6996/SAM (delvis);U2012/7049/UH,True
 14653,Regleringsbrev,2012-12-13,2013,Myndighet,Linnéuniversitetet,Utbildningsdepartementet,16,U2012/5573/UH;U2012/6996/SAM (delvis);U2012/7050/UH,True
 14654,Regleringsbrev,2012-12-13,2013,Myndighet,Örebro universitet,Utbildningsdepartementet,16,U2012/5608/UH;U2012/6996/SAM (delvis);U2012/7051/UH,True
-14655,Regleringsbrev,2012-12-13,2013,Anslag,2:69,Utbildningsdepartementet,16,"U2012/5619,5775/UH;U2012/6996/SAM (delvis);U2012/7073/UH",True
+14655,Regleringsbrev,2012-12-13,2013,Anslag,2:69,Utbildningsdepartementet,16,U2012/5619;U2012/5775/UH;U2012/6996/SAM (delvis);U2012/7073/UH,True
 14656,Regleringsbrev,2012-12-13,2013,Myndighet,Mittuniversitetet,Utbildningsdepartementet,16,U2012/5660/UH;U2012/6996/SAM (delvis);U2012/7052/UH,True
 14657,Regleringsbrev,2012-12-20,2013,Myndighet,Arbetsmiljöverket,Arbetsmarknadsdepartementet,14,A2012/4136/ARM;A2012/4269/ADM (delvis),True
 14658,Regleringsbrev,2012-12-20,2013,Myndighet,Arbetsdomstolen,Arbetsmarknadsdepartementet,14,A2012/4135/ARM;A2012/4269/ADM (delvis),True
@@ -6822,7 +6822,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 14666,Regleringsbrev,2012-12-13,2013,Myndighet,Malmö högskola,Utbildningsdepartementet,16,U2012/5618/UH;U2012/6996/SAM (delvis);U2012/7069/UH,True
 14667,Regleringsbrev,2012-12-18,2013,Myndighet,Nämnden för statligt stöd till trossamfund,Socialdepartementet,17,S2012/8803/SAM,True
 14669,Regleringsbrev,2012-12-13,2013,Myndighet,Statens va-nämnd,Socialdepartementet,18,S2012/8390/SAM (delvis),True
-14670,Regleringsbrev,2012-12-13,2013,Myndighet,Försvarshögskolan,Utbildningsdepartementet,16,"U2012/983,6899/UH;U2012/6996/SAM (delvis);U2012/7055/UH",True
+14670,Regleringsbrev,2012-12-13,2013,Myndighet,Försvarshögskolan,Utbildningsdepartementet,16,U2012/983;U2012/6899/UH;U2012/6996/SAM (delvis);U2012/7055/UH,True
 14672,Regleringsbrev,2012-12-13,2013,Myndighet,Myndigheten för samhällsskydd och beredskap,Försvarsdepartementet,6,Fö2011/1228/MFU;Fö2011/1703/SSK (slutligt);Fö2012/113/ESL(delvis),True
 14674,Regleringsbrev,2012-12-20,2013,Myndighet,Socialstyrelsen,Socialdepartementet,9,S2012/8855/SAM (delvis),True
 14675,Regleringsbrev,2012-12-13,2013,Myndighet,Högskolan i Borås,Utbildningsdepartementet,16,U2012/5637/UH;U2012/6996/SAM (delvis);U2012/7057/UH,True
@@ -6833,11 +6833,11 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 14681,Regleringsbrev,2012-12-13,2013,Myndighet,Högskolan i Skövde,Utbildningsdepartementet,16,U2012/5665/UH;U2012/6996/SAM (delvis);U2012/7064/UH,True
 14682,Regleringsbrev,2012-12-13,2013,Myndighet,Högskolan Kristianstad,Utbildningsdepartementet,16,U2012/5657/UH;U2012/6996/SAM (delvis);U2012/7063/UH,True
 14683,Regleringsbrev,2012-12-13,2013,Myndighet,Högskolan Väst,Utbildningsdepartementet,16,U2012/5667/UH;U2012/6996/SAM (delvis);U2012/7065/UH,True
-14684,Regleringsbrev,2012-12-13,2013,Myndighet,Högskolan i Gävle,Utbildningsdepartementet,16,"U2012/533,5630/UH;U2012/6996/SAM (delvis);U2012/7061/UH",True
+14684,Regleringsbrev,2012-12-13,2013,Myndighet,Högskolan i Gävle,Utbildningsdepartementet,16,U2012/533;U2012/5630/UH;U2012/6996/SAM (delvis);U2012/7061/UH,True
 14685,Regleringsbrev,2012-12-13,2013,Myndighet,Stockholms dramatiska högskola,Utbildningsdepartementet,16,U2012/5629/UH;U2012/6996/SAM (delvis);U2012/7072/UH,True
 14686,Regleringsbrev,2012-12-13,2013,Myndighet,Kungl. Konsthögskolan,Utbildningsdepartementet,16,U2012/5607/UH;U2012/6996/SAM (delvis);U2012/7067/UH,True
 14687,Regleringsbrev,2012-12-13,2013,Myndighet,Konstfack,Utbildningsdepartementet,16,U2012/5522/UH;U2012/6996/SAM (delvis);U2012/7066/UH,True
-14688,Regleringsbrev,2012-12-13,2013,Myndighet,Kungl. Musikhögskolan i Stockholm,Utbildningsdepartementet,16,"U2012/1379,5617/UH;U2012/6996/SAM (delvis);U2012/7068/UH",True
+14688,Regleringsbrev,2012-12-13,2013,Myndighet,Kungl. Musikhögskolan i Stockholm,Utbildningsdepartementet,16,U2012/1379;U2012/5617/UH;U2012/6996/SAM (delvis);U2012/7068/UH,True
 14689,Regleringsbrev,2012-12-13,2013,Myndighet,Operahögskolan i Stockholm,Utbildningsdepartementet,16,U2012/5567/UH;U2012/6996/SAM (delvis);U2012/7071/UH,True
 14690,Regleringsbrev,2012-12-13,2013,Myndighet,Dans- och cirkushögskolan,Utbildningsdepartementet,16,U2012/5635/UH;U2012/6996/SAM (delvis);U2012/7054/UH,True
 14691,Regleringsbrev,2012-12-20,2013,Myndighet,Mälardalens högskola,Utbildningsdepartementet,16,U2012/5578/UH;U2012/6996/SAM (delvis);U2012/7271/UH,True
@@ -6849,14 +6849,14 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 14701,Regleringsbrev,2012-12-13,2013,Myndighet,Statens museer för världskultur,Kulturdepartementet,17,Ku2012/1309/KA;Ku2012/1898/RFS (delvis),True
 14702,Regleringsbrev,2012-12-20,2013,Myndighet,Riksantikvarieämbetet,Kulturdepartementet,17,Ku2012/1078/KA;Ku2012/1484/KA;Ku2012/1898/RFS (delvis),True
 14703,Regleringsbrev,2012-12-18,2013,Myndighet,Trafikanalys,Näringsdepartementet,22,N2012/6370/TE;N2012/6343/KLS(delvis);N2012/1177/TE(slutligt),True
-14704,Regleringsbrev,2012-12-20,2013,Myndighet,Statens kulturråd,Kulturdepartementet,17,"Ku2009/1822/KO, Ku2010/1100/KO;Ku2012/549,929,1009, 1116,1304,1305,1401, 1455,1692/KO;Ku2012/1898/RFS (delvis)",True
+14704,Regleringsbrev,2012-12-20,2013,Myndighet,Statens kulturråd,Kulturdepartementet,17,Ku2009/1822/KO;Ku2010/1100/KO;Ku2012/549;Ku2012/929;Ku2012/1009;Ku2012/1116;Ku2012/1304;Ku2012/1305;Ku2012/1401;Ku2012/1455;Ku2012/1692/KO;Ku2012/1898/RFS (delvis),True
 14705,Regleringsbrev,2012-12-13,2013,Anslag,1:5,Kulturdepartementet,17,Ku2012/1898/RFS (delvis),True
 14707,Regleringsbrev,2012-12-13,2013,Anslag,1:6,Utrikesdepartementet,5,UF2012/72686/UD/PLAN (delvis);UF2012/72999/UD/NIS,True
 14708,Regleringsbrev,2012-12-13,2013,Myndighet,Arkitekturmuseet,Kulturdepartementet,17,Ku2012/1326/KA;Ku2012/1898/RFS (delvis),True
 14709,Regleringsbrev,2012-12-13,2013,Myndighet,Forum för levande historia,Kulturdepartementet,17,Ku2012/1318/KA;Ku2012/1898/RFS (delvis),True
 14710,Regleringsbrev,2012-12-13,2013,Anslag,1:7,Utrikesdepartementet,5,UF2012/72686/UD/PLAN (delvis);UF2012/73000/UD/NIS,True
-14711,Regleringsbrev,2012-12-13,2013,Myndighet,Statens musikverk,Kulturdepartementet,17,"Ku2012/1317/KO, Ku2012/1898/RFS (delvis)",True
-14712,Regleringsbrev,2012-12-13,2013,Myndighet,Moderna museet,Kulturdepartementet,17,"Ku2012/945/KO, Ku2012/1316/KO, Ku2012/1898/RFS (delvis)",True
+14711,Regleringsbrev,2012-12-13,2013,Myndighet,Statens musikverk,Kulturdepartementet,17,Ku2012/1317/KO;Ku2012/1898/RFS (delvis),True
+14712,Regleringsbrev,2012-12-13,2013,Myndighet,Moderna museet,Kulturdepartementet,17,Ku2012/945/KO;Ku2012/1316/KO;Ku2012/1898/RFS (delvis),True
 14713,Regleringsbrev,2012-12-13,2013,Anslag,1:11 och 1:1,Utrikesdepartementet,5;7,UF2012/72686/UD/PLAN (delvis);UF2012/71891/UD/USTYR (delvis);UF2012/73035/UD/USTYR,True
 14715,Regleringsbrev,2012-12-20,2013,Myndighet,Havs- och vattenmyndigheten,Miljödepartementet,20,M2012/3408/S (delvis);M2010/4625/Nm,True
 14716,Regleringsbrev,2012-12-13,2013,Anslag,2:3,Utrikesdepartementet,24,UF2012/72687/UD/FIM (delvis);UF2012/73012/UD/FIM,True
@@ -6946,7 +6946,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 14818,Regleringsbrev,2012-12-13,2013,Anslag,1:8,Utrikesdepartementet,5,UF2012/72686/UD/PLAN(delvis);UF2012/73003/UD/SP,True
 14819,Regleringsbrev,2012-12-13,2013,Myndighet,Ungdomsstyrelsen,Utbildningsdepartementet,17,U2012/7090/UC;U2012/6997/SAM(delvis);U2012/6046/UC,True
 14821,Ändringsbeslut,2012-11-15,2012,Anslag,1:8,Socialdepartementet,9,S2012/8007/FS,True
-14822,Regleringsbrev,2012-12-20,2013,Anslag,2:70,Utbildningsdepartementet,16,"U2011/2262/UH;U2012/5662,6160/UH;U2012/6996/SAM (delvis)",True
+14822,Regleringsbrev,2012-12-20,2013,Anslag,2:70,Utbildningsdepartementet,16,U2011/2262/UH;U2012/5662;U2012/6160/UH;U2012/6996/SAM (delvis),True
 14823,Ändringsbeslut,2012-11-29,2012,Anslag,3:13,Utbildningsdepartementet,16,U2011/7258/SAM(delvis);U2012/6602/F,True
 14824,Regleringsbrev,2012-12-20,2013,Myndighet,Myndigheten för tillväxtpolitiska utvärderingar och analyser,Näringsdepartementet,24,N2012/6389/AS;N2012/6241/KLS(delvis),True
 14828,Regleringsbrev,2012-12-18,2013,Myndighet,Folke Bernadotteakademin,Utrikesdepartementet,7,UF2012/71891/UD/USTYR (delvis);UF2012/74403/UD/SP,True
@@ -7258,7 +7258,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 15246,Ändringsbeslut,2013-06-19,2013,Anslag,2:69,Utbildningsdepartementet,16,U2013/4050/SAM (delvis) U2013/4084/UH,True
 15247,Ändringsbeslut,2013-06-19,2013,Myndighet,Umeå universitet,Utbildningsdepartementet,16,U2013/4050/SAM (delvis) U2013/4064/UH,True
 15248,Ändringsbeslut,2013-11-28,2013,Anslag,"1:1, 1:2, 1:3 och 48:2 (2006)",Finansdepartementet,25,Fi2013/4081 (delvis),True
-15249,Ändringsbeslut,2013-06-19,2013,Myndighet,Uppsala universitet,Utbildningsdepartementet,16,"U2013/569/UH;U2013/4050/SAM (delvis), U2013/4061/UH",True
+15249,Ändringsbeslut,2013-06-19,2013,Myndighet,Uppsala universitet,Utbildningsdepartementet,16,U2013/569/UH;U2013/4050/SAM (delvis);U2013/4061/UH,True
 15250,Ändringsbeslut,2013-08-15,2013,Myndighet,Sametinget,Landsbygdsdepartementet,1;23,L2013/2298/JFS,True
 15251,Ändringsbeslut,2013-06-19,2013,Myndighet,Statens energimyndighet,Näringsdepartementet,21,N2013/3177/E,True
 15253,Ändringsbeslut,2013-07-11,2013,Anslag,1:1,Utrikesdepartementet,7,UF2013/41721/UD/SP (delvis),True
@@ -7346,7 +7346,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 15350,Regleringsbrev,2013-12-19,2014,Myndighet,Statens museer för världskultur,Kulturdepartementet,17,Ku2013/2011/KA;Ku2013/2461/RFS (delvis),True
 15351,Regleringsbrev,2013-12-19,2014,Anslag,1:2,Kulturdepartementet,17,Ku2013/2461/RFS (delvis),True
 15352,Regleringsbrev,2013-12-19,2014,Myndighet,Kungliga hov- och slottsstaten,Finansdepartementet,1,Fi2013/4335,True
-15353,Ändringsbeslut,2013-12-12,2013,Anslag,2:70,Utbildningsdepartementet,16,"U2012/369/UH (slutligt);U2013/5307, 5385;6331, 6432, 6473, 6516, 6637, 6688/UH",True
+15353,Ändringsbeslut,2013-12-12,2013,Anslag,2:70,Utbildningsdepartementet,16,U2012/369/UH (slutligt);U2013/5307;U2013/5385;U2013/6331;U2013/6432;U2013/6473;U2013/6516;U2013/6637;U2013/6688/UH,True
 15354,Regleringsbrev,2013-12-19,2014,Anslag,4:2,Socialdepartementet,9,S2013/9047/SAM (delvis),True
 15355,Regleringsbrev,2013-12-19,2014,Anslag,4:5,Socialdepartementet,9,S2013/9047/SAM (delvis),True
 15356,Regleringsbrev,2013-12-19,2014,Anslag,4:7,Socialdepartementet,9,S2013/9047/SAM (delvis),True
@@ -7385,9 +7385,9 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 15391,Ändringsbeslut,2013-11-21,2013,Myndighet,Statens skolverk,Utbildningsdepartementet,16,U2013/6844/S,True
 15392,Regleringsbrev,2013-12-19,2014,Myndighet,Riksgäldskontoret,Finansdepartementet,2;26,Fi2013/4125(delvis);Fi2013/4433(delvis);Fi2013/4547(delvis),True
 15393,Regleringsbrev,2013-12-12,2014,Anslag,1:1,Utrikesdepartementet,5,UF2013/75605/UD/PLAN (delvis);UF2013/76254/UD/PLAN,True
-15395,Regleringsbrev,2013-12-12,2014,Myndighet,Kronofogdemyndigheten,Finansdepartementet,3,"Fi2012/1156, Fi2012/4043, Fi2013/101, Fi2013/853, Fi2013/2415;Fi2013/4380 (delvis)",True
-15396,Regleringsbrev,2013-12-12,2014,Myndighet,Tullverket,Finansdepartementet,3,"Fi2013/86, Fi2013/755;Fi2013/4380",True
-15397,Regleringsbrev,2013-12-12,2014,Myndighet,Skatteverket,Finansdepartementet,3,"Fi2012/4271;Fi2013/775, Fi2013/2558, Fi2013/3251, Fi2013/3525, Fi2013/3926;Fi2013/4380 (delvis)",True
+15395,Regleringsbrev,2013-12-12,2014,Myndighet,Kronofogdemyndigheten,Finansdepartementet,3,Fi2012/1156;Fi2012/4043;Fi2013/101;Fi2013/853;Fi2013/2415;Fi2013/4380 (delvis),True
+15396,Regleringsbrev,2013-12-12,2014,Myndighet,Tullverket,Finansdepartementet,3,Fi2013/86;Fi2013/755;Fi2013/4380,True
+15397,Regleringsbrev,2013-12-12,2014,Myndighet,Skatteverket,Finansdepartementet,3,Fi2012/4271;Fi2013/775;Fi2013/2558;Fi2013/3251;Fi2013/3525;Fi2013/3926;Fi2013/4380 (delvis),True
 15399,Regleringsbrev,2013-12-19,2014,Myndighet,Trafikverket,Näringsdepartementet,22,N2013/5893/TE;N2013/793/TE;N2013/1075/TE,True
 15400,Ändringsbeslut,2013-10-24,2013,Myndighet,Boverket,Socialdepartementet,18,S2013/7372/PBB,True
 15401,Regleringsbrev,2013-12-19,2014,Myndighet,Kriminalvården,Justitiedepartementet,4,Ju2013/8710/KRIM;Ju2013/8610/KRIM (delvis);Ju2013/7815/KRIM,True
@@ -7401,10 +7401,10 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 15409,Regleringsbrev,2013-12-19,2014,Myndighet,Läkemedelsverket,Socialdepartementet,9,S2012/4488/FS;S2013/9047/SAM(delvis),True
 15410,Regleringsbrev,2013-12-19,2014,Anslag,"14:1, 14:2 (2011) och 14:2",Utbildningsdepartementet,17,U2013/7617/SAM;U2013/7809/UC,True
 15411,Regleringsbrev,2013-12-19,2014,Myndighet,Kommerskollegium,Utrikesdepartementet,24,UF2013/76341/UD/FIM (delvis);UF2013/78260/UD/FIM,True
-15413,Regleringsbrev,2013-12-12,2014,Myndighet,Blekinge tekniska högskola,Utbildningsdepartementet,16,"U2013/4248/UH(delvis), U2013/6191/UH, U2013/6543/UH(delvis), U2013/7513/UH, U2013/7484/SAM(delvis)",True
+15413,Regleringsbrev,2013-12-12,2014,Myndighet,Blekinge tekniska högskola,Utbildningsdepartementet,16,U2013/4248/UH (delvis);U2013/6191/UH;U2013/6543/UH (delvis);U2013/7513/UH;U2013/7484/SAM (delvis),True
 15414,Regleringsbrev,2013-12-12,2014,Myndighet,Gymnastik- och idrottshögskolan,Utbildningsdepartementet,16,U2013/6137/UH;U2013/7514/UH;U2013/7484/SAM (delvis),True
-15415,Regleringsbrev,2013-12-12,2014,Myndighet,Högskolan i Borås,Utbildningsdepartementet,16,"U2013/4248/UH(delvis), U2013/6182/UH, U2013/6543/UH(delvis), U2013/7515/UH, U2013/7484/SAM(delvis)",True
-15416,Regleringsbrev,2013-12-12,2014,Myndighet,Högskolan Dalarna,Utbildningsdepartementet,16,"U2013/4248/UH(delvis), U2013/6160/UH, U2013/6543/UH(delvis), U2013/7516/UH, U2013/7484/SAM (delvis)",True
+15415,Regleringsbrev,2013-12-12,2014,Myndighet,Högskolan i Borås,Utbildningsdepartementet,16,U2013/4248/UH (delvis);U2013/6182/UH;U2013/6543/UH (delvis);U2013/7515/UH;U2013/7484/SAM (delvis),True
+15416,Regleringsbrev,2013-12-12,2014,Myndighet,Högskolan Dalarna,Utbildningsdepartementet,16,U2013/4248/UH (delvis);U2013/6160/UH;U2013/6543/UH (delvis);U2013/7516/UH;U2013/7484/SAM (delvis),True
 15417,Regleringsbrev,2013-12-12,2014,Myndighet,Högskolan i Gävle,Utbildningsdepartementet,16,U2013/739/UH;U2013/4248/UH(delvis) U2013/6376/UH U2013/6543/UH(delvis) U2013/7517/UH U2013/7484/SAM(delvis),True
 15418,Regleringsbrev,2013-12-12,2014,Myndighet,universitet och högskolor,Utbildningsdepartementet,,U2013/5575/UH;U2013/7500/UH;U2013/7484/SAM (delvis),True
 15419,Regleringsbrev,2013-12-12,2014,Myndighet,Högskolan i Halmstad,Utbildningsdepartementet,16,U2013/4248/UH (delvis) U2013/6194/UH U2013/6543/UH(delvis) U2013/7518/UH U2013/7484/SAM(delvis),True
@@ -7430,7 +7430,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 15449,Regleringsbrev,2013-12-12,2014,Anslag,1:14,Näringsdepartementet,24,N2013/5695/FIN;N2013/5656/KLS (delvis);N2013/1808/FIN,True
 15450,Regleringsbrev,2013-12-19,2014,Myndighet,Totalförsvarets forskningsinstitut,Försvarsdepartementet,6,Fö2013/123/ESL (delvis);Fö2013/324/MFU;Fö2013/403/MFU,True
 15456,Regleringsbrev,2013-12-19,2014,Myndighet,Försvarets materielverk,Försvarsdepartementet,6,Fö2013/123/ESL (delvis);Fö2013/404/MFU;Fö2013/666/MFU,True
-15464,Regleringsbrev,2013-12-12,2014,Myndighet,Göteborgs universitet,Utbildningsdepartementet,16,"U2013/4248/UH(delvis), U2013/6154/UH, U2013/6543/UH (delvis), U2013/7502/UH, U2013/7484/SAM(delvis)",True
+15464,Regleringsbrev,2013-12-12,2014,Myndighet,Göteborgs universitet,Utbildningsdepartementet,16,U2013/4248/UH (delvis);U2013/6154/UH;U2013/6543/UH (delvis);U2013/7502/UH;U2013/7484/SAM (delvis),True
 15465,Regleringsbrev,2013-12-12,2014,Myndighet,Södertörns högskola,Utbildningsdepartementet,16,U2013/4248/UH(delvis) U2013/6189/UH U2013/6189/UH(delvis);U2013/7527/UH;U2013/7484/SAM(delvis),True
 15466,Regleringsbrev,2013-12-19,2014,Myndighet,Universitets- och högskolerådet,Utbildningsdepartementet,16,U2013/7484/SAM (delvis);U2013/7792/UH,True
 15467,Regleringsbrev,2013-12-12,2014,Myndighet,Polarforskningssekretariatet,Utbildningsdepartementet,16,U2013/7532/F;U2013/7484/SAM(delvis),True
@@ -7444,7 +7444,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 15477,Regleringsbrev,2013-12-12,2014,Myndighet,Tillväxtverket,Näringsdepartementet,19;24,N2013/5704/ENT;N2013/5656/KLS,True
 15478,Regleringsbrev,2013-12-12,2014,Myndighet,Centrala etikprövningsnämnden,Utbildningsdepartementet,16,U2013/7533/F;U2013/7484/SAM(delvis),True
 15479,Regleringsbrev,2013-12-12,2014,Myndighet,regionala etikprövningsnämnder,Utbildningsdepartementet,16,U2013/7534/F;U2013/7484/SAM(delvis),True
-15480,Regleringsbrev,2013-12-12,2014,Anslag,3:13,Utbildningsdepartementet,16,"U2013/7535/F;U2013/7484/SAM(delvis);U2013/1298, 1343, 1344, 1383, 1485, 2400, 3714/F",True
+15480,Regleringsbrev,2013-12-12,2014,Anslag,3:13,Utbildningsdepartementet,16,U2013/7535/F;U2013/7484/SAM(delvis);U2013/1298;U2013/1343;U2013/1344;U2013/1383;U2013/1485;U2013/2400;U2013/3714/F,True
 15481,Regleringsbrev,2013-12-12,2014,Myndighet,Regionala etikprövningsnämnden i Göteborg,Utbildningsdepartementet,,U2013/7536/F;U2013/7484/SAM(delvis),True
 15482,Regleringsbrev,2013-12-12,2014,Myndighet,Regionala etikprövningsnämnden i Linköping,Utbildningsdepartementet,,U2013/7541/F;U2013/7484/SAM(delvis),True
 15483,Regleringsbrev,2013-12-12,2014,Myndighet,Regionala etikprövningsnämnden i Lund,Utbildningsdepartementet,,U2013/7537/F;U2013/7484/SAM(delvis),True
@@ -7459,9 +7459,9 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 15492,Regleringsbrev,2013-12-19,2014,Myndighet,Statens konstråd,Kulturdepartementet,17,Ku2013/2064/KO;Ku2013/2461/RFS (delvis),True
 15493,Regleringsbrev,2013-12-19,2014,Myndighet,Statens musikverk,Kulturdepartementet,17,Ku2013/1844/KO;Ku2013/1934/KO;Ku2013/2461/RFS (delvis),True
 15494,Regleringsbrev,2013-12-19,2014,Myndighet,Nämnden för hemslöjdsfrågor,Kulturdepartementet,17,Ku2013/1925/KO;Ku2013/2461/RFS (delvis),True
-15495,Regleringsbrev,2013-12-19,2014,Myndighet,Konstnärsnämnden,Kulturdepartementet,17,"Ku2013/1850, 1929/KO;Ku2013/2461/RFS(delvis), Ku2013/2462/KO (delvis)",True
+15495,Regleringsbrev,2013-12-19,2014,Myndighet,Konstnärsnämnden,Kulturdepartementet,17,Ku2013/1850;Ku2013/1929/KO;Ku2013/2461/RFS (delvis);Ku2013/2462/KO (delvis),True
 15496,Regleringsbrev,2013-12-19,2014,Myndighet,Statens centrum för arkitektur och design,Kulturdepartementet,17,Ku2013/2032/KO;Ku2013/2461/RFS (delvis),True
-15497,Regleringsbrev,2013-12-19,2014,Myndighet,Statens kulturråd,Kulturdepartementet,17,"Ku2012/740/1341/KO Ku2013/506,560,1068, 1078,1168,1237, 1324,1502, 2144/KO;Ku2013/2461/RFS (delvis);Ku2013/2462/KO (delvis)",True
+15497,Regleringsbrev,2013-12-19,2014,Myndighet,Statens kulturråd,Kulturdepartementet,17,Ku2012/740/KO;Ku2012/1341/KO;Ku2013/506;Ku2013/560;Ku2013/1068;Ku2013/1078;Ku2013/1168;Ku2013/1237;Ku2013/1324;Ku2013/1502;Ku2013/2144/KO;Ku2013/2461/RFS (delvis);Ku2013/2462/KO (delvis),True
 15498,Regleringsbrev,2013-12-19,2014,Anslag,1:11,Arbetsmarknadsdepartementet,14,A2013/4850/SV;A2013/4846/SV (delvis),True
 15499,Ändringsbeslut,2013-10-24,2013,Myndighet,Medlingsinstitutet,Arbetsmarknadsdepartementet,14,A2013/4067/ARM,True
 15500,Ändringsbeslut,2013-10-24,2013,Myndighet,Arbetsmiljöverket,Arbetsmarknadsdepartementet,14,A2013/4068/ARM,True
@@ -7515,7 +7515,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 15558,Regleringsbrev,2013-12-19,2014,Myndighet,Institutet för arbetsmarknads- och utbildningspolitisk utvärdering,Arbetsmarknadsdepartementet,14,A2013/4857/A;A2013/4846/SV (delvis),True
 15559,Regleringsbrev,2013-12-19,2014,Myndighet,Rådet för Europeiska socialfonden i Sverige,Arbetsmarknadsdepartementet,13;14,A2013/4856/A;A2013/4846/SV (delvis),True
 15560,Regleringsbrev,2013-12-19,2014,Myndighet,Lunds universitet,Utbildningsdepartementet,16,U2013/4248/UH;U2013/6131/UH U2013/6543/UH;U2013/7793/UH U2013/7484/SAM(delvis),True
-15561,Regleringsbrev,2013-12-12,2014,Myndighet,Stockholms universitet,Utbildningsdepartementet,16,"U2013/4248/UH (delvis) U2013/6150/UH U2013/6543/UH (delvis) U2013/7503/UH, U2013/7484/SAM(delvis)",True
+15561,Regleringsbrev,2013-12-12,2014,Myndighet,Stockholms universitet,Utbildningsdepartementet,16,U2013/4248/UH (delvis);U2013/6150/UH;U2013/6543/UH (delvis);U2013/7503/UH;U2013/7484/SAM (delvis),True
 15562,Regleringsbrev,2013-12-12,2014,Myndighet,Mälardalens högskola,Utbildningsdepartementet,16,U2013/4248/UH (delvis) U2013/6106/UH U2013/6543/UH (delvis) U2013/7526/UH U2013/7484/SAM(delvis),True
 15564,Regleringsbrev,2013-12-19,2014,Myndighet,Sjöfartsverket,Näringsdepartementet,22,N2013/1211/TE N2013/5853/KLS (delvis);N2013/5894/TE,True
 15565,Regleringsbrev,2013-12-19,2014,Myndighet,Ungdomsstyrelsen,Utbildningsdepartementet,17,U2013/7617/SAM;U2013/7806/UC;U2013/6072/UC,True
@@ -7822,7 +7822,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 15948,Ändringsbeslut,2014-05-22,2014,Myndighet,Specialpedagogiska skolmyndigheten,Utbildningsdepartementet,16,U2014/3617/S,True
 15949,Ändringsbeslut,2014-06-19,2014,Myndighet,Styrelsen för internationellt utvecklingssamarbete,Utrikesdepartementet,5;7,UF2014/39660/UD/USTYR;UF2014/40170/UD/USTYR,True
 15950,Ändringsbeslut,2014-05-22,2014,Anslag,5:2,Socialdepartementet,9,S2014/4326/FST,True
-15951,Ändringsbeslut,2014-06-19,2014,Anslag,1:1,Utrikesdepartementet,7,"UF2014/40166/UD/SP, UF2014/39660/UD/USTYR (delvis)",True
+15951,Ändringsbeslut,2014-06-19,2014,Anslag,1:1,Utrikesdepartementet,7,UF2014/40166/UD/SP;UF2014/39660/UD/USTYR (delvis),True
 15952,Ändringsbeslut,2014-05-28,2014,Myndighet,Tandvårds- och läkemedelsförmånsverket,Socialdepartementet,9,S2014/4441/FS,True
 15953,Ändringsbeslut,2014-05-28,2014,Anslag,1:1,Socialdepartementet,2,S2014/4446/ESA,True
 15954,Ändringsbeslut,2014-06-19,2014,Myndighet,Finansinspektionen,Finansdepartementet,2,Fi2014/2300,True
@@ -8032,16 +8032,16 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 16224,Regleringsbrev,2014-12-22,2015,Myndighet,Konstnärsnämnden,Kulturdepartementet,17,Ku2014/943/KO;Ku2014/2121/RFS(delvis),True
 16225,Regleringsbrev,2014-12-22,2015,Myndighet,Moderna museet,Kulturdepartementet,17,Ku2014/2121/RFS(delvis),True
 16226,Regleringsbrev,2014-12-22,2015,Myndighet,Nämnden för hemslöjdsfrågor,Kulturdepartementet,17,Ku2014/2121/RFS(delvis),True
-16227,Regleringsbrev,2014-12-22,2015,Myndighet,Blekinge tekniska högskola,Utbildningsdepartementet,16,"U2014/6016, 7567/UH;U2014/7521/SAM (delvis)",True
+16227,Regleringsbrev,2014-12-22,2015,Myndighet,Blekinge tekniska högskola,Utbildningsdepartementet,16,U2014/6016;U2014/7567/UH;U2014/7521/SAM (delvis),True
 16228,Regleringsbrev,2014-12-22,2015,Myndighet,Statens centrum för arkitektur och design,Kulturdepartementet,17,Ku2014/2121/RFS(delvis),True
 16229,Regleringsbrev,2014-12-22,2015,Myndighet,Statens konstråd,Kulturdepartementet,17,Ku2014/2121/RFS(delvis),True
-16230,Regleringsbrev,2014-12-22,2015,Myndighet,Statens musikverk,Kulturdepartementet,17,"Ku2014/347, 379, 2011/KO;Ku2014/2121/RFS (delvis)",True
+16230,Regleringsbrev,2014-12-22,2015,Myndighet,Statens musikverk,Kulturdepartementet,17,Ku2014/347;Ku2014/379;Ku2014/2011/KO;Ku2014/2121/RFS (delvis),True
 16231,Regleringsbrev,2014-12-22,2015,Anslag,1:2,Kulturdepartementet,17,Ku2014/2121/RFS (delvis),True
-16232,Regleringsbrev,2014-12-22,2015,Myndighet,Statens kulturråd,Kulturdepartementet,17,"Ku2014/1361, 1772, 1906, 2035/KO;Ku2014/2121/RFS(delvis)",True
+16232,Regleringsbrev,2014-12-22,2015,Myndighet,Statens kulturråd,Kulturdepartementet,17,Ku2014/1361;Ku2014/1772;Ku2014/1906;Ku2014/2035/KO;Ku2014/2121/RFS(delvis),True
 16233,Regleringsbrev,2014-12-18,2015,Anslag,3:1,Utbildningsdepartementet,13,U2014/7489/JÄM;U2014/7443/JÄM(delvis),True
 16234,Regleringsbrev,2014-12-18,2015,Myndighet,Folkhälsomyndigheten,Socialdepartementet,9,S2014/8929/SAM (delvis),True
 16235,Regleringsbrev,2014-12-22,2015,Myndighet,Forum för levande historia,Kulturdepartementet,17,Ku2014/2121/RFS(delvis),True
-16236,Regleringsbrev,2014-12-22,2015,Myndighet,Gymnastik- och idrottshögskolan,Utbildningsdepartementet,16,"U2014/5994, 7569/UH;U2014/7521/SAM (delvis)",True
+16236,Regleringsbrev,2014-12-22,2015,Myndighet,Gymnastik- och idrottshögskolan,Utbildningsdepartementet,16,U2014/5994;U2014/7569/UH;U2014/7521/SAM (delvis),True
 16237,Regleringsbrev,2014-12-22,2015,Myndighet,Institutet för språk och folkminnen,Kulturdepartementet,17,Ku2014/2121/RFS (delvis),True
 16238,Regleringsbrev,2014-12-18,2015,Anslag,1:2,Utrikesdepartementet,5,UF2014/79271/UD/PLAN(delvis);UF2014/80396/UD/SP,True
 16239,Regleringsbrev,2014-12-22,2015,Myndighet,Livrustkammaren och Skoklosters slott med Stiftelsen Hallwylska museet,Kulturdepartementet,17,Ku2014/2121/RFS (delvis),True
@@ -8049,7 +8049,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 16241,Regleringsbrev,2014-12-22,2015,Myndighet,Myndigheten för kulturanalys,Kulturdepartementet,17,Ku2014/2121/RFS (delvis),True
 16242,Regleringsbrev,2014-12-22,2015,Myndighet,Nationalmuseum med Prins Eugens Waldemarsudde,Kulturdepartementet,17,Ku2014/2121/RFS (delvis),True
 16243,Regleringsbrev,2014-12-22,2015,Myndighet,Naturhistoriska riksmuseet,Kulturdepartementet,17,Ku2014/2121/RFS (delvis),True
-16244,Regleringsbrev,2014-12-22,2015,Myndighet,Göteborgs universitet,Utbildningsdepartementet,16,"U2014/6005, 7556/UH;U2014/7521/SAM (delvis)",True
+16244,Regleringsbrev,2014-12-22,2015,Myndighet,Göteborgs universitet,Utbildningsdepartementet,16,U2014/6005;U2014/7556/UH;U2014/7521/SAM (delvis),True
 16245,Regleringsbrev,2014-12-22,2015,Myndighet,Riksarkivet,Kulturdepartementet,17,Ku2014/2121/RFS(delvis),True
 16246,Regleringsbrev,2014-12-22,2015,Myndighet,Revisorsnämnden,Justitiedepartementet,,Ju2014/7878/DOM,True
 16247,Regleringsbrev,2014-12-22,2015,Myndighet,Riksutställningar,Kulturdepartementet,17,Ku2014/2121/RFS (delvis),True
@@ -8086,7 +8086,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 16301,Regleringsbrev,2014-12-18,2015,Myndighet,Statens servicecenter,Socialdepartementet,,S2014/8969/SFÖ,True
 16302,Regleringsbrev,2014-12-18,2015,Anslag,2:3 och 2:3 (2014),Socialdepartementet,9,S2014/8929/SAM (delvis),True
 16303,Regleringsbrev,2014-12-18,2015,Anslag,1:8,Socialdepartementet,9,S2014/8929/SAM (delvis),True
-16305,Regleringsbrev,2014-12-22,2015,Anslag,2:63 och 2:65,Utbildningsdepartementet,16,"U2014/5990, 6006, 7584/UH;U2014/7521/SAM (delvis)",True
+16305,Regleringsbrev,2014-12-22,2015,Anslag,2:63 och 2:65,Utbildningsdepartementet,16,U2014/5990;U2014/6006;U2014/7584/UH;U2014/7521/SAM (delvis),True
 16306,Regleringsbrev,2014-12-22,2015,Anslag,2:65,Utbildningsdepartementet,16,U2014/7521/SAM (delvis);U2014/7587/UH,True
 16307,Regleringsbrev,2014-12-19,2015,Anslag,1:10,Försvarsdepartementet,6,Fö2014/358/SSK;Fö2014/2097/ESL (delvis),True
 16308,Regleringsbrev,2014-12-22,2015,Myndighet,Överklagandenämnden för studiestöd,Utbildningsdepartementet,15,U2014/7522/SAM (delvis);U2014/7543/SF,True
@@ -8114,8 +8114,8 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 16337,Regleringsbrev,2014-12-18,2015,Myndighet,Marknadsdomstolen,Justitiedepartementet,18,Ju2014/7710/KO;Ju2014/7754/KO (delvis),True
 16338,Regleringsbrev,2014-12-18,2015,Myndighet,Konsumentverket,Justitiedepartementet,18,Ju2014/7711/KO;Ju2014/7754/KO (delvis),True
 16339,Regleringsbrev,2014-12-18,2015,Myndighet,Verket för innovationssystem,Näringsdepartementet,24,N2014/5256/FIN;N2014/5296/KLS (delvis);N2014/4460/FIN,True
-16340,Regleringsbrev,2014-12-22,2015,Myndighet,Högskolan Dalarna,Utbildningsdepartementet,16,"U2014/6008, 7571/UH;U2014/7521/SAM (delvis)",True
-16341,Regleringsbrev,2014-12-22,2015,Myndighet,Högskolan i Borås,Utbildningsdepartementet,16,"U2014/5998, 7570/UH;U2014/7521/SAM (delvis)",True
+16340,Regleringsbrev,2014-12-22,2015,Myndighet,Högskolan Dalarna,Utbildningsdepartementet,16,U2014/6008;U2014/7571/UH;U2014/7521/SAM (delvis),True
+16341,Regleringsbrev,2014-12-22,2015,Myndighet,Högskolan i Borås,Utbildningsdepartementet,16,U2014/5998;U2014/7570/UH;U2014/7521/SAM (delvis),True
 16342,Regleringsbrev,2014-12-18,2015,Myndighet,Allmänna reklamationsnämnden,Justitiedepartementet,18,Ju2014/7712/KO;Ju2014/7754/KO (delvis),True
 16343,Regleringsbrev,2014-12-18,2015,Myndighet,Fastighetsmäklarinspektionen,Justitiedepartementet,18,Ju2014/7713/KO;Ju2014/7754/KO (delvis),True
 16344,Regleringsbrev,2014-12-18,2015,Anslag,2:6,Justitiedepartementet,18,Ju2014/7714/KO;Ju2014/7754/KO,True
@@ -8124,7 +8124,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 16349,Regleringsbrev,2014-12-22,2015,Myndighet,Svenska Unescorådet,Utbildningsdepartementet,16,U2014/7521/SAM (delvis);U2014/7536/UH,True
 16350,Regleringsbrev,2014-12-19,2015,Myndighet,Försvarsexportmyndigheten,Försvarsdepartementet,6,Fö2014/125/ESL (delvis);Fö2014/253/MFU;Fö2014/313/MFU,True
 16351,Regleringsbrev,2014-12-22,2015,Anslag,2:64,Utbildningsdepartementet,16,U2014/7521/SAM(delvis) U2014/7585/UH,True
-16352,Regleringsbrev,2014-12-22,2015,Anslag,2:64,Utbildningsdepartementet,16,"U2014/7521/SAM (delvis);U2014/6564, 6579, 6852, 7586/UH",True
+16352,Regleringsbrev,2014-12-22,2015,Anslag,2:64,Utbildningsdepartementet,16,U2014/7521/SAM (delvis);U2014/6564;U2014/6579;U2014/6852;U2014/7586/UH,True
 16354,Regleringsbrev,2014-12-18,2015,Myndighet,Tandvårds- och läkemedelsförmånsverket,Socialdepartementet,9,S2014/8929/SAM (delvis),True
 16355,Regleringsbrev,2014-12-22,2015,Anslag,1:14,Miljödepartementet,20,M2014/2972/S (delvis),True
 16356,Ändringsbeslut,2014-11-20,2014,Anslag,1:5,Arbetsmarknadsdepartementet,13,A2014/4084/IU;A2014/3850/IU,True
@@ -8151,14 +8151,14 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 16383,Regleringsbrev,2014-12-18,2015,Myndighet,Regeringskansliet,Statsrådsberedningen,1,SB2014/8455/FCK(delvis),True
 16386,Regleringsbrev,2014-12-18,2015,Anslag,1:7,Näringsdepartementet,24,N2014/5261/ENT;N2014/5296/KLS (delvis),True
 16387,Regleringsbrev,2014-12-18,2015,Anslag,1:4,Utrikesdepartementet,5,UF2014/79271/UD/PLAN (delvis);UF2014/80414/UD/KC,True
-16388,Regleringsbrev,2014-12-22,2015,Myndighet,Högskolan i Gävle,Utbildningsdepartementet,16,"U2014/879, 5853, 7572/UH;U2014/7521/SAM (delvis)",True
-16389,Regleringsbrev,2014-12-22,2015,Myndighet,Karolinska institutet,Utbildningsdepartementet,16,"U2014/1544, 5981, 7560/UH;U2014/7521/SAM (delvis)",True
-16390,Regleringsbrev,2014-12-22,2015,Myndighet,Högskolan i Halmstad,Utbildningsdepartementet,16,"U2014/6010, 7573/UH;U2014/7521/SAM (delvis)",True
-16391,Regleringsbrev,2014-12-22,2015,Myndighet,Högskolan i Skövde,Utbildningsdepartementet,16,"U2014/6018, 7575/UH;U2014/7521/SAM (delvis)",True
-16392,Regleringsbrev,2014-12-22,2015,Myndighet,Högskolan Kristianstad,Utbildningsdepartementet,16,"U2014/6035, 7574/UH;U2014/7521/SAM (delvis)",True
-16393,Regleringsbrev,2014-12-22,2015,Myndighet,Högskolan Väst,Utbildningsdepartementet,16,"U2014/6037, 7576/UH;U2014/7521/SAM (delvis)",True
-16394,Regleringsbrev,2014-12-22,2015,Myndighet,Karlstads universitet,Utbildningsdepartementet,16,"U2014/6022, 7563/UH;U2014/7521/SAM (delvis)",True
-16395,Regleringsbrev,2014-12-22,2015,Myndighet,Konstfack,Utbildningsdepartementet,16,"U2014/5929, 7577/UH;U2014/7521/SAM (delvis)",True
+16388,Regleringsbrev,2014-12-22,2015,Myndighet,Högskolan i Gävle,Utbildningsdepartementet,16,U2014/879;U2014/5853;U2014/7572/UH;U2014/7521/SAM (delvis),True
+16389,Regleringsbrev,2014-12-22,2015,Myndighet,Karolinska institutet,Utbildningsdepartementet,16,U2014/1544;U2014/5981;U2014/7560/UH;U2014/7521/SAM (delvis),True
+16390,Regleringsbrev,2014-12-22,2015,Myndighet,Högskolan i Halmstad,Utbildningsdepartementet,16,U2014/6010;U2014/7573/UH;U2014/7521/SAM (delvis),True
+16391,Regleringsbrev,2014-12-22,2015,Myndighet,Högskolan i Skövde,Utbildningsdepartementet,16,U2014/6018;U2014/7575/UH;U2014/7521/SAM (delvis),True
+16392,Regleringsbrev,2014-12-22,2015,Myndighet,Högskolan Kristianstad,Utbildningsdepartementet,16,U2014/6035;U2014/7574/UH;U2014/7521/SAM (delvis),True
+16393,Regleringsbrev,2014-12-22,2015,Myndighet,Högskolan Väst,Utbildningsdepartementet,16,U2014/6037;U2014/7576/UH;U2014/7521/SAM (delvis),True
+16394,Regleringsbrev,2014-12-22,2015,Myndighet,Karlstads universitet,Utbildningsdepartementet,16,U2014/6022;U2014/7563/UH;U2014/7521/SAM (delvis),True
+16395,Regleringsbrev,2014-12-22,2015,Myndighet,Konstfack,Utbildningsdepartementet,16,U2014/5929;U2014/7577/UH;U2014/7521/SAM (delvis),True
 16396,Regleringsbrev,2014-12-19,2015,Myndighet,Post- och telestyrelsen,Näringsdepartementet,22,N2014/5330/ITP;N2014/1214/ITP;N2014/4561/ITP,True
 16397,Regleringsbrev,2014-12-18,2015,Myndighet,Bolagsverket,Näringsdepartementet,24,N2014/5265/ENT;N2014/5296/KLS (delvis),True
 16398,Regleringsbrev,2014-12-19,2015,Anslag,1:11 och 1:14,Näringsdepartementet,22,N2014/5323/TE;N2014/5334/KLS (delvis),True
@@ -8187,9 +8187,9 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 16424,Regleringsbrev,2014-12-22,2015,Myndighet,Havs- och vattenmyndigheten,Miljödepartementet,20,M2014/2972/S (delvis);M2014/676/Nm;M2014/1830/Nm,True
 16425,Regleringsbrev,2014-12-18,2015,Anslag,6:6,Justitiedepartementet,1,Ju2014/7419/D;Ju2014/7806/Å (delvis),True
 16426,Regleringsbrev,2014-12-18,2015,Anslag,6:1,Justitiedepartementet,1,Ju2013/8433/D;Ju2014/5626/D;Ju2014/6705/D,True
-16427,Regleringsbrev,2014-12-22,2015,Myndighet,Kungl. Konsthögskolan,Utbildningsdepartementet,16,"U2014/5959, 7578/UH;U2014/7521/SAM (delvis)",True
-16428,Regleringsbrev,2014-12-22,2015,Myndighet,Kungl. Musikhögskolan i Stockholm,Utbildningsdepartementet,16,"U2014/6019, 7579/UH;U2014/7521/SAM (delvis)",True
-16429,Regleringsbrev,2014-12-22,2015,Myndighet,Kungl. Tekniska högskolan,Utbildningsdepartementet,16,"U2014/6021, 6793, 7561/UH;U2014/7521/SAM (delvis)",True
+16427,Regleringsbrev,2014-12-22,2015,Myndighet,Kungl. Konsthögskolan,Utbildningsdepartementet,16,U2014/5959;U2014/7578/UH;U2014/7521/SAM (delvis),True
+16428,Regleringsbrev,2014-12-22,2015,Myndighet,Kungl. Musikhögskolan i Stockholm,Utbildningsdepartementet,16,U2014/6019;U2014/7579/UH;U2014/7521/SAM (delvis),True
+16429,Regleringsbrev,2014-12-22,2015,Myndighet,Kungl. Tekniska högskolan,Utbildningsdepartementet,16,U2014/6021;U2014/6793;U2014/7561/UH;U2014/7521/SAM (delvis),True
 16430,Regleringsbrev,2014-12-22,2015,Anslag,1:25 och 1:26,Landsbygdsdepartementet,23,L2014/1820/ELT;L2014/2433/ELT;L2014/3112/EV,True
 16431,Ändringsbeslut,2014-12-11,2014,Myndighet,"Forskningsrådet för hälsa, arbetsliv och välfärd",Socialdepartementet,9,S2014/8615/SAM,True
 16432,Ändringsbeslut,2014-12-11,2014,Myndighet,Inspektionen för vård och omsorg,Socialdepartementet,9,S2014/8615/SAM (delvis),True
@@ -8200,11 +8200,11 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 16437,Regleringsbrev,2014-12-18,2015,Myndighet,Boverket,Socialdepartementet,18,S2014/8774/SAM (delvis),True
 16438,Regleringsbrev,2014-12-18,2015,Myndighet,Styrelsen för ackreditering och teknisk kontroll,Utrikesdepartementet,24,UF2014/80015/UD/FIM (delvis);UF2014/80421/UD/FIM,True
 16439,Regleringsbrev,2014-12-18,2015,Myndighet,Läkemedelsverket,Socialdepartementet,9,S2014/8929/SAM (delvis),True
-16440,Regleringsbrev,2014-12-22,2015,Myndighet,Stockholms konstnärliga högskola,Utbildningsdepartementet,16,"U2014/6009, 7582/UH;U2014/7521/SAM (delvis)",True
-16441,Regleringsbrev,2014-12-22,2015,Myndighet,Södertörns högskola,Utbildningsdepartementet,16,"U2014/6017, 7583/UH;U2014/7521/SAM (delvis)",True
+16440,Regleringsbrev,2014-12-22,2015,Myndighet,Stockholms konstnärliga högskola,Utbildningsdepartementet,16,U2014/6009;U2014/7582/UH;U2014/7521/SAM (delvis),True
+16441,Regleringsbrev,2014-12-22,2015,Myndighet,Södertörns högskola,Utbildningsdepartementet,16,U2014/6017;U2014/7583/UH;U2014/7521/SAM (delvis),True
 16442,Regleringsbrev,2014-12-22,2015,Myndighet,Försvarshögskolan,Utbildningsdepartementet,16,U2014/7521/SAM (delvis);U2014/7568/UH,True
 16443,Regleringsbrev,2014-12-22,2015,Myndighet,Strålsäkerhetsmyndigheten,Miljödepartementet,6,M2014/2957/S;M2014/2972/S (delvis),True
-16444,Ändringsbeslut,2014-12-11,2014,Anslag,2:64,Utbildningsdepartementet,16,"U2014/6315, 6418,6445, 6446, 6462, 6539, 6550, 6748 och 6779/UH;U2014/7356/UH",True
+16444,Ändringsbeslut,2014-12-11,2014,Anslag,2:64,Utbildningsdepartementet,16,U2014/6315;U2014/6418;U2014/6445;U2014/6446;U2014/6462;U2014/6539;U2014/6550;U2014/6748;U2014/6779/UH;U2014/7356/UH,True
 16445,Regleringsbrev,2014-12-19,2015,Anslag,1:7,Försvarsdepartementet,6,Fö2014/125/ESL (delvis);Fö2014/2097/ESL (delvis),True
 16446,Ändringsbeslut,2014-12-22,2014,Myndighet,Myndigheten för radio och tv,Kulturdepartementet,1,Ku2014/2135/MFI,True
 16447,Ändringsbeslut,2014-11-20,2014,Anslag,1:1,Utrikesdepartementet,5,UF2014/73823/UD/PLAN,True
@@ -8222,11 +8222,11 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 16460,Regleringsbrev,2014-12-22,2015,Anslag,1:14,Justitiedepartementet,4,Ju2014/7708/Krim;Ju2014/7900/PO(delvis),True
 16461,Regleringsbrev,2014-12-18,2015,Myndighet,Inspektionen för vård och omsorg,Socialdepartementet,9,S2014/8929/SAM(delvis),True
 16462,Regleringsbrev,2014-12-22,2015,Myndighet,Institutet för arbetsmarknads- och utbildningspolitisk utvärdering,Arbetsmarknadsdepartementet,14,A2014/4477/A;A2014/4486/SV(delvis),True
-16463,Regleringsbrev,2014-12-22,2015,Myndighet,universitet och högskolor,Utbildningsdepartementet,,"U2014/7521/SAM (delvis);U2014/6413, 7553/UH",True
-16464,Regleringsbrev,2014-12-22,2015,Myndighet,Linköpings universitet,Utbildningsdepartementet,16,"U2014/5958, 7559/UH;U2014/7521/SAM (delvis)",True
-16465,Regleringsbrev,2014-12-22,2015,Myndighet,Linnéuniversitetet,Utbildningsdepartementet,16,"U2014/5960, 7564/UH;U2014/7521/SAM (delvis)",True
-16466,Regleringsbrev,2014-12-22,2015,Myndighet,Luleå tekniska universitet,Utbildningsdepartementet,16,"U2014/5901, 7562/UH;U2014/7521/SAM (delvis)",True
-16467,Regleringsbrev,2014-12-22,2015,Myndighet,Lunds universitet,Utbildningsdepartementet,16,"U2014/5539/UH (delvis);U2014/5961, 7555/UH;U2014/7521/SAM (delvis)",True
+16463,Regleringsbrev,2014-12-22,2015,Myndighet,universitet och högskolor,Utbildningsdepartementet,,U2014/7521/SAM (delvis);U2014/6413;U2014/7553/UH,True
+16464,Regleringsbrev,2014-12-22,2015,Myndighet,Linköpings universitet,Utbildningsdepartementet,16,U2014/5958;U2014/7559/UH;U2014/7521/SAM (delvis),True
+16465,Regleringsbrev,2014-12-22,2015,Myndighet,Linnéuniversitetet,Utbildningsdepartementet,16,U2014/5960;U2014/7564/UH;U2014/7521/SAM (delvis),True
+16466,Regleringsbrev,2014-12-22,2015,Myndighet,Luleå tekniska universitet,Utbildningsdepartementet,16,U2014/5901;U2014/7562/UH;U2014/7521/SAM (delvis),True
+16467,Regleringsbrev,2014-12-22,2015,Myndighet,Lunds universitet,Utbildningsdepartementet,16,U2014/5539/UH (delvis);U2014/5961;U2014/7555/UH;U2014/7521/SAM (delvis),True
 16468,Regleringsbrev,2014-12-22,2015,Anslag,1:7,Miljödepartementet,20,M2014/2972/S (delvis),True
 16469,Regleringsbrev,2014-12-22,2015,Anslag,1:15,Miljödepartementet,20,M2014/2454/S;M2014/2972/S (delvis),True
 16470,Regleringsbrev,2014-12-18,2015,Anslag,1:20,Näringsdepartementet,24,N2014/5270/KLS;N2014/5296/KLS (delvis),True
@@ -8252,28 +8252,28 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 16495,Regleringsbrev,2014-12-18,2015,Myndighet,Inspektionen för socialförsäkringen,Socialdepartementet,10,S2013/1676/SF;S2014/943/SF;S2014/7714/SF,True
 16496,Regleringsbrev,2014-12-19,2015,Anslag,2:6,Försvarsdepartementet,6,Fö2014/2097/ESL (delvis),True
 16497,Ändringsbeslut,2014-11-27,2014,Myndighet,Folkhälsomyndigheten,Socialdepartementet,9,S2014/8442/FS,True
-16498,Regleringsbrev,2014-12-22,2015,Myndighet,Örebro universitet,Utbildningsdepartementet,16,"U2014/5993, 7565/UH;U2014/7521/SAM (delvis)",True
-16499,Regleringsbrev,2014-12-22,2015,Myndighet,Umeå universitet,Utbildningsdepartementet,16,"U2014/6020, 7558/UH;U2014/7521/SAM (delvis)",True
+16498,Regleringsbrev,2014-12-22,2015,Myndighet,Örebro universitet,Utbildningsdepartementet,16,U2014/5993;U2014/7565/UH;U2014/7521/SAM (delvis),True
+16499,Regleringsbrev,2014-12-22,2015,Myndighet,Umeå universitet,Utbildningsdepartementet,16,U2014/6020;U2014/7558/UH;U2014/7521/SAM (delvis),True
 16500,Ändringsbeslut,2014-12-04,2014,Myndighet,Statens jordbruksverk,Landsbygdsdepartementet,23,L2014/849/LB;L2014/2285/LB (delvis),True
 16501,Ändringsbeslut,2014-12-04,2014,Myndighet,E-hälsomyndigheten,Socialdepartementet,9,S2014/8607/FS,True
 16502,Regleringsbrev,2014-12-18,2015,Anslag,2:5,Utrikesdepartementet,24,UF2014/80015/UD/FIM (delvis);UF2014/80424/UD/IH,True
 16505,Regleringsbrev,2014-12-18,2015,Anslag,1:9 (2014),Justitiedepartementet,8,Ju2014/7797/SIM;Ju2014/7804/SIM (delvis),True
-16506,Regleringsbrev,2014-12-18,2015,Anslag,1:1,Utrikesdepartementet,7,"UF2014/80014/UD/USTYR (delvis), UF2014/80453/UD/SP",True
+16506,Regleringsbrev,2014-12-18,2015,Anslag,1:1,Utrikesdepartementet,7,UF2014/80014/UD/USTYR (delvis);UF2014/80453/UD/SP,True
 16507,Ändringsbeslut,2014-12-11,2014,Myndighet,Kronofogdemyndigheten,Finansdepartementet,3,Fi2014/4428,True
 16508,Regleringsbrev,2014-12-22,2015,Myndighet,Polismyndigheten,Justitiedepartementet,4,Ju2014/7348/PO;Ju2014/6645/PO;Ju2014/6649/PO,True
 16509,Regleringsbrev,2014-12-22,2015,Myndighet,Statens skolinspektion,Utbildningsdepartementet,16,U2013/5175/GV;U2014/7521/SAM (delvis);U2014/7535/GV,True
 16510,Regleringsbrev,2014-12-18,2015,Anslag,1:3,Utrikesdepartementet,5,UF2014/79271/UD/PLAN(delvis);UF2014/80449/UD/EU,True
 16511,Regleringsbrev,2014-12-18,2015,Anslag,2:6,Utrikesdepartementet,24,UF2014/80015/UD/FIM (delvis);UF2014/80437/UD/FIM,True
-16512,Regleringsbrev,2014-12-22,2015,Myndighet,Uppsala universitet,Utbildningsdepartementet,16,"U2014/5539/UH (delvis);U2014/6073, 7554/UH;U2014/7521/SAM (delvis)",True
+16512,Regleringsbrev,2014-12-22,2015,Myndighet,Uppsala universitet,Utbildningsdepartementet,16,U2014/5539/UH (delvis);U2014/6073;U2014/7554/UH;U2014/7521/SAM (delvis),True
 16513,Regleringsbrev,2014-12-18,2015,Anslag,6:4,Statsrådsberedningen,1,SB2014/8455/FCK(delvis),True
-16514,Regleringsbrev,2014-12-22,2015,Myndighet,Malmö högskola,Utbildningsdepartementet,16,"U2014/6046, 7580/UH;U2014/7521/SAM (delvis)",True
+16514,Regleringsbrev,2014-12-22,2015,Myndighet,Malmö högskola,Utbildningsdepartementet,16,U2014/6046;U2014/7580/UH;U2014/7521/SAM (delvis),True
 16515,Regleringsbrev,2014-12-18,2015,Anslag,1:1,Utrikesdepartementet,7,UF2014/80014/UD/USTYR (delvis);UF2014/80450/UD/SP,True
 16516,Regleringsbrev,2014-12-18,2015,Myndighet,Styrelsen för internationellt utvecklingssamarbete,Utrikesdepartementet,5;7,UF2014/79271/UD/PLAN (delvis);UF2014/80440/UD/USTYR;UF2014/80014/UD/USTYR (delvis),True
 16517,Regleringsbrev,2014-12-18,2015,Myndighet,Svenska institutet för europapolitiska studier,Statsrådsberedningen,1,SB2014/8455/FCK,True
 16518,Regleringsbrev,2014-12-18,2015,Myndighet,Avvecklingsmyndigheten för vissa myndigheter inom vård- och omsorgsområdet,Socialdepartementet,,S2014/8967/FS,True
-16519,Regleringsbrev,2014-12-22,2015,Myndighet,Mittuniversitetet,Utbildningsdepartementet,16,"U2014/1129, 6003, 7566/UH;U2014/7521/SAM (delvis)",True
-16520,Regleringsbrev,2014-12-22,2015,Myndighet,Mälardalens högskola,Utbildningsdepartementet,16,"U2014/5991, 7581/UH;U2014/7521/SAM (delvis)",True
-16521,Regleringsbrev,2014-12-22,2015,Myndighet,Stockholms universitet,Utbildningsdepartementet,16,"U2014/5539/UH;U2014/5992, 7557/UH;U2014/7521/SAM (delvis)",True
+16519,Regleringsbrev,2014-12-22,2015,Myndighet,Mittuniversitetet,Utbildningsdepartementet,16,U2014/1129;U2014/6003;U2014/7566/UH;U2014/7521/SAM (delvis),True
+16520,Regleringsbrev,2014-12-22,2015,Myndighet,Mälardalens högskola,Utbildningsdepartementet,16,U2014/5991;U2014/7581/UH;U2014/7521/SAM (delvis),True
+16521,Regleringsbrev,2014-12-22,2015,Myndighet,Stockholms universitet,Utbildningsdepartementet,16,U2014/5539/UH;U2014/5992;U2014/7557/UH;U2014/7521/SAM (delvis),True
 16523,Regleringsbrev,2014-12-18,2015,Anslag,1:1,Utrikesdepartementet,7,UF2014/80014/UD/USTYR (delvis);UF2014/80451/UD/SP,True
 16526,Regleringsbrev,2014-12-18,2015,Anslag,1:1,Utrikesdepartementet,7,UF2014/80014/UD/USTYR (delvis);UF2014/80448/UD/SP,True
 16527,Regleringsbrev,2014-12-18,2015,Anslag,1:1,Utrikesdepartementet,7,UF2014/80014/UD/USTYR (delvis);UF2014/80455/UD/SP,True
@@ -8412,7 +8412,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 16684,Ändringsbeslut,2015-05-07,2015,Myndighet,Statens institutionsstyrelse,Socialdepartementet,9,S2015/3490/FST,True
 16685,Ändringsbeslut,2015-04-30,2015,Myndighet,Arbetsförmedlingen,Arbetsmarknadsdepartementet,13;14,A2015/1411/A,True
 16686,Ändringsbeslut,2015-06-25,2015,Myndighet,Sveriges lantbruksuniversitet,Näringsdepartementet,23,N2015/5055/SK;N2015/4839/SK;N2015/4922/KLS(delvis),True
-16687,Ändringsbeslut,2015-04-30,2015,Anslag,2:64,Utbildningsdepartementet,16,"U2014/5731/UH (delvis);U2015/1103,1229,1347/UH;U2015/2675/UH",True
+16687,Ändringsbeslut,2015-04-30,2015,Anslag,2:64,Utbildningsdepartementet,16,U2014/5731/UH (delvis);U2015/1103;U2015/1229;U2015/1347/UH;U2015/2675/UH,True
 16688,Ändringsbeslut,2015-05-07,2015,Myndighet,Kommerskollegium,Utrikesdepartementet,7;24,UF2014/76771/UD/FIM;UF2015/28046/UD/FIM,True
 16689,Ändringsbeslut,2015-05-13,2015,Myndighet,Statens skolverk,Utbildningsdepartementet,16,U2015/2959/S,True
 16690,Ändringsbeslut,2015-06-17,2015,Myndighet,Sveriges Domstolar,Justitiedepartementet,4,Ju2015/05045/DOM,True
@@ -8425,7 +8425,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 16697,Ändringsbeslut,2015-06-04,2015,Myndighet,E-hälsomyndigheten,Socialdepartementet,9,S2015/4190/FS,True
 16698,Ändringsbeslut,2015-09-03,2015,Anslag,1:1,Finansdepartementet,2,Fi2015/166;Fi2015/3395(delvis),True
 16699,Ändringsbeslut,2015-06-04,2015,Anslag,1:1,Näringsdepartementet,18,N2015/4608/PUB,True
-16700,Ändringsbeslut,2015-05-28,2015,Anslag,2:64,Utbildningsdepartementet,16,"U2015/2316, 2808, 3233/UH",True
+16700,Ändringsbeslut,2015-05-28,2015,Anslag,2:64,Utbildningsdepartementet,16,U2015/2316;U2015/2808;U2015/3233/UH,True
 16701,Ändringsbeslut,2015-06-25,2015,Myndighet,Statens beredning för medicinsk och social utvärdering,Socialdepartementet,9,S2015/04646/FS,True
 16702,Ändringsbeslut,2015-05-28,2015,Myndighet,Trafikverket,Näringsdepartementet,22,N2015/4464/SUBT;N2015/2325/SUBT,True
 16703,Ändringsbeslut,2015-06-04,2015,Anslag,3:1,Socialdepartementet,13,S2015/4188/JÄM,True
@@ -8765,7 +8765,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 17099,Regleringsbrev,2015-12-10,2016,Myndighet,Valmyndigheten,Kulturdepartementet,1,Ku2015/02905/LS (delvis),True
 17100,Regleringsbrev,2015-12-17,2016,Myndighet,Forum för levande historia,Kulturdepartementet,17,Ku2015/02965/LS (delvis),True
 17101,Regleringsbrev,2015-12-17,2016,Myndighet,Nämnden för statligt stöd till trossamfund,Kulturdepartementet,17,Ku2015/00085/D;Ku2015/02965/LS (delvis),True
-17102,Regleringsbrev,2015-12-18,2016,Anslag,2:63,Utbildningsdepartementet,16,"U2015/04961,05002/UH;U2015/05895/SAM (delvis);U2015/05984/UH",True
+17102,Regleringsbrev,2015-12-18,2016,Anslag,2:63,Utbildningsdepartementet,16,U2015/04961;U2015/05002/UH;U2015/05895/SAM (delvis);U2015/05984/UH,True
 17103,Regleringsbrev,2015-12-10,2016,Anslag,6:6,Kulturdepartementet,1,Ku2015/00729/D;Ku2015/01518/D;Ku2015/02905/LS (delvis),True
 17104,Regleringsbrev,2015-12-10,2016,Anslag,13:2,Kulturdepartementet,17,Ku2015/02965/LS (delvis),True
 17105,Regleringsbrev,2015-12-17,2016,Anslag,1:14,Näringsdepartementet,24,N2015/08877/IF;N2015/08707/KLS (delvis);N2015/02318/IF,True
@@ -8792,7 +8792,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 17131,Regleringsbrev,2015-12-18,2016,Myndighet,Blekinge tekniska högskola,Utbildningsdepartementet,16,U2015/04996/UH;U2015/05895/SAM(delvis);U2015/05967/UH,True
 17132,Regleringsbrev,2015-12-18,2016,Myndighet,Försvarshögskolan,Utbildningsdepartementet,16,U2015/05895/SAM(delvis);U2015/05968/UH,True
 17133,Regleringsbrev,2015-12-18,2016,Myndighet,Gymnastik- och idrottshögskolan,Utbildningsdepartementet,16,U2015/04985/UH;U2015/05895/SAM(delvis);U2015/05969/UH,True
-17134,Regleringsbrev,2015-12-18,2016,Myndighet,Göteborgs universitet,Utbildningsdepartementet,16,"U2015/04976,05013/UH;U2015/05895/SAM(delvis);U2015/05956/UH",True
+17134,Regleringsbrev,2015-12-18,2016,Myndighet,Göteborgs universitet,Utbildningsdepartementet,16,U2015/04976;U2015/05013/UH;U2015/05895/SAM(delvis);U2015/05956/UH,True
 17135,Regleringsbrev,2015-12-10,2016,Anslag,13:5,Kulturdepartementet,17,Ku2015/02965/LS (delvis),True
 17136,Regleringsbrev,2015-12-17,2016,Anslag,13:6,Kulturdepartementet,17,Ku2015/02965/LS (delvis),True
 17137,Regleringsbrev,2015-12-10,2016,Anslag,13:3,Kulturdepartementet,17,Ku2015/02965/LS (delvis),True
@@ -8844,7 +8844,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 17185,Regleringsbrev,2015-12-17,2016,Myndighet,Inspektionen för socialförsäkringen,Socialdepartementet,10,S2015/07997/RS,True
 17186,Ändringsbeslut,2015-11-26,2015,Myndighet,Styrelsen för internationellt utvecklingssamarbete,Utrikesdepartementet,5;7,UD2015/10647/USTYR,True
 17187,Regleringsbrev,2015-12-17,2016,Myndighet,Kemikalieinspektionen,Miljö- och energidepartementet,20,M2015/04303/S (delvis);M2015/03443/Ke;M2015/00216/Ke,True
-17189,Regleringsbrev,2015-12-18,2016,Myndighet,universitet och högskolor,Utbildningsdepartementet,,"U2015/01913,05184/UH;U2015/04976/UH(delvis) U2015/05895/SAM(delvis) U2015/05953/UH",True
+17189,Regleringsbrev,2015-12-18,2016,Myndighet,universitet och högskolor,Utbildningsdepartementet,,U2015/01913;U2015/05184/UH;U2015/04976/UH(delvis) U2015/05895/SAM(delvis) U2015/05953/UH,True
 17193,Regleringsbrev,2015-12-18,2016,Anslag,1:23,Näringsdepartementet,23,N2015/08978/FJR;N2015/08902/KLS(delvis),True
 17199,Regleringsbrev,2015-12-10,2016,Anslag,1:4,Utrikesdepartementet,5,UD2015/11557/PLAN (delvis);UD2015/11681/KC,True
 17202,Regleringsbrev,2015-12-17,2016,Myndighet,Rättsmedicinalverket,Justitiedepartementet,4,Ju2015/09812/LED (delvis),True
@@ -8854,7 +8854,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 17208,Regleringsbrev,2015-12-17,2016,Anslag,1:9,Socialdepartementet,9,S2015/08135/RS (delvis),True
 17211,Regleringsbrev,2015-12-17,2016,Myndighet,Myndigheten för vård- och omsorgsanalys,Socialdepartementet,9,S2015/04519/RS;S2015/08135/RS (delvis),True
 17212,Regleringsbrev,2015-12-17,2016,Anslag,1:8,Miljö- och energidepartementet,20,M2015/04303/S (delvis),True
-17215,Regleringsbrev,2015-12-18,2016,Anslag,2:64 och 2:65,Utbildningsdepartementet,16,"U2014/05731/UH;U2015/02697,04412, 05052,05270/UH;U2015/05895/SAM(delvis)",True
+17215,Regleringsbrev,2015-12-18,2016,Anslag,2:64 och 2:65,Utbildningsdepartementet,16,U2014/05731/UH;U2015/02697;U2015/04412;U2015/05052;U2015/05270/UH;U2015/05895/SAM(delvis),True
 17216,Regleringsbrev,2015-12-17,2016,Myndighet,"Forskningsrådet för miljö, areella näringar och samhällsbyggande",Miljö- och energidepartementet,20,M2015/04303/S(delvis);M2015/03979/Mm,True
 17217,Ändringsbeslut,2015-11-19,2015,Anslag,1:8,Miljö- och energidepartementet,20,M2015/03873/S,True
 17220,Regleringsbrev,2015-12-18,2016,Anslag,1:10,Försvarsdepartementet,6,Fö2015/00171/ESL;Fö2015/00288/ESL;Fö2015/00411/ESL,True
@@ -8867,7 +8867,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 17227,Regleringsbrev,2015-12-17,2016,Anslag,1:13,Miljö- och energidepartementet,20,M2014/02765/Kl;M2015/00787/Kl;M2015/04303/S(delvis),True
 17228,Regleringsbrev,2015-12-17,2016,Myndighet,Nordiska Afrikainstitutet,Utrikesdepartementet,7,UD2015/12080/USTYR (delvis);UD2015/12257/AF,True
 17230,Regleringsbrev,2015-12-18,2016,Anslag,1:5,Socialdepartementet,9,S2015/08135/RS,True
-17231,Regleringsbrev,2015-12-18,2016,Myndighet,Karolinska institutet,Utbildningsdepartementet,16,"U2014/07521/SAM(delvis);U2015/01101,04987/UH;U2015/05895/SAM(delvis) U2015/05960/UH",True
+17231,Regleringsbrev,2015-12-18,2016,Myndighet,Karolinska institutet,Utbildningsdepartementet,16,U2014/07521/SAM(delvis);U2015/01101;U2015/04987/UH;U2015/05895/SAM(delvis) U2015/05960/UH,True
 17233,Regleringsbrev,2015-12-18,2016,Myndighet,Linköpings universitet,Utbildningsdepartementet,16,U2015/05005/UH;U2015/05895/SAM (delvis);U2015/05959/UH,True
 17234,Regleringsbrev,2015-12-18,2016,Myndighet,Luleå tekniska universitet,Utbildningsdepartementet,16,U2014/07521/SAM(delvis) U2015/05016/UH;U2015/05895/SAM(delvis);U2015/05962/UH,True
 17235,Regleringsbrev,2015-12-18,2016,Myndighet,Lunds universitet,Utbildningsdepartementet,16,U2014/07521/SAM(delvis) U2015/04974/UH;U2015/05895/SAM(delvis) U2015/05955/UH,True
@@ -9048,7 +9048,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 17471,Ändringsbeslut,2016-04-07,2016,Anslag,1:10,Försvarsdepartementet,6,Fö2016/00404/ESL (delvis),True
 17472,Ändringsbeslut,2016-04-14,2016,Myndighet,Försvarshögskolan,Utbildningsdepartementet,16,U2016/00923/UH;U2016/01852/UH,True
 17473,Ändringsbeslut,2016-12-01,2016,Myndighet,Gymnastik- och idrottshögskolan,Utbildningsdepartementet,16,U2016/01257/UH;U2016/05094/BS (delvis);U2016/05273/UH,True
-17474,Ändringsbeslut,2016-06-02,2016,Anslag,"2:64, 2:65 och 2:66",Utbildningsdepartementet,16,"U2016/00944,01133,01308, 01404,01711,02365/UH;U2016/02421/F;U2016/02724/UH",True
+17474,Ändringsbeslut,2016-06-02,2016,Anslag,"2:64, 2:65 och 2:66",Utbildningsdepartementet,16,U2016/00944;U2016/01133;U2016/01308;U2016/01404;U2016/01711;U2016/02365/UH;U2016/02421/F;U2016/02724/UH,True
 17475,Ändringsbeslut,2016-10-19,2016,Anslag,4:5,Socialdepartementet,9,S2016/06525/FST,True
 17476,Ändringsbeslut,2016-04-07,2016,Myndighet,Pensionsmyndigheten,Socialdepartementet,11;12,S2016/01578/SF,True
 17477,Ändringsbeslut,2016-04-07,2016,Myndighet,Försäkringskassan,Socialdepartementet,9;10;12,S2016/02578/SF,True
@@ -9396,7 +9396,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,registry_numbers,
 17917,Regleringsbrev,2016-12-14,2017,Anslag,1:1,Utrikesdepartementet,7,UD2016/21715/IU (delvis);UD2016/21886/EC,True
 17918,Regleringsbrev,2016-12-14,2017,Anslag,1:1,Utrikesdepartementet,7,UD2016/21715/IU (delvis);UD2016/21883/EC,True
 17919,Regleringsbrev,2016-12-20,2017,Myndighet,Blekinge tekniska högskola,Utbildningsdepartementet,16,U2016/04469/UH;U2016/05494/BS (delvis);U2016/05647/UH,True
-17920,Regleringsbrev,2016-12-20,2017,Myndighet,universitet och högskolor,Utbildningsdepartementet,,"U2016/01219, 02223/UH;U2016/05494/BS(delvis);U2016/05633/UH",True
+17920,Regleringsbrev,2016-12-20,2017,Myndighet,universitet och högskolor,Utbildningsdepartementet,,U2016/01219;U2016/02223/UH;U2016/05494/BS(delvis);U2016/05633/UH,True
 17921,Regleringsbrev,2016-12-20,2017,Myndighet,Elsäkerhetsverket,Miljö- och energidepartementet,6,M2016/02975/S,True
 17922,Ändringsbeslut,2016-11-24,2016,Anslag,2:3 och 2:4,Utrikesdepartementet,24,UD2016/20443/IU;UD2016/20549/FH,True
 17923,Regleringsbrev,2016-12-20,2017,Myndighet,Uppsala universitet,Utbildningsdepartementet,16,U2014/07521/BS (delvis);U2016/01681/BS (delvis);U2016/03821/BS (delvis),True

@@ -67,7 +67,7 @@ class PublicationTests(unittest.TestCase):
         response = Mock(text='?rbid=9999&amp;x=y ?RBID=10000&amp;x=y')
         self.assertEqual(Parser.parse_latest_remote_rbid(response), 10000)
 
-    def test_upload_includes_only_source_files_and_catalogues(self):
+    def test_upload_includes_only_source_files_parquet_and_card(self):
         api = Mock()
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
@@ -79,8 +79,6 @@ class PublicationTests(unittest.TestCase):
             (archive / 'unavailable_files.json').write_text('[]')
             (archive / 'source_files.json').write_text(json.dumps({
                 'paths': ['letters/2026/1.pdf', 'attachments/2026/2.docx'], 'conversions': []}))
-            (root / 'letters.csv').write_text('rbid,pdf,year\n1,True,2026\n')
-            (root / 'attachments.csv').write_text('id,rbid,name\n2,1,file.docx\n')
             (root / 'dataset_card.md').write_text('card')
             (root / 'letters.parquet').write_bytes(b'parquet')
             uploaded = {}
@@ -93,12 +91,11 @@ class PublicationTests(unittest.TestCase):
             api.upload_folder.side_effect = capture
             with patch.object(builder, 'ROOT', root), \
                  patch.object(builder, 'LETTERS_DIR', archive), \
-                 patch.object(builder, 'METADATA_CSV', root / 'letters.csv'), \
                  patch.object(builder, 'HfApi', return_value=api):
                 builder._upload_to_hf(root / 'letters.parquet', 'owner/data', 'letters.parquet', 'token')
             self.assertEqual(set(uploaded), {
                 'letters/2026/1.pdf', 'attachments/2026/2.docx', 'unavailable_files.json',
-                'letters.csv', 'attachments.csv', 'letters.parquet', 'README.md',
+                'letters.parquet', 'README.md',
             })
             api.upload_folder.assert_called_once()
             self.assertFalse(api.upload_folder.call_args.kwargs['folder_path'].exists())

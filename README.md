@@ -109,7 +109,8 @@ If the local Parquet file does not exist but a Hugging Face dataset repo is conf
 
 The source fetch downloads new and refreshed PDFs and attachments, compares them with
 published files, and records which files need upload or conversion. Publication
-then uploads the changed files, catalogues, and dataset card. Original letter PDFs live
+then uploads the changed files, Parquet, and dataset card. The CSV catalogues stay
+in this GitHub repository. Original letter PDFs live
 under `letters/{year}/{rbid}.pdf`, and attachments under `attachments/{year}/{id}.{extension}`.
 Source 404s and empty responses are recorded in `unavailable_files.json`;
 other download failures stop publication. The Hugging Face upload helper

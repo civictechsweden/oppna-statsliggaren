@@ -183,8 +183,6 @@ def _upload_to_hf(
     files = {path: LETTERS_DIR / path for path in manifest["paths"]}
     files.update({
         repo_path: parquet_path,
-        "letters.csv": METADATA_CSV,
-        "attachments.csv": ROOT / "attachments.csv",
         "README.md": ROOT / "dataset_card.md",
         "unavailable_files.json": LETTERS_DIR / "unavailable_files.json",
     })

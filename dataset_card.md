@@ -34,15 +34,13 @@ outside that window require an explicit backfill.
 - `letters.parquet`: original letter HTML, cleaned XHTML and Markdown, plus
   `id`, `type`, `date`, `year`, `category`, `name`, `department`,
   `expenditure_areas`, `registry_numbers` and `pdf`.
-- `letters.csv`: letter catalogue using `rbid` for the same source ID.
-- `attachments.csv`: attachment catalogue with `id`, `rbid` and source filename.
 - `letters/{year}/{rbid}.pdf`: available original letter PDFs, using the full-letter version.
 - `attachments/{year}/{id}.{extension}`: original attachment files, including PDF,
-  DOC, DOCX, XLS and XLSX. Formats and source filenames are preserved in the
-  attachment catalogue; stored filenames use the numeric attachment ID.
+  DOC, DOCX, XLS and XLSX. Stored filenames use the numeric attachment ID.
 - `attachments/{year}/{id}.docx` and `attachments/{year}/{id}.xlsx`: LibreOffice conversions
   of legacy DOC and XLS attachments, alongside the unchanged originals. The
-  source filename in `attachments.csv` distinguishes originals from derivatives.
+  [GitHub attachment catalogue](https://github.com/civictechsweden/oppna-statsliggaren/blob/master/attachments.csv)
+  records the original source filename.
 - `unavailable_files.json`: source URLs returning 404 or empty files during the
   latest publication. These cannot be archived or converted.
 
@@ -50,12 +48,14 @@ The department is read from the letterhead for both agency and appropriation
 letters. Historical names are preserved. A department and appropriation number
 are not necessarily unique identifiers; use the source IDs.
 
-`registry_numbers` contains the registry-number entries printed in the letterhead.
-It is a string list in Parquet and semicolon-separated in each CSV cell. Some older
-letterheads group several numbers in one entry using comma shorthand; those
-entries retain the source wording rather than inventing missing prefixes.
+`registry_numbers` contains individual registry numbers expanded from the
+letterhead's comma-separated shorthand. It is a string list in Parquet. Omitted
+unit codes stay unknown unless independently documented.
 Notes such as "Se bilaga 1" are omitted. An empty list means no readable number
 was found in the letterhead, not that the decision has no registry number.
+
+The [GitHub letter catalogue](https://github.com/civictechsweden/oppna-statsliggaren/blob/master/letters.csv)
+contains the same metadata in CSV form.
 
 The HTML column contains the letter itself, without website navigation. XHTML
 normalizes the source layouts; Markdown is a lossy representation. The source
@@ -63,9 +63,8 @@ files remain available for inspection. Not every letter has a PDF; unavailable
 source downloads are reported in the publishing workflow logs.
 
 The Parquet split includes letters only. PDF and attachment folders are supporting
-files and are not additional dataset splits. File uploads precede the catalogue
-commit; an interrupted run can leave additional files pending the next catalogue
-update. Each catalogue publication contains matching CSV and Parquet metadata.
+files and are not additional dataset splits. The GitHub CSV catalogues and this
+Parquet export are refreshed in the same publishing workflow.
 
 ## Read selected columns
 
