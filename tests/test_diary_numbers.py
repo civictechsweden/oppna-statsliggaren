@@ -64,6 +64,15 @@ class DiaryNumberTests(unittest.TestCase):
         letter = '<div id="BrevHuvud"><div id="DiarieNr"></div></div>'
         self.assertEqual(Parser.extract_diary_numbers(letter), [])
 
+    def test_unusual_letterhead_number_is_preserved(self):
+        letter = (
+            '<div id="BrevHuvud"><div id="DiarieNr">'
+            'UD2020:18600 (delvis)<br>Se bilaga 1</div></div>'
+        )
+        self.assertEqual(
+            Parser.extract_diary_numbers(letter), ['UD2020:18600 (delvis)']
+        )
+
     def test_metadata_serializes_csv_array(self):
         response = SimpleNamespace(
             status_code=200,

@@ -110,16 +110,16 @@ class Parser(object):
             elif line:
                 lines.append(line)
         numbers = []
-        pattern = re.compile(
-            r"(?:[A-Za-zÅÄÖåäö]{1,4}\s*/?\s*)?\d{2,4}\s*/\s*\d+"
-            r"|\b\d{3}-\d{3,5}-\d{2}/\d{2}\b"
-        )
         for line in lines:
             if re.fullmatch(r"\((?:delvis|slutligt|slutlig)\)", line, re.I):
                 if numbers:
                     numbers[-1] += f" {line}"
                 continue
-            if not pattern.search(line):
+            if line.lower().startswith(("se bilaga", "bilaga", "m.fl.", "m. fl.")):
+                continue
+            if "/" not in line and not re.search(
+                r"[A-Za-zÅÄÖåäö]{1,4}\d{4}:\d", line
+            ):
                 continue
             line = re.sub(r"\s*,?\s*m\.?\s*fl\.?\s*$", "", line, flags=re.I)
             numbers.append(line.rstrip(",; "))

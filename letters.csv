@@ -347,7 +347,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 3036,Ändringsbeslut,2003-05-15,2003,Myndighet,Myndigheten för skolutveckling,Utbildningsdepartementet,16,"[""U2003/1986/S""]",False
 3038,Ändringsbeslut,2003-05-28,2003,Myndighet,Sameskolstyrelsen,Utbildningsdepartementet,16,"[""U2003/2011/S""]",False
 3048,Ändringsbeslut,2003-05-22,2003,Myndighet,Totalförsvarets pliktverk,Försvarsdepartementet,6,"[""Fö2003/345/MIL""]",False
-3050,Ändringsbeslut,2003-05-28,2003,Myndighet,Regeringskansliet,Näringsdepartementet,13;14;22;23;24,[],False
+3050,Ändringsbeslut,2003-05-28,2003,Myndighet,Regeringskansliet,Näringsdepartementet,13;14;22;23;24,"[""N2002/xxxx/ITFoU""]",False
 3066,Ändringsbeslut,2003-06-18,2003,Myndighet,Naturvårdsverket,Miljödepartementet,18;20,"[""M/2003/1332/A"", ""M/2003/1907/A (delvis)""]",False
 3071,Ändringsbeslut,2003-06-12,2003,Myndighet,Svenska unescorådet,Utbildningsdepartementet,16,"[""U2003/2434/IS""]",False
 3085,Ändringsbeslut,2003-05-28,2003,Myndighet,Socialstyrelsen,Socialdepartementet,9;25,"[""S2003/5091/HS""]",False
@@ -800,7 +800,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 6093,Ändringsbeslut,2003-12-04,2003,Myndighet,Ombudsmannen mot etnisk diskriminering,Näringsdepartementet,8,"[""Ju2003/9258/IM(slutligt)""]",False
 6094,Regleringsbrev,2003-12-18,2004,Anslag,39:4,Utrikesdepartementet,24,"[""UD2003/64660/EIM""]",False
 6097,Ändringsbeslut,2003-12-11,2003,Myndighet,Talboks- och punktskriftsbiblioteket,Utbildningsdepartementet,15,"[""U2003/2396/SV"", ""U2003/2400/SV""]",False
-6098,Regleringsbrev,2003-12-18,2004,Myndighet,Ungdomsstyrelsen,Utbildningsdepartementet,17,"[""U2003/804/UNG (slutligt)"", ""U2003/3193"", ""U2003/4790/DK (slutligt)""]",False
+6098,Regleringsbrev,2003-12-18,2004,Myndighet,Ungdomsstyrelsen,Utbildningsdepartementet,17,"[""U2003/804/UNG (slutligt)"", ""U2003/3193"", ""3491/UNG"", ""U2003/4790/DK (slutligt)""]",False
 6099,Regleringsbrev,2003-12-18,2004,Anslag,38:20,Näringsdepartementet,24,"[""N2003/8913/SÄ"", ""N2003/9328/BS (delvis)""]",False
 6101,Ändringsbeslut,2003-12-04,2003,Myndighet,Integrationsverket,Näringsdepartementet,8,"[""Ju2003/9258/IM(delvis)""]",False
 6103,Ändringsbeslut,2003-09-04,2003,Myndighet,Gemensamma bestämmelser för universitet och högskolor m.m.,Utbildningsdepartementet,16,"[""U2003/2202/UH""]",False
@@ -1039,7 +1039,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 7034,Ändringsbeslut,2004-06-17,2004,Myndighet,Regeringkansliet (RKs disposition),Jordbruksdepartementet,23,"[""Jo2004/1521""]",False
 7035,Ändringsbeslut,2004-06-23,2004,Myndighet,regeringen,Jordbruksdepartementet,1;23;24,"[""Jo2004/1583""]",False
 7036,Ändringsbeslut,2004-06-23,2004,Myndighet,Svenska unescorådet,Utbildningsdepartementet,16,"[""U2004/2462/IS""]",False
-7037,Ändringsbeslut,2004-06-03,2004,Anslag,5:4,Utrikesdepartementet,5,[],False
+7037,Ändringsbeslut,2004-06-03,2004,Anslag,5:4,Utrikesdepartementet,5,"[""UD2004//26021""]",False
 7038,Ändringsbeslut,2004-05-13,2004,Anslag,14:2,Socialdepartementet,9,"[""S2004/3937/FH""]",False
 7039,Ändringsbeslut,2004-05-13,2004,Anslag,14:3,Socialdepartementet,9,"[""S2004/3938/FH""]",False
 7040,Ändringsbeslut,2004-05-13,2004,Myndighet,Statens folkhälsoinstitut,Socialdepartementet,9,"[""S2004/3939/FH""]",False
@@ -1088,7 +1088,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 7096,Ändringsbeslut,2004-06-17,2004,Anslag,93:1,Finansdepartementet,27,"[""Fi2004/2684""]",False
 7097,Ändringsbeslut,2004-06-17,2004,Anslag,4:14,Justitiedepartementet,4,"[""Ju2004/4937/Å""]",False
 7098,Ändringsbeslut,2004-06-03,2004,Myndighet,Arbetslivsinstitutet,Näringsdepartementet,14,"[""N2004/4100/ARM""]",False
-7099,Ändringsbeslut,2004-05-27,2004,Myndighet,Riksarkivet,Kulturdepartementet,17,[],False
+7099,Ändringsbeslut,2004-05-27,2004,Myndighet,Riksarkivet,Kulturdepartementet,17,"[""Ku2004/XXXX/Kr""]",False
 7101,Ändringsbeslut,2004-06-10,2004,Myndighet,Verket för innovationssystem,Näringsdepartementet,14;24,"[""N2004/4403/ITFoU""]",False
 7102,Ändringsbeslut,2004-06-23,2004,Myndighet,Försvarsmakten,Försvarsdepartementet,6,"[""Fö2004/495/MIL (Delvis)"", ""Fö2004/680/MIL (Delvis)""]",False
 7103,Ändringsbeslut,2004-06-10,2004,Anslag,10:4,Justitiedepartementet,8,"[""Ju2004/5064/IM""]",False
@@ -1188,14 +1188,14 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 7218,Ändringsbeslut,2004-06-23,2004,Myndighet,Statens bostadskreditnämnd,Finansdepartementet,18,"[""Fi2004/2995""]",False
 7219,Ändringsbeslut,2004-09-02,2004,Anslag,5:3,Utrikesdepartementet,5,"[""UD2003/62839/PLAN-BUD"", ""UD2004/24968/EU"", ""UD2004/34199/EU""]",False
 7220,Ändringsbeslut,2004-06-30,2004,Myndighet,Regeringskansliet,Statsrådsberedningen,1,"[""FA2004/731/STAB""]",False
-7221,Ändringsbeslut,2004-07-22,2004,Myndighet,Samarbetsnämnden för statsbidrag till trossamfund,Kulturdepartementet,17,[],False
+7221,Ändringsbeslut,2004-07-22,2004,Myndighet,Samarbetsnämnden för statsbidrag till trossamfund,Kulturdepartementet,17,"[""Ku2004/""]",False
 7222,Ändringsbeslut,2004-07-22,2004,Myndighet,Arkitekturmuseet,Kulturdepartementet,17,"[""Ku2004/784/Kr (Slutligt)""]",False
 7223,Ändringsbeslut,2004-07-22,2004,Myndighet,Riksarkivet,Kulturdepartementet,17,"[""Ku2002/268/Kr"", ""2004/784/Kr (delvis)""]",False
 7224,Ändringsbeslut,2004-08-19,2004,Anslag,"48:1, 48:3, 48:4 och 48:6",Finansdepartementet,25,"[""Fi2004/2938 (delvis)""]",False
 7226,Ändringsbeslut,2004-08-05,2004,Myndighet,Försvarsmakten,Försvarsdepartementet,6,"[""Fö2004/1638/MIL (delvis)""]",False
 7227,Regleringsbrev,2004-12-02,2004,Anslag,38:22,Näringsdepartementet,24,"[""N2004/9115/SÄ"", ""N2004/4982/BS (delvis)""]",False
 7229,Ändringsbeslut,2004-08-19,2004,Myndighet,Skogsstyrelsen,Näringsdepartementet,23,"[""N2004/4465/ESB (delvis)""]",False
-7231,Ändringsbeslut,2004-08-19,2004,Myndighet,Statens kulturråd,Kulturdepartementet,17,[],False
+7231,Ändringsbeslut,2004-08-19,2004,Myndighet,Statens kulturråd,Kulturdepartementet,17,"[""Ku2004//Kr""]",False
 7233,Ändringsbeslut,2004-08-19,2004,Myndighet,Arbetslivsinstitutet,Näringsdepartementet,14,"[""N2004/5932/ARM"", ""N2004/4465/ESB (delvis)""]",False
 7234,Ändringsbeslut,2004-08-26,2004,Myndighet,Datainspektionen,Finansdepartementet,1,"[""Fi2004/2489""]",False
 7235,Ändringsbeslut,2004-12-22,2004,Anslag,28:37,Kulturdepartementet,17,"[""Ku2004/2612/Kr""]",False
@@ -1285,7 +1285,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 7372,Regleringsbrev,2004-12-22,2005,Myndighet,Svenskt biografiskt lexikon,Kulturdepartementet,17,"[""Ku2004/2620/Kr""]",False
 7373,Regleringsbrev,2004-12-22,2005,Myndighet,Riksantikvarieämbetet,Kulturdepartementet,17,[],False
 7374,Regleringsbrev,2004-12-22,2005,Myndighet,Statens historiska museer,Kulturdepartementet,17,"[""Ku2004/2622/Kr""]",False
-7375,Regleringsbrev,2004-12-22,2005,Myndighet,Nationalmuseum med Prins Eugens Waldemarsudde,Kulturdepartementet,17,[],False
+7375,Regleringsbrev,2004-12-22,2005,Myndighet,Nationalmuseum med Prins Eugens Waldemarsudde,Kulturdepartementet,17,"[""Ku2004/ /Sam""]",False
 7376,Regleringsbrev,2004-12-22,2005,Myndighet,Naturhistoriska riksmuseet,Kulturdepartementet,17,"[""Ku2004/2624/Kr""]",False
 7377,Regleringsbrev,2004-12-22,2005,Myndighet,Statens museer för världskultur,Kulturdepartementet,17,"[""Ku2004/2625/Kr""]",False
 7378,Regleringsbrev,2004-12-22,2005,Myndighet,"Livrustkammaren, Skoklosters slott och Hallwylska museet",Kulturdepartementet,17,"[""Ku2004/2626/Kr""]",False
@@ -1477,7 +1477,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 7603,Regleringsbrev,2004-12-16,2005,Myndighet,Institutet för rymdfysik,Utbildningsdepartementet,16,"[""U2004/5173/DK (delvis)""]",False
 7604,Regleringsbrev,2004-12-22,2005,Anslag,26:1 och 26:2,Jordbruksdepartementet,23,"[""Jo2004/2737""]",False
 7605,Regleringsbrev,2004-12-16,2005,Myndighet,Statens väg- och transportforskningsinstitut,Näringsdepartementet,22,"[""N2004/9510/TP"", ""N2004/9449/BS(delvis)""]",False
-7607,Ändringsbeslut,2004-10-29,2004,Myndighet,Naturvårdsverket,Miljödepartementet,17;18;20,[],False
+7607,Ändringsbeslut,2004-10-29,2004,Myndighet,Naturvårdsverket,Miljödepartementet,17;18;20,"[""HC/JL/2004:3 (delvis)""]",False
 7608,Regleringsbrev,2004-12-22,2005,Anslag,5:10 och 5:16 (2003),Utrikesdepartementet,5,"[""UD2004/64734/PLAN (slutligt)""]",False
 7609,Regleringsbrev,2004-12-22,2005,Anslag,"33:1, 33:7 (2002) och 33:9 (2001)",Näringsdepartementet,19,"[""N2004/9527/RUT"", ""N2004/9619/RUT(delvis)"", ""N2003/7568/RUT"", ""N2004/2346/RUT"", ""N2004/2827/RUT"", ""N2004/2998/RUT"", ""N2004/3030/RUT"", ""N2004/3338/RUT"", ""N2004/6879/RUT"", ""N2004/7072/RUT"", ""N2004/7414/RUT"", ""N2004/7415/RUT"", ""N2004/7785/RUT"", ""N2004/8536/RUT (delvis)"", ""N2004/9325/RUT""]",False
 7610,Regleringsbrev,2004-12-16,2005,Myndighet,Luftfartsverket,Näringsdepartementet,,"[""N2004/9513/TP"", ""N2004/9449/BS (delvis)""]",False
@@ -1635,7 +1635,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 7832,Ändringsbeslut,2005-01-13,2005,Anslag,39:3,Utrikesdepartementet,24,"[""UD2005/441/EIM""]",False
 7833,Ändringsbeslut,2005-01-13,2005,Myndighet,Ombudsmannen mot etnisk diskriminering,Justitiedepartementet,8,"[""Ju2005/196/IM""]",False
 7834,Ändringsbeslut,2005-01-13,2005,Myndighet,Luftfartsstyrelsen,Näringsdepartementet,22,"[""N2005/114/TP""]",False
-7835,Ändringsbeslut,2005-01-13,2005,Myndighet,Vägverket,Näringsdepartementet,22,[],False
+7835,Ändringsbeslut,2005-01-13,2005,Myndighet,Vägverket,Näringsdepartementet,22,"[""N2005/xxxx/IR""]",False
 7836,Ändringsbeslut,2005-01-20,2005,Anslag,39:6,Utrikesdepartementet,24,"[""UD2005/1791/EIM""]",False
 7837,Ändringsbeslut,2005-01-20,2005,Anslag,"5:11, 8:1, 8:2, 8:5 och 9:1 (2003)",Utrikesdepartementet,5;7,"[""UD2005/1723/GS""]",False
 7838,Ändringsbeslut,2005-01-20,2005,Anslag,8:1,Utrikesdepartementet,7,"[""UD2005/1725/GS""]",False
@@ -1657,7 +1657,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 7858,Ändringsbeslut,2005-02-17,2005,Myndighet,Kustbevakningen,Försvarsdepartementet,6,"[""Fö2005/500/CIV""]",False
 7859,Ändringsbeslut,2005-02-24,2005,Myndighet,Datainspektionen,Finansdepartementet,1,"[""Fi2005/1313""]",False
 7862,Ändringsbeslut,2005-02-10,2005,Myndighet,Länsstyrelserna,Finansdepartementet,18,"[""Fi2005/481""]",False
-7863,Ändringsbeslut,2005-02-24,2005,Myndighet,Riksarkivet,Utbildnings- och kulturdepartementet,17,[],False
+7863,Ändringsbeslut,2005-02-24,2005,Myndighet,Riksarkivet,Utbildnings- och kulturdepartementet,17,"[""U2005/XXXX/Kr""]",False
 7864,Ändringsbeslut,2005-02-17,2005,Myndighet,Krisberedskapsmyndigheten,Försvarsdepartementet,6;22,"[""Fö2005/499/CIV""]",False
 7865,Ändringsbeslut,2005-04-14,2005,Myndighet,Boverket,Miljö- och samhällsbyggnadsdepartementet,18,"[""M2005/2676/Bo""]",False
 7866,Ändringsbeslut,2005-02-17,2005,Anslag,39:3 och 39:4 (2004),Utrikesdepartementet,24,"[""UD2005/3504/EIM""]",False
@@ -1693,7 +1693,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 7901,Ändringsbeslut,2005-04-07,2005,Myndighet,Brottsoffermyndigheten,Justitiedepartementet,4,"[""Ju2005/3243/KRIM""]",False
 7902,Ändringsbeslut,2005-12-08,2005,Myndighet,Livsmedelsverket,Jordbruksdepartementet,23,"[""Jo2005/2851""]",False
 7903,Ändringsbeslut,2005-04-07,2005,Myndighet,Kustbevakningen,Försvarsdepartementet,6,"[""Fö2005/1085/CIV""]",False
-7904,Ändringsbeslut,2005-04-07,2005,Myndighet,Statens kulturråd,Utbildnings- och kulturdepartementet,17,[],False
+7904,Ändringsbeslut,2005-04-07,2005,Myndighet,Statens kulturråd,Utbildnings- och kulturdepartementet,17,"[""U2005/XXXX/Kr""]",False
 7906,Ändringsbeslut,2005-04-21,2005,Myndighet,Försvarsmakten,Försvarsdepartementet,6,"[""Fö2005/1200/MIL""]",False
 7907,Ändringsbeslut,2005-04-07,2005,Myndighet,Arbetsmarknadsverket,Näringsdepartementet,13,"[""N2005/3414/A""]",False
 7908,Ändringsbeslut,2005-04-21,2005,Anslag,25:15 och 25:17,Utbildnings- och kulturdepartementet,16,"[""U2005/3982/SV"", ""U2005/2671/SV (delvis)""]",False
@@ -2537,7 +2537,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 8961,Ändringsbeslut,2006-06-29,2006,Myndighet,Fastighetsmäklarnämnden,Jordbruksdepartementet,24,"[""Jo2006/1854""]",True
 8962,Ändringsbeslut,2006-06-29,2006,Myndighet,Konsumentverket,Jordbruksdepartementet,24,"[""Jo2006/1852""]",True
 8963,Ändringsbeslut,2006-06-29,2006,Myndighet,Marknadsdomstolen,Jordbruksdepartementet,24,"[""Jo2006/1851""]",True
-8964,Ändringsbeslut,2006-06-29,2006,Myndighet,Allmänna reklamationsnämnden,Jordbruksdepartementet,24,[],True
+8964,Ändringsbeslut,2006-06-29,2006,Myndighet,Allmänna reklamationsnämnden,Jordbruksdepartementet,24,"[""Jo2006/""]",True
 8965,Ändringsbeslut,2006-06-21,2006,Anslag,46:1,Justitiedepartementet,1,"[""Ju2006/5567 (delvis)""]",True
 8966,Ändringsbeslut,2006-06-14,2006,Myndighet,Insättningsgarantinämnden,Finansdepartementet,2,"[""Fi2006/3424""]",True
 8967,Ändringsbeslut,2006-05-24,2006,Myndighet,Statskontoret,Finansdepartementet,2,"[""Fi2006/3150""]",True
@@ -2695,7 +2695,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 9182,Ändringsbeslut,2006-10-19,2006,Anslag,"27:2, 28:5, 28:12, 28:13, 28:27, 28:29, 28:31, 28:35 och 28:36",Utbildnings- och kulturdepartementet,17,"[""U2006/592/Kr (slutligt)"", ""U2006/1782/Kr (slutligt)"", ""U2006/6936/Kr""]",True
 9183,Ändringsbeslut,2006-11-23,2006,Myndighet,Internationella programkontoret för utbildningsområdet,Utbildnings- och kulturdepartementet,16,"[""U2006/8435/IS""]",True
 9184,Ändringsbeslut,2006-11-02,2006,Myndighet,Statens jordbruksverk,Jordbruksdepartementet,23,"[""Jo2006/2089 (delvis)""]",True
-9185,Ändringsbeslut,2006-11-23,2006,Myndighet,universitet och högskolor m.m.,Utbildnings- och kulturdepartementet,,"[""U2006/4667/BIA (delvis)"", ""U2006/4377,7078,8226""]",True
+9185,Ändringsbeslut,2006-11-23,2006,Myndighet,universitet och högskolor m.m.,Utbildnings- och kulturdepartementet,,"[""U2006/4667/BIA (delvis)"", ""U2006/4377,7078,8226"", ""8280/UH""]",True
 9186,Regleringsbrev,2006-12-21,2007,Myndighet,Elsäkerhetsverket,Miljö- och samhällsbyggnadsdepartementet,6,"[""M2006/5741/A (slutligt)""]",True
 9187,Ändringsbeslut,2006-11-30,2006,Anslag,"42:4 (2003), 42:6, 43:5, 43:14 och 43:15",Jordbruksdepartementet,23,"[""Jo2006/3130""]",True
 9192,Regleringsbrev,2006-12-21,2007,Myndighet,Svenska institutet,Utrikesdepartementet,5;7,"[""UD2006/61718/PLAN (delvis)""]",True
@@ -3151,7 +3151,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 9792,Ändringsbeslut,2007-04-12,2007,Myndighet,Försvarsmakten,Försvarsdepartementet,6,"[""Fö2007/628/MIL""]",True
 9793,Ändringsbeslut,2007-04-12,2007,Myndighet,Livsmedelsekonomiska institutet,Jordbruksdepartementet,23,"[""Jo2007/698 (delvis)""]",True
 9794,Ändringsbeslut,2007-04-19,2007,Myndighet,Polarforskningssekretariatet,Utbildningsdepartementet,16,"[""U2007/2810/F""]",True
-9796,Ändringsbeslut,2007-05-10,2007,Myndighet,Statens maritima museer,Kulturdepartementet,17,[],True
+9796,Ändringsbeslut,2007-05-10,2007,Myndighet,Statens maritima museer,Kulturdepartementet,17,"[""Ku20071464/KR (delvis)""]",True
 9797,Ändringsbeslut,2007-04-19,2007,Myndighet,Statens haverikommission,Försvarsdepartementet,,"[""Fö2007/275/CIV""]",True
 9798,Ändringsbeslut,2007-04-19,2007,Myndighet,Kustbevakningen,Försvarsdepartementet,6,"[""Fö2007/1048/CIV""]",True
 9799,Ändringsbeslut,2007-04-19,2007,Myndighet,Försvarets materielverk,Försvarsdepartementet,6,"[""Fö2007/1045/MIL""]",True
@@ -3342,7 +3342,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 10042,Regleringsbrev,2007-12-19,2008,Myndighet,Konsumentverket,Integrations- och jämställdhetsdepartementet,18,"[""IJ2007/3510/KO"", ""IJ2007/3529/KO(delvis)""]",True
 10044,Regleringsbrev,2007-12-19,2008,Myndighet,Sjöfartsverket,Näringsdepartementet,22,"[""N2007/8991/TR"", ""N2007/10256/SAM(delvis)""]",True
 10045,Regleringsbrev,2007-12-19,2008,Myndighet,Statens väg- och transportforskningsinstitut,Näringsdepartementet,22,"[""N2007/8992/TR"", ""N2007/10256/SAM (delvis)""]",True
-10046,Regleringsbrev,2007-12-13,2008,Myndighet,Specialpedagogiska institutet,Utbildningsdepartementet,16,"[""U2007/6958, 7049/S""]",True
+10046,Regleringsbrev,2007-12-13,2008,Myndighet,Specialpedagogiska institutet,Utbildningsdepartementet,16,"[""U2007/6958, 7049/S"", ""7921, 7949/SAM/S""]",True
 10047,Regleringsbrev,2007-12-13,2008,Myndighet,Myndigheten för skolutveckling,Utbildningsdepartementet,16,"[""U2007/7921/SAM/S""]",True
 10048,Regleringsbrev,2007-12-13,2008,Myndighet,Specialskolemyndigheten,Utbildningsdepartementet,16,"[""U2007/7921/SAM/S""]",True
 10049,Regleringsbrev,2007-12-13,2008,Myndighet,Sameskolstyrelsen,Utbildningsdepartementet,16,"[""U2007/7921/SAM""]",True
@@ -4256,7 +4256,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 11248,Regleringsbrev,2008-12-18,2009,Anslag,1:11,Utrikesdepartementet,5,"[""UF2008/14588/PLAN (delvis)""]",True
 11249,Regleringsbrev,2008-12-18,2009,Anslag,2:1,Utrikesdepartementet,7,"[""UF2008/14589/USTYR (delvis)""]",True
 11251,Regleringsbrev,2008-12-18,2009,Myndighet,Myndigheten för nätverk och samarbete inom högre utbildning,Utbildningsdepartementet,16,"[""U2008/8525/UH""]",True
-11252,Regleringsbrev,2008-12-18,2009,Myndighet,Högskoleverket,Utbildningsdepartementet,16,"[""U2008/8481/SAM""]",True
+11252,Regleringsbrev,2008-12-18,2009,Myndighet,Högskoleverket,Utbildningsdepartementet,16,"[""U2008/8481/SAM"", ""(delvis)/UH""]",True
 11254,Ändringsbeslut,2008-11-27,2008,Anslag,10:2,Integrations- och jämställdhetsdepartementet,13,"[""IJ2008/2353/DISK""]",True
 11256,Regleringsbrev,2008-12-18,2009,Myndighet,Alkohol- och läkemedelssortimentsnämnden,Socialdepartementet,9,"[""S2008/10663/SK(delvis)""]",True
 11258,Regleringsbrev,2008-12-18,2009,Myndighet,Smittskyddsinstitutet,Socialdepartementet,9,"[""S2008/10663/SK (delvis)""]",True
@@ -4601,7 +4601,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 11766,Ändringsbeslut,2009-05-28,2009,Myndighet,Sameskolstyrelsen,Utbildningsdepartementet,16,"[""U2008/8481/SAM/S (delvis)""]",True
 11767,Ändringsbeslut,2009-05-28,2009,Myndighet,Inspektionen för strategiska produkter,Utrikesdepartementet,5,"[""UD2008/14588/PLAN (delvis)""]",True
 11768,Ändringsbeslut,2009-05-28,2009,Myndighet,Statens va-nämnd,Miljödepartementet,18,"[""M2008/4791/A (delvis)""]",True
-11769,Ändringsbeslut,2009-05-28,2009,Myndighet,Högskoleverket,Utbildningsdepartementet,16,"[""U2008/8481/SAM""]",True
+11769,Ändringsbeslut,2009-05-28,2009,Myndighet,Högskoleverket,Utbildningsdepartementet,16,"[""U2008/8481/SAM"", ""(delvis)/UH""]",True
 11770,Ändringsbeslut,2009-05-28,2009,Myndighet,Naturvårdsverket,Miljödepartementet,17;18;20,"[""M2009/1945/A""]",True
 11771,Ändringsbeslut,2009-05-28,2009,Myndighet,Verket för högskoleservice,Utbildningsdepartementet,16,"[""U2008/8481/SAM (delvis)/UH""]",True
 11772,Ändringsbeslut,2009-05-28,2009,Myndighet,Styrelsen för internationellt utvecklingssamarbete,Utrikesdepartementet,5;7,"[""UF2009/27843/USTYR""]",True
@@ -4977,7 +4977,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 12244,Regleringsbrev,2009-12-21,2010,Myndighet,Konjunkturinstitutet,Finansdepartementet,2,"[""Fi2009/7941 (delvis)""]",True
 12245,Regleringsbrev,2009-12-17,2010,Myndighet,Lotteriinspektionen,Finansdepartementet,17,"[""Fi2009/7867 (delvis)""]",True
 12246,Regleringsbrev,2009-12-21,2010,Myndighet,Myndigheten för utländska investeringar i Sverige (ISA),Utrikesdepartementet,24,"[""UF2009/89023/FIM (delvis)""]",True
-12247,Regleringsbrev,2009-12-21,2010,Myndighet,Arbetsförmedlingen,Arbetsmarknadsdepartementet,14,"[""A2009/4009/ADM (slutligt)""]",True
+12247,Regleringsbrev,2009-12-21,2010,Myndighet,Arbetsförmedlingen,Arbetsmarknadsdepartementet,14,"[""A2009//3851/A"", ""A2009/4009/ADM (slutligt)""]",True
 12248,Regleringsbrev,2009-12-21,2010,Myndighet,Inspektionen för arbetslöshetsförsäkringen,Arbetsmarknadsdepartementet,14,"[""A2009/3869/AE"", ""A2009/4009/ADM (delvis)""]",True
 12249,Regleringsbrev,2009-12-17,2010,Myndighet,Granskningsnämnden för radio och TV,Kulturdepartementet,1,"[""Ku2009/2169/MFI""]",True
 12250,Ändringsbeslut,2009-11-26,2009,Myndighet,Sameskolstyrelsen,Utbildningsdepartementet,16,"[""U2009/6756/SAM (delvis)"", ""U2009/6883/S""]",True
@@ -5131,7 +5131,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 12460,Regleringsbrev,2009-12-17,2010,Myndighet,länsstyrelserna,Finansdepartementet,1,"[""Fi2009/7547"", ""Fi2009/7104"", ""Fi2009/4843""]",True
 12462,Ändringsbeslut,2009-11-26,2009,Myndighet,Statens biografbyrå,Kulturdepartementet,17,"[""Ku2009/2107/SAM (slutligt)""]",True
 12463,Ändringsbeslut,2009-11-26,2009,Myndighet,Radio- och TV- verket,Kulturdepartementet,1,"[""Ku2009/2107/SAM (delvis)""]",True
-12464,Ändringsbeslut,2009-12-10,2009,Anslag,2:5,Näringsdepartementet,22,"[""N2009/9303/ITP (delvis)""]",True
+12464,Ändringsbeslut,2009-12-10,2009,Anslag,2:5,Näringsdepartementet,22,"[""N2009/9303/ITP"", ""N200)/8907/KLS (delvis)""]",True
 12467,Ändringsbeslut,2009-12-03,2009,Myndighet,Arbetsförmedlingen,Arbetsmarknadsdepartementet,14,"[""A2009/3716/A"", ""A2009/3638/ADM (slutlig)""]",True
 12468,Ändringsbeslut,2009-12-10,2009,Myndighet,Transportstyrelsen,Näringsdepartementet,22,"[""N2009/9018/TR"", ""N2009/3809/TR"", ""N2009/8907/KLS (delvis)""]",True
 12469,Regleringsbrev,2009-12-17,2010,Anslag,7:3,Socialdepartementet,9,"[""S2009/10110/SK (delvis)""]",True
@@ -5265,7 +5265,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 12663,Ändringsbeslut,2010-06-23,2010,Myndighet,Naturvårdsverket,Miljödepartementet,17;18;20,"[""M2010/2485/A"", ""M2010/2483/Na"", ""M2010/1329/A""]",True
 12664,Ändringsbeslut,2010-04-22,2010,Myndighet,Statens jordbruksverk,Jordbruksdepartementet,23,"[""Jo2010/486 (delvis)""]",True
 12666,Ändringsbeslut,2010-05-06,2010,Anslag,2:54,Utbildningsdepartementet,16,"[""U2010/2774/UH"", ""U2010/3080/UH""]",True
-12667,Ändringsbeslut,2010-05-06,2010,Myndighet,universitet och högskolor m.m.,Utbildningsdepartementet,,[],True
+12667,Ändringsbeslut,2010-05-06,2010,Myndighet,universitet och högskolor m.m.,Utbildningsdepartementet,,"[""U/2774/UH"", ""U/3080/UH""]",True
 12668,Ändringsbeslut,2010-04-29,2010,Myndighet,Skogsstyrelsen,Jordbruksdepartementet,23,"[""Jo2010/1440""]",True
 12669,Ändringsbeslut,2010-04-22,2010,Myndighet,Arbetsförmedlingen,Arbetsmarknadsdepartementet,14,"[""A2010/1108/A""]",True
 12671,Ändringsbeslut,2010-05-20,2010,Myndighet,Statens haverikommission,Försvarsdepartementet,,"[""Fö2010/926/SSK""]",True
@@ -5317,7 +5317,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 12726,Ändringsbeslut,2010-07-01,2010,Myndighet,Migrationsverket,Justitiedepartementet,8,"[""JU2010/5143/SIM (delvis)""]",True
 12728,Ändringsbeslut,2010-06-23,2010,Myndighet,Vetenskapsrådet,Utbildningsdepartementet,16,"[""U2010/3874/F""]",True
 12729,Ändringsbeslut,2010-09-23,2010,Myndighet,Arbetsmiljöverket,Arbetsmarknadsdepartementet,14,"[""A2010/1586/ARM""]",True
-12730,Ändringsbeslut,2010-05-27,2010,Myndighet,universitet och högskolor m.m.,Utbildningsdepartementet,,[],True
+12730,Ändringsbeslut,2010-05-27,2010,Myndighet,universitet och högskolor m.m.,Utbildningsdepartementet,,"[""U/3334/UH""]",True
 12731,Ändringsbeslut,2010-06-17,2010,Myndighet,Socialstyrelsen,Socialdepartementet,9,"[""S2010/4777/SK (delvis)""]",True
 12732,Ändringsbeslut,2010-06-17,2010,Anslag,1:4 och 31:11 (2006),Finansdepartementet,18,"[""Fi2010/3412 (delvis)""]",True
 12733,Ändringsbeslut,2010-06-17,2010,Myndighet,Statens bostadskreditnämnd,Finansdepartementet,18,"[""Fi2010/3412 (delvis)""]",True
@@ -5410,7 +5410,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 12847,Ändringsbeslut,2010-10-28,2010,Myndighet,Socialstyrelsen,Socialdepartementet,9,"[""S2010/7721/SK""]",True
 12848,Ändringsbeslut,2010-11-18,2010,Anslag,1:1,Finansdepartementet,27,"[""Fi2010/5131""]",True
 12849,Ändringsbeslut,2010-09-30,2010,Myndighet,Transportstyrelsen,Näringsdepartementet,22,"[""N2010/2655/TE (slutligt)"", ""N2010/6065/TE""]",True
-12850,Ändringsbeslut,2010-09-30,2010,Myndighet,Sjöfartsverket,Näringsdepartementet,22,[],True
+12850,Ändringsbeslut,2010-09-30,2010,Myndighet,Sjöfartsverket,Näringsdepartementet,22,"[""2010N/6066/TE""]",True
 12851,Ändringsbeslut,2010-09-30,2010,Myndighet,Rikstrafiken,Näringsdepartementet,22,"[""N2010/6101/TE""]",True
 12852,Ändringsbeslut,2010-10-14,2010,Anslag,1:2,Integrations- och jämställdhetsdepartementet,13,"[""IJ2010/1737/IU""]",True
 12853,Ändringsbeslut,2010-10-07,2010,Anslag,"1:11, 1:1 och 2:1",Utrikesdepartementet,5;7,"[""UF2010/55993/USTYR""]",True
@@ -5432,7 +5432,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 12876,Ändringsbeslut,2010-10-28,2010,Myndighet,Styrelsen för ackreditering och teknisk kontroll,Utrikesdepartementet,24,"[""UF2010/59887/FIM (delvis)""]",True
 12877,Ändringsbeslut,2010-11-11,2010,Myndighet,Elsäkerhetsverket,Näringsdepartementet,6,"[""N2010/6889/E""]",True
 12878,Ändringsbeslut,2010-12-16,2010,Myndighet,Statens energimyndighet,Näringsdepartementet,21,"[""N2010/8033/E""]",True
-12879,Ändringsbeslut,2010-10-28,2010,Myndighet,Försvarshögskolan,Utbildningsdepartementet,16,[],True
+12879,Ändringsbeslut,2010-10-28,2010,Myndighet,Försvarshögskolan,Utbildningsdepartementet,16,"[""U2010//UH""]",True
 12881,Ändringsbeslut,2010-10-28,2010,Anslag,2:54,Utbildningsdepartementet,16,"[""U2010/6639/UH"", ""U2010/2984/UH"", ""U2010/3953/UH""]",True
 12882,Ändringsbeslut,2010-10-28,2010,Myndighet,Kronofogdemyndigheten,Finansdepartementet,3,"[""Fi2010/4880""]",True
 12884,Ändringsbeslut,2010-11-04,2010,Myndighet,Ungdomsstyrelsen,Integrations- och jämställdhetsdepartementet,13;17,"[""IJ2010/1632/UF"", ""IJ2010/1776/UF"", ""IJ2010/1871/UF""]",True
@@ -5620,9 +5620,9 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 13126,Regleringsbrev,2010-12-16,2011,Anslag,1:6,Utrikesdepartementet,5,"[""UF2010/75652/UD/PLAN (delvis)""]",True
 13128,Regleringsbrev,2010-12-16,2011,Myndighet,Inspektionen för strategiska produkter,Utrikesdepartementet,5,"[""UF2010/75652/UD/PLAN (delvis)""]",True
 13129,Regleringsbrev,2010-12-22,2011,Anslag,1:10,Arbetsmarknadsdepartementet,14,"[""A2010/3155/A"", ""A2010/3304/ADM (delvis)""]",True
-13130,Regleringsbrev,2010-12-22,2011,Myndighet,Kommerskollegium,Utrikesdepartementet,24,"[""UF2010/77132/UD""]",True
+13130,Regleringsbrev,2010-12-22,2011,Myndighet,Kommerskollegium,Utrikesdepartementet,24,"[""UF2010/77132/UD"", ""/FIM (delvis)""]",True
 13131,Regleringsbrev,2010-12-22,2011,Myndighet,Myndigheten för vårdanalys,Socialdepartementet,9,"[""S2009/2811/HS"", ""S2010/5864/HS (delvis)"", ""S2010/9174/SK (delvis)""]",True
-13132,Regleringsbrev,2010-12-22,2011,Myndighet,Styrelsen för ackreditering och teknisk kontroll,Utrikesdepartementet,24,"[""UF2010/77132/UD""]",True
+13132,Regleringsbrev,2010-12-22,2011,Myndighet,Styrelsen för ackreditering och teknisk kontroll,Utrikesdepartementet,24,"[""UF2010/77132/UD"", ""/FIM (delvis)""]",True
 13134,Regleringsbrev,2010-12-16,2011,Myndighet,Statens medieråd,Kulturdepartementet,17,"[""Ku2010/2028/SAM (delvis)""]",True
 13135,Regleringsbrev,2010-12-22,2011,Anslag,1:3 och 33:5 (2008),Näringsdepartementet,19,"[""N2010/7103/RT"", ""N2010/8199/KLS (delvis)""]",True
 13136,Regleringsbrev,2010-12-22,2011,Myndighet,Tandvårds- och läkemedelsförmånsverket,Socialdepartementet,9,"[""S2010/9174/SK (delvis)""]",True
@@ -5658,20 +5658,20 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 13181,Regleringsbrev,2010-12-22,2011,Myndighet,Myndigheten för handikappolitisk samordning,Socialdepartementet,9,"[""S2010/9174/SK (delvis)""]",True
 13182,Ändringsbeslut,2010-11-25,2010,Myndighet,Pensionsmyndigheten,Socialdepartementet,11;12,"[""S2010/3644/SF (delvis)"", ""S2010/8497/SF""]",True
 13183,Regleringsbrev,2010-12-16,2011,Myndighet,Svenska institutet,Utrikesdepartementet,5;7,"[""UF2010/75652/UD/PLAN/ (delvis)"", ""UF2010/75649/UD/USTYR/ (delvis)""]",True
-13185,Regleringsbrev,2010-12-22,2011,Anslag,2:3,Utrikesdepartementet,24,"[""UF2010/77132/UD""]",True
+13185,Regleringsbrev,2010-12-22,2011,Anslag,2:3,Utrikesdepartementet,24,"[""UF2010/77132/UD"", ""/FIM (slutlig)""]",True
 13186,Regleringsbrev,2010-12-16,2011,Anslag,1:10,Utrikesdepartementet,5,"[""UF2010/75652/UD/PLAN (delvis)""]",True
 13187,Regleringsbrev,2010-12-22,2011,Anslag,2:4,Näringsdepartementet,22,"[""N2010/7969/ITP"", ""N2010/8200/KLS (delvis)""]",True
 13188,Regleringsbrev,2010-12-22,2011,Myndighet,Verket för högskoleservice,Utbildningsdepartementet,16,"[""U2010/7783/UH"", ""U2010/7682/SAM/UH""]",True
 13189,Regleringsbrev,2010-12-22,2011,Myndighet,Kemikalieinspektionen,Miljödepartementet,20,"[""M2010/4913/A(delvis)"", ""M2010/1146/Kk"", ""M2010/3458/Kk""]",True
 13190,Ändringsbeslut,2010-12-09,2010,Myndighet,Statens skolverk,Utbildningsdepartementet,16,"[""U2010/6211/S"", ""U2010/7522/S"", ""U2010/7543/SAM (Delvis)""]",True
-13191,Regleringsbrev,2010-12-22,2011,Myndighet,Myndigheten för utländska investeringar i Sverige,Utrikesdepartementet,24,"[""UF2010/77132/UD""]",True
+13191,Regleringsbrev,2010-12-22,2011,Myndighet,Myndigheten för utländska investeringar i Sverige,Utrikesdepartementet,24,"[""UF2010/77132/UD"", ""/FIM(delvis)""]",True
 13193,Regleringsbrev,2010-12-22,2011,Myndighet,Trafikverket,Näringsdepartementet,22,"[""N2010/8200/KLS (delvis)"", ""N2010/7885/TE"", ""N2010/1132/TE (slutligt)""]",True
 13194,Regleringsbrev,2010-12-22,2011,Anslag,1:30 och 1:31,Jordbruksdepartementet,23,"[""Jo2010/3690""]",True
 13195,Ändringsbeslut,2010-12-02,2010,Anslag,3:10,Utbildningsdepartementet,16,"[""U2010/4744,6669,7346/F""]",True
-13197,Regleringsbrev,2010-12-22,2011,Anslag,2:5,Utrikesdepartementet,24,"[""UF2010/77132/UD""]",True
+13197,Regleringsbrev,2010-12-22,2011,Anslag,2:5,Utrikesdepartementet,24,"[""UF2010/77132/UD"", ""/FIM (delvis)""]",True
 13198,Regleringsbrev,2010-12-22,2011,Anslag,"14:1, 14:2 och 14:3",Utbildningsdepartementet,17,"[""U2010/7658/SAM/SV"", ""U2010/7773/SV""]",True
 13199,Regleringsbrev,2010-12-22,2011,Myndighet,Patent- och registreringsverket,Näringsdepartementet,,"[""N2010/7775/MK"", ""N2010/8185/KLS (delvis)""]",True
-13202,Regleringsbrev,2010-12-22,2011,Anslag,2:6,Utrikesdepartementet,24,"[""UF2010/77132/UD""]",True
+13202,Regleringsbrev,2010-12-22,2011,Anslag,2:6,Utrikesdepartementet,24,"[""UF2010/77132/UD"", ""/FIM (delvis)""]",True
 13203,Regleringsbrev,2010-12-22,2011,Myndighet,Patentombudsnämnden,Näringsdepartementet,,"[""N2010/7774/MK"", ""N2010/8185/KLS (delvis)""]",True
 13204,Regleringsbrev,2010-12-16,2011,Anslag,1:11,Utrikesdepartementet,5,"[""UF2010/75652/UD/PLAN (delvis)""]",True
 13205,Regleringsbrev,2010-12-16,2011,Anslag,1:11,Utrikesdepartementet,5,"[""UF2010/75652/UD/PLAN (delvis)""]",True
@@ -5679,7 +5679,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 13207,Regleringsbrev,2010-12-22,2011,Myndighet,Statens fastighetsverk,Finansdepartementet,2,"[""Fi2010/5790 (delvis)""]",True
 13208,Regleringsbrev,2010-12-22,2011,Myndighet,Fortifikationsverket,Finansdepartementet,,"[""Fi2010/5790 (delvis)""]",True
 13209,Regleringsbrev,2010-12-22,2011,Anslag,1:14 och 1:2,Finansdepartementet,2;26,"[""Fi2010/5790 (delvis)"", ""Fi2010/5792 (delvis)""]",True
-13210,Regleringsbrev,2010-12-22,2011,Myndighet,Exportkreditnämnden,Utrikesdepartementet,,"[""UF2010/77132/UD""]",True
+13210,Regleringsbrev,2010-12-22,2011,Myndighet,Exportkreditnämnden,Utrikesdepartementet,,"[""UF2010/77132/UD"", ""/FIM (delvis)""]",True
 13212,Ändringsbeslut,2010-12-16,2010,Myndighet,Avvecklingsmyndigheten för Verket för förvaltningsutveckling,Finansdepartementet,2,"[""Fi2010/5527 (delvis)""]",True
 13213,Ändringsbeslut,2010-11-25,2010,Myndighet,Riksarkivet,Kulturdepartementet,17,"[""Ku2010/474/KT (delvis)""]",True
 13214,Regleringsbrev,2010-12-22,2011,Myndighet,Livsmedelsverket,Jordbruksdepartementet,23,"[""Jo2010/3690 (delvis)""]",True
@@ -5821,7 +5821,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 13436,Ändringsbeslut,2011-01-20,2011,Myndighet,Trafikverket,Näringsdepartementet,22,"[""N2011/125/TE"", ""N2010/7753/KLS (delvis)""]",True
 13437,Ändringsbeslut,2011-03-24,2011,Myndighet,Naturvårdsverket,Miljödepartementet,17;20,"[""M2011/1381/S""]",True
 13438,Ändringsbeslut,2011-01-20,2011,Myndighet,Totalförsvarets pliktverk,Försvarsdepartementet,6,"[""Fö2011/80/MFU""]",True
-13439,Ändringsbeslut,2011-01-13,2011,Anslag,"1:2, 2:1, 2:3, 3:3, 7:3, 8:2, 8:3, 8:6, 10:1, 11:1, 11:3 och 13:1",Kulturdepartementet,17,"[""Ku2011/46/KV"", ""Ku2010/1055,1056,1057,1058,1094,1168,1169, 1309,1643,1644,1647""]",True
+13439,Ändringsbeslut,2011-01-13,2011,Anslag,"1:2, 2:1, 2:3, 3:3, 7:3, 8:2, 8:3, 8:6, 10:1, 11:1, 11:3 och 13:1",Kulturdepartementet,17,"[""Ku2011/46/KV"", ""Ku2010/1055,1056,1057,1058,1094,1168,1169, 1309,1643,1644,1647"", ""1658,1688,1787,1947/KV""]",True
 13440,Ändringsbeslut,2011-01-20,2011,Myndighet,Patent- och registreringsverket,Näringsdepartementet,,"[""N2011/186/FIN""]",True
 13442,Ändringsbeslut,2011-01-27,2011,Anslag,3:1,Utbildningsdepartementet,13,"[""U2011/523/JÄM""]",True
 13444,Ändringsbeslut,2011-03-10,2011,Myndighet,Strålsäkerhetsmyndigheten,Miljödepartementet,6;20,"[""M2011/1196/Ke""]",True
@@ -5965,13 +5965,13 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 13630,Ändringsbeslut,2011-06-22,2011,Myndighet,Kammarkollegiet,Finansdepartementet,2,"[""Fi2011/2963""]",True
 13631,Ändringsbeslut,2011-06-22,2011,Myndighet,Boverket,Socialdepartementet,18,"[""S2011/6087/PBB""]",True
 13632,Ändringsbeslut,2011-06-16,2011,Myndighet,Myndigheten för yrkeshögskolan,Utbildningsdepartementet,16,"[""U2011/3829/SV""]",True
-13633,Ändringsbeslut,2011-06-30,2011,Anslag,2:3,Utrikesdepartementet,24,"[""UF2011/38292/UD""]",True
+13633,Ändringsbeslut,2011-06-30,2011,Anslag,2:3,Utrikesdepartementet,24,"[""UF2011/38292/UD"", ""/USTYR (delvis)""]",True
 13635,Ändringsbeslut,2011-06-30,2011,Myndighet,Lantmäteriet,Socialdepartementet,18,"[""S2011/6161/VS(slutligt)"", ""S2011/3263/PBB""]",True
 13636,Ändringsbeslut,2011-06-16,2011,Anslag,1:6,Socialdepartementet,9,"[""S2011/5878/FS""]",True
 13637,Ändringsbeslut,2011-06-30,2011,Myndighet,Statens bostadskreditnämnd,Socialdepartementet,18,"[""S2011/6161/VS(delvis)""]",True
 13638,Ändringsbeslut,2011-06-22,2011,Anslag,3:1,Utbildningsdepartementet,13,"[""U2011/3939/JÄM""]",True
 13639,Ändringsbeslut,2011-06-16,2011,Myndighet,Konstnärsnämnden,Kulturdepartementet,17,"[""Ku2011/270, 1065/KV""]",True
-13640,Ändringsbeslut,2011-06-30,2011,Anslag,2:5,Utrikesdepartementet,24,"[""UF2011/38292/UD""]",True
+13640,Ändringsbeslut,2011-06-30,2011,Anslag,2:5,Utrikesdepartementet,24,"[""UF2011/38292/UD"", ""/USTYR (delvis)""]",True
 13641,Ändringsbeslut,2011-06-30,2011,Anslag,1:7,Miljödepartementet,20,"[""M2011/2410/S (slutligt)""]",True
 13643,Ändringsbeslut,2011-06-22,2011,Myndighet,Nämnden för hemslöjdsfrågor,Kulturdepartementet,17,"[""Ku2011/1168/KV""]",True
 13644,Ändringsbeslut,2011-06-22,2011,Myndighet,Kriminalvården,Justitiedepartementet,4,"[""Ju2011/4786/KRIM""]",True
@@ -6015,7 +6015,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 13687,Ändringsbeslut,2011-11-03,2011,Myndighet,Trafikverket,Näringsdepartementet,22,"[""N2011/6043/TE""]",True
 13689,Ändringsbeslut,2011-08-25,2011,Myndighet,Ungdomsstyrelsen,Utbildningsdepartementet,17,"[""U2011/4662/UC""]",True
 13690,Ändringsbeslut,2011-09-22,2011,Myndighet,Konjunkturinstitutet,Finansdepartementet,2,"[""Fi2011/3930""]",True
-13691,Ändringsbeslut,2011-09-08,2011,Anslag,2:5,Utrikesdepartementet,24,"[""UF2011/51605/UD""]",True
+13691,Ändringsbeslut,2011-09-08,2011,Anslag,2:5,Utrikesdepartementet,24,"[""UF2011/51605/UD"", ""/FIM""]",True
 13692,Ändringsbeslut,2011-08-18,2011,Anslag,"1:8 (2009), 1:8 (2010), 1:8 och 1:11 (2009)",Näringsdepartementet,21,"[""N2011/4952/E""]",True
 13694,Ändringsbeslut,2011-08-25,2011,Anslag,"1:2, 2:1, 2:3, 3:3, 7:3, 8:2, 8:3, 8:6, 10:1, 11:1, 11:3 (2010), 11:3 och 13:1",Kulturdepartementet,17,"[""Ku2011/1348/MFI""]",True
 13695,Ändringsbeslut,2011-09-01,2011,Myndighet,Inspektionen för socialförsäkringen,Socialdepartementet,10,"[""S2011/7564/SF""]",True
@@ -6025,7 +6025,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 13700,Ändringsbeslut,2011-10-20,2011,Anslag,7:3,Socialdepartementet,9,"[""S2011/9214/FST""]",True
 13701,Ändringsbeslut,2011-09-15,2011,Myndighet,Strålsäkerhetsmyndigheten,Miljödepartementet,6;20,"[""M2011/3023/Ke""]",True
 13702,Ändringsbeslut,2011-09-22,2011,Myndighet,Statens folkhälsoinstitut,Socialdepartementet,9,"[""S2011/8288/FS""]",True
-13703,Ändringsbeslut,2011-09-15,2011,Myndighet,Styrelsen för ackreditering och teknisk kontroll,Utrikesdepartementet,24,"[""UF2011/52941/UD""]",True
+13703,Ändringsbeslut,2011-09-15,2011,Myndighet,Styrelsen för ackreditering och teknisk kontroll,Utrikesdepartementet,24,"[""UF2011/52941/UD"", ""/FIM""]",True
 13704,Ändringsbeslut,2011-09-22,2011,Anslag,7:1,Arbetsmarknadsdepartementet,1,"[""A2011/3587/DISK""]",True
 13705,Ändringsbeslut,2011-10-13,2011,Anslag,1:15,Miljödepartementet,20,"[""M2011/3269/Kl""]",True
 13706,Ändringsbeslut,2011-12-08,2011,Myndighet,Sveriges Domstolar,Justitiedepartementet,4,"[""Ju2011/8653/DOM"", ""Ju2011/8439/Å (delvis)""]",True
@@ -6147,7 +6147,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 13839,Regleringsbrev,2011-12-20,2012,Myndighet,Regionala etikprövningsnämnden i Uppsala,Utbildningsdepartementet,,"[""U2011/7258/SAM (delvis)"", ""U2011/7252/F""]",True
 13840,Regleringsbrev,2011-12-22,2012,Myndighet,Bolagsverket,Näringsdepartementet,24,"[""N2011/7273/ENT"", ""N2011/7416/KLS (delvis)"", ""N2011/1625/ENT""]",True
 13841,Regleringsbrev,2011-12-20,2012,Anslag,3:13,Utbildningsdepartementet,16,"[""U2011/7258/SAM (delvis)"", ""U2011/7246/F""]",True
-13842,Ändringsbeslut,2011-12-01,2011,Anslag,2:3,Utrikesdepartementet,24,"[""UF2011/70361/UD"", ""UF2011/70939/UD/FIM""]",True
+13842,Ändringsbeslut,2011-12-01,2011,Anslag,2:3,Utrikesdepartementet,24,"[""UF2011/70361/UD"", ""/FIM(delvis)"", ""UF2011/70939/UD/FIM""]",True
 13843,Regleringsbrev,2011-12-20,2012,Myndighet,Vetenskapsrådet,Utbildningsdepartementet,16,"[""U2011/7258/SAM/(delvis)"", ""U2011/7242/F"", ""U2011/6636/F""]",True
 13844,Regleringsbrev,2011-12-15,2012,Myndighet,Pensionsmyndigheten,Socialdepartementet,11;12,"[""S2011/11064/VS (delvis)""]",True
 13846,Regleringsbrev,2011-12-22,2012,Anslag,1:8,Miljödepartementet,20,"[""M2011/3932/S (delvis)""]",True
@@ -7346,7 +7346,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 15350,Regleringsbrev,2013-12-19,2014,Myndighet,Statens museer för världskultur,Kulturdepartementet,17,"[""Ku2013/2011/KA"", ""Ku2013/2461/RFS (delvis)""]",True
 15351,Regleringsbrev,2013-12-19,2014,Anslag,1:2,Kulturdepartementet,17,"[""Ku2013/2461/RFS (delvis)""]",True
 15352,Regleringsbrev,2013-12-19,2014,Myndighet,Kungliga hov- och slottsstaten,Finansdepartementet,1,"[""Fi2013/4335""]",True
-15353,Ändringsbeslut,2013-12-12,2013,Anslag,2:70,Utbildningsdepartementet,16,"[""U2012/369/UH (slutligt)"", ""U2013/5307, 5385""]",True
+15353,Ändringsbeslut,2013-12-12,2013,Anslag,2:70,Utbildningsdepartementet,16,"[""U2012/369/UH (slutligt)"", ""U2013/5307, 5385"", ""6331, 6432, 6473, 6516, 6637, 6688/UH""]",True
 15354,Regleringsbrev,2013-12-19,2014,Anslag,4:2,Socialdepartementet,9,"[""S2013/9047/SAM (delvis)""]",True
 15355,Regleringsbrev,2013-12-19,2014,Anslag,4:5,Socialdepartementet,9,"[""S2013/9047/SAM (delvis)""]",True
 15356,Regleringsbrev,2013-12-19,2014,Anslag,4:7,Socialdepartementet,9,"[""S2013/9047/SAM (delvis)""]",True
@@ -7477,7 +7477,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 15514,Regleringsbrev,2013-12-12,2014,Anslag,1:22,Näringsdepartementet,24,"[""N2013/5705/ENT"", ""N2013/5656/KLS (delvis)""]",True
 15516,Regleringsbrev,2013-12-19,2014,Myndighet,Försvarets radioanstalt,Försvarsdepartementet,6,"[""Fö2013/123/ESL (delvis)"", ""Fö2013/497/SUND"", ""Fö2013/854/SUND""]",True
 15517,Ändringsbeslut,2013-11-28,2013,Anslag,1:25 och 1:26,Landsbygdsdepartementet,23,"[""L2013/2997/EV""]",True
-15518,Regleringsbrev,2013-12-19,2014,Anslag,2:4,Utrikesdepartementet,24,[],True
+15518,Regleringsbrev,2013-12-19,2014,Anslag,2:4,Utrikesdepartementet,24,"[""UF2013/UD/76341/FIM (delvis)"", ""UF2013/UD/78240/FIM""]",True
 15520,Regleringsbrev,2013-12-19,2014,Myndighet,Brottsoffermyndigheten,Justitiedepartementet,4,"[""Ju2013/8712/KRIM"", ""Ju2013/8610/KRIM"", ""Ju2013/7434/KRIM""]",True
 15521,Regleringsbrev,2013-12-19,2014,Myndighet,Arbetsgivarverket,Socialdepartementet,2,"[""S2013/9067/SAM (delvis)""]",True
 15522,Regleringsbrev,2013-12-19,2014,Anslag,1:11,Miljödepartementet,20,"[""M2013/3175/S (delvis)"", ""M2013/975/Mm"", ""M2013/2121/Mm""]",True
@@ -7998,7 +7998,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 16184,Regleringsbrev,2014-12-18,2015,Myndighet,Myndigheten för tillväxtpolitiska utvärderingar och analyser,Näringsdepartementet,24,"[""N2014/1066/AS"", ""N2014/5260/AS"", ""N2014/5296/KLS (delvis)""]",True
 16185,Regleringsbrev,2014-12-18,2015,Anslag,1:5,Näringsdepartementet,21,"[""N2014/5294/E"", ""N2014/5298/E""]",True
 16186,Regleringsbrev,2014-12-22,2015,Myndighet,Riksantikvarieämbetet,Kulturdepartementet,17,"[""Ku2014/2121/RFS (delvis)""]",True
-16187,Regleringsbrev,2014-12-18,2015,Myndighet,Inspektionen för strategiska produkter,Utrikesdepartementet,5,[],True
+16187,Regleringsbrev,2014-12-18,2015,Myndighet,Inspektionen för strategiska produkter,Utrikesdepartementet,5,"[""UF2014/UD/79271/PLAN (delvis)"", ""UF2014/UD/80404/NIS""]",True
 16190,Regleringsbrev,2014-12-22,2015,Myndighet,Justitiekanslern,Justitiedepartementet,1;4,"[""Ju2014/7865/Å"", ""Ju2014/7806/Å (delvis)"", ""Ju2014/7900/PO (delvis)""]",True
 16191,Regleringsbrev,2014-12-22,2015,Myndighet,Säkerhets- och integritetsskyddsnämnden,Justitiedepartementet,4,"[""Ju2013/1649/Å"", ""Ju2014/7869/Å"", ""Ju2014/7900/PO (delvis)""]",True
 16192,Regleringsbrev,2014-12-18,2015,Anslag,1:10,Utrikesdepartementet,5,"[""UF2014/79271/UD/PLAN (delvis)"", ""UF2014/80408/UD/FIM""]",True
@@ -12288,11 +12288,11 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 21559,Regleringsbrev,2020-12-22,2021,Myndighet,Folkhälsomyndigheten,Socialdepartementet,9,"[""S2019/03298"", ""S2020/09593 (delvis)""]",True
 21560,Regleringsbrev,2020-12-17,2021,Anslag,2:3,Arbetsmarknadsdepartementet,14,"[""A2020/02648"", ""A2020/02632""]",True
 21561,Regleringsbrev,2020-12-17,2021,Myndighet,Säkerhetspolisen,Justitiedepartementet,4,"[""Ju2020/04577"", ""Ju2020/00891/PO"", ""Ju2020/01705""]",True
-21562,Regleringsbrev,2020-12-17,2021,Anslag,1:1,Utrikesdepartementet,7,[],True
+21562,Regleringsbrev,2020-12-17,2021,Anslag,1:1,Utrikesdepartementet,7,"[""UD2020:18600 (delvis)"", ""UD2020:19017""]",True
 21563,Regleringsbrev,2020-12-17,2021,Anslag,1:11,Utrikesdepartementet,5,"[""UD2020/18147 (delvis)"", ""UD2020/19031""]",True
 21564,Regleringsbrev,2020-12-17,2021,Anslag,1:11,Utrikesdepartementet,5,"[""UD2020/18147 (delvis)"", ""UD2020/19023""]",True
 21565,Regleringsbrev,2020-12-17,2021,Anslag,1:11,Utrikesdepartementet,5,"[""UD2020/18147 (delvis)"", ""UD2020/19028""]",True
-21566,Regleringsbrev,2020-12-17,2021,Anslag,1:11,Arbetsmarknadsdepartementet,14,[],True
+21566,Regleringsbrev,2020-12-17,2021,Anslag,1:11,Arbetsmarknadsdepartementet,14,"[""A/02643"", ""SV/02632(delvis)""]",True
 21567,Regleringsbrev,2020-12-17,2021,Anslag,1:22,Näringsdepartementet,24,"[""N2020/03097"", ""N2020/03061(delvis)""]",True
 21568,Regleringsbrev,2020-12-17,2021,Myndighet,Bolagsverket,Näringsdepartementet,24,"[""N2020/03079"", ""N2020/03061(delvis)"", ""N2020/00493""]",True
 21569,Regleringsbrev,2020-12-17,2021,Myndighet,Verket för innovationssystem,Näringsdepartementet,24,"[""N2020/03087"", ""N2020/03061 (delvis)"", ""N2020/00489""]",True
@@ -15987,7 +15987,7 @@ rbid,type,date,year,category,name,department,expenditure_areas,diary_numbers,pdf
 26115,Regleringsbrev,2025-12-18,2026,Myndighet,Statens servicecenter,Finansdepartementet,2,"[""Fi2025/02364 (delvis)""]",True
 26116,Ändringsbeslut,2025-11-27,2025,Myndighet,Justitiekanslern,Justitiedepartementet,1;4,"[""Ju2025/00288 (delvis)""]",True
 26118,Ändringsbeslut,2025-12-11,2025,Myndighet,Sveriges meteorologiska och hydrologiska institut,Klimat- och näringslivsdepartementet,20,"[""KN2025/02193 (delvis)"", ""KN2025/02323""]",True
-26119,Regleringsbrev,2025-12-18,2026,Myndighet,Kommerskollegium,Utrikesdepartementet,7;24,"[""UD2025/18692"", ""(delvis) UD2025/18801(delvis)""]",True
+26119,Regleringsbrev,2025-12-18,2026,Myndighet,Kommerskollegium,Utrikesdepartementet,7;24,"[""UD2025/18692"", ""(delvis) UD2025/18801(delvis)"", ""UD2025/""]",True
 26120,Ändringsbeslut,2025-11-27,2025,Myndighet,Migrationsverket,Justitiedepartementet,8,"[""Ju2025/02537""]",True
 26122,Regleringsbrev,2025-12-18,2026,Anslag,1:13 och 1:14,Finansdepartementet,21,"[""Fi2025/02357 (delvis)""]",True
 26123,Ändringsbeslut,2025-11-27,2025,Anslag,1:1,Utrikesdepartementet,7,"[""UD2025/17517""]",True
