@@ -100,7 +100,9 @@ def _expected_columns(metadata_fields: list[str]) -> list[str]:
             "html", "xhtml", "md", *(["pdf"] if "pdf" in metadata_fields else [])]
 
 
-def _metadata_value(field: str, value: object) -> str | list[int] | list[str]:
+def _metadata_value(field: str, value: object) -> int | str | list[int] | list[str] | None:
+    if field == "original_rbid":
+        return int(value) if value else None
     if field == "registry_numbers":
         return value if isinstance(value, list) else [
             entry.strip() for entry in str(value or "").split(";") if entry.strip()

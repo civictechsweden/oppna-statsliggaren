@@ -23,6 +23,7 @@ class Parser(object):
 
         metadata = {}
         metadata["rbid"] = rbid
+        metadata["original_rbid"] = None
         metadata["type"] = None
         metadata["date"] = None
         metadata["year"] = None
@@ -50,6 +51,11 @@ class Parser(object):
         metadata["year"] = words[1].split("-")[0]
         metadata["category"] = words[2]
         metadata["name"] = " ".join(words[3:])
+        metadata["original_rbid"] = (
+            Parser.extract_original_rbid(html_text, rbid, metadata["category"])
+            if metadata["type"] == "Ändringsbeslut"
+            else rbid
+        )
         metadata["department"] = Parser.extract_department(letter)
         metadata["registry_numbers"] = ";".join(Parser.extract_registry_numbers(letter))
         metadata["pdf"] = "laddaNerPdf" in html_text
@@ -68,6 +74,30 @@ class Parser(object):
             )
 
         return metadata, attachments, letter
+
+    @staticmethod
+    def extract_original_rbid(page: str, rbid: int, category: str) -> int | None:
+        nav = LexborHTMLParser(page).css_first("#sidebar nav.content_menu")
+        if nav is None:
+            return None
+        for link in nav.css("a[href]"):
+            match = re.search(r"[?&]rbid=(\d+)", link.attributes["href"], re.I)
+            if match is None or int(match[1]) != rbid:
+                continue
+            if not link.text(strip=True).startswith("Ändringsbeslut"):
+                continue
+            group = link.parent.parent.parent
+            original = group.css_first("a[href]") if group.tag == "li" else None
+            if original is not None:
+                label = original.text(strip=True)
+                if (category == "Myndighet" and label.startswith("Anslag ")) or (
+                    category == "Anslag" and label.startswith("Myndighet ")
+                ):
+                    return None
+                match = re.search(r"[?&]rbid=(\d+)", original.attributes["href"], re.I)
+                if match:
+                    return int(match[1])
+        return None
 
     @staticmethod
     def extract_department(letter: str) -> str | None:

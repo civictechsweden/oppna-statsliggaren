@@ -32,7 +32,7 @@ outside that window require an explicit backfill.
 ## Files
 
 - `letters.parquet`: original letter HTML, cleaned XHTML and Markdown, plus
-  `id`, `type`, `date`, `year`, `category`, `name`, `department`,
+  `id`, `original_rbid`, `type`, `date`, `year`, `category`, `name`, `department`,
   `expenditure_areas`, `registry_numbers` and `pdf`.
 - `letters/{year}/{rbid}.pdf`: available original letter PDFs, using the full-letter version.
 - `attachments/{year}/{id}.{extension}`: original attachment files, including PDF,
@@ -47,6 +47,12 @@ outside that window require an explicit backfill.
 The department is read from the letterhead for both agency and appropriation
 letters. Historical names are preserved. A department and appropriation number
 are not necessarily unique identifiers; use the source IDs.
+
+`original_rbid` is the RBID of the first version of the letter. Every amendment
+decision carries the same value, so versions can be grouped without relying on
+their names or expenditure areas. The HTML column excludes the website's version
+navigation from which this ID is extracted. The value is null when the source's
+version links do not identify a matching original letter.
 
 `registry_numbers` contains individual registry numbers expanded from the
 letterhead's comma-separated shorthand. It is a string list in Parquet. Omitted
