@@ -139,6 +139,11 @@ class Parser(object):
         if entry == "2008/4489,5656,6758,7290/UH":
             # This letter omits U despite naming Utbildningsdepartementet in its letterhead.
             entry = f"U{entry}"
+        if "Ku2012/740/1341/KO" in entry:
+            # The government agenda lists both case numbers separately with /KO.
+            entry = entry.replace(
+                "Ku2012/740/1341/KO", "Ku2012/740/KO, Ku2012/1341/KO"
+            )
 
         entry = re.sub(r"/\s+(?=[A-Za-zÅÄÖåäö])", "/", entry)
         entry = re.sub(
@@ -154,11 +159,6 @@ class Parser(object):
         entry = re.sub(
             r"(?<=[\w)])\s+(?=[A-ZÅÄÖ][A-Za-zÅÄÖåäö]{0,3}\s*\d{4}/)",
             ", ",
-            entry,
-        )
-        entry = re.sub(
-            r"([A-ZÅÄÖ][A-Za-zÅÄÖåäö]{0,3}\s*\d{4}/\d{1,6})/(\d{1,6}/[A-Za-zÅÄÖåäö]+)",
-            r"\1, \2",
             entry,
         )
         parts = re.split(r"\s*,\s*|\s+och\s+", entry)
@@ -202,11 +202,6 @@ class Parser(object):
                     qualifier.group().strip() if qualifier else "",
                 ]
             )
-
-        for index in range(len(parsed) - 2, -1, -1):
-            current, following = parsed[index], parsed[index + 1]
-            if current[:2] == following[:2] and not current[3]:
-                current[3] = following[3]
 
         return [
             f"{department}{year}/{case}"

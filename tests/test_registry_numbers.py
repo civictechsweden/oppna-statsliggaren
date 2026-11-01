@@ -35,17 +35,21 @@ class RegistryNumberTests(unittest.TestCase):
             ['Jo2002/673', 'Jo2002/3076 (delvis)', 'Jo1997/934'],
         )
 
-    def test_grouped_numbers_share_the_trailing_unit_code(self):
+    def test_grouped_numbers_do_not_infer_the_trailing_unit_code(self):
         self.assertEqual(
             Parser._split_registry_numbers('U2003/421,4605/IS'),
-            ['U2003/421/IS', 'U2003/4605/IS'],
+            ['U2003/421', 'U2003/4605/IS'],
+        )
+        self.assertEqual(
+            Parser._split_registry_numbers('U2004/3899,4011/UH'),
+            ['U2004/3899', 'U2004/4011/UH'],
         )
         self.assertEqual(
             Parser._split_registry_numbers(
                 'Ku2010/1203, 2011/14, 437/KV, 1960/RFS (delvis)'
             ),
             [
-                'Ku2010/1203', 'Ku2011/14/KV',
+                'Ku2010/1203', 'Ku2011/14',
                 'Ku2011/437/KV', 'Ku2011/1960/RFS (delvis)',
             ],
         )
@@ -73,8 +77,8 @@ class RegistryNumberTests(unittest.TestCase):
         self.assertEqual(
             Parser.extract_registry_numbers(letter),
             [
-                'Ku2010/1055/KV', 'Ku2010/1056/KV',
-                'Ku2010/1658/KV', 'Ku2010/1688/KV',
+                'Ku2010/1055', 'Ku2010/1056',
+                'Ku2010/1658', 'Ku2010/1688/KV',
             ],
         )
 
@@ -83,20 +87,20 @@ class RegistryNumberTests(unittest.TestCase):
             Parser._split_registry_numbers(
                 'U2009/2227,2314/UH U2009/1682/SAM (delvis)'
             ),
-            ['U2009/2227/UH', 'U2009/2314/UH', 'U2009/1682/SAM (delvis)'],
+            ['U2009/2227', 'U2009/2314/UH', 'U2009/1682/SAM (delvis)'],
         )
         self.assertEqual(
             Parser._split_registry_numbers('Ku2012/740/1341/KO Ku2013/506,560/KO'),
             [
                 'Ku2012/740/KO', 'Ku2012/1341/KO',
-                'Ku2013/506/KO', 'Ku2013/560/KO',
+                'Ku2013/506', 'Ku2013/560/KO',
             ],
         )
         self.assertEqual(
             Parser._split_registry_numbers('2008/4489,5656,6758,7290/UH'),
             [
-                'U2008/4489/UH', 'U2008/5656/UH',
-                'U2008/6758/UH', 'U2008/7290/UH',
+                'U2008/4489', 'U2008/5656',
+                'U2008/6758', 'U2008/7290/UH',
             ],
         )
 
