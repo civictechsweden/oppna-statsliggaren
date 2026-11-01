@@ -9,7 +9,7 @@ from huggingface_hub import HfApi, get_token
 import statsliggaren as sl
 from services.artifacts import convert_pending_attachments, fetch_source_files
 from services.downloader import Downloader
-from services.expenditure_areas import fetch_areas
+from services.expenditure_areas import fetch_areas_and_roots
 from services.writer import Writer
 
 load_dotenv()
@@ -39,11 +39,14 @@ async def main(refresh_since: str | None = None, scan_all_gaps: bool = False, re
             or int(row["rbid"]) in refreshed
         }
         if years:
-            areas = await fetch_areas(downloader, years)
+            areas, roots = await fetch_areas_and_roots(downloader, years)
             for row in metadata:
-                codes = areas.get(int(row["rbid"]))
+                rbid = int(row["rbid"])
+                codes = areas.get(rbid)
                 if codes is not None:
                     row["expenditure_areas"] = ";".join(str(code) for code in sorted(codes))
+                if rbid in roots:
+                    row["original_rbid"] = roots[rbid]
 
         Writer.write_csv(sorted(metadata, key=lambda d: int(d["rbid"])), "letters.csv")
         Writer.write_csv(

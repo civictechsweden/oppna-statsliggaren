@@ -50,9 +50,9 @@ are not necessarily unique identifiers; use the source IDs.
 
 `original_rbid` is the RBID of the first version of the letter. Every amendment
 decision carries the same value, so versions can be grouped without relying on
-their names or expenditure areas. The HTML column excludes the website's version
-navigation from which this ID is extracted. The value is null when the source's
-version links do not identify a matching original letter. It reflects the source's
+their names or expenditure areas. It comes from the UO lists or, when absent from
+those lists, the letter page's version navigation. The value is null when the
+source links do not identify a matching original letter. It reflects the source's
 links, which can be wrong even when the same link appears on multiple list pages.
 
 `registry_numbers` contains individual registry numbers expanded from the

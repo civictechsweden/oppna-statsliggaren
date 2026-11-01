@@ -1624,11 +1624,11 @@ rbid,original_rbid,type,date,year,category,name,department,expenditure_areas,reg
 7797,7797,Regleringsbrev,2004-12-16,2005,Anslag,2:7,Finansdepartementet,2,Fi2004/6410 (delvis),False
 7798,5250,Ändringsbeslut,2004-12-22,2004,Myndighet,Säkerhetspolisen,Justitiedepartementet,4,Ju2004/11715/PO;Ju2004/10873/PO (delvis),False
 7799,5310,Ändringsbeslut,2004-12-16,2004,Myndighet,Arbetsmarknadsverket,Näringsdepartementet,13,N2004/9805/A,False
-7801,6135,Ändringsbeslut,2004-09-15,2004,Myndighet,Riksdagsförvaltningen,Statsrådsberedningen,,Dnr 250-984-03/04;Dnr 250-4452-03/04;Dnr 250-4453-03/04,False
+7801,,Ändringsbeslut,2004-09-15,2004,Myndighet,Riksdagsförvaltningen,Statsrådsberedningen,,Dnr 250-984-03/04;Dnr 250-4452-03/04;Dnr 250-4453-03/04,False
 7802,5308,Ändringsbeslut,2004-12-22,2004,Myndighet,Styrelsen för internationellt utvecklingssamarbete,Utrikesdepartementet,7,UD2004/67505/GU,False
-7803,6209,Ändringsbeslut,2004-04-14,2004,Myndighet,Riksrevisionen,Statsrådsberedningen,,Dnr 250-984-03/04;Dnr 250-3047-03/04,False
+7803,,Ändringsbeslut,2004-04-14,2004,Myndighet,Riksrevisionen,Statsrådsberedningen,,Dnr 250-984-03/04;Dnr 250-3047-03/04,False
 7804,6125,Ändringsbeslut,2004-12-22,2004,Anslag,5:10 och 5:16 (2003),Utrikesdepartementet,5,UD2004/67716/PLAN,False
-7812,6800,Ändringsbeslut,2004-12-15,2004,Myndighet,Riksdagens ombudsmän JO,Statsrådsberedningen,,Dnr 250-984-03/04,False
+7812,,Ändringsbeslut,2004-12-15,2004,Myndighet,Riksdagens ombudsmän JO,Statsrådsberedningen,,Dnr 250-984-03/04,False
 7817,6054,Ändringsbeslut,2004-12-22,2004,Anslag,"8:1, 8:2, 8:5 och 9:1 (2003)",Utrikesdepartementet,7,UD2004/67529/GU,False
 7819,5224,Ändringsbeslut,2004-12-22,2004,Myndighet,Migrationsverket,Utrikesdepartementet,8,UD2004/68598/MAP,False
 7820,5284,Ändringsbeslut,2004-12-22,2004,Myndighet,Rymdstyrelsen,Näringsdepartementet,24,N2004/10103/ITFoU,False
