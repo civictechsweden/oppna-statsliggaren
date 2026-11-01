@@ -88,7 +88,7 @@ https://www.statskontoret.se/regleringsbrev/bilaga/{ID}
 
 ### Parquet export
 
-The repository can also build a Parquet export with document payload columns `id`, `html`, `xhtml`, and `md`, plus metadata columns from `letters.csv`: `type`, `date`, `year`, `category`, `name`, `department`, `expenditure_areas`, `registry_numbers`, and `pdf`. `registry_numbers` contains individual registry numbers expanded from the letterhead's comma-separated shorthand. Omitted unit codes stay omitted unless independently documented. The CSV separates numbers with semicolons; Parquet stores them as a list of strings.
+The repository can also build a Parquet export with document payload columns `id`, `html`, `xhtml`, and `md`, plus metadata columns from `letters.csv`: `original_rbid`, `type`, `date`, `year`, `category`, `name`, `department`, `expenditure_areas`, `registry_numbers`, and `pdf`. `original_rbid` is the original letter's RBID according to Statsliggaren's UO lists, or the letter's version navigation when it has no UO assignment. Source links can be wrong. `registry_numbers` contains individual registry numbers expanded from the letterhead's comma-separated shorthand. Omitted unit codes stay omitted unless independently documented. The CSV separates numbers with semicolons; Parquet stores them as a list of strings.
 Run it locally with:
 
 ```bash
