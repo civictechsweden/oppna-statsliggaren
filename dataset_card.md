@@ -52,7 +52,8 @@ are not necessarily unique identifiers; use the source IDs.
 decision carries the same value, so versions can be grouped without relying on
 their names or expenditure areas. The HTML column excludes the website's version
 navigation from which this ID is extracted. The value is null when the source's
-version links do not identify a matching original letter.
+version links do not identify a matching original letter. It reflects the source's
+links, which can be wrong even when the same link appears on multiple list pages.
 
 `registry_numbers` contains individual registry numbers expanded from the
 letterhead's comma-separated shorthand. It is a string list in Parquet. Omitted
