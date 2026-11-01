@@ -3,7 +3,8 @@ name: Fetch the data
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 1 * * *" # 1AM UTC every night
+    - cron: "17 23 * * *"
+      timezone: "Europe/Stockholm"
 
 permissions:
   contents: write
