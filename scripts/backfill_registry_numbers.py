@@ -1,8 +1,7 @@
-"""Backfill letterhead diary numbers from the raw HTML in letters.parquet."""
+"""Backfill letterhead registry numbers from the raw HTML in letters.parquet."""
 
 import argparse
 import csv
-import json
 from collections import Counter
 from pathlib import Path
 
@@ -16,8 +15,8 @@ def backfill(parquet: Path, csv_path: Path) -> Counter:
         reader = csv.DictReader(handle)
         fields = list(reader.fieldnames or [])
         rows = list(reader)
-    if "diary_numbers" not in fields:
-        fields.insert(fields.index("pdf"), "diary_numbers")
+    if "registry_numbers" not in fields:
+        fields.insert(fields.index("pdf"), "registry_numbers")
 
     by_id = {int(row["rbid"]): row for row in rows}
     seen = set()
@@ -29,8 +28,8 @@ def backfill(parquet: Path, csv_path: Path) -> Counter:
             letter_id = int(item["id"])
             if letter_id not in by_id:
                 raise KeyError(f"Parquet letter {letter_id} is missing from {csv_path}")
-            numbers = Parser.extract_diary_numbers(item["html"])
-            by_id[letter_id]["diary_numbers"] = json.dumps(numbers, ensure_ascii=False)
+            numbers = Parser.extract_registry_numbers(item["html"])
+            by_id[letter_id]["registry_numbers"] = ";".join(numbers)
             counts["zero" if not numbers else "one" if len(numbers) == 1 else "multiple"] += 1
             seen.add(letter_id)
     if seen != set(by_id):

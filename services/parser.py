@@ -1,5 +1,4 @@
 import html
-import json
 import re
 
 from bs4 import BeautifulSoup, SoupStrainer
@@ -30,7 +29,7 @@ class Parser(object):
         metadata["category"] = None
         metadata["name"] = None
         metadata["department"] = None
-        metadata["diary_numbers"] = "[]"
+        metadata["registry_numbers"] = ""
         metadata["pdf"] = False
 
         if fail:
@@ -52,9 +51,7 @@ class Parser(object):
         metadata["category"] = words[2]
         metadata["name"] = " ".join(words[3:])
         metadata["department"] = Parser.extract_department(letter)
-        metadata["diary_numbers"] = json.dumps(
-            Parser.extract_diary_numbers(letter), ensure_ascii=False
-        )
+        metadata["registry_numbers"] = ";".join(Parser.extract_registry_numbers(letter))
         metadata["pdf"] = "laddaNerPdf" in html_text
 
         attachments = []
@@ -86,8 +83,8 @@ class Parser(object):
         return Parser._normalize_whitespace(department.get_text(" ", strip=True)) or None
 
     @staticmethod
-    def extract_diary_numbers(letter: str) -> list[str]:
-        """Read diary-number entries from the original letterhead, as printed."""
+    def extract_registry_numbers(letter: str) -> list[str]:
+        """Read registry-number entries from the original letterhead, as printed."""
         tree = LexborHTMLParser(letter)
         diary = tree.css_first("#BrevHuvud #DiarieNr, .universe_tbl .diarie")
         if diary is None:

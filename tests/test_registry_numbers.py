@@ -1,5 +1,4 @@
 import csv
-import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -9,13 +8,13 @@ from unittest.mock import patch
 import pyarrow as pa
 import pyarrow.parquet as pq
 
-from scripts.backfill_diary_numbers import backfill
+from scripts.backfill_registry_numbers import backfill
 from scripts import build_letters_parquet as builder
 from scripts.build_letters_parquet import _metadata_value, _normalize_existing_rows
 from services.parser import Parser
 
 
-class DiaryNumberTests(unittest.TestCase):
+class RegistryNumberTests(unittest.TestCase):
     def test_current_letterhead_keeps_multiple_numbers_and_qualifiers(self):
         letter = (
             '<div id="BrevHuvud"><div id="DiarieNr">'
@@ -23,7 +22,7 @@ class DiaryNumberTests(unittest.TestCase):
             '</div></div><p>Body mentions Fi2026/99999</p>'
         )
         self.assertEqual(
-            Parser.extract_diary_numbers(letter),
+            Parser.extract_registry_numbers(letter),
             ['Fö2025/01617', 'Fö2026/00496 (delvis)', 'Fö2026/00498'],
         )
 
@@ -34,7 +33,7 @@ class DiaryNumberTests(unittest.TestCase):
             'Jo1997/934<br>Se bilaga 1</span></td></tr></table>'
         )
         self.assertEqual(
-            Parser.extract_diary_numbers(letter),
+            Parser.extract_registry_numbers(letter),
             ['Jo2002/673, 3076 (delvis)', 'Jo1997/934'],
         )
 
@@ -45,7 +44,7 @@ class DiaryNumberTests(unittest.TestCase):
             'Fö 2002/<br>1876/EPS</span></td></tr></table>'
         )
         self.assertEqual(
-            Parser.extract_diary_numbers(letter),
+            Parser.extract_registry_numbers(letter),
             ['Ju2002/9142/DOM (delvis)', 'Fö 2002/1876/EPS'],
         )
 
@@ -57,12 +56,12 @@ class DiaryNumberTests(unittest.TestCase):
             '</td></tr></table></div>'
         )
         self.assertEqual(
-            Parser.extract_diary_numbers(letter), ['U2003/4789/DK (slutligt)']
+            Parser.extract_registry_numbers(letter), ['U2003/4789/DK (slutligt)']
         )
 
-    def test_blank_letterhead_has_no_diary_numbers(self):
+    def test_blank_letterhead_has_no_registry_numbers(self):
         letter = '<div id="BrevHuvud"><div id="DiarieNr"></div></div>'
-        self.assertEqual(Parser.extract_diary_numbers(letter), [])
+        self.assertEqual(Parser.extract_registry_numbers(letter), [])
 
     def test_unusual_letterhead_number_is_preserved(self):
         letter = (
@@ -70,21 +69,25 @@ class DiaryNumberTests(unittest.TestCase):
             'UD2020:18600 (delvis)<br>Se bilaga 1</div></div>'
         )
         self.assertEqual(
-            Parser.extract_diary_numbers(letter), ['UD2020:18600 (delvis)']
+            Parser.extract_registry_numbers(letter), ['UD2020:18600 (delvis)']
         )
 
-    def test_metadata_serializes_csv_array(self):
+    def test_metadata_serializes_csv_values(self):
         response = SimpleNamespace(
             status_code=200,
             text=(
                 '<title>Regleringsbrev 2026 Myndighet Test - Statskontoret</title>'
                 '<section id="letter"><div id="BrevHuvud">'
-                '<div id="DiarieNr">UD2026/15651</div>2026-10-15'
+                '<div id="DiarieNr">UD2026/15651<br>UD2025/04042 (delvis)<br>'
+                'Jo2002/673, 3076 (delvis)</div>2026-10-15'
                 '</div></section>'
             ),
         )
         metadata, _, _ = Parser.parse_metadata(response, 1)
-        self.assertEqual(json.loads(metadata['diary_numbers']), ['UD2026/15651'])
+        self.assertEqual(
+            metadata['registry_numbers'],
+            'UD2026/15651;UD2025/04042 (delvis);Jo2002/673, 3076 (delvis)',
+        )
 
     def test_backfill_and_parquet_list_type(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -92,26 +95,28 @@ class DiaryNumberTests(unittest.TestCase):
             source = root / 'source.parquet'
             csv_path = root / 'letters.csv'
             pq.write_table(pa.Table.from_pylist([
-                {'id': 1, 'html': '<div id="BrevHuvud"><div id="DiarieNr">UD2026/15651</div></div>'},
+                {'id': 1, 'html': '<div id="BrevHuvud"><div id="DiarieNr">UD2026/15651<br>UD2025/04042 (delvis)<br>Jo2002/673, 3076 (delvis)</div></div>'},
                 {'id': 2, 'html': '<div id="BrevHuvud"><div id="DiarieNr"></div></div>'},
             ]), source)
             csv_path.write_text('rbid,department,expenditure_areas,pdf\n1,Utrikesdepartementet,7,True\n2,,8,False\n')
             counts = backfill(source, csv_path)
-            self.assertEqual(counts, {'one': 1, 'zero': 1})
+            self.assertEqual(counts, {'multiple': 1, 'zero': 1})
             with csv_path.open(newline='') as handle:
                 reader = csv.DictReader(handle)
                 fields = reader.fieldnames
                 rows = list(reader)
-            self.assertEqual(fields, ['rbid', 'department', 'expenditure_areas', 'diary_numbers', 'pdf'])
-            self.assertEqual(_metadata_value('diary_numbers', rows[0]['diary_numbers']), ['UD2026/15651'])
-            self.assertEqual(_metadata_value('diary_numbers', rows[1]['diary_numbers']), [])
+            self.assertEqual(fields, ['rbid', 'department', 'expenditure_areas', 'registry_numbers', 'pdf'])
+            expected = ['UD2026/15651', 'UD2025/04042 (delvis)', 'Jo2002/673, 3076 (delvis)']
+            self.assertEqual(rows[0]['registry_numbers'], ';'.join(expected))
+            self.assertEqual(_metadata_value('registry_numbers', rows[0]['registry_numbers']), expected)
+            self.assertEqual(_metadata_value('registry_numbers', rows[1]['registry_numbers']), [])
             normalized, changed = _normalize_existing_rows(
                 pa.Table.from_pylist([{'id': 1, 'html': 'original', 'xhtml': 'cleaned', 'md': 'markdown'}]),
-                ['diary_numbers'],
-                {1: {'diary_numbers': rows[0]['diary_numbers']}},
+                ['registry_numbers'],
+                {1: {'registry_numbers': rows[0]['registry_numbers']}},
             )
             self.assertTrue(changed)
-            self.assertEqual(normalized[0]['diary_numbers'], ['UD2026/15651'])
+            self.assertEqual(normalized[0]['registry_numbers'], expected)
 
             output = root / 'output.parquet'
             pq.write_table(pa.Table.from_pylist([
@@ -119,10 +124,10 @@ class DiaryNumberTests(unittest.TestCase):
             ]), output)
             with patch('sys.argv', ['builder', '--output', str(output)]), \
                  patch.object(builder, '_load_metadata', return_value=(
-                     ['diary_numbers'], {1: {'diary_numbers': rows[0]['diary_numbers']}}
+                     ['registry_numbers'], {1: {'registry_numbers': rows[0]['registry_numbers']}}
                  )), \
                  patch.object(builder, '_letter_ids', return_value=[]):
                 builder.main()
             table = pq.read_table(output)
-            self.assertEqual(table.schema.field('diary_numbers').type, pa.list_(pa.string()))
-            self.assertEqual(table['diary_numbers'].to_pylist(), [['UD2026/15651']])
+            self.assertEqual(table.schema.field('registry_numbers').type, pa.list_(pa.string()))
+            self.assertEqual(table['registry_numbers'].to_pylist(), [expected])

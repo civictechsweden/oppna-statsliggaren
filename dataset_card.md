@@ -33,7 +33,7 @@ outside that window require an explicit backfill.
 
 - `letters.parquet`: original letter HTML, cleaned XHTML and Markdown, plus
   `id`, `type`, `date`, `year`, `category`, `name`, `department`,
-  `expenditure_areas`, `diary_numbers` and `pdf`.
+  `expenditure_areas`, `registry_numbers` and `pdf`.
 - `letters.csv`: letter catalogue using `rbid` for the same source ID.
 - `attachments.csv`: attachment catalogue with `id`, `rbid` and source filename.
 - `letters/{year}/{rbid}.pdf`: available original letter PDFs, using the full-letter version.
@@ -50,12 +50,12 @@ The department is read from the letterhead for both agency and appropriation
 letters. Historical names are preserved. A department and appropriation number
 are not necessarily unique identifiers; use the source IDs.
 
-`diary_numbers` contains the diary-number entries printed in the letterhead.
-It is a string list in Parquet and a JSON array in each CSV cell. Some older
+`registry_numbers` contains the registry-number entries printed in the letterhead.
+It is a string list in Parquet and semicolon-separated in each CSV cell. Some older
 letterheads group several numbers in one entry using comma shorthand; those
 entries retain the source wording rather than inventing missing prefixes.
 Notes such as "Se bilaga 1" are omitted. An empty list means no readable number
-was found in the letterhead, not that the decision has no diary number.
+was found in the letterhead, not that the decision has no registry number.
 
 The HTML column contains the letter itself, without website navigation. XHTML
 normalizes the source layouts; Markdown is a lossy representation. The source
