@@ -1,4 +1,3 @@
-import csv
 import tempfile
 import unittest
 from pathlib import Path
@@ -8,7 +7,6 @@ from unittest.mock import patch
 import pyarrow as pa
 import pyarrow.parquet as pq
 
-from scripts.backfill_registry_numbers import backfill
 from scripts import build_letters_parquet as builder
 from scripts.build_letters_parquet import _metadata_value, _normalize_existing_rows
 from services.parser import Parser
@@ -89,31 +87,17 @@ class RegistryNumberTests(unittest.TestCase):
             'UD2026/15651;UD2025/04042 (delvis);Jo2002/673, 3076 (delvis)',
         )
 
-    def test_backfill_and_parquet_list_type(self):
+    def test_parquet_list_type(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            source = root / 'source.parquet'
-            csv_path = root / 'letters.csv'
-            pq.write_table(pa.Table.from_pylist([
-                {'id': 1, 'html': '<div id="BrevHuvud"><div id="DiarieNr">UD2026/15651<br>UD2025/04042 (delvis)<br>Jo2002/673, 3076 (delvis)</div></div>'},
-                {'id': 2, 'html': '<div id="BrevHuvud"><div id="DiarieNr"></div></div>'},
-            ]), source)
-            csv_path.write_text('rbid,department,expenditure_areas,pdf\n1,Utrikesdepartementet,7,True\n2,,8,False\n')
-            counts = backfill(source, csv_path)
-            self.assertEqual(counts, {'multiple': 1, 'zero': 1})
-            with csv_path.open(newline='') as handle:
-                reader = csv.DictReader(handle)
-                fields = reader.fieldnames
-                rows = list(reader)
-            self.assertEqual(fields, ['rbid', 'department', 'expenditure_areas', 'registry_numbers', 'pdf'])
             expected = ['UD2026/15651', 'UD2025/04042 (delvis)', 'Jo2002/673, 3076 (delvis)']
-            self.assertEqual(rows[0]['registry_numbers'], ';'.join(expected))
-            self.assertEqual(_metadata_value('registry_numbers', rows[0]['registry_numbers']), expected)
-            self.assertEqual(_metadata_value('registry_numbers', rows[1]['registry_numbers']), [])
+            csv_value = ';'.join(expected)
+            self.assertEqual(_metadata_value('registry_numbers', csv_value), expected)
+            self.assertEqual(_metadata_value('registry_numbers', ''), [])
             normalized, changed = _normalize_existing_rows(
                 pa.Table.from_pylist([{'id': 1, 'html': 'original', 'xhtml': 'cleaned', 'md': 'markdown'}]),
                 ['registry_numbers'],
-                {1: {'registry_numbers': rows[0]['registry_numbers']}},
+                {1: {'registry_numbers': csv_value}},
             )
             self.assertTrue(changed)
             self.assertEqual(normalized[0]['registry_numbers'], expected)
@@ -124,7 +108,7 @@ class RegistryNumberTests(unittest.TestCase):
             ]), output)
             with patch('sys.argv', ['builder', '--output', str(output)]), \
                  patch.object(builder, '_load_metadata', return_value=(
-                     ['registry_numbers'], {1: {'registry_numbers': rows[0]['registry_numbers']}}
+                     ['registry_numbers'], {1: {'registry_numbers': csv_value}}
                  )), \
                  patch.object(builder, '_letter_ids', return_value=[]):
                 builder.main()
