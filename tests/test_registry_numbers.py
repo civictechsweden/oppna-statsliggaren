@@ -24,7 +24,7 @@ class RegistryNumberTests(unittest.TestCase):
             ['Fö2025/01617', 'Fö2026/00496 (delvis)', 'Fö2026/00498'],
         )
 
-    def test_legacy_letterhead_preserves_grouped_shorthand(self):
+    def test_legacy_letterhead_expands_grouped_shorthand(self):
         letter = (
             '<table class="universe_tbl"><tr><td class="dnr">'
             '<span class="diarie">Jo2002/673, 3076 (delvis)<br>'
@@ -32,7 +32,76 @@ class RegistryNumberTests(unittest.TestCase):
         )
         self.assertEqual(
             Parser.extract_registry_numbers(letter),
-            ['Jo2002/673, 3076 (delvis)', 'Jo1997/934'],
+            ['Jo2002/673', 'Jo2002/3076 (delvis)', 'Jo1997/934'],
+        )
+
+    def test_grouped_numbers_do_not_infer_the_trailing_unit_code(self):
+        self.assertEqual(
+            Parser._split_registry_numbers('U2003/421,4605/IS'),
+            ['U2003/421', 'U2003/4605/IS'],
+        )
+        self.assertEqual(
+            Parser._split_registry_numbers('U2004/3899,4011/UH'),
+            ['U2004/3899', 'U2004/4011/UH'],
+        )
+        self.assertEqual(
+            Parser._split_registry_numbers(
+                'Ku2010/1203, 2011/14, 437/KV, 1960/RFS (delvis)'
+            ),
+            [
+                'Ku2010/1203', 'Ku2011/14',
+                'Ku2011/437/KV', 'Ku2011/1960/RFS (delvis)',
+            ],
+        )
+
+    def test_comma_before_delvis_and_2002_unit_exception(self):
+        self.assertEqual(
+            Parser._split_registry_numbers('Jo2007/2502, delvis'),
+            ['Jo2007/2502 (delvis)'],
+        )
+        self.assertEqual(
+            Parser._split_registry_numbers('N2005/9907/BS, (delvis)'),
+            ['N2005/9907/BS (delvis)'],
+        )
+        self.assertEqual(
+            Parser._split_registry_numbers('U2002/4719/V,F'),
+            ['U2002/4719/V', 'U2002/4719/F'],
+        )
+
+    def test_comma_groups_continued_across_letterhead_lines(self):
+        letter = (
+            '<div id="BrevHuvud"><div id="DiarieNr">'
+            'Ku2010/1055,1056,<br>1658,1688/KV<br>'
+            '</div></div>'
+        )
+        self.assertEqual(
+            Parser.extract_registry_numbers(letter),
+            [
+                'Ku2010/1055', 'Ku2010/1056',
+                'Ku2010/1658', 'Ku2010/1688/KV',
+            ],
+        )
+
+    def test_complete_numbers_separated_by_spaces_and_misplaced_slash(self):
+        self.assertEqual(
+            Parser._split_registry_numbers(
+                'U2009/2227,2314/UH U2009/1682/SAM (delvis)'
+            ),
+            ['U2009/2227', 'U2009/2314/UH', 'U2009/1682/SAM (delvis)'],
+        )
+        self.assertEqual(
+            Parser._split_registry_numbers('Ku2012/740/1341/KO Ku2013/506,560/KO'),
+            [
+                'Ku2012/740/KO', 'Ku2012/1341/KO',
+                'Ku2013/506', 'Ku2013/560/KO',
+            ],
+        )
+        self.assertEqual(
+            Parser._split_registry_numbers('2008/4489,5656,6758,7290/UH'),
+            [
+                'U2008/4489', 'U2008/5656',
+                'U2008/6758', 'U2008/7290/UH',
+            ],
         )
 
     def test_legacy_line_break_inside_number(self):
@@ -84,13 +153,17 @@ class RegistryNumberTests(unittest.TestCase):
         metadata, _, _ = Parser.parse_metadata(response, 1)
         self.assertEqual(
             metadata['registry_numbers'],
-            'UD2026/15651;UD2025/04042 (delvis);Jo2002/673, 3076 (delvis)',
+            'UD2026/15651;UD2025/04042 (delvis);'
+            'Jo2002/673;Jo2002/3076 (delvis)',
         )
 
     def test_parquet_list_type(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            expected = ['UD2026/15651', 'UD2025/04042 (delvis)', 'Jo2002/673, 3076 (delvis)']
+            expected = [
+                'UD2026/15651', 'UD2025/04042 (delvis)',
+                'Jo2002/673', 'Jo2002/3076 (delvis)',
+            ]
             csv_value = ';'.join(expected)
             self.assertEqual(_metadata_value('registry_numbers', csv_value), expected)
             self.assertEqual(_metadata_value('registry_numbers', ''), [])
