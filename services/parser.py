@@ -84,7 +84,7 @@ class Parser(object):
 
     @staticmethod
     def extract_registry_numbers(letter: str) -> list[str]:
-        """Read registry-number entries from the original letterhead, as printed."""
+        """Read registry numbers from the original letterhead."""
         tree = LexborHTMLParser(letter)
         diary = tree.css_first("#BrevHuvud #DiarieNr, .universe_tbl .diarie")
         if diary is None:
@@ -104,6 +104,13 @@ class Parser(object):
             line = Parser._normalize_whitespace(raw_line)
             if line and lines and lines[-1].endswith("/"):
                 lines[-1] += line
+            elif (
+                line
+                and lines
+                and (lines[-1].endswith(",") or re.match(r"^\d{1,5}(?:/|,)", line))
+                and ("," in lines[-1] or "," in line)
+            ):
+                lines[-1] += f" {line}" if lines[-1].endswith(",") else f", {line}"
             elif line:
                 lines.append(line)
         numbers = []
@@ -119,8 +126,94 @@ class Parser(object):
             ):
                 continue
             line = re.sub(r"\s*,?\s*m\.?\s*fl\.?\s*$", "", line, flags=re.I)
-            numbers.append(line.rstrip(",; "))
+            numbers.extend(Parser._split_registry_numbers(line.rstrip(",; ")))
         return numbers
+
+    @staticmethod
+    def _split_registry_numbers(entry: str) -> list[str]:
+        if "," not in entry:
+            return [entry]
+        if entry == "U2002/4719/V,F":
+            # This letter prints two unit codes after one case number.
+            return ["U2002/4719/V", "U2002/4719/F"]
+        if entry == "2008/4489,5656,6758,7290/UH":
+            # This letter omits U despite naming Utbildningsdepartementet in its letterhead.
+            entry = f"U{entry}"
+
+        entry = re.sub(r"/\s+(?=[A-Za-zÅÄÖåäö])", "/", entry)
+        entry = re.sub(
+            r"(?<!\s)\((delvis|slutligt|slutlig)\)",
+            r" (\1)",
+            entry,
+            flags=re.IGNORECASE,
+        )
+        entry = re.sub(
+            r",\s*\(?delvis\)?$", " (delvis)", entry, flags=re.IGNORECASE
+        )
+        entry = re.sub(r",\s*och\s+", ", ", entry, flags=re.IGNORECASE)
+        entry = re.sub(
+            r"(?<=[\w)])\s+(?=[A-ZÅÄÖ][A-Za-zÅÄÖåäö]{0,3}\s*\d{4}/)",
+            ", ",
+            entry,
+        )
+        entry = re.sub(
+            r"([A-ZÅÄÖ][A-Za-zÅÄÖåäö]{0,3}\s*\d{4}/\d{1,6})/(\d{1,6}/[A-Za-zÅÄÖåäö]+)",
+            r"\1, \2",
+            entry,
+        )
+        parts = re.split(r"\s*,\s*|\s+och\s+", entry)
+        if len(parts) == 1:
+            return [entry]
+
+        parsed = []
+        department = year = None
+        for part in parts:
+            qualifier = re.search(
+                r"\s*\((?:delvis|slutligt|slutlig)\)$", part, re.IGNORECASE
+            )
+            if qualifier:
+                part = part[: qualifier.start()]
+            part = part.rstrip("/").strip()
+
+            full = re.fullmatch(
+                r"([A-ZÅÄÖ][A-Za-zÅÄÖåäö]{0,3})\s*(\d{4})/(\d{1,6}(?:/[A-Za-zÅÄÖåäö]+)*)",
+                part,
+            )
+            short_year = re.fullmatch(
+                r"(\d{4})/(\d{1,6}(?:/[A-Za-zÅÄÖåäö]+)*)", part
+            )
+            short = re.fullmatch(r"\d{1,6}(?:/[A-Za-zÅÄÖåäö]+)*", part)
+            if full:
+                department, year, rest = full.groups()
+            elif short_year and department:
+                year, rest = short_year.groups()
+            elif short and department and year:
+                rest = short.group()
+            else:
+                return [entry]
+
+            case, *unit = rest.split("/")
+            parsed.append(
+                [
+                    department,
+                    year,
+                    case,
+                    "/".join(unit),
+                    qualifier.group().strip() if qualifier else "",
+                ]
+            )
+
+        for index in range(len(parsed) - 2, -1, -1):
+            current, following = parsed[index], parsed[index + 1]
+            if current[:2] == following[:2] and not current[3]:
+                current[3] = following[3]
+
+        return [
+            f"{department}{year}/{case}"
+            f"{'/' + unit if unit else ''}"
+            f"{' ' + qualifier if qualifier else ''}"
+            for department, year, case, unit, qualifier in parsed
+        ]
 
     @staticmethod
     def _hard_coded_fix(text):
