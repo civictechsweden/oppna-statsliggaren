@@ -100,7 +100,9 @@ def _expected_columns(metadata_fields: list[str]) -> list[str]:
             "html", "xhtml", "md", *(["pdf"] if "pdf" in metadata_fields else [])]
 
 
-def _metadata_value(field: str, value: object) -> str | list[int]:
+def _metadata_value(field: str, value: object) -> str | list[int] | list[str]:
+    if field == "diary_numbers":
+        return value if isinstance(value, list) else json.loads(str(value or "[]"))
     if field == "expenditure_areas":
         if isinstance(value, list):
             return value
@@ -303,6 +305,11 @@ def main() -> None:
             index = table.schema.get_field_index("expenditure_areas")
             table = table.set_column(index, "expenditure_areas", pa.array(
                 table.column(index).to_pylist(), type=pa.list_(pa.int16())
+            ))
+        if "diary_numbers" in metadata_fields:
+            index = table.schema.get_field_index("diary_numbers")
+            table = table.set_column(index, "diary_numbers", pa.array(
+                table.column(index).to_pylist(), type=pa.list_(pa.string())
             ))
         temporary = parquet_path.with_suffix(".parquet.tmp")
         _write_table(table, temporary)
