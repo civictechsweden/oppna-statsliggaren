@@ -16319,6 +16319,7 @@ rbid,original_rbid,type,date,year,category,name,department,expenditure_areas,reg
 27547,25940,Ändringsbeslut,2026-09-03,2026,Myndighet,Statens skolverk,Utbildningsdepartementet,16,U2026/01562,True
 27548,25738,Ändringsbeslut,2026-09-10,2026,Anslag,1:14,Försvarsdepartementet,6,Fö2026/01351,True
 27549,27441,Ändringsbeslut,2026-10-01,2026,Anslag,1:22,Klimat- och näringslivsdepartementet,20,KN2026/00724;KN2026/01873,True
+27552,25869,Ändringsbeslut,2026-10-22,2026,Anslag,"1:2, 2:1, 2:2, 4:2, 6:3, 7:2, 7:3, 7:5, 9:1, 10:1 och 10:3",Kulturdepartementet,17,Ku2026/00770,True
 27558,25725,Ändringsbeslut,2026-10-01,2026,Myndighet,Nämnden för prövning av oredlighet i forskning,Utbildningsdepartementet,16,U2026/01704,True
 27559,25821,Ändringsbeslut,2026-10-01,2026,Myndighet,Vetenskapsrådet,Utbildningsdepartementet,16,U2026/01705,True
 27560,26104,Ändringsbeslut,2026-09-24,2026,Myndighet,Försäkringskassan,Socialdepartementet,9;10;12,S2026/01948,True
