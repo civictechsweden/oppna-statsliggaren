@@ -1,0 +1,171 @@
+{
+  "letters": 16335,
+  "by_variant": {
+    "legacy_table": {
+      "old_tables": 5685,
+      "new_tables": 5685,
+      "old_cells": 141563,
+      "new_cells": 141563,
+      "letters": 610,
+      "old_words": 1764942,
+      "new_words": 1766872,
+      "lost_words": 0,
+      "added_words": 1930,
+      "old_headings": 21318,
+      "new_headings": 21318,
+      "lost_heading_phrases": 0
+    },
+    "word_blockbase": {
+      "old_tables": 2352,
+      "new_tables": 2352,
+      "old_cells": 29624,
+      "new_cells": 29624,
+      "letters": 307,
+      "old_words": 521585,
+      "new_words": 522816,
+      "lost_words": 1,
+      "added_words": 1232,
+      "old_headings": 12067,
+      "new_headings": 12067,
+      "lost_heading_phrases": 1
+    },
+    "word_documenthead": {
+      "old_tables": 12838,
+      "new_tables": 12838,
+      "old_cells": 197208,
+      "new_cells": 197208,
+      "letters": 1255,
+      "old_words": 3580559,
+      "new_words": 3585349,
+      "lost_words": 2,
+      "added_words": 4792,
+      "old_headings": 72494,
+      "new_headings": 72494,
+      "lost_heading_phrases": 2
+    },
+    "legacy_r_villkor": {
+      "old_tables": 1983,
+      "new_tables": 1983,
+      "old_cells": 26383,
+      "new_cells": 26383,
+      "letters": 212,
+      "old_words": 421210,
+      "new_words": 421304,
+      "lost_words": 1,
+      "added_words": 95,
+      "old_headings": 9326,
+      "new_headings": 9326,
+      "lost_heading_phrases": 1
+    },
+    "classic_brevhuvud": {
+      "old_tables": 416,
+      "new_tables": 416,
+      "old_cells": 4143,
+      "new_cells": 4143,
+      "letters": 62,
+      "old_words": 59949,
+      "new_words": 59976,
+      "lost_words": 0,
+      "added_words": 27,
+      "old_headings": 1758,
+      "new_headings": 1758,
+      "lost_heading_phrases": 0
+    },
+    "sectioned_early": {
+      "old_tables": 88087,
+      "new_tables": 88087,
+      "old_cells": 1457492,
+      "new_cells": 1457492,
+      "letters": 9657,
+      "old_words": 22024443,
+      "new_words": 22029138,
+      "lost_words": 14,
+      "added_words": 4709,
+      "old_headings": 368146,
+      "new_headings": 368146,
+      "lost_heading_phrases": 14
+    },
+    "sectioned_modern": {
+      "old_tables": 37644,
+      "new_tables": 37644,
+      "old_cells": 712915,
+      "new_cells": 712915,
+      "letters": 4232,
+      "old_words": 10064184,
+      "new_words": 10066170,
+      "lost_words": 40,
+      "added_words": 2026,
+      "old_headings": 127963,
+      "new_headings": 156072,
+      "lost_heading_phrases": 2
+    }
+  },
+  "word_loss_records": 28,
+  "heading_phrase_loss_records": 20,
+  "table_number_loss_records": 0,
+  "findings": {
+    "unexplained_word_loss_rows": 0,
+    "unexplained_heading_loss_rows": 0,
+    "table_count_retained": 149005,
+    "cell_count_retained": 2569328,
+    "heading_spelling_correction_rows": [
+      5298,
+      7112,
+      7722,
+      8121,
+      8249,
+      9107,
+      9141,
+      9437,
+      9480,
+      9812,
+      10088,
+      11426,
+      13902,
+      14093,
+      14387,
+      14449,
+      14499,
+      15006
+    ],
+    "duplicated_intro_removed_from_title_rows": [
+      21417,
+      22697
+    ],
+    "inline_word_repairs_rows": [
+      25761,
+      27457,
+      27459,
+      27518,
+      27526,
+      27572,
+      27580,
+      27590
+    ],
+    "restored_numeric_heading_prefixes": "ignored when comparing heading names; content retained",
+    "additional_template_assignments": {
+      "26435": "sectioned_modern",
+      "27583": "sectioned_modern"
+    },
+    "explained_word_difference_rows": 28,
+    "explained_heading_difference_rows": 20,
+    "explanation": "18 rows correct Återrrapportering to Återrapportering;2 remove an exact duplicate introduction from the title while keeping the separate introduction;8 join words split by inline emphasis: verksamhe t→verksamhet or garanti er→garantier. No other word-token loss. The20 heading differences are the18 spelling corrections and2 corrected titles."
+  },
+  "method": {
+    "baseline": "/tmp/oppna-finish-source/letters.parquet",
+    "final": "letters.parquet",
+    "comparison": "Stream all16335 matched row IDs; HTML-unescape and remove XHTML tags, then compare Unicode word-token multisets. Compare signed numeric-token multisets within tables, table/cell counts, and case-folded heading-title multisets after removing leading section-number prefixes.",
+    "scope": "Text and heading retention check; numeric-token multisets do not assert table cell positions. Root rebuild separately validates the document structure.",
+    "template_assignments": "Historical per-letter template map plus direct source classifier for26435 and27583, both sectioned_modern."
+  },
+  "totals": {
+    "old_words": 38436872,
+    "new_words": 38451625,
+    "old_headings": 613072,
+    "new_headings": 641181,
+    "old_tables": 149005,
+    "new_tables": 149005,
+    "old_cells": 2569328,
+    "new_cells": 2569328
+  }
+}

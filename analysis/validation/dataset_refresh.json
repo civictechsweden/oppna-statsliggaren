@@ -1,0 +1,61 @@
+{
+  "source_sha256": "ba923fbdbe49136b508376e853d3d61c652614c375e74d7b8963659f7c651405",
+  "rows": 16335,
+  "changed": {
+    "xhtml": 16233,
+    "md": 16233
+  },
+  "heading_counts": {
+    "1": 16335,
+    "2": 46021,
+    "3": 80618,
+    "4": 225339,
+    "5": 126639,
+    "6": 146218
+  },
+  "correction_counts": {
+    "duplicated-title-introduction": 2,
+    "empty-emphasis": 694,
+    "invalid-xml-characters": 1,
+    "reporting-heading-spelling": 18
+  },
+  "original_fields_unchanged": true,
+  "heading_counts_before": {
+    "1": 17925,
+    "2": 49006,
+    "3": 288300,
+    "4": 160159,
+    "5": 78279,
+    "6": 19392
+  },
+  "heading_count_decreased": {},
+  "multiple_document_titles": [],
+  "output_sha256": "ea7d4f73f6a3b54d7b4688677749a1c5636d3a21c80a2ce8f916f512233def96",
+  "source_revision": "44dcf3de3a515720beb24acadc4c6f7e17ed4d28",
+  "parser_commit": "69d1810ce2b259d98b832934737a5dd0fcdb8c27",
+  "correction_rules": {
+    "empty-emphasis": "XHTML/HTML compatibility: close self-closing em/strong tags before HTML5 parsing; confirmed in RBID 24741.",
+    "invalid-xml-characters": "Remove XML-forbidden control characters; confirmed in RBID 6180.",
+    "duplicated-title-introduction": "Remove an introduction embedded in the title only when the identical introduction exists separately; RBIDs 21417 and 22697.",
+    "reporting-heading-spelling": "Correct the misspelled heading Återrrapportering, retaining its content and heading level.",
+    "metadata-category": "Restore omitted Myndighet/Anslag in six exact source titles: RBIDs 3174, 3290, 6079, 6878, 6879, 7747.",
+    "metadata-appropriation-label": "Normalize the source catalogue category Avseende anslaget to Anslag."
+  },
+  "publication": {
+    "repo_id": "PierreMesure/oppna-statsliggaren",
+    "source_revision": "44dcf3de3a515720beb24acadc4c6f7e17ed4d28",
+    "revision": "51498bbfd6fb4e7bbc44201500a7f03c8ab77c65",
+    "url": "https://huggingface.co/datasets/PierreMesure/oppna-statsliggaren/commit/51498bbfd6fb4e7bbc44201500a7f03c8ab77c65",
+    "rows": 16335,
+    "sha256": "ea7d4f73f6a3b54d7b4688677749a1c5636d3a21c80a2ce8f916f512233def96",
+    "remote_sha256": "ea7d4f73f6a3b54d7b4688677749a1c5636d3a21c80a2ce8f916f512233def96",
+    "parser_commit": "69d1810ce2b259d98b832934737a5dd0fcdb8c27"
+  },
+  "validation": {
+    "parser_tests_passed": 118,
+    "all_xhtml_markdown_heading_pairs_verified": true,
+    "all_original_fields_schema_and_row_order_unchanged": true,
+    "local_html_xhtml_markdown_caches_refreshed": 16335,
+    "corpus_comparison": "corpus_comparison.json"
+  }
+}
