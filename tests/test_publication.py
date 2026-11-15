@@ -81,6 +81,7 @@ class PublicationTests(unittest.TestCase):
                 'paths': ['letters/2026/1.pdf', 'attachments/2026/2.docx'], 'conversions': []}))
             (root / 'dataset_card.md').write_text('card')
             (root / 'letters.parquet').write_bytes(b'parquet')
+            (root / 'organisations.json').write_text('{"organisations": []}')
             uploaded = {}
 
             def capture(**kwargs):
@@ -95,7 +96,7 @@ class PublicationTests(unittest.TestCase):
                 builder._upload_to_hf(root / 'letters.parquet', 'owner/data', 'letters.parquet', 'token')
             self.assertEqual(set(uploaded), {
                 'letters/2026/1.pdf', 'attachments/2026/2.docx', 'unavailable_files.json',
-                'letters.parquet', 'README.md',
+                'letters.parquet', 'README.md', 'organisations.json',
             })
             api.upload_folder.assert_called_once()
             self.assertFalse(api.upload_folder.call_args.kwargs['folder_path'].exists())

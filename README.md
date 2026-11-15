@@ -29,6 +29,17 @@ uv run -m scripts.backfill_departments --parquet letters.parquet
 
 You can also download the letters in their row HTML format, in a cleaned XHTML format and in a (slightly lossy) Markdown format on [HuggingFace](https://huggingface.co/datasets/PierreMesure/oppna-statsliggaren).
 
+The [organisation registry](organisations.json) preserves Statsliggaren entry IDs
+and historical names. `organisation_ids` in the CSV is a semicolon-separated
+list; Parquet uses an integer list. Collective letters resolve to individual
+recipients upstream, using reviewed budget-year ranges. See the
+[acquisition and maintenance documentation](docs/organisations.md) for sources
+and the distinction between observed names and curated membership.
+
+```sh
+uv run -m scripts.build_organisations --parquet letters.parquet
+```
+
 The HTML normalization pipeline uses selectolax's Lexbor parser. Lexbor applies
 HTML5 repairs, including implicit `tbody` elements and repaired paragraph
 boundaries. Statsliggaren's empty XHTML-style `<em />` and `<strong />` tags are

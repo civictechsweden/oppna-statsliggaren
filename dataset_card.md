@@ -45,10 +45,23 @@ outside that window require an explicit backfill.
   latest publication. These cannot be archived or converted.
 - `processing_report.json`: full-corpus rebuild checks and source correction
   rules applied to individual letters.
+- `organisations.json`: numbered source entries, historical names, and reviewed
+  collective memberships. `organisation_ids` in Parquet is a list of integer
+  references into this registry. Fetch both files at the same revision.
 
 The department is read from the letterhead for both agency and appropriation
 letters. Historical names are preserved. A department and appropriation number
 are not necessarily unique identifiers; use the source IDs.
+
+Ordinary agency letters carry their Statsliggaren organisation-entry ID.
+Collective university and county-board letters carry the applicable individual
+IDs, selected using the original budget year. County boards and three historical
+parliamentary bodies have explicitly marked local IDs. Historical names on
+letters remain unchanged; the registry retains older spellings alongside a
+display name. Name-observation ranges are distinct from researched membership
+periods. Appropriation letters currently have an empty recipient-ID list.
+The [acquisition and collective-membership method](https://github.com/civictechsweden/oppna-statsliggaren/blob/master/docs/organisations.md)
+documents sources, exceptions, and maintenance.
 
 `original_rbid` is the RBID of the first version of the letter. Every amendment
 decision carries the same value, so versions can be grouped without relying on

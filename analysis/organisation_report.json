@@ -1,0 +1,29 @@
+{
+  "rows": 16335,
+  "organisations": 340,
+  "native_entries": 316,
+  "local_entries": 24,
+  "all_existing_csv_fields_unchanged": true,
+  "all_existing_parquet_columns_unchanged": true,
+  "dangling_organisation_ids": 0,
+  "individual_letter_name_histories_verified": 11507,
+  "organisation_ids_type": "list<element: int32>",
+  "source_parquet_sha256": "ea7d4f73f6a3b54d7b4688677749a1c5636d3a21c80a2ce8f916f512233def96",
+  "output_parquet_sha256": "8dffeedefbcdd416631c0ce567002d005c7b9cdfc81202d497a3291625fc29b3",
+  "registry_sha256": "a419642ad35509652b0ea5cbfd9bdf947ceb1cde0688b10e20721fbac0fadd7e",
+  "collectives": {
+    "1015": {
+      "letter_versions": 114,
+      "chains": 24,
+      "member_ids": 21
+    },
+    "1016": {
+      "letter_versions": 83,
+      "chains": 24,
+      "member_ids": 39
+    }
+  },
+  "upstream_tests_passed": 136,
+  "consumer_tests_passed": 959,
+  "registry_regeneration_idempotent": true
+}

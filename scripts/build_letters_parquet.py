@@ -16,6 +16,7 @@ from huggingface_hub import HfApi, get_token, hf_hub_download
 
 from services.downloader import Downloader
 from services.writer import Writer, save_letter_sync
+from services.organisations import load_registry, validate_registry
 from statsliggaren import get_metadatas
 from huggingface_hub.errors import EntryNotFoundError, RepositoryNotFoundError
 
@@ -107,7 +108,7 @@ def _metadata_value(field: str, value: object) -> int | str | list[int] | list[s
         return value if isinstance(value, list) else [
             entry.strip() for entry in str(value or "").split(";") if entry.strip()
         ]
-    if field == "expenditure_areas":
+    if field in {"expenditure_areas", "organisation_ids"}:
         if isinstance(value, list):
             return value
         return [int(code) for code in str(value or "").split(";") if code]
@@ -187,6 +188,7 @@ def _upload_to_hf(
         repo_path: parquet_path,
         "README.md": ROOT / "dataset_card.md",
         "unavailable_files.json": LETTERS_DIR / "unavailable_files.json",
+        "organisations.json": ROOT / "organisations.json",
     })
     with tempfile.TemporaryDirectory(prefix="hf-publication-", dir=LETTERS_DIR) as temporary:
         staging = Path(temporary)
@@ -259,6 +261,14 @@ def main() -> None:
 
     parquet_path: Path = args.output
     metadata_fields, metadata_by_id = _load_metadata()
+    if "organisation_ids" in metadata_fields:
+        registry = load_registry(ROOT / "organisations.json")
+        validate_registry(registry)
+        known_ids = {item["id"] for item in registry["organisations"]}
+        for letter_id, metadata in metadata_by_id.items():
+            ids = _metadata_value("organisation_ids", metadata["organisation_ids"])
+            if set(ids) - known_ids:
+                raise ValueError(f"Unknown organisation IDs for letter {letter_id}")
 
     import os
 
@@ -312,6 +322,11 @@ def main() -> None:
             index = table.schema.get_field_index("registry_numbers")
             table = table.set_column(index, "registry_numbers", pa.array(
                 table.column(index).to_pylist(), type=pa.list_(pa.string())
+            ))
+        if "organisation_ids" in metadata_fields:
+            index = table.schema.get_field_index("organisation_ids")
+            table = table.set_column(index, "organisation_ids", pa.array(
+                table.column(index).to_pylist(), type=pa.list_(pa.int32())
             ))
         temporary = parquet_path.with_suffix(".parquet.tmp")
         _write_table(table, temporary)

@@ -1,0 +1,5092 @@
+{
+  "organisations": [
+    {
+      "id": 1,
+      "statsliggaren_id": 1,
+      "display_name": "Statens skolverk",
+      "names": [
+        {
+          "name": "Statens skolverk",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "statsliggaren_id": 14,
+      "display_name": "Sameskolstyrelsen",
+      "names": [
+        {
+          "name": "Sameskolstyrelsen",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "statsliggaren_id": 38,
+      "display_name": "Arbetsförmedlingen",
+      "names": [
+        {
+          "name": "Arbetsmarknadsverket",
+          "from_year": 2003,
+          "to_year": 2006
+        },
+        {
+          "name": "Arbetsmarknadsstyrelsen",
+          "from_year": 2007,
+          "to_year": 2007
+        },
+        {
+          "name": "Arbetsförmedlingen",
+          "from_year": 2008,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "statsliggaren_id": 39,
+      "display_name": "Kriminalvården",
+      "names": [
+        {
+          "name": "Kriminalvårdsstyrelsen",
+          "from_year": 2003,
+          "to_year": 2005
+        },
+        {
+          "name": "Kriminalvården",
+          "from_year": 2006,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "statsliggaren_id": 88,
+      "display_name": "Styrelsen för internationellt utvecklingssamarbete",
+      "names": [
+        {
+          "name": "Styrelsen för internationellt utvecklingssamarbete",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "statsliggaren_id": 91,
+      "display_name": "Kammarkollegiet",
+      "names": [
+        {
+          "name": "Kammarkollegiet",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "statsliggaren_id": 92,
+      "display_name": "Statskontoret",
+      "names": [
+        {
+          "name": "Statskontoret",
+          "from_year": 2003,
+          "to_year": 2025
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "statsliggaren_id": 93,
+      "display_name": "Patent- och registreringsverket",
+      "names": [
+        {
+          "name": "Patent- och registreringsverket",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "statsliggaren_id": 94,
+      "display_name": "Revisorsinspektionen",
+      "names": [
+        {
+          "name": "Revisorsnämnden",
+          "from_year": 2003,
+          "to_year": 2017
+        },
+        {
+          "name": "Revisorsinspektionen",
+          "from_year": 2018,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "statsliggaren_id": 95,
+      "display_name": "Kungl. biblioteket",
+      "names": [
+        {
+          "name": "Kungl. biblioteket",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "statsliggaren_id": 96,
+      "display_name": "Konjunkturinstitutet",
+      "names": [
+        {
+          "name": "Konjunkturinstitutet",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "statsliggaren_id": 97,
+      "display_name": "Marknadsdomstolen",
+      "names": [
+        {
+          "name": "Marknadsdomstolen",
+          "from_year": 2003,
+          "to_year": 2016
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "statsliggaren_id": 98,
+      "display_name": "Statens kvalitets- och kompetensråd",
+      "names": [
+        {
+          "name": "Statens kvalitets- och kompetensråd",
+          "from_year": 2003,
+          "to_year": 2005
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "statsliggaren_id": 99,
+      "display_name": "Statens haverikommission",
+      "names": [
+        {
+          "name": "Statens haverikommission",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "statsliggaren_id": 100,
+      "display_name": "Brottsoffermyndigheten",
+      "names": [
+        {
+          "name": "Brottsoffermyndigheten",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "statsliggaren_id": 102,
+      "display_name": "Kommerskollegium",
+      "names": [
+        {
+          "name": "Kommerskollegium",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "statsliggaren_id": 103,
+      "display_name": "Myndigheten för ungdoms- och civilsamhällesfrågor",
+      "names": [
+        {
+          "name": "Ungdomsstyrelsen",
+          "from_year": 2003,
+          "to_year": 2014
+        },
+        {
+          "name": "Myndigheten för ungdoms- och civilsamhällesfrågor",
+          "from_year": 2014,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "statsliggaren_id": 105,
+      "display_name": "Naturvårdsverket",
+      "names": [
+        {
+          "name": "Naturvårdsverket",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "statsliggaren_id": 107,
+      "display_name": "Myndigheten för tillgängliga medier",
+      "names": [
+        {
+          "name": "Talboks- och punktskriftsbiblioteket",
+          "from_year": 2003,
+          "to_year": 2012
+        },
+        {
+          "name": "Myndigheten för tillgängliga medier",
+          "from_year": 2013,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "statsliggaren_id": 108,
+      "display_name": "Arbetsgivarverket",
+      "names": [
+        {
+          "name": "Arbetsgivarverket",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "statsliggaren_id": 109,
+      "display_name": "Statens biografbyrå",
+      "names": [
+        {
+          "name": "Statens biografbyrå",
+          "from_year": 2003,
+          "to_year": 2010
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "statsliggaren_id": 110,
+      "display_name": "Centrala studiestödsnämnden",
+      "names": [
+        {
+          "name": "Centrala studiestödsnämnden",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "statsliggaren_id": 111,
+      "display_name": "Allmänna reklamationsnämnden",
+      "names": [
+        {
+          "name": "Allmänna reklamationsnämnden",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 112,
+      "statsliggaren_id": 112,
+      "display_name": "Statens musikverk",
+      "names": [
+        {
+          "name": "Statens musiksamlingar",
+          "from_year": 2003,
+          "to_year": 2011
+        },
+        {
+          "name": "Statens musikverk",
+          "from_year": 2012,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 116,
+      "statsliggaren_id": 116,
+      "display_name": "Spelinspektionen",
+      "names": [
+        {
+          "name": "Lotteriinspektionen",
+          "from_year": 2003,
+          "to_year": 2018
+        },
+        {
+          "name": "Spelinspektionen",
+          "from_year": 2019,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 118,
+      "statsliggaren_id": 118,
+      "display_name": "Finansinspektionen",
+      "names": [
+        {
+          "name": "Finansinspektionen",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 119,
+      "statsliggaren_id": 119,
+      "display_name": "Presstödsnämnden",
+      "names": [
+        {
+          "name": "Presstödsnämnden",
+          "from_year": 2003,
+          "to_year": 2015
+        }
+      ]
+    },
+    {
+      "id": 121,
+      "statsliggaren_id": 121,
+      "display_name": "Rymdstyrelsen",
+      "names": [
+        {
+          "name": "Rymdstyrelsen",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 123,
+      "statsliggaren_id": 123,
+      "display_name": "Konsumentverket",
+      "names": [
+        {
+          "name": "Konsumentverket",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 124,
+      "statsliggaren_id": 124,
+      "display_name": "Statens kärnkraftinspektion",
+      "names": [
+        {
+          "name": "Statens kärnkraftinspektion",
+          "from_year": 2003,
+          "to_year": 2009
+        }
+      ]
+    },
+    {
+      "id": 125,
+      "statsliggaren_id": 125,
+      "display_name": "Kungliga hov- och slottsstaten",
+      "names": [
+        {
+          "name": "Kungl. Slottsstaten",
+          "from_year": 2004,
+          "to_year": 2004
+        },
+        {
+          "name": "Kungliga hov- och slottsstaten",
+          "from_year": 2005,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 126,
+      "statsliggaren_id": 126,
+      "display_name": "Kemikalieinspektionen",
+      "names": [
+        {
+          "name": "Kemikalieinspektionen",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 127,
+      "statsliggaren_id": 127,
+      "display_name": "Handelsflottans kultur- och fritidsråd",
+      "names": [
+        {
+          "name": "Handelsflottans kultur- och fritidsråd",
+          "from_year": 2003,
+          "to_year": 2006
+        }
+      ]
+    },
+    {
+      "id": 128,
+      "statsliggaren_id": 128,
+      "display_name": "Patentbesvärsrätten",
+      "names": [
+        {
+          "name": "Patentbesvärsrätten",
+          "from_year": 2003,
+          "to_year": 2016
+        }
+      ]
+    },
+    {
+      "id": 129,
+      "statsliggaren_id": 129,
+      "display_name": "Statens va-nämnd",
+      "names": [
+        {
+          "name": "Statens VA-nämnd",
+          "from_year": 2003,
+          "to_year": 2005
+        },
+        {
+          "name": "Statens va-nämnd",
+          "from_year": 2006,
+          "to_year": 2015
+        }
+      ]
+    },
+    {
+      "id": 131,
+      "statsliggaren_id": 131,
+      "display_name": "Glesbygdsverket",
+      "names": [
+        {
+          "name": "Glesbygdsverket",
+          "from_year": 2003,
+          "to_year": 2009
+        }
+      ]
+    },
+    {
+      "id": 132,
+      "statsliggaren_id": 132,
+      "display_name": "Verket för näringslivsutveckling",
+      "names": [
+        {
+          "name": "Verket för näringslivsutveckling",
+          "from_year": 2003,
+          "to_year": 2010
+        }
+      ]
+    },
+    {
+      "id": 133,
+      "statsliggaren_id": 133,
+      "display_name": "Fastighetsmäklarinspektionen",
+      "names": [
+        {
+          "name": "Fastighetsmäklarnämnden",
+          "from_year": 2003,
+          "to_year": 2012
+        },
+        {
+          "name": "Fastighetsmäklarinspektionen",
+          "from_year": 2013,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 134,
+      "statsliggaren_id": 134,
+      "display_name": "Konkurrensverket",
+      "names": [
+        {
+          "name": "Konkurrensverket",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 135,
+      "statsliggaren_id": 135,
+      "display_name": "Post- och telestyrelsen",
+      "names": [
+        {
+          "name": "Post och telestyrelsen",
+          "from_year": 2003,
+          "to_year": 2004
+        },
+        {
+          "name": "Post- och Telestyrelsen",
+          "from_year": 2003,
+          "to_year": 2003
+        },
+        {
+          "name": "Post- och telestyrelsen",
+          "from_year": 2005,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 136,
+      "statsliggaren_id": 136,
+      "display_name": "Turistdelegationen",
+      "names": [
+        {
+          "name": "Turistdelegationen",
+          "from_year": 2003,
+          "to_year": 2005
+        }
+      ]
+    },
+    {
+      "id": 137,
+      "statsliggaren_id": 137,
+      "display_name": "Statens beredning för medicinsk och social utvärdering",
+      "names": [
+        {
+          "name": "Statens beredning för medicinsk utvärdering",
+          "from_year": 2003,
+          "to_year": 2015
+        },
+        {
+          "name": "Statens beredning för utvärdering av medicinsk metodik",
+          "from_year": 2003,
+          "to_year": 2003
+        },
+        {
+          "name": "Statens beredning för medicinsk och social utvärdering",
+          "from_year": 2015,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 138,
+      "statsliggaren_id": 138,
+      "display_name": "Elsäkerhetsverket",
+      "names": [
+        {
+          "name": "Elsäkerhetsverket",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 139,
+      "statsliggaren_id": 139,
+      "display_name": "Statens energimyndighet",
+      "names": [
+        {
+          "name": "Statens energimyndighet",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 141,
+      "statsliggaren_id": 141,
+      "display_name": "Statens fastighetsverk",
+      "names": [
+        {
+          "name": "Statens fastighetsverk",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 142,
+      "statsliggaren_id": 142,
+      "display_name": "Insättningsgarantinämnden",
+      "names": [
+        {
+          "name": "Insättningsgarantinämnden",
+          "from_year": 2003,
+          "to_year": 2007
+        }
+      ]
+    },
+    {
+      "id": 143,
+      "statsliggaren_id": 143,
+      "display_name": "Sametinget",
+      "names": [
+        {
+          "name": "Sametinget",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 144,
+      "statsliggaren_id": 144,
+      "display_name": "Handikappombudsmannen",
+      "names": [
+        {
+          "name": "Handikappombudsmannen",
+          "from_year": 2003,
+          "to_year": 2008
+        }
+      ]
+    },
+    {
+      "id": 146,
+      "statsliggaren_id": 146,
+      "display_name": "Radio- och TV-verket",
+      "names": [
+        {
+          "name": "Radio- och TV- verket",
+          "from_year": 2003,
+          "to_year": 2009
+        },
+        {
+          "name": "Radio- och TV-verket",
+          "from_year": 2010,
+          "to_year": 2010
+        }
+      ]
+    },
+    {
+      "id": 147,
+      "statsliggaren_id": 147,
+      "display_name": "Granskningsnämnden för radio och TV",
+      "names": [
+        {
+          "name": "Granskningsnämnden för radio och TV",
+          "from_year": 2003,
+          "to_year": 2010
+        }
+      ]
+    },
+    {
+      "id": 148,
+      "statsliggaren_id": 148,
+      "display_name": "Överklagandenämnden för totalförsvaret",
+      "names": [
+        {
+          "name": "Överklagandenämnden för totalförsvaret",
+          "from_year": 2003,
+          "to_year": 2007
+        }
+      ]
+    },
+    {
+      "id": 149,
+      "statsliggaren_id": 149,
+      "display_name": "Gentekniknämnden",
+      "names": [
+        {
+          "name": "Gentekniknämnden",
+          "from_year": 2003,
+          "to_year": 2019
+        }
+      ]
+    },
+    {
+      "id": 150,
+      "statsliggaren_id": 150,
+      "display_name": "Statens institut för kommunikationsanalys",
+      "names": [
+        {
+          "name": "Statens institut för kommunikationsanalys",
+          "from_year": 2003,
+          "to_year": 2010
+        }
+      ]
+    },
+    {
+      "id": 151,
+      "statsliggaren_id": 151,
+      "display_name": "Internationella programkontoret för utbildningsområdet",
+      "names": [
+        {
+          "name": "Internationella programkontoret för utbildningsområdet",
+          "from_year": 2003,
+          "to_year": 2012
+        }
+      ]
+    },
+    {
+      "id": 152,
+      "statsliggaren_id": 152,
+      "display_name": "Statistiska centralbyrån",
+      "names": [
+        {
+          "name": "Statistiska centralbyrån",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 153,
+      "statsliggaren_id": 153,
+      "display_name": "Riksrevisionsverket",
+      "names": [
+        {
+          "name": "Riksrevisionsverket",
+          "from_year": 2003,
+          "to_year": 2003
+        }
+      ]
+    },
+    {
+      "id": 154,
+      "statsliggaren_id": 154,
+      "display_name": "Nämnden för offentlig upphandling",
+      "names": [
+        {
+          "name": "Nämnden för offentlig upphandling",
+          "from_year": 2003,
+          "to_year": 2007
+        }
+      ]
+    },
+    {
+      "id": 155,
+      "statsliggaren_id": 155,
+      "display_name": "Myndigheten för utländska investeringar i Sverige",
+      "names": [
+        {
+          "name": "Delegationen för utländska investeringar i Sverige (ISA)",
+          "from_year": 2003,
+          "to_year": 2003
+        },
+        {
+          "name": "Myndigheten för utländska investeringar i Sverige (ISA)",
+          "from_year": 2003,
+          "to_year": 2010
+        },
+        {
+          "name": "Myndigheten för utländska investeringar i Sverige",
+          "from_year": 2011,
+          "to_year": 2012
+        }
+      ],
+      "aliases": [
+        "Delegationen för utländska investeringar i Sverige (ISA)"
+      ]
+    },
+    {
+      "id": 156,
+      "statsliggaren_id": 156,
+      "display_name": "Steriliseringsersättningsnämnden",
+      "names": [
+        {
+          "name": "Steriliseringsersättningsnämnden",
+          "from_year": 2003,
+          "to_year": 2003
+        }
+      ]
+    },
+    {
+      "id": 157,
+      "statsliggaren_id": 157,
+      "display_name": "Rikstrafiken",
+      "names": [
+        {
+          "name": "Rikstrafiken",
+          "from_year": 2003,
+          "to_year": 2010
+        }
+      ]
+    },
+    {
+      "id": 158,
+      "statsliggaren_id": 158,
+      "display_name": "Ombudsmannen mot diskriminering på grund av sexuell läggning",
+      "names": [
+        {
+          "name": "Ombudsmannen mot diskriminering på grund av sexuell läggning",
+          "from_year": 2003,
+          "to_year": 2008
+        }
+      ]
+    },
+    {
+      "id": 160,
+      "statsliggaren_id": 160,
+      "display_name": "Säkerhetspolisen",
+      "names": [
+        {
+          "name": "Säkerhetspolisen",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 161,
+      "statsliggaren_id": 161,
+      "display_name": "Riksarkivet",
+      "names": [
+        {
+          "name": "Riksarkivet",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 163,
+      "statsliggaren_id": 163,
+      "display_name": "Riksantikvarieämbetet",
+      "names": [
+        {
+          "name": "Riksantikvarieämbetet",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 164,
+      "statsliggaren_id": 164,
+      "display_name": "Nationalmuseum",
+      "names": [
+        {
+          "name": "Nationalmuseum med prins Eugens Waldemarsudde",
+          "from_year": 2003,
+          "to_year": 2004
+        },
+        {
+          "name": "Nationalmuseum med Prins Eugens Waldemarsudde",
+          "from_year": 2004,
+          "to_year": 2017
+        },
+        {
+          "name": "Nationalmuseum",
+          "from_year": 2018,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 165,
+      "statsliggaren_id": 165,
+      "display_name": "Livrustkammaren och Skoklosters slott med Stiftelsen Hallwylska museet",
+      "names": [
+        {
+          "name": "Livrustkammaren/Skoklosters slott/ Hallwylska museet",
+          "from_year": 2003,
+          "to_year": 2004
+        },
+        {
+          "name": "Livrustkammaren, Skoklosters slott och Hallwylska museet",
+          "from_year": 2005,
+          "to_year": 2006
+        },
+        {
+          "name": "Livrustkammaren och Skoklosters slott med Stiftelsen Hallwylska museet",
+          "from_year": 2007,
+          "to_year": 2017
+        }
+      ]
+    },
+    {
+      "id": 166,
+      "statsliggaren_id": 166,
+      "display_name": "Statens historiska museer",
+      "names": [
+        {
+          "name": "Statens historiska museer",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 167,
+      "statsliggaren_id": 167,
+      "display_name": "Statens museer för maritim-, transport- och försvarshistoria",
+      "names": [
+        {
+          "name": "Statens maritima museer",
+          "from_year": 2003,
+          "to_year": 2018
+        },
+        {
+          "name": "Statens sjöhistoriska museer",
+          "from_year": 2003,
+          "to_year": 2003
+        },
+        {
+          "name": "Statens maritima och transporthistoriska museer",
+          "from_year": 2019,
+          "to_year": 2025
+        },
+        {
+          "name": "Statens museer för maritim-, transport- och försvarshistoria",
+          "from_year": 2026,
+          "to_year": 2026
+        }
+      ],
+      "aliases": [
+        "Statens sjöhistoriska museer"
+      ]
+    },
+    {
+      "id": 169,
+      "statsliggaren_id": 169,
+      "display_name": "Statens centrum för arkitektur och design",
+      "names": [
+        {
+          "name": "Arkitekturmuseet",
+          "from_year": 2003,
+          "to_year": 2013
+        },
+        {
+          "name": "Statens centrum för arkitektur och design",
+          "from_year": 2013,
+          "to_year": 2025
+        }
+      ]
+    },
+    {
+      "id": 170,
+      "statsliggaren_id": 170,
+      "display_name": "Moderna museet",
+      "names": [
+        {
+          "name": "Moderna Museet",
+          "from_year": 2003,
+          "to_year": 2006
+        },
+        {
+          "name": "Moderna museet",
+          "from_year": 2006,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 171,
+      "statsliggaren_id": 171,
+      "display_name": "Svenskt biografiskt lexikon",
+      "names": [
+        {
+          "name": "Svenskt biografiskt lexikon",
+          "from_year": 2003,
+          "to_year": 2008
+        }
+      ]
+    },
+    {
+      "id": 172,
+      "statsliggaren_id": 172,
+      "display_name": "Statens konstråd",
+      "names": [
+        {
+          "name": "Statens konstråd",
+          "from_year": 2003,
+          "to_year": 2025
+        }
+      ]
+    },
+    {
+      "id": 173,
+      "statsliggaren_id": 173,
+      "display_name": "Statens kulturråd",
+      "names": [
+        {
+          "name": "Statens kulturråd",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 174,
+      "statsliggaren_id": 174,
+      "display_name": "Konstnärsnämnden",
+      "names": [
+        {
+          "name": "Konstnärsnämnden",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 175,
+      "statsliggaren_id": 175,
+      "display_name": "Statens ljud- och bildarkiv",
+      "names": [
+        {
+          "name": "Statens ljud -och bildarkiv",
+          "from_year": 2003,
+          "to_year": 2003
+        },
+        {
+          "name": "Statens ljud- och bildarkiv",
+          "from_year": 2003,
+          "to_year": 2008
+        }
+      ],
+      "aliases": [
+        "Statens ljud -och bildarkiv"
+      ]
+    },
+    {
+      "id": 176,
+      "statsliggaren_id": 176,
+      "display_name": "Institutet för språk och folkminnen",
+      "names": [
+        {
+          "name": "Språk- och folkminnesinstitutet",
+          "from_year": 2003,
+          "to_year": 2006
+        },
+        {
+          "name": "Institutet för språk och folkminnen",
+          "from_year": 2006,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 177,
+      "statsliggaren_id": 177,
+      "display_name": "Riksutställningar",
+      "names": [
+        {
+          "name": "Riksutställningar",
+          "from_year": 2003,
+          "to_year": 2017
+        }
+      ]
+    },
+    {
+      "id": 178,
+      "statsliggaren_id": 178,
+      "display_name": "Myndigheten för stöd till trossamfund",
+      "names": [
+        {
+          "name": "Samarbetsnämnden för statsbidrag till trossamfund",
+          "from_year": 2003,
+          "to_year": 2007
+        },
+        {
+          "name": "Nämnden för statligt stöd till trossamfund",
+          "from_year": 2008,
+          "to_year": 2017
+        },
+        {
+          "name": "Myndigheten för stöd till trossamfund",
+          "from_year": 2018,
+          "to_year": 2025
+        }
+      ]
+    },
+    {
+      "id": 179,
+      "statsliggaren_id": 179,
+      "display_name": "Nämnden för hemslöjdsfrågor",
+      "names": [
+        {
+          "name": "Nämnden för hemslöjdsfrågor",
+          "from_year": 2003,
+          "to_year": 2025
+        }
+      ]
+    },
+    {
+      "id": 180,
+      "statsliggaren_id": 180,
+      "display_name": "Lunds universitet",
+      "names": [
+        {
+          "name": "Lunds universitet",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 181,
+      "statsliggaren_id": 181,
+      "display_name": "Blekinge tekniska högskola",
+      "names": [
+        {
+          "name": "Blekinge tekniska högskola",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 182,
+      "statsliggaren_id": 182,
+      "display_name": "Högskolan i Halmstad",
+      "names": [
+        {
+          "name": "Högskolan i Halmstad",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 183,
+      "statsliggaren_id": 183,
+      "display_name": "Högskolan Kristianstad",
+      "names": [
+        {
+          "name": "Högskolan Kristianstad",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 184,
+      "statsliggaren_id": 184,
+      "display_name": "Växjö universitet",
+      "names": [
+        {
+          "name": "Växjö universitet",
+          "from_year": 2003,
+          "to_year": 2005
+        }
+      ]
+    },
+    {
+      "id": 185,
+      "statsliggaren_id": 185,
+      "display_name": "Livsmedelsekonomiska institutet",
+      "names": [
+        {
+          "name": "Livsmedelsekonomiska institutet",
+          "from_year": 2003,
+          "to_year": 2008
+        }
+      ]
+    },
+    {
+      "id": 186,
+      "statsliggaren_id": 186,
+      "display_name": "Högskolan i Kalmar",
+      "names": [
+        {
+          "name": "Högskolan i Kalmar",
+          "from_year": 2003,
+          "to_year": 2005
+        }
+      ]
+    },
+    {
+      "id": 187,
+      "statsliggaren_id": 187,
+      "display_name": "Malmö universitet",
+      "names": [
+        {
+          "name": "Malmö Högskola",
+          "from_year": 2003,
+          "to_year": 2005
+        },
+        {
+          "name": "Malmö högskola",
+          "from_year": 2012,
+          "to_year": 2017
+        },
+        {
+          "name": "Malmö universitet",
+          "from_year": 2018,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 188,
+      "statsliggaren_id": 188,
+      "display_name": "Lantmäteriet",
+      "names": [
+        {
+          "name": "Lantmäteriverket",
+          "from_year": 2003,
+          "to_year": 2008
+        },
+        {
+          "name": "Lantmäteriet",
+          "from_year": 2009,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 189,
+      "statsliggaren_id": 189,
+      "display_name": "Migrationsverket",
+      "names": [
+        {
+          "name": "Migrationsverket",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 190,
+      "statsliggaren_id": 190,
+      "display_name": "Integrationsverket",
+      "names": [
+        {
+          "name": "Integrationsverket",
+          "from_year": 2003,
+          "to_year": 2007
+        }
+      ]
+    },
+    {
+      "id": 191,
+      "statsliggaren_id": 191,
+      "display_name": "Sveriges lantbruksuniversitet",
+      "names": [
+        {
+          "name": "Sveriges lantbruksuniversitet",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 192,
+      "statsliggaren_id": 192,
+      "display_name": "Sveriges geologiska undersökning",
+      "names": [
+        {
+          "name": "Sveriges geologiska undersökning",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 193,
+      "statsliggaren_id": 193,
+      "display_name": "Statens veterinärmedicinska anstalt",
+      "names": [
+        {
+          "name": "Statens veterinärmedicinska anstalt",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 194,
+      "statsliggaren_id": 194,
+      "display_name": "Livsmedelsverket",
+      "names": [
+        {
+          "name": "Livsmedelsverket",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 196,
+      "statsliggaren_id": 196,
+      "display_name": "Umeå universitet",
+      "names": [
+        {
+          "name": "Umeå universitet",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 197,
+      "statsliggaren_id": 197,
+      "display_name": "Statens institut för ekologisk hållbarhet",
+      "names": [
+        {
+          "name": "Statens institut för ekologisk hållbarhet",
+          "from_year": 2003,
+          "to_year": 2004
+        }
+      ]
+    },
+    {
+      "id": 198,
+      "statsliggaren_id": 198,
+      "display_name": "Luleå tekniska universitet",
+      "names": [
+        {
+          "name": "Luleå tekniska universitet",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 199,
+      "statsliggaren_id": 199,
+      "display_name": "Institutet för rymdfysik",
+      "names": [
+        {
+          "name": "Institutet för rymdfysik",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 200,
+      "statsliggaren_id": 200,
+      "display_name": "Mittuniversitetet",
+      "names": [
+        {
+          "name": "Mitthögskolan",
+          "from_year": 2003,
+          "to_year": 2005
+        },
+        {
+          "name": "Mittuniversitetet",
+          "from_year": 2005,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 202,
+      "statsliggaren_id": 202,
+      "display_name": "Riksförsäkringsverket",
+      "names": [
+        {
+          "name": "Riksförsäkringsverket",
+          "from_year": 2003,
+          "to_year": 2005
+        }
+      ]
+    },
+    {
+      "id": 204,
+      "statsliggaren_id": 204,
+      "display_name": "Statens tjänstepensionsverk",
+      "names": [
+        {
+          "name": "Statens pensionsverk",
+          "from_year": 2003,
+          "to_year": 2010
+        },
+        {
+          "name": "Statens tjänstepensionsverk",
+          "from_year": 2011,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 205,
+      "statsliggaren_id": 205,
+      "display_name": "Arbetsmiljöverket",
+      "names": [
+        {
+          "name": "Arbetsmiljöverket",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 206,
+      "statsliggaren_id": 206,
+      "display_name": "Arbetslivsinstitutet",
+      "names": [
+        {
+          "name": "Arbetslivsinstitutet",
+          "from_year": 2003,
+          "to_year": 2007
+        }
+      ]
+    },
+    {
+      "id": 207,
+      "statsliggaren_id": 207,
+      "display_name": "Arbetsdomstolen",
+      "names": [
+        {
+          "name": "Arbetsdomstolen",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 208,
+      "statsliggaren_id": 208,
+      "display_name": "Premiepensionsmyndigheten",
+      "names": [
+        {
+          "name": "Premiepensionsmyndigheten",
+          "from_year": 2003,
+          "to_year": 2009
+        }
+      ]
+    },
+    {
+      "id": 210,
+      "statsliggaren_id": 210,
+      "display_name": "Statens strålskyddsinstitut",
+      "names": [
+        {
+          "name": "Statens strålskyddsinstitut",
+          "from_year": 2003,
+          "to_year": 2009
+        }
+      ]
+    },
+    {
+      "id": 238,
+      "statsliggaren_id": 238,
+      "display_name": "Kungl. Tekniska högskolan",
+      "names": [
+        {
+          "name": "Kungl. Tekniska högskolan",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 239,
+      "statsliggaren_id": 239,
+      "display_name": "Karolinska institutet",
+      "names": [
+        {
+          "name": "Karolinska institutet",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 240,
+      "statsliggaren_id": 240,
+      "display_name": "Stockholms universitet",
+      "names": [
+        {
+          "name": "Stockholms universitet",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 244,
+      "statsliggaren_id": 244,
+      "display_name": "Institutet för psykosocial medicin",
+      "names": [
+        {
+          "name": "Institutet för psykosocial medicin",
+          "from_year": 2003,
+          "to_year": 2007
+        }
+      ]
+    },
+    {
+      "id": 245,
+      "statsliggaren_id": 245,
+      "display_name": "Dramatiska institutet",
+      "names": [
+        {
+          "name": "Dramatiska institutet",
+          "from_year": 2003,
+          "to_year": 2005
+        }
+      ]
+    },
+    {
+      "id": 246,
+      "statsliggaren_id": 246,
+      "display_name": "Kungl. Musikhögskolan i Stockholm",
+      "names": [
+        {
+          "name": "Kungl. Musikhögskolan i Stockholm",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 247,
+      "statsliggaren_id": 247,
+      "display_name": "Operahögskolan i Stockholm",
+      "names": [
+        {
+          "name": "Operahögskolan i Stockholm",
+          "from_year": 2003,
+          "to_year": 2014
+        }
+      ]
+    },
+    {
+      "id": 248,
+      "statsliggaren_id": 248,
+      "display_name": "Teaterhögskolan i Stockholm",
+      "names": [
+        {
+          "name": "Teaterhögskolan i Stockholm",
+          "from_year": 2003,
+          "to_year": 2005
+        }
+      ]
+    },
+    {
+      "id": 249,
+      "statsliggaren_id": 249,
+      "display_name": "Dans- och cirkushögskolan",
+      "names": [
+        {
+          "name": "Danshögskolan",
+          "from_year": 2003,
+          "to_year": 2005
+        },
+        {
+          "name": "Dans- och cirkushögskolan",
+          "from_year": 2012,
+          "to_year": 2014
+        }
+      ]
+    },
+    {
+      "id": 250,
+      "statsliggaren_id": 250,
+      "display_name": "Kungl. Konsthögskolan",
+      "names": [
+        {
+          "name": "Kungl. Konsthögskolan",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 251,
+      "statsliggaren_id": 251,
+      "display_name": "Konstfack",
+      "names": [
+        {
+          "name": "Konstfack",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 252,
+      "statsliggaren_id": 252,
+      "display_name": "Lärarhögskolan i Stockholm",
+      "names": [
+        {
+          "name": "Lärarhögskolan i Stockholm",
+          "from_year": 2003,
+          "to_year": 2005
+        }
+      ]
+    },
+    {
+      "id": 254,
+      "statsliggaren_id": 254,
+      "display_name": "Naturhistoriska riksmuseet",
+      "names": [
+        {
+          "name": "Naturhistoriska riksmuseet",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 255,
+      "statsliggaren_id": 255,
+      "display_name": "Gymnastik- och idrottshögskolan",
+      "names": [
+        {
+          "name": "Idrottshögskolan i Stockholm",
+          "from_year": 2003,
+          "to_year": 2005
+        },
+        {
+          "name": "Gymnastik- och idrottshögskolan",
+          "from_year": 2012,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 256,
+      "statsliggaren_id": 256,
+      "display_name": "Verket för högskoleservice",
+      "names": [
+        {
+          "name": "Verket för högskoleservice",
+          "from_year": 2003,
+          "to_year": 2013
+        }
+      ]
+    },
+    {
+      "id": 257,
+      "statsliggaren_id": 257,
+      "display_name": "Rådet för forsknings- och utvecklingssamarbete inom EU",
+      "names": [
+        {
+          "name": "Rådet för forsknings och utvecklingssamarbete inom EU",
+          "from_year": 2003,
+          "to_year": 2003
+        },
+        {
+          "name": "Rådet för forsknings- och utvecklingssamarbete inom EU",
+          "from_year": 2004,
+          "to_year": 2005
+        }
+      ]
+    },
+    {
+      "id": 258,
+      "statsliggaren_id": 258,
+      "display_name": "Högskoleverket",
+      "names": [
+        {
+          "name": "Högskoleverket",
+          "from_year": 2003,
+          "to_year": 2012
+        }
+      ]
+    },
+    {
+      "id": 259,
+      "statsliggaren_id": 259,
+      "display_name": "Södertörns högskola",
+      "names": [
+        {
+          "name": "Södertörns högskola",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 260,
+      "statsliggaren_id": 260,
+      "display_name": "Delegationen för IT i skolan",
+      "names": [
+        {
+          "name": "Delegationen för IT i skolan",
+          "from_year": 2003,
+          "to_year": 2003
+        }
+      ]
+    },
+    {
+      "id": 262,
+      "statsliggaren_id": 262,
+      "display_name": "Uppsala universitet",
+      "names": [
+        {
+          "name": "Uppsala universitet",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 263,
+      "statsliggaren_id": 263,
+      "display_name": "Nordiska Afrikainstitutet",
+      "names": [
+        {
+          "name": "Nordiska Afrikainstitutet",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 264,
+      "statsliggaren_id": 264,
+      "display_name": "Mälardalens universitet",
+      "names": [
+        {
+          "name": "Mälardalens högskola",
+          "from_year": 2003,
+          "to_year": 2021
+        },
+        {
+          "name": "Mälardalens universitet",
+          "from_year": 2022,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 265,
+      "statsliggaren_id": 265,
+      "display_name": "Högskolan Dalarna",
+      "names": [
+        {
+          "name": "Högskolan Dalarna",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 266,
+      "statsliggaren_id": 266,
+      "display_name": "Högskolan i Gävle",
+      "names": [
+        {
+          "name": "Högskolan i Gävle",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 267,
+      "statsliggaren_id": 267,
+      "display_name": "Örebro universitet",
+      "names": [
+        {
+          "name": "Örebro universitet",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 268,
+      "statsliggaren_id": 268,
+      "display_name": "Institutet för arbetsmarknads- och utbildningspolitisk utvärdering",
+      "names": [
+        {
+          "name": "Institutet för arbetsmarknadspolitisk utvärdering",
+          "from_year": 2003,
+          "to_year": 2012
+        },
+        {
+          "name": "Institutet för arbetsmarknads- och utbildningspolitisk utvärdering",
+          "from_year": 2013,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 270,
+      "statsliggaren_id": 270,
+      "display_name": "Göteborgs universitet",
+      "names": [
+        {
+          "name": "Göteborgs universitet",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 271,
+      "statsliggaren_id": 271,
+      "display_name": "Statens museer för världskultur",
+      "names": [
+        {
+          "name": "Statens museer för världskultur",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 272,
+      "statsliggaren_id": 272,
+      "display_name": "Fiskeriverket",
+      "names": [
+        {
+          "name": "Fiskeriverket",
+          "from_year": 2003,
+          "to_year": 2011
+        }
+      ]
+    },
+    {
+      "id": 273,
+      "statsliggaren_id": 273,
+      "display_name": "Styrelsen för ackreditering och teknisk kontroll",
+      "names": [
+        {
+          "name": "Styrelsen för ackreditering och teknisk kontroll",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 274,
+      "statsliggaren_id": 274,
+      "display_name": "Högskolan i Borås",
+      "names": [
+        {
+          "name": "Högskolan i Borås",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 275,
+      "statsliggaren_id": 275,
+      "display_name": "Karlstads universitet",
+      "names": [
+        {
+          "name": "Karlstads universitet",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 276,
+      "statsliggaren_id": 276,
+      "display_name": "Högskolan i Skövde",
+      "names": [
+        {
+          "name": "Högskolan i Skövde",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 277,
+      "statsliggaren_id": 277,
+      "display_name": "Högskolan Väst",
+      "names": [
+        {
+          "name": "Högskolan i Trollhättan/Uddevalla",
+          "from_year": 2003,
+          "to_year": 2005
+        },
+        {
+          "name": "Högskolan Väst",
+          "from_year": 2012,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 279,
+      "statsliggaren_id": 279,
+      "display_name": "Skogsstyrelsen",
+      "names": [
+        {
+          "name": "Skogsstyrelsen",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 290,
+      "statsliggaren_id": 290,
+      "display_name": "Statens utsädeskontroll",
+      "names": [
+        {
+          "name": "Statens utsädeskontroll",
+          "from_year": 2003,
+          "to_year": 2005
+        }
+      ]
+    },
+    {
+      "id": 291,
+      "statsliggaren_id": 291,
+      "display_name": "Statens växtsortnämnd",
+      "names": [
+        {
+          "name": "Statens växtsortnämnd",
+          "from_year": 2003,
+          "to_year": 2005
+        }
+      ]
+    },
+    {
+      "id": 292,
+      "statsliggaren_id": 292,
+      "display_name": "Statens jordbruksverk",
+      "names": [
+        {
+          "name": "Statens jordbruksverk",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 293,
+      "statsliggaren_id": 293,
+      "display_name": "Avvecklingsmyndigheten för Centrala försöksdjursnämnden",
+      "names": [
+        {
+          "name": "Centrala försöksdjursnämnden",
+          "from_year": 2003,
+          "to_year": 2003
+        },
+        {
+          "name": "Avvecklingsmyndigheten för Centrala försöksdjursnämnden",
+          "from_year": 2004,
+          "to_year": 2004
+        }
+      ]
+    },
+    {
+      "id": 295,
+      "statsliggaren_id": 295,
+      "display_name": "Boverket",
+      "names": [
+        {
+          "name": "Boverket",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 296,
+      "statsliggaren_id": 296,
+      "display_name": "Statens bostadskreditnämnd",
+      "names": [
+        {
+          "name": "Statens bostadskreditnämnd",
+          "from_year": 2003,
+          "to_year": 2012
+        }
+      ]
+    },
+    {
+      "id": 298,
+      "statsliggaren_id": 298,
+      "display_name": "Regeringskansliet",
+      "names": [
+        {
+          "name": "Regeringskansliet",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 300,
+      "statsliggaren_id": 300,
+      "display_name": "Svenska institutet",
+      "names": [
+        {
+          "name": "Svenska institutet",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 301,
+      "statsliggaren_id": 301,
+      "display_name": "Åklagarmyndigheten",
+      "names": [
+        {
+          "name": "Riksåklagaren",
+          "from_year": 2003,
+          "to_year": 2004
+        },
+        {
+          "name": "Åklagarmyndigheten",
+          "from_year": 2005,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 303,
+      "statsliggaren_id": 303,
+      "display_name": "Ekobrottsmyndigheten",
+      "names": [
+        {
+          "name": "Ekobrottsmyndigheten",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 304,
+      "statsliggaren_id": 304,
+      "display_name": "Justitiekanslern",
+      "names": [
+        {
+          "name": "Justitiekanslern",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 305,
+      "statsliggaren_id": 305,
+      "display_name": "Brottsförebyggande rådet",
+      "names": [
+        {
+          "name": "Brottsförebyggande rådet",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 306,
+      "statsliggaren_id": 306,
+      "display_name": "Integritetsskyddsmyndigheten",
+      "names": [
+        {
+          "name": "Datainspektionen",
+          "from_year": 2003,
+          "to_year": 2020
+        },
+        {
+          "name": "Integritetsskyddsmyndigheten",
+          "from_year": 2021,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 307,
+      "statsliggaren_id": 307,
+      "display_name": "Bokföringsnämnden",
+      "names": [
+        {
+          "name": "Bokföringsnämnden",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 308,
+      "statsliggaren_id": 308,
+      "display_name": "Jämställdhetsombudsmannen",
+      "names": [
+        {
+          "name": "Jämställdhetsombudsmannen",
+          "from_year": 2003,
+          "to_year": 2008
+        }
+      ]
+    },
+    {
+      "id": 309,
+      "statsliggaren_id": 309,
+      "display_name": "Inspektionen för strategiska produkter",
+      "names": [
+        {
+          "name": "Inspektionen för strategiska produkter",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 310,
+      "statsliggaren_id": 310,
+      "display_name": "Polarforskningssekretariatet",
+      "names": [
+        {
+          "name": "Polarforskningssekretariatet",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 312,
+      "statsliggaren_id": 312,
+      "display_name": "Ombudsmannen mot etnisk diskriminering",
+      "names": [
+        {
+          "name": "Ombudsmannen mot etnisk diskriminering",
+          "from_year": 2003,
+          "to_year": 2008
+        }
+      ]
+    },
+    {
+      "id": 314,
+      "statsliggaren_id": 314,
+      "display_name": "Utlänningsnämndens avvecklingsorganisation",
+      "names": [
+        {
+          "name": "Utlänningsnämnden",
+          "from_year": 2003,
+          "to_year": 2006
+        },
+        {
+          "name": "Utlänningsnämndens avvecklingsorganisation",
+          "from_year": 2007,
+          "to_year": 2007
+        }
+      ]
+    },
+    {
+      "id": 331,
+      "statsliggaren_id": 331,
+      "display_name": "Statskontoret",
+      "names": [
+        {
+          "name": "Ekonomistyrningsverket",
+          "from_year": 2003,
+          "to_year": 2025
+        },
+        {
+          "name": "Statskontoret",
+          "from_year": 2026,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 335,
+      "statsliggaren_id": 335,
+      "display_name": "Domstolsväsendet JU",
+      "names": [
+        {
+          "name": "Domstolsverket",
+          "from_year": 2003,
+          "to_year": 2004
+        },
+        {
+          "name": "Domstolsväsendet JU",
+          "from_year": 2004,
+          "to_year": 2004
+        }
+      ],
+      "aliases": [
+        "Domstolsväsendet JU"
+      ]
+    },
+    {
+      "id": 349,
+      "statsliggaren_id": 349,
+      "display_name": "Statens institut för särskilt utbildningsstöd",
+      "names": [
+        {
+          "name": "Statens institut för särskilt utbildningsstöd",
+          "from_year": 2003,
+          "to_year": 2006
+        }
+      ]
+    },
+    {
+      "id": 350,
+      "statsliggaren_id": 350,
+      "display_name": "Statens folkhälsoinstitut",
+      "names": [
+        {
+          "name": "Statens folkhälsoinstitut",
+          "from_year": 2003,
+          "to_year": 2013
+        }
+      ]
+    },
+    {
+      "id": 351,
+      "statsliggaren_id": 351,
+      "display_name": "Smittskyddsinstitutet",
+      "names": [
+        {
+          "name": "Smittskyddsinstitutet",
+          "from_year": 2003,
+          "to_year": 2013
+        }
+      ]
+    },
+    {
+      "id": 352,
+      "statsliggaren_id": 352,
+      "display_name": "Socialstyrelsen",
+      "names": [
+        {
+          "name": "Socialstyrelsen",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 353,
+      "statsliggaren_id": 353,
+      "display_name": "Statens institutionsstyrelse",
+      "names": [
+        {
+          "name": "Statens institutionsstyrelse",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 355,
+      "statsliggaren_id": 355,
+      "display_name": "Läkemedelsverket",
+      "names": [
+        {
+          "name": "Läkemedelsverket",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 356,
+      "statsliggaren_id": 356,
+      "display_name": "Rättsmedicinalverket",
+      "names": [
+        {
+          "name": "Rättsmedicinalverket",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 357,
+      "statsliggaren_id": 357,
+      "display_name": "Barnombudsmannen",
+      "names": [
+        {
+          "name": "Barnombudsmannen",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 358,
+      "statsliggaren_id": 358,
+      "display_name": "Hälso- och sjukvårdens ansvarsnämnd",
+      "names": [
+        {
+          "name": "Hälso- och sjukvårdens ansvarsnämnd",
+          "from_year": 2003,
+          "to_year": 2011
+        }
+      ]
+    },
+    {
+      "id": 359,
+      "statsliggaren_id": 359,
+      "display_name": "Statens nämnd för internationella adoptionsfrågor",
+      "names": [
+        {
+          "name": "Statens nämnd för internationella adoptionsfrågor",
+          "from_year": 2003,
+          "to_year": 2004
+        }
+      ]
+    },
+    {
+      "id": 360,
+      "statsliggaren_id": 360,
+      "display_name": "Polismyndigheten",
+      "names": [
+        {
+          "name": "Rikspolisstyrelsen",
+          "from_year": 2005,
+          "to_year": 2014
+        },
+        {
+          "name": "Polismyndigheten",
+          "from_year": 2015,
+          "to_year": 2018
+        }
+      ]
+    },
+    {
+      "id": 386,
+      "statsliggaren_id": 386,
+      "display_name": "Polismyndigheten",
+      "names": [
+        {
+          "name": "Polisväsendet",
+          "from_year": 2003,
+          "to_year": 2004
+        },
+        {
+          "name": "Rikspolisstyrelsen (RPS)",
+          "from_year": 2004,
+          "to_year": 2004
+        },
+        {
+          "name": "Polismyndigheten",
+          "from_year": 2019,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 387,
+      "statsliggaren_id": 387,
+      "display_name": "Linköpings universitet",
+      "names": [
+        {
+          "name": "Linköpings universitet",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 388,
+      "statsliggaren_id": 388,
+      "display_name": "Statens väg- och transportforskningsinstitut",
+      "names": [
+        {
+          "name": "Statens väg- och transportforskningsinstitut",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 389,
+      "statsliggaren_id": 389,
+      "display_name": "Statens geotekniska institut",
+      "names": [
+        {
+          "name": "Statens geotekniska institut",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 391,
+      "statsliggaren_id": 391,
+      "display_name": "Tullverket",
+      "names": [
+        {
+          "name": "Tullverket",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 414,
+      "statsliggaren_id": 414,
+      "display_name": "Högskolan på Gotland",
+      "names": [
+        {
+          "name": "Högskolan på Gotland",
+          "from_year": 2003,
+          "to_year": 2013
+        }
+      ]
+    },
+    {
+      "id": 418,
+      "statsliggaren_id": 418,
+      "display_name": "Riksgäldskontoret",
+      "names": [
+        {
+          "name": "Riksgäldskontoret",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 422,
+      "statsliggaren_id": 422,
+      "display_name": "Skatteverket",
+      "names": [
+        {
+          "name": "Riksskatteverket",
+          "from_year": 2003,
+          "to_year": 2003
+        },
+        {
+          "name": "Skatteverket",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 465,
+      "statsliggaren_id": 465,
+      "display_name": "Statens järnvägar",
+      "names": [
+        {
+          "name": "Affärsverket Statens järnvägar",
+          "from_year": 2003,
+          "to_year": 2006
+        },
+        {
+          "name": "Statens järnvägar",
+          "from_year": 2007,
+          "to_year": 2012
+        }
+      ]
+    },
+    {
+      "id": 466,
+      "statsliggaren_id": 466,
+      "display_name": "Luftfartsverket",
+      "names": [
+        {
+          "name": "Luftfartsverket",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 467,
+      "statsliggaren_id": 467,
+      "display_name": "Banverket",
+      "names": [
+        {
+          "name": "Banverket",
+          "from_year": 2003,
+          "to_year": 2010
+        }
+      ]
+    },
+    {
+      "id": 469,
+      "statsliggaren_id": 469,
+      "display_name": "Exportkreditnämnden",
+      "names": [
+        {
+          "name": "Exportkreditnämnden",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 471,
+      "statsliggaren_id": 471,
+      "display_name": "Affärsverket svenska kraftnät",
+      "names": [
+        {
+          "name": "Affärsverket svenska kraftnät",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 472,
+      "statsliggaren_id": 472,
+      "display_name": "Försvarets materielverk",
+      "names": [
+        {
+          "name": "Försvarets materielverk",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 474,
+      "statsliggaren_id": 474,
+      "display_name": "Försvarets radioanstalt",
+      "names": [
+        {
+          "name": "Försvarets radioanstalt",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 476,
+      "statsliggaren_id": 476,
+      "display_name": "Statens räddningsverk",
+      "names": [
+        {
+          "name": "Statens räddningsverk",
+          "from_year": 2003,
+          "to_year": 2008
+        }
+      ]
+    },
+    {
+      "id": 477,
+      "statsliggaren_id": 477,
+      "display_name": "Statens försvarshistoriska museer",
+      "names": [
+        {
+          "name": "Statens försvarshistoriska museer",
+          "from_year": 2003,
+          "to_year": 2025
+        }
+      ]
+    },
+    {
+      "id": 478,
+      "statsliggaren_id": 478,
+      "display_name": "Styrelsen för psykologiskt försvar",
+      "names": [
+        {
+          "name": "Styrelsen för psykologiskt försvar",
+          "from_year": 2003,
+          "to_year": 2008
+        }
+      ]
+    },
+    {
+      "id": 479,
+      "statsliggaren_id": 479,
+      "display_name": "Totalförsvarets plikt- och prövningsverk",
+      "names": [
+        {
+          "name": "Totalförsvarets pliktverk",
+          "from_year": 2003,
+          "to_year": 2011
+        },
+        {
+          "name": "Totalförsvarets rekryteringsmyndighet",
+          "from_year": 2011,
+          "to_year": 2021
+        },
+        {
+          "name": "Totalförsvarets plikt- och prövningsverk",
+          "from_year": 2022,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 480,
+      "statsliggaren_id": 480,
+      "display_name": "Kustbevakningen",
+      "names": [
+        {
+          "name": "Kustbevakningen",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 481,
+      "statsliggaren_id": 481,
+      "display_name": "Försvarsmakten",
+      "names": [
+        {
+          "name": "Försvarsmakten",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 482,
+      "statsliggaren_id": 482,
+      "display_name": "Fortifikationsverket",
+      "names": [
+        {
+          "name": "Fortifikationsverket",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 484,
+      "statsliggaren_id": 484,
+      "display_name": "Försvarshögskolan",
+      "names": [
+        {
+          "name": "Försvarshögskolan",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 485,
+      "statsliggaren_id": 485,
+      "display_name": "Sjöfartsverket",
+      "names": [
+        {
+          "name": "Sjöfartsverket",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 486,
+      "statsliggaren_id": 486,
+      "display_name": "Vägverket",
+      "names": [
+        {
+          "name": "Vägverket",
+          "from_year": 2003,
+          "to_year": 2010
+        }
+      ]
+    },
+    {
+      "id": 487,
+      "statsliggaren_id": 487,
+      "display_name": "Sveriges meteorologiska och hydrologiska institut",
+      "names": [
+        {
+          "name": "Sveriges meteorologiska och hydrologiska institut",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 491,
+      "statsliggaren_id": 491,
+      "display_name": "Specialskolemyndigheten",
+      "names": [
+        {
+          "name": "Specialskolemyndigheten",
+          "from_year": 2003,
+          "to_year": 2009
+        }
+      ]
+    },
+    {
+      "id": 493,
+      "statsliggaren_id": 493,
+      "display_name": "Institutet för tillväxtpolitiska studier",
+      "names": [
+        {
+          "name": "Institutet för tillväxtpolitiska studier",
+          "from_year": 2003,
+          "to_year": 2009
+        }
+      ]
+    },
+    {
+      "id": 494,
+      "statsliggaren_id": 494,
+      "display_name": "Rådet för Europeiska socialfonden i Sverige",
+      "names": [
+        {
+          "name": "Rådet för Europeiska socialfonden i Sverige",
+          "from_year": 2003,
+          "to_year": 2026
+        },
+        {
+          "name": "Svenska ESF-rådet",
+          "from_year": 2003,
+          "to_year": 2003
+        }
+      ],
+      "aliases": [
+        "Svenska ESF-rådet"
+      ]
+    },
+    {
+      "id": 495,
+      "statsliggaren_id": 495,
+      "display_name": "Medlingsinstitutet",
+      "names": [
+        {
+          "name": "Medlingsinstitutet",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 496,
+      "statsliggaren_id": 496,
+      "display_name": "Forskningsrådet för miljö, areella näringar och samhällsbyggande",
+      "names": [
+        {
+          "name": "Forskningsrådet för miljö, areella näringar och samhällsbyggande",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 498,
+      "statsliggaren_id": 498,
+      "display_name": "Vetenskapsrådet",
+      "names": [
+        {
+          "name": "Vetenskapsrådet",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 499,
+      "statsliggaren_id": 499,
+      "display_name": "Verket för innovationssystem",
+      "names": [
+        {
+          "name": "Verket för innovationssystem",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 500,
+      "statsliggaren_id": 500,
+      "display_name": "Forskningsrådet för hälsa, arbetsliv och välfärd",
+      "names": [
+        {
+          "name": "Forskningsrådet för arbetsliv och socialvetenskap",
+          "from_year": 2003,
+          "to_year": 2013
+        },
+        {
+          "name": "Forskningsrådet för hälsa, arbetsliv och välfärd",
+          "from_year": 2013,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 501,
+      "statsliggaren_id": 501,
+      "display_name": "Totalförsvarets forskningsinstitut",
+      "names": [
+        {
+          "name": "Totalförsvarets forskningsinstitut",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 503,
+      "statsliggaren_id": 503,
+      "display_name": "Specialpedagogiska institutet",
+      "names": [
+        {
+          "name": "Specialpedagogiska institutet",
+          "from_year": 2003,
+          "to_year": 2008
+        }
+      ]
+    },
+    {
+      "id": 504,
+      "statsliggaren_id": 504,
+      "display_name": "Nationellt centrum för flexibelt lärande",
+      "names": [
+        {
+          "name": "Nationellt centrum för flexibelt lärande",
+          "from_year": 2003,
+          "to_year": 2008
+        }
+      ]
+    },
+    {
+      "id": 507,
+      "statsliggaren_id": 507,
+      "display_name": "Överklagandenämnden för studiestöd",
+      "names": [
+        {
+          "name": "Överklagandenämnden för studiestöd",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 508,
+      "statsliggaren_id": 508,
+      "display_name": "Myndigheten för kvalificerad yrkesutbildning",
+      "names": [
+        {
+          "name": "Myndigheten för kvalificerad yrkesutbildning",
+          "from_year": 2003,
+          "to_year": 2009
+        }
+      ]
+    },
+    {
+      "id": 509,
+      "statsliggaren_id": 509,
+      "display_name": "Valmyndigheten",
+      "names": [
+        {
+          "name": "Valmyndigheten",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 539,
+      "statsliggaren_id": 539,
+      "display_name": "Avvecklingsmyndigheten för nätverk och samarbete inom högre utbildning",
+      "names": [
+        {
+          "name": "Myndigheten för Sveriges nätuniversitet",
+          "from_year": 2003,
+          "to_year": 2006
+        },
+        {
+          "name": "Myndigheten för nätverk och samarbete inom högre utbildning",
+          "from_year": 2007,
+          "to_year": 2009
+        },
+        {
+          "name": "Avvecklingsmyndigheten för nätverk och samarbete inom högre utbildning",
+          "from_year": 2010,
+          "to_year": 2010
+        }
+      ]
+    },
+    {
+      "id": 540,
+      "statsliggaren_id": 540,
+      "display_name": "Statens bostadsnämnd",
+      "names": [
+        {
+          "name": "Statens bostadsnämnd",
+          "from_year": 2003,
+          "to_year": 2005
+        }
+      ]
+    },
+    {
+      "id": 541,
+      "statsliggaren_id": 541,
+      "display_name": "Folke Bernadotteakademin",
+      "names": [
+        {
+          "name": "Folke Bernadotteakademin",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 542,
+      "statsliggaren_id": 542,
+      "display_name": "Svenska institutet för europapolitiska studier",
+      "names": [
+        {
+          "name": "Expertgruppen för EU frågor",
+          "from_year": 2003,
+          "to_year": 2003
+        },
+        {
+          "name": "Expertgruppen för EU-frågor",
+          "from_year": 2004,
+          "to_year": 2006
+        },
+        {
+          "name": "Svenska institutet för europapolitiska studier",
+          "from_year": 2007,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 543,
+      "statsliggaren_id": 543,
+      "display_name": "Tandvårds- och läkemedelsförmånsverket",
+      "names": [
+        {
+          "name": "Läkemedelsförmånsnämnden",
+          "from_year": 2003,
+          "to_year": 2008
+        },
+        {
+          "name": "Tandvårds- och läkemedelsförmånsverket",
+          "from_year": 2009,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 544,
+      "statsliggaren_id": 544,
+      "display_name": "Krisberedskapsmyndigheten",
+      "names": [
+        {
+          "name": "Krisberedskapsmyndigheten",
+          "from_year": 2003,
+          "to_year": 2008
+        }
+      ]
+    },
+    {
+      "id": 599,
+      "statsliggaren_id": 599,
+      "display_name": "Regeringkansliet (RKs disposition)",
+      "names": [
+        {
+          "name": "Regeringkansliet (RKs disposition)",
+          "from_year": 2004,
+          "to_year": 2004
+        }
+      ]
+    },
+    {
+      "id": 600,
+      "statsliggaren_id": 600,
+      "display_name": "regeringen",
+      "names": [
+        {
+          "name": "Regeringen",
+          "from_year": 2003,
+          "to_year": 2003
+        },
+        {
+          "name": "regeringen",
+          "from_year": 2003,
+          "to_year": 2004
+        }
+      ]
+    },
+    {
+      "id": 1018,
+      "statsliggaren_id": 1018,
+      "display_name": "Svenska Unescorådet",
+      "names": [
+        {
+          "name": "Svenska unescorådet",
+          "from_year": 2003,
+          "to_year": 2007
+        },
+        {
+          "name": "Svenska Unescorådet",
+          "from_year": 2008,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1019,
+      "statsliggaren_id": 1019,
+      "display_name": "Alkoholsortimentsnämnden",
+      "names": [
+        {
+          "name": "Alkoholsortimentsnämnden",
+          "from_year": 2004,
+          "to_year": 2017
+        },
+        {
+          "name": "Alkohol- och läkemedelssortimentsnämnden",
+          "from_year": 2005,
+          "to_year": 2009
+        }
+      ]
+    },
+    {
+      "id": 1020,
+      "statsliggaren_id": 1020,
+      "display_name": "Ekonomiska rådet",
+      "names": [
+        {
+          "name": "Ekonomiska rådet",
+          "from_year": 2003,
+          "to_year": 2009
+        }
+      ]
+    },
+    {
+      "id": 1021,
+      "statsliggaren_id": 1021,
+      "display_name": "Forum för levande historia",
+      "names": [
+        {
+          "name": "Forum för Levande historia",
+          "from_year": 2003,
+          "to_year": 2004
+        },
+        {
+          "name": "Forum för levande historia",
+          "from_year": 2003,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1022,
+      "statsliggaren_id": 1022,
+      "display_name": "Fonden för fukt- och mögelskador",
+      "names": [
+        {
+          "name": "Fonden för fukt- och mögelskador",
+          "from_year": 2003,
+          "to_year": 2008
+        }
+      ]
+    },
+    {
+      "id": 1025,
+      "statsliggaren_id": 1025,
+      "display_name": "Myndigheten för skolutveckling",
+      "names": [
+        {
+          "name": "Myndigheten för skolutveckling",
+          "from_year": 2003,
+          "to_year": 2008
+        }
+      ]
+    },
+    {
+      "id": 1026,
+      "statsliggaren_id": 1026,
+      "display_name": "Rederinämnden",
+      "names": [
+        {
+          "name": "Rederinämnden",
+          "from_year": 2004,
+          "to_year": 2010
+        }
+      ]
+    },
+    {
+      "id": 1041,
+      "statsliggaren_id": 1041,
+      "display_name": "Avvecklingsmyndigheten för RRV",
+      "names": [
+        {
+          "name": "Avvecklingsmyndigheten för RRV",
+          "from_year": 2003,
+          "to_year": 2004
+        }
+      ]
+    },
+    {
+      "id": 1042,
+      "statsliggaren_id": 1042,
+      "display_name": "Överklagandenämnden för etikprövning",
+      "names": [
+        {
+          "name": "Centrala etikprövningsnämnden",
+          "from_year": 2004,
+          "to_year": 2018
+        },
+        {
+          "name": "Överklagandenämnden för etikprövning",
+          "from_year": 2019,
+          "to_year": 2021
+        }
+      ]
+    },
+    {
+      "id": 1045,
+      "statsliggaren_id": 1045,
+      "display_name": "Valideringsdelegationen",
+      "names": [
+        {
+          "name": "Valideringsdelegationen",
+          "from_year": 2004,
+          "to_year": 2007
+        }
+      ]
+    },
+    {
+      "id": 1046,
+      "statsliggaren_id": 1046,
+      "display_name": "Djurskyddsmyndigheten",
+      "names": [
+        {
+          "name": "Djurskyddsmyndigheten",
+          "from_year": 2004,
+          "to_year": 2007
+        }
+      ]
+    },
+    {
+      "id": 1056,
+      "statsliggaren_id": 1056,
+      "display_name": "regionala etikprövningsnämnder",
+      "names": [
+        {
+          "name": "Regionala etikprövningsnämnder",
+          "from_year": 2004,
+          "to_year": 2010
+        },
+        {
+          "name": "regionala etikprövningsnämnder",
+          "from_year": 2011,
+          "to_year": 2018
+        }
+      ]
+    },
+    {
+      "id": 1057,
+      "statsliggaren_id": 1057,
+      "display_name": "Skatteverket",
+      "names": [
+        {
+          "name": "Skatteverket",
+          "from_year": 2004,
+          "to_year": 2004
+        }
+      ]
+    },
+    {
+      "id": 1058,
+      "statsliggaren_id": 1058,
+      "display_name": "Inspektionen för arbetslöshetsförsäkringen",
+      "names": [
+        {
+          "name": "Inspektionen för arbetslöshetsförsäkringen",
+          "from_year": 2004,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1091,
+      "statsliggaren_id": 1091,
+      "display_name": "Statens nämnd för arbetstagares uppfinningar",
+      "names": [
+        {
+          "name": "Statens nämnd för arbetstagares uppfinningar",
+          "from_year": 2004,
+          "to_year": 2012
+        }
+      ]
+    },
+    {
+      "id": 1094,
+      "statsliggaren_id": 1094,
+      "display_name": "Regionala etikprövningsnämnden i Göteborg",
+      "names": [
+        {
+          "name": "Regionala etikprövningsnämnden i Göteborg",
+          "from_year": 2005,
+          "to_year": 2018
+        }
+      ]
+    },
+    {
+      "id": 1095,
+      "statsliggaren_id": 1095,
+      "display_name": "Regionala etikprövningsnämnden i Lund",
+      "names": [
+        {
+          "name": "Regionala etikprövningsnämnden i Lund",
+          "from_year": 2005,
+          "to_year": 2018
+        }
+      ]
+    },
+    {
+      "id": 1096,
+      "statsliggaren_id": 1096,
+      "display_name": "Regionala etikprövningsnämnden i Linköping",
+      "names": [
+        {
+          "name": "Regionala etikprövningsnämnden i Linköping",
+          "from_year": 2005,
+          "to_year": 2018
+        }
+      ]
+    },
+    {
+      "id": 1097,
+      "statsliggaren_id": 1097,
+      "display_name": "Regionala etikprövningsnämnden i Stockholm",
+      "names": [
+        {
+          "name": "Regionala etikprövningsnämnden i Stockholm",
+          "from_year": 2005,
+          "to_year": 2018
+        }
+      ]
+    },
+    {
+      "id": 1098,
+      "statsliggaren_id": 1098,
+      "display_name": "Regionala etikprövningsnämnden i Umeå",
+      "names": [
+        {
+          "name": "Regionala etikprövningsnämnden i Umeå",
+          "from_year": 2005,
+          "to_year": 2018
+        }
+      ]
+    },
+    {
+      "id": 1099,
+      "statsliggaren_id": 1099,
+      "display_name": "Regionala etikprövningsnämnden i Uppsala",
+      "names": [
+        {
+          "name": "Regionala etikprövningsnämnden i Uppsala",
+          "from_year": 2005,
+          "to_year": 2018
+        }
+      ]
+    },
+    {
+      "id": 1109,
+      "statsliggaren_id": 1109,
+      "display_name": "Järnvägsstyrelsen",
+      "names": [
+        {
+          "name": "Järnvägsstyrelsen",
+          "from_year": 2004,
+          "to_year": 2008
+        }
+      ]
+    },
+    {
+      "id": 1110,
+      "statsliggaren_id": 1110,
+      "display_name": "Bolagsverket",
+      "names": [
+        {
+          "name": "Bolagsverket",
+          "from_year": 2004,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1111,
+      "statsliggaren_id": 1111,
+      "display_name": "Luftfartsstyrelsen",
+      "names": [
+        {
+          "name": "Luftfartsstyrelsen",
+          "from_year": 2005,
+          "to_year": 2009
+        }
+      ]
+    },
+    {
+      "id": 1112,
+      "statsliggaren_id": 1112,
+      "display_name": "Försäkringskassan",
+      "names": [
+        {
+          "name": "Försäkringskassan",
+          "from_year": 2005,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1115,
+      "statsliggaren_id": 1115,
+      "display_name": "Myndigheten för familjerätt och föräldraskapsstöd",
+      "names": [
+        {
+          "name": "Myndigheten för internationella adoptionsfrågor",
+          "from_year": 2005,
+          "to_year": 2015
+        },
+        {
+          "name": "Myndigheten för familjerätt och föräldraskapsstöd",
+          "from_year": 2016,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1117,
+      "statsliggaren_id": 1117,
+      "display_name": "Sveriges Domstolar",
+      "names": [
+        {
+          "name": "Domstolsverket",
+          "from_year": 2005,
+          "to_year": 2007
+        },
+        {
+          "name": "Sveriges Domstolar",
+          "from_year": 2007,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1121,
+      "statsliggaren_id": 1121,
+      "display_name": "Myndigheten för delaktighet",
+      "names": [
+        {
+          "name": "Myndigheten för handikappolitisk samordning",
+          "from_year": 2006,
+          "to_year": 2014
+        },
+        {
+          "name": "Myndigheten för delaktighet",
+          "from_year": 2015,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1122,
+      "statsliggaren_id": 1122,
+      "display_name": "Institutet för utvärdering av internationellt utvecklingssamarbete",
+      "names": [
+        {
+          "name": "Institutet för utvärdering av internationellt utvecklingssamarbete",
+          "from_year": 2006,
+          "to_year": 2012
+        }
+      ]
+    },
+    {
+      "id": 1123,
+      "statsliggaren_id": 1123,
+      "display_name": "Verket för förvaltningsutveckling",
+      "names": [
+        {
+          "name": "Verket för förvaltningsutveckling",
+          "from_year": 2006,
+          "to_year": 2008
+        }
+      ]
+    },
+    {
+      "id": 1124,
+      "statsliggaren_id": 1124,
+      "display_name": "Utlänningsnämndens avvecklingsorganisation",
+      "names": [
+        {
+          "name": "Utlänningsnämndens avvecklingsorganisation",
+          "from_year": 2006,
+          "to_year": 2006
+        }
+      ]
+    },
+    {
+      "id": 1127,
+      "statsliggaren_id": 1127,
+      "display_name": "Avvecklingsmyndigheten för Arbetslivsinstitutet",
+      "names": [
+        {
+          "name": "Avvecklingsmyndigheten för Arbetslivsinstitutet",
+          "from_year": 2007,
+          "to_year": 2008
+        }
+      ]
+    },
+    {
+      "id": 1128,
+      "statsliggaren_id": 1128,
+      "display_name": "Avvecklingsmyndigheten för Integrationsverket",
+      "names": [
+        {
+          "name": "Avvecklingsmyndigheten för Integrationsverket",
+          "from_year": 2007,
+          "to_year": 2008
+        }
+      ]
+    },
+    {
+      "id": 1129,
+      "statsliggaren_id": 1129,
+      "display_name": "Finanspolitiska rådet",
+      "names": [
+        {
+          "name": "Finanspolitiska rådet",
+          "from_year": 2007,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1130,
+      "statsliggaren_id": 1130,
+      "display_name": "Kronofogdemyndigheten",
+      "names": [
+        {
+          "name": "Kronofogdemyndigheten",
+          "from_year": 2008,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1134,
+      "statsliggaren_id": 1134,
+      "display_name": "Myndigheten för säkerhet och integritetsskydd",
+      "names": [
+        {
+          "name": "Säkerhets- och integritetsskyddsnämnden",
+          "from_year": 2008,
+          "to_year": 2025
+        },
+        {
+          "name": "Myndigheten för säkerhet och integritetsskydd",
+          "from_year": 2026,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1135,
+      "statsliggaren_id": 1135,
+      "display_name": "Energimarknadsinspektionen",
+      "names": [
+        {
+          "name": "Energimarknadsinspektionen",
+          "from_year": 2008,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1137,
+      "statsliggaren_id": 1137,
+      "display_name": "Strålsäkerhetsmyndigheten",
+      "names": [
+        {
+          "name": "Strålsäkerhetsmyndigheten",
+          "from_year": 2008,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1138,
+      "statsliggaren_id": 1138,
+      "display_name": "Avvecklingsmyndigheten för Statens strålskyddsinstitut och kärnkraftsinspektion",
+      "names": [
+        {
+          "name": "Avvecklingsmyndigheten för Statens strålskyddsinstitut och kärnkraftsinspektion",
+          "from_year": 2008,
+          "to_year": 2009
+        }
+      ]
+    },
+    {
+      "id": 1139,
+      "statsliggaren_id": 1139,
+      "display_name": "Statens skolinspektion",
+      "names": [
+        {
+          "name": "Statens skolinspektion",
+          "from_year": 2008,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1140,
+      "statsliggaren_id": 1140,
+      "display_name": "Specialpedagogiska skolmyndigheten",
+      "names": [
+        {
+          "name": "Specialpedagogiska skolmyndigheten",
+          "from_year": 2008,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1141,
+      "statsliggaren_id": 1141,
+      "display_name": "Avvecklingsmyndigheten för skolmyndigheter m.m.",
+      "names": [
+        {
+          "name": "Avvecklingsmyndigheten för skolmyndigheter m.m.",
+          "from_year": 2008,
+          "to_year": 2010
+        }
+      ]
+    },
+    {
+      "id": 1142,
+      "statsliggaren_id": 1142,
+      "display_name": "Myndigheten för civilt försvar",
+      "names": [
+        {
+          "name": "Myndigheten för samhällsskydd och beredskap",
+          "from_year": 2009,
+          "to_year": 2025
+        },
+        {
+          "name": "Myndigheten för civilt försvar",
+          "from_year": 2026,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1143,
+      "statsliggaren_id": 1143,
+      "display_name": "Myndigheten för yrkeshögskolan",
+      "names": [
+        {
+          "name": "Myndigheten för yrkeshögskolan",
+          "from_year": 2009,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1144,
+      "statsliggaren_id": 1144,
+      "display_name": "Diskrimineringsombudsmannen",
+      "names": [
+        {
+          "name": "Diskrimineringsombudsmannen",
+          "from_year": 2009,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1145,
+      "statsliggaren_id": 1145,
+      "display_name": "Inspektionen för socialförsäkringen",
+      "names": [
+        {
+          "name": "Inspektionen för socialförsäkringen",
+          "from_year": 2009,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1148,
+      "statsliggaren_id": 1148,
+      "display_name": "Transportstyrelsen",
+      "names": [
+        {
+          "name": "Transportstyrelsen",
+          "from_year": 2009,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1149,
+      "statsliggaren_id": 1149,
+      "display_name": "Avvecklingsmyndigheten för SRV, KBM och SPF",
+      "names": [
+        {
+          "name": "Avvecklingsmyndigheten för SRV, KBM och SPF",
+          "from_year": 2009,
+          "to_year": 2010
+        }
+      ]
+    },
+    {
+      "id": 1151,
+      "statsliggaren_id": 1151,
+      "display_name": "Kompetensrådet för utveckling i staten",
+      "names": [
+        {
+          "name": "Kompetensrådet för utveckling i staten",
+          "from_year": 2009,
+          "to_year": 2012
+        }
+      ]
+    },
+    {
+      "id": 1152,
+      "statsliggaren_id": 1152,
+      "display_name": "Avvecklingsmyndigheten för Verket för förvaltningsutveckling",
+      "names": [
+        {
+          "name": "Avvecklingsmyndigheten för Verva",
+          "from_year": 2009,
+          "to_year": 2009
+        },
+        {
+          "name": "Avvecklingsmyndigheten för Verket för förvaltningsutveckling",
+          "from_year": 2010,
+          "to_year": 2010
+        }
+      ]
+    },
+    {
+      "id": 1153,
+      "statsliggaren_id": 1153,
+      "display_name": "Avvecklingsmyndigheten för ombudsmännen mot diskriminering",
+      "names": [
+        {
+          "name": "Avvecklingsmyndigheten för ombudsmännen mot diskriminering",
+          "from_year": 2009,
+          "to_year": 2009
+        }
+      ]
+    },
+    {
+      "id": 1155,
+      "statsliggaren_id": 1155,
+      "display_name": "Signalspaningsnämnden",
+      "names": [
+        {
+          "name": "Signalspaningsnämnden",
+          "from_year": 2009,
+          "to_year": 2009
+        }
+      ]
+    },
+    {
+      "id": 1156,
+      "statsliggaren_id": 1156,
+      "display_name": "Myndigheten för tillväxtpolitiska utvärderingar och analyser",
+      "names": [
+        {
+          "name": "Myndigheten för tillväxtpolitiska utvärderingar och analyser",
+          "from_year": 2009,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1157,
+      "statsliggaren_id": 1157,
+      "display_name": "Tillväxtverket",
+      "names": [
+        {
+          "name": "Tillväxtverket",
+          "from_year": 2009,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1158,
+      "statsliggaren_id": 1158,
+      "display_name": "Utredningen för avveckling av ITPS, Glesbygdsverket och Nutek",
+      "names": [
+        {
+          "name": "Utredningen för avveckling av ITPS, Glesbygdsverket och Nutek",
+          "from_year": 2009,
+          "to_year": 2010
+        }
+      ]
+    },
+    {
+      "id": 1159,
+      "statsliggaren_id": 1159,
+      "display_name": "Statens inspektion för försvarsunderrättelseverksamheten",
+      "names": [
+        {
+          "name": "Försvarets underrättelsenämnd",
+          "from_year": 2009,
+          "to_year": 2009
+        },
+        {
+          "name": "Statens inspektion för försvarsunderrättelseverksamheten",
+          "from_year": 2010,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1161,
+      "statsliggaren_id": 1161,
+      "display_name": "Pensionsmyndigheten",
+      "names": [
+        {
+          "name": "Pensionsmyndigheten",
+          "from_year": 2010,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1162,
+      "statsliggaren_id": 1162,
+      "display_name": "Linnéuniversitetet",
+      "names": [
+        {
+          "name": "Linnéuniversitetet",
+          "from_year": 2010,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1163,
+      "statsliggaren_id": 1163,
+      "display_name": "Trafikanalys",
+      "names": [
+        {
+          "name": "Trafikanalys",
+          "from_year": 2010,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1164,
+      "statsliggaren_id": 1164,
+      "display_name": "Trafikverket",
+      "names": [
+        {
+          "name": "Trafikverket",
+          "from_year": 2010,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1165,
+      "statsliggaren_id": 1165,
+      "display_name": "Avvecklingsmyndigheten för PPM och delar av FK",
+      "names": [
+        {
+          "name": "Avvecklingsmyndigheten för PPM och delar av FK",
+          "from_year": 2010,
+          "to_year": 2011
+        }
+      ]
+    },
+    {
+      "id": 1169,
+      "statsliggaren_id": 1169,
+      "display_name": "Försvarsunderrättelsedomstolen",
+      "names": [
+        {
+          "name": "Försvarsunderrättelsedomstolen",
+          "from_year": 2009,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1170,
+      "statsliggaren_id": 1170,
+      "display_name": "Försvarsexportmyndigheten",
+      "names": [
+        {
+          "name": "Försvarsexportmyndigheten",
+          "from_year": 2010,
+          "to_year": 2015
+        }
+      ]
+    },
+    {
+      "id": 1174,
+      "statsliggaren_id": 1174,
+      "display_name": "Mediemyndigheten",
+      "names": [
+        {
+          "name": "Myndigheten för radio och tv",
+          "from_year": 2010,
+          "to_year": 2015
+        },
+        {
+          "name": "Myndigheten för press, radio och tv",
+          "from_year": 2016,
+          "to_year": 2023
+        },
+        {
+          "name": "Mediemyndigheten",
+          "from_year": 2024,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1175,
+      "statsliggaren_id": 1175,
+      "display_name": "Domarnämnden",
+      "names": [
+        {
+          "name": "Domarnämnden",
+          "from_year": 2011,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1176,
+      "statsliggaren_id": 1176,
+      "display_name": "Myndigheten för vård- och omsorgsanalys",
+      "names": [
+        {
+          "name": "Myndigheten för vårdanalys",
+          "from_year": 2011,
+          "to_year": 2015
+        },
+        {
+          "name": "Myndigheten för vård- och omsorgsanalys",
+          "from_year": 2015,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1177,
+      "statsliggaren_id": 1177,
+      "display_name": "Patentombudsnämnden",
+      "names": [
+        {
+          "name": "Patentombudsnämnden",
+          "from_year": 2010,
+          "to_year": 2021
+        }
+      ]
+    },
+    {
+      "id": 1178,
+      "statsliggaren_id": 1178,
+      "display_name": "Statens medieråd",
+      "names": [
+        {
+          "name": "Statens medieråd",
+          "from_year": 2011,
+          "to_year": 2023
+        }
+      ]
+    },
+    {
+      "id": 1179,
+      "statsliggaren_id": 1179,
+      "display_name": "Statens musikverk",
+      "names": [
+        {
+          "name": "Statens musikverk",
+          "from_year": 2011,
+          "to_year": 2011
+        }
+      ]
+    },
+    {
+      "id": 1180,
+      "statsliggaren_id": 1180,
+      "display_name": "Havs- och vattenmyndigheten",
+      "names": [
+        {
+          "name": "Havs- och vattenmyndigheten",
+          "from_year": 2011,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1181,
+      "statsliggaren_id": 1181,
+      "display_name": "Myndigheten för kulturanalys",
+      "names": [
+        {
+          "name": "Myndigheten för kulturanalys",
+          "from_year": 2011,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1182,
+      "statsliggaren_id": 1182,
+      "display_name": "Stockholms dramatiska högskola",
+      "names": [
+        {
+          "name": "Stockholms dramatiska högskola",
+          "from_year": 2011,
+          "to_year": 2014
+        }
+      ]
+    },
+    {
+      "id": 1183,
+      "statsliggaren_id": 1183,
+      "display_name": "Avvecklingsmyndigheten för Fiskeriverket",
+      "names": [
+        {
+          "name": "Avvecklingsmyndigheten för Fiskeriverket",
+          "from_year": 2011,
+          "to_year": 2012
+        }
+      ]
+    },
+    {
+      "id": 1184,
+      "statsliggaren_id": 1184,
+      "display_name": "Statens servicecenter",
+      "names": [
+        {
+          "name": "Statens servicecenter",
+          "from_year": 2012,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1185,
+      "statsliggaren_id": 1185,
+      "display_name": "Ersättningsnämnden",
+      "names": [
+        {
+          "name": "Ersättningsnämnden",
+          "from_year": 2013,
+          "to_year": 2016
+        }
+      ]
+    },
+    {
+      "id": 1186,
+      "statsliggaren_id": 1186,
+      "display_name": "Universitetskanslersämbetet",
+      "names": [
+        {
+          "name": "Universitetskanslersämbetet",
+          "from_year": 2013,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1187,
+      "statsliggaren_id": 1187,
+      "display_name": "Universitets- och högskolerådet",
+      "names": [
+        {
+          "name": "Universitets- och högskolerådet",
+          "from_year": 2013,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1189,
+      "statsliggaren_id": 1189,
+      "display_name": "Inspektionen för vård och omsorg",
+      "names": [
+        {
+          "name": "Inspektionen för vård och omsorg",
+          "from_year": 2013,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1193,
+      "statsliggaren_id": 1193,
+      "display_name": "Avvecklingsmyndigheten för utbildningsmyndigheter",
+      "names": [
+        {
+          "name": "Avvecklingsmyndigheten för utbildningsmyndigheter",
+          "from_year": 2013,
+          "to_year": 2014
+        }
+      ]
+    },
+    {
+      "id": 1194,
+      "statsliggaren_id": 1194,
+      "display_name": "Folkhälsomyndigheten",
+      "names": [
+        {
+          "name": "Folkhälsomyndigheten",
+          "from_year": 2014,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1195,
+      "statsliggaren_id": 1195,
+      "display_name": "Stockholms konstnärliga högskola",
+      "names": [
+        {
+          "name": "Stockholms konstnärliga högskola",
+          "from_year": 2014,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1196,
+      "statsliggaren_id": 1196,
+      "display_name": "E-hälsomyndigheten",
+      "names": [
+        {
+          "name": "E-hälsomyndigheten",
+          "from_year": 2014,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1197,
+      "statsliggaren_id": 1197,
+      "display_name": "Avvecklingsmyndigheten för vissa myndigheter inom vård- och omsorgsområdet",
+      "names": [
+        {
+          "name": "Avvecklingsmyndigheten för vissa myndigheter inom vård- och omsorgsområdet",
+          "from_year": 2014,
+          "to_year": 2015
+        }
+      ]
+    },
+    {
+      "id": 1204,
+      "statsliggaren_id": 1204,
+      "display_name": "Skolforskningsinstitutet",
+      "names": [
+        {
+          "name": "Skolforskningsinstitutet",
+          "from_year": 2015,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1205,
+      "statsliggaren_id": 1205,
+      "display_name": "Upphandlingsmyndigheten",
+      "names": [
+        {
+          "name": "Upphandlingsmyndigheten",
+          "from_year": 2015,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1207,
+      "statsliggaren_id": 1207,
+      "display_name": "Jämställdhetsmyndigheten",
+      "names": [
+        {
+          "name": "Jämställdhetsmyndigheten",
+          "from_year": 2018,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1208,
+      "statsliggaren_id": 1208,
+      "display_name": "Delegationen mot segregation",
+      "names": [
+        {
+          "name": "Delegationen mot segregation",
+          "from_year": 2018,
+          "to_year": 2022
+        }
+      ]
+    },
+    {
+      "id": 1209,
+      "statsliggaren_id": 1209,
+      "display_name": "Myndigheten för digital förvaltning",
+      "names": [
+        {
+          "name": "Myndigheten för digital förvaltning",
+          "from_year": 2018,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1210,
+      "statsliggaren_id": 1210,
+      "display_name": "Myndigheten för arbetsmiljökunskap",
+      "names": [
+        {
+          "name": "Myndigheten för arbetsmiljökunskap",
+          "from_year": 2018,
+          "to_year": 2025
+        }
+      ]
+    },
+    {
+      "id": 1213,
+      "statsliggaren_id": 1213,
+      "display_name": "Etikprövningsmyndigheten",
+      "names": [
+        {
+          "name": "Etikprövningsmyndigheten",
+          "from_year": 2019,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1221,
+      "statsliggaren_id": 1221,
+      "display_name": "Nämnden för prövning av oredlighet i forskning",
+      "names": [
+        {
+          "name": "Nämnden för prövning av oredlighet i forskning",
+          "from_year": 2020,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1225,
+      "statsliggaren_id": 1225,
+      "display_name": "Institutet för mänskliga rättigheter",
+      "names": [
+        {
+          "name": "Institutet för mänskliga rättigheter",
+          "from_year": 2022,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1226,
+      "statsliggaren_id": 1226,
+      "display_name": "Myndigheten för psykologiskt försvar",
+      "names": [
+        {
+          "name": "Myndigheten för psykologiskt försvar",
+          "from_year": 2022,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1227,
+      "statsliggaren_id": 1227,
+      "display_name": "Myndigheten för totalförsvarsanalys",
+      "names": [
+        {
+          "name": "Myndigheten för totalförsvarsanalys",
+          "from_year": 2023,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1228,
+      "statsliggaren_id": 1228,
+      "display_name": "Utbetalningsmyndigheten",
+      "names": [
+        {
+          "name": "Utbetalningsmyndigheten",
+          "from_year": 2024,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1000001,
+      "display_name": "Länsstyrelsen i Blekinge län",
+      "statsliggaren_id": null,
+      "names": [
+        {
+          "name": "Länsstyrelsen i Blekinge län",
+          "from_year": 2026,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1000002,
+      "display_name": "Länsstyrelsen i Dalarnas län",
+      "statsliggaren_id": null,
+      "names": [
+        {
+          "name": "Länsstyrelsen i Dalarnas län",
+          "from_year": 2026,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1000003,
+      "display_name": "Länsstyrelsen i Gotlands län",
+      "statsliggaren_id": null,
+      "names": [
+        {
+          "name": "Länsstyrelsen i Gotlands län",
+          "from_year": 2026,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1000004,
+      "display_name": "Länsstyrelsen i Gävleborgs län",
+      "statsliggaren_id": null,
+      "names": [
+        {
+          "name": "Länsstyrelsen i Gävleborgs län",
+          "from_year": 2026,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1000005,
+      "display_name": "Länsstyrelsen i Hallands län",
+      "statsliggaren_id": null,
+      "names": [
+        {
+          "name": "Länsstyrelsen i Hallands län",
+          "from_year": 2026,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1000006,
+      "display_name": "Länsstyrelsen i Jämtlands län",
+      "statsliggaren_id": null,
+      "names": [
+        {
+          "name": "Länsstyrelsen i Jämtlands län",
+          "from_year": 2026,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1000007,
+      "display_name": "Länsstyrelsen i Jönköpings län",
+      "statsliggaren_id": null,
+      "names": [
+        {
+          "name": "Länsstyrelsen i Jönköpings län",
+          "from_year": 2026,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1000008,
+      "display_name": "Länsstyrelsen i Kalmar län",
+      "statsliggaren_id": null,
+      "names": [
+        {
+          "name": "Länsstyrelsen i Kalmar län",
+          "from_year": 2026,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1000009,
+      "display_name": "Länsstyrelsen i Kronobergs län",
+      "statsliggaren_id": null,
+      "names": [
+        {
+          "name": "Länsstyrelsen i Kronobergs län",
+          "from_year": 2026,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1000010,
+      "display_name": "Länsstyrelsen i Norrbottens län",
+      "statsliggaren_id": null,
+      "names": [
+        {
+          "name": "Länsstyrelsen i Norrbottens län",
+          "from_year": 2026,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1000011,
+      "display_name": "Länsstyrelsen i Skåne län",
+      "statsliggaren_id": null,
+      "names": [
+        {
+          "name": "Länsstyrelsen i Skåne län",
+          "from_year": 2026,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1000012,
+      "display_name": "Länsstyrelsen i Stockholms län",
+      "statsliggaren_id": null,
+      "names": [
+        {
+          "name": "Länsstyrelsen i Stockholms län",
+          "from_year": 2026,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1000013,
+      "display_name": "Länsstyrelsen i Södermanlands län",
+      "statsliggaren_id": null,
+      "names": [
+        {
+          "name": "Länsstyrelsen i Södermanlands län",
+          "from_year": 2026,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1000014,
+      "display_name": "Länsstyrelsen i Uppsala län",
+      "statsliggaren_id": null,
+      "names": [
+        {
+          "name": "Länsstyrelsen i Uppsala län",
+          "from_year": 2026,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1000015,
+      "display_name": "Länsstyrelsen i Värmlands län",
+      "statsliggaren_id": null,
+      "names": [
+        {
+          "name": "Länsstyrelsen i Värmlands län",
+          "from_year": 2026,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1000016,
+      "display_name": "Länsstyrelsen i Västerbottens län",
+      "statsliggaren_id": null,
+      "names": [
+        {
+          "name": "Länsstyrelsen i Västerbottens län",
+          "from_year": 2026,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1000017,
+      "display_name": "Länsstyrelsen i Västernorrlands län",
+      "statsliggaren_id": null,
+      "names": [
+        {
+          "name": "Länsstyrelsen i Västernorrlands län",
+          "from_year": 2026,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1000018,
+      "display_name": "Länsstyrelsen i Västmanlands län",
+      "statsliggaren_id": null,
+      "names": [
+        {
+          "name": "Länsstyrelsen i Västmanlands län",
+          "from_year": 2026,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1000019,
+      "display_name": "Länsstyrelsen i Västra Götalands län",
+      "statsliggaren_id": null,
+      "names": [
+        {
+          "name": "Länsstyrelsen i Västra Götalands län",
+          "from_year": 2026,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1000020,
+      "display_name": "Länsstyrelsen i Örebro län",
+      "statsliggaren_id": null,
+      "names": [
+        {
+          "name": "Länsstyrelsen i Örebro län",
+          "from_year": 2026,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1000021,
+      "display_name": "Länsstyrelsen i Östergötlands län",
+      "statsliggaren_id": null,
+      "names": [
+        {
+          "name": "Länsstyrelsen i Östergötlands län",
+          "from_year": 2026,
+          "to_year": 2026
+        }
+      ]
+    },
+    {
+      "id": 1000022,
+      "display_name": "Riksdagsförvaltningen",
+      "statsliggaren_id": null,
+      "names": [
+        {
+          "name": "Riksdagsförvaltningen",
+          "from_year": 2004,
+          "to_year": 2004
+        }
+      ]
+    },
+    {
+      "id": 1000023,
+      "display_name": "Riksdagens ombudsmän JO",
+      "statsliggaren_id": null,
+      "names": [
+        {
+          "name": "Riksdagens ombudsmän JO",
+          "from_year": 2004,
+          "to_year": 2004
+        }
+      ]
+    },
+    {
+      "id": 1000024,
+      "display_name": "Riksrevisionen",
+      "statsliggaren_id": null,
+      "names": [
+        {
+          "name": "Riksrevisionen",
+          "from_year": 2004,
+          "to_year": 2004
+        }
+      ]
+    }
+  ],
+  "collectives": [
+    {
+      "statsliggaren_id": 1015,
+      "names": [
+        "länsstyrelserna"
+      ],
+      "members": [
+        {
+          "organisation_id": 1000001,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000002,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000003,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000004,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000005,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000006,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000007,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000008,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000009,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000010,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000011,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000012,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000013,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000014,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000015,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000016,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000017,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000018,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000019,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000020,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000021,
+          "from_year": 2003,
+          "to_year": null
+        }
+      ]
+    },
+    {
+      "statsliggaren_id": 1016,
+      "names": [
+        "Gemensamma bestämmelser för universitet och högskolor m.m.",
+        "universitet och högskolor m.m.",
+        "universitet och högskolor"
+      ],
+      "members": [
+        {
+          "organisation_id": 262,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 180,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 270,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 240,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 196,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 387,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 239,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 238,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 198,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 275,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 184,
+          "from_year": 2003,
+          "to_year": 2009
+        },
+        {
+          "organisation_id": 1162,
+          "from_year": 2010,
+          "to_year": null
+        },
+        {
+          "organisation_id": 267,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 200,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 181,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 187,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 186,
+          "from_year": 2003,
+          "to_year": 2009
+        },
+        {
+          "organisation_id": 264,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 249,
+          "from_year": 2003,
+          "to_year": 2013
+        },
+        {
+          "organisation_id": 245,
+          "from_year": 2003,
+          "to_year": 2010
+        },
+        {
+          "organisation_id": 255,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 274,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 265,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 414,
+          "from_year": 2003,
+          "to_year": 2013
+        },
+        {
+          "organisation_id": 266,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 182,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 183,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 276,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 277,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 251,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 250,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 246,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 252,
+          "from_year": 2003,
+          "to_year": 2007
+        },
+        {
+          "organisation_id": 247,
+          "from_year": 2003,
+          "to_year": 2013
+        },
+        {
+          "organisation_id": 259,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 248,
+          "from_year": 2003,
+          "to_year": 2010
+        },
+        {
+          "organisation_id": 1182,
+          "from_year": 2011,
+          "to_year": 2013
+        },
+        {
+          "organisation_id": 1195,
+          "from_year": 2014,
+          "to_year": null
+        },
+        {
+          "organisation_id": 484,
+          "from_year": 2009,
+          "to_year": null
+        }
+      ]
+    }
+  ],
+  "letter_source_ids": {
+    "5112": 1057,
+    "7149": 422,
+    "7719": 422
+  },
+  "name_periods": [
+    {
+      "organisation_id": 262,
+      "name": "Uppsala universitet",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 180,
+      "name": "Lunds universitet",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 270,
+      "name": "Göteborgs universitet",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 240,
+      "name": "Stockholms universitet",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 196,
+      "name": "Umeå universitet",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 387,
+      "name": "Linköpings universitet",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 239,
+      "name": "Karolinska institutet",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 238,
+      "name": "Kungl. Tekniska högskolan",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 198,
+      "name": "Luleå tekniska universitet",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 275,
+      "name": "Karlstads universitet",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 184,
+      "name": "Växjö universitet",
+      "from_year": 2003,
+      "to_year": 2009
+    },
+    {
+      "organisation_id": 1162,
+      "name": "Linnéuniversitetet",
+      "from_year": 2010,
+      "to_year": null
+    },
+    {
+      "organisation_id": 267,
+      "name": "Örebro universitet",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 200,
+      "name": "Mitthögskolan",
+      "from_year": 2003,
+      "to_year": 2004
+    },
+    {
+      "organisation_id": 200,
+      "name": "Mittuniversitetet",
+      "from_year": 2005,
+      "to_year": null
+    },
+    {
+      "organisation_id": 181,
+      "name": "Blekinge tekniska högskola",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 187,
+      "name": "Malmö högskola",
+      "from_year": 2003,
+      "to_year": 2017
+    },
+    {
+      "organisation_id": 187,
+      "name": "Malmö universitet",
+      "from_year": 2018,
+      "to_year": null
+    },
+    {
+      "organisation_id": 186,
+      "name": "Högskolan i Kalmar",
+      "from_year": 2003,
+      "to_year": 2009
+    },
+    {
+      "organisation_id": 264,
+      "name": "Mälardalens högskola",
+      "from_year": 2003,
+      "to_year": 2021
+    },
+    {
+      "organisation_id": 264,
+      "name": "Mälardalens universitet",
+      "from_year": 2022,
+      "to_year": null
+    },
+    {
+      "organisation_id": 249,
+      "name": "Danshögskolan",
+      "from_year": 2003,
+      "to_year": 2009
+    },
+    {
+      "organisation_id": 249,
+      "name": "Dans- och cirkushögskolan",
+      "from_year": 2010,
+      "to_year": 2013
+    },
+    {
+      "organisation_id": 245,
+      "name": "Dramatiska institutet",
+      "from_year": 2003,
+      "to_year": 2010
+    },
+    {
+      "organisation_id": 255,
+      "name": "Idrottshögskolan i Stockholm",
+      "from_year": 2003,
+      "to_year": 2005
+    },
+    {
+      "organisation_id": 255,
+      "name": "Gymnastik- och idrottshögskolan",
+      "from_year": 2005,
+      "to_year": null
+    },
+    {
+      "organisation_id": 274,
+      "name": "Högskolan i Borås",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 265,
+      "name": "Högskolan Dalarna",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 414,
+      "name": "Högskolan på Gotland",
+      "from_year": 2003,
+      "to_year": 2013
+    },
+    {
+      "organisation_id": 266,
+      "name": "Högskolan i Gävle",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 182,
+      "name": "Högskolan i Halmstad",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 183,
+      "name": "Högskolan Kristianstad",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 276,
+      "name": "Högskolan i Skövde",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 277,
+      "name": "Högskolan i Trollhättan/Uddevalla",
+      "from_year": 2003,
+      "to_year": 2005
+    },
+    {
+      "organisation_id": 277,
+      "name": "Högskolan Väst",
+      "from_year": 2006,
+      "to_year": null
+    },
+    {
+      "organisation_id": 251,
+      "name": "Konstfack",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 250,
+      "name": "Kungl. Konsthögskolan",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 246,
+      "name": "Kungl. Musikhögskolan i Stockholm",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 252,
+      "name": "Lärarhögskolan i Stockholm",
+      "from_year": 2003,
+      "to_year": 2007
+    },
+    {
+      "organisation_id": 247,
+      "name": "Operahögskolan i Stockholm",
+      "from_year": 2003,
+      "to_year": 2013
+    },
+    {
+      "organisation_id": 259,
+      "name": "Södertörns högskola",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 248,
+      "name": "Teaterhögskolan i Stockholm",
+      "from_year": 2003,
+      "to_year": 2010
+    },
+    {
+      "organisation_id": 1182,
+      "name": "Stockholms dramatiska högskola",
+      "from_year": 2011,
+      "to_year": 2013
+    },
+    {
+      "organisation_id": 1195,
+      "name": "Stockholms konstnärliga högskola",
+      "from_year": 2014,
+      "to_year": null
+    },
+    {
+      "organisation_id": 484,
+      "name": "Försvarshögskolan",
+      "from_year": 2009,
+      "to_year": null
+    }
+  ],
+  "sources": {
+    "university_history": "https://www.uka.se/download/18.4e1e1cc819b2c0041ba1cc/1769519412610/UH-lista-2026-01.xlsx",
+    "university_scope": "https://www.statskontoret.se/statsliggaren/regleringsbrev/?RBID=26223",
+    "county_roster": "https://www.lansstyrelsen.se/",
+    "method": "https://github.com/civictechsweden/oppna-statsliggaren/blob/master/docs/organisations.md"
+  }
+}

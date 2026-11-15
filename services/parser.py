@@ -4,6 +4,7 @@ import re
 from bs4 import BeautifulSoup, SoupStrainer
 from selectolax.lexbor import LexborHTMLParser
 from services.source_corrections import correct_metadata_title
+from services.organisations import source_organisation_id
 
 
 class Parser(object):
@@ -60,6 +61,7 @@ class Parser(object):
         metadata["department"] = Parser.extract_department(letter)
         metadata["registry_numbers"] = ";".join(Parser.extract_registry_numbers(letter))
         metadata["pdf"] = "laddaNerPdf" in html_text
+        metadata["_source_organisation_id"] = source_organisation_id(html_text)
 
         attachments = []
         while "/regleringsbrev/bilaga/" in html_text:

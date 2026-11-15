@@ -1,5 +1,6 @@
 import asyncio
 import argparse
+import json
 import os
 from pathlib import Path
 
@@ -10,6 +11,7 @@ import statsliggaren as sl
 from services.artifacts import convert_pending_attachments, fetch_source_files
 from services.downloader import Downloader
 from services.expenditure_areas import fetch_areas_and_roots
+from services.organisations import load_registry, assign_organisation_ids, finish_registry, validate_registry, REGISTRY_PATH
 from services.writer import Writer
 
 load_dotenv()
@@ -48,6 +50,11 @@ async def main(refresh_since: str | None = None, scan_all_gaps: bool = False, re
                 if rbid in roots:
                     row["original_rbid"] = roots[rbid]
 
+        registry = load_registry()
+        assign_organisation_ids(metadata, registry)
+        finish_registry(registry)
+        validate_registry(registry)
+        REGISTRY_PATH.write_text(json.dumps(registry, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         Writer.write_csv(sorted(metadata, key=lambda d: int(d["rbid"])), "letters.csv")
         Writer.write_csv(
             sorted(attachments, key=lambda d: (int(d["rbid"]), int(d["id"]))),

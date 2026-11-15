@@ -1,0 +1,731 @@
+{
+  "sources": {
+    "university_history": "https://www.uka.se/download/18.4e1e1cc819b2c0041ba1cc/1769519412610/UH-lista-2026-01.xlsx",
+    "university_scope": "https://www.statskontoret.se/statsliggaren/regleringsbrev/?RBID=26223",
+    "county_roster": "https://www.lansstyrelsen.se/",
+    "method": "https://github.com/civictechsweden/oppna-statsliggaren/blob/master/docs/organisations.md"
+  },
+  "local_organisations": [
+    {
+      "id": 1000001,
+      "display_name": "Länsstyrelsen i Blekinge län",
+      "name_observed_year": 2026
+    },
+    {
+      "id": 1000002,
+      "display_name": "Länsstyrelsen i Dalarnas län",
+      "name_observed_year": 2026
+    },
+    {
+      "id": 1000003,
+      "display_name": "Länsstyrelsen i Gotlands län",
+      "name_observed_year": 2026
+    },
+    {
+      "id": 1000004,
+      "display_name": "Länsstyrelsen i Gävleborgs län",
+      "name_observed_year": 2026
+    },
+    {
+      "id": 1000005,
+      "display_name": "Länsstyrelsen i Hallands län",
+      "name_observed_year": 2026
+    },
+    {
+      "id": 1000006,
+      "display_name": "Länsstyrelsen i Jämtlands län",
+      "name_observed_year": 2026
+    },
+    {
+      "id": 1000007,
+      "display_name": "Länsstyrelsen i Jönköpings län",
+      "name_observed_year": 2026
+    },
+    {
+      "id": 1000008,
+      "display_name": "Länsstyrelsen i Kalmar län",
+      "name_observed_year": 2026
+    },
+    {
+      "id": 1000009,
+      "display_name": "Länsstyrelsen i Kronobergs län",
+      "name_observed_year": 2026
+    },
+    {
+      "id": 1000010,
+      "display_name": "Länsstyrelsen i Norrbottens län",
+      "name_observed_year": 2026
+    },
+    {
+      "id": 1000011,
+      "display_name": "Länsstyrelsen i Skåne län",
+      "name_observed_year": 2026
+    },
+    {
+      "id": 1000012,
+      "display_name": "Länsstyrelsen i Stockholms län",
+      "name_observed_year": 2026
+    },
+    {
+      "id": 1000013,
+      "display_name": "Länsstyrelsen i Södermanlands län",
+      "name_observed_year": 2026
+    },
+    {
+      "id": 1000014,
+      "display_name": "Länsstyrelsen i Uppsala län",
+      "name_observed_year": 2026
+    },
+    {
+      "id": 1000015,
+      "display_name": "Länsstyrelsen i Värmlands län",
+      "name_observed_year": 2026
+    },
+    {
+      "id": 1000016,
+      "display_name": "Länsstyrelsen i Västerbottens län",
+      "name_observed_year": 2026
+    },
+    {
+      "id": 1000017,
+      "display_name": "Länsstyrelsen i Västernorrlands län",
+      "name_observed_year": 2026
+    },
+    {
+      "id": 1000018,
+      "display_name": "Länsstyrelsen i Västmanlands län",
+      "name_observed_year": 2026
+    },
+    {
+      "id": 1000019,
+      "display_name": "Länsstyrelsen i Västra Götalands län",
+      "name_observed_year": 2026
+    },
+    {
+      "id": 1000020,
+      "display_name": "Länsstyrelsen i Örebro län",
+      "name_observed_year": 2026
+    },
+    {
+      "id": 1000021,
+      "display_name": "Länsstyrelsen i Östergötlands län",
+      "name_observed_year": 2026
+    },
+    {
+      "id": 1000022,
+      "display_name": "Riksdagsförvaltningen"
+    },
+    {
+      "id": 1000023,
+      "display_name": "Riksdagens ombudsmän JO"
+    },
+    {
+      "id": 1000024,
+      "display_name": "Riksrevisionen"
+    }
+  ],
+  "source_aliases": {
+    "Delegationen för utländska investeringar i Sverige (ISA)": 155,
+    "Domstolsväsendet JU": 335,
+    "Statens ljud -och bildarkiv": 175,
+    "Statens sjöhistoriska museer": 167,
+    "Svenska ESF-rådet": 494
+  },
+  "letter_source_ids": {
+    "5112": 1057,
+    "7149": 422,
+    "7719": 422
+  },
+  "name_periods": [
+    {
+      "organisation_id": 262,
+      "name": "Uppsala universitet",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 180,
+      "name": "Lunds universitet",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 270,
+      "name": "Göteborgs universitet",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 240,
+      "name": "Stockholms universitet",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 196,
+      "name": "Umeå universitet",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 387,
+      "name": "Linköpings universitet",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 239,
+      "name": "Karolinska institutet",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 238,
+      "name": "Kungl. Tekniska högskolan",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 198,
+      "name": "Luleå tekniska universitet",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 275,
+      "name": "Karlstads universitet",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 184,
+      "name": "Växjö universitet",
+      "from_year": 2003,
+      "to_year": 2009
+    },
+    {
+      "organisation_id": 1162,
+      "name": "Linnéuniversitetet",
+      "from_year": 2010,
+      "to_year": null
+    },
+    {
+      "organisation_id": 267,
+      "name": "Örebro universitet",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 200,
+      "name": "Mitthögskolan",
+      "from_year": 2003,
+      "to_year": 2004
+    },
+    {
+      "organisation_id": 200,
+      "name": "Mittuniversitetet",
+      "from_year": 2005,
+      "to_year": null
+    },
+    {
+      "organisation_id": 181,
+      "name": "Blekinge tekniska högskola",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 187,
+      "name": "Malmö högskola",
+      "from_year": 2003,
+      "to_year": 2017
+    },
+    {
+      "organisation_id": 187,
+      "name": "Malmö universitet",
+      "from_year": 2018,
+      "to_year": null
+    },
+    {
+      "organisation_id": 186,
+      "name": "Högskolan i Kalmar",
+      "from_year": 2003,
+      "to_year": 2009
+    },
+    {
+      "organisation_id": 264,
+      "name": "Mälardalens högskola",
+      "from_year": 2003,
+      "to_year": 2021
+    },
+    {
+      "organisation_id": 264,
+      "name": "Mälardalens universitet",
+      "from_year": 2022,
+      "to_year": null
+    },
+    {
+      "organisation_id": 249,
+      "name": "Danshögskolan",
+      "from_year": 2003,
+      "to_year": 2009
+    },
+    {
+      "organisation_id": 249,
+      "name": "Dans- och cirkushögskolan",
+      "from_year": 2010,
+      "to_year": 2013
+    },
+    {
+      "organisation_id": 245,
+      "name": "Dramatiska institutet",
+      "from_year": 2003,
+      "to_year": 2010
+    },
+    {
+      "organisation_id": 255,
+      "name": "Idrottshögskolan i Stockholm",
+      "from_year": 2003,
+      "to_year": 2005
+    },
+    {
+      "organisation_id": 255,
+      "name": "Gymnastik- och idrottshögskolan",
+      "from_year": 2005,
+      "to_year": null
+    },
+    {
+      "organisation_id": 274,
+      "name": "Högskolan i Borås",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 265,
+      "name": "Högskolan Dalarna",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 414,
+      "name": "Högskolan på Gotland",
+      "from_year": 2003,
+      "to_year": 2013
+    },
+    {
+      "organisation_id": 266,
+      "name": "Högskolan i Gävle",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 182,
+      "name": "Högskolan i Halmstad",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 183,
+      "name": "Högskolan Kristianstad",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 276,
+      "name": "Högskolan i Skövde",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 277,
+      "name": "Högskolan i Trollhättan/Uddevalla",
+      "from_year": 2003,
+      "to_year": 2005
+    },
+    {
+      "organisation_id": 277,
+      "name": "Högskolan Väst",
+      "from_year": 2006,
+      "to_year": null
+    },
+    {
+      "organisation_id": 251,
+      "name": "Konstfack",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 250,
+      "name": "Kungl. Konsthögskolan",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 246,
+      "name": "Kungl. Musikhögskolan i Stockholm",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 252,
+      "name": "Lärarhögskolan i Stockholm",
+      "from_year": 2003,
+      "to_year": 2007
+    },
+    {
+      "organisation_id": 247,
+      "name": "Operahögskolan i Stockholm",
+      "from_year": 2003,
+      "to_year": 2013
+    },
+    {
+      "organisation_id": 259,
+      "name": "Södertörns högskola",
+      "from_year": 2003,
+      "to_year": null
+    },
+    {
+      "organisation_id": 248,
+      "name": "Teaterhögskolan i Stockholm",
+      "from_year": 2003,
+      "to_year": 2010
+    },
+    {
+      "organisation_id": 1182,
+      "name": "Stockholms dramatiska högskola",
+      "from_year": 2011,
+      "to_year": 2013
+    },
+    {
+      "organisation_id": 1195,
+      "name": "Stockholms konstnärliga högskola",
+      "from_year": 2014,
+      "to_year": null
+    },
+    {
+      "organisation_id": 484,
+      "name": "Försvarshögskolan",
+      "from_year": 2009,
+      "to_year": null
+    }
+  ],
+  "collectives": [
+    {
+      "statsliggaren_id": 1015,
+      "names": [
+        "länsstyrelserna"
+      ],
+      "members": [
+        {
+          "organisation_id": 1000001,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000002,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000003,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000004,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000005,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000006,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000007,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000008,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000009,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000010,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000011,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000012,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000013,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000014,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000015,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000016,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000017,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000018,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000019,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000020,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 1000021,
+          "from_year": 2003,
+          "to_year": null
+        }
+      ]
+    },
+    {
+      "statsliggaren_id": 1016,
+      "names": [
+        "Gemensamma bestämmelser för universitet och högskolor m.m.",
+        "universitet och högskolor m.m.",
+        "universitet och högskolor"
+      ],
+      "members": [
+        {
+          "organisation_id": 262,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 180,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 270,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 240,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 196,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 387,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 239,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 238,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 198,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 275,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 184,
+          "from_year": 2003,
+          "to_year": 2009
+        },
+        {
+          "organisation_id": 1162,
+          "from_year": 2010,
+          "to_year": null
+        },
+        {
+          "organisation_id": 267,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 200,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 181,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 187,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 186,
+          "from_year": 2003,
+          "to_year": 2009
+        },
+        {
+          "organisation_id": 264,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 249,
+          "from_year": 2003,
+          "to_year": 2013
+        },
+        {
+          "organisation_id": 245,
+          "from_year": 2003,
+          "to_year": 2010
+        },
+        {
+          "organisation_id": 255,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 274,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 265,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 414,
+          "from_year": 2003,
+          "to_year": 2013
+        },
+        {
+          "organisation_id": 266,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 182,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 183,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 276,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 277,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 251,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 250,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 246,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 252,
+          "from_year": 2003,
+          "to_year": 2007
+        },
+        {
+          "organisation_id": 247,
+          "from_year": 2003,
+          "to_year": 2013
+        },
+        {
+          "organisation_id": 259,
+          "from_year": 2003,
+          "to_year": null
+        },
+        {
+          "organisation_id": 248,
+          "from_year": 2003,
+          "to_year": 2010
+        },
+        {
+          "organisation_id": 1182,
+          "from_year": 2011,
+          "to_year": 2013
+        },
+        {
+          "organisation_id": 1195,
+          "from_year": 2014,
+          "to_year": null
+        },
+        {
+          "organisation_id": 484,
+          "from_year": 2009,
+          "to_year": null
+        }
+      ]
+    }
+  ]
+}

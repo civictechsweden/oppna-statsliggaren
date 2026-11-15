@@ -38,8 +38,8 @@ class Writer(object):
 
         keys = dict[0].keys()
 
-        with open(filename, "w", newline="") as output_file:
-            dict_writer = csv.DictWriter(output_file, keys)
+        with open(filename, "w", newline="", encoding="utf-8") as output_file:
+            dict_writer = csv.DictWriter(output_file, keys, lineterminator="\n")
             dict_writer.writeheader()
             dict_writer.writerows(dict)
 
