@@ -3,6 +3,7 @@ import re
 from selectolax.lexbor import LexborNode
 
 from services import html_dom as dom
+from services.source_corrections import correct_document, correct_heading_labels, correct_markup
 from services.template_classifier import TemplateVariant, classify_letter_template
 from services.xhtml_extractor import XHTMLExtractor
 from services.xhtml_outline import XHTMLOutlineNormalizer
@@ -126,9 +127,11 @@ class IntermediateParser(object):
     }
 
     @staticmethod
-    def parse_letter_html(html: str) -> str:
+    def parse_letter_html(html: str, *, corrections: list[str] | None = None) -> str:
+        html = correct_markup(html, corrections)
         variant = classify_letter_template(html).variant
         source = dom.parse_html(html)
+        correct_document(source, corrections)
         document = dom.parse_html("<html><body></body></html>")
         body = dom.find(document, "body")
 
@@ -142,6 +145,7 @@ class IntermediateParser(object):
         IntermediateParser._append_extracted_content(body, extracted, variant)
 
         IntermediateParser._sanitize_document(document)
+        correct_heading_labels(document, corrections)
         IntermediateParser._normalize_policy_outline_blocks(document)
         XHTMLOutlineNormalizer.normalize(document, IntermediateParser._clean_text)
         IntermediateParser._normalize_label_paragraphs(document)
@@ -686,6 +690,14 @@ class IntermediateParser(object):
                 dom.clear(heading)
                 dom.set_text(heading, text)
 
+            # Keep emphasis only when it spans the entire heading.
+            for emphasis in reversed(dom.find_all(heading, ["em", "strong"])):
+                if IntermediateParser._clean_text(
+                    dom.text(emphasis, " ", strip=True)
+                ) != text:
+                    emphasis.unwrap()
+                    heading.merge_text_nodes()
+
     @staticmethod
     def _wrap_orphan_inline_body_nodes(document: LexborNode) -> None:
         body = dom.find(document, "body")
@@ -1158,7 +1170,13 @@ class IntermediateParser(object):
                 next_tag = children[j]
                 if IntermediateParser._is_heading(next_tag):
                     next_level = int(next_tag.tag[1])
-                    if next_level <= current_level:
+                    text = IntermediateParser._clean_text(
+                        dom.text(next_tag, " ", strip=True)
+                    )
+                    if next_level <= current_level and (
+                        XHTMLOutlineNormalizer._numbered_outline_level(text) is not None
+                        or XHTMLOutlineNormalizer._normalize_major_division_title(text)
+                    ):
                         break
                 j += 1
 
@@ -1174,7 +1192,7 @@ class IntermediateParser(object):
         i = 0
         while i < len(region):
             tag = region[i]
-            if IntermediateParser._is_anslag_title_paragraph(tag):
+            if IntermediateParser._is_anslag_title(tag):
                 title_paragraph, normalized_table, consumed = (
                     IntermediateParser._build_anslag_table_from_sequence(
                         document,
@@ -1184,7 +1202,8 @@ class IntermediateParser(object):
                     )
                 )
                 if normalized_table:
-                    title_paragraph = dom.replace(tag, title_paragraph)
+                    if title_paragraph is not tag:
+                        title_paragraph = dom.replace(tag, title_paragraph)
                     dom.insert_after(title_paragraph, normalized_table)
                     for sibling in region[i + 1 : i + consumed]:
                         sibling.decompose()
@@ -1279,7 +1298,8 @@ class IntermediateParser(object):
             return None, None, 0
 
         return (
-            IntermediateParser._build_anslag_title_paragraph(
+            title_tag if IntermediateParser._is_heading(title_tag)
+            else IntermediateParser._build_anslag_title_paragraph(
                 document, f"{anslag_code} {anslag_name}"
             ),
             IntermediateParser._build_merged_anslag_table(
@@ -1362,13 +1382,12 @@ class IntermediateParser(object):
         return tag.tag in {"h1", "h2", "h3", "h4", "h5", "h6"}
 
     @staticmethod
-    def _is_anslag_title_paragraph(tag: LexborNode) -> bool:
-        if tag.tag != "p":
+    def _is_anslag_title(tag: LexborNode) -> bool:
+        if not IntermediateParser._is_heading(tag) and not (
+            tag.tag == "p" and dom.find(tag, "strong", recursive=False)
+        ):
             return False
-        strong = dom.find(tag, "strong", recursive=False)
-        if not strong:
-            return False
-        text = IntermediateParser._clean_text(dom.text(strong, " ", strip=True))
+        text = IntermediateParser._clean_text(dom.text(tag, " ", strip=True))
         return bool(re.match(r"^\d+:\d+\s", text))
 
     @staticmethod
@@ -1418,7 +1437,7 @@ class IntermediateParser(object):
 
     @staticmethod
     def _parse_anslag_title(tag: LexborNode) -> tuple[str, str]:
-        if tag.tag == "p":
+        if tag.tag == "p" or IntermediateParser._is_heading(tag):
             text = IntermediateParser._clean_text(dom.text(tag, " ", strip=True))
             match = re.match(r"^(\d+:\d+)\s+(.+)$", text)
             if match:

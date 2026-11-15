@@ -137,6 +137,61 @@ class SelectolaxPipelineTests(unittest.TestCase):
         self.assertIn("**Andra uppdraget**", markdown)
         self.assertNotIn("****Andra uppdraget****", markdown)
 
+    def test_lower_level_headings_survive_xhtml_and_markdown(self):
+        for level, expected_level, title in [
+            (4, 4, "5. Uppdrag att analysera pelagisk fisk"),
+            (5, 4, "Internationellt arbete"),
+            (6, 4, "Mål"),
+        ]:
+            with self.subTest(level=level):
+                xhtml, document = self.parse(
+                    '<h2>3 Uppdrag</h2><p>Föregående uppdrag.</p>'
+                    f'<h{level} class="italic">{title}</h{level}>'
+                    '<p>Myndigheten ska redovisa uppdraget.</p>'
+                )
+                heading = document.find(f".//h{expected_level}")
+                self.assertIsNotNone(heading)
+                self.assertEqual("".join(heading.itertext()), title)
+                self.assertIsNotNone(heading.find("em"))
+
+                markdown = Cleaner.clean_markdown(
+                    mdformat.text(
+                        markdownify(xhtml, heading_style="ATX"),
+                        options={"number": True},
+                    )
+                )
+                rendered = MarkdownIt("commonmark").enable("table").render(markdown)
+                self.assertIn(f'{"#" * expected_level} *{title}*', markdown)
+                self.assertIn(f"<h{expected_level}><em>{title}</em></h{expected_level}>", rendered)
+                self.assertLess(
+                    rendered.index(f"</h{expected_level}>"),
+                    rendered.index("Myndigheten ska redovisa uppdraget."),
+                )
+
+    def test_partial_heading_emphasis_does_not_leave_literal_markers(self):
+        xhtml, document = self.parse(
+            "<h4><em>2.</em>Handläggningstider</h4><p>Redovisa tiderna.</p>"
+        )
+        heading = document.find(".//h3")
+        self.assertIsNotNone(heading)
+        self.assertEqual("".join(heading.itertext()), "2.Handläggningstider")
+        markdown = Cleaner.clean_markdown(
+            mdformat.text(
+                markdownify(xhtml, heading_style="ATX"), options={"number": True}
+            )
+        )
+        self.assertIn("### 2.Handläggningstider", markdown)
+        self.assertNotIn("*2.*", markdown)
+
+    def test_partial_heading_emphasis_preserves_word_boundaries(self):
+        for content, title in [
+            ("<strong>Bidrag till&nbsp;</strong>myndigheter", "Bidrag till myndigheter"),
+            ("<strong>Insatsnära verksamhe</strong>t", "Insatsnära verksamhet"),
+        ]:
+            with self.subTest(content=content):
+                _, document = self.parse(f"<h4>{content}</h4>")
+                self.assertEqual("".join(document.find(".//h3").itertext()), title)
+
     def test_empty_xhtml_emphasis_does_not_format_following_text(self):
         xhtml, document = self.parse(
             "<p>Före <em>titel</em><em /> efter.</p><p>Ordinarie<strong /> text.</p>"

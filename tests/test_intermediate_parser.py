@@ -105,7 +105,7 @@ class IntermediateParserTests(unittest.TestCase):
         self.assertIn('rowspan="6"', xhtml)
         self.assertIn('colspan="5"', xhtml)
 
-    def test_classic_sample_uses_single_document_title_and_demoted_outline(
+    def test_classic_sample_uses_single_document_title_and_preserves_outline(
         self,
     ) -> None:
         xhtml = IntermediateParser.parse_letter_html(load_letter_html(8103))
@@ -132,10 +132,10 @@ class IntermediateParserTests(unittest.TestCase):
             if dom.find(p, "strong")
         ]
         self.assertIn("Mål", labels)
-        self.assertIn("Återrapportering", labels)
-        self.assertIn("Övrig återrapportering", labels)
-        self.assertIn("Jämställdhetsintegrering", labels)
-        self.assertIsNone(dom.find(soup, "h5", string="Jämställdhetsintegrering"))
+        for title in [
+            "Återrapportering", "Övrig återrapportering", "Jämställdhetsintegrering"
+        ]:
+            self.assertIsNotNone(dom.find(soup, re.compile("^h[1-6]$"), string=title))
 
     def test_modern_sample_merges_split_numbered_headings(self) -> None:
         xhtml = IntermediateParser.parse_letter_html(load_letter_html(26297))
@@ -147,34 +147,39 @@ class IntermediateParserTests(unittest.TestCase):
         self.assertIsNotNone(dom.find(soup, "h3", string="2 Organisationsstyrning"))
         self.assertIsNotNone(dom.find(soup, "h3", string="3 Uppdrag"))
         self.assertIsNone(dom.find(soup, re.compile("^h[1-6]$"), string="1"))
-        self.assertIsNone(
+        self.assertIsNotNone(
             dom.find(
                 soup,
-                re.compile("^h[1-6]$"),
+                "h4",
                 string="Arbetet med civil beredskap i Nato",
             )
         )
-        strong_labels = [
-            dom.text(p, " ", strip=True)
-            for p in dom.find_all(soup, "p")
-            if dom.find(p, "strong")
-        ]
-        self.assertIn("Arbetet med civil beredskap i Nato", strong_labels)
 
-    def test_italic_strong_labels_preserve_emphasis(self) -> None:
+    def test_italic_headings_preserve_emphasis(self) -> None:
         xhtml = IntermediateParser.parse_letter_html(load_letter_html(8103))
         soup = dom.parse_html(xhtml)
 
-        label = next(
-            (
-                strong
-                for strong in dom.find_all(soup, "strong")
-                if dom.text(strong, " ", strip=True) == "Övrig återrapportering"
-            ),
-            None,
+        heading = dom.find(soup, "h4", string="Övrig återrapportering")
+        self.assertIsNotNone(heading)
+        self.assertIsNotNone(dom.find(heading, "em"))
+
+    def test_livsmedelsverket_assignment_remains_a_heading(self) -> None:
+        xhtml = IntermediateParser.parse_letter_html(load_letter_html(25867))
+        soup = dom.parse_html(xhtml)
+        title = (
+            "5. Uppdrag att analysera och föreslå hur mer pelagisk fisk från "
+            "Östersjön ska hamna på tallriken"
         )
-        self.assertIsNotNone(label)
-        self.assertIsNotNone(dom.find(label, "em"))
+        heading = dom.find(soup, "h4", string=title)
+        self.assertIsNotNone(heading)
+        self.assertIsNotNone(dom.find(heading, "em"))
+        following = dom.next_sibling(heading)
+        self.assertEqual(following.tag, "p")
+        self.assertTrue(
+            dom.text(following, " ", strip=True).startswith(
+                "Livsmedelsverket ska i samråd med Statens jordbruksverk"
+            )
+        )
 
     def test_word_documenthead_sample_promotes_document_title(self) -> None:
         xhtml = IntermediateParser.parse_letter_html(load_letter_html(8899))
@@ -198,23 +203,23 @@ class IntermediateParserTests(unittest.TestCase):
             )
         )
 
-    def test_word_documenthead_sample_turns_local_numbered_items_into_strong_labels(
+    def test_word_documenthead_sample_preserves_local_numbered_headings(
         self,
     ) -> None:
         xhtml = IntermediateParser.parse_letter_html(load_letter_html(8899))
         soup = dom.parse_html(xhtml)
 
-        self.assertIsNotNone(dom.find(soup, "h4", string="1.4 Uppdrag"))
-        self.assertIsNone(
-            dom.find(soup, re.compile("^h[1-6]$"), string="1. Internationellt arbete")
+        self.assertIsNotNone(dom.find(soup, "h3", string="1.4 Uppdrag"))
+        self.assertIsNotNone(
+            dom.find(soup, "h4", string="1. Internationellt arbete")
         )
-        self.assertIsNone(
-            dom.find(soup, re.compile("^h[1-6]$"), string="2. Skogsbilvägar")
+        self.assertIsNotNone(
+            dom.find(soup, "h4", string="2. Skogsbilvägar")
         )
-        self.assertIsNone(
+        self.assertIsNotNone(
             dom.find(
                 soup,
-                re.compile("^h[1-6]$"),
+                "h4",
                 string="3. Bidrag till miljöorganisationer",
             )
         )
@@ -224,9 +229,6 @@ class IntermediateParserTests(unittest.TestCase):
             for p in dom.find_all(soup, "p")
             if dom.find(p, "strong")
         ]
-        self.assertIn("1. Internationellt arbete", strong_labels)
-        self.assertIn("2. Skogsbilvägar", strong_labels)
-        self.assertIn("3. Bidrag till miljöorganisationer", strong_labels)
         self.assertIn("Mål", strong_labels)
         self.assertIn("Återrapportering", strong_labels)
 
@@ -426,15 +428,9 @@ class IntermediateParserTests(unittest.TestCase):
         xhtml = IntermediateParser.parse_letter_html(load_letter_html(26297))
         soup = dom.parse_html(xhtml)
 
-        title = next(
-            (
-                p
-                for p in dom.find_all(soup, "p")
-                if dom.find(p, "strong")
-                and dom.text(p, " ", strip=True)
-                == "2:2 Förebyggande åtgärder mot jordskred och andra naturolyckor (Ramanslag)"
-            ),
-            None,
+        title = dom.find(
+            soup, "h5",
+            string="2:2 Förebyggande åtgärder mot jordskred och andra naturolyckor (Ramanslag)",
         )
         self.assertIsNotNone(title)
 

@@ -37,6 +37,37 @@ keeps the letter text, links, and table-span attributes.
 Beautiful Soup remains a direct dependency for letter metadata parsing and is
 also used by Markdownify for Markdown conversion.
 
+Headings remain headings through XHTML and Markdown conversion, including local
+titles that were previously demoted to emphasis. Cross-generation heading roles
+are aligned separately in `services/heading_alignment.py`: one document title,
+major divisions, main sections, and local sections. The six-level limit keeps
+deep sections at h6. Finance uses h4 for expenditure areas, h5 for appropriations,
+and h6 for appropriation posts. This preserves boundaries but cannot encode every
+ancestor of the deepest sections in Markdown.
+
+Demonstrable source repairs are listed in `services/source_corrections.py` and
+recorded by rule and letter in rebuild reports. These include duplicated title
+introductions, invalid XML characters, heading spelling, and exact catalogue
+title repairs. Markup compatibility repairs are identified separately. Original
+HTML remains unchanged in the dataset.
+
+To rebuild all derived content from a local, pinned dataset snapshot:
+
+```bash
+uv run -m scripts.rebuild_letters --source snapshot/letters.parquet \
+  --output letters.parquet --report analysis/rebuild-report.json
+```
+
+The rebuild checks every XHTML/Markdown heading pair, row order, schema, and
+unchanged original fields before replacing the output. It neither downloads nor
+publishes data. XHTML retains table spans; Markdown tables lose span geometry.
+Consumers that need it should parse XHTML and retain Docling's document model.
+
+To check representative letters from all seven templates against a running
+Docling service, use `uv run -m scripts.benchmark_docling_letters
+--output-directory letters/docling-quality`. The benchmark records token budgets,
+text and table coverage, heading paths, and preservation of structured spans.
+
 Run the self-contained parser regressions with:
 
 ```bash
@@ -45,7 +76,7 @@ uv run -m unittest tests.test_selectolax_pipeline
 
 The complete suite (`uv run -m unittest discover -s tests`) also expects
 cached sample letters in `letters/html/`: 240, 5071, 5140, 6890, 8102, 8103,
-8817, 8844, 8899, 11373, 21762, and 26297.
+8817, 8844, 8899, 11373, 21762, 25867, and 26297.
 
 ### Optional IP rotation
 

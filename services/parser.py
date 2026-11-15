@@ -3,6 +3,7 @@ import re
 
 from bs4 import BeautifulSoup, SoupStrainer
 from selectolax.lexbor import LexborHTMLParser
+from services.source_corrections import correct_metadata_title
 
 
 class Parser(object):
@@ -40,7 +41,7 @@ class Parser(object):
         if not letter:
             return metadata, [], None
 
-        text = Parser._hard_coded_fix(normalized_title)
+        text = correct_metadata_title(normalized_title)
         words = text.split()
 
         if len(words) < 4:
@@ -239,37 +240,6 @@ class Parser(object):
             f"{' ' + qualifier if qualifier else ''}"
             for department, year, case, unit, qualifier in parsed
         ]
-
-    @staticmethod
-    def _hard_coded_fix(text):
-        text = Parser._normalize_whitespace(text)
-        text = text.replace("Avseende anslaget", "Anslag")
-        text = text.replace(
-            "Ändringsbeslut 2003-09-04 Lunds universitet",
-            "Ändringsbeslut 2003-09-04 Myndighet Lunds universitet",
-        )
-        text = text.replace(
-            "2003 Avvecklingsmyndigheten för RRV",
-            "2003 Myndighet Avvecklingsmyndigheten för RRV",
-        )
-        text = text.replace(
-            "Ändringsbeslut 2003-11-27 Polisväsendet",
-            "Ändringsbeslut 2003-11-27 Myndighet Polisväsendet",
-        )
-        text = text.replace(
-            "Ändringsbeslut 2004-11-30 Regeringskansliet",
-            "Ändringsbeslut 2004-11-30 Myndighet Regeringskansliet",
-        )
-        text = text.replace(
-            "Ändringsbeslut 2004-01-29 Ändring avseende A:014 samt B:019 FI",
-            "Ändringsbeslut 2004-01-29 Anslag A:014 samt B:019 FI",
-        )
-        text = text.replace(
-            "Ändringsbeslut 2004-01-29 Ändring avseende A:005 M",
-            "Ändringsbeslut 2004-01-29 Anslag A:005 M",
-        )
-
-        return text
 
     @staticmethod
     def _extract_date(text: str) -> str | None:

@@ -1,16 +1,12 @@
 """Small DOM operations used by the letter normalizers, backed by Lexbor."""
 
-import re
-
 from selectolax.lexbor import LexborHTMLParser, LexborNode
+
+from services.source_corrections import correct_markup
 
 
 def parse_html(html: str) -> LexborNode:
-    # Statsliggaren emits empty XHTML emphasis tags; HTML5 leaves these open.
-    html = re.sub(
-        r"<(em|strong)\b([^<>]*?)/\s*>", r"<\1\2></\1>", html, flags=re.IGNORECASE
-    )
-    return LexborHTMLParser(html).root.parent
+    return LexborHTMLParser(correct_markup(html)).root.parent
 
 
 def parse_fragment(html: str) -> LexborNode:

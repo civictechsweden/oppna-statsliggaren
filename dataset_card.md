@@ -43,6 +43,8 @@ outside that window require an explicit backfill.
   records the original source filename.
 - `unavailable_files.json`: source URLs returning 404 or empty files during the
   latest publication. These cannot be archived or converted.
+- `processing_report.json`: full-corpus rebuild checks and source correction
+  rules applied to individual letters.
 
 The department is read from the letterhead for both agency and appropriation
 letters. Historical names are preserved. A department and appropriation number
@@ -68,6 +70,13 @@ The HTML column contains the letter itself, without website navigation. XHTML
 normalizes the source layouts; Markdown is a lossy representation. The source
 files remain available for inspection. Not every letter has a PDF; unavailable
 source downloads are reported in the publishing workflow logs.
+
+XHTML and Markdown retain local headings, with heading roles aligned across
+letter generations. Deep headings are capped at h6. Explicit source repairs and
+the alignment policy are maintained separately in the
+[parser source](https://github.com/civictechsweden/oppna-statsliggaren/tree/master/services).
+The original HTML is preserved. XHTML retains row and column spans; Markdown
+tables do not retain their geometry. Prefer XHTML when importing into Docling.
 
 The Parquet split includes letters only. PDF and attachment folders are supporting
 files and are not additional dataset splits. The GitHub CSV catalogues and this
