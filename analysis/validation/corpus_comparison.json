@@ -149,14 +149,27 @@
     },
     "explained_word_difference_rows": 28,
     "explained_heading_difference_rows": 20,
-    "explanation": "18 rows correct Återrrapportering to Återrapportering;2 remove an exact duplicate introduction from the title while keeping the separate introduction;8 join words split by inline emphasis: verksamhe t→verksamhet or garanti er→garantier. No other word-token loss. The20 heading differences are the18 spelling corrections and2 corrected titles."
+    "explanation": "18 rows correct Återrrapportering to Återrapportering;2 remove an exact duplicate introduction from the title while keeping the separate introduction;8 join words split by inline emphasis: verksamhe t→verksamhet or garanti er→garantier. No other word-token loss. The20 heading differences are the18 spelling corrections and2 corrected titles.",
+    "table_cell_heading_elements": 11,
+    "table_cell_heading_rows": [
+      7313,
+      8482,
+      10909,
+      11380,
+      20438,
+      20939,
+      21134,
+      21414,
+      26063
+    ]
   },
   "method": {
     "baseline": "/tmp/oppna-finish-source/letters.parquet",
     "final": "letters.parquet",
     "comparison": "Stream all16335 matched row IDs; HTML-unescape and remove XHTML tags, then compare Unicode word-token multisets. Compare signed numeric-token multisets within tables, table/cell counts, and case-folded heading-title multisets after removing leading section-number prefixes.",
     "scope": "Text and heading retention check; numeric-token multisets do not assert table cell positions. Root rebuild separately validates the document structure.",
-    "template_assignments": "Historical per-letter template map plus direct source classifier for26435 and27583, both sectioned_modern."
+    "template_assignments": "Historical per-letter template map plus direct source classifier for26435 and27583, both sectioned_modern.",
+    "heading_counts": "Counts include all h1–h6 elements, including11 unchanged headings inside table cells. Root outline-only totals exclude table subtrees:613061→641170."
   },
   "totals": {
     "old_words": 38436872,
