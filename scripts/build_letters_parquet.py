@@ -16,6 +16,7 @@ from huggingface_hub import HfApi, get_token, hf_hub_download
 
 from services.downloader import Downloader
 from services.writer import Writer, save_letter_sync
+from services.xhtml_serializer import XHTMLSerializer
 from services.organisations import load_registry, validate_registry
 from statsliggaren import get_metadatas
 from huggingface_hub.errors import EntryNotFoundError, RepositoryNotFoundError
@@ -120,7 +121,11 @@ def _ordered_row(row: dict[str, object], metadata_fields: list[str]) -> dict[str
     for field in metadata_fields:
         ordered[field] = _metadata_value(field, row.get(field, ""))
     ordered["html"] = str(row["html"])
-    ordered["xhtml"] = str(row["xhtml"])
+    xhtml = str(row["xhtml"])
+    # Older exports and cached files have the serializer's headless wrapper.
+    if xhtml.startswith("<html>\n  <body>"):
+        xhtml = xhtml.replace("<html>\n", f"<html>\n{XHTMLSerializer.UTF8_HEAD}\n", 1)
+    ordered["xhtml"] = xhtml
     ordered["md"] = str(row["md"])
     if "pdf" in ordered:
         ordered["pdf"] = ordered.pop("pdf")
@@ -152,7 +157,10 @@ def _normalize_existing_rows(
                 rows_need_rewrite = True
             normalized[field] = value
 
-        normalized_rows.append(_ordered_row(normalized, metadata_fields))
+        ordered = _ordered_row(normalized, metadata_fields)
+        if ordered["xhtml"] != row["xhtml"]:
+            rows_need_rewrite = True
+        normalized_rows.append(ordered)
 
     return normalized_rows, rows_need_rewrite
 

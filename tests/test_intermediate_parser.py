@@ -25,9 +25,11 @@ class IntermediateParserTests(unittest.TestCase):
                 self.assertIsNotNone(dom.find(soup, "body"))
                 self.assertIsNone(dom.find(soup, "img"))
 
-                # Inspect the emitted XML directly: an HTML parser would insert
-                # a head element even though it is absent from the XHTML.
-                for tag in ElementTree.fromstring(xhtml).iter():
+                document = ElementTree.fromstring(xhtml)
+                self.assertEqual([tag.tag for tag in document], ["head", "body"])
+                self.assertEqual([tag.tag for tag in document.find("head")], ["meta"])
+                self.assertEqual(document.find("head/meta").attrib, {"charset": "utf-8"})
+                for tag in document.find("body").iter():
                     self.assertIn(tag.tag, ALLOWED_TAGS)
                     if tag.tag == "a":
                         self.assertLessEqual(set(tag.attrib.keys()), {"href"})
