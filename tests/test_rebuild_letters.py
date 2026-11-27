@@ -60,7 +60,7 @@ class RebuildLettersTests(unittest.TestCase):
             self.assertEqual(after["id"].to_pylist(), [20, 10])
             for row in after.to_pylist():
                 document = ElementTree.fromstring(row["xhtml"])
-                self.assertIsNotNone(document.find('.//th[@colspan="2"]'))
+                self.assertIsNotNone(document.find('.//{http://www.w3.org/1999/xhtml}th[@colspan="2"]'))
                 self.assertIn("5. Ett särskilt uppdrag", row["md"])
                 self.assertIn("Myndigheten ska redovisa sitt arbete.", row["md"])
                 self.assertNotIn("stale", row["md"])

@@ -176,19 +176,23 @@ class PublicationTests(unittest.TestCase):
                 builder.main()
             self.assertEqual(pq.read_table(output).to_pylist(), [current])
 
-    def test_adds_charset_to_historical_xhtml_once_without_refetching(self):
+    def test_upgrades_both_historical_xhtml_wrappers_once_without_refetching(self):
         text = "Åtgärder för Örebro"
+        head = '  <head><meta charset="utf-8" /></head>\n'
         body = f"  <body><p>{text}</p></body>\n</html>\n"
-        row = {"id": 1, "html": f"<p>{text}</p>", "xhtml": "<html>\n" + body, "md": text}
+        rows = [
+            {"id": 1, "html": f"<p>{text}</p>", "xhtml": "<html>\n" + body, "md": text},
+            {"id": 2, "html": f"<p>{text}</p>", "xhtml": "<html>\n" + head + body, "md": text},
+        ]
         with tempfile.TemporaryDirectory() as directory:
             output = Path(directory) / "letters.parquet"
-            pq.write_table(pa.Table.from_pylist([row]), output)
+            pq.write_table(pa.Table.from_pylist(rows), output)
             with patch('sys.argv', ['builder', '--output', str(output)]), \
-                 patch.object(builder, '_load_metadata', return_value=([], {1: {}})), \
+                 patch.object(builder, '_load_metadata', return_value=([], {1: {}, 2: {}})), \
                  patch.object(builder, '_letter_ids', return_value=[]):
                 builder.main()
-                expected = '<html>\n  <head><meta charset="utf-8" /></head>\n' + body
-                self.assertEqual(pq.read_table(output).to_pylist(), [{**row, "xhtml": expected}])
+                expected = '<!DOCTYPE html>\n<html xmlns="http://www.w3.org/1999/xhtml">\n' + head + body
+                self.assertEqual(pq.read_table(output).to_pylist(), [{**row, "xhtml": expected} for row in rows])
                 with patch.object(builder, '_write_table') as write:
                     builder.main()
                     write.assert_not_called()

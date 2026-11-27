@@ -7,6 +7,7 @@ from services import html_dom as dom
 
 
 class XHTMLSerializer(object):
+    DOCUMENT_START = '<!DOCTYPE html>\n<html xmlns="http://www.w3.org/1999/xhtml">'
     UTF8_HEAD = '  <head><meta charset="utf-8" /></head>'
     BLOCK_TAGS = {"html", "body", "table", "thead", "tbody", "tr", "ul", "ol"}
     INLINE_CHILD_TAGS = {"a", "br", "em", "strong", "sup"}
@@ -14,7 +15,7 @@ class XHTMLSerializer(object):
     @staticmethod
     def serialize_document(document: LexborNode, clean_text) -> str:
         body = dom.find(document, "body")
-        lines = ["<html>", XHTMLSerializer.UTF8_HEAD]
+        lines = [XHTMLSerializer.DOCUMENT_START, XHTMLSerializer.UTF8_HEAD]
         if body is None:
             lines.append("  <body></body>")
         else:

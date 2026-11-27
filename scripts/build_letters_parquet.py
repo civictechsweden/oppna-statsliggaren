@@ -122,9 +122,14 @@ def _ordered_row(row: dict[str, object], metadata_fields: list[str]) -> dict[str
         ordered[field] = _metadata_value(field, row.get(field, ""))
     ordered["html"] = str(row["html"])
     xhtml = str(row["xhtml"])
-    # Older exports and cached files have the serializer's headless wrapper.
-    if xhtml.startswith("<html>\n  <body>"):
-        xhtml = xhtml.replace("<html>\n", f"<html>\n{XHTMLSerializer.UTF8_HEAD}\n", 1)
+    # Older exports and cached files used an unqualified root, with or without a head.
+    if xhtml.startswith("<html>\n"):
+        content = xhtml.removeprefix("<html>\n")
+        utf8_head = f"{XHTMLSerializer.UTF8_HEAD}\n"
+        if content.startswith("  <body>"):
+            content = utf8_head + content
+        if content.startswith(utf8_head):
+            xhtml = f"{XHTMLSerializer.DOCUMENT_START}\n{content}"
     ordered["xhtml"] = xhtml
     ordered["md"] = str(row["md"])
     if "pdf" in ordered:

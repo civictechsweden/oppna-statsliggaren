@@ -9,6 +9,7 @@ from services.intermediate_parser import IntermediateParser
 ROOT = Path(__file__).resolve().parents[1]
 SAMPLE_RBIDS = [240, 5071, 8103, 8817, 8844, 8899, 21762, 26297]
 ALLOWED_TAGS = IntermediateParser.ALLOWED_TAGS
+XHTML = "{http://www.w3.org/1999/xhtml}"
 
 
 def load_letter_html(rbid: int) -> str:
@@ -25,29 +26,34 @@ class IntermediateParserTests(unittest.TestCase):
                 self.assertIsNotNone(dom.find(soup, "body"))
                 self.assertIsNone(dom.find(soup, "img"))
 
+                self.assertTrue(xhtml.startswith("<!DOCTYPE html>\n"))
                 document = ElementTree.fromstring(xhtml)
-                self.assertEqual([tag.tag for tag in document], ["head", "body"])
-                self.assertEqual([tag.tag for tag in document.find("head")], ["meta"])
-                self.assertEqual(document.find("head/meta").attrib, {"charset": "utf-8"})
-                for tag in document.find("body").iter():
-                    self.assertIn(tag.tag, ALLOWED_TAGS)
-                    if tag.tag == "a":
+                self.assertEqual(document.tag, f"{XHTML}html")
+                self.assertEqual([tag.tag for tag in document], [f"{XHTML}head", f"{XHTML}body"])
+                head = document.find(f"{XHTML}head")
+                self.assertEqual([tag.tag for tag in head], [f"{XHTML}meta"])
+                self.assertEqual(head.find(f"{XHTML}meta").attrib, {"charset": "utf-8"})
+                for tag in document.find(f"{XHTML}body").iter():
+                    self.assertTrue(tag.tag.startswith(XHTML))
+                    name = tag.tag.removeprefix(XHTML)
+                    self.assertIn(name, ALLOWED_TAGS)
+                    if name == "a":
                         self.assertLessEqual(set(tag.attrib.keys()), {"href"})
-                    elif tag.tag == "table":
+                    elif name == "table":
                         self.assertLessEqual(set(tag.attrib.keys()), {"class"})
-                    elif tag.tag == "td":
+                    elif name == "td":
                         self.assertLessEqual(
                             set(tag.attrib.keys()),
                             {"class", "rowspan", "colspan"},
                         )
-                    elif tag.tag == "th":
+                    elif name == "th":
                         self.assertLessEqual(
                             set(tag.attrib.keys()),
                             {"rowspan", "colspan", "scope"},
                         )
-                    elif tag.tag in {"h1", "p"}:
+                    elif name in {"h1", "p"}:
                         self.assertLessEqual(set(tag.attrib.keys()), {"class"})
-                    elif tag.tag == "sup":
+                    elif name == "sup":
                         self.assertEqual(tag.attrib, {})
                     else:
                         self.assertEqual(tag.attrib, {})

@@ -32,6 +32,8 @@ def result():
 class QualityTests(unittest.TestCase):
     def test_preserves_prose_tables_paths_and_structured_span(self):
         expected = expected_content(XHTML)
+        namespaced = XHTML.replace("<html>", '<!DOCTYPE html>\n<html xmlns="http://www.w3.org/1999/xhtml">', 1)
+        self.assertEqual(expected_content(namespaced), expected)
         self.assertNotIn("Letterhead", expected["cells"])
         self.assertEqual(expected["headings"][-1], ["Letter", "Activities", "Assignment"])
         report = evaluate(XHTML, result())
