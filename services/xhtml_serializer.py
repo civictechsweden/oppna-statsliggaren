@@ -7,16 +7,19 @@ from services import html_dom as dom
 
 
 class XHTMLSerializer(object):
+    UTF8_HEAD = '  <head><meta charset="utf-8" /></head>'
     BLOCK_TAGS = {"html", "body", "table", "thead", "tbody", "tr", "ul", "ol"}
     INLINE_CHILD_TAGS = {"a", "br", "em", "strong", "sup"}
 
     @staticmethod
     def serialize_document(document: LexborNode, clean_text) -> str:
-        html_tag = dom.find(document, "html")
-        if not html_tag:
-            return "<html>\n  <body></body>\n</html>\n"
-
-        lines = XHTMLSerializer._serialize_tag(html_tag, level=0, clean_text=clean_text)
+        body = dom.find(document, "body")
+        lines = ["<html>", XHTMLSerializer.UTF8_HEAD]
+        if body is None:
+            lines.append("  <body></body>")
+        else:
+            lines.extend(XHTMLSerializer._serialize_tag(body, level=1, clean_text=clean_text))
+        lines.append("</html>")
         xhtml = "\n".join(lines) + "\n"
         return re.sub(
             r"[\x00-\x08\x0b\x0c\x0e-\x1f\ud800-\udfff\ufffe\uffff]", "", xhtml

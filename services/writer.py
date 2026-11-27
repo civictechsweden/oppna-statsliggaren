@@ -45,7 +45,7 @@ class Writer(object):
 
     @staticmethod
     def write_text(text: str, filename: str):
-        with open(filename, "w") as fp:
+        with open(filename, "w", encoding="utf-8") as fp:
             fp.write(text)
 
     @staticmethod

@@ -80,8 +80,9 @@ The [GitHub letter catalogue](https://github.com/civictechsweden/oppna-statsligg
 contains the same metadata in CSV form.
 
 The HTML column contains the letter itself, without website navigation. XHTML
-normalizes the source layouts; Markdown is a lossy representation. The source
-files remain available for inspection. Not every letter has a PDF; unavailable
+normalizes the source layouts and declares UTF-8 in its HTML head. Markdown is a
+lossy representation. The source files remain available for inspection.
+Not every letter has a PDF; unavailable
 source downloads are reported in the publishing workflow logs.
 
 XHTML and Markdown retain local headings, with heading roles aligned across
