@@ -25,20 +25,25 @@ from services.cleaner import Cleaner
 from services.intermediate_parser import IntermediateParser
 
 
+def _local_name(tag: str) -> str:
+    return tag.rsplit("}", 1)[-1]
+
+
 def _heading_text(node) -> str:
     text = node.text or ""
     for child in node:
-        text += (" " if child.tag == "br" else _heading_text(child)) + (child.tail or "")
+        text += (" " if _local_name(child.tag) == "br" else _heading_text(child)) + (child.tail or "")
     return text
 
 
 def _headings(node) -> list[tuple[int, str]]:
+    name = _local_name(node.tag)
     # Markdown tables represent cell headings as inline labels, not sections.
-    if node.tag == "table":
+    if name == "table":
         return []
     result = []
-    if node.tag in {"h1", "h2", "h3", "h4", "h5", "h6"}:
-        result.append((int(node.tag[1]), " ".join(_heading_text(node).split())))
+    if name in {"h1", "h2", "h3", "h4", "h5", "h6"}:
+        result.append((int(name[1]), " ".join(_heading_text(node).split())))
     for child in node:
         result.extend(_headings(child))
     return result

@@ -9,6 +9,10 @@ from services.cleaner import Cleaner
 from services.intermediate_parser import IntermediateParser
 
 
+XHTML_NS = {"": "http://www.w3.org/1999/xhtml"}
+XHTML = f"{{{XHTML_NS['']}}}"
+
+
 class SelectolaxPipelineTests(unittest.TestCase):
     def parse(self, content):
         source = (
@@ -30,17 +34,17 @@ class SelectolaxPipelineTests(unittest.TestCase):
             "<p>Slutet.</p><!-- discard this comment --><script>noise()</script>"
         )
         self.assertEqual(
-            document.find('.//td[@class="letterhead-department"]').text,
+            document.find('.//td[@class="letterhead-department"]', XHTML_NS).text,
             "Finansdepartementet",
         )
         self.assertEqual(
-            document.find(".//h1").text, "Regleringsbrev för Övningsmyndigheten"
+            document.find(".//h1", XHTML_NS).text, "Regleringsbrev för Övningsmyndigheten"
         )
         self.assertEqual(
-            document.find(".//a").attrib["href"], "https://example.org/?a=1&b=2"
+            document.find(".//a", XHTML_NS).attrib["href"], "https://example.org/?a=1&b=2"
         )
-        self.assertIsNotNone(document.find('.//th[@colspan="2"]'))
-        self.assertIsNotNone(document.find('.//td[@rowspan="2"]'))
+        self.assertIsNotNone(document.find('.//th[@colspan="2"]', XHTML_NS))
+        self.assertIsNotNone(document.find('.//td[@rowspan="2"]', XHTML_NS))
         self.assertIn("Slutet.", "".join(document.itertext()))
         self.assertNotIn("noise", xhtml)
         self.assertNotIn("discard this comment", xhtml)
@@ -57,9 +61,9 @@ class SelectolaxPipelineTests(unittest.TestCase):
         )
         xhtml = IntermediateParser.parse_letter_html(source)
         document = ElementTree.fromstring(xhtml)
-        letterhead = document.find('.//table[@class="letterhead"]')
+        letterhead = document.find('.//table[@class="letterhead"]', XHTML_NS)
         self.assertIsNotNone(letterhead)
-        self.assertTrue(all(len(row) == 2 for row in letterhead.findall("tr")))
+        self.assertTrue(all(len(row) == 2 for row in letterhead.findall("tr", XHTML_NS)))
 
         markdown = Cleaner.clean_markdown(
             mdformat.text(
@@ -82,8 +86,8 @@ class SelectolaxPipelineTests(unittest.TestCase):
             '<div class="fotnot"><sup>1</sup> Första noten.<br/>'
             "<sup>2</sup> Andra noten.</div>"
         )
-        notes = document.findall(".//p/em")
-        self.assertEqual([note.find("sup").text for note in notes], ["1", "2"])
+        notes = document.findall(".//p/em", XHTML_NS)
+        self.assertEqual([note.find("sup", XHTML_NS).text for note in notes], ["1", "2"])
         self.assertEqual(
             ["".join(note.itertext()) for note in notes],
             ["1Första noten.", "2Andra noten."],
@@ -92,7 +96,7 @@ class SelectolaxPipelineTests(unittest.TestCase):
     def test_unwraps_legacy_namespace_elements(self):
         _, document = self.parse("<r:villkor><p>Ett villkor.</p></r:villkor>")
         self.assertIn("Ett villkor.", "".join(document.itertext()))
-        self.assertTrue(all(":" not in node.tag for node in document.iter()))
+        self.assertTrue(all(node.tag.startswith(XHTML) for node in document.iter()))
 
     def test_html_cleaner_keeps_heading_and_paragraph_continuations(self):
         html = Cleaner.clean_letter_html(
@@ -108,27 +112,27 @@ class SelectolaxPipelineTests(unittest.TestCase):
             "<p>Regeringen beslutar att följande ska gälla.</p>"
             "</div></div><h2>VERKSAMHET</h2>"
         )
-        self.assertIsNone(document.find(".//p/p"))
+        self.assertIsNone(document.find(".//p/p", XHTML_NS))
         self.assertIn(
             "Regeringen beslutar att följande ska gälla.",
-            ["".join(paragraph.itertext()) for paragraph in document.iter("p")],
+            ["".join(paragraph.itertext()) for paragraph in document.findall(".//p", XHTML_NS)],
         )
 
     def test_underlined_label_stays_inside_its_paragraph(self):
         _, document = self.parse(
             "<p><strong><u>Tillgängligt transportsystem</u></strong></p>"
         )
-        self.assertIsNone(document.find(".//p/p"))
+        self.assertIsNone(document.find(".//p/p", XHTML_NS))
         self.assertIn(
             "Tillgängligt transportsystem",
-            ["".join(label.itertext()) for label in document.iter("strong")],
+            ["".join(label.itertext()) for label in document.findall(".//strong", XHTML_NS)],
         )
 
     def test_nested_strong_does_not_duplicate_markdown_markers(self):
         xhtml, document = self.parse(
             "<p><strong><strong>Andra uppdraget</strong></strong></p>"
         )
-        self.assertIsNone(document.find(".//strong/strong"))
+        self.assertIsNone(document.find(".//strong/strong", XHTML_NS))
         markdown = Cleaner.clean_markdown(
             mdformat.text(
                 markdownify(xhtml, heading_style="ATX"), options={"number": True}
@@ -149,10 +153,10 @@ class SelectolaxPipelineTests(unittest.TestCase):
                     f'<h{level} class="italic">{title}</h{level}>'
                     '<p>Myndigheten ska redovisa uppdraget.</p>'
                 )
-                heading = document.find(f".//h{expected_level}")
+                heading = document.find(f".//h{expected_level}", XHTML_NS)
                 self.assertIsNotNone(heading)
                 self.assertEqual("".join(heading.itertext()), title)
-                self.assertIsNotNone(heading.find("em"))
+                self.assertIsNotNone(heading.find("em", XHTML_NS))
 
                 markdown = Cleaner.clean_markdown(
                     mdformat.text(
@@ -172,7 +176,7 @@ class SelectolaxPipelineTests(unittest.TestCase):
         xhtml, document = self.parse(
             "<h4><em>2.</em>Handläggningstider</h4><p>Redovisa tiderna.</p>"
         )
-        heading = document.find(".//h3")
+        heading = document.find(".//h3", XHTML_NS)
         self.assertIsNotNone(heading)
         self.assertEqual("".join(heading.itertext()), "2.Handläggningstider")
         markdown = Cleaner.clean_markdown(
@@ -190,7 +194,7 @@ class SelectolaxPipelineTests(unittest.TestCase):
         ]:
             with self.subTest(content=content):
                 _, document = self.parse(f"<h4>{content}</h4>")
-                self.assertEqual("".join(document.find(".//h3").itertext()), title)
+                self.assertEqual("".join(document.find(".//h3", XHTML_NS).itertext()), title)
 
     def test_empty_xhtml_emphasis_does_not_format_following_text(self):
         xhtml, document = self.parse(
@@ -198,9 +202,9 @@ class SelectolaxPipelineTests(unittest.TestCase):
             '<p>Annat<strong xmlns="" /> stycke.</p>'
         )
         self.assertEqual(
-            ["".join(tag.itertext()) for tag in document.iter("em")], ["titel"]
+            ["".join(tag.itertext()) for tag in document.findall(".//em", XHTML_NS)], ["titel"]
         )
-        self.assertEqual(list(document.iter("strong")), [])
+        self.assertEqual(document.findall(".//strong", XHTML_NS), [])
         markdown = Cleaner.clean_markdown(
             mdformat.text(
                 markdownify(xhtml, heading_style="ATX"), options={"number": True}
@@ -217,17 +221,17 @@ class SelectolaxPipelineTests(unittest.TestCase):
             "<span><h2>Anslag</h2></span></div></div>"
         )
         for container in document.iter():
-            if container.tag not in {"p", "em", "strong"}:
+            if container.tag.removeprefix(XHTML) not in {"p", "em", "strong"}:
                 continue
             self.assertFalse(
                 any(
-                    heading.tag in {"h1", "h2", "h3", "h4", "h5", "h6"}
+                    heading.tag.removeprefix(XHTML) in {"h1", "h2", "h3", "h4", "h5", "h6"}
                     for heading in container.iter()
                     if heading is not container
                 )
             )
         self.assertIn(
-            "4 Anslag", ["".join(heading.itertext()) for heading in document.iter("h3")]
+            "4 Anslag", ["".join(heading.itertext()) for heading in document.findall(".//h3", XHTML_NS)]
         )
 
     def test_split_finance_heading_and_allocation_tables_are_normalized(self):
@@ -248,23 +252,23 @@ class SelectolaxPipelineTests(unittest.TestCase):
             "<th>Belopp</th></tr></thead><tbody><tr><td>ap.1</td>"
             "<td>Förvaltning</td><td>100</td></tr></tbody></table>"
         )
-        self.assertIsNone(document.find(".//p/h3"))
-        self.assertIsNone(document.find(".//p/h4"))
+        self.assertIsNone(document.find(".//p/h3", XHTML_NS))
+        self.assertIsNone(document.find(".//p/h4", XHTML_NS))
         self.assertIn(
             "4.1 Tilldelade anslag/anslagsposter (belopp angivna i tkr)",
-            ["".join(heading.itertext()) for heading in document.iter("h4")],
+            ["".join(heading.itertext()) for heading in document.findall(".//h4", XHTML_NS)],
         )
 
         tables = [
             table
-            for table in document.iter("table")
+            for table in document.findall(".//table", XHTML_NS)
             if "Disponeras av Övningsmyndigheten" in "".join(table.itertext())
         ]
         self.assertEqual(len(tables), 1)
         self.assertEqual(
             [
                 [" ".join("".join(cell.itertext()).split()) for cell in row]
-                for row in tables[0].iter("tr")
+                for row in tables[0].findall(".//tr", XHTML_NS)
             ],
             [
                 ["Nomenklatur", "Namn", "Belopp"],

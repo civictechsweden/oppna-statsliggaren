@@ -42,7 +42,7 @@ class SourceCorrectionTests(unittest.TestCase):
         applied = []
         result = IntermediateParser.parse_letter_html(raw, corrections=applied)
         document = ElementTree.fromstring(result)
-        self.assertEqual(document.find('.//h1').text,
+        self.assertEqual(document.find('.//{http://www.w3.org/1999/xhtml}h1').text,
                          'Regleringsbrev för budgetåret 2021 avseende Statens skolinspektion')
         self.assertIn('Regeringen beslutar att följande', ''.join(document.itertext()))
         self.assertIn('duplicated-title-introduction', applied)

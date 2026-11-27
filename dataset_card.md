@@ -80,10 +80,11 @@ The [GitHub letter catalogue](https://github.com/civictechsweden/oppna-statsligg
 contains the same metadata in CSV form.
 
 The HTML column contains the letter itself, without website navigation. XHTML
-normalizes the source layouts and declares UTF-8 in its HTML head. Markdown is a
-lossy representation. The source files remain available for inspection.
-Not every letter has a PDF; unavailable
-source downloads are reported in the publishing workflow logs.
+normalizes the source layouts and declares UTF-8 in its HTML head. XML queries
+should use the default XHTML namespace (`http://www.w3.org/1999/xhtml`).
+Markdown is a lossy representation. The source files remain available for
+inspection. Not every letter has a PDF; unavailable source downloads are
+reported in the publishing workflow logs.
 
 XHTML and Markdown retain local headings, with heading roles aligned across
 letter generations. Deep headings are capped at h6. Explicit source repairs and

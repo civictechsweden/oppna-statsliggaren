@@ -19,7 +19,7 @@ from xml.etree import ElementTree as ET
 
 import httpx
 
-from scripts.rebuild_letters import _heading_text
+from scripts.rebuild_letters import _heading_text, _local_name
 from services.intermediate_parser import IntermediateParser
 from services.template_classifier import classify_letter_template
 
@@ -45,24 +45,25 @@ def _canonical(text):
 
 
 def expected_content(xhtml):
-    body = ET.fromstring(xhtml).find("body")
+    body = ET.fromstring(xhtml).find("{*}body")
     paragraphs, cells, spans, headings, content_paths = [], [], [], [], []
     active, stack = False, []
 
     def walk(node):
         nonlocal active, stack
+        name = _local_name(node.tag)
         text = " ".join(_heading_text(node).split())
-        if re.fullmatch(r"h[1-6]", node.tag):
+        if re.fullmatch(r"h[1-6]", name):
             active = True
-            level = int(node.tag[1])
+            level = int(name[1])
             stack = [(n, t) for n, t in stack if n < level] + [(level, text)]
             headings.append([title for _, title in stack])
             return
-        if not active and node.tag == "table":
+        if not active and name == "table":
             return  # Letterhead furniture precedes the document title.
-        if node.tag == "table":
+        if name == "table":
             for cell in node.iter():
-                if cell.tag in {"th", "td"}:
+                if _local_name(cell.tag) in {"th", "td"}:
                     value = " ".join(_heading_text(cell).split())
                     if value:
                         cells.append(value)
@@ -71,7 +72,7 @@ def expected_content(xhtml):
                     if row > 1 or col > 1:
                         spans.append({"text": value, "row_span": row, "col_span": col})
             return
-        if active and (node.tag == "p" or (node.tag == "li" and not list(node.iter("p")))):
+        if active and (name == "p" or (name == "li" and node.find(".//{*}p") is None)):
             if text:
                 paragraphs.append(text)
                 content_paths.append([title for _, title in stack])
